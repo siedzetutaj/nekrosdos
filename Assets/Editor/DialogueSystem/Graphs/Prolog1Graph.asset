@@ -59,67 +59,10 @@ MonoBehaviour:
       nika dostac nie da."
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 1cca4a54-620c-47d9-929a-6f0c4ea5776b
+      <NodeID>k__BackingField: a22ed8a3-d5de-4489-acba-e42c120ed744
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 5189, y: -29}
-  - <ID>k__BackingField: 1cca4a54-620c-47d9-929a-6f0c4ea5776b
-    <Name>k__BackingField: Orion3
-    <Text>k__BackingField: "- Do Arvida\nWygl\u0105da na to \u017Ce sp\u0119dzimy
-      troch\u0119 czasu w posiad\u0142o\u015Bci. I to niezale\u017Cnie od tego jak
-      sprawnie przebiegnie \u015Bledztwo."
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 64767804-1d7f-453a-9e86-0926fad59b4b
-    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 5846, y: -29}
-  - <ID>k__BackingField: 64767804-1d7f-453a-9e86-0926fad59b4b
-    <Name>k__BackingField: Arvid2
-    <Text>k__BackingField: "Wygl\u0105da na to \u017Ce sp\u0119dzimy troch\u0119
-      czasu w posiad\u0142o\u015Bci. I to niezale\u017Cnie od tego jak sprawnie przebiegnie
-      \u015Bledztwo."
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: "Ma to swoje plusy. Je\u015Bli my nie bedziemy mogli
-        opu\u015Bci\u0107 posiad\u0142o\u015Bci to tak samo reszta przebywaj\u0105cych
-        tam ludzi."
-      <NodeID>k__BackingField: f505aa36-4f3a-4625-bb37-dec83bf33ec8
-    - <Text>k__BackingField: "Co\u017C nie \u015Bpieszno mi spowrotem na szlak. Z
-        ch\u0119ci\u0105 sp\u0119dze kilka nocy w prywatnym pokoju i wygodnym \u0142\xF3\u017Cku."
-      <NodeID>k__BackingField: 0c929faa-ce77-4fcc-b9da-a303e3c8772a
-    - <Text>k__BackingField: "Na to wychodzi... A liczy\u0142em raczej na szybk\u0105
-        spraw\u0119 i jeszcze szybszy powr\xF3t do stolicy..."
-      <NodeID>k__BackingField: ae5da04e-4cf1-400a-9e2c-5cee772500d0
-    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
-    <DialogueType>k__BackingField: 1
-    <Position>k__BackingField: {x: 6507, y: -27}
-  - <ID>k__BackingField: ae5da04e-4cf1-400a-9e2c-5cee772500d0
-    <Name>k__BackingField: Orion4p3
-    <Text>k__BackingField: Dialogue text.
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
-    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 7454, y: 414}
-  - <ID>k__BackingField: 0c929faa-ce77-4fcc-b9da-a303e3c8772a
-    <Name>k__BackingField: Orion4p2
-    <Text>k__BackingField: Dialogue text.
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
-    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 7457, y: 199}
-  - <ID>k__BackingField: f505aa36-4f3a-4625-bb37-dec83bf33ec8
-    <Name>k__BackingField: Orion4p1
-    <Text>k__BackingField: Dialogue text.
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
-    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 7457, y: -12}
   - <ID>k__BackingField: 417bcd4f-7f4a-4ae0-b614-2911e98045d2
     <Name>k__BackingField: Orion1
     <Text>k__BackingField: "Daleko do posiad\u0142o\u015Bci?"
@@ -176,6 +119,79 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3211, y: -29}
+  - <ID>k__BackingField: a22ed8a3-d5de-4489-acba-e42c120ed744
+    <Name>k__BackingField: Orion3
+    <Text>k__BackingField: "- Do Arvida\nWygl\u0105da na to \u017Ce sp\u0119dzimy
+      troch\u0119 czasu w posiad\u0142o\u015Bci. I to niezale\u017Cnie od tego jak
+      sprawnie przebiegnie \u015Bledztwo."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: f505aa36-4f3a-4625-bb37-dec83bf33ec8
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5879, y: -29}
+  - <ID>k__BackingField: f505aa36-4f3a-4625-bb37-dec83bf33ec8
+    <Name>k__BackingField: Arvid2
+    <Text>k__BackingField: "Ma to swoje plusy. Je\u015Bli my nie bedziemy mogli opu\u015Bci\u0107
+      posiad\u0142o\u015Bci to tak samo reszta przebywaj\u0105cych tam ludzi."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: ff223f46-fec2-431b-9c8a-df01b0f99de6
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6550, y: -29}
+  - <ID>k__BackingField: ff223f46-fec2-431b-9c8a-df01b0f99de6
+    <Name>k__BackingField: Orion4
+    <Text>k__BackingField: "Przy za\u0142o\u017Ceniu \u017Ce sprawca ju\u017C stamt\u0105d
+      nie uciek\u0142."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: c726b0a5-c3d1-4e66-aab7-3f0d9afa3b56
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7211, y: -27}
+  - <ID>k__BackingField: c726b0a5-c3d1-4e66-aab7-3f0d9afa3b56
+    <Name>k__BackingField: Retes7
+    <Text>k__BackingField: "Kiedy tu panocku nie ma dok\u0105d ucieka\u0107. Lordowski
+      pa\u0142ac g\xF3ry otaczajom a go\u015Bciniec do nas do wiochy jeno prowadzi.
+      My i by\u015Bmy przyuwa\u017Cyli jakby sie kto przekrasc pr\xF3bowal."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 63b6099a-9279-43bd-979e-3ba1bc43fcbc
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7872, y: -26}
+  - <ID>k__BackingField: 63b6099a-9279-43bd-979e-3ba1bc43fcbc
+    <Name>k__BackingField: Retes8
+    <Text>k__BackingField: "Jak dla mnie to biedn\u0105 panienke pewnie te miesza\u0144ce
+      przebrzyd\u0142e zamordowa\u0142y. Nie wiem dlaczego Lord Alaric takie szumowiny
+      na nasz\u0105 u\u015Bwi\u0119con\u0105 ziemie sprowadza. To\u017C to widac
+      od razu \u017Ce \u017Ale im z oczu patrzy, a sk\xF3re maja jakby ju\u017C od
+      urodzenia z b\u0142otem zmieszana."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: d9114829-fbbf-4b5c-9aa6-8658046c3789
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8546, y: -22}
+  - <ID>k__BackingField: d9114829-fbbf-4b5c-9aa6-8658046c3789
+    <Name>k__BackingField: Arvid3
+    <Text>k__BackingField: "Miesza\u0144ce?"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9205, y: -18}
+  - <ID>k__BackingField: ace1fa41-8ab8-4d30-bb80-925721994f24
+    <Name>k__BackingField: Orion5
+    <Text>k__BackingField: Ludzie z Ombrii tu byli?
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9479, y: -17}
   <OldGroupNames>k__BackingField:
   - Prolog
   <OldUngroupedNodeNames>k__BackingField: []
@@ -187,13 +203,15 @@ MonoBehaviour:
       - Retes5
       - Orion2
       - Retes6
-      - Orion3
-      - Arvid2
-      - Orion4p3
-      - Orion4p2
-      - Orion4p1
       - Orion1
       - Retes2
       - Arvid1
       - Retes3
       - Retes4
+      - Orion3
+      - Arvid2
+      - Orion4
+      - Retes7
+      - Retes8
+      - Arvid3
+      - Orion5

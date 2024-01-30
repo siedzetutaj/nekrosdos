@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: Orion4p1
+  m_Name: Retes7
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: Orion4p1
-  <Text>k__BackingField: Dialogue text.
+  <DialogueName>k__BackingField: Retes7
+  <Text>k__BackingField: "Kiedy tu panocku nie ma dok\u0105d ucieka\u0107. Lordowski
+    pa\u0142ac g\xF3ry otaczajom a go\u015Bciniec do nas do wiochy jeno prowadzi.
+    My i by\u015Bmy przyuwa\u017Cyli jakby sie kto przekrasc pr\xF3bowal."
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 4f98490fbcaa28e4ba9a770b968bdf79, type: 2}
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
