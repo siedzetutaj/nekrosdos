@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0202a3095b7477a4091d56344f0af6b3, type: 3}
+  m_Name: Prolog1Graph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: Prolog1
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <Name>k__BackingField: Prolog
+    <Position>k__BackingField: {x: 189, y: -90}
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 414bae47-e7f1-4b20-96c2-a94c3185696d
+    <Name>k__BackingField: Retes1
+    <Text>k__BackingField: "Zepnijcie konie panicze. Nie chcem z\u0142ego omenu zwiastowa\u0107
+      ale wichry sie wzbieraj\u0105! "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 417bcd4f-7f4a-4ae0-b614-2911e98045d2
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 214, y: -29}
+  - <ID>k__BackingField: 9209a10a-f2c1-4266-80f3-7bc258373075
+    <Name>k__BackingField: Retes5
+    <Text>k__BackingField: "A co si\u0119 na niego ju\u017C wtedy wd\xF3wka Anielka
+      powyklina\u0142a... Pany... P\xF3\u0142 wiochy s\u0142ysza\u0142o. Najpierw
+      zacz\u0119la o..."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 14d64ab4-5f30-4e23-bdfd-c3cbbe2d5a50
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3869, y: -29}
+  - <ID>k__BackingField: 14d64ab4-5f30-4e23-bdfd-c3cbbe2d5a50
+    <Name>k__BackingField: Orion2
+    <Text>k__BackingField: "Tak, tak na pewno mia\u0142a wiele ciekawych wypowiedzi
+      na ten temat ale bardziej mnie interesuje to \u017Ce powiedziale\u015B \u017Ce
+      nawa\u0142nica dwa dni trwa\u0142a. To tu normalne?"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 6badcdd3-6224-43cb-ad24-08f3378a386e
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4529, y: -29}
+  - <ID>k__BackingField: 6badcdd3-6224-43cb-ad24-08f3378a386e
+    <Name>k__BackingField: Retes6
+    <Text>k__BackingField: "Ano o tej porze roku to i d\u0142uzej trwaj\u0105. Tak
+      ze trzy, cztery noce trza liczy\u0107. Wiadomo czasem mocniej dmucha czasem
+      mniej ale dalej ni\u017Ali poza w\u0142asny p\u0142ot to cz\u0142owiek nie
+      wyjdzie. Zreszta i po co jak go\u015Bcince wtedy pozasypywane to i tak sie
+      nika dostac nie da."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 1cca4a54-620c-47d9-929a-6f0c4ea5776b
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5189, y: -29}
+  - <ID>k__BackingField: 1cca4a54-620c-47d9-929a-6f0c4ea5776b
+    <Name>k__BackingField: Orion3
+    <Text>k__BackingField: "- Do Arvida\nWygl\u0105da na to \u017Ce sp\u0119dzimy
+      troch\u0119 czasu w posiad\u0142o\u015Bci. I to niezale\u017Cnie od tego jak
+      sprawnie przebiegnie \u015Bledztwo."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 64767804-1d7f-453a-9e86-0926fad59b4b
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5846, y: -29}
+  - <ID>k__BackingField: 64767804-1d7f-453a-9e86-0926fad59b4b
+    <Name>k__BackingField: Arvid2
+    <Text>k__BackingField: "Wygl\u0105da na to \u017Ce sp\u0119dzimy troch\u0119
+      czasu w posiad\u0142o\u015Bci. I to niezale\u017Cnie od tego jak sprawnie przebiegnie
+      \u015Bledztwo."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: "Ma to swoje plusy. Je\u015Bli my nie bedziemy mogli
+        opu\u015Bci\u0107 posiad\u0142o\u015Bci to tak samo reszta przebywaj\u0105cych
+        tam ludzi."
+      <NodeID>k__BackingField: f505aa36-4f3a-4625-bb37-dec83bf33ec8
+    - <Text>k__BackingField: "Co\u017C nie \u015Bpieszno mi spowrotem na szlak. Z
+        ch\u0119ci\u0105 sp\u0119dze kilka nocy w prywatnym pokoju i wygodnym \u0142\xF3\u017Cku."
+      <NodeID>k__BackingField: 0c929faa-ce77-4fcc-b9da-a303e3c8772a
+    - <Text>k__BackingField: "Na to wychodzi... A liczy\u0142em raczej na szybk\u0105
+        spraw\u0119 i jeszcze szybszy powr\xF3t do stolicy..."
+      <NodeID>k__BackingField: ae5da04e-4cf1-400a-9e2c-5cee772500d0
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 6507, y: -27}
+  - <ID>k__BackingField: ae5da04e-4cf1-400a-9e2c-5cee772500d0
+    <Name>k__BackingField: Orion4p3
+    <Text>k__BackingField: Dialogue text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7454, y: 414}
+  - <ID>k__BackingField: 0c929faa-ce77-4fcc-b9da-a303e3c8772a
+    <Name>k__BackingField: Orion4p2
+    <Text>k__BackingField: Dialogue text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7457, y: 199}
+  - <ID>k__BackingField: f505aa36-4f3a-4625-bb37-dec83bf33ec8
+    <Name>k__BackingField: Orion4p1
+    <Text>k__BackingField: Dialogue text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7457, y: -12}
+  - <ID>k__BackingField: 417bcd4f-7f4a-4ae0-b614-2911e98045d2
+    <Name>k__BackingField: Orion1
+    <Text>k__BackingField: "Daleko do posiad\u0142o\u015Bci?"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 2ede40f2-2019-486f-98ce-94ce5ada524b
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 889, y: -28}
+  - <ID>k__BackingField: 2ede40f2-2019-486f-98ce-94ce5ada524b
+    <Name>k__BackingField: Retes2
+    <Text>k__BackingField: "Ano nie jako\u015B bardzo. Jeszcze kilkaset staji po
+      go\u015Bci\u0144cu i b\u0119dziem na miejscu. Ale trzeba nam sie uwija\u0107
+      bo jak mocniej sypnie to ino roz."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 346291c1-b6be-420e-910c-cd08ba57e710
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1181, y: -31}
+  - <ID>k__BackingField: 346291c1-b6be-420e-910c-cd08ba57e710
+    <Name>k__BackingField: Arvid1
+    <Text>k__BackingField: "Jak dla mnie to ju\u017C sypie ca\u0142kiem nie\u017Cle."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: abafd06e-68b3-43bc-b28a-8609a2e7c958
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1865, y: -29}
+  - <ID>k__BackingField: abafd06e-68b3-43bc-b28a-8609a2e7c958
+    <Name>k__BackingField: Retes3
+    <Text>k__BackingField: "Na razie jeno kipi ale jak sie wzmog\u0105 wichry to
+      sie taka hurnawica rozp\u0119ta \u017Ce i do wyg\xF3dki strach b\u0119dzie
+      z chaty wyj\u015B\u0107."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 1d9e4727-e74d-4606-8f80-c39b47d7bb89
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2540, y: -29}
+  - <ID>k__BackingField: 1d9e4727-e74d-4606-8f80-c39b47d7bb89
+    <Name>k__BackingField: Retes4
+    <Text>k__BackingField: "Raz jak \u017Ce\u015Bmy ze \u015Bwagrem drwa na opa\u0142
+      r\u0105bali to po sko\u0144czonej robocie gard\u0142o zwilzyli\u015Bmy, a potem
+      sie ka\u017Cdy rozszed\u0142 w swoja strone. A \u017Ce \u015Bwagier nigdy mocnej
+      glowy nie mia\u0142 to mu sie przys\u0142o w jakim\u015B rowie. Pech chcia\u0142
+      \u017Ce nikt go tam nie przyuwazy\u0142, a hurnawica przeszla. Jak \u017Ce\u015Bmy
+      go po dw\xF3ch dniach wyci\u0105gneli to wam m\xF3wi\u0119 panocki jak kamie\u0144.
+      Zamar\u017Aniety ca\u0142y. po dw\xF3ch tygodniach kap\u0142an przyjecha\u0142
+      Thantehetep odprawi\u0107 to jeszcze go musieli przy piecu odmra\u017Ca\u0107."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 9209a10a-f2c1-4266-80f3-7bc258373075
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3211, y: -29}
+  <OldGroupNames>k__BackingField:
+  - Prolog
+  <OldUngroupedNodeNames>k__BackingField: []
+  <OldGroupedNodeNames>k__BackingField:
+    list:
+    - Key: Prolog
+      Value:
+      - Retes1
+      - Retes5
+      - Orion2
+      - Retes6
+      - Orion3
+      - Arvid2
+      - Orion4p3
+      - Orion4p2
+      - Orion4p1
+      - Orion1
+      - Retes2
+      - Arvid1
+      - Retes3
+      - Retes4

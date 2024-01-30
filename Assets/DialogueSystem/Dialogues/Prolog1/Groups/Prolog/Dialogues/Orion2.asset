@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: Orion2
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: Orion2
+  <Text>k__BackingField: "Tak, tak na pewno mia\u0142a wiele ciekawych wypowiedzi
+    na ten temat ale bardziej mnie interesuje to \u017Ce powiedziale\u015B \u017Ce
+    nawa\u0142nica dwa dni trwa\u0142a. To tu normalne?"
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: fab558b4369734b49961556f42979699, type: 2}
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 0

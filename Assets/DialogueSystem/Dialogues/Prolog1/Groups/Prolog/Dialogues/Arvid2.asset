@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: Arvid2
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: Arvid2
+  <Text>k__BackingField: "Wygl\u0105da na to \u017Ce sp\u0119dzimy troch\u0119 czasu
+    w posiad\u0142o\u015Bci. I to niezale\u017Cnie od tego jak sprawnie przebiegnie
+    \u015Bledztwo."
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: "Ma to swoje plusy. Je\u015Bli my nie bedziemy mogli opu\u015Bci\u0107
+      posiad\u0142o\u015Bci to tak samo reszta przebywaj\u0105cych tam ludzi."
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 716611bc72e662144a0acbe5d8de3f10, type: 2}
+  - <Text>k__BackingField: "Co\u017C nie \u015Bpieszno mi spowrotem na szlak. Z ch\u0119ci\u0105
+      sp\u0119dze kilka nocy w prywatnym pokoju i wygodnym \u0142\xF3\u017Cku."
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c0b66e28d3ba14547bcc0b561308fec8, type: 2}
+  - <Text>k__BackingField: "Na to wychodzi... A liczy\u0142em raczej na szybk\u0105
+      spraw\u0119 i jeszcze szybszy powr\xF3t do stolicy..."
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 60f6e5f80800db24a9fb46250ced9ff6, type: 2}
+  <DialogueType>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
