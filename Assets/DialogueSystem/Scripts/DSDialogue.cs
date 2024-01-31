@@ -9,7 +9,7 @@ namespace DS
         /* Dialogue Scriptable Objects */
         [SerializeField] private DSDialogueContainerSO dialogueContainer;
         [SerializeField] private DSDialogueGroupSO dialogueGroup;
-        [SerializeField] private DSDialogueSO dialogue;
+        [SerializeField] public DSDialogueSO dialogue;
 
         /* Filters */
         [SerializeField] private bool groupedDialogues;
