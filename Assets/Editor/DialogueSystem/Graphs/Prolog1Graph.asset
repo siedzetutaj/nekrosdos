@@ -16,7 +16,7 @@ MonoBehaviour:
   <Groups>k__BackingField:
   - <ID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <Name>k__BackingField: Prolog
-    <Position>k__BackingField: {x: 189, y: -90}
+    <Position>k__BackingField: {x: 188.99998, y: -88}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 414bae47-e7f1-4b20-96c2-a94c3185696d
     <Name>k__BackingField: Retes1
@@ -72,26 +72,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 889, y: -28}
-  - <ID>k__BackingField: 2ede40f2-2019-486f-98ce-94ce5ada524b
-    <Name>k__BackingField: Retes2
-    <Text>k__BackingField: "Ano nie jako\u015B bardzo. Jeszcze kilkaset staji po
-      go\u015Bci\u0144cu i b\u0119dziem na miejscu. Ale trzeba nam sie uwija\u0107
-      bo jak mocniej sypnie to ino roz."
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 346291c1-b6be-420e-910c-cd08ba57e710
-    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1181, y: -31}
-  - <ID>k__BackingField: 346291c1-b6be-420e-910c-cd08ba57e710
-    <Name>k__BackingField: Arvid1
-    <Text>k__BackingField: "Jak dla mnie to ju\u017C sypie ca\u0142kiem nie\u017Cle."
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: abafd06e-68b3-43bc-b28a-8609a2e7c958
-    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1865, y: -29}
   - <ID>k__BackingField: abafd06e-68b3-43bc-b28a-8609a2e7c958
     <Name>k__BackingField: Retes3
     <Text>k__BackingField: "Na razie jeno kipi ale jak sie wzmog\u0105 wichry to
@@ -179,7 +159,7 @@ MonoBehaviour:
     <Text>k__BackingField: "Miesza\u0144ce?"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: ace1fa41-8ab8-4d30-bb80-925721994f24
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 9205, y: -18}
@@ -188,10 +168,349 @@ MonoBehaviour:
     <Text>k__BackingField: Ludzie z Ombrii tu byli?
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 8f4f089e-c45b-4b75-9b2e-89cd10180379
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 9479, y: -17}
+  - <ID>k__BackingField: 346291c1-b6be-420e-910c-cd08ba57e710
+    <Name>k__BackingField: Arvid1
+    <Text>k__BackingField: "Chcesz powiedzie\u0107 \u017Ce mo\u017Ce pada\u0107 mocniej
+      niz teraz?"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: abafd06e-68b3-43bc-b28a-8609a2e7c958
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1865, y: -29}
+  - <ID>k__BackingField: 8f4f089e-c45b-4b75-9b2e-89cd10180379
+    <Name>k__BackingField: Retes9
+    <Text>k__BackingField: "A to panicze nie wiedzieli? Przyjecha\u0142a tu mo\u017Ce
+      z tydzien temu grupa tych miesza\u0144c\xF3w, a tak si\u0119 rz\u0105dzili
+      jakby u siebie byli. Kazali si\u0119 prowadzi\u0107 do posiadlosci. M\xF3wili
+      \u017Ce przez samego lorda zaproszeni zostali."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: c770c4bd-caf5-4cab-b529-bb01d17fc90d
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 10138, y: -17}
+  - <ID>k__BackingField: c770c4bd-caf5-4cab-b529-bb01d17fc90d
+    <Name>k__BackingField: Orion6
+    <Text>k__BackingField: Ciekawe...
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: ef6c3584-4506-434f-8c35-b00be0ed4e06
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 10802, y: -17}
+  - <ID>k__BackingField: ef6c3584-4506-434f-8c35-b00be0ed4e06
+    <Name>k__BackingField: Arvid4
+    <Text>k__BackingField: "Kto\u015B jeszcze przeje\u017Cd\u017Ca\u0142 przez wioske
+      ostatnio?"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 8df70142-02b2-4a2f-b370-b554f3d20282
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 11082, y: -16}
+  - <ID>k__BackingField: 8df70142-02b2-4a2f-b370-b554f3d20282
+    <Name>k__BackingField: Retes10
+    <Text>k__BackingField: "Ano troch\u0119 ludzi si\u0119 pojawi\u0142o. "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 00490a13-af68-4f39-98a2-13f0ba4ab4e1
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 11739, y: -14}
+  - <ID>k__BackingField: 00490a13-af68-4f39-98a2-13f0ba4ab4e1
+    <Name>k__BackingField: Narracja1
+    <Text>k__BackingField: "- Zerwal si\u0119 wiatr a konie zacz\u0119\u0142y dr\u017Ce\u0107
+      niespokojnie - "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: e3982896-d85a-4aae-a936-197d4d7c5e7f
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 12398, y: -14}
+  - <ID>k__BackingField: e3982896-d85a-4aae-a936-197d4d7c5e7f
+    <Name>k__BackingField: Retes11
+    <Text>k__BackingField: "Hej\u017Ce, wio! Posiad\u0142o\u015B\u0107 ju\u017C blisko,
+      \u015Bpiecha\u0107 si\u0119 musim jeszcze troch\u0119 i konie nie dadz\u0105
+      rady! Niech si\u0119 panicze blisko trzymaj\u0105!"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 13060, y: -14}
+  - <ID>k__BackingField: 2ede40f2-2019-486f-98ce-94ce5ada524b
+    <Name>k__BackingField: Retes2
+    <Text>k__BackingField: "Ano nie jako\u015B bardzo. Jeszcze kilkaset staji po
+      go\u015Bci\u0144cu i b\u0119dziem na miejscu. Ale trzeba nam sie uwija\u0107
+      bo jak mocniej sypnie to ino roz."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 346291c1-b6be-420e-910c-cd08ba57e710
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1174, y: -28}
+  - <ID>k__BackingField: 18367203-1008-4298-8872-6a093a55d138
+    <Name>k__BackingField: Retes12
+    <Text>k__BackingField: "Dzi\u0119kowa\u0107. Powodzenia panicze i pamietajcie
+      co \u017Cech wam m\xF3wi\u0142 to te miesza..."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 236e8ec3-c7e2-4649-b137-c0df5a1246d5
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2442, y: 248}
+  - <ID>k__BackingField: 236e8ec3-c7e2-4649-b137-c0df5a1246d5
+    <Name>k__BackingField: Gontes4
+    <Text>k__BackingField: RETES!
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 87ec036f-6c30-4fa0-affa-42d7de8036a2
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3116, y: 252}
+  - <ID>k__BackingField: 87ec036f-6c30-4fa0-affa-42d7de8036a2
+    <Name>k__BackingField: Retes13
+    <Text>k__BackingField: "Ano ide ju\u017C ide."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 96b8d6e2-0c9a-4bf4-9c8a-bea56071bb01
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3394, y: 253}
+  - <ID>k__BackingField: 28de1cd6-a05b-4d50-81ed-759b8dac46ba
+    <Name>k__BackingField: Gontes3
+    <Text>k__BackingField: "Worek zajmij si\u0119 ko\u0144mi! Retes w starym budynku
+      masz przyszykowane pos\u0142anie. Jutro z samego rana otrzymasz zap\u0142ate
+      za fatyg\u0119."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 18367203-1008-4298-8872-6a093a55d138
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1787, y: 232}
+  - <ID>k__BackingField: 99c896a1-200d-4ecc-add9-c4af3835dff0
+    <Name>k__BackingField: Gontes2
+    <Text>k__BackingField: "Witajcie w posiad\u0142o\u015Bci Lorda Alarica detektywi.
+      Nazywam sie Gontes. Oczekiwali\u015Bmy waszego przybycia, prosz\u0119 za mn\u0105."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 28de1cd6-a05b-4d50-81ed-759b8dac46ba
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1133, y: 228}
+  - <ID>k__BackingField: 140f5c22-0bbd-4b3d-88d7-f6567337603e
+    <Name>k__BackingField: Narracja2
+    <Text>k__BackingField: "- Detektywi wraz z prowadz\u0105cym ich Retesem doje\u017Cd\u017Caj\u0105
+      do bram posiad\u0142o\u015Bci. Na zewn\u0105trz panuje okrutna \u015Bnierzyca
+      i ci\u0119\u017Cko dostrzec co\u015B co znajduje si\u0119 dalej niz kilka metr\xF3w
+      od cz\u0142owieka -"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 99c896a1-200d-4ecc-add9-c4af3835dff0
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 483, y: 226}
+  - <ID>k__BackingField: 24f2be00-7b70-48a5-94bc-4534ce5a942a
+    <Name>k__BackingField: Gontes1
+    <Text>k__BackingField: "Hej\u017Ce! Tutaj detektywi!"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 140f5c22-0bbd-4b3d-88d7-f6567337603e
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 214, y: 228}
+  - <ID>k__BackingField: 96b8d6e2-0c9a-4bf4-9c8a-bea56071bb01
+    <Name>k__BackingField: Gontes5
+    <Text>k__BackingField: "Prosze za mn\u0105."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3686, y: 251}
+  - <ID>k__BackingField: b33c2599-5435-4f37-93f6-6ca2cbee30b6
+    <Name>k__BackingField: Narracja3
+    <Text>k__BackingField: "- Detektywi prowadzeni przez Gontesa wchodz\u0105 do
+      g\u0142\xF3wnego budynku posiad\u0142o\u015Bci, zaraz po wej\u015Bciu widz\u0105
+      ju\u017C dwie sylwetki kt\xF3re oczekuj\u0105 na nich w g\u0142\xF3wnej hali-"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: bc2937a2-2e69-4daa-a6b9-889f0031c783
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 217, y: 539}
+  - <ID>k__BackingField: bc2937a2-2e69-4daa-a6b9-889f0031c783
+    <Name>k__BackingField: Gontes6
+    <Text>k__BackingField: Lordzie, panie Gervi. Detektywi przybyli.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 7f8dd341-afd5-42d2-a394-24bb011bcf0c
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 890, y: 541}
+  - <ID>k__BackingField: 7f8dd341-afd5-42d2-a394-24bb011bcf0c
+    <Name>k__BackingField: Orion7
+    <Text>k__BackingField: "Lordzie Alaricu. -Orion pochyla sw\u0105 g\u0142ow\u0119-.
+      Nazywam si\u0119 Orion Sygil - Starszy detektyw z inspektoratu transcendentalnego,
+      a to m\xF3j partner Arvid Morteo - Naznaczony."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: New Choice
+      <NodeID>k__BackingField: cbbab405-8c06-45d0-a107-8e861cbfead0
+    - <Text>k__BackingField: New Choice
+      <NodeID>k__BackingField: 13908e84-9fd6-47e7-95df-1ef00e1bbd94
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1565, y: 538}
+  - <ID>k__BackingField: cbbab405-8c06-45d0-a107-8e861cbfead0
+    <Name>k__BackingField: Arvid5p1
+    <Text>k__BackingField: "Pochyl sw\u0105 g\u0142ow\u0119 na wz\xF3r Oriona."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 3c2478d4-c8a1-40a8-922c-ad04b3345fa8
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2266, y: 542}
+  - <ID>k__BackingField: 13908e84-9fd6-47e7-95df-1ef00e1bbd94
+    <Name>k__BackingField: Arvid5p2
+    <Text>k__BackingField: "St\xF3j wyprostowany i popatrz prosto w oczy Lorda"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 9f0aee23-6344-42ff-9eb3-478e21ef576d
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2267, y: 736}
+  - <ID>k__BackingField: 9f0aee23-6344-42ff-9eb3-478e21ef576d
+    <Name>k__BackingField: Narracja4
+    <Text>k__BackingField: "Stajesz przed obliczem Pana tej posiad\u0142o\u015Bci
+      i patrzysz mu prosto w oczy. Ten odwzajemnia twoje spojrzenie ale nie potrafisz
+      wyczyta\u0107 nic z jego skamienia\u0142ego oblicza. Czujesz sie nieswojo,
+      pope\u0142ni\u0142e\u015B b\u0142\u0105d i czujesz \u017Ce nie powiniene\u015B
+      by\u0142 zrobi\u0107 tego co zrobi\u0142e\u015B."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 236b22c5-a50c-47c1-8c3d-2d5ef0a09e6d
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2946, y: 738}
+  - <ID>k__BackingField: 2e2608ff-c21e-4f76-b610-8c1f4e8d9e2a
+    <Name>k__BackingField: Orion8
+    <Text>k__BackingField: Arvid...
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 114749ee-01a3-4174-af43-6936a22fd733
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4260, y: 743}
+  - <ID>k__BackingField: 236b22c5-a50c-47c1-8c3d-2d5ef0a09e6d
+    <Name>k__BackingField: Gervi1
+    <Text>k__BackingField: "Pochyl g\u0142owe \"obdarzony\" czy\u017Cby w akademii
+      nie nauczyli ci\u0119 dobrych manier? Stoisz przed obliczem jednego ze \"Starszych\"
+      w\u0142asnego rodu! Oka\u017C nieco szacunku, chyba \u017Ce juz do reszty \u015Bmier\u0107
+      prze\u017Car\u0142a ci m\xF3zg!"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 2e2608ff-c21e-4f76-b610-8c1f4e8d9e2a
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3607, y: 743}
+  - <ID>k__BackingField: 3c2478d4-c8a1-40a8-922c-ad04b3345fa8
+    <Name>k__BackingField: Alaric1
+    <Text>k__BackingField: "Orion Sygil? S\u0142ysza\u0142em o tobie. Pono\u0107
+      jeste\u015B ca\u0142kiem sprawny w swym zawodzie. Ciesze sie \u017Ce inspektorat
+      nie przys\u0142a\u0142 byle kogo na me wezwanie."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 7878c487-58eb-4f1f-bdb2-f91b21f09a66
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2947, y: 531}
+  - <ID>k__BackingField: 7878c487-58eb-4f1f-bdb2-f91b21f09a66
+    <Name>k__BackingField: Gervi2
+    <Text>k__BackingField: "Mam nadziej\u0119 \u017Ce je\u015Bli b\u0119dzie trzeba
+      to nie zawachasz si\u0119 zrobi\u0107 tego co w Valerii. -Gervi m\xF3wi\u0105c
+      te s\u0142owa rzuca ci z\u0142o\u015Bliwy u\u015Bmieszek-"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 1bd964c4-8c40-4d98-9638-78cc9e13cff0
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3606, y: 531}
+  - <ID>k__BackingField: 1bd964c4-8c40-4d98-9638-78cc9e13cff0
+    <Name>k__BackingField: Narracja5
+    <Text>k__BackingField: "-Lord Alaric s\u0142ysz\u0105c te s\u0142owa spiorunowa\u0142
+      wzrokiem swego s\u0142uge, a ten w mgnieniu oka zmieni\u0142 swoja mimik\u0119
+      i sta\u0142 si\u0119 jeszcze mniejszy ni\u017C faktycznie jest-"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: dedcc04c-c9fc-4f6b-afe6-1cf003a24ee2
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4263, y: 529}
+  - <ID>k__BackingField: dedcc04c-c9fc-4f6b-afe6-1cf003a24ee2
+    <Name>k__BackingField: Orion9
+    <Text>k__BackingField: "Robi\u0119 to co konieczne by rozwiaza\u0107 dana spraw\u0119.
+      Nie musi si\u0119 pan martwi\u0107."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 6a72a9ea-fc1c-4123-baaf-bc5855ec8d43
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4916, y: 534}
+  - <ID>k__BackingField: 114749ee-01a3-4174-af43-6936a22fd733
+    <Name>k__BackingField: Alaric2
+    <Text>k__BackingField: "Przesta\u0144 Gervi. Na t\u0105 chwil\u0119 to nieistotne."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: b1d2d321-b3a1-4280-936b-6f886a6d55d8
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4529, y: 743}
+  - <ID>k__BackingField: b1d2d321-b3a1-4280-936b-6f886a6d55d8
+    <Name>k__BackingField: Gervi3
+    <Text>k__BackingField: "Oczywi\u015Bcie lordzie..."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 6a72a9ea-fc1c-4123-baaf-bc5855ec8d43
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5190, y: 743}
+  - <ID>k__BackingField: 6a72a9ea-fc1c-4123-baaf-bc5855ec8d43
+    <Name>k__BackingField: Alaric3
+    <Text>k__BackingField: "Chcia\u0142bym powiedzie\u0107, \u017Ce po d\u0142ugiej
+      drodze detektywi powinni uda\u0107 si\u0119 na spoczynek i odzyska\u0107 si\u0142y
+      ale obawiam si\u0119 \u017Ce nie dope\u0142nie dzi\u015B prawa go\u015Bcinno\u015Bci.
+      Moja \u017Cona wystarczaj\u0105co d\u0142ugo czeka\u0142a na Thantehetep nie
+      chcia\u0142bym wyd\u0142u\u017Ca\u0107 tego oczekiwania ani chwili d\u0142u\u017Cej."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: c8389a46-73a6-4ccb-a775-b59b16e00b35
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5590, y: 670}
+  - <ID>k__BackingField: c8389a46-73a6-4ccb-a775-b59b16e00b35
+    <Name>k__BackingField: Orion10
+    <Text>k__BackingField: "Oczywi\u015Bcie. Nie przybyli\u015Bmy tu by wypoczywa\u0107.
+      Prosze prowadzi\u0107 do cia\u0142a."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6240, y: 670}
+  - <ID>k__BackingField: b51e3cc6-b933-44eb-8699-23721d3c940e
+    <Name>k__BackingField: DialogueName
+    <Text>k__BackingField: Dialogue text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 214, y: 2588}
   <OldGroupNames>k__BackingField:
   - Prolog
   <OldUngroupedNodeNames>k__BackingField: []
@@ -204,8 +523,6 @@ MonoBehaviour:
       - Orion2
       - Retes6
       - Orion1
-      - Retes2
-      - Arvid1
       - Retes3
       - Retes4
       - Orion3
@@ -215,3 +532,36 @@ MonoBehaviour:
       - Retes8
       - Arvid3
       - Orion5
+      - Arvid1
+      - Retes9
+      - Orion6
+      - Arvid4
+      - Retes10
+      - Narracja1
+      - Retes11
+      - Retes2
+      - Retes12
+      - Gontes4
+      - Retes13
+      - Gontes3
+      - Gontes2
+      - Narracja2
+      - Gontes1
+      - Gontes5
+      - Narracja3
+      - Gontes6
+      - Orion7
+      - Arvid5p1
+      - Arvid5p2
+      - Narracja4
+      - Orion8
+      - Gervi1
+      - Alaric1
+      - Gervi2
+      - Narracja5
+      - Orion9
+      - Alaric2
+      - Gervi3
+      - Alaric3
+      - Orion10
+      - DialogueName

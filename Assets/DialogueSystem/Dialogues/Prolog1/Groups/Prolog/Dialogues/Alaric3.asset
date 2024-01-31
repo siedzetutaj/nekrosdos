@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: Alaric3
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: Alaric3
+  <Text>k__BackingField: "Chcia\u0142bym powiedzie\u0107, \u017Ce po d\u0142ugiej
+    drodze detektywi powinni uda\u0107 si\u0119 na spoczynek i odzyska\u0107 si\u0142y
+    ale obawiam si\u0119 \u017Ce nie dope\u0142nie dzi\u015B prawa go\u015Bcinno\u015Bci.
+    Moja \u017Cona wystarczaj\u0105co d\u0142ugo czeka\u0142a na Thantehetep nie
+    chcia\u0142bym wyd\u0142u\u017Ca\u0107 tego oczekiwania ani chwili d\u0142u\u017Cej."
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 098406654a684be40b8e35406906fa4c, type: 2}
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 0

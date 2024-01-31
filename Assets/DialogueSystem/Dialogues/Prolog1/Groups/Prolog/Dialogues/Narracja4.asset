@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: Narracja4
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: Narracja4
+  <Text>k__BackingField: "Stajesz przed obliczem Pana tej posiad\u0142o\u015Bci i
+    patrzysz mu prosto w oczy. Ten odwzajemnia twoje spojrzenie ale nie potrafisz
+    wyczyta\u0107 nic z jego skamienia\u0142ego oblicza. Czujesz sie nieswojo, pope\u0142ni\u0142e\u015B
+    b\u0142\u0105d i czujesz \u017Ce nie powiniene\u015B by\u0142 zrobi\u0107 tego
+    co zrobi\u0142e\u015B."
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 871e25d47b142b74e8496a1e632a1ec8, type: 2}
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 0
