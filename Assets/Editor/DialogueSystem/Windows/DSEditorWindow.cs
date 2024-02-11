@@ -17,6 +17,7 @@ namespace DS.Windows
         private static TextField fileNameTextField;
         private Button saveButton;
         private Button miniMapButton;
+        private Button blackboardButton;
 
         [MenuItem("Window/DS/Dialogue Graph")]
         public static void Open()
@@ -57,6 +58,7 @@ namespace DS.Windows
             Button resetButton = DSElementUtility.CreateButton("Reset", () => ResetGraph());
 
             miniMapButton = DSElementUtility.CreateButton("Minimap", () => ToggleMiniMap());
+            blackboardButton = DSElementUtility.CreateButton("Variables", ()=>ToggleBlackboard());
 
             toolbar.Add(fileNameTextField);
             toolbar.Add(saveButton);
@@ -64,17 +66,17 @@ namespace DS.Windows
             toolbar.Add(clearButton);
             toolbar.Add(resetButton);
             toolbar.Add(miniMapButton);
+            toolbar.Add(blackboardButton);
 
             toolbar.AddStyleSheets("DialogueSystem/DSToolbarStyles.uss");
 
             rootVisualElement.Add(toolbar);
         }
-
+        #region Utilities
         private void AddStyles()
         {
             rootVisualElement.AddStyleSheets("DialogueSystem/DSVariables.uss");
         }
-
         private void Save()
         {
             if (string.IsNullOrEmpty(fileNameTextField.value))
@@ -87,7 +89,6 @@ namespace DS.Windows
             DSIOUtility.Initialize(graphView, fileNameTextField.value);
             DSIOUtility.Save();
         }
-
         private void Load()
         {
             string filePath = EditorUtility.OpenFilePanel("Dialogue Graphs", "Assets/Editor/DialogueSystem/Graphs", "asset");
@@ -102,39 +103,45 @@ namespace DS.Windows
             DSIOUtility.Initialize(graphView, Path.GetFileNameWithoutExtension(filePath));
             DSIOUtility.Load();
         }
-
         private void Clear()
         {
             graphView.ClearGraph();
         }
-
         private void ResetGraph()
         {
             Clear();
 
             UpdateFileName(defaultFileName);
         }
-
+        #endregion
+        #region Togglers
         private void ToggleMiniMap()
         {
             graphView.ToggleMiniMap();
 
             miniMapButton.ToggleInClassList("ds-toolbar__button__selected");
-        }
+        }   
+        private void ToggleBlackboard()
+        {
+            graphView.ToggleBlackboard();
 
+            blackboardButton.ToggleInClassList("ds-toolbar__button__selected");
+        }
+        #endregion
+        #region Functions 
         public static void UpdateFileName(string newFileName)
         {
             fileNameTextField.value = newFileName;
         }
-
         public void EnableSaving()
         {
             saveButton.SetEnabled(true);
         }
-
         public void DisableSaving()
         {
             saveButton.SetEnabled(false);
         }
+        #endregion
+
     }
 }

@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 1346552997439430222}
   - component: {fileID: 3153845627910528309}
   - component: {fileID: 7318938209059883604}
+  - component: {fileID: 7410297178575099860}
   m_Layer: 5
   m_Name: DialogueButton
   m_TagString: Untagged
@@ -303,3 +304,17 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &7410297178575099860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6233974647636754015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9507e0e960601e5469ebd443038f2ae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 6782184453576834438}
+  button: {fileID: 1346552997439430222}

@@ -45,7 +45,7 @@ namespace DS.Utilities
             loadedGroups = new Dictionary<string, DSGroup>();
             loadedNodes = new Dictionary<string, DSNode>();
         }
-
+        #region Save
         public static void Save()
         {
             CreateDefaultFolders();
@@ -65,8 +65,13 @@ namespace DS.Utilities
 
             SaveAsset(graphData);
             SaveAsset(dialogueContainer);
+            SaveExposedProperites(graphData);
         }
 
+        private static void SaveExposedProperites(DSGraphSaveDataSO graphData)
+        {
+            graphData.ExposedProperties.AddRange(graphView.exposedProperties);
+        }
         private static void SaveGroups(DSGraphSaveDataSO graphData, DSDialogueContainerSO dialogueContainer)
         {
             List<string> groupNames = new List<string>();
@@ -81,7 +86,6 @@ namespace DS.Utilities
 
             UpdateOldGroups(groupNames, graphData);
         }
-
         private static void SaveGroupToGraph(DSGroup group, DSGraphSaveDataSO graphData)
         {
             DSGroupSaveData groupData = new DSGroupSaveData()
@@ -93,7 +97,6 @@ namespace DS.Utilities
 
             graphData.Groups.Add(groupData);
         }
-
         private static void SaveGroupToScriptableObject(DSGroup group, DSDialogueContainerSO dialogueContainer)
         {
             string groupName = group.title;
@@ -111,22 +114,6 @@ namespace DS.Utilities
 
             SaveAsset(dialogueGroup);
         }
-
-        private static void UpdateOldGroups(List<string> currentGroupNames, DSGraphSaveDataSO graphData)
-        {
-            if (graphData.OldGroupNames != null && graphData.OldGroupNames.Count != 0)
-            {
-                List<string> groupsToRemove = graphData.OldGroupNames.Except(currentGroupNames).ToList();
-
-                foreach (string groupToRemove in groupsToRemove)
-                {
-                    RemoveFolder($"{containerFolderPath}/Groups/{groupToRemove}");
-                }
-            }
-
-            graphData.OldGroupNames = new List<string>(currentGroupNames);
-        }
-
         private static void SaveNodes(DSGraphSaveDataSO graphData, DSDialogueContainerSO dialogueContainer)
         {
             SerializableDictionary<string, List<string>> groupedNodeNames = new SerializableDictionary<string, List<string>>();
@@ -152,7 +139,6 @@ namespace DS.Utilities
             UpdateOldGroupedNodes(groupedNodeNames, graphData);
             UpdateOldUngroupedNodes(ungroupedNodeNames, graphData);
         }
-
         private static void SaveNodeToGraph(DSNode node, DSGraphSaveDataSO graphData)
         {
             List<DSChoiceSaveData> choices = CloneNodeChoices(node.Choices);
@@ -170,7 +156,6 @@ namespace DS.Utilities
 
             graphData.Nodes.Add(nodeData);
         }
-
         private static void SaveNodeToScriptableObject(DSNode node, DSDialogueContainerSO dialogueContainer)
         {
             DSDialogueSO dialogue;
@@ -200,24 +185,29 @@ namespace DS.Utilities
 
             SaveAsset(dialogue);
         }
-
-        private static List<DSDialogueChoiceData> ConvertNodeChoicesToDialogueChoices(List<DSChoiceSaveData> nodeChoices)
+        public static void SaveAsset(UnityEngine.Object asset)
         {
-            List<DSDialogueChoiceData> dialogueChoices = new List<DSDialogueChoiceData>();
+            EditorUtility.SetDirty(asset);
 
-            foreach (DSChoiceSaveData nodeChoice in nodeChoices)
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
+        }
+        #endregion
+        #region Update
+        private static void UpdateOldGroups(List<string> currentGroupNames, DSGraphSaveDataSO graphData)
+        {
+            if (graphData.OldGroupNames != null && graphData.OldGroupNames.Count != 0)
             {
-                DSDialogueChoiceData choiceData = new DSDialogueChoiceData()
-                {
-                    Text = nodeChoice.Text
-                };
+                List<string> groupsToRemove = graphData.OldGroupNames.Except(currentGroupNames).ToList();
 
-                dialogueChoices.Add(choiceData);
+                foreach (string groupToRemove in groupsToRemove)
+                {
+                    RemoveFolder($"{containerFolderPath}/Groups/{groupToRemove}");
+                }
             }
 
-            return dialogueChoices;
+            graphData.OldGroupNames = new List<string>(currentGroupNames);
         }
-
         private static void UpdateDialoguesChoicesConnections()
         {
             foreach (DSNode node in nodes)
@@ -239,7 +229,6 @@ namespace DS.Utilities
                 }
             }
         }
-
         private static void UpdateOldGroupedNodes(SerializableDictionary<string, List<string>> currentGroupedNodeNames, DSGraphSaveDataSO graphData)
         {
             if (graphData.OldGroupedNodeNames != null && graphData.OldGroupedNodeNames.Count != 0)
@@ -262,7 +251,6 @@ namespace DS.Utilities
 
             graphData.OldGroupedNodeNames = new SerializableDictionary<string, List<string>>(currentGroupedNodeNames);
         }
-
         private static void UpdateOldUngroupedNodes(List<string> currentUngroupedNodeNames, DSGraphSaveDataSO graphData)
         {
             if (graphData.OldUngroupedNodeNames != null && graphData.OldUngroupedNodeNames.Count != 0)
@@ -277,7 +265,8 @@ namespace DS.Utilities
 
             graphData.OldUngroupedNodeNames = new List<string>(currentUngroupedNodeNames);
         }
-
+        #endregion
+        #region Load
         public static void Load()
         {
             DSGraphSaveDataSO graphData = LoadAsset<DSGraphSaveDataSO>("Assets/Editor/DialogueSystem/Graphs", graphFileName);
@@ -300,8 +289,8 @@ namespace DS.Utilities
             LoadGroups(graphData.Groups);
             LoadNodes(graphData.Nodes);
             LoadNodesConnections();
+            LoadExposedProperties(graphData);
         }
-
         private static void LoadGroups(List<DSGroupSaveData> groups)
         {
             foreach (DSGroupSaveData groupData in groups)
@@ -313,7 +302,6 @@ namespace DS.Utilities
                 loadedGroups.Add(group.ID, group);
             }
         }
-
         private static void LoadNodes(List<DSNodeSaveData> nodes)
         {
             foreach (DSNodeSaveData nodeData in nodes)
@@ -344,7 +332,6 @@ namespace DS.Utilities
                 group.AddElement(node);
             }
         }
-
         private static void LoadNodesConnections()
         {
             foreach (KeyValuePair<string, DSNode> loadedNode in loadedNodes)
@@ -370,7 +357,21 @@ namespace DS.Utilities
                 }
             }
         }
+        private static void LoadExposedProperties(DSGraphSaveDataSO graphData)
+        {
+            foreach(DSExposedProperty exposedProperty in graphData.ExposedProperties)
+            {
+                graphView.AddPropeprtyToBlackBoard(exposedProperty);
+            }
+        }
+        public static T LoadAsset<T>(string path, string assetName) where T : ScriptableObject
+        {
+            string fullPath = $"{path}/{assetName}.asset";
 
+            return AssetDatabase.LoadAssetAtPath<T>(fullPath);
+        }
+        #endregion
+        #region Creators
         private static void CreateDefaultFolders()
         {
             CreateFolder("Assets/Editor/DialogueSystem", "Graphs");
@@ -383,7 +384,59 @@ namespace DS.Utilities
             CreateFolder(containerFolderPath, "Groups");
             CreateFolder($"{containerFolderPath}/Global", "Dialogues");
         }
+        public static void CreateFolder(string parentFolderPath, string newFolderName)
+        {
+            if (AssetDatabase.IsValidFolder($"{parentFolderPath}/{newFolderName}"))
+            {
+                return;
+            }
 
+            AssetDatabase.CreateFolder(parentFolderPath, newFolderName);
+        }
+        public static T CreateAsset<T>(string path, string assetName) where T : ScriptableObject
+        {
+            string fullPath = $"{path}/{assetName}.asset";
+
+            T asset = LoadAsset<T>(path, assetName);
+
+            if (asset == null)
+            {
+                asset = ScriptableObject.CreateInstance<T>();
+
+                AssetDatabase.CreateAsset(asset, fullPath);
+            }
+
+            return asset;
+        }
+        #endregion
+        #region Removals
+        public static void RemoveFolder(string path)
+        {
+            FileUtil.DeleteFileOrDirectory($"{path}.meta");
+            FileUtil.DeleteFileOrDirectory($"{path}/");
+        }
+        public static void RemoveAsset(string path, string assetName)
+        {
+            AssetDatabase.DeleteAsset($"{path}/{assetName}.asset");
+        }
+        #endregion
+        #region Utilities
+        private static List<DSDialogueChoiceData> ConvertNodeChoicesToDialogueChoices(List<DSChoiceSaveData> nodeChoices)
+        {
+            List<DSDialogueChoiceData> dialogueChoices = new List<DSDialogueChoiceData>();
+
+            foreach (DSChoiceSaveData nodeChoice in nodeChoices)
+            {
+                DSDialogueChoiceData choiceData = new DSDialogueChoiceData()
+                {
+                    Text = nodeChoice.Text
+                };
+
+                dialogueChoices.Add(choiceData);
+            }
+
+            return dialogueChoices;
+        }
         private static void GetElementsFromGraphView()
         {
             Type groupType = typeof(DSGroup);
@@ -407,59 +460,6 @@ namespace DS.Utilities
                 }
             });
         }
-
-        public static void CreateFolder(string parentFolderPath, string newFolderName)
-        {
-            if (AssetDatabase.IsValidFolder($"{parentFolderPath}/{newFolderName}"))
-            {
-                return;
-            }
-
-            AssetDatabase.CreateFolder(parentFolderPath, newFolderName);
-        }
-
-        public static void RemoveFolder(string path)
-        {
-            FileUtil.DeleteFileOrDirectory($"{path}.meta");
-            FileUtil.DeleteFileOrDirectory($"{path}/");
-        }
-
-        public static T CreateAsset<T>(string path, string assetName) where T : ScriptableObject
-        {
-            string fullPath = $"{path}/{assetName}.asset";
-
-            T asset = LoadAsset<T>(path, assetName);
-
-            if (asset == null)
-            {
-                asset = ScriptableObject.CreateInstance<T>();
-
-                AssetDatabase.CreateAsset(asset, fullPath);
-            }
-
-            return asset;
-        }
-
-        public static T LoadAsset<T>(string path, string assetName) where T : ScriptableObject
-        {
-            string fullPath = $"{path}/{assetName}.asset";
-
-            return AssetDatabase.LoadAssetAtPath<T>(fullPath);
-        }
-
-        public static void SaveAsset(UnityEngine.Object asset)
-        {
-            EditorUtility.SetDirty(asset);
-
-            AssetDatabase.SaveAssets();
-            AssetDatabase.Refresh();
-        }
-
-        public static void RemoveAsset(string path, string assetName)
-        {
-            AssetDatabase.DeleteAsset($"{path}/{assetName}.asset");
-        }
-
         private static List<DSChoiceSaveData> CloneNodeChoices(List<DSChoiceSaveData> nodeChoices)
         {
             List<DSChoiceSaveData> choices = new List<DSChoiceSaveData>();
@@ -477,5 +477,6 @@ namespace DS.Utilities
 
             return choices;
         }
+        #endregion
     }
 }

@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0202a3095b7477a4091d56344f0af6b3, type: 3}
+  m_Name: testGraph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: test
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 08d100b4-2eea-432b-965e-941263b4580f
+    <Name>k__BackingField: 1
+    <Text>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 215fbb42-de01-4cf3-9cc1-d598d09b32b7
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1791.2, y: 580}
+  - <ID>k__BackingField: 215fbb42-de01-4cf3-9cc1-d598d09b32b7
+    <Name>k__BackingField: 12
+    <Text>k__BackingField: 2
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 1
+      <NodeID>k__BackingField: 28b014f3-9614-4803-b2a5-6d97fa5f9c82
+    - <Text>k__BackingField: 12
+      <NodeID>k__BackingField: 389fb687-a358-46e9-840b-423862a68eb6
+    - <Text>k__BackingField: 123
+      <NodeID>k__BackingField: 
+    - <Text>k__BackingField: 1234
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2136, y: 542.39996}
+  - <ID>k__BackingField: 28b014f3-9614-4803-b2a5-6d97fa5f9c82
+    <Name>k__BackingField: 123
+    <Text>k__BackingField: 3
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2608.8, y: 392}
+  - <ID>k__BackingField: 389fb687-a358-46e9-840b-423862a68eb6
+    <Name>k__BackingField: 1234
+    <Text>k__BackingField: 4
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2608.8, y: 614.39996}
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNodeNames>k__BackingField:
+  - 1
+  - 12
+  - 123
+  - 1234
+  <OldGroupedNodeNames>k__BackingField:
+    list: []

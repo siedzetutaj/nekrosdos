@@ -1,18 +1,22 @@
 using DS;
+using DS.Data;
 using DS.ScriptableObjects;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UIElements;
-using UnityEditor.Experimental.GraphView;
 using System;
+using System.Collections.Generic;
 
-public class DisplayDialogue : MonoBehaviour
+public class DialogueDisplay : MonoBehaviour
 {
     [SerializeField] private DSDialogue startingDialogue;
+    [SerializeField] private GameObject contentUI;
     [SerializeField] private TextMeshProUGUI textUI;
-    [SerializeField] private bool isSingleChoice;
+    [SerializeField] private GameObject buttonPrefab;
 
+    private bool isSingleChoice;
     private DSDialogueSO currentDialogue;
+    private List<GameObject> buttonList = new List<GameObject>();
 
     private void Awake()
     {
@@ -40,13 +44,36 @@ public class DisplayDialogue : MonoBehaviour
         }
         else if (currentDialogue.Choices.Count > 1)
         {
-            // buttons 
+            isSingleChoice = false;
+            CreateButtons();
         }        
     }
-
+    private void CreateButtons()
+    {
+        foreach(DSDialogueChoiceData dialogueSO in currentDialogue.Choices)
+        {
+            GameObject button = Instantiate(buttonPrefab, contentUI.transform);
+            DialogueButton dButton = button.GetComponent<DialogueButton>();
+            dButton.text.text = dialogueSO.Text;
+            dButton.choiceNumber = currentDialogue.Choices.IndexOf(dialogueSO);
+            dButton.button.onClick.AddListener(() => 
+            { 
+                AddButtonTextToContainer(dialogueSO.Text); 
+                OnOptionChosen(dButton.choiceNumber);
+            });
+            buttonList.Add(button);
+        }
+    }
+    private void AddButtonTextToContainer(string text)
+    {
+        textUI.text += text;
+        textUI.text += "\n";
+        textUI.text += "\n";
+    }
     private void OnOptionChosen(int choiceIndex = 0)
     {
         isSingleChoice = false;
+        RemoveButonsFromContainer();
 
         DSDialogueSO nextDialogue = currentDialogue.Choices[choiceIndex].NextDialogue;
 
@@ -58,6 +85,18 @@ public class DisplayDialogue : MonoBehaviour
         currentDialogue = nextDialogue;
 
         ShowText();
+    }
+
+    private void RemoveButonsFromContainer()
+    {
+        if (buttonList.Count>=1)
+        {
+            foreach (GameObject button in buttonList)
+            {
+                Destroy(button);
+            }
+            buttonList.Clear();
+        }
     }
 
     public static Button CreateButton(string text, Action onClick = null)

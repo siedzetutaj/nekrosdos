@@ -48,15 +48,26 @@ namespace DS.Elements
             mainContainer.AddToClassList("ds-node__main-container");
             extensionContainer.AddToClassList("ds-node__extension-container");
         }
-
+        #region Draw
         public virtual void Draw()
         {
             /* TITLE CONTAINER */
 
+            DrawTitle();
+
+            /* INPUT CONTAINER */
+
+            DrawInputPort();
+
+            /* EXTENSION CONTAINER */
+
+            DrawDialogueTextField();
+        }
+        protected void DrawTitle()
+        {
             TextField dialogueNameTextField = DSElementUtility.CreateTextField(DialogueName, null, callback =>
             {
-                TextField target = (TextField) callback.target;
-
+                TextField target = (TextField)callback.target;
                 target.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
 
                 if (string.IsNullOrEmpty(target.value))
@@ -101,15 +112,15 @@ namespace DS.Elements
             );
 
             titleContainer.Insert(0, dialogueNameTextField);
-
-            /* INPUT CONTAINER */
-
+        }
+        protected void DrawInputPort()
+        {
             Port inputPort = this.CreatePort("Dialogue Connection", Orientation.Horizontal, Direction.Input, Port.Capacity.Multi);
 
             inputContainer.Add(inputPort);
-
-            /* EXTENSION CONTAINER */
-
+        }
+        protected void DrawDialogueTextField()
+        {
             VisualElement customDataContainer = new VisualElement();
 
             customDataContainer.AddToClassList("ds-node__custom-data-container");
@@ -129,23 +140,21 @@ namespace DS.Elements
 
             extensionContainer.Add(customDataContainer);
         }
-
+        #endregion
+        #region Disconnections
         public void DisconnectAllPorts()
         {
             DisconnectInputPorts();
             DisconnectOutputPorts();
         }
-
         private void DisconnectInputPorts()
         {
             DisconnectPorts(inputContainer);
         }
-
         private void DisconnectOutputPorts()
         {
             DisconnectPorts(outputContainer);
         }
-
         private void DisconnectPorts(VisualElement container)
         {
             foreach (Port port in container.Children())
@@ -158,22 +167,22 @@ namespace DS.Elements
                 graphView.DeleteElements(port.connections);
             }
         }
-
+        #endregion
+        #region Utilities
         public bool IsStartingNode()
         {
             Port inputPort = (Port) inputContainer.Children().First();
 
             return !inputPort.connected;
         }
-
         public void SetErrorStyle(Color color)
         {
             mainContainer.style.backgroundColor = color;
         }
-
         public void ResetStyle()
         {
             mainContainer.style.backgroundColor = defaultBackgroundColor;
         }
+        #endregion
     }
 }

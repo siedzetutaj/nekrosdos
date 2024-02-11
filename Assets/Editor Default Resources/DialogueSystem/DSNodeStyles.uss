@@ -5,7 +5,10 @@
 	background-color: var(--ds-colors-window-dark-grey-1);
 	padding: var(--ds-metrics-window-pixels-8);
 }
-
+.ds-node__extension-container-height
+{
+	height: var(--ds-metrics-window-pixels-160);
+}
 .ds-node__main-container
 {
 	background-color: var(--ds-colors-window-dark-grey-1);

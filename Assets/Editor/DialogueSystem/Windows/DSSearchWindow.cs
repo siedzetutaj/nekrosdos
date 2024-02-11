@@ -36,6 +36,11 @@ namespace DS.Windows
                 {
                     userData = DSDialogueType.MultipleChoice,
                     level = 2
+                },         
+                new SearchTreeEntry(new GUIContent("If", indentationIcon))
+                {
+                    userData = DSDialogueType.If,
+                    level = 2
                 },
                 new SearchTreeGroupEntry(new GUIContent("Dialogue Groups"), 1),
                 new SearchTreeEntry(new GUIContent("Single Group", indentationIcon))
@@ -57,7 +62,6 @@ namespace DS.Windows
                 case DSDialogueType.SingleChoice:
                 {
                     DSSingleChoiceNode singleChoiceNode = (DSSingleChoiceNode) graphView.CreateNode("DialogueName", DSDialogueType.SingleChoice, localMousePosition);
-
                     graphView.AddElement(singleChoiceNode);
 
                     return true;
@@ -66,8 +70,14 @@ namespace DS.Windows
                 case DSDialogueType.MultipleChoice:
                 {
                     DSMultipleChoiceNode multipleChoiceNode = (DSMultipleChoiceNode) graphView.CreateNode("DialogueName", DSDialogueType.MultipleChoice, localMousePosition);
-
                     graphView.AddElement(multipleChoiceNode);
+
+                    return true;
+                }
+                case DSDialogueType.If:
+                {
+                    DSIfNode ifNode = (DSIfNode)graphView.CreateNode("DialogueName", DSDialogueType.If, localMousePosition);
+                    graphView.AddElement(ifNode);
 
                     return true;
                 }

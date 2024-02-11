@@ -16,7 +16,7 @@ namespace DS.ScriptableObjects
             DialogueGroups = new SerializableDictionary<DSDialogueGroupSO, List<DSDialogueSO>>();
             UngroupedDialogues = new List<DSDialogueSO>();
         }
-
+        #region Getters
         public List<string> GetDialogueGroupNames()
         {
             List<string> dialogueGroupNames = new List<string>();
@@ -28,7 +28,6 @@ namespace DS.ScriptableObjects
 
             return dialogueGroupNames;
         }
-
         public List<string> GetGroupedDialogueNames(DSDialogueGroupSO dialogueGroup, bool startingDialoguesOnly)
         {
             List<DSDialogueSO> groupedDialogues = DialogueGroups[dialogueGroup];
@@ -47,7 +46,6 @@ namespace DS.ScriptableObjects
 
             return groupedDialogueNames;
         }
-
         public List<string> GetUngroupedDialogueNames(bool startingDialoguesOnly)
         {
             List<string> ungroupedDialogueNames = new List<string>();
@@ -64,5 +62,6 @@ namespace DS.ScriptableObjects
 
             return ungroupedDialogueNames;
         }
+        #endregion
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.Events;
 
 namespace DS.Windows
 {
@@ -10,6 +11,8 @@ namespace DS.Windows
     using Data.Save;
     using Elements;
     using Enumerations;
+    using System.Linq;
+    using UnityEditor;
     using Utilities;
 
     public class DSGraphView : GraphView
@@ -18,10 +21,15 @@ namespace DS.Windows
         private DSSearchWindow searchWindow;
 
         private MiniMap miniMap;
+        private Blackboard blackboard;
 
         private SerializableDictionary<string, DSNodeErrorData> ungroupedNodes;
         private SerializableDictionary<string, DSGroupErrorData> groups;
         private SerializableDictionary<Group, SerializableDictionary<string, DSNodeErrorData>> groupedNodes;
+
+        public List<DSExposedProperty> exposedProperties;
+        public  UnityAction<string,string> OnExposedPropertiesListChange;
+        public  UnityAction<string> OnExposedPropertiesListAdd;
 
         private int nameErrorsAmount;
 
@@ -56,10 +64,13 @@ namespace DS.Windows
             groups = new SerializableDictionary<string, DSGroupErrorData>();
             groupedNodes = new SerializableDictionary<Group, SerializableDictionary<string, DSNodeErrorData>>();
 
+            exposedProperties = new List<DSExposedProperty>();
+
             AddManipulators();
             AddGridBackground();
             AddSearchWindow();
             AddMiniMap();
+            AddBlackboard();
 
             OnElementsDeleted();
             OnGroupElementsAdded();
@@ -71,47 +82,7 @@ namespace DS.Windows
             AddMiniMapStyles();
         }
 
-        public override List<Port> GetCompatiblePorts(Port startPort, NodeAdapter nodeAdapter)
-        {
-            List<Port> compatiblePorts = new List<Port>();
-
-            ports.ForEach(port =>
-            {
-                if (startPort == port)
-                {
-                    return;
-                }
-
-                if (startPort.node == port.node)
-                {
-                    return;
-                }
-
-                if (startPort.direction == port.direction)
-                {
-                    return;
-                }
-
-                compatiblePorts.Add(port);
-            });
-
-            return compatiblePorts;
-        }
-
-        private void AddManipulators()
-        {
-            SetupZoom(ContentZoomer.DefaultMinScale, ContentZoomer.DefaultMaxScale);
-
-            this.AddManipulator(new ContentDragger());
-            this.AddManipulator(new SelectionDragger());
-            this.AddManipulator(new RectangleSelector());
-
-            this.AddManipulator(CreateNodeContextualMenu("Add Node (Single Choice)", DSDialogueType.SingleChoice));
-            this.AddManipulator(CreateNodeContextualMenu("Add Node (Multiple Choice)", DSDialogueType.MultipleChoice));
-
-            this.AddManipulator(CreateGroupContextualMenu());
-        }
-
+        #region Creations
         private IManipulator CreateNodeContextualMenu(string actionTitle, DSDialogueType dialogueType)
         {
             ContextualMenuManipulator contextualMenuManipulator = new ContextualMenuManipulator(
@@ -120,7 +91,6 @@ namespace DS.Windows
 
             return contextualMenuManipulator;
         }
-
         private IManipulator CreateGroupContextualMenu()
         {
             ContextualMenuManipulator contextualMenuManipulator = new ContextualMenuManipulator(
@@ -129,7 +99,6 @@ namespace DS.Windows
 
             return contextualMenuManipulator;
         }
-
         public DSGroup CreateGroup(string title, Vector2 position)
         {
             DSGroup group = new DSGroup(title, position);
@@ -152,7 +121,6 @@ namespace DS.Windows
 
             return group;
         }
-
         public DSNode CreateNode(string nodeName, DSDialogueType dialogueType, Vector2 position, bool shouldDraw = true)
         {
             Type nodeType = Type.GetType($"DS.Elements.DS{dialogueType}Node");
@@ -170,7 +138,8 @@ namespace DS.Windows
 
             return node;
         }
-
+        #endregion
+        #region OnChange
         private void OnElementsDeleted()
         {
             deleteSelection = (operationName, askUser) =>
@@ -250,7 +219,6 @@ namespace DS.Windows
                 }
             };
         }
-
         private void OnGroupElementsAdded()
         {
             elementsAddedToGroup = (group, elements) =>
@@ -270,7 +238,6 @@ namespace DS.Windows
                 }
             };
         }
-
         private void OnGroupElementsRemoved()
         {
             elementsRemovedFromGroup = (group, elements) =>
@@ -290,7 +257,6 @@ namespace DS.Windows
                 }
             };
         }
-
         private void OnGroupRenamed()
         {
             groupTitleChanged = (group, newTitle) =>
@@ -321,7 +287,6 @@ namespace DS.Windows
                 AddGroup(dsGroup);
             };
         }
-
         private void OnGraphViewChanged()
         {
             graphViewChanged = (changes) =>
@@ -360,7 +325,22 @@ namespace DS.Windows
                 return changes;
             };
         }
+        #endregion
+        #region Additions
+        private void AddManipulators()
+        {
+            SetupZoom(ContentZoomer.DefaultMinScale, ContentZoomer.DefaultMaxScale);
 
+            this.AddManipulator(new ContentDragger());
+            this.AddManipulator(new SelectionDragger());
+            this.AddManipulator(new RectangleSelector());
+
+            this.AddManipulator(CreateNodeContextualMenu("Add Node (Single Choice)", DSDialogueType.SingleChoice));
+            this.AddManipulator(CreateNodeContextualMenu("Add Node (Multiple Choice)", DSDialogueType.MultipleChoice));
+            this.AddManipulator(CreateNodeContextualMenu("Add Node (If)", DSDialogueType.If));
+
+            this.AddManipulator(CreateGroupContextualMenu());
+        }
         public void AddUngroupedNode(DSNode node)
         {
             string nodeName = node.DialogueName.ToLower();
@@ -391,32 +371,6 @@ namespace DS.Windows
                 ungroupedNodesList[0].SetErrorStyle(errorColor);
             }
         }
-
-        public void RemoveUngroupedNode(DSNode node)
-        {
-            string nodeName = node.DialogueName.ToLower();
-
-            List<DSNode> ungroupedNodesList = ungroupedNodes[nodeName].Nodes;
-
-            ungroupedNodesList.Remove(node);
-
-            node.ResetStyle();
-
-            if (ungroupedNodesList.Count == 1)
-            {
-                --NameErrorsAmount;
-
-                ungroupedNodesList[0].ResetStyle();
-
-                return;
-            }
-
-            if (ungroupedNodesList.Count == 0)
-            {
-                ungroupedNodes.Remove(nodeName);
-            }
-        }
-
         private void AddGroup(DSGroup group)
         {
             string groupName = group.title.ToLower();
@@ -447,32 +401,6 @@ namespace DS.Windows
                 groupsList[0].SetErrorStyle(errorColor);
             }
         }
-
-        private void RemoveGroup(DSGroup group)
-        {
-            string oldGroupName = group.OldTitle.ToLower();
-
-            List<DSGroup> groupsList = groups[oldGroupName].Groups;
-
-            groupsList.Remove(group);
-
-            group.ResetStyle();
-
-            if (groupsList.Count == 1)
-            {
-                --NameErrorsAmount;
-
-                groupsList[0].ResetStyle();
-
-                return;
-            }
-
-            if (groupsList.Count == 0)
-            {
-                groups.Remove(oldGroupName);
-            }
-        }
-
         public void AddGroupedNode(DSNode node, DSGroup group)
         {
             string nodeName = node.DialogueName.ToLower();
@@ -510,7 +438,165 @@ namespace DS.Windows
                 groupedNodesList[0].SetErrorStyle(errorColor);
             }
         }
+        private void AddGridBackground()
+        {
+            GridBackground gridBackground = new GridBackground();
 
+            gridBackground.StretchToParentSize();
+
+            Insert(0, gridBackground);
+        }
+        private void AddSearchWindow()
+        {
+            if (searchWindow == null)
+            {
+                searchWindow = ScriptableObject.CreateInstance<DSSearchWindow>();
+            }
+
+            searchWindow.Initialize(this);
+
+            nodeCreationRequest = context => SearchWindow.Open(new SearchWindowContext(context.screenMousePosition), searchWindow);
+        }
+        private void AddMiniMap()
+        {
+            miniMap = new MiniMap()
+            {
+                anchored = true
+            };
+
+            miniMap.SetPosition(new Rect(15, 50, 200, 180));
+
+            Add(miniMap);
+
+            miniMap.visible = false;
+        }
+        private void AddBlackboard()
+        {
+            blackboard = new Blackboard(this)
+            {
+                title = "properties",
+                addItemRequested = _blackboard =>
+                {
+                    AddPropeprtyToBlackBoard(new DSExposedProperty());
+                },
+                editTextRequested = (blackboard1, element, newValue) =>
+                {
+                    var oldPropertyName = ((BlackboardField)element).text;
+                    if (exposedProperties.Any(x => x.Name == newValue))
+                    {
+                        EditorUtility.DisplayDialog("Error", "This property name already exist", "OK");
+                        return;
+                    }
+
+                    var propertyIndex = exposedProperties.FindIndex(x => x.Name == oldPropertyName);
+                    exposedProperties[propertyIndex].Name = newValue;
+                    ((BlackboardField)element).text = newValue;
+                    OnExposedPropertiesListChange?.Invoke(newValue, oldPropertyName);
+                },
+                scrollable = true,
+            };
+            blackboard.SetPosition(new Rect(5, 50, 250, 600));
+            Add(blackboard);
+        }
+        public void AddPropeprtyToBlackBoard(DSExposedProperty exposedProperty)
+        {
+            var localPropertyName = exposedProperty.Name;
+            var localPropertyValue = exposedProperty.Value;
+            while (exposedProperties.Any(x => x.Name == localPropertyName))
+                localPropertyName = $"{localPropertyName}(1)";
+
+            var property = new DSExposedProperty();
+            property.Name = localPropertyName;
+            property.OldName = localPropertyName;
+            property.Value = localPropertyValue;
+            exposedProperties.Add(property);
+
+            var container = new VisualElement();
+            var blackboardField = new BlackboardField {text = localPropertyName, typeText = "bool property"};
+            container.Add(blackboardField);
+
+            var propertyValue = new Toggle("Value: ")
+            {
+                value = localPropertyValue
+            };
+            propertyValue.RegisterValueChangedCallback(value =>
+            {
+                var changingPropertyIndex = exposedProperties.FindIndex(x => x.Name == property.Name);
+                exposedProperties[changingPropertyIndex].Value = value.newValue;
+            });
+            var blackboardValueRow = new BlackboardRow(blackboardField, propertyValue);
+            container.Add(blackboardValueRow);
+            blackboard.Add(container);
+            OnExposedPropertiesListAdd?.Invoke(localPropertyName);
+        }
+        private void AddStyles()
+        {
+            this.AddStyleSheets(
+                "DialogueSystem/DSGraphViewStyles.uss",
+                "DialogueSystem/DSNodeStyles.uss"
+            );
+        }
+        private void AddMiniMapStyles()
+        {
+            StyleColor backgroundColor = new StyleColor(new Color32(29, 29, 30, 255));
+            StyleColor borderColor = new StyleColor(new Color32(51, 51, 51, 255));
+
+            miniMap.style.backgroundColor = backgroundColor;
+            miniMap.style.borderTopColor = borderColor;
+            miniMap.style.borderRightColor = borderColor;
+            miniMap.style.borderBottomColor = borderColor;
+            miniMap.style.borderLeftColor = borderColor;
+        }
+        #endregion
+        #region Removals
+        public void RemoveUngroupedNode(DSNode node)
+        {
+            string nodeName = node.DialogueName.ToLower();
+
+            List<DSNode> ungroupedNodesList = ungroupedNodes[nodeName].Nodes;
+
+            ungroupedNodesList.Remove(node);
+
+            node.ResetStyle();
+
+            if (ungroupedNodesList.Count == 1)
+            {
+                --NameErrorsAmount;
+
+                ungroupedNodesList[0].ResetStyle();
+
+                return;
+            }
+
+            if (ungroupedNodesList.Count == 0)
+            {
+                ungroupedNodes.Remove(nodeName);
+            }
+        }
+        private void RemoveGroup(DSGroup group)
+        {
+            string oldGroupName = group.OldTitle.ToLower();
+
+            List<DSGroup> groupsList = groups[oldGroupName].Groups;
+
+            groupsList.Remove(group);
+
+            group.ResetStyle();
+
+            if (groupsList.Count == 1)
+            {
+                --NameErrorsAmount;
+
+                groupsList[0].ResetStyle();
+
+                return;
+            }
+
+            if (groupsList.Count == 0)
+            {
+                groups.Remove(oldGroupName);
+            }
+        }
         public void RemoveGroupedNode(DSNode node, DSGroup group)
         {
             string nodeName = node.DialogueName.ToLower();
@@ -542,62 +628,34 @@ namespace DS.Windows
                 }
             }
         }
-
-        private void AddGridBackground()
+        #endregion
+        #region Getters
+        public override List<Port> GetCompatiblePorts(Port startPort, NodeAdapter nodeAdapter)
         {
-            GridBackground gridBackground = new GridBackground();
+            List<Port> compatiblePorts = new List<Port>();
 
-            gridBackground.StretchToParentSize();
-
-            Insert(0, gridBackground);
-        }
-
-        private void AddSearchWindow()
-        {
-            if (searchWindow == null)
+            ports.ForEach(port =>
             {
-                searchWindow = ScriptableObject.CreateInstance<DSSearchWindow>();
-            }
+                if (startPort == port)
+                {
+                    return;
+                }
 
-            searchWindow.Initialize(this);
+                if (startPort.node == port.node)
+                {
+                    return;
+                }
 
-            nodeCreationRequest = context => SearchWindow.Open(new SearchWindowContext(context.screenMousePosition), searchWindow);
+                if (startPort.direction == port.direction)
+                {
+                    return;
+                }
+
+                compatiblePorts.Add(port);
+            });
+
+            return compatiblePorts;
         }
-
-        private void AddMiniMap()
-        {
-            miniMap = new MiniMap()
-            {
-                anchored = true
-            };
-
-            miniMap.SetPosition(new Rect(15, 50, 200, 180));
-
-            Add(miniMap);
-
-            miniMap.visible = false;
-        }
-
-        private void AddStyles()
-        {
-            this.AddStyleSheets(
-                "DialogueSystem/DSGraphViewStyles.uss",
-                "DialogueSystem/DSNodeStyles.uss"
-            );
-        }
-
-        private void AddMiniMapStyles()
-        {
-            StyleColor backgroundColor = new StyleColor(new Color32(29, 29, 30, 255));
-            StyleColor borderColor = new StyleColor(new Color32(51, 51, 51, 255));
-
-            miniMap.style.backgroundColor = backgroundColor;
-            miniMap.style.borderTopColor = borderColor;
-            miniMap.style.borderRightColor = borderColor;
-            miniMap.style.borderBottomColor = borderColor;
-            miniMap.style.borderLeftColor = borderColor;
-        }
-
         public Vector2 GetLocalMousePosition(Vector2 mousePosition, bool isSearchWindow = false)
         {
             Vector2 worldMousePosition = mousePosition;
@@ -611,7 +669,8 @@ namespace DS.Windows
 
             return localMousePosition;
         }
-
+        #endregion
+        #region Utilities
         public void ClearGraph()
         {
             graphElements.ForEach(graphElement => RemoveElement(graphElement));
@@ -619,13 +678,21 @@ namespace DS.Windows
             groups.Clear();
             groupedNodes.Clear();
             ungroupedNodes.Clear();
+            exposedProperties.Clear();
+            blackboard.Clear();
 
             NameErrorsAmount = 0;
         }
-
+        #endregion
+        #region Togglers
         public void ToggleMiniMap()
         {
             miniMap.visible = !miniMap.visible;
+        }  
+        public void ToggleBlackboard()
+        {
+            blackboard.visible = !blackboard.visible;
         }
+        #endregion
     }
 }

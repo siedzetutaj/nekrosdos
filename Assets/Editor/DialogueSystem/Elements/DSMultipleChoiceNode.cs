@@ -24,7 +24,6 @@ namespace DS.Elements
 
             Choices.Add(choiceData);
         }
-
         public override void Draw()
         {
             base.Draw();
@@ -60,7 +59,6 @@ namespace DS.Elements
 
             RefreshExpandedState();
         }
-
         private Port CreateChoicePort(object userData)
         {
             Port choicePort = this.CreatePort();
