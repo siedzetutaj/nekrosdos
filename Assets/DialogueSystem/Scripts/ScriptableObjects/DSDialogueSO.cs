@@ -5,6 +5,7 @@ namespace DS.ScriptableObjects
 {
     using Data;
     using Enumerations;
+    using Windows;
 
     public class DSDialogueSO : ScriptableObject
     {
@@ -13,14 +14,16 @@ namespace DS.ScriptableObjects
         [field: SerializeField] public List<DSDialogueChoiceData> Choices { get; set; }
         [field: SerializeField] public DSDialogueType DialogueType { get; set; }
         [field: SerializeField] public bool IsStartingDialogue { get; set; }
+        [field: SerializeField] public DSExposedProperty ExposedProperty { get; set; }
 
-        public void Initialize(string dialogueName, string text, List<DSDialogueChoiceData> choices, DSDialogueType dialogueType, bool isStartingDialogue)
+        public void Initialize(string dialogueName, string text, List<DSDialogueChoiceData> choices, DSDialogueType dialogueType, bool isStartingDialogue, DSExposedProperty exposedProperty)
         {
             DialogueName = dialogueName;
             Text = text;
             Choices = choices;
             DialogueType = dialogueType;
             IsStartingDialogue = isStartingDialogue;
+            ExposedProperty = exposedProperty;
         }
     }
 }

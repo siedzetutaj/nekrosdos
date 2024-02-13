@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace DS.Data.Save
 {
+    using DS.Windows;
     using Enumerations;
 
     [Serializable]
@@ -16,5 +17,6 @@ namespace DS.Data.Save
         [field: SerializeField] public string GroupID { get; set; }
         [field: SerializeField] public DSDialogueType DialogueType { get; set; }
         [field: SerializeField] public Vector2 Position { get; set; }
+        [field: SerializeField] public DSExposedProperty ExposedProperty { get; set; }
     }
 }

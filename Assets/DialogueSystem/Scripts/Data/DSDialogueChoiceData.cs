@@ -4,7 +4,6 @@ using UnityEngine;
 namespace DS.Data
 {
     using ScriptableObjects;
-
     [Serializable]
     public class DSDialogueChoiceData
     {

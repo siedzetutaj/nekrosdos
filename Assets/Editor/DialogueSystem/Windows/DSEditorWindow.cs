@@ -5,7 +5,6 @@ using UnityEngine.UIElements;
 
 namespace DS.Windows
 {
-    using System;
     using Utilities;
 
     public class DSEditorWindow : EditorWindow

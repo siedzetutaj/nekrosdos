@@ -16,8 +16,12 @@ MonoBehaviour:
   <Text>k__BackingField: Dialogue text.
   <Choices>k__BackingField:
   - <Text>k__BackingField: True
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 47d3501228c95cf4bbff5cdd6bcf6fcb, type: 2}
   - <Text>k__BackingField: False
     <NextDialogue>k__BackingField: {fileID: 0}
   <DialogueType>k__BackingField: 2
   <IsStartingDialogue>k__BackingField: 1
+  <ExposedProperty>k__BackingField:
+    Name: krzys
+    OldName: new Bool(1)(1)
+    Value: 1

@@ -71,6 +71,7 @@ namespace DS.Utilities
         private static void SaveExposedProperites(DSGraphSaveDataSO graphData)
         {
             graphData.ExposedProperties.AddRange(graphView.exposedProperties);
+            EditorUtility.SetDirty(graphData);
         }
         private static void SaveGroups(DSGraphSaveDataSO graphData, DSDialogueContainerSO dialogueContainer)
         {
@@ -151,10 +152,11 @@ namespace DS.Utilities
                 Text = node.Text,
                 GroupID = node.Group?.ID,
                 DialogueType = node.DialogueType,
-                Position = node.GetPosition().position
-            };
+                Position = node.GetPosition().position,
+                ExposedProperty = node.exposedProperty
+        };
 
-            graphData.Nodes.Add(nodeData);
+        graphData.Nodes.Add(nodeData);
         }
         private static void SaveNodeToScriptableObject(DSNode node, DSDialogueContainerSO dialogueContainer)
         {
@@ -178,7 +180,8 @@ namespace DS.Utilities
                 node.Text,
                 ConvertNodeChoicesToDialogueChoices(node.Choices),
                 node.DialogueType,
-                node.IsStartingNode()
+                node.IsStartingNode(),
+                node.exposedProperty
             );
 
             createdDialogues.Add(node.ID, dialogue);
@@ -313,7 +316,7 @@ namespace DS.Utilities
                 node.ID = nodeData.ID;
                 node.Choices = choices;
                 node.Text = nodeData.Text;
-
+                node.exposedProperty = nodeData.ExposedProperty;
                 node.Draw();
 
                 graphView.AddElement(node);

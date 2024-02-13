@@ -1,6 +1,7 @@
 
 namespace DS.Windows
 {
+
     [System.Serializable]
     public class DSExposedProperty 
     {
