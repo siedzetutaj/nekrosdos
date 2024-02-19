@@ -2,7 +2,6 @@ using DS.Elements;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.UIElements;
 using UnityEditor.Experimental.GraphView;
 
@@ -47,19 +46,27 @@ namespace DS.Elements
 
                 outputContainer.Add(choicePort);
             }
-            extensionContainer.AddToClassList("ds-node__extension-container-height");
 
-            DrawExposedPropertyList();
-            DrawExposedPropertyText();
+            Button addChoiceButton = DSElementUtility.CreateButton("Add Choice", () =>
+            {
+                DSChoiceSaveData choiceData = new DSChoiceSaveData()
+                {
+                    Text = "New Choice"
+                };
 
-            extensionContainer.Add(exposedPropertyText);
-            extensionContainer.Add(chooseExposedProperty);
+                Choices.Add(choiceData);
+                DrawExposedPropertiesContainer();
+                //DrawExposedPropertyList();
+                //DrawExposedPropertyText();
 
+                //extensionContainer.Add(exposedPropertyText);
+                //extensionContainer.Add(chooseExposedProperty);
+                //RefreshExpandedState();
+            });
+            addChoiceButton.AddToClassList("ds-node__button");
+
+            mainContainer.Insert(1, addChoiceButton);
             RefreshExpandedState();
         }
-
-
-
-
     }
 }

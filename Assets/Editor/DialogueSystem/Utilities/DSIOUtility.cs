@@ -153,7 +153,7 @@ namespace DS.Utilities
                 GroupID = node.Group?.ID,
                 DialogueType = node.DialogueType,
                 Position = node.GetPosition().position,
-                ExposedProperty = node.exposedProperty
+                ExposedProperties = node.ExposedPropertyNodeElements.ConvertAll(x=>x.exposedProperty)
         };
 
         graphData.Nodes.Add(nodeData);
@@ -181,7 +181,7 @@ namespace DS.Utilities
                 ConvertNodeChoicesToDialogueChoices(node.Choices),
                 node.DialogueType,
                 node.IsStartingNode(),
-                node.exposedProperty
+                node.ExposedPropertyNodeElements
             );
 
             createdDialogues.Add(node.ID, dialogue);
@@ -316,7 +316,15 @@ namespace DS.Utilities
                 node.ID = nodeData.ID;
                 node.Choices = choices;
                 node.Text = nodeData.Text;
-                node.exposedProperty = nodeData.ExposedProperty;
+                foreach(var property in nodeData.ExposedProperties)
+                {
+                    ExposedPropertyNodeElement element = new ExposedPropertyNodeElement() 
+                    { 
+                        exposedProperty = property
+                    };
+                    node.ExposedPropertyNodeElements.Add(element);
+                }
+              //  node.ExposedPropertyNodeElements = nodeData.ExposedProperties;
                 node.Draw();
 
                 graphView.AddElement(node);

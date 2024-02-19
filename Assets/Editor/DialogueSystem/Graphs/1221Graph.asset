@@ -71,7 +71,16 @@ MonoBehaviour:
       Name: kasia
       OldName: new Bool
       Value: 1
-  <ExposedProperties>k__BackingField: []
+  <ExposedProperties>k__BackingField:
+  - Name: kasia
+    OldName: new Bool
+    Value: 1
+  - Name: marek
+    OldName: new Bool(1)
+    Value: 1
+  - Name: krzys
+    OldName: new Bool(1)(1)
+    Value: 1
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNodeNames>k__BackingField:
   - DialogueName

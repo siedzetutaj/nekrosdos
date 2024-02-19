@@ -4,6 +4,7 @@ using UnityEngine;
 namespace DS.ScriptableObjects
 {
     using Data;
+    using DS.Elements;
     using Enumerations;
     using Windows;
 
@@ -14,16 +15,16 @@ namespace DS.ScriptableObjects
         [field: SerializeField] public List<DSDialogueChoiceData> Choices { get; set; }
         [field: SerializeField] public DSDialogueType DialogueType { get; set; }
         [field: SerializeField] public bool IsStartingDialogue { get; set; }
-        [field: SerializeField] public DSExposedProperty ExposedProperty { get; set; }
+        [field: SerializeField] public List<ExposedPropertyNodeElement> ExposedProperties { get; set; }
 
-        public void Initialize(string dialogueName, string text, List<DSDialogueChoiceData> choices, DSDialogueType dialogueType, bool isStartingDialogue, DSExposedProperty exposedProperty)
+        public void Initialize(string dialogueName, string text, List<DSDialogueChoiceData> choices, DSDialogueType dialogueType, bool isStartingDialogue, List<ExposedPropertyNodeElement> exposedProperties)
         {
             DialogueName = dialogueName;
             Text = text;
             Choices = choices;
             DialogueType = dialogueType;
             IsStartingDialogue = isStartingDialogue;
-            ExposedProperty = exposedProperty;
+            ExposedProperties = exposedProperties;
         }
     }
 }

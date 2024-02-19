@@ -7,11 +7,45 @@ using UnityEngine.UIElements;
 
 namespace DS.Elements
 {
+    using Codice.CM.Client.Differences.Merge;
     using Data.Save;
     using Enumerations;
+    using System.Net;
     using Utilities;
     using Windows;
 
+    [Serializable]
+    public class ExposedPropertyNodeElement 
+    {
+        [field: SerializeField] public DSExposedProperty exposedProperty;
+        [field: SerializeField] public ListView chooseExposedProperty;
+        [field: SerializeField] public TextElement exposedPropertyText;
+        [field: SerializeField] public DSGraphView graphView;
+
+        public virtual void Initialize(DSGraphView dsGraphView)
+        {
+            graphView = dsGraphView;
+        }
+        public void OnListSelected(IEnumerable<object> obj)
+        {
+            foreach (object objItem in obj)
+            {
+                exposedProperty = graphView.exposedProperties.Find(x => x.Name == objItem.ToString());
+                exposedPropertyText.text = $"Wybrana opcja = {exposedProperty.Name}";
+            }
+        }
+        public void OnListAddProperty(string Name)
+        {
+            chooseExposedProperty.itemsSource.Add(Name);
+            chooseExposedProperty.Rebuild();
+        }
+        public void OnListChangeProperty(string newName, string oldName)
+        {
+            int index = chooseExposedProperty.itemsSource.IndexOf(oldName);
+            chooseExposedProperty.itemsSource[index] = newName;
+            chooseExposedProperty.Rebuild();
+        }
+    }
     public class DSNode : Node
     {
         public string ID { get; set; }
@@ -21,10 +55,7 @@ namespace DS.Elements
         public DSDialogueType DialogueType { get; set; }
         public DSGroup Group { get; set; }
 
-        public DSExposedProperty exposedProperty;
-        protected ListView chooseExposedProperty;
-        protected TextElement exposedPropertyText;
-
+        public List<ExposedPropertyNodeElement> ExposedPropertyNodeElements { get; set; }
 
         protected DSGraphView graphView;
         private Color defaultBackgroundColor;
@@ -43,6 +74,7 @@ namespace DS.Elements
 
             DialogueName = nodeName;
             Choices = new List<DSChoiceSaveData>();
+            ExposedPropertyNodeElements = new List<ExposedPropertyNodeElement>();
             Text = "Dialogue text.";
 
             SetPosition(new Rect(position, Vector2.zero));
@@ -66,7 +98,7 @@ namespace DS.Elements
 
             /* EXTENSION CONTAINER */
 
-            DrawExposedContainer();
+            DrawExposedPropertiesContainer();
             DrawDialogueTextField();
         }
 
@@ -126,44 +158,93 @@ namespace DS.Elements
 
             inputContainer.Add(inputPort);
         }
-        protected void DrawExposedContainer()
+        protected void DrawExposedPropertiesContainer()
         {
+            //Load
+
+            //Create New
             VisualElement customDataContainer = new VisualElement();
             customDataContainer.AddToClassList("ds-node__custom-data-container");
             Foldout foldout = DSElementUtility.CreateFoldout("Dialogue Choice Effect");
             foldout.value = false;
-            DrawExposedPropertyList();
-            DrawExposedPropertyText();
 
-            foldout.Add(exposedPropertyText);
-            foldout.Add(chooseExposedProperty);
+            Button addPropertyButton = DSElementUtility.CreateButton("Add Property", () =>
+            {
+                DrawExposedPropertyList(foldout,ExposedPropertyNodeElements);
+            });
+
+            foldout.Add(addPropertyButton);
+            if (ExposedPropertyNodeElements.Count > 0)
+            {
+                List<ExposedPropertyNodeElement> propertyNodeElements = new List<ExposedPropertyNodeElement>();
+                propertyNodeElements.AddRange(ExposedPropertyNodeElements);
+                foreach (var property in ExposedPropertyNodeElements)
+                {
+                    DrawExposedPropertyList(foldout, propertyNodeElements, property, false);
+                }
+                ExposedPropertyNodeElements = propertyNodeElements;
+            }
             customDataContainer.Add(foldout);
 
             extensionContainer.Add(customDataContainer);
+
         }
-        protected void DrawExposedPropertyList()
+        protected void DrawExposedPropertyList(Foldout foldout, List<ExposedPropertyNodeElement> exposedPropertyNodeElements, ExposedPropertyNodeElement exposedPropertyElement = null,bool isNew = true)
         {
-            chooseExposedProperty = new ListView(graphView.exposedProperties.ConvertAll(x => x.Name))
+            exposedPropertyElement ??= new ExposedPropertyNodeElement();
+            exposedPropertyElement.Initialize(graphView);
+
+            VisualElement propertyListContainer = new VisualElement();
+            propertyListContainer.AddToClassList("ds-node__custom-data-container");
+
+            exposedPropertyElement.chooseExposedProperty = new ListView(graphView.exposedProperties.ConvertAll(x => x.Name))
             {
                 headerTitle = "Properties",
                 showFoldoutHeader = true,
 
             };
-            chooseExposedProperty.AddToClassList("ds-node__extension-container-height");
-            graphView.OnExposedPropertiesListAdd += OnListAddProperty;
-            graphView.OnExposedPropertiesListChange += OnListChangeProperty;
-            chooseExposedProperty.selectionChanged += OnListSelected;
-        }
-        protected void DrawExposedPropertyText()
-        {
-            exposedPropertyText = new TextElement()
+            exposedPropertyElement.chooseExposedProperty.AddToClassList("ds-node__extension-container-height");
+            graphView.OnExposedPropertiesListAdd += exposedPropertyElement.OnListAddProperty;
+            graphView.OnExposedPropertiesListChange += exposedPropertyElement.OnListChangeProperty;
+            exposedPropertyElement.chooseExposedProperty.selectionChanged += exposedPropertyElement.OnListSelected;
+
+            exposedPropertyElement.exposedPropertyText = new TextElement()
             {
                 text = "Wybrana opcja = null"
             };
-            if (exposedProperty != null)
+
+            if (exposedPropertyElement.exposedProperty != null)
             {
-                exposedPropertyText.text = $"Wybrana opcja = {exposedProperty.Name}";
+                exposedPropertyElement.exposedPropertyText.text = $"Wybrana opcja = {exposedPropertyElement.exposedProperty.Name}";
             }
+            propertyListContainer.Add(exposedPropertyElement.exposedPropertyText);
+            propertyListContainer.Add(exposedPropertyElement.chooseExposedProperty);
+            DrawDeleteButton(foldout, propertyListContainer,exposedPropertyElement);
+
+            if(isNew)
+                exposedPropertyNodeElements.Add(exposedPropertyElement);
+            else
+            {
+                int index = exposedPropertyNodeElements.FindIndex(x => x.exposedProperty == exposedPropertyElement.exposedProperty);
+                exposedPropertyNodeElements[index] = exposedPropertyElement;
+            }
+                
+            foldout.Add(propertyListContainer);
+
+        }
+        private void DrawDeleteButton(Foldout foldout, VisualElement container, ExposedPropertyNodeElement element)
+        {
+            Button deleteButton = DSElementUtility.CreateButton("X", () =>
+            {
+                //Choices.Remove(choiceData);
+
+                element.exposedProperty = null;
+                element.exposedPropertyText = null;
+                foldout.Remove(container);
+            });
+
+            deleteButton.AddToClassList("ds-node__button");
+            container.Insert(0,deleteButton);
         }
         protected void DrawDialogueTextField()
         {
@@ -227,25 +308,9 @@ namespace DS.Elements
         {
             mainContainer.style.backgroundColor = defaultBackgroundColor;
         }
-        private void OnListSelected(IEnumerable<object> obj)
-        {
-            foreach (object objItem in obj)
-            {
-                exposedProperty = graphView.exposedProperties.Find(x => x.Name == objItem.ToString());
-                exposedPropertyText.text = $"Wybrana opcja = {exposedProperty.Name}";
-            }
-        }
-        private void OnListAddProperty(string Name)
-        {
-            chooseExposedProperty.itemsSource.Add(Name);
-            chooseExposedProperty.Rebuild();
-        }
-        private void OnListChangeProperty(string newName, string oldName)
-        {
-            int index = chooseExposedProperty.itemsSource.IndexOf(oldName);
-            chooseExposedProperty.itemsSource[index] = newName;
-            chooseExposedProperty.Rebuild();
-        }
+
+
+
         #endregion
     }
 }

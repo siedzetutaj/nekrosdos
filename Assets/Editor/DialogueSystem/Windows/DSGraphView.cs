@@ -500,7 +500,7 @@ namespace DS.Windows
         }
         public void AddPropeprtyToBlackBoard(DSExposedProperty exposedProperty)
         {
-            var localPropertyName = exposedProperty.Name;
+            var localPropertyName = "New Bool";
             var localPropertyValue = exposedProperty.Value;
             while (exposedProperties.Any(x => x.Name == localPropertyName))
                 localPropertyName = $"{localPropertyName}(1)";
