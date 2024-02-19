@@ -15,47 +15,39 @@ MonoBehaviour:
   <FileName>k__BackingField: DialoguesFileName
   <Groups>k__BackingField: []
   <Nodes>k__BackingField:
-  - <ID>k__BackingField: e1b8cfb5-70e9-41b7-9530-67cd72a382c3
-    <Name>k__BackingField: 12
+  - <ID>k__BackingField: 861096db-cdc2-4bdd-baf4-02e418fe3d9f
+    <Name>k__BackingField: DialogueName
     <Text>k__BackingField: Dialogue text.
     <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
+    - <Text>k__BackingField: True
       <NodeID>k__BackingField: 
-    - <Text>k__BackingField: New Choice
-      <NodeID>k__BackingField: 
-    - <Text>k__BackingField: New Choice
-      <NodeID>k__BackingField: 
-    - <Text>k__BackingField: New Choice
-      <NodeID>k__BackingField: 
-    - <Text>k__BackingField: New Choice
+    - <Text>k__BackingField: False
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: 
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 596, y: 173}
+    <DialogueType>k__BackingField: 2
+    <Position>k__BackingField: {x: 592, y: 274}
+    <ExposedProperties>k__BackingField:
+    - Name: New Bool
+      OldName: New Bool
+      Value: 1
   <ExposedProperties>k__BackingField:
-  - Name: new Bool
-    OldName: new Bool
+  - Name: New Bool
+    OldName: New Bool
     Value: 1
-  - Name: new Bool(1)
-    OldName: new Bool(1)
+  - Name: New Bool(1)
+    OldName: New Bool(1)
     Value: 1
-  - Name: new Bool(1)(1)
-    OldName: new Bool(1)(1)
+  - Name: New Bool(1)(1)
+    OldName: New Bool(1)(1)
     Value: 1
-  - Name: new Bool(1)(1)(1)
-    OldName: new Bool(1)(1)(1)
+  - Name: New Bool(1)(1)(1)
+    OldName: New Bool(1)(1)(1)
     Value: 1
-  - Name: new Bool(1)(1)(1)(1)
-    OldName: new Bool(1)(1)(1)(1)
-    Value: 1
-  - Name: new Bool(1)(1)(1)(1)(1)
-    OldName: new Bool(1)(1)(1)(1)(1)
-    Value: 1
-  - Name: new Bool(1)(1)(1)(1)(1)(1)
-    OldName: new Bool(1)(1)(1)(1)(1)(1)
+  - Name: New Bool(1)(1)(1)(1)
+    OldName: New Bool(1)(1)(1)(1)
     Value: 1
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNodeNames>k__BackingField:
-  - 12
+  - DialogueName
   <OldGroupedNodeNames>k__BackingField:
     list: []

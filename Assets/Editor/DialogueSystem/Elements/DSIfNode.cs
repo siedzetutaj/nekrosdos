@@ -47,25 +47,8 @@ namespace DS.Elements
                 outputContainer.Add(choicePort);
             }
 
-            Button addChoiceButton = DSElementUtility.CreateButton("Add Choice", () =>
-            {
-                DSChoiceSaveData choiceData = new DSChoiceSaveData()
-                {
-                    Text = "New Choice"
-                };
+            DrawExposedPropertiesContainer();
 
-                Choices.Add(choiceData);
-                DrawExposedPropertiesContainer();
-                //DrawExposedPropertyList();
-                //DrawExposedPropertyText();
-
-                //extensionContainer.Add(exposedPropertyText);
-                //extensionContainer.Add(chooseExposedProperty);
-                //RefreshExpandedState();
-            });
-            addChoiceButton.AddToClassList("ds-node__button");
-
-            mainContainer.Insert(1, addChoiceButton);
             RefreshExpandedState();
         }
     }

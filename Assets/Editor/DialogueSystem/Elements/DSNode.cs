@@ -237,9 +237,7 @@ namespace DS.Elements
             Button deleteButton = DSElementUtility.CreateButton("X", () =>
             {
                 //Choices.Remove(choiceData);
-
-                element.exposedProperty = null;
-                element.exposedPropertyText = null;
+                ExposedPropertyNodeElements.Remove(element);
                 foldout.Remove(container);
             });
 

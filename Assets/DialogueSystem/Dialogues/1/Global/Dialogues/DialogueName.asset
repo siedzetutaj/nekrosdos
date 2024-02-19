@@ -15,10 +15,12 @@ MonoBehaviour:
   <DialogueName>k__BackingField: DialogueName
   <Text>k__BackingField: Dialogue text.
   <Choices>k__BackingField:
-  - <Text>k__BackingField: Next Dialogue
+  - <Text>k__BackingField: True
     <NextDialogue>k__BackingField: {fileID: 0}
-  <DialogueType>k__BackingField: 0
-  <IsStartingDialogue>k__BackingField: 0
+  - <Text>k__BackingField: False
+    <NextDialogue>k__BackingField: {fileID: 0}
+  <DialogueType>k__BackingField: 2
+  <IsStartingDialogue>k__BackingField: 1
   <ExposedProperties>k__BackingField:
   - exposedProperty:
       Name: New Bool
@@ -27,8 +29,4 @@ MonoBehaviour:
   - exposedProperty:
       Name: 
       OldName: 
-      Value: 1
-  - exposedProperty:
-      Name: New Bool(1)(1)
-      OldName: New Bool(1)(1)
       Value: 1
