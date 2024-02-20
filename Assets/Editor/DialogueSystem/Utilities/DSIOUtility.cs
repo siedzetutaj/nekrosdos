@@ -153,7 +153,7 @@ namespace DS.Utilities
                 GroupID = node.Group?.ID,
                 DialogueType = node.DialogueType,
                 Position = node.GetPosition().position,
-                ExposedProperties = node.ExposedPropertyNodeElements.ConvertAll(x=>x.exposedProperty)
+                ExposedProperties = node.ExposedPropertyNodeElements.ConvertAll(x=>x.property)
         };
 
         graphData.Nodes.Add(nodeData);
@@ -320,7 +320,7 @@ namespace DS.Utilities
                 {
                     ExposedPropertyNodeElement element = new ExposedPropertyNodeElement() 
                     { 
-                        exposedProperty = property
+                        property = property
                     };
                     node.ExposedPropertyNodeElements.Add(element);
                 }

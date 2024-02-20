@@ -17,9 +17,9 @@ namespace DS.Elements
     [Serializable]
     public class ExposedPropertyNodeElement 
     {
-        [field: SerializeField] public DSExposedProperty exposedProperty;
-        [field: SerializeField] public ListView chooseExposedProperty;
-        [field: SerializeField] public TextElement exposedPropertyText;
+        [field: SerializeField] public DSExposedProperty property;
+        [field: SerializeField] public ListView listView;
+        [field: SerializeField] public Toggle toggle;
         [field: SerializeField] public DSGraphView graphView;
 
         public virtual void Initialize(DSGraphView dsGraphView)
@@ -30,20 +30,21 @@ namespace DS.Elements
         {
             foreach (object objItem in obj)
             {
-                exposedProperty = graphView.exposedProperties.Find(x => x.Name == objItem.ToString());
-                exposedPropertyText.text = $"Wybrana opcja = {exposedProperty.Name}";
+                property = graphView.exposedProperties.Find(x => x.Name == objItem.ToString());
+                toggle.text = $"Wybrana opcja = {property.Name}";
+                toggle.value = true;
             }
         }
         public void OnListAddProperty(string Name)
         {
-            chooseExposedProperty.itemsSource.Add(Name);
-            chooseExposedProperty.Rebuild();
+            listView.itemsSource.Add(Name);
+            listView.Rebuild();
         }
         public void OnListChangeProperty(string newName, string oldName)
         {
-            int index = chooseExposedProperty.itemsSource.IndexOf(oldName);
-            chooseExposedProperty.itemsSource[index] = newName;
-            chooseExposedProperty.Rebuild();
+            int index = listView.itemsSource.IndexOf(oldName);
+            listView.itemsSource[index] = newName;
+            listView.Rebuild();
         }
     }
     public class DSNode : Node
@@ -197,35 +198,41 @@ namespace DS.Elements
             VisualElement propertyListContainer = new VisualElement();
             propertyListContainer.AddToClassList("ds-node__custom-data-container");
 
-            exposedPropertyElement.chooseExposedProperty = new ListView(graphView.exposedProperties.ConvertAll(x => x.Name))
+            exposedPropertyElement.listView = new ListView(graphView.exposedProperties.ConvertAll(x => x.Name))
             {
                 headerTitle = "Properties",
                 showFoldoutHeader = true,
 
             };
-            exposedPropertyElement.chooseExposedProperty.AddToClassList("ds-node__extension-container-height");
+            exposedPropertyElement.listView.AddToClassList("ds-node__extension-container-height");
             graphView.OnExposedPropertiesListAdd += exposedPropertyElement.OnListAddProperty;
             graphView.OnExposedPropertiesListChange += exposedPropertyElement.OnListChangeProperty;
-            exposedPropertyElement.chooseExposedProperty.selectionChanged += exposedPropertyElement.OnListSelected;
+            exposedPropertyElement.listView.selectionChanged += exposedPropertyElement.OnListSelected;
 
-            exposedPropertyElement.exposedPropertyText = new TextElement()
+            exposedPropertyElement.toggle = new Toggle()
             {
-                text = "Wybrana opcja = null"
+                text = "Wybrana opcja = null",
             };
 
-            if (exposedPropertyElement.exposedProperty != null)
+            if (exposedPropertyElement.property != null)
             {
-                exposedPropertyElement.exposedPropertyText.text = $"Wybrana opcja = {exposedPropertyElement.exposedProperty.Name}";
+                exposedPropertyElement.toggle.text = $"Wybrana opcja = {exposedPropertyElement.property.Name}";
+                exposedPropertyElement.toggle.value = exposedPropertyElement.property.Value;
+                exposedPropertyElement.toggle.RegisterValueChangedCallback(value =>
+                {
+                    var changingPropertyIndex = ExposedPropertyNodeElements.FindIndex(x => x == exposedPropertyElement);
+                    ExposedPropertyNodeElements[changingPropertyIndex].property.Value = value.newValue;
+                });
             }
-            propertyListContainer.Add(exposedPropertyElement.exposedPropertyText);
-            propertyListContainer.Add(exposedPropertyElement.chooseExposedProperty);
+            propertyListContainer.Add(exposedPropertyElement.toggle);
+            propertyListContainer.Add(exposedPropertyElement.listView);
             DrawDeleteButton(foldout, propertyListContainer,exposedPropertyElement);
 
             if(isNew)
                 exposedPropertyNodeElements.Add(exposedPropertyElement);
             else
             {
-                int index = exposedPropertyNodeElements.FindIndex(x => x.exposedProperty == exposedPropertyElement.exposedProperty);
+                int index = exposedPropertyNodeElements.FindIndex(x => x.property == exposedPropertyElement.property);
                 exposedPropertyNodeElements[index] = exposedPropertyElement;
             }
                 

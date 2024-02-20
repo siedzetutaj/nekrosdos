@@ -15,7 +15,7 @@ MonoBehaviour:
   <FileName>k__BackingField: 1
   <Groups>k__BackingField: []
   <Nodes>k__BackingField:
-  - <ID>k__BackingField: 09ad4b61-ee14-4c01-bca8-1a9efdd73ed3
+  - <ID>k__BackingField: 96fdfa21-814e-4ee8-af84-d4ca3d0ccfee
     <Name>k__BackingField: DialogueName
     <Text>k__BackingField: Dialogue text.
     <Choices>k__BackingField:
@@ -25,15 +25,30 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 2
-    <Position>k__BackingField: {x: 612, y: 747}
+    <Position>k__BackingField: {x: 580, y: 211}
     <ExposedProperties>k__BackingField:
     - Name: New Bool
       OldName: New Bool
       Value: 1
-    - Name: 
-      OldName: 
-      Value: 1
-  <ExposedProperties>k__BackingField: []
+    - Name: New Bool(1)(1)
+      OldName: New Bool(1)(1)
+      Value: 0
+    - Name: New Bool(1)(1)
+      OldName: New Bool(1)(1)
+      Value: 0
+  <ExposedProperties>k__BackingField:
+  - Name: New Bool
+    OldName: New Bool
+    Value: 1
+  - Name: New Bool(1)
+    OldName: New Bool(1)
+    Value: 1
+  - Name: New Bool(1)(1)
+    OldName: New Bool(1)(1)
+    Value: 1
+  - Name: New Bool(1)(1)(1)
+    OldName: New Bool(1)(1)(1)
+    Value: 1
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNodeNames>k__BackingField:
   - DialogueName

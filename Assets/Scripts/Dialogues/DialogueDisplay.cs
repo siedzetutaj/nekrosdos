@@ -1,11 +1,13 @@
 using DS;
 using DS.Data;
 using DS.ScriptableObjects;
+using DS.Enumerations;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UIElements;
 using System;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 
 public class DialogueDisplay : MonoBehaviour
 {
@@ -46,19 +48,19 @@ public class DialogueDisplay : MonoBehaviour
         {
             isSingleChoice = false;
             CreateButtons();
-        }        
+        }
     }
     private void CreateButtons()
     {
-        foreach(DSDialogueChoiceData dialogueSO in currentDialogue.Choices)
+        foreach (DSDialogueChoiceData dialogueSO in currentDialogue.Choices)
         {
             GameObject button = Instantiate(buttonPrefab, contentUI.transform);
             DialogueButton dButton = button.GetComponent<DialogueButton>();
             dButton.text.text = dialogueSO.Text;
             dButton.choiceNumber = currentDialogue.Choices.IndexOf(dialogueSO);
-            dButton.button.onClick.AddListener(() => 
-            { 
-                AddButtonTextToContainer(dialogueSO.Text); 
+            dButton.button.onClick.AddListener(() =>
+            {
+                AddButtonTextToContainer(dialogueSO.Text);
                 OnOptionChosen(dButton.choiceNumber);
             });
             buttonList.Add(button);
@@ -77,6 +79,26 @@ public class DialogueDisplay : MonoBehaviour
 
         DSDialogueSO nextDialogue = currentDialogue.Choices[choiceIndex].NextDialogue;
 
+        if (nextDialogue.DialogueType == DSDialogueType.If)
+        {
+            bool isTrue = false;
+            foreach (var property in nextDialogue.ExposedProperties)
+            {
+                if (property.property.Value)
+                    isTrue = true;
+                break;
+            }
+            if (isTrue)
+            {
+                nextDialogue = nextDialogue.Choices[0].NextDialogue;
+            }
+            else
+            {
+                nextDialogue = nextDialogue.Choices[1].NextDialogue;
+            }
+
+        }
+
         if (nextDialogue == null)
         {
             return; // No more dialogues to show, do whatever you want, like setting the currentDialogue to the startingDialogue
@@ -89,7 +111,7 @@ public class DialogueDisplay : MonoBehaviour
 
     private void RemoveButonsFromContainer()
     {
-        if (buttonList.Count>=1)
+        if (buttonList.Count >= 1)
         {
             foreach (GameObject button in buttonList)
             {
