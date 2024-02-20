@@ -7,6 +7,6 @@ namespace DS.Windows
     {
         public string Name ;
         public string OldName;
-        public bool Value = true;
+        public bool Value = false;
     }
 }
