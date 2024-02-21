@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: Retes5
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: Retes5
+  <Text>k__BackingField: "A co si\u0119 na niego ju\u017C wtedy wd\xF3wka Anielka
+    powyklina\u0142a... Pany... P\xF3\u0142 wiochy s\u0142ysza\u0142o. Najpierw zacz\u0119la
+    o..."
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: d9b9183dbb70cc54fa176ce0bcd0b4bc, type: 2}
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 0
+  <ExposedProperties>k__BackingField: []
