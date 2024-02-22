@@ -59,7 +59,7 @@ namespace DS.Elements
         public List<ExposedPropertyNodeElement> ExposedPropertyNodeElements { get; set; }
 
         protected DSGraphView graphView;
-        private Color defaultBackgroundColor;
+        protected Color defaultBackgroundColor;
 
         public override void BuildContextualMenu(ContextualMenuPopulateEvent evt)
         {

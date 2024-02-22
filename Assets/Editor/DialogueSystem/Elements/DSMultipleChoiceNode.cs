@@ -57,6 +57,9 @@ namespace DS.Elements
                 outputContainer.Add(choicePort);
             }
 
+            defaultBackgroundColor = Color.blue;
+            mainContainer.style.backgroundColor = defaultBackgroundColor;
+
             RefreshExpandedState();
         }
         private Port CreateChoicePort(object userData)

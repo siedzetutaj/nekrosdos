@@ -13,12 +13,7 @@ namespace DS.Data.Error
 
         private void GenerateRandomColor()
         {
-            Color = new Color32(
-                (byte) Random.Range(65, 256),
-                (byte) Random.Range(50, 176),
-                (byte) Random.Range(50, 176),
-                255
-            );
+            Color = Color.red;
         }
     }
 }

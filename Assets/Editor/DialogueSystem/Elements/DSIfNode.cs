@@ -49,6 +49,9 @@ namespace DS.Elements
 
             DrawExposedPropertiesContainer();
 
+            defaultBackgroundColor = Color.green;
+            mainContainer.style.backgroundColor = defaultBackgroundColor;
+
             RefreshExpandedState();
         }
     }

@@ -39,6 +39,9 @@ namespace DS.Elements
                 outputContainer.Add(choicePort);
             }
 
+            defaultBackgroundColor = Color.cyan;
+            mainContainer.style.backgroundColor = defaultBackgroundColor;
+
             RefreshExpandedState();
         }
     }
