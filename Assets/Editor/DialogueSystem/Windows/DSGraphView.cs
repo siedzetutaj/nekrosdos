@@ -502,6 +502,10 @@ namespace DS.Windows
         {
             var localPropertyName = "New Bool";
             var localPropertyValue = exposedProperty.Value;
+            if (exposedProperty != null)
+            {
+                localPropertyName = exposedProperty.Name;
+            }
             while (exposedProperties.Any(x => x.Name == localPropertyName))
                 localPropertyName = $"{localPropertyName}(1)";
 

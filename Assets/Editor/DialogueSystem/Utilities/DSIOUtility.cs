@@ -370,10 +370,10 @@ namespace DS.Utilities
         }
         private static void LoadExposedProperties(DSGraphSaveDataSO graphData)
         {
-            foreach(DSExposedProperty exposedProperty in graphData.ExposedProperties)
+            graphData.ExposedProperties.ForEach((x) =>
             {
-                graphView.AddPropeprtyToBlackBoard(exposedProperty);
-            }
+                graphView.AddPropeprtyToBlackBoard(x);
+            });
         }
         public static T LoadAsset<T>(string path, string assetName) where T : ScriptableObject
         {
