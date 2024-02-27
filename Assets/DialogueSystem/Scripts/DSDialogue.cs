@@ -7,7 +7,7 @@ namespace DS
     public class DSDialogue : MonoBehaviour
     {
         /* Dialogue Scriptable Objects */
-        [SerializeField] private DSDialogueContainerSO dialogueContainer;
+        [SerializeField] public DSDialogueContainerSO dialogueContainer;
         [SerializeField] private DSDialogueGroupSO dialogueGroup;
         [SerializeField] public DSDialogueSO dialogue;
 

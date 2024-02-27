@@ -476,9 +476,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f70cf55b2086fe4e916735c1b64ee09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueContainer: {fileID: 11400000, guid: e59357a85ab0c4c428e9c5baca300405, type: 2}
+  dialogueContainer: {fileID: 11400000, guid: 33f646bd386bff949b5dde2cf0b22b84, type: 2}
   dialogueGroup: {fileID: 11400000, guid: e4876b259c5502b42a49b8a971a539d6, type: 2}
-  dialogue: {fileID: 11400000, guid: 765f336b595d6504aaa16959575c450c, type: 2}
+  dialogue: {fileID: 11400000, guid: 11d2e030386d98d40a67cb37a62213c0, type: 2}
   groupedDialogues: 0
   startingDialoguesOnly: 1
   selectedDialogueGroupIndex: 0
@@ -514,6 +514,7 @@ MonoBehaviour:
   contentUI: {fileID: 380082653}
   textUI: {fileID: 314330264}
   buttonPrefab: {fileID: 6233974647636754015, guid: 56abf6e1fb02f9446afa2b3cbc9065b7, type: 3}
+  allExposedProperties: []
 --- !u!1 &620600736
 GameObject:
   m_ObjectHideFlags: 0

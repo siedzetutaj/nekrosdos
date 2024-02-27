@@ -15,42 +15,132 @@ MonoBehaviour:
   <FileName>k__BackingField: 1
   <Groups>k__BackingField: []
   <Nodes>k__BackingField:
-  - <ID>k__BackingField: 96fdfa21-814e-4ee8-af84-d4ca3d0ccfee
-    <Name>k__BackingField: DialogueName
+  - <ID>k__BackingField: 4d2201fa-08f9-4970-8117-23365e20e76b
+    <Name>k__BackingField: 1
+    <Text>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: bd5b29f0-6098-4171-835d-4d2cc1445d80
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 392, y: 239}
+    <ExposedProperties>k__BackingField:
+    - Name: 1
+      OldName: 1
+      Value: 1
+  - <ID>k__BackingField: 908517fb-7d03-40b9-ab1a-05649663ae7b
+    <Name>k__BackingField: 5
+    <Text>k__BackingField: 5
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: eab800d1-0222-4a25-89bd-c3bad7518ff4
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1636, y: 125}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: eab800d1-0222-4a25-89bd-c3bad7518ff4
+    <Name>k__BackingField: 7
     <Text>k__BackingField: Dialogue text.
     <Choices>k__BackingField:
     - <Text>k__BackingField: True
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 6ac54070-f772-4e08-8bda-ca656bb540c2
     - <Text>k__BackingField: False
+      <NodeID>k__BackingField: bc4e0854-e17a-4a2c-a947-86c3fa552bc2
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 3
+    <Position>k__BackingField: {x: 2022, y: 345}
+    <ExposedProperties>k__BackingField:
+    - Name: 1
+      OldName: 1
+      Value: 1
+    - Name: 2
+      OldName: 2
+      Value: 1
+  - <ID>k__BackingField: cfeeb1cc-d161-409b-b006-242af75a9e61
+    <Name>k__BackingField: 3
+    <Text>k__BackingField: 3
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 96fdfa21-814e-4ee8-af84-d4ca3d0ccfee
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1022, y: 264}
+    <ExposedProperties>k__BackingField:
+    - Name: 1
+      OldName: 1
+      Value: 0
+  - <ID>k__BackingField: 84b3d6d9-35f9-49fe-9b15-f77ce47301c0
+    <Name>k__BackingField: 6
+    <Text>k__BackingField: 6
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: eab800d1-0222-4a25-89bd-c3bad7518ff4
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1598, y: 397}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 6ac54070-f772-4e08-8bda-ca656bb540c2
+    <Name>k__BackingField: 8
+    <Text>k__BackingField: 8
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: 
-    <DialogueType>k__BackingField: 2
-    <Position>k__BackingField: {x: 580, y: 211}
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2381, y: 317}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: bc4e0854-e17a-4a2c-a947-86c3fa552bc2
+    <Name>k__BackingField: 9
+    <Text>k__BackingField: 9
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2435, y: 604}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: bd5b29f0-6098-4171-835d-4d2cc1445d80
+    <Name>k__BackingField: 2
+    <Text>k__BackingField: 2
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: cfeeb1cc-d161-409b-b006-242af75a9e61
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 691, y: 239}
     <ExposedProperties>k__BackingField:
-    - Name: New Bool
-      OldName: New Bool
+    - Name: 2
+      OldName: 2
       Value: 1
-    - Name: New Bool(1)(1)
-      OldName: New Bool(1)(1)
+  - <ID>k__BackingField: 96fdfa21-814e-4ee8-af84-d4ca3d0ccfee
+    <Name>k__BackingField: 4
+    <Text>k__BackingField: Dialogue text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: True
+      <NodeID>k__BackingField: 908517fb-7d03-40b9-ab1a-05649663ae7b
+    - <Text>k__BackingField: False
+      <NodeID>k__BackingField: 84b3d6d9-35f9-49fe-9b15-f77ce47301c0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 2
+    <Position>k__BackingField: {x: 1347, y: 209}
+    <ExposedProperties>k__BackingField:
+    - Name: 1
+      OldName: 1
+      Value: 1
+    - Name: 2
+      OldName: 2
       Value: 0
-    - Name: New Bool(1)(1)
-      OldName: New Bool(1)(1)
-      Value: 0
-  <ExposedProperties>k__BackingField:
-  - Name: New Bool
-    OldName: New Bool
-    Value: 1
-  - Name: New Bool(1)
-    OldName: New Bool(1)
-    Value: 1
-  - Name: New Bool(1)(1)
-    OldName: New Bool(1)(1)
-    Value: 1
-  - Name: New Bool(1)(1)(1)
-    OldName: New Bool(1)(1)(1)
-    Value: 1
+  <ExposedProperties>k__BackingField: []
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNodeNames>k__BackingField:
-  - DialogueName
+  - 1
+  - 5
+  - 7
+  - 3
+  - 6
+  - 8
+  - 9
+  - 2
+  - 4
   <OldGroupedNodeNames>k__BackingField:
     list: []

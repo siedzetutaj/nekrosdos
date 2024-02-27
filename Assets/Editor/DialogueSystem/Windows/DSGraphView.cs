@@ -337,7 +337,8 @@ namespace DS.Windows
 
             this.AddManipulator(CreateNodeContextualMenu("Add Node (Single Choice)", DSDialogueType.SingleChoice));
             this.AddManipulator(CreateNodeContextualMenu("Add Node (Multiple Choice)", DSDialogueType.MultipleChoice));
-            this.AddManipulator(CreateNodeContextualMenu("Add Node (If)", DSDialogueType.If));
+            this.AddManipulator(CreateNodeContextualMenu("Add Node (If One True)", DSDialogueType.IfOneTrue));
+            this.AddManipulator(CreateNodeContextualMenu("Add Node (If All True)", DSDialogueType.IfAllTrue));
 
             this.AddManipulator(CreateGroupContextualMenu());
         }
@@ -502,7 +503,7 @@ namespace DS.Windows
         {
             var localPropertyName = "New Bool";
             var localPropertyValue = exposedProperty.Value;
-            if (exposedProperty != null)
+            if (exposedProperty.Name != null)
             {
                 localPropertyName = exposedProperty.Name;
             }

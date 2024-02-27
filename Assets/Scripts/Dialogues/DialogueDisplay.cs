@@ -8,6 +8,8 @@ using UnityEngine.UIElements;
 using System;
 using System.Collections.Generic;
 using UnityEditor.Rendering;
+using DS.Windows;
+using DS.Elements;
 
 public class DialogueDisplay : MonoBehaviour
 {
@@ -15,6 +17,8 @@ public class DialogueDisplay : MonoBehaviour
     [SerializeField] private GameObject contentUI;
     [SerializeField] private TextMeshProUGUI textUI;
     [SerializeField] private GameObject buttonPrefab;
+
+    [SerializeField] private List<DSExposedProperty> allExposedProperties;
 
     private bool isSingleChoice;
     private DSDialogueSO currentDialogue;
@@ -24,6 +28,8 @@ public class DialogueDisplay : MonoBehaviour
     {
         textUI.text = "";
         currentDialogue = startingDialogue.dialogue;
+        allExposedProperties = startingDialogue.dialogueContainer.ExposedProperties;
+        ChangeExposedProperty();
         ShowText();
     }
 
@@ -36,6 +42,8 @@ public class DialogueDisplay : MonoBehaviour
     }
     private void ShowText()
     {
+
+
         textUI.text += currentDialogue.Text;
         textUI.text += "\n";
         textUI.text += "\n";
@@ -48,6 +56,58 @@ public class DialogueDisplay : MonoBehaviour
         {
             isSingleChoice = false;
             CreateButtons();
+        }
+    }
+    private void ChangeExposedProperty()
+    {
+        if (currentDialogue.ExposedProperties.Count > 0)
+        {
+
+            bool isTrue = false;
+            foreach (DSExposedProperty property in currentDialogue.ExposedProperties.ConvertAll(x => x.property))
+            {
+                var item = allExposedProperties.Find(x => x.Name == property.Name);
+                int index = allExposedProperties.IndexOf(item);
+
+                if (currentDialogue.DialogueType == DSDialogueType.IfOneTrue)
+                {
+                    if (allExposedProperties[index].Value)
+                    {
+                        isTrue = true;
+                        break;
+                    }
+                }
+                else if (currentDialogue.DialogueType == DSDialogueType.IfAllTrue)
+                {
+                    isTrue = true;
+
+                    if (!allExposedProperties[index].Value)
+                    {
+                        isTrue = false;
+                        break;
+                    }
+                }
+                else
+                {
+                    // cos tu jest nie tak 
+
+                    allExposedProperties[index].Value = property.Value;
+                    continue;
+                }
+            }
+            if (currentDialogue.DialogueType == DSDialogueType.IfOneTrue ||
+                currentDialogue.DialogueType == DSDialogueType.IfAllTrue)
+            {
+                if (isTrue)
+                {
+                    currentDialogue = currentDialogue.Choices[0].NextDialogue;
+                }
+                else
+                {
+                    currentDialogue = currentDialogue.Choices[1].NextDialogue;
+                }
+                ChangeExposedProperty();
+            }
         }
     }
     private void CreateButtons()
@@ -78,26 +138,7 @@ public class DialogueDisplay : MonoBehaviour
         RemoveButonsFromContainer();
 
         DSDialogueSO nextDialogue = currentDialogue.Choices[choiceIndex].NextDialogue;
-
-        if (nextDialogue.DialogueType == DSDialogueType.If)
-        {
-            bool isTrue = false;
-            foreach (var property in nextDialogue.ExposedProperties)
-            {
-                if (property.property.Value)
-                    isTrue = true;
-                break;
-            }
-            if (isTrue)
-            {
-                nextDialogue = nextDialogue.Choices[0].NextDialogue;
-            }
-            else
-            {
-                nextDialogue = nextDialogue.Choices[1].NextDialogue;
-            }
-
-        }
+        //nextDialogue = DialogueFromIf(nextDialogue);
 
         if (nextDialogue == null)
         {
@@ -105,10 +146,49 @@ public class DialogueDisplay : MonoBehaviour
         }
 
         currentDialogue = nextDialogue;
+        ChangeExposedProperty();
 
         ShowText();
     }
+    /* Old if check
+    private static DSDialogueSO DialogueFromIf(DSDialogueSO nextDialogue)
+    {
+        bool isTrue = false;
 
+        if (nextDialogue.DialogueType == DSDialogueType.IfOneTrue)
+        {
+            foreach (var property in nextDialogue.ExposedProperties)
+            {
+                if (property.property.Value)
+                {
+                    isTrue = true;
+                    break;
+                }
+            }
+
+        }
+        else if(nextDialogue.DialogueType == DSDialogueType.IfAllTrue)
+        {
+            isTrue = true;
+            foreach (var property in nextDialogue.ExposedProperties)
+            {
+                if (!property.property.Value)
+                {
+                    isTrue = false;
+                    break;
+                }
+            }
+        }
+        if (isTrue)
+        {
+            nextDialogue = nextDialogue.Choices[0].NextDialogue;
+        }
+        else
+        {
+            nextDialogue = nextDialogue.Choices[1].NextDialogue;
+        }
+        return nextDialogue;
+    }*/
     private void RemoveButonsFromContainer()
     {
         if (buttonList.Count >= 1)
@@ -120,7 +200,6 @@ public class DialogueDisplay : MonoBehaviour
             buttonList.Clear();
         }
     }
-
     public static Button CreateButton(string text, Action onClick = null)
     {
         Button button = new Button(onClick)

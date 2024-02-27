@@ -57,8 +57,9 @@ namespace DS.Utilities
             graphData.Initialize(graphFileName);
 
             DSDialogueContainerSO dialogueContainer = CreateAsset<DSDialogueContainerSO>(containerFolderPath, graphFileName);
-
-            dialogueContainer.Initialize(graphFileName);
+            List<DSExposedProperty> temp = new List<DSExposedProperty>();
+            temp.AddRange(graphView.exposedProperties);
+            dialogueContainer.Initialize(graphFileName,temp);
 
             SaveGroups(graphData, dialogueContainer);
             SaveNodes(graphData, dialogueContainer);

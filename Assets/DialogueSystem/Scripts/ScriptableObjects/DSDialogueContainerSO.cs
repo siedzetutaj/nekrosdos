@@ -1,3 +1,4 @@
+using DS.Windows;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,10 +9,12 @@ namespace DS.ScriptableObjects
         [field: SerializeField] public string FileName { get; set; }
         [field: SerializeField] public SerializableDictionary<DSDialogueGroupSO, List<DSDialogueSO>> DialogueGroups { get; set; }
         [field: SerializeField] public List<DSDialogueSO> UngroupedDialogues { get; set; }
+        [field: SerializeField] public List<DSExposedProperty> ExposedProperties { get; set; }
 
-        public void Initialize(string fileName)
+        public void Initialize(string fileName, List<DSExposedProperty> exposedProperties)
         {
             FileName = fileName;
+            ExposedProperties = exposedProperties;
 
             DialogueGroups = new SerializableDictionary<DSDialogueGroupSO, List<DSDialogueSO>>();
             UngroupedDialogues = new List<DSDialogueSO>();

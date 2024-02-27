@@ -14,52 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <FileName>k__BackingField: DialoguesFileName
   <Groups>k__BackingField: []
-  <Nodes>k__BackingField:
-  - <ID>k__BackingField: 3781c2e6-6e29-4e90-964b-ebd1c890924b
-    <Name>k__BackingField: 1
-    <Text>k__BackingField: Dialogue text.
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: New Choice
-      <NodeID>k__BackingField: 
-    <GroupID>k__BackingField: 
-    <DialogueType>k__BackingField: 1
-    <Position>k__BackingField: {x: 624, y: 179}
-    <ExposedProperties>k__BackingField:
-    - Name: New Bool(1)(1)
-      OldName: New Bool(1)(1)
-      Value: 1
-    - Name: New Bool(1)(1)
-      OldName: New Bool(1)(1)
-      Value: 1
-    - Name: New Bool(1)(1)(1)
-      OldName: New Bool(1)(1)(1)
-      Value: 1
-    - Name: New Bool(1)(1)
-      OldName: New Bool(1)(1)
-      Value: 1
-  - <ID>k__BackingField: 1c4c25f2-6b75-4b86-b990-9b5fee3ab275
-    <Name>k__BackingField: DialogueName
-    <Text>k__BackingField: Dialogue text.
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: New Choice
-      <NodeID>k__BackingField: 
-    <GroupID>k__BackingField: 
-    <DialogueType>k__BackingField: 1
-    <Position>k__BackingField: {x: 1247, y: 435}
-    <ExposedProperties>k__BackingField:
-    - Name: New Bool(1)
-      OldName: New Bool(1)
-      Value: 1
-    - Name: New Bool(1)(1)(1)(1)
-      OldName: New Bool(1)(1)(1)(1)
-      Value: 1
-    - Name: New Bool
-      OldName: New Bool
-      Value: 1
+  <Nodes>k__BackingField: []
   <ExposedProperties>k__BackingField: []
   <OldGroupNames>k__BackingField: []
-  <OldUngroupedNodeNames>k__BackingField:
-  - 1
-  - DialogueName
+  <OldUngroupedNodeNames>k__BackingField: []
   <OldGroupedNodeNames>k__BackingField:
     list: []

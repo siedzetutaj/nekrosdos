@@ -11,13 +11,13 @@ namespace DS.Elements
     using Enumerations;
     using Utilities;
     using Windows;
-    public class DSIfNode : DSNode
+    public class DSIfOneTrueNode : DSNode
     {
         public override void Initialize(string nodeName, DSGraphView dsGraphView, Vector2 position)
         {
             base.Initialize(nodeName, dsGraphView, position);
 
-            DialogueType = DSDialogueType.If;
+            DialogueType = DSDialogueType.IfOneTrue;
 
             DSChoiceSaveData choiceTrue = new DSChoiceSaveData()
             {
@@ -47,9 +47,53 @@ namespace DS.Elements
                 outputContainer.Add(choicePort);
             }
 
-            DrawExposedPropertiesContainer();
+            DrawExposedPropertiesContainer("One True");
 
             defaultBackgroundColor = Color.green;
+            mainContainer.style.backgroundColor = defaultBackgroundColor;
+
+            RefreshExpandedState();
+        }
+    }  
+    public class DSIfAllTrueNode : DSNode
+    {
+        public override void Initialize(string nodeName, DSGraphView dsGraphView, Vector2 position)
+        {
+            base.Initialize(nodeName, dsGraphView, position);
+
+            DialogueType = DSDialogueType.IfAllTrue;
+
+            DSChoiceSaveData choiceTrue = new DSChoiceSaveData()
+            {
+                Text = "True"
+            };
+
+            Choices.Add(choiceTrue); 
+
+            DSChoiceSaveData choiceFalse = new DSChoiceSaveData()
+            {
+                Text = "False"
+            };
+
+            Choices.Add(choiceFalse);
+        }
+        public override void Draw()
+        {
+            DrawTitle();
+            DrawInputPort();
+
+            foreach (DSChoiceSaveData choice in Choices)
+            {
+                Port choicePort = this.CreatePort(choice.Text);
+
+                choicePort.userData = choice;
+
+                outputContainer.Add(choicePort);
+            }
+
+            DrawExposedPropertiesContainer("All True");
+
+            defaultBackgroundColor = Color.green * 0.6f;
             mainContainer.style.backgroundColor = defaultBackgroundColor;
 
             RefreshExpandedState();

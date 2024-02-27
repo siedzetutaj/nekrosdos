@@ -14,39 +14,6 @@ namespace DS.Elements
     using Utilities;
     using Windows;
 
-    [Serializable]
-    public class ExposedPropertyNodeElement 
-    {
-        [field: SerializeField] public DSExposedProperty property;
-        [field: SerializeField] public ListView listView;
-        [field: SerializeField] public Toggle toggle;
-        [field: SerializeField] public DSGraphView graphView;
-
-        public virtual void Initialize(DSGraphView dsGraphView)
-        {
-            graphView = dsGraphView;
-        }
-        public void OnListSelected(IEnumerable<object> obj)
-        {
-            foreach (object objItem in obj)
-            {
-                property = graphView.exposedProperties.Find(x => x.Name == objItem.ToString());
-                toggle.text = $"Wybrana opcja = {property.Name}";
-                toggle.value = true;
-            }
-        }
-        public void OnListAddProperty(string Name)
-        {
-            listView.itemsSource.Add(Name);
-            listView.Rebuild();
-        }
-        public void OnListChangeProperty(string newName, string oldName)
-        {
-            int index = listView.itemsSource.IndexOf(oldName);
-            listView.itemsSource[index] = newName;
-            listView.Rebuild();
-        }
-    }
     public class DSNode : Node
     {
         public string ID { get; set; }
@@ -102,7 +69,6 @@ namespace DS.Elements
             DrawExposedPropertiesContainer();
             DrawDialogueTextField();
         }
-
         protected void DrawTitle()
         {
             TextField dialogueNameTextField = DSElementUtility.CreateTextField(DialogueName, null, callback =>
@@ -159,14 +125,15 @@ namespace DS.Elements
 
             inputContainer.Add(inputPort);
         }
-        protected void DrawExposedPropertiesContainer()
+        protected void DrawExposedPropertiesContainer(string containerTitle = null)
         {
             //Load
 
             //Create New
             VisualElement customDataContainer = new VisualElement();
             customDataContainer.AddToClassList("ds-node__custom-data-container");
-            Foldout foldout = DSElementUtility.CreateFoldout("Dialogue Choice Effect");
+            containerTitle ??= "Dialogue Choice Effect";
+            Foldout foldout = DSElementUtility.CreateFoldout(containerTitle);
             foldout.value = false;
 
             Button addPropertyButton = DSElementUtility.CreateButton("Add Property", () =>
@@ -317,5 +284,38 @@ namespace DS.Elements
 
 
         #endregion
+    }
+    [Serializable]
+    public class ExposedPropertyNodeElement 
+    {
+        [field: SerializeField] public DSExposedProperty property;
+        [field: SerializeField] public ListView listView;
+        [field: SerializeField] public Toggle toggle;
+        [field: SerializeField] public DSGraphView graphView;
+
+        public virtual void Initialize(DSGraphView dsGraphView)
+        {
+            graphView = dsGraphView;
+        }
+        public void OnListSelected(IEnumerable<object> obj)
+        {
+            foreach (object objItem in obj)
+            {
+                property = graphView.exposedProperties.Find(x => x.Name == objItem.ToString());
+                toggle.text = $"Wybrana opcja = {property.Name}";
+                toggle.value = true;
+            }
+        }
+        public void OnListAddProperty(string Name)
+        {
+            listView.itemsSource.Add(Name);
+            listView.Rebuild();
+        }
+        public void OnListChangeProperty(string newName, string oldName)
+        {
+            int index = listView.itemsSource.IndexOf(oldName);
+            listView.itemsSource[index] = newName;
+            listView.Rebuild();
+        }
     }
 }

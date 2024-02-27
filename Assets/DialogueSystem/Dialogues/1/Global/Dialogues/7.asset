@@ -10,25 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: DialogueName
+  m_Name: 7
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: DialogueName
+  <DialogueName>k__BackingField: 7
   <Text>k__BackingField: Dialogue text.
   <Choices>k__BackingField:
-  - <Text>k__BackingField: New Choice
-    <NextDialogue>k__BackingField: {fileID: 0}
-  <DialogueType>k__BackingField: 1
-  <IsStartingDialogue>k__BackingField: 1
+  - <Text>k__BackingField: True
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: da1de8ffe61c98b449c33cbfd4166dc6, type: 2}
+  - <Text>k__BackingField: False
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 045562926c7e23043b3425aeed13d19b, type: 2}
+  <DialogueType>k__BackingField: 3
+  <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField:
   - property:
-      Name: New Bool(1)
-      OldName: New Bool(1)
+      Name: 1
+      OldName: 1
       Value: 1
   - property:
-      Name: New Bool(1)(1)(1)(1)
-      OldName: New Bool(1)(1)(1)(1)
-      Value: 1
-  - property:
-      Name: New Bool
-      OldName: New Bool
+      Name: 2
+      OldName: 2
       Value: 1

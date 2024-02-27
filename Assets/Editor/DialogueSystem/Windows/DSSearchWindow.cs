@@ -37,9 +37,14 @@ namespace DS.Windows
                     userData = DSDialogueType.MultipleChoice,
                     level = 2
                 },         
-                new SearchTreeEntry(new GUIContent("If", indentationIcon))
+                new SearchTreeEntry(new GUIContent("If (One True)", indentationIcon))
                 {
-                    userData = DSDialogueType.If,
+                    userData = DSDialogueType.IfOneTrue,
+                    level = 2
+                },        
+                new SearchTreeEntry(new GUIContent("If (All True)", indentationIcon))
+                {
+                    userData = DSDialogueType.IfAllTrue,
                     level = 2
                 },
                 new SearchTreeGroupEntry(new GUIContent("Dialogue Groups"), 1),
@@ -74,10 +79,17 @@ namespace DS.Windows
 
                     return true;
                 }
-                case DSDialogueType.If:
+                case DSDialogueType.IfOneTrue:
                 {
-                    DSIfNode ifNode = (DSIfNode)graphView.CreateNode("DialogueName", DSDialogueType.If, localMousePosition);
-                    graphView.AddElement(ifNode);
+                    DSIfOneTrueNode ifOneNode = (DSIfOneTrueNode)graphView.CreateNode("DialogueName", DSDialogueType.IfOneTrue, localMousePosition);
+                    graphView.AddElement(ifOneNode);
+
+                    return true;
+                }        
+                case DSDialogueType.IfAllTrue:
+                {
+                    DSIfAllTrueNode ifAllNode = (DSIfAllTrueNode)graphView.CreateNode("DialogueName", DSDialogueType.IfAllTrue, localMousePosition);
+                    graphView.AddElement(ifAllNode);
 
                     return true;
                 }
