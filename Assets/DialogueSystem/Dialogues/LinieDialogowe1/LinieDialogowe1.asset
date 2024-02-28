@@ -93,22 +93,72 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 04d22a8e4485f2c43b0a1becdefc4c09, type: 2}
       - {fileID: 11400000, guid: 2aef3ed582ec1214e88571b2571b0781, type: 2}
       - {fileID: 11400000, guid: 849b89ea131f0cb46aa66691140609be, type: 2}
-    - Key: {fileID: 11400000, guid: 5152c7022eb2877498dd0f7598288989, type: 2}
+    - Key: {fileID: 11400000, guid: ab83704ebf2bc754eb8e8a2522a2e91c, type: 2}
       Value:
-      - {fileID: 11400000, guid: e87dce6e004a5c247bc10d25456c57f1, type: 2}
-      - {fileID: 11400000, guid: 81dfeb98c5898da4ea20f8b1295f11ac, type: 2}
-      - {fileID: 11400000, guid: 5642845ae5a6e4745ad737b56758c50a, type: 2}
-      - {fileID: 11400000, guid: 9566ba86cee5a20498738dfbdb6ca826, type: 2}
-      - {fileID: 11400000, guid: 3576b1a77673b6c4b9f7f77b88ff8aea, type: 2}
-      - {fileID: 11400000, guid: b4a4dab1cdfc61643a35c9cfc24fef10, type: 2}
-      - {fileID: 11400000, guid: 9a600eec8623f0d43970700dbdc2aeb5, type: 2}
+      - {fileID: 11400000, guid: 1a1a735775c405f49904fc463a6ba170, type: 2}
+      - {fileID: 11400000, guid: e14b33fd57d932b49b15af32cdd4cc69, type: 2}
+      - {fileID: 11400000, guid: 85b455fa1f0a869449da730afa39e31e, type: 2}
+      - {fileID: 11400000, guid: 602643b488e41f24db96165e2f3999bf, type: 2}
+      - {fileID: 11400000, guid: 21aa50f0d458cfc43acf94d19057e4e3, type: 2}
+      - {fileID: 11400000, guid: f4e21227689e0bc4292e2296c5be1f9a, type: 2}
+      - {fileID: 11400000, guid: 9f43cc290ded3cb4ca3b8cdb9e82684a, type: 2}
+      - {fileID: 11400000, guid: 14d970917b4ee9f42b18f6cfc1eb1182, type: 2}
+      - {fileID: 11400000, guid: 26fd8aa9785559e4e8b1aeb9c6d52168, type: 2}
+      - {fileID: 11400000, guid: d18ccee46a66fc24f887c845c0424ece, type: 2}
+      - {fileID: 11400000, guid: b949f27849d347146a1fe160732fd85f, type: 2}
+      - {fileID: 11400000, guid: 78c5a370ccc0a23459ab0ef5c284b5f1, type: 2}
+      - {fileID: 11400000, guid: d4a8e203ad93a874ca3a65c8bdd764f0, type: 2}
+      - {fileID: 11400000, guid: e66093051bed705429a57a2db2d4bfff, type: 2}
+      - {fileID: 11400000, guid: 578d50894ada617459424328e48847b0, type: 2}
+      - {fileID: 11400000, guid: a3544f53e30bec74687971bb6b59514c, type: 2}
+      - {fileID: 11400000, guid: aa8fbe52ec095ee4ba81e021f1c91187, type: 2}
+      - {fileID: 11400000, guid: 6240fc3a934980b42aafda822a557c3c, type: 2}
+      - {fileID: 11400000, guid: ca655bce29e112643b2d026da1a951b5, type: 2}
+      - {fileID: 11400000, guid: e056934ca78ec2b40a17de6ce25398c2, type: 2}
+      - {fileID: 11400000, guid: e6a262fad71c391459636203d9995b63, type: 2}
+      - {fileID: 11400000, guid: a2bc7f8ac0c44244bbda321aa04584f1, type: 2}
+      - {fileID: 11400000, guid: 9b40ddec50f3fbc4f942c8f773f8b935, type: 2}
+      - {fileID: 11400000, guid: 01728c833995d6640820f07ae85bcf2b, type: 2}
+      - {fileID: 11400000, guid: 65a252628ca7d4e4f97c88a258f4bdce, type: 2}
+      - {fileID: 11400000, guid: c27b90de8e037764eae4ef46f0f3cfc7, type: 2}
+      - {fileID: 11400000, guid: 7adc87b0c46248e48a479c334e59388e, type: 2}
+      - {fileID: 11400000, guid: 019c7d43316d03f45af0cb8ed2d56479, type: 2}
+      - {fileID: 11400000, guid: 49ca5f00fe4b2d043aa6362b3431d3fb, type: 2}
+      - {fileID: 11400000, guid: e1430f11162a42145a1ff15e55857675, type: 2}
+      - {fileID: 11400000, guid: f6ac74d228ed2d74095eabdd7398e9e9, type: 2}
+      - {fileID: 11400000, guid: 7262fbecd27f3df4d98cc7c2a0de3063, type: 2}
     - Key: {fileID: 11400000, guid: b8b8f766367cc1f4db50dbdf91f93ccf, type: 2}
       Value:
-      - {fileID: 11400000, guid: c98b28e0371c96145923bbc181ce4095, type: 2}
       - {fileID: 11400000, guid: d59016b420ad2a74595649fa6d5abe88, type: 2}
+      - {fileID: 11400000, guid: c98b28e0371c96145923bbc181ce4095, type: 2}
     - Key: {fileID: 11400000, guid: ee49e82fa2fa2ba4ab1af1d6e7d39ff0, type: 2}
       Value:
       - {fileID: 11400000, guid: b7607e4e2676d4441bc3570abc70f4b2, type: 2}
       - {fileID: 11400000, guid: 729e4ac9e303f214e85b158e5d9a83b6, type: 2}
       - {fileID: 11400000, guid: f746d952e5797ed4a916370f3d2ff7fc, type: 2}
+    - Key: {fileID: 11400000, guid: 0493eccd5f37e044bb481eafa45f9925, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 1379741c8a9ae2245a646191577ce11a, type: 2}
+      - {fileID: 11400000, guid: cabc9314dc3fbb5479739f782b2f8e18, type: 2}
+      - {fileID: 11400000, guid: 9b6c3ba2f16b89d4eb4b066a2c51c78b, type: 2}
+      - {fileID: 11400000, guid: 1e02310049cf20e49a67aa469e38a39d, type: 2}
+      - {fileID: 11400000, guid: 827ab67afe8ff2e4fbc1ff0ba49bf464, type: 2}
+      - {fileID: 11400000, guid: 1f58960c2f801024d936f07160f95237, type: 2}
+      - {fileID: 11400000, guid: ceb1838e52250f245bc4e3bbd0e8f0f5, type: 2}
+      - {fileID: 11400000, guid: 0509f38f2c9591a4d9b0b44858deac02, type: 2}
+      - {fileID: 11400000, guid: e99768b9e7fd88a49947593171bd1674, type: 2}
+      - {fileID: 11400000, guid: f22b4a61248ebe94ba8c5152ead617f0, type: 2}
   <UngroupedDialogues>k__BackingField: []
+  <ExposedProperties>k__BackingField:
+  - Name: Orion w Valerii
+    OldName: Orion w Valerii
+    Value: 0
+  - Name: Informacja o ludziach z Ombrii
+    OldName: Informacja o ludziach z Ombrii
+    Value: 0
+  - Name: "Alaric widzia\u0142 rytua\u0142"
+    OldName: "Alaric widzia\u0142 rytua\u0142"
+    Value: 0
+  - Name: "Alaric nie widzial rytua\u0142u"
+    OldName: "Alaric nie widzial rytua\u0142u"
+    Value: 0

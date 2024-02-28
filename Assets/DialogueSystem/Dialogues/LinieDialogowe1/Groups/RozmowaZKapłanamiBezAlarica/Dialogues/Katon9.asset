@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: Katon9
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: Katon9
+  <Text>k__BackingField: "Ale\u017C sk\u0105d. Wiemy \u017Ce kontakt z cia\u0142em
+    zamordowanej szlachcianki przed analiz\u0105 ze strony wys\u0142annik\xF3w z
+    inspektoratu jest wbrew przykazaniom sygilu.  "
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a2bc7f8ac0c44244bbda321aa04584f1, type: 2}
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 0
+  <ExposedProperties>k__BackingField: []

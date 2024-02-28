@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: Orion4
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: Orion4
+  <Text>k__BackingField: "Z drugiej strony do\u015Bwiadczony kap\u0142an z Requiem
+    mo\u017Ce wiedzie\u0107 wi\u0119cej ni\u017C my. Co by nie m\xF3wi\u0107 ich
+    rytua\u0142y kompletnie r\xF3zni\u0105 si\u0119 od naszych, a ze wzgl\u0119du
+    na niedawne otwarcie granic nie ma zbyt wielu ludzi jego pokroju. Musimy sie
+    mu przygl\u0105da\u0107 tym bardziej \u017Ce jest naznaczonym."
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: "Ja te\u017C jestem naznaczonym."
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0509f38f2c9591a4d9b0b44858deac02, type: 2}
+  - <Text>k__BackingField: Otwarcie granic?
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 827ab67afe8ff2e4fbc1ff0ba49bf464, type: 2}
+  <DialogueType>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
+  <ExposedProperties>k__BackingField: []
