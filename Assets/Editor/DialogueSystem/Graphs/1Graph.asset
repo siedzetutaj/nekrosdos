@@ -130,7 +130,19 @@ MonoBehaviour:
     - Name: 2
       OldName: 2
       Value: 0
-  <ExposedProperties>k__BackingField: []
+  <ExposedProperties>k__BackingField:
+  - Name: 1
+    OldName: 1
+    Value: 0
+  - Name: 2
+    OldName: 2
+    Value: 0
+  - Name: 3
+    OldName: 3
+    Value: 0
+  - Name: New Bool(1)(1)(1)
+    OldName: New Bool(1)(1)(1)
+    Value: 0
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNodeNames>k__BackingField:
   - 1

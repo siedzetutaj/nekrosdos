@@ -29,7 +29,7 @@ public class DialogueDisplay : MonoBehaviour
         textUI.text = "";
         currentDialogue = startingDialogue.dialogue;
         allExposedProperties = startingDialogue.dialogueContainer.ExposedProperties;
-        ChangeExposedProperty();
+        ExposedProperties();
         ShowText();
     }
 
@@ -58,7 +58,7 @@ public class DialogueDisplay : MonoBehaviour
             CreateButtons();
         }
     }
-    private void ChangeExposedProperty()
+    private void ExposedProperties()
     {
         if (currentDialogue.ExposedProperties.Count > 0)
         {
@@ -106,7 +106,7 @@ public class DialogueDisplay : MonoBehaviour
                 {
                     currentDialogue = currentDialogue.Choices[1].NextDialogue;
                 }
-                ChangeExposedProperty();
+                ExposedProperties();
             }
         }
     }
@@ -138,7 +138,6 @@ public class DialogueDisplay : MonoBehaviour
         RemoveButonsFromContainer();
 
         DSDialogueSO nextDialogue = currentDialogue.Choices[choiceIndex].NextDialogue;
-        //nextDialogue = DialogueFromIf(nextDialogue);
 
         if (nextDialogue == null)
         {
@@ -146,7 +145,7 @@ public class DialogueDisplay : MonoBehaviour
         }
 
         currentDialogue = nextDialogue;
-        ChangeExposedProperty();
+        ExposedProperties();
 
         ShowText();
     }
