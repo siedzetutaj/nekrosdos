@@ -11,14 +11,40 @@ public class SetCoursor : MonoBehaviourSingleton<SetCoursor>
 
     void Start()
     {
-        SetDefaultTexture();
+        SetTexture(CoursorType.arrow);
     }
-    public void SetTexture(Texture2D newTexture)
+    public void SetTexture(CoursorType type)
     {
-        Cursor.SetCursor(newTexture,Vector2.zero, CursorMode.ForceSoftware);
+        switch (type)
+        {
+            case CoursorType.move:
+                {
+                    Cursor.SetCursor(move, Vector2.zero, CursorMode.ForceSoftware);
+                    break;
+                }
+            case CoursorType.scope:
+                {
+                    Cursor.SetCursor(scope, Vector2.zero, CursorMode.ForceSoftware);
+                    break;
+                }
+            case CoursorType.talk:
+                {
+                    Cursor.SetCursor(talk, Vector2.zero, CursorMode.ForceSoftware);
+                    break;
+                }
+            default:
+                {
+                    Cursor.SetCursor(arrow, Vector2.zero, CursorMode.ForceSoftware);
+                    break;
+                }
+        }
     }
-    public void SetDefaultTexture()
-    {
-        Cursor.SetCursor(arrow, Vector2.zero, CursorMode.ForceSoftware);
-    }
+
+}
+public enum CoursorType
+{
+    move,
+    scope,
+    talk,
+    arrow
 }
