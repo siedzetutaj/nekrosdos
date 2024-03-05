@@ -27,11 +27,11 @@ public class Interactor : MonoBehaviour
     #region setup
     private void OnEnable()
     {
-        _inputs.onRightClick += OnRightClick;
+        _inputs.onLeftClick += OnLeftClick;
     }
     private void OnDisable()
     {
-        _inputs.onRightClick -= OnRightClick;
+        _inputs.onLeftClick -= OnLeftClick;
     }
     #endregion
     private void Update()
@@ -58,7 +58,7 @@ public class Interactor : MonoBehaviour
             currInteractable = null;
         }
     }
-    private void OnRightClick()
+    private void OnLeftClick()
     {
         if (currInteractable != null)
         {

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 
@@ -10,29 +11,32 @@ public class PlayerMovement : MonoBehaviourSingleton<PlayerMovement>
     [NonSerialized] public Vector2 destination;
 
     [SerializeField] private InputSystem _inputs;
-    [SerializeField] private float _speed;
-    [SerializeField] private Transform _body;
-    [SerializeField] private CircleCollider2D _bodyCollider;
-    
+    [SerializeField] private NavMeshAgent _agent;
+
     public Tilemap map;
 
-    private LayerMask _interactionMask;
+    private bool IsGointToHaveInteraction = false;
 
+    private void Awake()
+    {
+        _agent.updateRotation = false;
+        _agent.updateUpAxis = false;
+    }
     private void Start()
     {
-        _interactionMask = LayerMask.GetMask("Interactable");
         destination = transform.position;
     }
     private void Update()
     {
-        if(_inputs.holdLeft)
+        _agent.SetDestination(destination);
+        if (_inputs.holdLeft)
         {
             Move();
         }
-        if (Vector2.Distance(transform.position, destination) > 0.1f)
+        if (IsGointToHaveInteraction && Vector2.Distance(transform.position, _agent.destination) < 0.1f)
         {
-            transform.position = Vector2.MoveTowards(transform.position, destination, Time.deltaTime * _speed);
-            LookAtPosition();
+            Debug.Log("hello");
+            IsGointToHaveInteraction = false;
         }
     }
     private void Move()
@@ -43,26 +47,14 @@ public class PlayerMovement : MonoBehaviourSingleton<PlayerMovement>
         if (map.HasTile(gridPostion))
         {
             destination = mousePosition;
-           // transform.LookAt(mousePosition);
+            // transform.LookAt(mousePosition);
         }
     }
-    private void LookAtPosition()
-    {
-        _body.Rotate(0, 0.2f, 0, Space.Self);
-    }
+
     public void MoveToInteractable(Vector2 target)
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, target, 300, _interactionMask);
+        destination = target;
+        IsGointToHaveInteraction = true;
 
-        Debug.DrawLine(transform.position, hit.point, Color.red);
-
-        if (hit.collider != null)
-        {
-            destination = hit.point;
-        }
-        else
-        {
-            destination = target;
-        }
     }
 }
