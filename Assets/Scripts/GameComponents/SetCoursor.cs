@@ -4,47 +4,48 @@ using UnityEngine;
 
 public class SetCoursor : MonoBehaviourSingleton<SetCoursor>
 {
-    public Texture2D move;
-    public Texture2D scope;
+    public Texture2D lens;
     public Texture2D arrow;
     public Texture2D talk;
-
+    public Vector2 MouseOffset;
     void Start()
     {
-        SetTexture(CoursorType.arrow);
+        SetCurosr(CoursorType.arrow); 
     }
-    public void SetTexture(CoursorType type)
+    public void SetCurosr(CoursorType type)
     {
         switch (type)
         {
-            case CoursorType.move:
+            case CoursorType.lens:
                 {
-                    Cursor.SetCursor(move, Vector2.zero, CursorMode.ForceSoftware);
-                    break;
-                }
-            case CoursorType.scope:
-                {
-                    Cursor.SetCursor(scope, Vector2.zero, CursorMode.ForceSoftware);
+                    SetTexture(lens);
                     break;
                 }
             case CoursorType.talk:
                 {
-                    Cursor.SetCursor(talk, Vector2.zero, CursorMode.ForceSoftware);
+                    SetTexture(talk);
                     break;
                 }
             default:
                 {
-                    Cursor.SetCursor(arrow, Vector2.zero, CursorMode.ForceSoftware);
+                    SetTexture(arrow);
                     break;
                 }
         }
     }
-
+    private void SetTexture(Texture2D tex)
+    {
+        CursorMode mode = CursorMode.ForceSoftware;
+        var xspot = tex.width / 2;
+        var yspot = tex.height / 2;
+        Vector2 hotSpot = new Vector2(xspot, yspot);
+        Cursor.SetCursor(tex, hotSpot, mode);
+    }
 }
+
 public enum CoursorType
 {
-    move,
-    scope,
+    lens,
     talk,
     arrow
 }

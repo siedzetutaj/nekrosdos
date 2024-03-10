@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class Interactor : MonoBehaviour
 {
@@ -27,16 +28,16 @@ public class Interactor : MonoBehaviour
     #region setup
     private void OnEnable()
     {
-        _inputs.onLeftClick += OnLeftClick;
+        _inputs.onMovemenLeftClickUp += OnLeftClick;
     }
     private void OnDisable()
     {
-        _inputs.onLeftClick -= OnLeftClick;
+        _inputs.onMovemenLeftClickUp -= OnLeftClick;
     }
     #endregion
     private void Update()
     {
-        _mousePosition = _inputs.mouseInput.MouseInputs.MousePosition.ReadValue<Vector2>();
+        _mousePosition = _inputs.mouseInput.MovementInputs.MousePosition.ReadValue<Vector2>();
         _worldPosition = mainCamera.ScreenToWorldPoint(_mousePosition);
 
         _numfound = Physics2D.OverlapCircleNonAlloc(_worldPosition, _interactionPointRadius, _colliders, _interactableMask);
@@ -45,14 +46,14 @@ public class Interactor : MonoBehaviour
             _colliders[0].TryGetComponent(out IInteractable interactable);
             currInteractable = interactable;
 
-            setCoursor.SetTexture(currInteractable.CursorType);
+            setCoursor.SetCurosr(currInteractable.CursorType);
 
             displayName.transform.position = _mousePosition;
-            displayName.text = currInteractable.InteractionPrompt;
+            displayName.text = currInteractable.InteractionName;
         }
         else if (_numfound == 0) 
         {
-            setCoursor.SetTexture(CoursorType.arrow);
+            setCoursor.SetCurosr(CoursorType.arrow);
 
             displayName.text = string.Empty;
             currInteractable = null;

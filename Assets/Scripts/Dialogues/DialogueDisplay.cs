@@ -10,78 +10,97 @@ using System.Collections.Generic;
 using UnityEditor.Rendering;
 using DS.Windows;
 using DS.Elements;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using System.Collections;
 
-public class DialogueDisplay : MonoBehaviour
+public class DialogueDisplay : MonoBehaviourSingleton<DialogueDisplay>
 {
-    [SerializeField] private DSDialogue startingDialogue;
-    [SerializeField] private GameObject contentUI;
-    [SerializeField] private TextMeshProUGUI textUI;
-    [SerializeField] private GameObject buttonPrefab;
+    [Header("Dialogue")]
+    public DSDialogue startingDialogue;
+    
+    [Header("UI")]
+    [SerializeField] private GameObject _scrollViewUI;
+    [SerializeField] private GameObject _containerUI;
+    [SerializeField] private GameObject _contentUI;
+    [SerializeField] private TextMeshProUGUI _textUI;
+    [SerializeField] private GameObject _buttonPrefab;
+    
+    [Header("Components")]
+    [SerializeField] private InputSystem _inputSystem;
 
-    [SerializeField] private List<DSExposedProperty> allExposedProperties;
+    [Header("Debug")]
+    [SerializeField] private List<DSExposedProperty> _allExposedProperties;
 
-    private bool isSingleChoice;
-    private DSDialogueSO currentDialogue;
-    private List<GameObject> buttonList = new List<GameObject>();
-
+    private bool _isSingleChoice;
+    private DSDialogueSO _currentDialogue;
+    private List<GameObject> _buttonList = new List<GameObject>();
+    private ScrollRect _scrollRect;
     private void Awake()
     {
-        textUI.text = "";
-        currentDialogue = startingDialogue.dialogue;
-        allExposedProperties = startingDialogue.dialogueContainer.ExposedProperties;
+        _containerUI.SetActive(false);
+        _scrollRect = _scrollViewUI.GetComponent<ScrollRect>();
+        _textUI.text = "";
+    }
+
+    private void OnEnable()
+    {
+        _inputSystem.onDialogueLeftClickDown += OnLeftClik;
+    }    
+    private void OnDisable()
+    {
+        _inputSystem.onDialogueLeftClickDown -= OnLeftClik;
+    }
+    public void StartDisplaying()
+    {
+        _inputSystem.mouseInput.DialogueInputs.Enable();
+        _containerUI.SetActive(true);
+        _currentDialogue = startingDialogue.dialogue;
+        _allExposedProperties = startingDialogue.dialogueContainer.ExposedProperties;
         ExposedProperties();
         ShowText();
     }
-
-    public void Update()
-    {
-        if (Input.GetMouseButtonDown(1) && isSingleChoice)
-        {
-            OnOptionChosen();
-        }
-    }
     private void ShowText()
     {
+        _textUI.text += _currentDialogue.Text;
+        _textUI.text += "\n";
+        _textUI.text += "\n";
 
-
-        textUI.text += currentDialogue.Text;
-        textUI.text += "\n";
-        textUI.text += "\n";
-
-        if (currentDialogue.Choices.Count == 1)
+        if (_currentDialogue.Choices.Count == 1)
         {
-            isSingleChoice = true;
+            _isSingleChoice = true;
         }
-        else if (currentDialogue.Choices.Count > 1)
+        else if (_currentDialogue.Choices.Count > 1)
         {
-            isSingleChoice = false;
+            _isSingleChoice = false;
             CreateButtons();
         }
+        StartCoroutine(ScrollDown());
     }
     private void ExposedProperties()
     {
-        if (currentDialogue.ExposedProperties.Count > 0)
+        if (_currentDialogue.ExposedProperties.Count > 0)
         {
 
             bool isTrue = false;
-            foreach (DSExposedProperty property in currentDialogue.ExposedProperties.ConvertAll(x => x.property))
+            foreach (DSExposedProperty property in _currentDialogue.ExposedProperties.ConvertAll(x => x.property))
             {
-                var item = allExposedProperties.Find(x => x.Name == property.Name);
-                int index = allExposedProperties.IndexOf(item);
+                var item = _allExposedProperties.Find(x => x.Name == property.Name);
+                int index = _allExposedProperties.IndexOf(item);
 
-                if (currentDialogue.DialogueType == DSDialogueType.IfOneTrue)
+                if (_currentDialogue.DialogueType == DSDialogueType.IfOneTrue)
                 {
-                    if (allExposedProperties[index].Value)
+                    if (_allExposedProperties[index].Value)
                     {
                         isTrue = true;
                         break;
                     }
                 }
-                else if (currentDialogue.DialogueType == DSDialogueType.IfAllTrue)
+                else if (_currentDialogue.DialogueType == DSDialogueType.IfAllTrue)
                 {
                     isTrue = true;
 
-                    if (!allExposedProperties[index].Value)
+                    if (!_allExposedProperties[index].Value)
                     {
                         isTrue = false;
                         break;
@@ -91,63 +110,50 @@ public class DialogueDisplay : MonoBehaviour
                 {
                     // cos tu jest nie tak 
 
-                    allExposedProperties[index].Value = property.Value;
+                    _allExposedProperties[index].Value = property.Value;
                     continue;
                 }
             }
-            if (currentDialogue.DialogueType == DSDialogueType.IfOneTrue ||
-                currentDialogue.DialogueType == DSDialogueType.IfAllTrue)
+            if (_currentDialogue.DialogueType == DSDialogueType.IfOneTrue ||
+                _currentDialogue.DialogueType == DSDialogueType.IfAllTrue)
             {
                 if (isTrue)
                 {
-                    currentDialogue = currentDialogue.Choices[0].NextDialogue;
+                    _currentDialogue = _currentDialogue.Choices[0].NextDialogue;
                 }
                 else
                 {
-                    currentDialogue = currentDialogue.Choices[1].NextDialogue;
+                    _currentDialogue = _currentDialogue.Choices[1].NextDialogue;
                 }
                 ExposedProperties();
             }
         }
     }
-    private void CreateButtons()
-    {
-        foreach (DSDialogueChoiceData dialogueSO in currentDialogue.Choices)
-        {
-            GameObject button = Instantiate(buttonPrefab, contentUI.transform);
-            DialogueButton dButton = button.GetComponent<DialogueButton>();
-            dButton.text.text = dialogueSO.Text;
-            dButton.choiceNumber = currentDialogue.Choices.IndexOf(dialogueSO);
-            dButton.button.onClick.AddListener(() =>
-            {
-                AddButtonTextToContainer(dialogueSO.Text);
-                OnOptionChosen(dButton.choiceNumber);
-            });
-            buttonList.Add(button);
-        }
-    }
-    private void AddButtonTextToContainer(string text)
-    {
-        textUI.text += text;
-        textUI.text += "\n";
-        textUI.text += "\n";
-    }
     private void OnOptionChosen(int choiceIndex = 0)
     {
-        isSingleChoice = false;
+        _isSingleChoice = false;
         RemoveButonsFromContainer();
-
-        DSDialogueSO nextDialogue = currentDialogue.Choices[choiceIndex].NextDialogue;
+        _currentDialogue.Choices[choiceIndex].WasDisplayed = true;
+        DSDialogueSO nextDialogue = _currentDialogue.Choices[choiceIndex].NextDialogue;
 
         if (nextDialogue == null)
         {
+            CreateQuitButton();
             return; // No more dialogues to show, do whatever you want, like setting the currentDialogue to the startingDialogue
         }
 
-        currentDialogue = nextDialogue;
+        _currentDialogue = nextDialogue;
         ExposedProperties();
 
         ShowText();
+    }
+    private void QuitOption(GameObject quitButton)
+    {
+        _containerUI.SetActive(false);
+        _textUI.text = string.Empty;
+        _inputSystem.mouseInput.DialogueInputs.Disable();
+        _inputSystem.mouseInput.MovementInputs.Enable();
+        Destroy(quitButton);
     }
     /* Old if check
     private static DSDialogueSO DialogueFromIf(DSDialogueSO nextDialogue)
@@ -188,24 +194,70 @@ public class DialogueDisplay : MonoBehaviour
         }
         return nextDialogue;
     }*/
+    #region Utilities
+
+    private IEnumerator ScrollDown()
+    {
+        yield return new WaitForEndOfFrame();
+        _scrollRect.verticalNormalizedPosition = 0;
+    }
     private void RemoveButonsFromContainer()
     {
-        if (buttonList.Count >= 1)
+        if (_buttonList.Count >= 1)
         {
-            foreach (GameObject button in buttonList)
+            foreach (GameObject button in _buttonList)
             {
                 Destroy(button);
             }
-            buttonList.Clear();
+            _buttonList.Clear();
         }
     }
-    public static Button CreateButton(string text, Action onClick = null)
+    private void CreateButtons()
     {
-        Button button = new Button(onClick)
+        foreach (DSDialogueChoiceData dialogueSO in _currentDialogue.Choices)
         {
-            text = text
-        };
-
-        return button;
+            GameObject button = Instantiate(_buttonPrefab, _contentUI.transform);
+            DialogueButton dButton = button.GetComponent<DialogueButton>();
+            dButton.text.text = dialogueSO.Text;
+            dButton.choiceNumber = _currentDialogue.Choices.IndexOf(dialogueSO);
+            dButton.button.onClick.AddListener(() =>
+            {
+                AddButtonTextToContainer(dialogueSO.Text);
+                OnOptionChosen(dButton.choiceNumber);
+            });
+            if (dialogueSO.WasDisplayed)
+            {
+                var colors = dButton.button.colors;
+                colors.normalColor = dButton.button.colors.disabledColor;
+                dButton.button.colors = colors;
+            }
+            _buttonList.Add(button);
+        }
     }
+    private void CreateQuitButton()
+    {
+        GameObject button = Instantiate(_buttonPrefab, _contentUI.transform);
+        DialogueButton dButton = button.GetComponent<DialogueButton>();
+        dButton.text.text = "Quit";
+        dButton.button.onClick.AddListener(() =>
+        {
+            QuitOption(button);
+        });
+        _buttonList.Add(button);
+        StartCoroutine(ScrollDown());
+    }
+    private void AddButtonTextToContainer(string text)
+    {
+        _textUI.text += text;
+        _textUI.text += "\n";
+        _textUI.text += "\n";
+    }
+    private void OnLeftClik()
+    {
+        if (_isSingleChoice)
+        {
+            OnOptionChosen();
+        }
+    }
+    #endregion
 }

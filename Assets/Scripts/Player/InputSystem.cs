@@ -16,8 +16,14 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
     public MouseInput mouseInput;
 
     #region Actions
-    public Action onLeftClick;
-    public Action onRightClick;
+
+    // Movement
+    public Action onMovemenLeftClickDown;
+    public Action onMovemenLeftClickUp;
+    public Action onMovemenRightClickDown;
+    
+    // Dialogue
+    public Action onDialogueLeftClickDown;
     #endregion
     #region Other variables
     public bool holdLeft = false;
@@ -35,31 +41,44 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
     #region Connect/Disconnect actions
     private void OnDisable()
     {
-        mouseInput.MouseInputs.MouseLeftClick.performed -= LeftClick;
-        mouseInput.MouseInputs.MouseRightClick.performed -= RightClick;
+        mouseInput.MovementInputs.MouseLeftClick.started -= MovementLeftClickDown;
+        mouseInput.MovementInputs.MouseLeftClick.canceled -= MovementLeftClickUp;
+        mouseInput.MovementInputs.MouseRightClick.performed -= MovementRightClickDown;
+
+        mouseInput.DialogueInputs.MouseLeftClick.started -= DialogueLeftClickDown;  
+
         mouseInput.Disable();
     }
     private void Start()
     {
-        mouseInput.MouseInputs.MouseLeftClick.performed += LeftClick;
-        mouseInput.MouseInputs.MouseRightClick.performed += RightClick;
-        mouseInput.MouseInputs.MouseLeftClick.canceled += CancelLeftClick;
+        mouseInput.MovementInputs.MouseLeftClick.performed += MovementLeftClickDown;
+        mouseInput.MovementInputs.MouseLeftClick.canceled += MovementLeftClickUp;
+        mouseInput.MovementInputs.MouseRightClick.performed += MovementRightClickDown;
+
+        mouseInput.DialogueInputs.MouseRightClick.started += DialogueLeftClickDown;
+        mouseInput.DialogueInputs.Disable();
     }
     #endregion
-    #region Actions
-    private void RightClick(InputAction.CallbackContext context)
+    #region Movement Actions
+    private void MovementRightClickDown(InputAction.CallbackContext context)
     {
-        onRightClick?.Invoke();
+        onMovemenRightClickDown?.Invoke();
     }
-    private void LeftClick(InputAction.CallbackContext obj)
+    private void MovementLeftClickDown(InputAction.CallbackContext obj)
     {
         holdLeft = true;
-        onLeftClick?.Invoke();
+        onMovemenLeftClickDown?.Invoke();
     }  
-
-    private void CancelLeftClick(InputAction.CallbackContext obj)
+    private void MovementLeftClickUp(InputAction.CallbackContext obj)
     {
+        onMovemenLeftClickUp?.Invoke();
         holdLeft = false;
+    }
+    #endregion
+    #region Dialogue Actions
+    private void DialogueLeftClickDown(InputAction.CallbackContext obj)
+    {
+        onDialogueLeftClickDown?.Invoke();
     }
     #endregion
 }

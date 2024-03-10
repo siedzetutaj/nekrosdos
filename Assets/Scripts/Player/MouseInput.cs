@@ -24,7 +24,7 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
     ""name"": ""Mouse"",
     ""maps"": [
         {
-            ""name"": ""MouseInputs"",
+            ""name"": ""MovementInputs"",
             ""id"": ""ed4779b2-3195-42d7-8cfb-6c193f7748ff"",
             ""actions"": [
                 {
@@ -90,15 +90,67 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""DialogueInputs"",
+            ""id"": ""0de39e4d-e495-4d96-94fe-074e92a424bf"",
+            ""actions"": [
+                {
+                    ""name"": ""MouseLeftClick"",
+                    ""type"": ""Button"",
+                    ""id"": ""982b0ad4-d972-4eca-a1d6-d145a7e6f0de"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MouseRightClick"",
+                    ""type"": ""Button"",
+                    ""id"": ""38a80ec4-c205-4d83-ac85-e95184185023"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""25a041e5-4102-40dd-833c-4d128d662f96"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseLeftClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c977d7d7-6a65-4d2d-a158-53eeec44f29a"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseRightClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
 }");
-        // MouseInputs
-        m_MouseInputs = asset.FindActionMap("MouseInputs", throwIfNotFound: true);
-        m_MouseInputs_MouseLeftClick = m_MouseInputs.FindAction("MouseLeftClick", throwIfNotFound: true);
-        m_MouseInputs_MousePosition = m_MouseInputs.FindAction("MousePosition", throwIfNotFound: true);
-        m_MouseInputs_MouseRightClick = m_MouseInputs.FindAction("MouseRightClick", throwIfNotFound: true);
+        // MovementInputs
+        m_MovementInputs = asset.FindActionMap("MovementInputs", throwIfNotFound: true);
+        m_MovementInputs_MouseLeftClick = m_MovementInputs.FindAction("MouseLeftClick", throwIfNotFound: true);
+        m_MovementInputs_MousePosition = m_MovementInputs.FindAction("MousePosition", throwIfNotFound: true);
+        m_MovementInputs_MouseRightClick = m_MovementInputs.FindAction("MouseRightClick", throwIfNotFound: true);
+        // DialogueInputs
+        m_DialogueInputs = asset.FindActionMap("DialogueInputs", throwIfNotFound: true);
+        m_DialogueInputs_MouseLeftClick = m_DialogueInputs.FindAction("MouseLeftClick", throwIfNotFound: true);
+        m_DialogueInputs_MouseRightClick = m_DialogueInputs.FindAction("MouseRightClick", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -157,28 +209,28 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // MouseInputs
-    private readonly InputActionMap m_MouseInputs;
-    private List<IMouseInputsActions> m_MouseInputsActionsCallbackInterfaces = new List<IMouseInputsActions>();
-    private readonly InputAction m_MouseInputs_MouseLeftClick;
-    private readonly InputAction m_MouseInputs_MousePosition;
-    private readonly InputAction m_MouseInputs_MouseRightClick;
-    public struct MouseInputsActions
+    // MovementInputs
+    private readonly InputActionMap m_MovementInputs;
+    private List<IMovementInputsActions> m_MovementInputsActionsCallbackInterfaces = new List<IMovementInputsActions>();
+    private readonly InputAction m_MovementInputs_MouseLeftClick;
+    private readonly InputAction m_MovementInputs_MousePosition;
+    private readonly InputAction m_MovementInputs_MouseRightClick;
+    public struct MovementInputsActions
     {
         private @MouseInput m_Wrapper;
-        public MouseInputsActions(@MouseInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @MouseLeftClick => m_Wrapper.m_MouseInputs_MouseLeftClick;
-        public InputAction @MousePosition => m_Wrapper.m_MouseInputs_MousePosition;
-        public InputAction @MouseRightClick => m_Wrapper.m_MouseInputs_MouseRightClick;
-        public InputActionMap Get() { return m_Wrapper.m_MouseInputs; }
+        public MovementInputsActions(@MouseInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @MouseLeftClick => m_Wrapper.m_MovementInputs_MouseLeftClick;
+        public InputAction @MousePosition => m_Wrapper.m_MovementInputs_MousePosition;
+        public InputAction @MouseRightClick => m_Wrapper.m_MovementInputs_MouseRightClick;
+        public InputActionMap Get() { return m_Wrapper.m_MovementInputs; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(MouseInputsActions set) { return set.Get(); }
-        public void AddCallbacks(IMouseInputsActions instance)
+        public static implicit operator InputActionMap(MovementInputsActions set) { return set.Get(); }
+        public void AddCallbacks(IMovementInputsActions instance)
         {
-            if (instance == null || m_Wrapper.m_MouseInputsActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_MouseInputsActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_MovementInputsActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_MovementInputsActionsCallbackInterfaces.Add(instance);
             @MouseLeftClick.started += instance.OnMouseLeftClick;
             @MouseLeftClick.performed += instance.OnMouseLeftClick;
             @MouseLeftClick.canceled += instance.OnMouseLeftClick;
@@ -190,7 +242,7 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
             @MouseRightClick.canceled += instance.OnMouseRightClick;
         }
 
-        private void UnregisterCallbacks(IMouseInputsActions instance)
+        private void UnregisterCallbacks(IMovementInputsActions instance)
         {
             @MouseLeftClick.started -= instance.OnMouseLeftClick;
             @MouseLeftClick.performed -= instance.OnMouseLeftClick;
@@ -203,25 +255,84 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
             @MouseRightClick.canceled -= instance.OnMouseRightClick;
         }
 
-        public void RemoveCallbacks(IMouseInputsActions instance)
+        public void RemoveCallbacks(IMovementInputsActions instance)
         {
-            if (m_Wrapper.m_MouseInputsActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_MovementInputsActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(IMouseInputsActions instance)
+        public void SetCallbacks(IMovementInputsActions instance)
         {
-            foreach (var item in m_Wrapper.m_MouseInputsActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_MovementInputsActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_MouseInputsActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_MovementInputsActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public MouseInputsActions @MouseInputs => new MouseInputsActions(this);
-    public interface IMouseInputsActions
+    public MovementInputsActions @MovementInputs => new MovementInputsActions(this);
+
+    // DialogueInputs
+    private readonly InputActionMap m_DialogueInputs;
+    private List<IDialogueInputsActions> m_DialogueInputsActionsCallbackInterfaces = new List<IDialogueInputsActions>();
+    private readonly InputAction m_DialogueInputs_MouseLeftClick;
+    private readonly InputAction m_DialogueInputs_MouseRightClick;
+    public struct DialogueInputsActions
+    {
+        private @MouseInput m_Wrapper;
+        public DialogueInputsActions(@MouseInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @MouseLeftClick => m_Wrapper.m_DialogueInputs_MouseLeftClick;
+        public InputAction @MouseRightClick => m_Wrapper.m_DialogueInputs_MouseRightClick;
+        public InputActionMap Get() { return m_Wrapper.m_DialogueInputs; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(DialogueInputsActions set) { return set.Get(); }
+        public void AddCallbacks(IDialogueInputsActions instance)
+        {
+            if (instance == null || m_Wrapper.m_DialogueInputsActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_DialogueInputsActionsCallbackInterfaces.Add(instance);
+            @MouseLeftClick.started += instance.OnMouseLeftClick;
+            @MouseLeftClick.performed += instance.OnMouseLeftClick;
+            @MouseLeftClick.canceled += instance.OnMouseLeftClick;
+            @MouseRightClick.started += instance.OnMouseRightClick;
+            @MouseRightClick.performed += instance.OnMouseRightClick;
+            @MouseRightClick.canceled += instance.OnMouseRightClick;
+        }
+
+        private void UnregisterCallbacks(IDialogueInputsActions instance)
+        {
+            @MouseLeftClick.started -= instance.OnMouseLeftClick;
+            @MouseLeftClick.performed -= instance.OnMouseLeftClick;
+            @MouseLeftClick.canceled -= instance.OnMouseLeftClick;
+            @MouseRightClick.started -= instance.OnMouseRightClick;
+            @MouseRightClick.performed -= instance.OnMouseRightClick;
+            @MouseRightClick.canceled -= instance.OnMouseRightClick;
+        }
+
+        public void RemoveCallbacks(IDialogueInputsActions instance)
+        {
+            if (m_Wrapper.m_DialogueInputsActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IDialogueInputsActions instance)
+        {
+            foreach (var item in m_Wrapper.m_DialogueInputsActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_DialogueInputsActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public DialogueInputsActions @DialogueInputs => new DialogueInputsActions(this);
+    public interface IMovementInputsActions
     {
         void OnMouseLeftClick(InputAction.CallbackContext context);
         void OnMousePosition(InputAction.CallbackContext context);
+        void OnMouseRightClick(InputAction.CallbackContext context);
+    }
+    public interface IDialogueInputsActions
+    {
+        void OnMouseLeftClick(InputAction.CallbackContext context);
         void OnMouseRightClick(InputAction.CallbackContext context);
     }
 }

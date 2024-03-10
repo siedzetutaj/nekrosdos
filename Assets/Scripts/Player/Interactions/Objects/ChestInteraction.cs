@@ -6,13 +6,13 @@ public class ChestInteraction : MonoBehaviour, IInteractable
 {
     [SerializeField] private string _prompt;
     [SerializeField] private CoursorType _coursorType;
-    public string InteractionPrompt => _prompt;
+    public string InteractionName => _prompt;
 
     public CoursorType CursorType => _coursorType;
 
     public bool Interact(Interactor interactor)
     {
-        PlayerMovement.Instance.MoveToInteractable(transform.position);
+        PlayerController.Instance.MoveToInteractable(transform.position);
         return true;
     }
 }
