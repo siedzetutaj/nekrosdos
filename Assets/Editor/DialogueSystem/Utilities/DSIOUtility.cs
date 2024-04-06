@@ -181,7 +181,7 @@ namespace DS.Utilities
                 ConvertNodeChoicesToDialogueChoices(node.Choices),
                 node.DialogueType,
                 node.IsStartingNode(),
-                node.ExposedPropertyNodeElements
+                node.ExposedPropertyNodeElements.ConvertAll(x => x.property)
             );
 
             createdDialogues.Add(node.ID, dialogue);

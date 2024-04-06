@@ -3,11 +3,10 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 [CreateAssetMenu(fileName = "TPAllThoughtSO", menuName = "ScriptableObjects/TAllPThought", order = 1)]
-
-public class TPAllThoughtsSO : ScriptableSingleton<TPAllThoughtsSO>
+public class TPAllThoughtsSO : ScriptableObject
 {
     [SerializeField] public List<TPThoughtSO> AllThoughts = new List<TPThoughtSO>();
-
+#if UNITY_EDITOR
     [Header("Thought Creator")]
     public string Name;
     public Sprite Sprite;
@@ -75,4 +74,5 @@ public class TPAllThoughtsSO : ScriptableSingleton<TPAllThoughtsSO>
         return AssetDatabase.LoadAssetAtPath<T>(fullPath);
     }
     #endregion
+#endif
 }

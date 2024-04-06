@@ -21,7 +21,6 @@ MonoBehaviour:
   <DialogueType>k__BackingField: 1
   <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField:
-  - property:
-      Name: kasia
-      OldName: kasia
-      Value: 1
+  - Name: kasia
+    OldName: kasia
+    Value: 1

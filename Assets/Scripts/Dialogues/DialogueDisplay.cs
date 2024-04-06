@@ -77,7 +77,7 @@ public class DialogueDisplay : MonoBehaviourSingleton<DialogueDisplay>
         {
 
             bool isTrue = false;
-            foreach (DSExposedProperty property in _currentDialogue.ExposedProperties.ConvertAll(x => x.property))
+            foreach (DSExposedProperty property in _currentDialogue.ExposedProperties)
             {
                 var item = _allExposedProperties.Find(x => x.Name == property.Name);
                 int index = _allExposedProperties.IndexOf(item);

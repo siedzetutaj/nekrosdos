@@ -7,9 +7,7 @@ using UnityEngine.UIElements;
 
 namespace DS.Elements
 {
-    using Codice.CM.Client.Differences.Merge;
     using Data.Save;
-    using System.Net;
     using Utilities;
     using Windows;
 

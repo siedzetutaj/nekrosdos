@@ -24,7 +24,6 @@ MonoBehaviour:
   <DialogueType>k__BackingField: 2
   <IsStartingDialogue>k__BackingField: 1
   <ExposedProperties>k__BackingField:
-  - property:
-      Name: marek
-      OldName: marek
-      Value: 1
+  - Name: marek
+    OldName: marek
+    Value: 1
