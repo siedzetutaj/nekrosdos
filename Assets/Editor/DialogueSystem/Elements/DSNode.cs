@@ -9,7 +9,6 @@ namespace DS.Elements
 {
     using Codice.CM.Client.Differences.Merge;
     using Data.Save;
-    using Enumerations;
     using System.Net;
     using Utilities;
     using Windows;
@@ -210,7 +209,6 @@ namespace DS.Elements
         {
             Button deleteButton = DSElementUtility.CreateButton("X", () =>
             {
-                //Choices.Remove(choiceData);
                 ExposedPropertyNodeElements.Remove(element);
                 foldout.Remove(container);
             });
@@ -280,9 +278,6 @@ namespace DS.Elements
         {
             mainContainer.style.backgroundColor = defaultBackgroundColor;
         }
-
-
-
         #endregion
     }
     [Serializable]

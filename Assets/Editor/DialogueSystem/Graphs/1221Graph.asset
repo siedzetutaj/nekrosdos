@@ -15,21 +15,16 @@ MonoBehaviour:
   <FileName>k__BackingField: 1221
   <Groups>k__BackingField: []
   <Nodes>k__BackingField:
-  - <ID>k__BackingField: cb40a9cd-62ca-44e1-a020-50e75f82392f
-    <Name>k__BackingField: DialogueName
+  - <ID>k__BackingField: 233593ae-8057-4e8f-8ff0-1c1d97359e06
+    <Name>k__BackingField: 11
     <Text>k__BackingField: Dialogue text.
     <Choices>k__BackingField:
-    - <Text>k__BackingField: True
-      <NodeID>k__BackingField: 9bcb2526-cb28-437a-81e2-2fb68e33d0f6
-    - <Text>k__BackingField: False
+    - <Text>k__BackingField: New Choice
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: 
-    <DialogueType>k__BackingField: 2
-    <Position>k__BackingField: {x: 360, y: 206}
-    <ExposedProperty>k__BackingField:
-      Name: krzys
-      OldName: new Bool(1)(1)
-      Value: 1
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1254, y: 206}
+    <ExposedProperties>k__BackingField: []
   - <ID>k__BackingField: 80a3b0d3-90dd-4884-b6f5-7fc9a8a75112
     <Name>k__BackingField: 2
     <Text>k__BackingField: Dialogue text.
@@ -41,9 +36,21 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 2
     <Position>k__BackingField: {x: 1008, y: 186}
-    <ExposedProperty>k__BackingField:
-      Name: kasia
-      OldName: new Bool
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: cb40a9cd-62ca-44e1-a020-50e75f82392f
+    <Name>k__BackingField: DialogueName
+    <Text>k__BackingField: Dialogue text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: True
+      <NodeID>k__BackingField: 9bcb2526-cb28-437a-81e2-2fb68e33d0f6
+    - <Text>k__BackingField: False
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 2
+    <Position>k__BackingField: {x: 357, y: 206}
+    <ExposedProperties>k__BackingField:
+    - Name: marek
+      OldName: marek
       Value: 1
   - <ID>k__BackingField: 9bcb2526-cb28-437a-81e2-2fb68e33d0f6
     <Name>k__BackingField: 1
@@ -54,38 +61,25 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 1
     <Position>k__BackingField: {x: 655, y: 206}
-    <ExposedProperty>k__BackingField:
-      Name: marek
-      OldName: new Bool(1)
-      Value: 1
-  - <ID>k__BackingField: 233593ae-8057-4e8f-8ff0-1c1d97359e06
-    <Name>k__BackingField: 11
-    <Text>k__BackingField: Dialogue text.
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: New Choice
-      <NodeID>k__BackingField: 
-    <GroupID>k__BackingField: 
-    <DialogueType>k__BackingField: 1
-    <Position>k__BackingField: {x: 1254, y: 206}
-    <ExposedProperty>k__BackingField:
-      Name: kasia
-      OldName: new Bool
+    <ExposedProperties>k__BackingField:
+    - Name: kasia
+      OldName: kasia
       Value: 1
   <ExposedProperties>k__BackingField:
   - Name: kasia
-    OldName: new Bool
+    OldName: kasia
     Value: 1
   - Name: marek
-    OldName: new Bool(1)
+    OldName: marek
     Value: 1
   - Name: krzys
-    OldName: new Bool(1)(1)
+    OldName: krzys
     Value: 1
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNodeNames>k__BackingField:
-  - DialogueName
-  - 2
-  - 1
   - 11
+  - 2
+  - DialogueName
+  - 1
   <OldGroupedNodeNames>k__BackingField:
     list: []

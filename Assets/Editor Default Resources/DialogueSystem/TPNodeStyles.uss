@@ -1,0 +1,5 @@
+.Image{
+	margin-right:auto;
+	height:	100px;
+	width:	65px;
+}

@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: BaseSO
-  m_EditorClassIdentifier: Assembly-CSharp::BaseSO
-  Psotion: {x: 0, y: 0}
+  m_Script: {fileID: 11500000, guid: 0714c1792b67c724cb35ba1bf7e05cb7, type: 3}
+  m_Name: ThoughtFileName
+  m_EditorClassIdentifier: 
+  CorrectConections:
+  - 80881ef0-0e44-4a0d-b56a-a1d2d95126977a6d5688-73c7-4fb3-8ff5-9cf66aa042ca

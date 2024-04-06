@@ -10,7 +10,6 @@ namespace DS.Utilities
     using Data;
     using Data.Save;
     using Elements;
-    using ScriptableObjects;
     using Windows;
 
     public static class DSIOUtility

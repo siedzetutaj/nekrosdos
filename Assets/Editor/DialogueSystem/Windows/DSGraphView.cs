@@ -10,7 +10,6 @@ namespace DS.Windows
     using Data.Error;
     using Data.Save;
     using Elements;
-    using Enumerations;
     using System.Linq;
     using UnityEditor;
     using Utilities;

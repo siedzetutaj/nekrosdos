@@ -1,10 +1,8 @@
-namespace DS.Enumerations
+
+public enum DSDialogueType
 {
-    public enum DSDialogueType
-    {
-        SingleChoice,
-        MultipleChoice,
-        IfOneTrue,
-        IfAllTrue
-    }
+    SingleChoice,
+    MultipleChoice,
+    IfOneTrue,
+    IfAllTrue
 }

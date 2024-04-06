@@ -136,3 +136,9 @@ TextField
 {
 	margin-left: var(--ds-metrics-window-pixels-2);
 }
+
+.Image{
+	margin-right:auto;
+	height:	128px;
+	width:	128px;
+}

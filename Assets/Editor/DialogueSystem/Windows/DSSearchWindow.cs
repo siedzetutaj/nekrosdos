@@ -5,7 +5,6 @@ using UnityEngine;
 namespace DS.Windows
 {
     using Elements;
-    using Enumerations;
 
     public class DSSearchWindow : ScriptableObject, ISearchWindowProvider
     {

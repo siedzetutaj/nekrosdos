@@ -8,7 +8,6 @@ using UnityEditor.Experimental.GraphView;
 namespace DS.Elements
 {
     using Data.Save;
-    using Enumerations;
     using Utilities;
     using Windows;
     public class DSIfOneTrueNode : DSNode

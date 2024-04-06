@@ -1,12 +1,10 @@
 
-namespace DS.Windows
-{
 
-    [System.Serializable]
-    public class DSExposedProperty 
-    {
-        public string Name ;
-        public string OldName;
-        public bool Value = false;
-    }
+
+[System.Serializable]
+public class DSExposedProperty
+{
+    public string Name;
+    public string OldName;
+    public bool Value = false;
 }

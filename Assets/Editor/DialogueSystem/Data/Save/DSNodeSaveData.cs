@@ -6,7 +6,6 @@ namespace DS.Data.Save
 {
     using DS.Elements;
     using DS.Windows;
-    using Enumerations;
 
     [Serializable]
     public class DSNodeSaveData
