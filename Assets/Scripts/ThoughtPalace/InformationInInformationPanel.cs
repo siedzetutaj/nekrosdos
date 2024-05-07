@@ -29,6 +29,7 @@ public class InformationInInformationPanel : MonoBehaviour, IPointerDownHandler,
         informationInThoughtPanel.ThoughtPanel = ThoughtPanel;
         informationInThoughtPanel.Description = Description;
         informationInThoughtPanel.Thought = Thought;
+        informationInThoughtPanel.InformationDisplay = InformationDisplay;
 
         OnPointerExit();
         InformationDisplay.isBeingDragged = true;
@@ -39,8 +40,6 @@ public class InformationInInformationPanel : MonoBehaviour, IPointerDownHandler,
     }
     public void OnPointerUp(PointerEventData eventData)
     {
-        draggedThought.transform.SetParent(ThoughtPanel.transform, false);
-        InformationDisplay.isBeingDragged = false;
     }
     public void OnPointerEnter(PointerEventData eventData)
     {

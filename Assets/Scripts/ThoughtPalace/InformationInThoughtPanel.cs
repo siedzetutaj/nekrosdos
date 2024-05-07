@@ -8,9 +8,12 @@ using UnityEngine.EventSystems;
 public class InformationInThoughtPanel : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, IPointerMoveHandler
 {
 
+    private bool PlaceForTheFirstTime = true;
+
     [NonSerialized] public string Description;
     [NonSerialized] public TPThoughtSO Thought;
     [NonSerialized] public UiThoughtPanel ThoughtPanel;
+    [NonSerialized] public UIInformationDisplay InformationDisplay;
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -20,6 +23,12 @@ public class InformationInThoughtPanel : MonoBehaviour, IPointerDownHandler, IDr
     }
     public void OnPointerUp(PointerEventData eventData)
     {
+        if (PlaceForTheFirstTime)
+        {
+            this.transform.SetParent(ThoughtPanel.transform, false);
+            InformationDisplay.isBeingDragged = false;
+            PlaceForTheFirstTime = false;
+        }
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
