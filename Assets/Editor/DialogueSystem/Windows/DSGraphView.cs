@@ -328,7 +328,7 @@ namespace DS.Windows
         #region Additions
         private void AddManipulators()
         {
-            SetupZoom(0.000000001f,1000000);
+            SetupZoom(0.001f, ContentZoomer.DefaultMaxScale);
 
             this.AddManipulator(new ContentDragger());
             this.AddManipulator(new SelectionDragger());
