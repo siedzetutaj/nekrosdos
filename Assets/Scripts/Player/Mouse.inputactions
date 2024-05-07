@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ThoughtPalaceEnable",
+                    "type": "Button",
+                    "id": "30e544e6-acd5-45f6-986f-f720f56ced9a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -64,6 +73,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "MouseRightClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e4d13506-df9c-4f78-a3d9-17bf1f36bb74",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ThoughtPalaceEnable",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -112,6 +132,94 @@
                     "processors": "",
                     "groups": "",
                     "action": "MouseRightClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "TPInputs",
+            "id": "7c24e0fe-6052-48b7-bbda-1efaeb277fc4",
+            "actions": [
+                {
+                    "name": "MouseLeftClick",
+                    "type": "Button",
+                    "id": "df8b66ac-abc0-4a77-9af3-26db0c81371e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MousePosition",
+                    "type": "Value",
+                    "id": "4e37dc8e-69fb-4b19-9749-2ba5f68832a2",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MouseRightClick",
+                    "type": "Button",
+                    "id": "a444b11e-707b-4a27-b839-3554ef612a82",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ThoughtPalaceDisable",
+                    "type": "Button",
+                    "id": "18e1633d-f528-4151-98f1-9bdf7e5dbccf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "750b40d9-a6eb-4b79-8503-5d925efefc64",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseLeftClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bfdb45fd-62d8-42ee-8185-1dad9bf8a81d",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseRightClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6704ed79-4a90-4577-a251-5d71d8ede5f8",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ThoughtPalaceDisable",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "905a9603-fa70-4fff-9deb-affabf818aeb",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MousePosition",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

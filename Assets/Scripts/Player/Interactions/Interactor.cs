@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 using TMPro;
 using UnityEngine.InputSystem;
 
-public class Interactor : MonoBehaviour
+public class Interactor : MonoBehaviourSingleton<Interactor>
 {
     [Header("Components")]
     [SerializeField] private InputSystem _inputs;

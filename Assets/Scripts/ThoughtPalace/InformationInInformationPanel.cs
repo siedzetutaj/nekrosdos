@@ -4,51 +4,68 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
 using System;
-public class InformationInInformationPanel : MonoBehaviour, IPointerDownHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler, IPointerMoveHandler
+using UnityEngine.InputSystem;
+public class InformationInInformationPanel : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, IPointerMoveHandler
 {
 
     [SerializeField] private GameObject thoughtToCopy;
-    
+
     private GameObject draggedThought;
 
-    [NonSerialized] public TextMeshProUGUI descriptionTMP;
-    [NonSerialized] public string description;
-    [NonSerialized] public TPThoughtSO thought;
-
+    [NonSerialized] public TextMeshProUGUI DescriptionTMP;
+    [NonSerialized] public string Description;
+    [NonSerialized] public TPThoughtSO Thought;
+    [NonSerialized] public UiThoughtPanel ThoughtPanel;
+    [NonSerialized] public Transform DraggedParent;
+    [NonSerialized] public UIInformationDisplay InformationDisplay;
     public void OnPointerDown(PointerEventData eventData)
     {
-        draggedThought = Instantiate(thoughtToCopy, transform.parent);
+        draggedThought = Instantiate(thoughtToCopy, DraggedParent);
         draggedThought.transform.position = transform.position;
-    }
+        draggedThought.GetComponent<InformationInInformationPanel>().enabled = false;
+        
+        var informationInThoughtPanel = draggedThought.GetComponent<InformationInThoughtPanel>();
+        informationInThoughtPanel.enabled = true;   
+        informationInThoughtPanel.ThoughtPanel = ThoughtPanel;
+        informationInThoughtPanel.Description = Description;
+        informationInThoughtPanel.Thought = Thought;
 
+        OnPointerExit();
+        InformationDisplay.isBeingDragged = true;
+    }
     public void OnDrag(PointerEventData eventData)
     {
         draggedThought.transform.position = eventData.position;
     }
-
-    public void OnEndDrag(PointerEventData eventData)
+    public void OnPointerUp(PointerEventData eventData)
     {
-        // When dragging ends, if over a drop target, perform drop action
-        // You can implement your drop logic here
-        // For simplicity, let's just destroy the copy
-        Destroy(draggedThought);
+        draggedThought.transform.SetParent(ThoughtPanel.transform, false);
+        InformationDisplay.isBeingDragged = false;
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
-        // Display the object's name when the mouse hovers over it
-        descriptionTMP.text = gameObject.name;
-        descriptionTMP.gameObject.SetActive(true);
+        if (!InformationDisplay.isBeingDragged)
+        {
+            DescriptionTMP.text = Description;
+            DescriptionTMP.gameObject.SetActive(true);
+        }
     }
     public void OnPointerMove(PointerEventData eventData)
     {
-        descriptionTMP.transform.position = Input.mousePosition;
+        if (!InformationDisplay.isBeingDragged)
+        {
+            Vector2 mousePos = InputSystem.Instance.mouseInput.TPInputs.MousePosition.ReadValue<Vector2>();
+            Vector2 UISize = DescriptionTMP.rectTransform.sizeDelta;
+            Vector3 topLeftCorner = new Vector3(mousePos.x + UISize.x / 2 + 10, mousePos.y - UISize.y / 2, DescriptionTMP.transform.position.z);
+            DescriptionTMP.transform.position = topLeftCorner;
+        }
     }
-
-    public void OnPointerExit(PointerEventData eventData)
+    public void OnPointerExit(PointerEventData eventData = null)
     {
         // Hide the hover text when the mouse exits the object
-        descriptionTMP.gameObject.SetActive(false);
+        if (!InformationDisplay.isBeingDragged)
+        {
+            DescriptionTMP.gameObject.SetActive(false);
+        }
     }
-
-
 }

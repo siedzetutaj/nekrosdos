@@ -15,12 +15,22 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
     [SerializeField] private InputSystem _inputSystem;
     [SerializeField] private NavMeshAgent _agent;
     [SerializeField] private DialogueDisplay _dialogueDisplay;
+    [SerializeField] private GameObject _thoughtPalaceUI;
 
     public Tilemap map;
 
     private bool _isGointToHaveInteraction = false;
     private DSDialogue _dialogue;
 
+    private void OnEnable()
+    {
+        _inputSystem.ToggleTP += ToggleThoughtpalace;
+    }
+    private void OnDisable()
+    {
+        _inputSystem.ToggleTP -= ToggleThoughtpalace;
+
+    }
     private void Awake()
     {
         _agent.updateRotation = false;
@@ -71,9 +81,26 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
     }
     private void DisplayDialogue()
     {
-        _inputSystem.mouseInput.Disable();
+        _inputSystem.mouseInput.MovementInputs.Disable();
         _dialogueDisplay.startingDialogue = _dialogue;
         _dialogueDisplay.StartDisplaying();
+    }
+    #endregion
+    #region ThoughtPalace
+    private void ToggleThoughtpalace()
+    {
+        if (!_thoughtPalaceUI.activeSelf)
+        {
+            _thoughtPalaceUI.SetActive(true);
+            _inputSystem.mouseInput.MovementInputs.Disable();
+            _inputSystem.mouseInput.TPInputs.Enable();
+        }
+        else
+        {
+            _thoughtPalaceUI.SetActive(false);
+            _inputSystem.mouseInput.MovementInputs.Enable();
+            _inputSystem.mouseInput.TPInputs.Disable();
+        }
     }
     #endregion
 }

@@ -9,13 +9,16 @@ public class InformationPrefabData : MonoBehaviour
     [SerializeField] private TextMeshProUGUI InformationName;
     [SerializeField] private TPThoughtSO MyThought;
     [SerializeField] private InformationInInformationPanel Information;
-    public void Initialize(TPThoughtSO thought,TextMeshProUGUI description)
+    public void Initialize(TPThoughtSO thought,TextMeshProUGUI descriptionTMP, Transform draggedParent, UiThoughtPanel thoughtPanel, UIInformationDisplay informationDisplay)
     {
         Image.sprite = thought.Sprite;
         InformationName.text = thought.Name;
         MyThought = thought;
-        Information.description = thought.Description;
-        Information.thought = MyThought;
-        Information.descriptionTMP = description;
+        Information.Description = thought.Description;
+        Information.Thought = MyThought;
+        Information.DescriptionTMP = descriptionTMP;
+        Information.ThoughtPanel = thoughtPanel;
+        Information.DraggedParent = draggedParent;
+        Information.InformationDisplay = informationDisplay;
 }
 }

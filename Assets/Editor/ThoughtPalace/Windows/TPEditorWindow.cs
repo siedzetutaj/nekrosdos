@@ -26,9 +26,10 @@ using UnityEngine.UIElements;
             AddToolbar();
 
             AddStyles();
-        }
+            EditorApplication.quitting += Save;
+    }
 
-        private void AddGraphView()
+    private void AddGraphView()
         {
             graphView = new TPGraphView(this);
 

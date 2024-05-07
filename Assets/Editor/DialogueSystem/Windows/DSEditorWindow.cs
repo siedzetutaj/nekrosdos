@@ -30,6 +30,7 @@ namespace DS.Windows
             AddToolbar();
 
             AddStyles();
+            EditorApplication.quitting += Save;
         }
 
         private void AddGraphView()

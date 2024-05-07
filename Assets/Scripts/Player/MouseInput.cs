@@ -53,6 +53,15 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ThoughtPalaceEnable"",
+                    ""type"": ""Button"",
+                    ""id"": ""30e544e6-acd5-45f6-986f-f720f56ced9a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -86,6 +95,17 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""MouseRightClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e4d13506-df9c-4f78-a3d9-17bf1f36bb74"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ThoughtPalaceEnable"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -138,6 +158,94 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""TPInputs"",
+            ""id"": ""7c24e0fe-6052-48b7-bbda-1efaeb277fc4"",
+            ""actions"": [
+                {
+                    ""name"": ""MouseLeftClick"",
+                    ""type"": ""Button"",
+                    ""id"": ""df8b66ac-abc0-4a77-9af3-26db0c81371e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MousePosition"",
+                    ""type"": ""Value"",
+                    ""id"": ""4e37dc8e-69fb-4b19-9749-2ba5f68832a2"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MouseRightClick"",
+                    ""type"": ""Button"",
+                    ""id"": ""a444b11e-707b-4a27-b839-3554ef612a82"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ThoughtPalaceDisable"",
+                    ""type"": ""Button"",
+                    ""id"": ""18e1633d-f528-4151-98f1-9bdf7e5dbccf"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""750b40d9-a6eb-4b79-8503-5d925efefc64"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseLeftClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bfdb45fd-62d8-42ee-8185-1dad9bf8a81d"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseRightClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6704ed79-4a90-4577-a251-5d71d8ede5f8"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ThoughtPalaceDisable"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""905a9603-fa70-4fff-9deb-affabf818aeb"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MousePosition"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -147,10 +255,17 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
         m_MovementInputs_MouseLeftClick = m_MovementInputs.FindAction("MouseLeftClick", throwIfNotFound: true);
         m_MovementInputs_MousePosition = m_MovementInputs.FindAction("MousePosition", throwIfNotFound: true);
         m_MovementInputs_MouseRightClick = m_MovementInputs.FindAction("MouseRightClick", throwIfNotFound: true);
+        m_MovementInputs_ThoughtPalaceEnable = m_MovementInputs.FindAction("ThoughtPalaceEnable", throwIfNotFound: true);
         // DialogueInputs
         m_DialogueInputs = asset.FindActionMap("DialogueInputs", throwIfNotFound: true);
         m_DialogueInputs_MouseLeftClick = m_DialogueInputs.FindAction("MouseLeftClick", throwIfNotFound: true);
         m_DialogueInputs_MouseRightClick = m_DialogueInputs.FindAction("MouseRightClick", throwIfNotFound: true);
+        // TPInputs
+        m_TPInputs = asset.FindActionMap("TPInputs", throwIfNotFound: true);
+        m_TPInputs_MouseLeftClick = m_TPInputs.FindAction("MouseLeftClick", throwIfNotFound: true);
+        m_TPInputs_MousePosition = m_TPInputs.FindAction("MousePosition", throwIfNotFound: true);
+        m_TPInputs_MouseRightClick = m_TPInputs.FindAction("MouseRightClick", throwIfNotFound: true);
+        m_TPInputs_ThoughtPalaceDisable = m_TPInputs.FindAction("ThoughtPalaceDisable", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -215,6 +330,7 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_MovementInputs_MouseLeftClick;
     private readonly InputAction m_MovementInputs_MousePosition;
     private readonly InputAction m_MovementInputs_MouseRightClick;
+    private readonly InputAction m_MovementInputs_ThoughtPalaceEnable;
     public struct MovementInputsActions
     {
         private @MouseInput m_Wrapper;
@@ -222,6 +338,7 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
         public InputAction @MouseLeftClick => m_Wrapper.m_MovementInputs_MouseLeftClick;
         public InputAction @MousePosition => m_Wrapper.m_MovementInputs_MousePosition;
         public InputAction @MouseRightClick => m_Wrapper.m_MovementInputs_MouseRightClick;
+        public InputAction @ThoughtPalaceEnable => m_Wrapper.m_MovementInputs_ThoughtPalaceEnable;
         public InputActionMap Get() { return m_Wrapper.m_MovementInputs; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -240,6 +357,9 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
             @MouseRightClick.started += instance.OnMouseRightClick;
             @MouseRightClick.performed += instance.OnMouseRightClick;
             @MouseRightClick.canceled += instance.OnMouseRightClick;
+            @ThoughtPalaceEnable.started += instance.OnThoughtPalaceEnable;
+            @ThoughtPalaceEnable.performed += instance.OnThoughtPalaceEnable;
+            @ThoughtPalaceEnable.canceled += instance.OnThoughtPalaceEnable;
         }
 
         private void UnregisterCallbacks(IMovementInputsActions instance)
@@ -253,6 +373,9 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
             @MouseRightClick.started -= instance.OnMouseRightClick;
             @MouseRightClick.performed -= instance.OnMouseRightClick;
             @MouseRightClick.canceled -= instance.OnMouseRightClick;
+            @ThoughtPalaceEnable.started -= instance.OnThoughtPalaceEnable;
+            @ThoughtPalaceEnable.performed -= instance.OnThoughtPalaceEnable;
+            @ThoughtPalaceEnable.canceled -= instance.OnThoughtPalaceEnable;
         }
 
         public void RemoveCallbacks(IMovementInputsActions instance)
@@ -324,15 +447,93 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
         }
     }
     public DialogueInputsActions @DialogueInputs => new DialogueInputsActions(this);
+
+    // TPInputs
+    private readonly InputActionMap m_TPInputs;
+    private List<ITPInputsActions> m_TPInputsActionsCallbackInterfaces = new List<ITPInputsActions>();
+    private readonly InputAction m_TPInputs_MouseLeftClick;
+    private readonly InputAction m_TPInputs_MousePosition;
+    private readonly InputAction m_TPInputs_MouseRightClick;
+    private readonly InputAction m_TPInputs_ThoughtPalaceDisable;
+    public struct TPInputsActions
+    {
+        private @MouseInput m_Wrapper;
+        public TPInputsActions(@MouseInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @MouseLeftClick => m_Wrapper.m_TPInputs_MouseLeftClick;
+        public InputAction @MousePosition => m_Wrapper.m_TPInputs_MousePosition;
+        public InputAction @MouseRightClick => m_Wrapper.m_TPInputs_MouseRightClick;
+        public InputAction @ThoughtPalaceDisable => m_Wrapper.m_TPInputs_ThoughtPalaceDisable;
+        public InputActionMap Get() { return m_Wrapper.m_TPInputs; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(TPInputsActions set) { return set.Get(); }
+        public void AddCallbacks(ITPInputsActions instance)
+        {
+            if (instance == null || m_Wrapper.m_TPInputsActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_TPInputsActionsCallbackInterfaces.Add(instance);
+            @MouseLeftClick.started += instance.OnMouseLeftClick;
+            @MouseLeftClick.performed += instance.OnMouseLeftClick;
+            @MouseLeftClick.canceled += instance.OnMouseLeftClick;
+            @MousePosition.started += instance.OnMousePosition;
+            @MousePosition.performed += instance.OnMousePosition;
+            @MousePosition.canceled += instance.OnMousePosition;
+            @MouseRightClick.started += instance.OnMouseRightClick;
+            @MouseRightClick.performed += instance.OnMouseRightClick;
+            @MouseRightClick.canceled += instance.OnMouseRightClick;
+            @ThoughtPalaceDisable.started += instance.OnThoughtPalaceDisable;
+            @ThoughtPalaceDisable.performed += instance.OnThoughtPalaceDisable;
+            @ThoughtPalaceDisable.canceled += instance.OnThoughtPalaceDisable;
+        }
+
+        private void UnregisterCallbacks(ITPInputsActions instance)
+        {
+            @MouseLeftClick.started -= instance.OnMouseLeftClick;
+            @MouseLeftClick.performed -= instance.OnMouseLeftClick;
+            @MouseLeftClick.canceled -= instance.OnMouseLeftClick;
+            @MousePosition.started -= instance.OnMousePosition;
+            @MousePosition.performed -= instance.OnMousePosition;
+            @MousePosition.canceled -= instance.OnMousePosition;
+            @MouseRightClick.started -= instance.OnMouseRightClick;
+            @MouseRightClick.performed -= instance.OnMouseRightClick;
+            @MouseRightClick.canceled -= instance.OnMouseRightClick;
+            @ThoughtPalaceDisable.started -= instance.OnThoughtPalaceDisable;
+            @ThoughtPalaceDisable.performed -= instance.OnThoughtPalaceDisable;
+            @ThoughtPalaceDisable.canceled -= instance.OnThoughtPalaceDisable;
+        }
+
+        public void RemoveCallbacks(ITPInputsActions instance)
+        {
+            if (m_Wrapper.m_TPInputsActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(ITPInputsActions instance)
+        {
+            foreach (var item in m_Wrapper.m_TPInputsActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_TPInputsActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public TPInputsActions @TPInputs => new TPInputsActions(this);
     public interface IMovementInputsActions
     {
         void OnMouseLeftClick(InputAction.CallbackContext context);
         void OnMousePosition(InputAction.CallbackContext context);
         void OnMouseRightClick(InputAction.CallbackContext context);
+        void OnThoughtPalaceEnable(InputAction.CallbackContext context);
     }
     public interface IDialogueInputsActions
     {
         void OnMouseLeftClick(InputAction.CallbackContext context);
         void OnMouseRightClick(InputAction.CallbackContext context);
+    }
+    public interface ITPInputsActions
+    {
+        void OnMouseLeftClick(InputAction.CallbackContext context);
+        void OnMousePosition(InputAction.CallbackContext context);
+        void OnMouseRightClick(InputAction.CallbackContext context);
+        void OnThoughtPalaceDisable(InputAction.CallbackContext context);
     }
 }

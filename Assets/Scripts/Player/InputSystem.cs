@@ -21,9 +21,15 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
     public Action onMovemenLeftClickDown;
     public Action onMovemenLeftClickUp;
     public Action onMovemenRightClickDown;
+
     
     // Dialogue
     public Action onDialogueLeftClickDown;
+
+    //TP
+    public Action onTPLeftClickDown;
+    public Action ToggleTP;
+
     #endregion
     #region Other variables
     public bool holdLeft = false;
@@ -41,29 +47,48 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
     #region Connect/Disconnect actions
     private void OnDisable()
     {
+        //Movement
         mouseInput.MovementInputs.MouseLeftClick.started -= MovementLeftClickDown;
         mouseInput.MovementInputs.MouseLeftClick.canceled -= MovementLeftClickUp;
         mouseInput.MovementInputs.MouseRightClick.performed -= MovementRightClickDown;
+        mouseInput.MovementInputs.ThoughtPalaceEnable.performed -= ThoughtPalaceDown;
 
-        mouseInput.DialogueInputs.MouseLeftClick.started -= DialogueLeftClickDown;  
+        //Dialogue
+        mouseInput.DialogueInputs.MouseLeftClick.started -= DialogueLeftClickDown;
+
+        //TP
+        mouseInput.TPInputs.MouseLeftClick.started -= TPLeftClickDown;
+        mouseInput.TPInputs.ThoughtPalaceDisable.performed -= ThoughtPalaceDown;
+
+
 
         mouseInput.Disable();
     }
     private void Start()
     {
+        //Movement
         mouseInput.MovementInputs.MouseLeftClick.performed += MovementLeftClickDown;
         mouseInput.MovementInputs.MouseLeftClick.canceled += MovementLeftClickUp;
         mouseInput.MovementInputs.MouseRightClick.performed += MovementRightClickDown;
+        mouseInput.MovementInputs.ThoughtPalaceEnable.performed += ThoughtPalaceDown;
 
+        //Dialogue
         mouseInput.DialogueInputs.MouseRightClick.started += DialogueLeftClickDown;
+
+        //TP
+        mouseInput.TPInputs.MouseLeftClick.started += TPLeftClickDown;
+        mouseInput.TPInputs.ThoughtPalaceDisable.performed += ThoughtPalaceDown;
+
+
         mouseInput.DialogueInputs.Disable();
+        mouseInput.TPInputs.Disable();
     }
     #endregion
     #region Movement Actions
     private void MovementRightClickDown(InputAction.CallbackContext context)
     {
         onMovemenRightClickDown?.Invoke();
-    }
+    }    
     private void MovementLeftClickDown(InputAction.CallbackContext obj)
     {
         holdLeft = true;
@@ -79,6 +104,16 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
     private void DialogueLeftClickDown(InputAction.CallbackContext obj)
     {
         onDialogueLeftClickDown?.Invoke();
+    }
+    #endregion
+    #region TP Actions
+    private void ThoughtPalaceDown(InputAction.CallbackContext context)
+    {
+        ToggleTP?.Invoke();
+    }
+    private void TPLeftClickDown(InputAction.CallbackContext obj)
+    {
+        onTPLeftClickDown?.Invoke();
     }
     #endregion
 }

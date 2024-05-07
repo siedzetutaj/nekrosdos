@@ -1,15 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 public class UIInformationDisplay : MonoBehaviour
 {
+    //var for each information to see if any is being dragged
+    public bool isBeingDragged;
+
     [SerializeField] private TPAllThoughtsSO AllThoughtsSO;
     [SerializeField] private GameObject InformationPrefab;
     [SerializeField] private Transform Content;
     [SerializeField] private TextMeshProUGUI descriptionTMP;
+    [SerializeField] private UiThoughtPanel ThoughtPanel;
+    [SerializeField] private Transform DraggedParent; 
 
     public void Start()
     {
@@ -17,7 +18,7 @@ public class UIInformationDisplay : MonoBehaviour
         {
             GameObject Information = Instantiate(InformationPrefab, Content);
             InformationPrefabData informationData = Information.GetComponent<InformationPrefabData>();
-            informationData.Initialize(thought, descriptionTMP);
+            informationData.Initialize(thought, descriptionTMP, DraggedParent, ThoughtPanel, this);
         }
     }
 }

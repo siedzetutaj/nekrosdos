@@ -13,17 +13,4 @@ MonoBehaviour:
   m_Name: ThoughtFileNameGraph
   m_EditorClassIdentifier: 
   <FileName>k__BackingField: ThoughtFileName
-  <Nodes>k__BackingField:
-  - <ID>k__BackingField: 7a6d5688-73c7-4fb3-8ff5-9cf66aa042ca
-    <Name>k__BackingField: DialogueName
-    <ThoughtSO>k__BackingField: {fileID: 0}
-    <NextThoughts>k__BackingField: []
-    <ThoughtType>k__BackingField: 0
-    <Position>k__BackingField: {x: 924, y: 347}
-  - <ID>k__BackingField: 80881ef0-0e44-4a0d-b56a-a1d2d9512697
-    <Name>k__BackingField: DialogueName
-    <ThoughtSO>k__BackingField: {fileID: 11400000, guid: 8cc87b8df1dfdab4a9e46c9d93eda1c6, type: 2}
-    <NextThoughts>k__BackingField:
-    - <NodeID>k__BackingField: 7a6d5688-73c7-4fb3-8ff5-9cf66aa042ca
-    <ThoughtType>k__BackingField: 0
-    <Position>k__BackingField: {x: 535, y: 254}
+  <Nodes>k__BackingField: []
