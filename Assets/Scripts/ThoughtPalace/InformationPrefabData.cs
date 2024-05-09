@@ -14,11 +14,6 @@ public class InformationPrefabData : MonoBehaviour
         Image.sprite = thought.Sprite;
         InformationName.text = thought.Name;
         MyThought = thought;
-        Information.Description = thought.Description;
-        Information.Thought = MyThought;
-        Information.DescriptionTMP = descriptionTMP;
-        Information.ThoughtPanel = thoughtPanel;
-        Information.DraggedParent = draggedParent;
-        Information.InformationDisplay = informationDisplay;
+        Information.Initialize(thought, descriptionTMP, draggedParent, thoughtPanel, informationDisplay);
 }
 }
