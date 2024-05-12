@@ -857,7 +857,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &253777154
 RectTransform:
   m_ObjectHideFlags: 0
@@ -877,8 +877,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.099975586, y: 0}
-  m_SizeDelta: {x: -0.099975586, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &253777155
 MonoBehaviour:
@@ -15530,12 +15530,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isBeingDragged: 0
-  AllThoughtsSO: {fileID: 11400000, guid: 96c367daeefd1b6478ebbc367a53eff9, type: 2}
-  InformationPrefab: {fileID: 3201775691064386052, guid: 4a12eb3b4c877c748858629e079e65e8, type: 3}
-  Content: {fileID: 150414499}
-  descriptionTMP: {fileID: 123422643}
-  ThoughtPanel: {fileID: 1531660202}
-  DraggedParent: {fileID: 72200845}
+  _allThoughtsSO: {fileID: 11400000, guid: 96c367daeefd1b6478ebbc367a53eff9, type: 2}
+  _informationPrefab: {fileID: 3201775691064386052, guid: 4a12eb3b4c877c748858629e079e65e8, type: 3}
+  _content: {fileID: 150414499}
+  _descriptionTMP: {fileID: 123422643}
+  _thoughtPanel: {fileID: 1531660202}
+  _draggedParent: {fileID: 72200845}
 --- !u!1 &1079635182
 GameObject:
   m_ObjectHideFlags: 0
@@ -15569,7 +15569,7 @@ RectTransform:
   m_Father: {fileID: 1001477615}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -15942,8 +15942,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.007507324, y: 0}
-  m_SizeDelta: {x: -0.024902, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1531660200
 MonoBehaviour:
@@ -15998,6 +15998,7 @@ MonoBehaviour:
   descriptionTMP: {fileID: 345860192}
   ThoughtPanelTransform: {fileID: 211636298}
   LineHolder: {fileID: 2070869803}
+  ThoughtConnections: []
 --- !u!1 &1720297754
 GameObject:
   m_ObjectHideFlags: 0
@@ -16229,13 +16230,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputs: {fileID: 1838408586}
-  mainCamera: {fileID: 1957998784}
-  setCoursor: {fileID: 269655631}
+  _mainCamera: {fileID: 1957998784}
+  _setCoursor: {fileID: 269655631}
   _interactionPointRadius: 0.2
   _interactableMask:
     serializedVersion: 2
     m_Bits: 64
-  displayName: {fileID: 928947764}
+  _displayName: {fileID: 928947764}
   _numfound: 0
 --- !u!1 &1838408585
 GameObject:

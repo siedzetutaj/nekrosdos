@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da2de4912a078c44dbe19993ae2bc364, type: 3}
-  m_Name: 2323Thought
+  m_Name: 23Thought
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: 2323
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 5e1d4ff17bc384046ab47375ad2266de, type: 3}
-  <Description>k__BackingField: 1212
+  <ID>k__BackingField:
+    serializedGuid: c3cda8d9-a4b4-4379-bb2f-2e611bd563a0
+  <Name>k__BackingField: 23
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 29b03bb07e31dad44a1a34ab4fc72673, type: 3}
+  <Description>k__BackingField: 2332
   <Postion>k__BackingField: {x: 0, y: 0}

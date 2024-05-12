@@ -8,13 +8,13 @@ using UnityEngine.InputSystem;
 public class InformationInInformationPanel : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, IPointerMoveHandler
 {
 
-    [SerializeField] private GameObject thoughtToCopy;
-    [SerializeField] private GameObject linePrefab;
-    [SerializeField] private RectTransform recTransform;
+    [SerializeField] private GameObject _thoughtToCopy;
+    [SerializeField] private GameObject _linePrefab;
+    [SerializeField] private RectTransform _recTransform;
 
-    private GameObject draggedThought;
+    private GameObject _draggedThought;
     //bool referes to if the one is first = true, and last =  false
-    private Dictionary<LineController,bool> lineRenderers = new Dictionary<LineController, bool>();
+    private Dictionary<LineController,bool> _lineRenderers = new Dictionary<LineController, bool>();
 
     private bool IsInInformation = true;
 
@@ -24,6 +24,16 @@ public class InformationInInformationPanel : MonoBehaviour, IPointerDownHandler,
     [NonSerialized] public UiThoughtPanel ThoughtPanel;
     [NonSerialized] public Transform DraggedParent;
     [NonSerialized] public UIInformationDisplay InformationDisplay;
+    public void Initialize(TPThoughtSO thought, TextMeshProUGUI descriptionTMP, Transform draggedParent, UiThoughtPanel thoughtPanel, UIInformationDisplay informationDisplay)
+    {
+        Thought = thought;
+        Description = thought.Description;
+        DescriptionTMP = descriptionTMP;
+        ThoughtPanel = thoughtPanel;
+        DraggedParent = draggedParent;
+        InformationDisplay = informationDisplay;
+    }
+    #region Pointer
     public void OnPointerDown(PointerEventData eventData)
     {
         #region LeftClick
@@ -33,8 +43,7 @@ public class InformationInInformationPanel : MonoBehaviour, IPointerDownHandler,
         }
         else if (eventData.button == PointerEventData.InputButton.Left)
         {
-            draggedThought = gameObject;
-            draggedThought.transform.position = eventData.position;
+            StartDraggingThought(eventData);
         }
         #endregion
         #region Right Click
@@ -42,28 +51,23 @@ public class InformationInInformationPanel : MonoBehaviour, IPointerDownHandler,
         {
             CreateBeginigLinePoint();
         }
-        //else if (!IsInInformation && IsCreatingLine && eventData.button == PointerEventData.InputButton.Right
-        //         && ThoughtPanel.activeThough != this.gameObject)
-        //{
-        //    CreateEndLinePoint();
-        //}
         #endregion
     }
     public void OnDrag(PointerEventData eventData)
     {
         if (eventData.button == PointerEventData.InputButton.Left)
         {
-            draggedThought.transform.position = eventData.position;
+            DragThought(eventData);
         }
     }
     public void OnPointerUp(PointerEventData eventData)
     {
+        //LeftClick
         if (IsInInformation && eventData.button == PointerEventData.InputButton.Left)
         {
-            draggedThought.transform.SetParent(ThoughtPanel.ThoughtPanelTransform);
-            draggedThought.GetComponent<InformationInInformationPanel>().IsInInformation = false;
-            InformationDisplay.isBeingDragged = false;
+            EndDrag();
         }
+        //RightClick
         else if (!IsInInformation && ThoughtPanel.isCreatingLine && eventData.button == PointerEventData.InputButton.Right
                  && ThoughtPanel.activeThough != this.gameObject)
         {
@@ -74,99 +78,126 @@ public class InformationInInformationPanel : MonoBehaviour, IPointerDownHandler,
     {
         if (IsInInformation)
         {
-            if (!InformationDisplay.isBeingDragged)
-            {
-                DescriptionTMP.text = Description;
-                DescriptionTMP.gameObject.SetActive(true);
-            }
+            SetActiveDescription(InformationDisplay.isBeingDragged);
         }
         else
         {
-            if (!ThoughtPanel.isBeingDragged)
-            {
-                DescriptionTMP.text = Description;
-                DescriptionTMP.gameObject.SetActive(true);
-            }
+            SetActiveDescription(ThoughtPanel.isBeingDragged);
         }
     }
     public void OnPointerMove(PointerEventData eventData)
     {
         if (IsInInformation)
         {
-            if (!InformationDisplay.isBeingDragged)
-            {
-                Vector2 mousePos = InputSystem.Instance.mouseInput.TPInputs.MousePosition.ReadValue<Vector2>();
-                Vector2 UISize = DescriptionTMP.rectTransform.sizeDelta;
-                Vector3 topLeftCorner = new Vector3(mousePos.x + UISize.x / 2 + 10, mousePos.y - UISize.y / 2, DescriptionTMP.transform.position.z);
-                DescriptionTMP.transform.position = topLeftCorner;
-            }
+            DispalyDescrition(InformationDisplay.isBeingDragged);
         }
         else
         {
-            if (!ThoughtPanel.isBeingDragged)
-            {
-                Vector2 mousePos = InputSystem.Instance.mouseInput.TPInputs.MousePosition.ReadValue<Vector2>();
-                Vector2 UISize = DescriptionTMP.rectTransform.sizeDelta;
-                Vector3 topLeftCorner = new Vector3(mousePos.x + UISize.x / 2 + 10, mousePos.y - UISize.y / 2, DescriptionTMP.transform.position.z);
-                DescriptionTMP.transform.position = topLeftCorner;
-            }
+            DispalyDescrition(ThoughtPanel.isBeingDragged);
         }
     }
     public void OnPointerExit(PointerEventData eventData = null)
     {
         if (IsInInformation)
         {
-            if (!InformationDisplay.isBeingDragged)
-            {
-                DescriptionTMP.gameObject.SetActive(false);
-            }
+            DisableDescription(InformationDisplay.isBeingDragged);
         }
         else
         {
-            if (!ThoughtPanel.isBeingDragged)
-            {
-                DescriptionTMP.gameObject.SetActive(false);
-            }
+            DisableDescription(ThoughtPanel.isBeingDragged);
         }
     }
-    public void Initialize(TPThoughtSO thought, TextMeshProUGUI descriptionTMP, Transform draggedParent, UiThoughtPanel thoughtPanel, UIInformationDisplay informationDisplay)
-    {
-        Thought = thought;
-        Description = thought.Description;
-        DescriptionTMP = descriptionTMP;
-        ThoughtPanel = thoughtPanel;
-        DraggedParent = draggedParent;
-        InformationDisplay = informationDisplay;
-    }
+    #endregion
+    #region Creations
     private void CreateThought()
     {
-        draggedThought = Instantiate(thoughtToCopy, DraggedParent);
-        draggedThought.transform.position = transform.position;
-        SetRectTransformToMiddle(draggedThought);
-        draggedThought.GetComponent<InformationInInformationPanel>().Initialize(Thought, ThoughtPanel.descriptionTMP, DraggedParent, ThoughtPanel, InformationDisplay);
-        draggedThought.GetComponent<InformationInInformationPanel>().IsInInformation = false;
+        _draggedThought = Instantiate(_thoughtToCopy, DraggedParent);
+        _draggedThought.transform.position = transform.position;
+        SetRectTransformToMiddle(_draggedThought);
+        _draggedThought.GetComponent<InformationInInformationPanel>().Initialize(Thought, ThoughtPanel.descriptionTMP, DraggedParent, ThoughtPanel, InformationDisplay);
+        _draggedThought.GetComponent<InformationInInformationPanel>().IsInInformation = false;
         OnPointerExit();
         InformationDisplay.isBeingDragged = true;
     }
     private void CreateBeginigLinePoint()
     {
-        GameObject go = Instantiate(linePrefab, ThoughtPanel.LineHolder);
+        GameObject go = Instantiate(_linePrefab, ThoughtPanel.LineHolder);
         ThoughtPanel.activeThough = this.gameObject;
         var lineController = go.GetComponent<LineController>();
         ThoughtPanel.activeLineController = lineController;
-        lineController.SetPosioton(0, recTransform.anchoredPosition);
-        lineRenderers.Add(lineController, true);
+        lineController.SetPointPosition(0, _recTransform.anchoredPosition);
+        _lineRenderers.Add(lineController, true);
         ThoughtPanel.isCreatingLine = true;
     }
     private void CreateEndLinePoint()
     {
         ThoughtPanel.activeLineController.IsDraggedByMouse = false;
-        ThoughtPanel.activeLineController.SetPosioton(1, recTransform.anchoredPosition);
-        lineRenderers.Add(ThoughtPanel.activeLineController, false);
+        ThoughtPanel.activeLineController.SetPointPosition(1, _recTransform.anchoredPosition);
+        _lineRenderers.Add(ThoughtPanel.activeLineController, false);
         ThoughtPanel.activeLineController = null;
         ThoughtPanel.activeThough = null;
         ThoughtPanel.isCreatingLine = false;
     }
+    #endregion
+    #region Drag
+    private void StartDraggingThought(PointerEventData eventData)
+    {
+        _draggedThought = gameObject;
+        _draggedThought.transform.position = eventData.position;
+    }
+    private void DragThought(PointerEventData eventData)
+    {
+        _draggedThought.transform.position = eventData.position;
+        if (_lineRenderers.Count > 0)
+        {
+            foreach (var lineRenderer in _lineRenderers)
+            {
+                if (lineRenderer.Value)
+                {
+                    lineRenderer.Key.SetPointPosition(0, _recTransform.anchoredPosition);
+                }
+                else if (!lineRenderer.Value)
+                {
+                    lineRenderer.Key.SetPointPosition(1, _recTransform.anchoredPosition);
+                }
+            }
+        }
+    }
+    private void EndDrag()
+    {
+        _draggedThought.transform.SetParent(ThoughtPanel.ThoughtPanelTransform);
+        _draggedThought.GetComponent<InformationInInformationPanel>().IsInInformation = false;
+        InformationDisplay.isBeingDragged = false;
+    }
+    #endregion
+    #region Description
+    private void SetActiveDescription(bool isDragged)
+    {
+        if (isDragged)
+        {
+            DescriptionTMP.text = Description;
+            DescriptionTMP.gameObject.SetActive(true);
+        }
+    }
+    private void DispalyDescrition(bool isDragged)
+    {
+        if (!isDragged)
+        {
+            Vector2 mousePos = InputSystem.Instance.mouseInput.TPInputs.MousePosition.ReadValue<Vector2>();
+            Vector2 UISize = DescriptionTMP.rectTransform.sizeDelta;
+            Vector3 topLeftCorner = new Vector3(mousePos.x + UISize.x / 2 + 10, mousePos.y - UISize.y / 2, DescriptionTMP.transform.position.z);
+            DescriptionTMP.transform.position = topLeftCorner;
+        }
+    }
+    private void DisableDescription(bool isDragged)
+    {
+        if (!isDragged)
+        {
+            DescriptionTMP.gameObject.SetActive(false);
+        }
+    }
+    #endregion
+    #region Utilites
     private void SetRectTransformToMiddle(GameObject uiObject)
     {
         RectTransform uitransform = uiObject.GetComponent<RectTransform>();
@@ -175,4 +206,6 @@ public class InformationInInformationPanel : MonoBehaviour, IPointerDownHandler,
         uitransform.anchorMax = new Vector2(0.5f, 0.5f);
         uitransform.pivot = new Vector2(0.5f, 0.5f);
     }
+
+    #endregion
 }

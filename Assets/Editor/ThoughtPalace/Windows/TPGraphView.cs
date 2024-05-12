@@ -123,7 +123,7 @@ public class TPGraphView : GraphView
                     TPNode nextNode = (TPNode)edge.input.node;
 
                     List<TPNextThoughtSaveData> saveDataList = (List<TPNextThoughtSaveData>)edge.output.userData;
-                    TPNextThoughtSaveData saveData = new TPNextThoughtSaveData() { NodeID = nextNode.ID };
+                    TPNextThoughtSaveData saveData = new TPNextThoughtSaveData() { NodeID = nextNode.ID, ThoughtID= nextNode.ThoughtSO.ID };
                     saveDataList.Add(saveData);
                 }
             }

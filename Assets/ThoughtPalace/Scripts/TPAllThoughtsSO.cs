@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
@@ -18,6 +19,7 @@ public class TPAllThoughtsSO : ScriptableObject
             Debug.Log($"{Name} is Created");
 
             TPThoughtSO thought = CreateAsset<TPThoughtSO>("Assets/ThoughtPalace/Thoughts", $"{Name}Thought");
+            thought.SetID();
             thought.Name = Name;
             thought.Sprite = Sprite;
             thought.Description = Description;

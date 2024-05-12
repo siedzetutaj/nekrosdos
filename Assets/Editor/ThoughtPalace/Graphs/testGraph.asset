@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f63074f0ad88c041a5dc94d51632947, type: 3}
+  m_Name: testGraph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: test
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField:
+      serializedGuid: 1bd5d584-4148-4ce4-828b-d45734d78f06
+    <Name>k__BackingField: 12345
+    <ThoughtSO>k__BackingField: {fileID: 11400000, guid: 8d222a74314b0514db16ee4c7e9a9149, type: 2}
+    <NextThoughts>k__BackingField:
+    - <NodeID>k__BackingField:
+        serializedGuid: 86e2863a-3311-48b1-b741-734e9ec81fde
+      <ThoughtID>k__BackingField:
+        serializedGuid: c9143f26-a22a-4662-b714-38ae4a302013
+    - <NodeID>k__BackingField:
+        serializedGuid: d3c2d6c6-2d23-4841-87e2-b4b795756dfa
+      <ThoughtID>k__BackingField:
+        serializedGuid: cc20919e-94a0-4bfa-a010-976fc81a74f6
+    <ThoughtType>k__BackingField: 0
+    <Position>k__BackingField: {x: 347, y: 723}
+  - <ID>k__BackingField:
+      serializedGuid: d3c2d6c6-2d23-4841-87e2-b4b795756dfa
+    <Name>k__BackingField: 123
+    <ThoughtSO>k__BackingField: {fileID: 11400000, guid: 6da75d227abcf564d9671d15d54e6dd3, type: 2}
+    <NextThoughts>k__BackingField: []
+    <ThoughtType>k__BackingField: 0
+    <Position>k__BackingField: {x: 908, y: 712}
+  - <ID>k__BackingField:
+      serializedGuid: 86e2863a-3311-48b1-b741-734e9ec81fde
+    <Name>k__BackingField: 332
+    <ThoughtSO>k__BackingField: {fileID: 11400000, guid: 9964d7dcc0952c047966954a4573e4dc, type: 2}
+    <NextThoughts>k__BackingField:
+    - <NodeID>k__BackingField:
+        serializedGuid: d3c2d6c6-2d23-4841-87e2-b4b795756dfa
+      <ThoughtID>k__BackingField:
+        serializedGuid: cc20919e-94a0-4bfa-a010-976fc81a74f6
+    <ThoughtType>k__BackingField: 0
+    <Position>k__BackingField: {x: 688, y: 273}
+  - <ID>k__BackingField:
+      serializedGuid: f0597b17-34fd-4fca-a703-672583edd814
+    <Name>k__BackingField: 23
+    <ThoughtSO>k__BackingField: {fileID: 11400000, guid: 53a9499fe96e9314c9e73eb6af3ed2b7, type: 2}
+    <NextThoughts>k__BackingField:
+    - <NodeID>k__BackingField:
+        serializedGuid: 1bd5d584-4148-4ce4-828b-d45734d78f06
+      <ThoughtID>k__BackingField:
+        serializedGuid: f0da41ea-4fce-44cf-8356-a7107c2a46fa
+    - <NodeID>k__BackingField:
+        serializedGuid: 86e2863a-3311-48b1-b741-734e9ec81fde
+      <ThoughtID>k__BackingField:
+        serializedGuid: c9143f26-a22a-4662-b714-38ae4a302013
+    <ThoughtType>k__BackingField: 0
+    <Position>k__BackingField: {x: 38, y: 554}
+  - <ID>k__BackingField:
+      serializedGuid: ec89fab9-2ef2-4911-a845-8dad32505c4f
+    <Name>k__BackingField: 23
+    <ThoughtSO>k__BackingField: {fileID: 11400000, guid: 53a9499fe96e9314c9e73eb6af3ed2b7, type: 2}
+    <NextThoughts>k__BackingField:
+    - <NodeID>k__BackingField:
+        serializedGuid: 86e2863a-3311-48b1-b741-734e9ec81fde
+      <ThoughtID>k__BackingField:
+        serializedGuid: c9143f26-a22a-4662-b714-38ae4a302013
+    <ThoughtType>k__BackingField: 0
+    <Position>k__BackingField: {x: 265, y: 133}

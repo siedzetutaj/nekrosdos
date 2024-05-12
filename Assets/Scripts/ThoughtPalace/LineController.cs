@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.UI.Extensions;
 public class LineController : MonoBehaviour
 {
     public bool IsDraggedByMouse = true;
@@ -14,17 +14,22 @@ public class LineController : MonoBehaviour
     }
     private void Update()
     {
-        if(IsDraggedByMouse)
+        SetEndPointToMousePosition();
+    }
+    private void SetEndPointToMousePosition()
+    {
+        if (IsDraggedByMouse)
         {
+            //calculate mouse position
             Vector2 mousePosCenter = inputSystem.mouseInput.TPInputs.MousePosition.ReadValue<Vector2>();
             mousePosCenter.x -= Screen.width / 2f;
             mousePosCenter.y -= Screen.height / 2f;
-            SetPosioton(1, mousePosCenter);
-
+            SetPointPosition(1, mousePosCenter);
         }
     }
-    public void SetPosioton(int point, Vector2 pos)
+    public void SetPointPosition(int point, Vector2 pos)
     {
         lineRenderer.Points[point] = pos;
+        lineRenderer.SetAllDirty();
     }
 }

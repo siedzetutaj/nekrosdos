@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0714c1792b67c724cb35ba1bf7e05cb7, type: 3}
+  m_Name: test
+  m_EditorClassIdentifier: 
+  CorrectConections:
+  - Id1:
+      serializedGuid: f0da41ea-4fce-44cf-8356-a7107c2a46fa
+    Id2:
+      serializedGuid: c9143f26-a22a-4662-b714-38ae4a302013
+  - Id1:
+      serializedGuid: f0da41ea-4fce-44cf-8356-a7107c2a46fa
+    Id2:
+      serializedGuid: cc20919e-94a0-4bfa-a010-976fc81a74f6
+  - Id1:
+      serializedGuid: c9143f26-a22a-4662-b714-38ae4a302013
+    Id2:
+      serializedGuid: cc20919e-94a0-4bfa-a010-976fc81a74f6
+  - Id1:
+      serializedGuid: c3cda8d9-a4b4-4379-bb2f-2e611bd563a0
+    Id2:
+      serializedGuid: f0da41ea-4fce-44cf-8356-a7107c2a46fa
+  - Id1:
+      serializedGuid: c3cda8d9-a4b4-4379-bb2f-2e611bd563a0
+    Id2:
+      serializedGuid: c9143f26-a22a-4662-b714-38ae4a302013
+  - Id1:
+      serializedGuid: c3cda8d9-a4b4-4379-bb2f-2e611bd563a0
+    Id2:
+      serializedGuid: c9143f26-a22a-4662-b714-38ae4a302013

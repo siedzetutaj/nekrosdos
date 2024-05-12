@@ -15,9 +15,9 @@ public static class TPIOUtility
 
     private static List<TPNode> nodes;
 
-    private static Dictionary<string, TPThoughtSO> createdThoughts;
+    private static Dictionary<Guid, TPThoughtSO> createdThoughts;
 
-    private static Dictionary<string, TPNode> loadedNodes;
+    private static Dictionary<Guid, TPNode> loadedNodes;
 
     public static void Initialize(TPGraphView dsGraphView, string graphName)
     {
@@ -28,9 +28,9 @@ public static class TPIOUtility
 
         nodes = new List<TPNode>();
 
-        createdThoughts = new Dictionary<string, TPThoughtSO>();
+        createdThoughts = new Dictionary<Guid, TPThoughtSO>();
 
-        loadedNodes = new Dictionary<string, TPNode>();
+        loadedNodes = new Dictionary<Guid, TPNode>();
     }
     #region Save
     public static void Save()
@@ -87,7 +87,7 @@ public static class TPIOUtility
 
             List<TPNextThoughtSaveData> next = CloneNodeChoices(node.NextThoughts);
 
-            TPNodeSaveData nodeData = new TPNodeSaveData()
+            TPNodeSaveData nodeData = new()
             {
                 ID = node.ID,
                 Name = node.DialogueName,
@@ -106,16 +106,21 @@ public static class TPIOUtility
         thoughtConections.Reset();
         foreach (TPNode node in nodes)
         {
-            
+
             List<TPNextThoughtSaveData> nexts = CloneNodeChoices(node.NextThoughts);
 
             foreach (TPNextThoughtSaveData next in nexts)
             {
-                string connection = node.ID + next.NodeID;
+                ConnectedThoughtsGuid connection = new(node.ThoughtSO.ID, next.ThoughtID);
                 thoughtConections.AddConnection(connection);
             }
         }
         SaveAsset(thoughtConections);
+        TPAllConnectionsSO tempConnections = TPAllConnectionsSO.instance;
+        if (!tempConnections.AllConnections.Contains(thoughtConections))
+        {
+            tempConnections.AllConnections.Add(thoughtConections);
+        }
     }
     public static void SaveAsset(UnityEngine.Object asset)
     {
@@ -202,21 +207,20 @@ public static class TPIOUtility
             node.Draw();
 
             graphView.AddElement(node);
-
             loadedNodes.Add(node.ID, node);
         }
     }
     private static void LoadNodesConnections()
     {
-        foreach (KeyValuePair<string, TPNode> loadedNode in loadedNodes)
+        foreach (KeyValuePair<Guid, TPNode> loadedNode in loadedNodes)
         {
-            foreach (Port outputPort in loadedNode.Value.outputContainer.Children())
+            foreach (Port outputPort in loadedNode.Value.outputContainer.Children().Cast<Port>())
             {
                 List<TPNextThoughtSaveData> saveDataList = (List<TPNextThoughtSaveData>)outputPort.userData;
                 foreach (TPNextThoughtSaveData nextThoughtSaveData in saveDataList)
                 {
 
-                    if (string.IsNullOrEmpty(nextThoughtSaveData.NodeID))
+                    if (nextThoughtSaveData.NodeID == SerializableGuid.Empty)
                     {
                         continue;
                     }
@@ -318,13 +322,14 @@ public static class TPIOUtility
     }
     private static List<TPNextThoughtSaveData> CloneNodeChoices(List<TPNextThoughtSaveData> nodeChoices)
     {
-        List<TPNextThoughtSaveData> choices = new List<TPNextThoughtSaveData>();
+        List<TPNextThoughtSaveData> choices = new();
 
         foreach (TPNextThoughtSaveData choice in nodeChoices)
         {
-            TPNextThoughtSaveData choiceData = new TPNextThoughtSaveData()
+            TPNextThoughtSaveData choiceData = new()
             {
-                NodeID = choice.NodeID
+                NodeID = choice.NodeID,
+                ThoughtID = choice.ThoughtID
             };
 
             choices.Add(choiceData);
@@ -337,13 +342,14 @@ public static class TPIOUtility
 [Serializable]
 public class TPNextThoughtSaveData
 {
-    [field: SerializeField] public string NodeID { get; set; }
+    [field: SerializeField] public SerializableGuid NodeID { get; set; }
+    [field: SerializeField] public SerializableGuid ThoughtID { get; set; }
 }
 
 [Serializable]
 public class TPNodeSaveData
 {
-    [field: SerializeField] public string ID { get; set; }
+    [field: SerializeField] public SerializableGuid ID { get; set; }
     [field: SerializeField] public string Name { get; set; }
     [field: SerializeField] public TPThoughtSO ThoughtSO { get; set; }
     [field: SerializeField] public List<TPNextThoughtSaveData> NextThoughts { get; set; }

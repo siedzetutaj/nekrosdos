@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f63074f0ad88c041a5dc94d51632947, type: 3}
+  m_Name: 123Graph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: 123
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField:
+      serializedGuid: db660b19-1e3e-43f3-bc87-d6d4ea37b74e
+    <Name>k__BackingField: 23
+    <ThoughtSO>k__BackingField: {fileID: 11400000, guid: 53a9499fe96e9314c9e73eb6af3ed2b7, type: 2}
+    <NextThoughts>k__BackingField: []
+    <ThoughtType>k__BackingField: 0
+    <Position>k__BackingField: {x: 938, y: 429}
+  - <ID>k__BackingField:
+      serializedGuid: 6f3f4404-3f14-4ffb-b5b9-ca48becb94e5
+    <Name>k__BackingField: 12345
+    <ThoughtSO>k__BackingField: {fileID: 11400000, guid: 8d222a74314b0514db16ee4c7e9a9149, type: 2}
+    <NextThoughts>k__BackingField:
+    - <NodeID>k__BackingField:
+        serializedGuid: db660b19-1e3e-43f3-bc87-d6d4ea37b74e
+      <ThoughtID>k__BackingField:
+        serializedGuid: c3cda8d9-a4b4-4379-bb2f-2e611bd563a0
+    <ThoughtType>k__BackingField: 0
+    <Position>k__BackingField: {x: 526, y: 319}

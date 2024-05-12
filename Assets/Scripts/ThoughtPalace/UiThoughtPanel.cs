@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 
@@ -12,4 +13,10 @@ public class UiThoughtPanel : MonoBehaviour
     [SerializeField] public TextMeshProUGUI descriptionTMP;
     [SerializeField] public RectTransform ThoughtPanelTransform;
     [SerializeField] public RectTransform LineHolder;
+    [SerializeField] public TPAllConnectionsSO ThoughtConnections;
+
+    private void Start()
+    {
+        ThoughtConnections.AllConnections = ThoughtConnections.AllConnections.Where(item => item != null).ToList();
+    }
 }

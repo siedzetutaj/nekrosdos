@@ -9,7 +9,7 @@ using UnityEngine.Windows;
 
 public class TPNode : Node
 {
-    public string ID { get; set; }
+    public SerializableGuid ID { get; set; }
     public string DialogueName { get; set; }
     public List<TPNextThoughtSaveData> NextThoughts { get; set; }
     public TPThoughtType ThoughtType { get; set; }
@@ -29,9 +29,9 @@ public class TPNode : Node
 
     public virtual void Initialize(string nodeName, TPGraphView dsGraphView, Vector2 position)
     {
-        if (ID == null)
+        if (ID == SerializableGuid.Empty)
         {
-            ID = Guid.NewGuid().ToString();
+            ID = Guid.NewGuid();
         }
 
         DialogueName = nodeName;
@@ -90,6 +90,8 @@ public class TPNode : Node
             ThoughtSO = value.newValue as TPThoughtSO;
             image.sprite = ThoughtSO.Sprite;
             title = ThoughtSO.Name;
+            DialogueName = ThoughtSO.Name;
+
         });
         if (ThoughtSO != null)
         {

@@ -10,13 +10,13 @@ public class Interactor : MonoBehaviourSingleton<Interactor>
 {
     [Header("Components")]
     [SerializeField] private InputSystem _inputs;
-    [SerializeField] private Camera mainCamera;
-    [SerializeField] private SetCoursor setCoursor;
+    [SerializeField] private Camera _mainCamera;
+    [SerializeField] private SetCoursor _setCoursor;
     
     [Header("Variables")]
     [SerializeField] private float _interactionPointRadius;
     [SerializeField] private LayerMask _interactableMask;
-    [SerializeField] private TextMeshProUGUI displayName;
+    [SerializeField] private TextMeshProUGUI _displayName;
 
     [Header("Debug")]
     [SerializeField] private int _numfound;
@@ -38,7 +38,7 @@ public class Interactor : MonoBehaviourSingleton<Interactor>
     private void Update()
     {
         _mousePosition = _inputs.mouseInput.MovementInputs.MousePosition.ReadValue<Vector2>();
-        _worldPosition = mainCamera.ScreenToWorldPoint(_mousePosition);
+        _worldPosition = _mainCamera.ScreenToWorldPoint(_mousePosition);
 
         _numfound = Physics2D.OverlapCircleNonAlloc(_worldPosition, _interactionPointRadius, _colliders, _interactableMask);
         if (_numfound > 0)
@@ -46,16 +46,16 @@ public class Interactor : MonoBehaviourSingleton<Interactor>
             _colliders[0].TryGetComponent(out IInteractable interactable);
             currInteractable = interactable;
 
-            setCoursor.SetCurosr(currInteractable.CursorType);
+            _setCoursor.SetCurosr(currInteractable.CursorType);
 
-            displayName.transform.position = _mousePosition;
-            displayName.text = currInteractable.InteractionName;
+            _displayName.transform.position = _mousePosition;
+            _displayName.text = currInteractable.InteractionName;
         }
         else if (_numfound == 0) 
         {
-            setCoursor.SetCurosr(CoursorType.arrow);
+            _setCoursor.SetCurosr(CoursorType.arrow);
 
-            displayName.text = string.Empty;
+            _displayName.text = string.Empty;
             currInteractable = null;
         }
     }

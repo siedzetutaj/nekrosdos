@@ -4,12 +4,12 @@ using UnityEngine;
 [SerializeField]
 public class TPThoughtConections : ScriptableObject
 {
-    [SerializeField] List<string> CorrectConections = new List<string>();
-    public void AddConnection(string connection)
+    [SerializeField] List<ConnectedThoughtsGuid> CorrectConections = new List<ConnectedThoughtsGuid>();
+    public void AddConnection(ConnectedThoughtsGuid connection)
     {
         CorrectConections.Add(connection);
     } 
-    public void RemoveConnection(string connection)
+    public void RemoveConnection(ConnectedThoughtsGuid connection)
     {
         CorrectConections.Remove(connection);
     }
