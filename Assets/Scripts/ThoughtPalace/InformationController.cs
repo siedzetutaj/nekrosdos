@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 using TMPro;
 using System;
 using UnityEngine.InputSystem;
+using System.Linq;
 public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, IPointerMoveHandler
 {
 
@@ -14,9 +15,10 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     [SerializeField] private GameObject _linePrefab;
     [SerializeField] private RectTransform _recTransform;
 
+    private Camera _mainCamera;
     private GameObject _draggedThought;
     //bool referes to if the one is first = true, and last =  false
-    private Dictionary<LineController,bool> _lineRenderers = new Dictionary<LineController, bool>();
+    public SerializableDictionary<LineController,bool> LineRenderers = new SerializableDictionary<LineController, bool>();
 
     private bool IsInInformation = true;
 
@@ -26,7 +28,8 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     [NonSerialized] public UiThoughtPanel ThoughtPanel;
     [NonSerialized] public Transform DraggedParent;
     [NonSerialized] public UIInformationDisplay InformationDisplay;
-    public void Initialize(TPThoughtSO thought, TextMeshProUGUI descriptionTMP, Transform draggedParent, UiThoughtPanel thoughtPanel, UIInformationDisplay informationDisplay)
+
+    public void Initialize(TPThoughtSO thought, TextMeshProUGUI descriptionTMP, Transform draggedParent, UiThoughtPanel thoughtPanel, UIInformationDisplay informationDisplay, Camera mainCamera)
     {
         Thought = thought;
         Description = thought.Description;
@@ -34,6 +37,7 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
         ThoughtPanel = thoughtPanel;
         DraggedParent = draggedParent;
         InformationDisplay = informationDisplay;
+        _mainCamera = mainCamera;
     }
     #region Pointer
     public void OnPointerDown(PointerEventData eventData)
@@ -51,6 +55,12 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
         #region Right Click
         else if (!IsInInformation && !ThoughtPanel.isCreatingLine && eventData.button == PointerEventData.InputButton.Right)
         {
+            var nodesInGroup = ThoughtPanel.GetNodesInGroup(ThoughtNodeGuid);
+            Debug.Log($"Nody w tej samej grupie co {ThoughtNodeGuid}");
+            foreach (var nodeId in nodesInGroup)
+            {
+                Debug.Log(nodeId);
+            }
             CreateBeginigLinePoint();
         }
         #endregion
@@ -69,6 +79,10 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
         {
             EndDrag();
         }
+        else if (!IsInInformation && eventData.button == PointerEventData.InputButton.Left)
+        {
+            ThoughtPanel.isDraggingThought = false;
+        }
         //RightClick
         else if (!IsInInformation && ThoughtPanel.isCreatingLine && eventData.button == PointerEventData.InputButton.Right
                  && ThoughtPanel.activeThough != this.gameObject)
@@ -80,33 +94,33 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     {
         if (IsInInformation)
         {
-            SetActiveDescription(InformationDisplay.isBeingDragged);
+            SetActiveDescription(InformationDisplay.isDraggingThought);
         }
         else
         {
-            SetActiveDescription(ThoughtPanel.isBeingDragged);
+            SetActiveDescription(ThoughtPanel.isDraggingThought);
         }
     }
     public void OnPointerMove(PointerEventData eventData)
     {
         if (IsInInformation)
         {
-            DispalyDescrition(InformationDisplay.isBeingDragged);
+            DispalyDescrition(InformationDisplay.isDraggingThought);
         }
         else
         {
-            DispalyDescrition(ThoughtPanel.isBeingDragged);
+            DispalyDescrition(ThoughtPanel.isDraggingThought);
         }
     }
     public void OnPointerExit(PointerEventData eventData = null)
     {
         if (IsInInformation)
         {
-            DisableDescription(InformationDisplay.isBeingDragged);
+            DisableDescription(InformationDisplay.isDraggingThought);
         }
         else
         {
-            DisableDescription(ThoughtPanel.isBeingDragged);
+            DisableDescription(ThoughtPanel.isDraggingThought);
         }
     }
     #endregion
@@ -117,12 +131,13 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
         _draggedThought.transform.position = transform.position;
         SetRectTransformToMiddle(_draggedThought);
         InformationController draggedThoughtController = _draggedThought.GetComponent<InformationController>();
-        draggedThoughtController.Initialize(Thought, ThoughtPanel.descriptionTMP, DraggedParent, ThoughtPanel, InformationDisplay);
+        draggedThoughtController.Initialize(Thought, ThoughtPanel.descriptionTMP, DraggedParent, ThoughtPanel, InformationDisplay, _mainCamera);
         draggedThoughtController.IsInInformation = false;
         draggedThoughtController.ThoughtNodeGuid = Guid.NewGuid();
         ThoughtPanel.AddNode(draggedThoughtController.ThoughtNodeGuid, Thought.ID);
+        ThoughtPanel.createdThoughts.Add(draggedThoughtController);
         OnPointerExit();
-        InformationDisplay.isBeingDragged = true;
+        InformationDisplay.isDraggingThought = true;
     }
     private void CreateBeginigLinePoint()
     {
@@ -132,7 +147,7 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
         var lineController = go.GetComponent<LineController>();
         ThoughtPanel.activeLineController = lineController;
         lineController.ChangePointPosition(0, _recTransform.anchoredPosition);
-        _lineRenderers.Add(lineController, true);
+        LineRenderers.Add(lineController, true);
         ThoughtPanel.isCreatingLine = true;
     }
     private void CreateEndLinePoint()
@@ -142,7 +157,7 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
         ThoughtPanel.activeLineController.connectionGuids.Id1 = ThoughtPanel.FistID;
         ThoughtPanel.activeLineController.connectionGuids.Id2 = ThoughtNodeGuid;
         ThoughtPanel.activeLineController.UpdateCollider();
-        _lineRenderers.Add(ThoughtPanel.activeLineController, false);
+        LineRenderers.Add(ThoughtPanel.activeLineController, false);
         ThoughtPanel.AddConnection(ThoughtNodeGuid);
         ThoughtPanel.activeLineController = null;
         ThoughtPanel.activeThough = null;
@@ -152,15 +167,18 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     #region Drag
     private void StartDraggingThought(PointerEventData eventData)
     {
+        ThoughtPanel.isDraggingThought = true;
         _draggedThought = gameObject;
-        _draggedThought.transform.position = eventData.position;
+        DragThought(eventData);
     }
     private void DragThought(PointerEventData eventData)
     {
-        _draggedThought.transform.position = eventData.position;
-        if (_lineRenderers.Count > 0)
+        Vector3 thoughtPos = _mainCamera.ScreenToWorldPoint(eventData.position);
+        thoughtPos.z = -5;
+        _draggedThought.transform.position = thoughtPos;
+        if (LineRenderers.Count > 0)
         {
-            foreach (var lineRenderer in _lineRenderers)
+            foreach (var lineRenderer in LineRenderers)
             {
                 if (lineRenderer.Value)
                 {
@@ -177,7 +195,8 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     {
         _draggedThought.transform.SetParent(ThoughtPanel.ThoughtPanelTransform);
         _draggedThought.GetComponent<InformationController>().IsInInformation = false;
-        InformationDisplay.isBeingDragged = false;
+        InformationDisplay.isDraggingThought = false;
+        ThoughtPanel.isDraggingThought = false;
     }
     #endregion
     #region Description
