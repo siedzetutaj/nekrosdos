@@ -18,12 +18,16 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: "Gdzie dosz\u0142o do morderstwa?"
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8d36a8bd401acbc4fb12f92cf73b6b90, type: 2}
+    WasDisplayed: 0
   - <Text>k__BackingField: "Kiedy odkryto \u015Bmier\u0107 Lady?"
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0712589e352721a48abaac7b38dc28af, type: 2}
+    WasDisplayed: 0
   - <Text>k__BackingField: "Kto jako pierwszy odkry\u0142 cialo?"
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 182e3ebe551ec354d9a833a10b576aa2, type: 2}
+    WasDisplayed: 0
   - <Text>k__BackingField: Na razie to wszystko
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: d9a046dc0ba0ee244960b3811683145a, type: 2}
+    WasDisplayed: 0
   <DialogueType>k__BackingField: 1
   <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField: []

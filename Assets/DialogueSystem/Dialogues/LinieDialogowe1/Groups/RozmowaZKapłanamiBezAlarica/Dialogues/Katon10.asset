@@ -21,10 +21,13 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: "B\u0119dziemy mieli to na wzgl\u0119dzie."
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 01728c833995d6640820f07ae85bcf2b, type: 2}
+    WasDisplayed: 0
   - <Text>k__BackingField: "Pozwol\u0105 kap\u0142ani \u017Ce jednak sam to oceni\u0119."
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: f6ac74d228ed2d74095eabdd7398e9e9, type: 2}
+    WasDisplayed: 0
   - <Text>k__BackingField: "Czy jest co\u015B jeszcze co powinno nas zainteresowa\u0107?"
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 49ca5f00fe4b2d043aa6362b3431d3fb, type: 2}
+    WasDisplayed: 0
   <DialogueType>k__BackingField: 1
   <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField: []

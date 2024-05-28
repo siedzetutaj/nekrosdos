@@ -19,8 +19,10 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: "Zabrali\u015Bcie cia\u0142o?"
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: b5ec6ca2218f95746b2a83f2e6f965bc, type: 2}
+    WasDisplayed: 0
   - <Text>k__BackingField: Rozumiem, mam inne pytania.
     <NextDialogue>k__BackingField: {fileID: 0}
+    WasDisplayed: 0
   <DialogueType>k__BackingField: 1
   <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField: []
