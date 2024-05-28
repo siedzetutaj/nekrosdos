@@ -17,12 +17,15 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: "Jak my\u015Blisz od czego powinnismy zacz\u0105\u0107?"
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 036eda84d9bff684d9575c473a94c288, type: 2}
+    WasDisplayed: 0
   - <Text>k__BackingField: "Prosze przekaza\u0107 nam klucze do gabinetu. W pierwszej
       kolejno\u015Bci rozejrzymy sie po miejscu zbrodni"
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: cc76eb831ad74f9419bd2ebbaef2eb90, type: 2}
+    WasDisplayed: 0
   - <Text>k__BackingField: "Prosze prowadzi\u0107 do cia\u0142a. Lady Maria czeka\u0142a
       juz wystarczaj\u0105co d\u0142ugo."
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: a406733a91bae494cbcd54e8bd5f0ccc, type: 2}
+    WasDisplayed: 0
   <DialogueType>k__BackingField: 1
   <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField: []

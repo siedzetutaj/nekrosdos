@@ -24,10 +24,12 @@ MonoBehaviour:
       Je\u015Bli zgodz\u0119 si\u0119 na to by Lord uczestniczy\u0142 w rytuale z\u0142amie
       zasady sygilu."
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 974ad588bb90a9c4c8f43b941cb570a2, type: 2}
+    WasDisplayed: 0
   - <Text>k__BackingField: "W zasadzie... Mo\u017Ce co\u015B w tym jest ale musi
       by\u0107 lord \u015Bwiadomy \u017Ce sznasa jest niezwykle ma\u0142a, a dodatkowo
       nara\u017Ca Pana na niebezpiecze\u0144stwo."
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: e7aa2f66c0d6eef4a85ecba82231c6b9, type: 2}
+    WasDisplayed: 0
   <DialogueType>k__BackingField: 1
   <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField: []

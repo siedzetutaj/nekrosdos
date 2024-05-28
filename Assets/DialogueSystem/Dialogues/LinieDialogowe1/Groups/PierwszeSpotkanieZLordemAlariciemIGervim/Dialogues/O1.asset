@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: DialogueName
+  m_Name: O1
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: DialogueName
-  <Text>k__BackingField: Dialogue text.
+  <DialogueName>k__BackingField: O1
+  <Text>k__BackingField: "Lordzie Alaricu. -Orion pochyla sw\u0105 g\u0142ow\u0119-.
+    Nazywam si\u0119 Orion Sygil - Starszy detektyw z inspektoratu transcendentalnego,
+    a to m\xF3j partner Arvid Morteo - Naznaczony."
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 53b4629d71317e54aae6e8cb744d7a8a, type: 2}
+    WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField: []

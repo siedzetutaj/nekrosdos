@@ -20,10 +20,10 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 49c045d7f0112a04281e060f0dc2fd4f, type: 2}
+    WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField:
-  - property:
-      Name: Informacja o ludziach z Ombrii
-      OldName: New Bool
-      Value: 0
+  - Name: Informacja o ludziach z Ombrii
+    OldName: New Bool
+    Value: 0

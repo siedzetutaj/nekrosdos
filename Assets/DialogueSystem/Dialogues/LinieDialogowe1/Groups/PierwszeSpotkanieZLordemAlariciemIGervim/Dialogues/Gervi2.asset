@@ -19,10 +19,10 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: d89c2043a29f33d4e9bb4fac96b7243d, type: 2}
+    WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField:
-  - property:
-      Name: Orion w Valerii
-      OldName: New Bool
-      Value: 0
+  - Name: Orion w Valerii
+    OldName: New Bool
+    Value: 0

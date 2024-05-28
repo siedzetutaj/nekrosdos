@@ -18,8 +18,10 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: "Kr\xF3tko m\xF3wi\u0105c zacz\u0119\u0142a si\u0119 rozk\u0142ada\u0107."
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: e6a262fad71c391459636203d9995b63, type: 2}
+    WasDisplayed: 0
   - <Text>k__BackingField: "Nic nie m\xF3w"
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: ca655bce29e112643b2d026da1a951b5, type: 2}
+    WasDisplayed: 0
   <DialogueType>k__BackingField: 1
   <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField: []
