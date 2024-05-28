@@ -6,6 +6,6 @@ using UnityEngine;
 
 public class TPAllConnectionsSO : ScriptableSingleton<TPAllConnectionsSO>
 {
-    [SerializeField] public List<TPThoughtConections> AllConnections = new List<TPThoughtConections>();
+    [SerializeField] public List<TPThoughtConectionsSO> AllConnections = new List<TPThoughtConectionsSO>();
 
 }

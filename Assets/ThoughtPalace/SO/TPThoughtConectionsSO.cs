@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [SerializeField]
-public class TPThoughtConections : ScriptableObject
+public class TPThoughtConectionsSO : ScriptableObject
 {
     [SerializeField] List<ConnectedThoughtsGuid> CorrectConections = new List<ConnectedThoughtsGuid>();
     public void AddConnection(ConnectedThoughtsGuid connection)

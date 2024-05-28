@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllConnections:
   - {fileID: 11400000, guid: 07f3d6bff96c51140bac3461ee41501d, type: 2}
+  - {fileID: 11400000, guid: be3a9beeb330838458215ef12b2de08b, type: 2}

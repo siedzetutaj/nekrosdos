@@ -5,8 +5,10 @@ using UnityEngine.EventSystems;
 using TMPro;
 using System;
 using UnityEngine.InputSystem;
-public class InformationInInformationPanel : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, IPointerMoveHandler
+public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, IPointerMoveHandler
 {
+
+    [SerializeField] public SerializableGuid ThoughtNodeGuid;
 
     [SerializeField] private GameObject _thoughtToCopy;
     [SerializeField] private GameObject _linePrefab;
@@ -114,8 +116,11 @@ public class InformationInInformationPanel : MonoBehaviour, IPointerDownHandler,
         _draggedThought = Instantiate(_thoughtToCopy, DraggedParent);
         _draggedThought.transform.position = transform.position;
         SetRectTransformToMiddle(_draggedThought);
-        _draggedThought.GetComponent<InformationInInformationPanel>().Initialize(Thought, ThoughtPanel.descriptionTMP, DraggedParent, ThoughtPanel, InformationDisplay);
-        _draggedThought.GetComponent<InformationInInformationPanel>().IsInInformation = false;
+        InformationController draggedThoughtController = _draggedThought.GetComponent<InformationController>();
+        draggedThoughtController.Initialize(Thought, ThoughtPanel.descriptionTMP, DraggedParent, ThoughtPanel, InformationDisplay);
+        draggedThoughtController.IsInInformation = false;
+        draggedThoughtController.ThoughtNodeGuid = Guid.NewGuid();
+        ThoughtPanel.AddNode(draggedThoughtController.ThoughtNodeGuid, Thought.ID);
         OnPointerExit();
         InformationDisplay.isBeingDragged = true;
     }
@@ -123,17 +128,22 @@ public class InformationInInformationPanel : MonoBehaviour, IPointerDownHandler,
     {
         GameObject go = Instantiate(_linePrefab, ThoughtPanel.LineHolder);
         ThoughtPanel.activeThough = this.gameObject;
+        ThoughtPanel.FistID = ThoughtNodeGuid;
         var lineController = go.GetComponent<LineController>();
         ThoughtPanel.activeLineController = lineController;
-        lineController.SetPointPosition(0, _recTransform.anchoredPosition);
+        lineController.ChangePointPosition(0, _recTransform.anchoredPosition);
         _lineRenderers.Add(lineController, true);
         ThoughtPanel.isCreatingLine = true;
     }
     private void CreateEndLinePoint()
     {
         ThoughtPanel.activeLineController.IsDraggedByMouse = false;
-        ThoughtPanel.activeLineController.SetPointPosition(1, _recTransform.anchoredPosition);
+        ThoughtPanel.activeLineController.ChangePointPosition(1, _recTransform.anchoredPosition);
+        ThoughtPanel.activeLineController.connectionGuids.Id1 = ThoughtPanel.FistID;
+        ThoughtPanel.activeLineController.connectionGuids.Id2 = ThoughtNodeGuid;
+        ThoughtPanel.activeLineController.UpdateCollider();
         _lineRenderers.Add(ThoughtPanel.activeLineController, false);
+        ThoughtPanel.AddConnection(ThoughtNodeGuid);
         ThoughtPanel.activeLineController = null;
         ThoughtPanel.activeThough = null;
         ThoughtPanel.isCreatingLine = false;
@@ -154,11 +164,11 @@ public class InformationInInformationPanel : MonoBehaviour, IPointerDownHandler,
             {
                 if (lineRenderer.Value)
                 {
-                    lineRenderer.Key.SetPointPosition(0, _recTransform.anchoredPosition);
+                    lineRenderer.Key.ChangePointPosition(0, _recTransform.anchoredPosition);
                 }
                 else if (!lineRenderer.Value)
                 {
-                    lineRenderer.Key.SetPointPosition(1, _recTransform.anchoredPosition);
+                    lineRenderer.Key.ChangePointPosition(1, _recTransform.anchoredPosition);
                 }
             }
         }
@@ -166,14 +176,14 @@ public class InformationInInformationPanel : MonoBehaviour, IPointerDownHandler,
     private void EndDrag()
     {
         _draggedThought.transform.SetParent(ThoughtPanel.ThoughtPanelTransform);
-        _draggedThought.GetComponent<InformationInInformationPanel>().IsInInformation = false;
+        _draggedThought.GetComponent<InformationController>().IsInInformation = false;
         InformationDisplay.isBeingDragged = false;
     }
     #endregion
     #region Description
     private void SetActiveDescription(bool isDragged)
     {
-        if (isDragged)
+        if (!isDragged)
         {
             DescriptionTMP.text = Description;
             DescriptionTMP.gameObject.SetActive(true);

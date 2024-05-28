@@ -63,7 +63,7 @@ namespace DS.Windows
             toolbar.Add(fileNameTextField);
             toolbar.Add(saveButton);
             toolbar.Add(loadButton);
-            toolbar.Add(clearButton);
+            //toolbar.Add(clearButton);
             toolbar.Add(resetButton);
             toolbar.Add(miniMapButton);
             toolbar.Add(blackboardButton);

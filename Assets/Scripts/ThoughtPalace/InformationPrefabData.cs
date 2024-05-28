@@ -8,7 +8,7 @@ public class InformationPrefabData : MonoBehaviour
     [SerializeField] private Image Image;
     [SerializeField] private TextMeshProUGUI InformationName;
     [SerializeField] private TPThoughtSO MyThought;
-    [SerializeField] private InformationInInformationPanel Information;
+    [SerializeField] private InformationController Information;
     public void Initialize(TPThoughtSO thought,TextMeshProUGUI descriptionTMP, Transform draggedParent, UiThoughtPanel thoughtPanel, UIInformationDisplay informationDisplay)
     {
         Image.sprite = thought.Sprite;

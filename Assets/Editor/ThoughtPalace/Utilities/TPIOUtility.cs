@@ -102,7 +102,7 @@ public static class TPIOUtility
     }
     private static void SaveThoughtConnectionsToScriptableObject()
     {
-        TPThoughtConections thoughtConections = CreateAsset<TPThoughtConections>(containerFolderPath, graphFileName);
+        TPThoughtConectionsSO thoughtConections = CreateAsset<TPThoughtConectionsSO>(containerFolderPath, graphFileName);
         thoughtConections.Reset();
         foreach (TPNode node in nodes)
         {
