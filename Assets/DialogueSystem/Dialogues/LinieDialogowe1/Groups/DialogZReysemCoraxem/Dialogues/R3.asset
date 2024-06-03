@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: R3
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: R3
+  <Text>k__BackingField: "Kiedy i po co pojawi\u0142em si\u0119 w posiad\u0142o\u015Bci?
+    Chce mi detektyw powiedzie\u0107 \u017Ce nawet tego nie uda\u0142o wam si\u0119
+    jeszcze dowiedzie\u0107? I wy macie wskaza\u0107 kto zabi\u0142 Marie? Niekompetentni
+    kretyni..."
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: "Przybyli\u015Bmy do posiad\u0142o\u015Bci kilka godzin
+      temu, a w pierwszej kolejno\u015Bci musieli\u015Bmy si\u0119 zaj\u0105\u0107
+      cia\u0142em Lady Lordzie Corax..."
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a06e6aa86dd9efb478f90e2f27f2823a, type: 2}
+    WasDisplayed: 0
+  - <Text>k__BackingField: "Lordzie prosz\u0119 odpowiedzie\u0107 na pytania."
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a4cdf4f6926f238409181461d94a4ff8, type: 2}
+    WasDisplayed: 0
+  - <Text>k__BackingField: "Zachowaj milczenie i pozw\xF3l Orionowi prowadzi\u0107
+      rozmow\u0119."
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c940717eef948a9438680eb8668611b6, type: 2}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
+  <ExposedProperties>k__BackingField: []
