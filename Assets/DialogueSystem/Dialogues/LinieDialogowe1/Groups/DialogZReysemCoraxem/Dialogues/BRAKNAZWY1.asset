@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: BRAKNAZWY1
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: BRAKNAZWY1
-  <Text>k__BackingField: "Stul pysk i znaj swoje miejsce pomiocie \u015Bmierci. B\u0119d\u0119
-    odpowiada\u0142 na to na co b\u0119d\u0119 mia\u0142 ochot\u0119 i nikt, a ju\u017C
-    na pewno nie \u017Caden zasrany \"obdarzony\" b\u0119dzie mi m\xF3wi\u0142 co
-    mam robi\u0107."
+  <Text>k__BackingField: "Lordzie Corax! Przypominam \u017Ce Arvid zosta\u0142 wyznaczony
+    do \u015Bledztwa tak samo jak i ja przez zwierzchnik\xF3w Inspektoratu transcendentalneg,
+    kt\xF3rzy jak zapewne doskonale sie pan informuje s\u0142u\u017Ca bezpo\u015Brednio
+    pod naszym w\u0142adc\u0105. Obra\u017Canie natomiast funkcjonariuszy na s\u0142u\u017Cbie
+    traktowane jest jak obra\u017Canie majestatu."
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 236ebcd94a327ff49bf44688ea95e2f6, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7350da9c98d346449ae9a9eda672df30, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

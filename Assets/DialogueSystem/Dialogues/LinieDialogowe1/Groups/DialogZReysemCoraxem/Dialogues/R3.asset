@@ -23,8 +23,9 @@ MonoBehaviour:
       cia\u0142em Lady Lordzie Corax..."
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: a06e6aa86dd9efb478f90e2f27f2823a, type: 2}
     WasDisplayed: 0
-  - <Text>k__BackingField: "Lordzie prosz\u0119 odpowiedzie\u0107 na pytania."
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a4cdf4f6926f238409181461d94a4ff8, type: 2}
+  - <Text>k__BackingField: Lordzie - odpowiadajcie na pytania, nie rzucajcie niepotrzebnych
+      uwag.
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 27c756c0d1a1dff408672d98c6337665, type: 2}
     WasDisplayed: 0
   - <Text>k__BackingField: "Zachowaj milczenie i pozw\xF3l Orionowi prowadzi\u0107
       rozmow\u0119."

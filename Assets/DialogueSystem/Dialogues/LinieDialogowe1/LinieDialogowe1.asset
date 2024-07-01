@@ -76,8 +76,6 @@ MonoBehaviour:
       - {fileID: 11400000, guid: f5c25d91779082b4aaf1b61547351457, type: 2}
     - Key: {fileID: 11400000, guid: d36a9b221d26c9b48894c272f1d8ad5d, type: 2}
       Value:
-      - {fileID: 11400000, guid: 619fbff80db2e4f42b417dbae80cf3a4, type: 2}
-      - {fileID: 11400000, guid: 2621dc3b77bfd95418996fdb4e3959ca, type: 2}
       - {fileID: 11400000, guid: 50d34b37782bf16449a41f6b2a458fde, type: 2}
       - {fileID: 11400000, guid: 3510f3fb8c452cf4582b40b7b1de67df, type: 2}
       - {fileID: 11400000, guid: 94cec6925ffd36f488b3bada1de76364, type: 2}
@@ -89,6 +87,8 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 04d22a8e4485f2c43b0a1becdefc4c09, type: 2}
       - {fileID: 11400000, guid: 2aef3ed582ec1214e88571b2571b0781, type: 2}
       - {fileID: 11400000, guid: 849b89ea131f0cb46aa66691140609be, type: 2}
+      - {fileID: 11400000, guid: 619fbff80db2e4f42b417dbae80cf3a4, type: 2}
+      - {fileID: 11400000, guid: 2621dc3b77bfd95418996fdb4e3959ca, type: 2}
     - Key: {fileID: 11400000, guid: ab83704ebf2bc754eb8e8a2522a2e91c, type: 2}
       Value:
       - {fileID: 11400000, guid: 1a1a735775c405f49904fc463a6ba170, type: 2}
@@ -131,13 +131,10 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 59477098bbba09648bd0d940a87063a3, type: 2}
       - {fileID: 11400000, guid: 568697c586de9ee47a0a468254103e93, type: 2}
       - {fileID: 11400000, guid: 20cb7f2b54677d046ae386a0d7d51d32, type: 2}
-      - {fileID: 11400000, guid: a4cdf4f6926f238409181461d94a4ff8, type: 2}
       - {fileID: 11400000, guid: e40c83dcc0538114c90d90b91915ebb5, type: 2}
       - {fileID: 11400000, guid: cb9af528870d47c4eb9f3ba191f25230, type: 2}
       - {fileID: 11400000, guid: 1ab122a6e9316d24fa725acea952892e, type: 2}
       - {fileID: 11400000, guid: 9fe7a9cd6339cc5489d581d7ae4263ed, type: 2}
-      - {fileID: 11400000, guid: 236ebcd94a327ff49bf44688ea95e2f6, type: 2}
-      - {fileID: 11400000, guid: c940717eef948a9438680eb8668611b6, type: 2}
       - {fileID: 11400000, guid: 8da12c285ec8e8c449ca0ed2def772ad, type: 2}
       - {fileID: 11400000, guid: 9cc6eae6ecb35394abde04423a4c0ddf, type: 2}
       - {fileID: 11400000, guid: a06e6aa86dd9efb478f90e2f27f2823a, type: 2}
@@ -145,6 +142,11 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 38b44905b5584b5419a97eb643e8e1fc, type: 2}
       - {fileID: 11400000, guid: b461dd657cb633b4e9e29f8547b7d20f, type: 2}
       - {fileID: 11400000, guid: 1c8b8202194af774cbacfacc53e9f553, type: 2}
+      - {fileID: 11400000, guid: c940717eef948a9438680eb8668611b6, type: 2}
+      - {fileID: 11400000, guid: 27c756c0d1a1dff408672d98c6337665, type: 2}
+      - {fileID: 11400000, guid: 7350da9c98d346449ae9a9eda672df30, type: 2}
+      - {fileID: 11400000, guid: a4cdf4f6926f238409181461d94a4ff8, type: 2}
+      - {fileID: 11400000, guid: 3564133f247ffe645bc6674378d55a16, type: 2}
   <UngroupedDialogues>k__BackingField: []
   <ExposedProperties>k__BackingField:
   - Name: Orion w Valerii
@@ -160,5 +162,5 @@ MonoBehaviour:
     OldName: "Alaric nie widzial rytua\u0142u"
     Value: 0
   - Name: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
-    OldName: New Bool
+    OldName: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
     Value: 0
