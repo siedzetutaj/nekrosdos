@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: BRAKNAZWY1
+  m_Name: O5
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: BRAKNAZWY1
+  <DialogueName>k__BackingField: O5
   <Text>k__BackingField: "Lordzie Corax! Przypominam \u017Ce Arvid zosta\u0142 wyznaczony
     do \u015Bledztwa tak samo jak i ja przez zwierzchnik\xF3w Inspektoratu transcendentalneg,
     kt\xF3rzy jak zapewne doskonale sie pan informuje s\u0142u\u017Ca bezpo\u015Brednio
@@ -20,7 +20,7 @@ MonoBehaviour:
     traktowane jest jak obra\u017Canie majestatu."
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7350da9c98d346449ae9a9eda672df30, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 92db1920a44fea54ab541bfc511506f3, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

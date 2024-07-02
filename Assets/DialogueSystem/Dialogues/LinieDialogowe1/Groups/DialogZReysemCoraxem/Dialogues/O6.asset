@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: DialogueName
+  m_Name: O6
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: DialogueName
-  <Text>k__BackingField: Dialogue text.
+  <DialogueName>k__BackingField: O6
+  <Text>k__BackingField: "Wiemy o zamkni\u0119tych w lochach ombryjczykach Lordzie.
+    Jednak nasza praca polega na dok\u0142adnym sprawdzeniu okoliczno\u015Bci zab\xF3jstwa,
+    nie na potwierdzaniu najbardziej prawdopodobnych scenariuszy o ile oczywi\u015Bcie
+    te nie oka\u017C\u0105 si\u0119 by\u0107 prawdziwe."
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: ddbb620e4e2c8e544954938e124d2641, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

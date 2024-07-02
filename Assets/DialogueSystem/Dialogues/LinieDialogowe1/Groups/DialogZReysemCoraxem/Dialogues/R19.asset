@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: DialogueName
+  m_Name: R19
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: DialogueName
-  <Text>k__BackingField: Dialogue text.
+  <DialogueName>k__BackingField: R19
+  <Text>k__BackingField: "Hahahahah... Nie roz\u015Bmieszaj mnie \"obdarzony\". Nic
+    nie macie. Nie mo\u017Cna mie\u0107 dowod\xF3w na co\u015B co nigdy nie mia\u0142o
+    miejsca. "
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: bec8ee52d25b1a241a4bc05048bcf162, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

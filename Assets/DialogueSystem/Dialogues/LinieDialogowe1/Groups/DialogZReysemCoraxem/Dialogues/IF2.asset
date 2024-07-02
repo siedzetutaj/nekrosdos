@@ -10,14 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: BRAKNAZWY5
+  m_Name: IF2
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: BRAKNAZWY5
+  <DialogueName>k__BackingField: IF2
   <Text>k__BackingField: Dialogue text.
   <Choices>k__BackingField:
-  - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+  - <Text>k__BackingField: True
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 2b3fac87726ce1f4cbddb47f07940bd9, type: 2}
     WasDisplayed: 0
-  <DialogueType>k__BackingField: 0
+  - <Text>k__BackingField: False
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 27c756c0d1a1dff408672d98c6337665, type: 2}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 2
   <IsStartingDialogue>k__BackingField: 0
-  <ExposedProperties>k__BackingField: []
+  <ExposedProperties>k__BackingField:
+  - Name: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
+    OldName: New Bool
+    Value: 0

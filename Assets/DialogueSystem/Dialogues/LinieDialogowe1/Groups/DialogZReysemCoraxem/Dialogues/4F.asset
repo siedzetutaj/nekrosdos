@@ -10,20 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: IF1
+  m_Name: 4F
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: IF1
+  <DialogueName>k__BackingField: 4F
   <Text>k__BackingField: Dialogue text.
   <Choices>k__BackingField:
-  - <Text>k__BackingField: True
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 5fef75b4a367d3b4b825f1ed1fbdab07, type: 2}
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 0}
     WasDisplayed: 0
-  - <Text>k__BackingField: False
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c00d0af6f6cfed0498f33717b1c5f1ec, type: 2}
-    WasDisplayed: 0
-  <DialogueType>k__BackingField: 2
+  <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
-  <ExposedProperties>k__BackingField:
-  - Name: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
-    OldName: New Bool
-    Value: 0
+  <ExposedProperties>k__BackingField: []

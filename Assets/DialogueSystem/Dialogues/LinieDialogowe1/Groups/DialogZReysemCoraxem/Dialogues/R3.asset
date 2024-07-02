@@ -25,11 +25,11 @@ MonoBehaviour:
     WasDisplayed: 0
   - <Text>k__BackingField: Lordzie - odpowiadajcie na pytania, nie rzucajcie niepotrzebnych
       uwag.
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 27c756c0d1a1dff408672d98c6337665, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0e8fd53940b97c246a4b8dec4994c264, type: 2}
     WasDisplayed: 0
   - <Text>k__BackingField: "Zachowaj milczenie i pozw\xF3l Orionowi prowadzi\u0107
       rozmow\u0119."
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c940717eef948a9438680eb8668611b6, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 5ad689e58bdea7d418cfdb3d9e4f86fe, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 1
   <IsStartingDialogue>k__BackingField: 0

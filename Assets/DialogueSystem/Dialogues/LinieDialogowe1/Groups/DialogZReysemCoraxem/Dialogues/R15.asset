@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: BRAKNAZWY3
+  m_Name: R15
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: BRAKNAZWY3
-  <Text>k__BackingField: "No, ale to nie wasza wina, \u017Ce akurat was wybrano do
-    tego \u015Bledztwa. Powiem co wiem ale rozwi\u0105zanie tej sprawy jest oczywiste
-    dziwi\u0119 si\u0119 \u017Ce ta rozmowa wog\xF3le jest konieczna..."
+  <DialogueName>k__BackingField: R15
+  <Text>k__BackingField: "M\xF3wcie czego chcecie, miejmy ju\u017C t\u0105 fars\u0119
+    za sob\u0105."
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3564133f247ffe645bc6674378d55a16, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c2b029690b52c0b44ba889e3e99eca6c, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
