@@ -16,11 +16,13 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
     [SerializeField] private NavMeshAgent _agent;
     [SerializeField] private DialogueDisplay _dialogueDisplay;
     [SerializeField] private GameObject _thoughtPalaceUI;
+    [SerializeField] private Transform _body;
 
     public Tilemap map;
 
     private bool _isGointToHaveInteraction = false;
     private DSDialogue _dialogue;
+    private bool _isPused = false;
 
     private void OnEnable()
     {
@@ -42,19 +44,29 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
     }
     private void Update()
     {
-        if (_isGointToHaveInteraction && Vector2.Distance(transform.position, _agent.destination) < 0.1f)
+        if (!_isPused)
         {
-            DisplayDialogue();
 
-            _isGointToHaveInteraction = false;
-            _dialogue = null;
+            if (_isGointToHaveInteraction && Vector2.Distance(transform.position, _agent.destination) < 0.1f)
+            {
+                DisplayDialogue();
+
+                _isGointToHaveInteraction = false;
+                _dialogue = null;
+            }
+            if (_inputSystem.holdLeft)
+            {
+                Move();
+            }
+            _agent.SetDestination(destination);
+            _body.LookAt(_agent.destination);
         }
-        if (_inputSystem.holdLeft)
+        else
         {
-            Move();
+            _agent.SetDestination(transform.position);
         }
-        _agent.SetDestination(destination);
     }
+
     #region Movement
     private void Move()
     {
@@ -65,9 +77,9 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
         if (map.HasTile(gridPostion))
         {
             destination = mousePosition;
-            // transform.LookAt(mousePosition);
         }
     }
+
     #endregion
     #region Interactions
     public void MoveToInteractable(Vector2 target)
@@ -94,12 +106,14 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
             _thoughtPalaceUI.SetActive(true);
             _inputSystem.mouseInput.MovementInputs.Disable();
             _inputSystem.mouseInput.TPInputs.Enable();
+            _isPused = true;
         }
         else
         {
             _thoughtPalaceUI.SetActive(false);
             _inputSystem.mouseInput.MovementInputs.Enable();
             _inputSystem.mouseInput.TPInputs.Disable();
+            _isPused = false;
         }
     }
     #endregion

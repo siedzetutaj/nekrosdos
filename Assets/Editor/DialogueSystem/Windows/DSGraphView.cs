@@ -477,7 +477,7 @@ namespace DS.Windows
                 title = "properties",
                 addItemRequested = _blackboard =>
                 {
-                    AddPropeprtyToBlackBoard(new DSExposedProperty());
+                    AddPropertyToBlackboard(new DSExposedProperty());
                 },
                 editTextRequested = (blackboard1, element, newValue) =>
                 {
@@ -498,14 +498,16 @@ namespace DS.Windows
             blackboard.SetPosition(new Rect(5, 50, 250, 600));
             Add(blackboard);
         }
-        public void AddPropeprtyToBlackBoard(DSExposedProperty exposedProperty)
+        public void AddPropertyToBlackboard(DSExposedProperty exposedProperty)
         {
             var localPropertyName = "New Bool";
             var localPropertyValue = exposedProperty.Value;
+
             if (exposedProperty.Name != null)
             {
                 localPropertyName = exposedProperty.Name;
             }
+
             while (exposedProperties.Any(x => x.Name == localPropertyName))
                 localPropertyName = $"{localPropertyName}(1)";
 
@@ -516,7 +518,7 @@ namespace DS.Windows
             exposedProperties.Add(property);
 
             var container = new VisualElement();
-            var blackboardField = new BlackboardField {text = localPropertyName, typeText = "bool property"};
+            var blackboardField = new BlackboardField { text = localPropertyName, typeText = "bool property" };
             container.Add(blackboardField);
 
             var propertyValue = new Toggle("Value: ")
@@ -528,10 +530,28 @@ namespace DS.Windows
                 var changingPropertyIndex = exposedProperties.FindIndex(x => x.Name == property.Name);
                 exposedProperties[changingPropertyIndex].Value = value.newValue;
             });
+
             var blackboardValueRow = new BlackboardRow(blackboardField, propertyValue);
             container.Add(blackboardValueRow);
             blackboard.Add(container);
+
+            // Add right-click event handler
+            blackboardField.RegisterCallback<ContextualMenuPopulateEvent>(evt =>
+            {
+                evt.menu.AppendAction("Destroy", action =>
+                {
+                    RemovePropertyFromBlackboard(property, container);
+                });
+            });
+
             OnExposedPropertiesListAdd?.Invoke(localPropertyName);
+        }
+
+        private void RemovePropertyFromBlackboard(DSExposedProperty property, VisualElement container)
+        {
+            exposedProperties.Remove(property);
+            blackboard.Remove(container);
+            OnExposedPropertiesListChange?.Invoke(property.Name, null);
         }
         private void AddStyles()
         {

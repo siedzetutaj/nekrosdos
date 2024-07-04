@@ -12,4 +12,18 @@ public struct ConnectedThoughtsGuid
         Id1 = id1;
         Id2 = id2;
     }
+    public override bool Equals(object obj)
+    {
+        if (obj is ConnectedThoughtsGuid other)
+        {
+            return (Id1 == other.Id1 && Id2 == other.Id2) ||
+                   (Id1 == other.Id2 && Id2 == other.Id1);
+        }
+        return false;
+    }
+
+    public override int GetHashCode()
+    {
+        return Id1.GetHashCode() ^ Id2.GetHashCode();
+    }
 }

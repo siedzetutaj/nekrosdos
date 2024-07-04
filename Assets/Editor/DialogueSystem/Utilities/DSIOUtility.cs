@@ -372,7 +372,7 @@ namespace DS.Utilities
         {
             graphData.ExposedProperties.ForEach((x) =>
             {
-                graphView.AddPropeprtyToBlackBoard(x);
+                graphView.AddPropertyToBlackboard(x);
             });
         }
         public static T LoadAsset<T>(string path, string assetName) where T : ScriptableObject

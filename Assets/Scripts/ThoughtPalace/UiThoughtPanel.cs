@@ -15,14 +15,14 @@ public class UiThoughtPanel : MonoBehaviour
     [NonSerialized] public LineController activeLineController;
     [NonSerialized] public GameObject activeThough; //one that currently creates line
     [NonSerialized] public SerializableGuid FistID;
-    
+
     [Header("Set up")]
     [SerializeField] public TextMeshProUGUI descriptionTMP;
     [SerializeField] public RectTransform ThoughtPanelTransform;
     [SerializeField] public RectTransform LineHolder;
     [SerializeField] public TPAllConnectionsSO ThoughtConnections;
     [SerializeField] public List<ConnectionList> PlayerThoughtConnections = new();
-    
+
     [Header("Raycast to line")]
     public GameObject dotPrefab; // Prefabrykat kropki
     [SerializeField] private Camera _uiCamera;
@@ -56,7 +56,7 @@ public class UiThoughtPanel : MonoBehaviour
     {
         ThoughtConnections.AllConnections = ThoughtConnections.AllConnections.Where(item => item != null).ToList();
     }
-    #region Grouping Connected Thoughts
+    #region Grouping, Adding and Removing Connected Thoughts
     public void AddNode(SerializableGuid nodeId, SerializableGuid objectId)
     {
         if (!nodes.ContainsKey(nodeId))
@@ -64,7 +64,7 @@ public class UiThoughtPanel : MonoBehaviour
             nodes[nodeId] = new ConnectedNode(nodeId, objectId);
         }
     }
-    public void AddConnection( SerializableGuid nodeId2)
+    public void AddConnection(SerializableGuid nodeId2)
     {
         if (nodes.ContainsKey(FistID) && nodes.ContainsKey(nodeId2) && !ConnectionExists(FistID, nodeId2))
         {
@@ -105,75 +105,126 @@ public class UiThoughtPanel : MonoBehaviour
     }
     public void RemoveConnection(LineController line)
     {
-        SerializableGuid nodeId1 = line.connectionGuids.Id1;
-        SerializableGuid nodeId2 = line.connectionGuids.Id2;
+        var connectionToRemove = new ConnectedThoughtsGuid(line.connectionGuids.Id1, line.connectionGuids.Id2);
+        ConnectionList groupToUpdate = null;
+
         foreach (var connectionList in connections)
         {
-            connectionList.thoughtsList.RemoveAll(c =>
-                (c.Id1 == nodeId1 && c.Id2 == nodeId2) ||
-                (c.Id1 == nodeId2 && c.Id2 == nodeId1));
-
-            // Jeœli po usuniêciu po³¹czenia w grupie nie ma ju¿ ¿adnych po³¹czeñ, usuwamy grupê
-            if (connectionList.thoughtsList.Count == 0)
+            if (connectionList.thoughtsList.Contains(connectionToRemove))
             {
-                connections.Remove(connectionList);
-                break; // konieczne, aby przerwaæ iteracjê po usuniêciu elementu
+                groupToUpdate = connectionList;
+                break;
             }
         }
+
+        if (groupToUpdate != null)
+        {
+            groupToUpdate.thoughtsList.Remove(connectionToRemove);
+
+            // Jeœli po usuniêciu po³¹czenia w grupie nie ma ju¿ ¿adnych po³¹czeñ, usuwamy grupê
+            if (groupToUpdate.thoughtsList.Count == 0)
+            {
+                connections.Remove(groupToUpdate);
+            }
+            else
+            {
+                // Przebudowujemy grupy po usuniêciu po³¹czenia
+                RebuildGroups();
+            }
+        }
+
         foreach (var thought in createdThoughts)
         {
-            if (thought.ThoughtNodeGuid == nodeId1 || thought.ThoughtNodeGuid == nodeId2)
+            if (thought.ThoughtNodeGuid == connectionToRemove.Id1 || thought.ThoughtNodeGuid == connectionToRemove.Id2)
             {
                 thought.LineRenderers.Remove(line);
             }
         }
-        RebuildGroups();
     }
+
     private void RebuildGroups()
     {
-        // Zbieramy wszystkie istniej¹ce po³¹czenia
+        // Tworzymy now¹ listê grup
+        var newConnections = new List<ConnectionList>();
         var allConnections = new List<ConnectedThoughtsGuid>();
+
+        // Zbieramy wszystkie po³¹czenia
         foreach (var connectionList in connections)
         {
             allConnections.AddRange(connectionList.thoughtsList);
         }
 
+        // Resetujemy aktualne po³¹czenia
         connections.Clear();
 
-        // Tworzymy nowe grupy
+        // U¿ywamy BFS do znalezienia wszystkich po³¹czonych komponentów
         var visitedNodes = new HashSet<SerializableGuid>();
         foreach (var node in nodes.Keys)
         {
             if (!visitedNodes.Contains(node))
             {
                 var newGroup = new ConnectionList { thoughtsList = new List<ConnectedThoughtsGuid>() };
-                DFS(node, visitedNodes, newGroup, allConnections);
+                var queue = new Queue<SerializableGuid>();
+                queue.Enqueue(node);
+                visitedNodes.Add(node);
+
+                while (queue.Count > 0)
+                {
+                    var currentNode = queue.Dequeue();
+                    foreach (var connection in allConnections)
+                    {
+                        if ((connection.Id1 == currentNode || connection.Id2 == currentNode) &&
+                            !newGroup.thoughtsList.Contains(connection))
+                        {
+                            newGroup.thoughtsList.Add(connection);
+
+                            var neighborNode = connection.Id1 == currentNode ? connection.Id2 : connection.Id1;
+                            if (!visitedNodes.Contains(neighborNode))
+                            {
+                                visitedNodes.Add(neighborNode);
+                                queue.Enqueue(neighborNode);
+                            }
+                        }
+                    }
+                }
+
                 if (newGroup.thoughtsList.Count > 0)
                 {
-                    connections.Add(newGroup);
+                    newConnections.Add(newGroup);
                 }
             }
         }
-    }
 
-    // DFS do zbierania po³¹czeñ w grupie
-    private void DFS(SerializableGuid nodeId, HashSet<SerializableGuid> visitedNodes, ConnectionList group, List<ConnectedThoughtsGuid> allConnections)
-    {
-        visitedNodes.Add(nodeId);
-        foreach (var connection in allConnections)
-        {
-            if (connection.Id1 == nodeId && !visitedNodes.Contains(connection.Id2))
-            {
-                group.thoughtsList.Add(connection);
-                DFS(connection.Id2, visitedNodes, group, allConnections);
-            }
-            else if (connection.Id2 == nodeId && !visitedNodes.Contains(connection.Id1))
-            {
-                group.thoughtsList.Add(connection);
-                DFS(connection.Id1, visitedNodes, group, allConnections);
-            }
-        }
+        connections = newConnections;
     }
+    // Pobiera wszystkie po³¹czenia dla danego node
+    private List<ConnectedThoughtsGuid> GetConnections(SerializableGuid nodeId)
+    {
+        var result = new List<ConnectedThoughtsGuid>();
+        foreach (var connectionList in connections)
+        {
+            result.AddRange(connectionList.thoughtsList.FindAll(c => c.Id1 == nodeId || c.Id2 == nodeId));
+        }
+        return result;
+    }
+    //// DFS do zbierania po³¹czeñ w grupie
+    //private void DFS(SerializableGuid nodeId, HashSet<SerializableGuid> visitedNodes, ConnectionList group, List<ConnectedThoughtsGuid> allConnections)
+    //{
+    //    visitedNodes.Add(nodeId);
+    //    foreach (var connection in allConnections)
+    //    {
+    //        if (connection.Id1 == nodeId && !visitedNodes.Contains(connection.Id2))
+    //        {
+    //            group.thoughtsList.Add(connection);
+    //            DFS(connection.Id2, visitedNodes, group, allConnections);
+    //        }
+    //        else if (connection.Id2 == nodeId && !visitedNodes.Contains(connection.Id1))
+    //        {
+    //            group.thoughtsList.Add(connection);
+    //            DFS(connection.Id1, visitedNodes, group, allConnections);
+    //        }
+    //    }
+    //}
     private bool ConnectionExists(SerializableGuid nodeId1, SerializableGuid nodeId2)
     {
         foreach (var group in connections)
@@ -242,9 +293,9 @@ public class UiThoughtPanel : MonoBehaviour
     {
 
     }
-    private void OnMouseRightClickUp() 
+    private void OnMouseRightClickUp()
     {
-    
+
     }
     private LineController DetectLine()
     {
@@ -255,26 +306,14 @@ public class UiThoughtPanel : MonoBehaviour
 
         // Wykonujemy raycast 2D w kierunku pozycji myszy
         RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero, Mathf.Infinity, _uiLineLayerMask);
-        ShowDot(worldPoint);
         if (hit)
         {
-            hit.collider.gameObject.TryGetComponent(out LineController line );
+            hit.collider.gameObject.TryGetComponent(out LineController line);
             return line;
         }
-            return null;
+        return null;
     }
 
-    private void ShowDot(Vector2 position)
-    {
-        GameObject dot = Instantiate(dotPrefab, position, Quaternion.identity);
-        StartCoroutine(DestroyDotAfterTime(dot, 5f));
-    }
-
-    private IEnumerator DestroyDotAfterTime(GameObject dot, float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        Destroy(dot);
-    }
     #endregion
 }
 [System.Serializable]
@@ -290,7 +329,7 @@ public struct ConnectedNode
     }
 }
 [System.Serializable]
-public class ConnectionList 
+public class ConnectionList
 {
     public List<ConnectedThoughtsGuid> thoughtsList;
 }
