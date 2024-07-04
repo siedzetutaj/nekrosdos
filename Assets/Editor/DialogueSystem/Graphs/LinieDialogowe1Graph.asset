@@ -28,13 +28,13 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 171, y: -550}
   - <ID>k__BackingField: 6e5453db-5bd4-4c6a-8163-1f525a48baca
     <Name>k__BackingField: "RozmowaZKap\u0142anamiBezAlarica"
-    <Position>k__BackingField: {x: 166.00006, y: 487.00003}
+    <Position>k__BackingField: {x: 166, y: 487}
   - <ID>k__BackingField: a4eb3216-5766-455d-bfd8-24866659b547
     <Name>k__BackingField: DialogueGroup
     <Position>k__BackingField: {x: 8019, y: -334}
   - <ID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
     <Name>k__BackingField: DialogZReysemCoraxem
-    <Position>k__BackingField: {x: 1293.9995, y: 1698.0001}
+    <Position>k__BackingField: {x: 1293.9988, y: 1698}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 414bae47-e7f1-4b20-96c2-a94c3185696d
     <Name>k__BackingField: Retes1
@@ -1262,7 +1262,7 @@ MonoBehaviour:
     <Text>k__BackingField: "Za zab\xF3jstwem stoj\u0105 zamkni\u0119ci w lochu Ombryjczycy."
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: afd7507d-adeb-484e-973e-ec3b4ee48fb9
     <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 5864, y: 2742}
@@ -1644,6 +1644,296 @@ MonoBehaviour:
     - Name: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
       OldName: New Bool
       Value: 0
+  - <ID>k__BackingField: afd7507d-adeb-484e-973e-ec3b4ee48fb9
+    <Name>k__BackingField: IF3
+    <Text>k__BackingField: Dialogue text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: True
+      <NodeID>k__BackingField: 2398cf09-67a9-4d05-996d-f4ab5cfd4716
+    - <Text>k__BackingField: False
+      <NodeID>k__BackingField: 940bac06-4525-46b4-b6b6-f76310cb283b
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 2
+    <Position>k__BackingField: {x: 6560, y: 2914}
+    <ExposedProperties>k__BackingField:
+    - Name: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
+      OldName: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
+      Value: 0
+  - <ID>k__BackingField: 940bac06-4525-46b4-b6b6-f76310cb283b
+    <Name>k__BackingField: O13
+    <Text>k__BackingField: Ombryjczycy?
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: d773902a-0845-4dc2-8a29-844239d817ee
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6994, y: 3953}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 2398cf09-67a9-4d05-996d-f4ab5cfd4716
+    <Name>k__BackingField: O8
+    <Text>k__BackingField: "Z tego co wiemy nie ma jednoznacznych dowod\xF3w na ich
+      udzia\u0142 w morderstwie. Zostali jedynie... \"zauwa\u017Ceni\" na terenie
+      posiad\u0142o\u015Bci i prewencyjnie zatrzymani."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 920dfc40-679c-4321-ae5f-0ceaa9de6182
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6977, y: 3648}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 920dfc40-679c-4321-ae5f-0ceaa9de6182
+    <Name>k__BackingField: R21
+    <Text>k__BackingField: "\"Zauwa\u017Ceni na terenie posiad\u0142o\u015Bci?\"
+      To powiedzia\u0142 wam Alaric? hahahah dobre sobie."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 967df1a6-6144-438f-8a20-dfe5b27d7a2b
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7663, y: 3649}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 967df1a6-6144-438f-8a20-dfe5b27d7a2b
+    <Name>k__BackingField: O9
+    <Text>k__BackingField: "By\u0142o inaczej?"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 739dc719-6ded-45dc-8916-216464194c5d
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8351, y: 3649}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 739dc719-6ded-45dc-8916-216464194c5d
+    <Name>k__BackingField: R22
+    <Text>k__BackingField: "Oczywi\u015Bcie kurwa \u017Ce by\u0142o inaczej. "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 4eb5aa54-19f9-4211-a30d-97468443b6e5
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8659, y: 3652}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 4eb5aa54-19f9-4211-a30d-97468443b6e5
+    <Name>k__BackingField: R23
+    <Text>k__BackingField: "Ombryjczycy byli w posiad\u0142o\u015Bci od dawna. Pewnie
+      jako go\u015Bcie Alarica. Chcieli wychuja\u0107 korone i zas\u0142u\u017Cenie
+      odbi\u0142o im si\u0119 to czkawk\u0105. Pewnie negocjacje posz\u0142y chujowo
+      i ta ca\u0142a Maria na tyle mocno iuch wkurwi\u0142a \u017Ce postanowili si\u0119
+      zem\u015Bci\u0107."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 1b613f21-ff0e-41d5-9e91-0c3920adde59
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9355, y: 3655}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 1b613f21-ff0e-41d5-9e91-0c3920adde59
+    <Name>k__BackingField: O10
+    <Text>k__BackingField: "Sk\u0105d u Lorda wiedza o obecno\u015Bci Ombryjczyk\xF3w
+      w rezydencji?"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 1103d7ea-4885-4feb-8461-c4a692f4c125
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 10045, y: 3655}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 1103d7ea-4885-4feb-8461-c4a692f4c125
+    <Name>k__BackingField: R24
+    <Text>k__BackingField: "Bo nie jestem idiot\u0105. Maria non stop gdzie\u015B
+      znika\u0142a i t\u0142umaczy\u0142a si\u0119 chorob\u0105, rozmowy o ma\u0142\u017Ce\u0144stwie
+      by\u0142y prowadzone jedynie z Alariciem mimo \u017Ce nast\u0119pnego dnia
+      ta inwalidka pojawia\u0142a si\u0119 na posi\u0142kach dodatkowo wygl\u0105da\u0142
+      na nich na ca\u0142kiem sprawn\u0105. No przynajmniej na tyle na ile mog\u0142a.
+      Za zr\u0119czna to ona nie by\u0142a. Hahaha "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 6e9f6bad-4a63-498f-b5ad-472fce0d89e1
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 10724, y: 3658}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 0923894a-6894-4a4f-b652-67756066259d
+    <Name>k__BackingField: O12
+    <Text>k__BackingField: "By\u0107 mo\u017Ce jednak to do\u015B\u0107 \u015Bmia\u0142a
+      teza. Nieobecno\u015B\u0107 Lady mog\u0142a by\u0107 spowodowana wieloma innymi
+      czynnikami. Ktokolwiek mo\u017Ce potwierdzi\u0107 \u015Bmia\u0142a teorie Lorda?"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 8ce7cc38-4b82-4c8e-8c8b-61744fc82106
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 13232, y: 3657}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 6d46cb94-a90c-49bc-8501-24474deab376
+    <Name>k__BackingField: R28
+    <Text>k__BackingField: "O kurwa, nic tylko pogratulowa\u0107 bystro\u015Bci rozumu.
+      Chyba wysili\u0142e\u015B na ten wniosek ca\u0142\u0105 resztke twego m\xF3zgu
+      co?"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 35957c06-538a-437e-ac55-af3ddd42c873
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 14567, y: 3656}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 35957c06-538a-437e-ac55-af3ddd42c873
+    <Name>k__BackingField: R29
+    <Text>k__BackingField: "Nie musisz odpowiada\u0107. Owszem nie przepadam za niekompetentnymi
+      lud\u017Ami a w\u015Br\xF3d takich si\u0119 tutaj znajduje."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 742ef14c-2312-4759-90eb-45ec858bceb4
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 15235, y: 3657}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 742ef14c-2312-4759-90eb-45ec858bceb4
+    <Name>k__BackingField: A1
+    <Text>k__BackingField: "Sk\u0105d wi\u0119c obecno\u015B\u0107 Lorda w posiad\u0142o\u015Bci?
+      Je\u015Bli nie ma tu nikogo interesuj\u0105cego jaki jest cel tej wizyty."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: bc49688b-1f3d-452c-acc2-bf3ad5b95fbd
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 15911, y: 3660}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: bc49688b-1f3d-452c-acc2-bf3ad5b95fbd
+    <Name>k__BackingField: R30
+    <Text>k__BackingField: "Co\u015B ty g\u0142uchy jest? M\xF3wi\u0142em przecie\u017C
+      \u017Ce siedzimy ca\u0142e dnie na rozmowach dotycz\u0105cych maria\u017Cu
+      pomi\u0119dzy Elir\u0105 i moim pierworodnym. Tak samo zreszt\u0105 jak te
+      dwa g\u0142\u0105by."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 4b7bc0ed-55b9-4376-b561-93d891dde43f
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 16580, y: 3659}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 0734c87a-09b6-413f-9416-f6f4b95ae706
+    <Name>k__BackingField: R31
+    <Text>k__BackingField: ...
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 2f65bdd6-2ce5-46f8-a81b-9457e537332c
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 17932, y: 3666}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 2f65bdd6-2ce5-46f8-a81b-9457e537332c
+    <Name>k__BackingField: R32
+    <Text>k__BackingField: "Poniewa\u017C chuj was to obchodzi. Reysowie stwierdzili
+      \u017Ce nale\u017Cy pojawi\u0107 si\u0119 na rozmowach i tak te\u017C si\u0119
+      sta\u0142o. Polityke zostaw mnie \"obdarzony\", sam zajmij si\u0119 szukaniem
+      tych waszych zasranych dowod\xF3w."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 18235, y: 3662}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 1a3d7859-cd11-472c-a7a9-c5f98ae36c5f
+    <Name>k__BackingField: R25
+    <Text>k__BackingField: "Aaaa kurwa, dobrego \u017Cartu teraz nawet nie umiej\u0105
+      doceni\u0107."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: a3c2180a-6642-450d-8a37-12bd9604eb69
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 11852, y: 3671}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: a3c2180a-6642-450d-8a37-12bd9604eb69
+    <Name>k__BackingField: R26
+    <Text>k__BackingField: "W ka\u017Cdym razie wida\u0107 by\u0142o \u017Ce w posiad\u0142o\u015Bci
+      dzieje si\u0119 co\u015B na tyle zajmuj\u0105cego \u017Ce w\u0142asna matka
+      nie by\u0142a na posiedzeniach maj\u0105cych rozsztrzygn\u0105\u0107 los jej
+      w\u0142asnej c\xF3rki. Potajemne konszachty z Ombryjczykami wydaj\u0105 si\u0119
+      by\u0107 odpowiednim pretekstem czy\u017C nie?"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 0923894a-6894-4a4f-b652-67756066259d
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 12539, y: 3664}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 8ce7cc38-4b82-4c8e-8c8b-61744fc82106
+    <Name>k__BackingField: R27
+    <Text>k__BackingField: "Nie wkurwiaj mnie dzieciaku. \u017Badne teorie a odrobina
+      zdrowego rozs\u0105dku. Kto ma ci je potwierdzi\u0107 jak w posiad\u0142o\u015Bci
+      s\u0105 jedynie s\u0142ugusy Alarica. Niedojda z ciamajdowatym synalkiem i
+      s\u0142u\u017Cbista ze stolicy kt\xF3ry maj\u0105c zaobserwowa\u0107 cokolwiek
+      wykraczaj\u0105cego poza t\u0105 wasz\u0105 zasran\u0105 ksi\u0119ge traci
+      grunt pod stopami i nie wie co robi\u0107."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: "Nie przepada Lord chyba za obecnymi lokatorami posiad\u0142o\u015Bci."
+      <NodeID>k__BackingField: 6d46cb94-a90c-49bc-8501-24474deab376
+    - <Text>k__BackingField: "Wed\u0142ug naszej informacji ma Lord swoj\u0105 obstawe.
+        Ona nic nie widzia\u0142a?"
+      <NodeID>k__BackingField: d8108460-f5cc-4f12-a868-73fc55d4f476
+    - <Text>k__BackingField: New Choice
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 13904, y: 3655}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: d8108460-f5cc-4f12-a868-73fc55d4f476
+    <Name>k__BackingField: R33
+    <Text>k__BackingField: DW
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 14566, y: 3943}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: d773902a-0845-4dc2-8a29-844239d817ee
+    <Name>k__BackingField: R34
+    <Text>k__BackingField: "Tak kurwa Ombryjczycy. \u015Amier\u0107 mi \u015Bwiadkiem
+      \u017Ce wasza reputacja detektywie jest stanowczo ponad wasze realia."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 28c0c52a-5f40-4a0f-bc89-f7f21689d6e0
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7280, y: 3953}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 28c0c52a-5f40-4a0f-bc89-f7f21689d6e0
+    <Name>k__BackingField: R35
+    <Text>k__BackingField: "Ombryjczycy zostali zamkni\u0119ci w celi nast\u0119pnego
+      dnia po zab\xF3jstwie Marii"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7943, y: 3953}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 6e9f6bad-4a63-498f-b5ad-472fce0d89e1
+    <Name>k__BackingField: O11
+    <Text>k__BackingField: ...
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 1a3d7859-cd11-472c-a7a9-c5f98ae36c5f
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 11435, y: 3667}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 4b7bc0ed-55b9-4376-b561-93d891dde43f
+    <Name>k__BackingField: A2
+    <Text>k__BackingField: "Tak to wiemy. Moje pytanie brzmi jednak - po co bra\u0107
+      udzia\u0142 w takich romowach w momencie gdy potencjalna kandydatka na synow\u0105
+      pochodzi z rodu kt\xF3rego \u0142agodnie m\xF3wi\u0105c nie darzy si\u0119
+      wielk\u0105 sympati\u0105."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 0734c87a-09b6-413f-9416-f6f4b95ae706
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 17249, y: 3656}
+    <ExposedProperties>k__BackingField: []
   <ExposedProperties>k__BackingField: []
   <OldGroupNames>k__BackingField:
   - "Podr\xF3\u017CW\u015Anierzycy"
@@ -1801,3 +2091,27 @@ MonoBehaviour:
       - 4F
       - DialogueName
       - IF1
+      - IF3
+      - O13
+      - O8
+      - R21
+      - O9
+      - R22
+      - R23
+      - O10
+      - R24
+      - O12
+      - R28
+      - R29
+      - A1
+      - R30
+      - R31
+      - R32
+      - R25
+      - R26
+      - R27
+      - R33
+      - R34
+      - R35
+      - O11
+      - A2

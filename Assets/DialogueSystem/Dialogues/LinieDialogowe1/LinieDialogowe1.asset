@@ -160,6 +160,30 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 2b3fac87726ce1f4cbddb47f07940bd9, type: 2}
       - {fileID: 11400000, guid: 27c756c0d1a1dff408672d98c6337665, type: 2}
       - {fileID: 11400000, guid: b461dd657cb633b4e9e29f8547b7d20f, type: 2}
+      - {fileID: 11400000, guid: 1de46a88b825a1149a4029d5988eebe3, type: 2}
+      - {fileID: 11400000, guid: b60b9db93bee2e44a94d537f490c0f09, type: 2}
+      - {fileID: 11400000, guid: 15a32154368f70d4694c7982f080ba4e, type: 2}
+      - {fileID: 11400000, guid: 49924f5b8fb27a642a132dae72573b16, type: 2}
+      - {fileID: 11400000, guid: 392d1995d5fef884592637f1bb766183, type: 2}
+      - {fileID: 11400000, guid: dd9d89aa97b01ce40b4da58fb35bf95b, type: 2}
+      - {fileID: 11400000, guid: 23ff462923c6588429e1d0b3aa3dae35, type: 2}
+      - {fileID: 11400000, guid: bd9fbf5dce5496c449a72544e1810bfc, type: 2}
+      - {fileID: 11400000, guid: e4b21657b802d9a428163011e0d7afa0, type: 2}
+      - {fileID: 11400000, guid: cef14f4bd69200d49998a3f817fe99ff, type: 2}
+      - {fileID: 11400000, guid: b7540e20cf4b7104c8ee35fa28da938b, type: 2}
+      - {fileID: 11400000, guid: 2cf3e0b7e40edca4bac37492b2f3b14e, type: 2}
+      - {fileID: 11400000, guid: 4376273b20f15d44a84db022efb3b0b1, type: 2}
+      - {fileID: 11400000, guid: d7b2e19d72f44a9469ba5bdccbe58a96, type: 2}
+      - {fileID: 11400000, guid: 0b838aba3a973d54e987367807ab0729, type: 2}
+      - {fileID: 11400000, guid: 526e51543abe577428253283667490c3, type: 2}
+      - {fileID: 11400000, guid: 193a7d714c1d2aa4797344bd2ad95712, type: 2}
+      - {fileID: 11400000, guid: fce5dcfe498f36a4189ea0f5ffdc8a14, type: 2}
+      - {fileID: 11400000, guid: 65c4db4429d21ed458e6f59b72653486, type: 2}
+      - {fileID: 11400000, guid: 57ce2cbcc9642294cbe236880c2cad76, type: 2}
+      - {fileID: 11400000, guid: 820206ca33275174d8f18aba671ca3fa, type: 2}
+      - {fileID: 11400000, guid: ed14d9165cc428e439db9b4b08f35968, type: 2}
+      - {fileID: 11400000, guid: fa2b06ab9e35d9c4b804c2d35319b27c, type: 2}
+      - {fileID: 11400000, guid: be64efe5d3c50d1448a5f3368d2c0071, type: 2}
   <UngroupedDialogues>k__BackingField: []
   <ExposedProperties>k__BackingField:
   - Name: Orion w Valerii
@@ -178,5 +202,5 @@ MonoBehaviour:
     OldName: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
     Value: 0
   - Name: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
-    OldName: New Bool
+    OldName: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
     Value: 0
