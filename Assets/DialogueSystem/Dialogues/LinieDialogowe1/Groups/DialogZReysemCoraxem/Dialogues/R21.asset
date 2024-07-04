@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: R12
+  m_Name: R21
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: R12
-  <Text>k__BackingField: "Za zab\xF3jstwem stoj\u0105 zamkni\u0119ci w lochu Ombryjczycy."
+  <DialogueName>k__BackingField: R21
+  <Text>k__BackingField: "\"Zauwa\u017Ceni na terenie posiad\u0142o\u015Bci?\" To
+    powiedzia\u0142 wam Alaric? hahahah dobre sobie."
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 1de46a88b825a1149a4029d5988eebe3, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 392d1995d5fef884592637f1bb766183, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

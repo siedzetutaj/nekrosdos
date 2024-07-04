@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: R12
+  m_Name: R32
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: R12
-  <Text>k__BackingField: "Za zab\xF3jstwem stoj\u0105 zamkni\u0119ci w lochu Ombryjczycy."
+  <DialogueName>k__BackingField: R32
+  <Text>k__BackingField: "Poniewa\u017C chuj was to obchodzi. Reysowie stwierdzili
+    \u017Ce nale\u017Cy pojawi\u0107 si\u0119 na rozmowach i tak te\u017C si\u0119
+    sta\u0142o. Polityke zostaw mnie \"obdarzony\", sam zajmij si\u0119 szukaniem
+    tych waszych zasranych dowod\xF3w."
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 1de46a88b825a1149a4029d5988eebe3, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 0}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

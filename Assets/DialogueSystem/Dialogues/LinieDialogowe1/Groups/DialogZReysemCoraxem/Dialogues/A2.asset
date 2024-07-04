@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: R12
+  m_Name: A2
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: R12
-  <Text>k__BackingField: "Za zab\xF3jstwem stoj\u0105 zamkni\u0119ci w lochu Ombryjczycy."
+  <DialogueName>k__BackingField: A2
+  <Text>k__BackingField: "Tak to wiemy. Moje pytanie brzmi jednak - po co bra\u0107
+    udzia\u0142 w takich romowach w momencie gdy potencjalna kandydatka na synow\u0105
+    pochodzi z rodu kt\xF3rego \u0142agodnie m\xF3wi\u0105c nie darzy si\u0119 wielk\u0105
+    sympati\u0105."
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 1de46a88b825a1149a4029d5988eebe3, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0b838aba3a973d54e987367807ab0729, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
