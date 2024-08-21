@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: R32
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: R32
+  <Text>k__BackingField: "Poniewa\u017C chuj was to obchodzi. Reysowie stwierdzili
+    \u017Ce nale\u017Cy pojawi\u0107 si\u0119 na rozmowach i tak te\u017C si\u0119
+    sta\u0142o. Polityke zostaw mnie \"obdarzony\", sam zajmij si\u0119 szukaniem
+    tych waszych zasranych dowod\xF3w."
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 0}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 0
+  <ExposedProperties>k__BackingField: []

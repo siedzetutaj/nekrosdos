@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: R13
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: R13
+  <Text>k__BackingField: "Wi\u0119c przepytujecie mnie detektywie? Uwa\u017Cacie
+    \u017Ce to ja zabi\u0142em Marie? Je\u015Bli wysuwacie takie oskar\u017Cenia
+    to lepiej dla was by\u015Bcie mieli jakiekolwiek dowody na poparcie swoich kuriozalnych
+    zarzut\xF3w."
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: "O nic jeszcze Lorda nie oskar\u017Camy."
+    <NextDialogue>k__BackingField: {fileID: 0}
+    WasDisplayed: 0
+  - <Text>k__BackingField: "Przes\u0142uchiwanie \u015Bwiadk\xF3w to standardowa
+      procedura, w \u017Cadnym wypadku nie sugerujemy \u017Ce Lord mia\u0142 z morderstwem
+      cokolwiek wsp\xF3lnego."
+    <NextDialogue>k__BackingField: {fileID: 0}
+    WasDisplayed: 0
+  - <Text>k__BackingField: "Tak si\u0119 sk\u0142ada \u017Ce mamy takie dowody. Radz\u0119
+      odpowiada\u0107 na pytania to mo\u017Ce by\u0107 ostatnia szansa by si\u0119
+      z nich wyt\u0142umaczy\u0107."
+    <NextDialogue>k__BackingField: {fileID: 0}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
+  <ExposedProperties>k__BackingField: []

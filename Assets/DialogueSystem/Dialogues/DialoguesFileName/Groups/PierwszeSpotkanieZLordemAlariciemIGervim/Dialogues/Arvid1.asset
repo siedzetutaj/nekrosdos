@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: Arvid1
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: Arvid1
+  <Text>k__BackingField: "Zanim jednak zobaczymy cia\u0142o musz\u0119 zada\u0107
+    kilka pyta\u0144."
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: "Gdzie dosz\u0142o do morderstwa?"
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 19f2de3929ac34d44bbe6bc4d135171c, type: 2}
+    WasDisplayed: 0
+  - <Text>k__BackingField: "Kiedy odkryto \u015Bmier\u0107 Lady?"
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 19291d04ed046394d9720e5ee48593f9, type: 2}
+    WasDisplayed: 0
+  - <Text>k__BackingField: "Kto jako pierwszy odkry\u0142 cialo?"
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8a04e5feda4d6514ea6153b6ef00f016, type: 2}
+    WasDisplayed: 0
+  - <Text>k__BackingField: Na razie to wszystko
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3ed546b0913fa8746b78bb24bbe38dc1, type: 2}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
+  <ExposedProperties>k__BackingField: []

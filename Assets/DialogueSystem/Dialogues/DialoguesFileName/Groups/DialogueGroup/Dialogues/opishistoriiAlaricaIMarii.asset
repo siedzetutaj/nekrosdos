@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: opishistoriiAlaricaIMarii
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: opishistoriiAlaricaIMarii
+  <Text>k__BackingField: "Maria wychodzi za Alarica\nRodzi mu Desmonda - 1 syna\nIch
+    ga\u0142\u0105\u017A rodu zaczyna nabiera\u0107 ogromnego znaczenia i w\u0142adzy\nMaria
+    po raz kolejny jest w ci\u0105\u017Cy\nDochodzi do wypadku w wyniku kt\xF3rego
+    Lady traci w\u0142adz\u0119 w nogach a por\xF3d jest zagro\u017Cony\nAlaric dowiaduj\u0119
+    si\u0119 \u017Ce dziecko nie ma prawa prze\u017Cy\u0107 narodzin a co wi\u0119cej
+    mo\u017Ce zagra\u017Ca\u0107 \u017Cyciu Marii, ta nie chce jednak s\u0142ysze\u0107
+    o aborcji\nAlaric postanawia zamordowa\u0107 przebywaj\u0105c\u0105 w jego posiad\u0142o\u015Bci
+    Elize Morteo, kt\xF3ra tak\u017Ce ma wyda\u0107 na \u015Bwiat swoje dziecko.\nSzanta\u017Cuje
+    chirurga Zestesa i zmusza go by ten przy u\u017Cyciu swych zdolno\u015Bci u\u015Bpi\u0142
+    Mari\u0119 nast\u0119pnie przeprowadzi\u0142 aborcj\u0119 na ich dziecku oraz
+    odebra\u0142 por\xF3d Elizy podmieniaj\u0105c dzieci.\nTak si\u0119 te\u017C
+    dzieje a Alaric po tym jak Zestes odebra\u0142 por\xF3d morduj\u0119 Eliz\u0119.\nLord
+    informuj\u0119 wszystkich o cudzie jak i tragedii dokonanej w posiad\u0142o\u015Bci.\n\"Lady
+    Maria cudem prze\u017Cy\u0142a por\xF3d i wyda\u0142a na \u015Bwiat zdrow\u0105
+    c\xF3reczk\u0119. Niestety jednocze\u015Bnie Panna Eliza dozna\u0142a komplikacji
+    w trakcie porodu i zmar\u0142a wraz ze swym dzieckiem.\"\nW t\u0105 wersj\u0119
+    wydarze\u0144 bardzo szybko zacz\u0105\u0142 pow\u0105tpiewa\u0107 Viktor Morteo
+    brat bli\u017Aniak Elizy, kt\xF3ry zacz\u0105\u0142 oskar\u017Ca\u0107 Alarica
+    o zab\xF3jstwo jego siostry co mia\u0142o by\u0107 motywowane niech\u0119ci\u0105
+    Alarica do obdarzonych.\nNa rozkaz Alarica, Balon jego s\u0142uga zabi\u0142
+    szlachcica, a jego zw\u0142oki zamurowa\u0142 w piwnicy posiad\u0142o\u015Bci.\nW
+    trakcie zab\xF3jstwa Viktora z jego d\u0142oni spad\u0142 pier\u015Bcie\u0144
+    b\u0119d\u0105cy dla niego niesamowicie cenn\u0105 pami\u0105tk\u0105 \u0142\u0105cz\u0105c\u0105
+    go z siostr\u0105. \nPier\u015Bcie\u0144 ten le\u017Ca\u0142 przez lata w rogu
+    piwnicy tylko po to by zosta\u0107 ostatecznie podniesionym przez Elir\u0119
+    Morteo, kt\xF3ra wiedziona rz\u0105dz\u0105 zemsty swego wujka dokona\u0142a
+    1 z morderstw."
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 0}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 1
+  <ExposedProperties>k__BackingField: []

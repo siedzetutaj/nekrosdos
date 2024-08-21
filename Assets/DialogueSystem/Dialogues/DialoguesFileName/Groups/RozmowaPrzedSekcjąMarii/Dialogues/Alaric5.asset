@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: Alaric5
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: Alaric5
+  <Text>k__BackingField: "To dzia\u0142a w obie strony Panie Arvid. Co je\u015Bli
+    jej dusza ju\u017C jest niestabilna? Je\u015Bli komunikacja z ni\u0105 oka\u017Ce
+    si\u0119 niemo\u017Cliwa b\u0105d\u017A wyst\u0105pi\u0105 anomali\u0119? By\u0107
+    mo\u017Ce moja obecno\u015B\u0107 j\u0105 uspokoi sprawi \u017Ce dojdzie do siebie!  "
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: "To prawda jest szansa \u017Ce cia\u0142o ju\u017C jest
+      niestabilne ale to tylko wzmacnia moje obiekcje. Takie przypadki sprowadzaj\u0105
+      bezpo\u015Brednie zagro\u017Cenie zar\xF3wno na mnie jak i moje otoczenie.
+      Je\u015Bli zgodz\u0119 si\u0119 na to by Lord uczestniczy\u0142 w rytuale z\u0142amie
+      zasady sygilu."
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0bb76b930d533384b988da206e9ab986, type: 2}
+    WasDisplayed: 0
+  - <Text>k__BackingField: "W zasadzie... Mo\u017Ce co\u015B w tym jest ale musi
+      by\u0107 lord \u015Bwiadomy \u017Ce sznasa jest niezwykle ma\u0142a, a dodatkowo
+      nara\u017Ca Pana na niebezpiecze\u0144stwo."
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: f03af5916c289bc4c8cffd8934ab3fb8, type: 2}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
+  <ExposedProperties>k__BackingField: []
