@@ -17,12 +17,16 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
     [SerializeField] private DialogueDisplay _dialogueDisplay;
     [SerializeField] private GameObject _thoughtPalaceUI;
     [SerializeField] private Transform _body;
+    [SerializeField] private Animator _animator;
+    
 
     public Tilemap map;
 
     private bool _isGointToHaveInteraction = false;
     private DSDialogue _dialogue;
     private bool _isPused = false;
+    private Quaternion _initialRotation;
+    private int _animationSpeed = 5;
 
     private void OnEnable()
     {
@@ -40,35 +44,68 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
     }
     private void Start()
     {
+        _initialRotation = _body.rotation;
         destination = transform.position;
+        _agent.SetDestination(transform.position);
     }
     private void Update()
     {
+
         if (!_isPused)
         {
-
-            if (_isGointToHaveInteraction && Vector2.Distance(transform.position, _agent.destination) < 0.1f)
-            {
-                DisplayDialogue();
-
-                _isGointToHaveInteraction = false;
-                _dialogue = null;
-            }
-            if (_inputSystem.holdLeft)
-            {
-                Move();
-            }
-            _agent.SetDestination(destination);
-            _body.LookAt(_agent.destination);
+            Movement();
         }
         else
         {
+            _animator.speed = 1;
             _agent.SetDestination(transform.position);
+            _animator.SetBool("IsMoving", false);
+        }
+
+        if (_agent.remainingDistance <= _agent.stoppingDistance)
+        {
+            StopMovementAnimation();
+        }
+        else
+        {
+            BeginAnimationAndSetRotation();
+        }
+
+    }
+    #region Animating
+    private void BeginAnimationAndSetRotation()
+    {
+        if (_agent.velocity.sqrMagnitude > 0)
+        {
+            _animator.SetBool("IsMoving", true);
+            _animator.speed = _agent.velocity.magnitude/_animationSpeed;
+            SetDirection();
+
+        }
+    }
+
+    private void StopMovementAnimation()
+    {
+        if (!_agent.hasPath || _agent.velocity.sqrMagnitude == 0f)
+        {
+            _animator.speed = 1;
+            _animator.SetBool("IsMoving", false);
+        }
+    }
+    #endregion
+    private void SetDirection()
+    {
+        if (Vector2.Distance(_agent.destination, _body.position) >= 0.01)
+        {
+            var direction = _agent.destination - _body.position;
+            float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
+            Quaternion targetRotation = Quaternion.Euler(0, angle, 0);
+            _body.rotation = _initialRotation * targetRotation;
         }
     }
 
     #region Movement
-    private void Move()
+    private void MoveToMouse()
     {
         _isGointToHaveInteraction = false;
         Vector2 mousePosition = _inputSystem.mouseInput.MovementInputs.MousePosition.ReadValue<Vector2>();
@@ -79,7 +116,21 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
             destination = mousePosition;
         }
     }
+    private void Movement()
+    {
+        if (_isGointToHaveInteraction && Vector2.Distance(transform.position, _agent.destination) < 0.1f)
+        {
+            DisplayDialogue();
 
+            _isGointToHaveInteraction = false;
+            _dialogue = null;
+        }
+        if (_inputSystem.holdLeft)
+        {
+            MoveToMouse();
+        }
+        _agent.SetDestination(destination);
+    }
     #endregion
     #region Interactions
     public void MoveToInteractable(Vector2 target)
