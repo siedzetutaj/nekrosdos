@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class SampleInteraction : MonoBehaviour, IInteractable
 {
-    [SerializeField] private string _prompt;
-    [SerializeField] private CoursorType _coursorType;
-    [SerializeField] private Transform _moveToThisTransform;
+    [SerializeField] protected string _prompt;
+    [SerializeField] protected CoursorType _coursorType;
+    [SerializeField] protected Transform _moveToThisTransform;
     public string InteractionName => _prompt;
 
     public CoursorType CursorType => _coursorType;
