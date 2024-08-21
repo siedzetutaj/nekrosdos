@@ -17,7 +17,7 @@ MonoBehaviour:
     przyjecha\u0142 Lord do posiad\u0142o\u015Bci?"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7468f90433720df4bb1fa56780fb374a, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

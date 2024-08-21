@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: Alaric4
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: Alaric4
+  <Text>k__BackingField: "Nie musi, ale mo\u017Ce. Je\u015Bli do tego dojdzie strac\u0119
+    jedyn\u0105 szans\u0119 na ostatnie po\u017Cegnanie."
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: "Je\u015Bli do tego dojdzie to jakakolwiek rozmowa z Mari\u0105
+      bedzie tak czy inaczej niemo\u017Cliwa."
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0bb76b930d533384b988da206e9ab986, type: 2}
+    WasDisplayed: 0
+  - <Text>k__BackingField: "Dobrze, rozumiem. B\u0119dzie lord obecny w trakcie rytua\u0142u
+      ale do pomieszczenia razem z nami wejdzie tylko Lord a je\u015Bli cokolwiek
+      p\xF3jdzie nie tak b\u0119dzie Pan musial natychmiast opu\u015Bci\u0107 teren
+      kaplicy. "
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: f03af5916c289bc4c8cffd8934ab3fb8, type: 2}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
+  <ExposedProperties>k__BackingField: []

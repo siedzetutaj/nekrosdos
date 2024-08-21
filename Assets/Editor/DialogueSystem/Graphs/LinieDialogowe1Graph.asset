@@ -16,25 +16,28 @@ MonoBehaviour:
   <Groups>k__BackingField:
   - <ID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <Name>k__BackingField: "Podr\xF3\u017CW\u015Anierzycy"
-    <Position>k__BackingField: {x: 178, y: -3204}
+    <Position>k__BackingField: {x: 178.00006, y: -3204}
   - <ID>k__BackingField: 5d08f44c-3861-420d-b20c-8fa3e26864f1
     <Name>k__BackingField: "PrzybycieDoPosiad\u0142o\u015Bci"
-    <Position>k__BackingField: {x: 153, y: -2450}
+    <Position>k__BackingField: {x: 153.00006, y: -2449.9998}
   - <ID>k__BackingField: 7c5b1997-3e4a-406a-8fdf-9ce02977086d
     <Name>k__BackingField: PierwszeSpotkanieZLordemAlariciemIGervim
-    <Position>k__BackingField: {x: 150, y: -2098}
+    <Position>k__BackingField: {x: 150.00006, y: -2098}
   - <ID>k__BackingField: f3f021bd-42c3-43dc-9faa-1e274f0da20e
     <Name>k__BackingField: "RozmowaPrzedSekcj\u0105Marii"
-    <Position>k__BackingField: {x: 171, y: -550}
+    <Position>k__BackingField: {x: 171.00006, y: -550}
   - <ID>k__BackingField: 6e5453db-5bd4-4c6a-8163-1f525a48baca
     <Name>k__BackingField: "RozmowaZKap\u0142anamiBezAlarica"
-    <Position>k__BackingField: {x: 166, y: 487}
+    <Position>k__BackingField: {x: 166.00006, y: 486.99997}
   - <ID>k__BackingField: a4eb3216-5766-455d-bfd8-24866659b547
     <Name>k__BackingField: DialogueGroup
-    <Position>k__BackingField: {x: 8019, y: -334}
+    <Position>k__BackingField: {x: 8089, y: -329}
   - <ID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
     <Name>k__BackingField: DialogZReysemCoraxem
-    <Position>k__BackingField: {x: 1293.9988, y: 1698}
+    <Position>k__BackingField: {x: 1294, y: 1695.0001}
+  - <ID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <Name>k__BackingField: "Planwydarze\u0144"
+    <Position>k__BackingField: {x: 1332, y: 4889}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 414bae47-e7f1-4b20-96c2-a94c3185696d
     <Name>k__BackingField: Retes1
@@ -1022,43 +1025,6 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 1
     <Position>k__BackingField: {x: 6401, y: -1996}
     <ExposedProperties>k__BackingField: []
-  - <ID>k__BackingField: 190cbb7c-45ec-4c5b-a28c-1d0f893aad6b
-    <Name>k__BackingField: opishistoriiAlaricaIMarii
-    <Text>k__BackingField: "Maria wychodzi za Alarica\nRodzi mu Desmonda - 1 syna\nIch
-      ga\u0142\u0105\u017A rodu zaczyna nabiera\u0107 ogromnego znaczenia i w\u0142adzy\nMaria
-      po raz kolejny jest w ci\u0105\u017Cy\nDochodzi do wypadku w wyniku kt\xF3rego
-      Lady traci w\u0142adz\u0119 w nogach a por\xF3d jest zagro\u017Cony\nAlaric
-      dowiaduj\u0119 si\u0119 \u017Ce dziecko nie ma prawa prze\u017Cy\u0107 narodzin
-      a co wi\u0119cej mo\u017Ce zagra\u017Ca\u0107 \u017Cyciu Marii, ta nie chce
-      jednak s\u0142ysze\u0107 o aborcji\nAlaric postanawia zamordowa\u0107 przebywaj\u0105c\u0105
-      w jego posiad\u0142o\u015Bci Elize Morteo, kt\xF3ra tak\u017Ce ma wyda\u0107
-      na \u015Bwiat swoje dziecko.\nSzanta\u017Cuje chirurga Zestesa i zmusza go
-      by ten przy u\u017Cyciu swych zdolno\u015Bci u\u015Bpi\u0142 Mari\u0119 nast\u0119pnie
-      przeprowadzi\u0142 aborcj\u0119 na ich dziecku oraz odebra\u0142 por\xF3d Elizy
-      podmieniaj\u0105c dzieci.\nTak si\u0119 te\u017C dzieje a Alaric po tym jak
-      Zestes odebra\u0142 por\xF3d morduj\u0119 Eliz\u0119.\nLord informuj\u0119
-      wszystkich o cudzie jak i tragedii dokonanej w posiad\u0142o\u015Bci.\n\"Lady
-      Maria cudem prze\u017Cy\u0142a por\xF3d i wyda\u0142a na \u015Bwiat zdrow\u0105
-      c\xF3reczk\u0119. Niestety jednocze\u015Bnie Panna Eliza dozna\u0142a komplikacji
-      w trakcie porodu i zmar\u0142a wraz ze swym dzieckiem.\"\nW t\u0105 wersj\u0119
-      wydarze\u0144 bardzo szybko zacz\u0105\u0142 pow\u0105tpiewa\u0107 Viktor Morteo
-      brat bli\u017Aniak Elizy, kt\xF3ry zacz\u0105\u0142 oskar\u017Ca\u0107 Alarica
-      o zab\xF3jstwo jego siostry co mia\u0142o by\u0107 motywowane niech\u0119ci\u0105
-      Alarica do obdarzonych.\nNa rozkaz Alarica, Balon jego s\u0142uga zabi\u0142
-      szlachcica, a jego zw\u0142oki zamurowa\u0142 w piwnicy posiad\u0142o\u015Bci.\nW
-      trakcie zab\xF3jstwa Viktora z jego d\u0142oni spad\u0142 pier\u015Bcie\u0144
-      b\u0119d\u0105cy dla niego niesamowicie cenn\u0105 pami\u0105tk\u0105 \u0142\u0105cz\u0105c\u0105
-      go z siostr\u0105. \nPier\u015Bcie\u0144 ten le\u017Ca\u0142 przez lata w rogu
-      piwnicy tylko po to by zosta\u0107 ostatecznie podniesionym przez Elir\u0119
-      Morteo, kt\xF3ra wiedziona rz\u0105dz\u0105 zemsty swego wujka dokona\u0142a
-      1 z morderstw."
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
-    <GroupID>k__BackingField: a4eb3216-5766-455d-bfd8-24866659b547
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 8044, y: -275}
-    <ExposedProperties>k__BackingField: []
   - <ID>k__BackingField: a30485ad-535f-4b84-86be-5cce63025fc9
     <Name>k__BackingField: R1
     <Text>k__BackingField: "Wiem kim jeste\u015B na Thantehetep! Od tygodnia siedz\u0119
@@ -1470,25 +1436,13 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 12967, y: 2047}
     <ExposedProperties>k__BackingField: []
-  - <ID>k__BackingField: 9657c8ae-1b2a-420c-8eb0-2af5b3c066c6
-    <Name>k__BackingField: 08
-    <Text>k__BackingField: "Lordzie... Artyku\u0142 ten przywo\u0142ywany jest w
-      wypadku nieudanego kontaktu ze zmar\u0142\u0105 dusz\u0105. Jego wykorzystanie
-      w obecnej sytuacji jest bezpodstawne..."
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
-    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 13675, y: 2065}
-    <ExposedProperties>k__BackingField: []
   - <ID>k__BackingField: 60be1ee9-dcfc-4855-be02-e5b8ddb49476
     <Name>k__BackingField: O7
     <Text>k__BackingField: "Zacznijmy wi\u0119c od pocz\u0105tku. Z jakiego powodu
       przyjecha\u0142 Lord do posiad\u0142o\u015Bci?"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 1ef5aef0-d26c-4365-9aa5-b40a42b9b3e4
     <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 12975, y: 1757}
@@ -1879,16 +1833,6 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 1
     <Position>k__BackingField: {x: 13904, y: 3655}
     <ExposedProperties>k__BackingField: []
-  - <ID>k__BackingField: d8108460-f5cc-4f12-a868-73fc55d4f476
-    <Name>k__BackingField: R33
-    <Text>k__BackingField: DW
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
-    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 14566, y: 3943}
-    <ExposedProperties>k__BackingField: []
   - <ID>k__BackingField: d773902a-0845-4dc2-8a29-844239d817ee
     <Name>k__BackingField: R34
     <Text>k__BackingField: "Tak kurwa Ombryjczycy. \u015Amier\u0107 mi \u015Bwiadkiem
@@ -1934,7 +1878,404 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 17249, y: 3656}
     <ExposedProperties>k__BackingField: []
-  <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: d8108460-f5cc-4f12-a868-73fc55d4f476
+    <Name>k__BackingField: R33
+    <Text>k__BackingField: "A mo\u017Ce i widzieli ale to nie jest  jaki"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 14566, y: 3943}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 0d7bfbe0-ce36-4de5-9260-a4f30f28dc77
+    <Name>k__BackingField: R39
+    <Text>k__BackingField: "Jego przywo\u0142anie jest moim prawem, z kt\xF3rego
+      w\u0142a\u015Bnie zamierzam skorzysta\u0107 detektywie Orion."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 1fddf4e7-233e-4a0f-b32b-d95991ecc6c5
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 14361, y: 2066}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 1fddf4e7-233e-4a0f-b32b-d95991ecc6c5
+    <Name>k__BackingField: R40
+    <Text>k__BackingField: "Na t\u0105 chwile uznaje t\u0119 rozmow\u0119 za zako\u0144czona.
+      Wierz\u0119 \u017Ce przed nast\u0119pn\u0105 znajdzie si\u0119 dokument potwierdzaj\u0105cy 
+      zdolno\u015B\u0107 Pana pomocnika do trafnej oceny sytuacji. Spisany przez
+      osob\u0119 niezale\u017Cn\u0105. Chyba takie by\u0142y wytyczne artyku\u0142u?
+      Czy\u017C nie detektywie Orion??"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: cf798ac6-888b-442e-938e-dbe0efed9a8b
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 15045, y: 2067}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: cf798ac6-888b-442e-938e-dbe0efed9a8b
+    <Name>k__BackingField: O15
+    <Text>k__BackingField: ...
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 715976f7-c8a0-4172-b77c-0a2cf389ee39
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 15720, y: 2067}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 715976f7-c8a0-4172-b77c-0a2cf389ee39
+    <Name>k__BackingField: O16
+    <Text>k__BackingField: 'Owszem. '
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 16031, y: 2067}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 9657c8ae-1b2a-420c-8eb0-2af5b3c066c6
+    <Name>k__BackingField: 08
+    <Text>k__BackingField: "Lordzie... Artyku\u0142 ten przywo\u0142ywany jest w
+      wypadku nieudanego kontaktu ze zmar\u0142\u0105 dusz\u0105. Jego wykorzystanie
+      w obecnej sytuacji jest bezpodstawne..."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 0d7bfbe0-ce36-4de5-9260-a4f30f28dc77
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 13657, y: 2060}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: eabc556d-481a-44a9-b555-f4778319f182
+    <Name>k__BackingField: R37
+    <Text>k__BackingField: "To czym ja jestem zainteresowany w kontek\u015Bcie mojego
+      w\u0142asnego syna chuja was powinno obchodzi\u0107."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 0cd931f5-b6fe-46fb-a17c-6836f0964fac
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 15027, y: 1771}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 1ef5aef0-d26c-4365-9aa5-b40a42b9b3e4
+    <Name>k__BackingField: R36
+    <Text>k__BackingField: "Lord Morteo chcia\u0142 wybra\u0107 odpowiedniego kandydata
+      na m\u0119\u017Ca swej c\xF3rki. M\xF3j syn zosta\u0142 wybrany jako jedna
+      z opcji."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 5ef441e2-6e8d-4c6a-b15a-1fe8635f999e
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 13671, y: 1754}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 5ef441e2-6e8d-4c6a-b15a-1fe8635f999e
+    <Name>k__BackingField: O14
+    <Text>k__BackingField: "Jest Lord zainteresowany po\u0142\u0105czeniem ga\u0142\u0119zi
+      dw\xF3ch rod\xF3w?"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: eabc556d-481a-44a9-b555-f4778319f182
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 14353, y: 1768}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 0cd931f5-b6fe-46fb-a17c-6836f0964fac
+    <Name>k__BackingField: R38
+    <Text>k__BackingField: "Pytaliscie w jakim celu pojawi\u0142em si\u0119 na tym
+      lodowym zadupiu. Odpowiedzia\u0142em na to pytanie."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 15713, y: 1782}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 190cbb7c-45ec-4c5b-a28c-1d0f893aad6b
+    <Name>k__BackingField: opishistoriiAlaricaIMarii
+    <Text>k__BackingField: "Maria wychodzi za Alarica\nRodzi mu Desmonda - 1 syna\nIch
+      ga\u0142\u0105\u017A rodu zaczyna nabiera\u0107 ogromnego znaczenia i w\u0142adzy\nMaria
+      po raz kolejny jest w ci\u0105\u017Cy\nDochodzi do wypadku w wyniku kt\xF3rego
+      Lady traci w\u0142adz\u0119 w nogach a por\xF3d jest zagro\u017Cony\nAlaric
+      dowiaduj\u0119 si\u0119 \u017Ce dziecko nie ma prawa prze\u017Cy\u0107 narodzin
+      a co wi\u0119cej mo\u017Ce zagra\u017Ca\u0107 \u017Cyciu Marii, ta nie chce
+      jednak s\u0142ysze\u0107 o aborcji\nAlaric postanawia zamordowa\u0107 przebywaj\u0105c\u0105
+      w jego posiad\u0142o\u015Bci Elize Morteo, kt\xF3ra tak\u017Ce ma wyda\u0107
+      na \u015Bwiat swoje dziecko.\nSzanta\u017Cuje chirurga Zestesa i zmusza go
+      by ten przy u\u017Cyciu swych zdolno\u015Bci u\u015Bpi\u0142 Mari\u0119 nast\u0119pnie
+      przeprowadzi\u0142 aborcj\u0119 na ich dziecku oraz odebra\u0142 por\xF3d Elizy
+      podmieniaj\u0105c dzieci.\nTak si\u0119 te\u017C dzieje a Alaric po tym jak
+      Zestes odebra\u0142 por\xF3d morduj\u0119 Eliz\u0119.\nLord informuj\u0119
+      wszystkich o cudzie jak i tragedii dokonanej w posiad\u0142o\u015Bci.\n\"Lady
+      Maria cudem prze\u017Cy\u0142a por\xF3d i wyda\u0142a na \u015Bwiat zdrow\u0105
+      c\xF3reczk\u0119. Niestety jednocze\u015Bnie Panna Eliza dozna\u0142a komplikacji
+      w trakcie porodu i zmar\u0142a wraz ze swym dzieckiem.\"\nW t\u0105 wersj\u0119
+      wydarze\u0144 bardzo szybko zacz\u0105\u0142 pow\u0105tpiewa\u0107 Viktor Morteo
+      brat bli\u017Aniak Elizy, kt\xF3ry zacz\u0105\u0142 oskar\u017Ca\u0107 Alarica
+      o zab\xF3jstwo jego siostry co mia\u0142o by\u0107 motywowane niech\u0119ci\u0105
+      Alarica do obdarzonych.\nNa rozkaz Alarica, Balon jego s\u0142uga zabi\u0142
+      szlachcica, a jego zw\u0142oki zamurowa\u0142 w piwnicy posiad\u0142o\u015Bci.\nW
+      trakcie zab\xF3jstwa Viktora z jego d\u0142oni spad\u0142 pier\u015Bcie\u0144
+      b\u0119d\u0105cy dla niego niesamowicie cenn\u0105 pami\u0105tk\u0105 \u0142\u0105cz\u0105c\u0105
+      go z siostr\u0105. \nPier\u015Bcie\u0144 ten le\u017Ca\u0142 przez lata w rogu
+      piwnicy tylko po to by zosta\u0107 ostatecznie podniesionym przez Elir\u0119
+      Morteo, kt\xF3ra wiedziona rz\u0105dz\u0105 zemsty swego wujka dokona\u0142a
+      1 z morderstw."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: a4eb3216-5766-455d-bfd8-24866659b547
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8114, y: -270}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 234ac63e-d170-481c-b275-f5fb660fbbaf
+    <Name>k__BackingField: 2
+    <Text>k__BackingField: "Maria Morteo s\u0142ysz\u0105c o pielgrzymie na ich ziemiach
+      sprowadza Oberona do pa\u0142acu"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 54150587-5487-430a-9748-9f60f415ec18
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2061, y: 4948}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 60f3ad1b-67f9-4430-8cf4-9c791f3f19e6
+    <Name>k__BackingField: 4
+    <Text>k__BackingField: "Maria u\u015Bwiadamia sobie \u017Ce Oberon nie jest tym
+      za kogo sie podaj\u0119 jednak chc\u0105c wykorzysta\u0107 jego wiedz\u0119
+      trzyma go blisko siebbie"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 4e94178c-af91-4786-b51f-770267f22ee0
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3484, y: 4959}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 4e94178c-af91-4786-b51f-770267f22ee0
+    <Name>k__BackingField: 5
+    <Text>k__BackingField: "Maria wraz z m\u0119\u017Cem Alariciem mimo prawdopodobie\u0144stwa
+      pojawienia si\u0119 ludzi z Ombrii lada dzie\u0144 zmuszona zostaje do przygotowania
+      spotkania w sprawie przysz\u0142o\u015Bci swej c\xF3rki - Eliry. Mimo jej m\u0142odego
+      wieku wedle tradycji jest to ju\u017C ostatni moment by zar\u0119czy\u0107
+      j\u0105 z odpowiednim kandydatem"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 630c3b14-7768-4c54-b782-fc5e89ccf642
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4213, y: 4965}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 630c3b14-7768-4c54-b782-fc5e89ccf642
+    <Name>k__BackingField: 6
+    <Text>k__BackingField: "2 Przedstawicieli Ombryjczyk\xF3w przybywa do posiad\u0142o\u015Bci
+      w celu dogadania warunk\xF3w sprzeda\u017Cy broni dla rodu Morteo"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 93a3844d-e999-4412-88c4-d9c974c5eb8b
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4925, y: 4968}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 93a3844d-e999-4412-88c4-d9c974c5eb8b
+    <Name>k__BackingField: 7
+    <Text>k__BackingField: Maria Morteo wraz z synem Desmondem negocjuje z ombryjczykami
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 7b4f90ea-b7b8-49de-98b4-af2b6dc1adf4
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5620, y: 4976}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 7b4f90ea-b7b8-49de-98b4-af2b6dc1adf4
+    <Name>k__BackingField: 8
+    <Text>k__BackingField: "dzie\u0144 p\xF3\u017Aniej do posiad\u0142o\u015Bci przybywaj\u0105
+      - Reys Corax wraz z 2 podleg\u0142ych mu ludzi, Lothion Fraxini z synem Umbertem
+      i Virion Sygil"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 569a7d0b-e5f5-42d2-81b7-4f66f9c2ced2
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6317, y: 4980}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: ac2078f8-de1e-48de-aed3-839823ca34ec
+    <Name>k__BackingField: 10
+    <Text>k__BackingField: "Maria unika spotka\u0144 udaj\u0105c chorob\u0119 podczas
+      gdy tak naprawd\u0119 prowadzi negocjacje z handlarzami broni\u0105"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 587afa2c-c5ad-4a24-805e-999656bd54e2
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7717, y: 4981}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 587afa2c-c5ad-4a24-805e-999656bd54e2
+    <Name>k__BackingField: 11
+    <Text>k__BackingField: "Do posiad\u0142o\u015Bci przybywa Gubernator Hostes chc\u0105c
+      odda\u0107 \u0142ap\xF3wk\u0119 Morteo by ci nadal popierali jego kandydatur\u0119"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: eea5cce6-fc93-4b62-89f9-cdeb16064b17
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8402, y: 4981}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: eea5cce6-fc93-4b62-89f9-cdeb16064b17
+    <Name>k__BackingField: 12
+    <Text>k__BackingField: "Celu jego wizyty domy\u015Bla si\u0119 Virion  Sygil
+      b\u0119d\u0105cy jednocze\u015Bniue odpowiedzialny za podatki w kr\xF3lestwie"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: f5b6410b-27f1-4af0-a4b4-2898dee8b0dd
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9132, y: 4976}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: fa1e338b-4649-435b-9a45-27936c768693
+    <Name>k__BackingField: 14
+    <Text>k__BackingField: "Reys Corax chce wykorzysta\u0107 zamieszanie w posiad\u0142o\u015Bci
+      do zinfiltrowania posiad\u0142o\u015Bci i zdobyciu jak najwi\u0119kszej iliczby
+      informacji uw\u0142aczaj\u0105cych rodu Morteo. W tym celu wykorzystuj\u0119
+      swoich podw\u0142adnych."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: ded17b3e-3bb0-4a46-bfc3-688e9cd60e22
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 10569, y: 4973}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: ded17b3e-3bb0-4a46-bfc3-688e9cd60e22
+    <Name>k__BackingField: 15
+    <Text>k__BackingField: "Ute zaczyna nocami patrolowa\u0107 korytarze i ogr\xF3d
+      posiad\u0142o\u015Bci szukaj\u0105c jakichkolwiek podejrzanych rzeczy"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 0998199a-2432-4000-a8b2-32e887aefb95
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 11304, y: 4981}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 7ad54368-5eeb-4e50-85a6-615f17bd3309
+    <Name>k__BackingField: 17
+    <Text>k__BackingField: "W tym samym czasie Abigail pr\xF3buj\u0119 omota\u0107
+      swymi wd\u017Ai\u0119kami Desmonda by wydoby\u0107 z niego istotne informacje
+      cho\u0107 nie robi tego z rado\u015Bci\u0105."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 33cfc254-68bd-4c2d-87c4-0dcb73773d28
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 12694, y: 4986}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 33cfc254-68bd-4c2d-87c4-0dcb73773d28
+    <Name>k__BackingField: 18
+    <Text>k__BackingField: "Lothion Fraxini pr\xF3buj\u0119 odnowi\u0107 swe dawne
+      relacje z Mari\u0105 i sk\u0142ada jej niespodziewane wizyty jednaK ZA KA\u017BDYM
+      RAZEM JEST DO\u015A\u0106 SZYBKO sp\u0142awiany."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 3b10d838-06d0-4098-85d3-3d21e76fce83
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 13397, y: 4986}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 3b10d838-06d0-4098-85d3-3d21e76fce83
+    <Name>k__BackingField: 19
+    <Text>k__BackingField: "Lothion zaczyna pisa\u0107 listy i wysy\u0142a\u0107
+      je do swej muzy."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 098540d9-1805-41e6-a495-51fadd683a8e
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 14094, y: 4986}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 96f820b6-bd1f-4b98-a588-a3a8b77f21c3
+    <Name>k__BackingField: 1
+    <Text>k__BackingField: "Oberon Von Der Diaz przybywa w okolice posiad\u0142o\u015Bci"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 234ac63e-d170-481c-b275-f5fb660fbbaf
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1357, y: 4948}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 54150587-5487-430a-9748-9f60f415ec18
+    <Name>k__BackingField: 3
+    <Text>k__BackingField: "Maria prowadzi prywatne rozmowy z Oberonem niemal codziennie
+      wypytuj\u0105c go o wszelkie wie\u015Bci zar\xF3wno z kraju jak i zza granicy"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 60f3ad1b-67f9-4430-8cf4-9c791f3f19e6
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2771, y: 4950}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: f5b6410b-27f1-4af0-a4b4-2898dee8b0dd
+    <Name>k__BackingField: 13
+    <Text>k__BackingField: "rozpoczynaj\u0105 si\u0119 kolejne rozmowy mi\u0119dzy
+      Alariciem Gervim a Hostesem i Virionem"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9847, y: 4985}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 0998199a-2432-4000-a8b2-32e887aefb95
+    <Name>k__BackingField: 16
+    <Text>k__BackingField: "Ute odkrywa obecno\u015B\u0107 Ombryjczyk\xF3w w posiad\u0142o\u015Bci
+      jednak z powodu nik\u0142ej lojalno\u015Bci do Coraxa nie informuj\u0119 go
+      on o ich obecno\u015Bci a w zamain za to pogrywa sobie z nimi w karty"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 7ad54368-5eeb-4e50-85a6-615f17bd3309
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 12008, y: 4982}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 098540d9-1805-41e6-a495-51fadd683a8e
+    <Name>k__BackingField: 20
+    <Text>k__BackingField: "Listy przejmuje Weln i na polecenie Marii ich niedosz\u0142ej
+      odbiorczyni pali listy tu\u017C po tym jak przylec\u0105"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 14776, y: 4979}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 569a7d0b-e5f5-42d2-81b7-4f66f9c2ced2
+    <Name>k__BackingField: 9
+    <Text>k__BackingField: "Reys, Lothion i Virion uczestnicz\u0105 w rozmowach z
+      Alariciem Morteo i jego przydupasem Gervim, na kt\xF3rych podstawie ma si\u0119
+      rozstrzygn\u0105\u0107 w kt\xF3r\u0105 rodzin\u0119 w\u017Ceni si\u0119 m\u0142oda
+      Elira Morteo"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: ac2078f8-de1e-48de-aed3-839823ca34ec
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7019, y: 4972}
+    <ExposedProperties>k__BackingField: []
+  <ExposedProperties>k__BackingField:
+  - Name: Orion w Valerii
+    OldName: Orion w Valerii
+    Value: 0
+  - Name: Informacja o ludziach z Ombrii
+    OldName: Informacja o ludziach z Ombrii
+    Value: 0
+  - Name: "Alaric widzia\u0142 rytua\u0142"
+    OldName: "Alaric widzia\u0142 rytua\u0142"
+    Value: 0
+  - Name: "Alaric nie widzial rytua\u0142u"
+    OldName: "Alaric nie widzial rytua\u0142u"
+    Value: 0
+  - Name: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
+    OldName: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
+    Value: 0
+  - Name: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
+    OldName: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
+    Value: 0
   <OldGroupNames>k__BackingField:
   - "Podr\xF3\u017CW\u015Anierzycy"
   - "PrzybycieDoPosiad\u0142o\u015Bci"
@@ -1943,6 +2284,7 @@ MonoBehaviour:
   - "RozmowaZKap\u0142anamiBezAlarica"
   - DialogueGroup
   - DialogZReysemCoraxem
+  - "Planwydarze\u0144"
   <OldUngroupedNodeNames>k__BackingField: []
   <OldGroupedNodeNames>k__BackingField:
     list:
@@ -2053,9 +2395,6 @@ MonoBehaviour:
       - Alaric3
       - Orion4
       - Arvid1
-    - Key: DialogueGroup
-      Value:
-      - opishistoriiAlaricaIMarii
     - Key: DialogZReysemCoraxem
       Value:
       - R1
@@ -2077,7 +2416,6 @@ MonoBehaviour:
       - R9
       - R16
       - R17
-      - 08
       - O7
       - R15
       - R14
@@ -2110,8 +2448,42 @@ MonoBehaviour:
       - R25
       - R26
       - R27
-      - R33
       - R34
       - R35
       - O11
       - A2
+      - R33
+      - R39
+      - R40
+      - O15
+      - O16
+      - 08
+      - R37
+      - R36
+      - O14
+      - R38
+    - Key: DialogueGroup
+      Value:
+      - opishistoriiAlaricaIMarii
+    - Key: "Planwydarze\u0144"
+      Value:
+      - 2
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 10
+      - 11
+      - 12
+      - 14
+      - 15
+      - 17
+      - 18
+      - 19
+      - 1
+      - 3
+      - 13
+      - 16
+      - 20
+      - 9

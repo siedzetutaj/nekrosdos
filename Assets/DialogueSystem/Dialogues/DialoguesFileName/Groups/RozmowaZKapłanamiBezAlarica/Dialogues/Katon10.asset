@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: Katon10
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: Katon10
+  <Text>k__BackingField: "Kap\u0142an Oberon jednak, ma spore do\u015Bwiadczenie
+    w przeprowadzaniu ludzi na drug\u0105 stron\u0119. W trakcie swych pielgrzymek
+    robi\u0142 to nie raz. Wedle jego wiedzy osoby zamordowane znacznie cz\u0119\u015Bciej
+    przejawiaj\u0105 r\xF3znego rodzaju komplikacji przy pr\xF3bach kontaktu. Nie
+    mam powodu by w\u0105tpi\u0107 w jego os\u0105d."
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: "B\u0119dziemy mieli to na wzgl\u0119dzie."
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 96b0fade64a606546ba7ecaec57af8e3, type: 2}
+    WasDisplayed: 0
+  - <Text>k__BackingField: "Pozwol\u0105 kap\u0142ani \u017Ce jednak sam to oceni\u0119."
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9a6fe178ea199ab48b87bc6853cbeb8d, type: 2}
+    WasDisplayed: 0
+  - <Text>k__BackingField: "Czy jest co\u015B jeszcze co powinno nas zainteresowa\u0107?"
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: d9e13a919e11f3242a89e0846f0675d4, type: 2}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
+  <ExposedProperties>k__BackingField: []
