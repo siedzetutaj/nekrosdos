@@ -16,25 +16,25 @@ MonoBehaviour:
   <Groups>k__BackingField:
   - <ID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <Name>k__BackingField: "Podr\xF3\u017CW\u015Anierzycy"
-    <Position>k__BackingField: {x: 178.00006, y: -3204}
+    <Position>k__BackingField: {x: 178, y: -3204}
   - <ID>k__BackingField: 5d08f44c-3861-420d-b20c-8fa3e26864f1
     <Name>k__BackingField: "PrzybycieDoPosiad\u0142o\u015Bci"
-    <Position>k__BackingField: {x: 153.00006, y: -2449.9998}
+    <Position>k__BackingField: {x: 153, y: -2450}
   - <ID>k__BackingField: 7c5b1997-3e4a-406a-8fdf-9ce02977086d
     <Name>k__BackingField: PierwszeSpotkanieZLordemAlariciemIGervim
-    <Position>k__BackingField: {x: 150.00006, y: -2098}
+    <Position>k__BackingField: {x: 150, y: -2098}
   - <ID>k__BackingField: f3f021bd-42c3-43dc-9faa-1e274f0da20e
     <Name>k__BackingField: "RozmowaPrzedSekcj\u0105Marii"
-    <Position>k__BackingField: {x: 171.00006, y: -550}
+    <Position>k__BackingField: {x: 171, y: -550}
   - <ID>k__BackingField: 6e5453db-5bd4-4c6a-8163-1f525a48baca
     <Name>k__BackingField: "RozmowaZKap\u0142anamiBezAlarica"
-    <Position>k__BackingField: {x: 166.00006, y: 486.99997}
+    <Position>k__BackingField: {x: 166, y: 487}
   - <ID>k__BackingField: a4eb3216-5766-455d-bfd8-24866659b547
     <Name>k__BackingField: DialogueGroup
     <Position>k__BackingField: {x: 8089, y: -329}
   - <ID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
     <Name>k__BackingField: DialogZReysemCoraxem
-    <Position>k__BackingField: {x: 1294, y: 1695.0001}
+    <Position>k__BackingField: {x: 1294, y: 1695}
   - <ID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
     <Name>k__BackingField: "Planwydarze\u0144"
     <Position>k__BackingField: {x: 1332, y: 4889}
@@ -2216,7 +2216,7 @@ MonoBehaviour:
       Alariciem Gervim a Hostesem i Virionem"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: fa1e338b-4649-435b-9a45-27936c768693
     <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 9847, y: 4985}
@@ -2239,7 +2239,7 @@ MonoBehaviour:
       odbiorczyni pali listy tu\u017C po tym jak przylec\u0105"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 78758d51-fa39-4d13-932d-2668f93fc478
     <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 14776, y: 4979}
@@ -2257,25 +2257,191 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 7019, y: 4972}
     <ExposedProperties>k__BackingField: []
-  <ExposedProperties>k__BackingField:
-  - Name: Orion w Valerii
-    OldName: Orion w Valerii
-    Value: 0
-  - Name: Informacja o ludziach z Ombrii
-    OldName: Informacja o ludziach z Ombrii
-    Value: 0
-  - Name: "Alaric widzia\u0142 rytua\u0142"
-    OldName: "Alaric widzia\u0142 rytua\u0142"
-    Value: 0
-  - Name: "Alaric nie widzial rytua\u0142u"
-    OldName: "Alaric nie widzial rytua\u0142u"
-    Value: 0
-  - Name: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
-    OldName: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
-    Value: 0
-  - Name: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
-    OldName: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
-    Value: 0
+  - <ID>k__BackingField: 28e56461-3f09-41a2-916b-ca89675d88b0
+    <Name>k__BackingField: 22
+    <Text>k__BackingField: "Abigail rozmawia z ute i dowiaduje sie \u017Ce ombryjczycy
+      s\u0105 w stanie zabrac j\u0105 i jej towarzysza do Ombrii gdzie nie b\u0119dzie
+      s\u0142u\u017Cy\u0142a ju\u017C Reysowi. Odmawia jednak poniewa\u017C zosta\u0142y
+      jej zaledwie 2 miesi\u0105ce s\u0142u\u017Cby i wedle kontraktu i tak odzyska
+      wtedy wolno\u015B\u0107"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 736faf69-68c0-4b57-b49c-2e3c9a1332ab
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 15778, y: 4974}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 736faf69-68c0-4b57-b49c-2e3c9a1332ab
+    <Name>k__BackingField: 23
+    <Text>k__BackingField: "dostaje ona rozkaz w\u0142amania sie do gabinetu Marii
+      i znalezienia hak\xF3w na Morteo"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: a8034220-6a79-4a84-bf37-cb6ba961ce90
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 16452, y: 4986}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: a8034220-6a79-4a84-bf37-cb6ba961ce90
+    <Name>k__BackingField: 24
+    <Text>k__BackingField: "Szlachcice jedz\u0105 wsp\xF3lne \u015Bniadanie w trakcie
+      kt\xF3rego omawiaja plany na dzisiejszy dzie\u0144. "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 2834d6ff-2ff1-4429-8c8d-5330de8d6e5e
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 17121, y: 4988}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 2834d6ff-2ff1-4429-8c8d-5330de8d6e5e
+    <Name>k__BackingField: 25
+    <Text>k__BackingField: "Maria opuszcza posi\u0142ek wczesniej z powodu s\u0142abego
+      stanu zdrowia. Tak naprawde jednak idzie spotka\u0107 si\u0119 z ombryjczykami. "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 5cacd136-12a1-4b9f-b5bf-529c2ffca907
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 17800, y: 4987}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 5cacd136-12a1-4b9f-b5bf-529c2ffca907
+    <Name>k__BackingField: 26
+    <Text>k__BackingField: "Po drodze wpada na kap\u0142ana, kt\xF3ry zmierza do
+      komnat Lothiona."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 850acbf0-b4aa-49f7-958b-984c68f21d4e
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 18458, y: 4990}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 850acbf0-b4aa-49f7-958b-984c68f21d4e
+    <Name>k__BackingField: 27
+    <Text>k__BackingField: "reszta towarzystwa uznaje \u017Ce dalsze rozmowy, kt\xF3re
+      maj\u0105 zako\u0144czy\u0107 wyb\xF3r ostatecznego kandydata do r\u0119ki
+      Eliry zako\u0144cz\u0105 si\u0119."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: d36303bb-c4d1-44c9-a042-473216be1e91
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 19114, y: 4991}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: d36303bb-c4d1-44c9-a042-473216be1e91
+    <Name>k__BackingField: 28
+    <Text>k__BackingField: do godziny 14 jest czas wolny
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: aa906191-fd93-40c6-973c-a80e4f6eb63e
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 19793, y: 4994}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 55ca71e6-2531-4cb7-a4f1-a4281f0a710f
+    <Name>k__BackingField: 30
+    <Text>k__BackingField: "Lothion sp\u0119dza ten czas na rozmowach z kap\u0142anem"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 37932592-8a97-42ab-a569-07e1136b5e36
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 21144, y: 4998}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 37932592-8a97-42ab-a569-07e1136b5e36
+    <Name>k__BackingField: 31
+    <Text>k__BackingField: "Reys wypytuje swoich ludzi o szczeg\xF3\u0142y a nast\u0119pnie
+      \"karci\" Abigail z powodu braku post\u0119pu w jej \u015Bledztwie"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 9d31c05a-1541-4465-b15a-c2a8ad45adb3
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 21807, y: 4999}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 75a28de2-ed0a-457c-b824-636799911fdb
+    <Name>k__BackingField: 33
+    <Text>k__BackingField: "S\u0142u\u017Cba - s\u0142u\u017Cbuje"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 7849dd5a-a4f8-4416-b0a7-991484e3fc2c
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 23152, y: 5003}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 7849dd5a-a4f8-4416-b0a7-991484e3fc2c
+    <Name>k__BackingField: 34
+    <Text>k__BackingField: "nadczochi wiecz\xF3r i szlachcice udaj\u0105 sie na rozmowy"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 2fbc7c42-c322-4aeb-9002-6eda911f20ad
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 23440, y: 5004}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 10143eb0-92a3-4574-b47b-1fda79cc0d9c
+    <Name>k__BackingField: 37
+    <Text>k__BackingField: "co\u015B znajduje?"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 25436, y: 5012}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 78758d51-fa39-4d13-932d-2668f93fc478
+    <Name>k__BackingField: 21
+    <Text>k__BackingField: Dzien morderstwa
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 28e56461-3f09-41a2-916b-ca89675d88b0
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 15465, y: 4978}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: aa906191-fd93-40c6-973c-a80e4f6eb63e
+    <Name>k__BackingField: 29
+    <Text>k__BackingField: "Syn Lothiona rani si\u0119 podczas zabawy z Elir\u0105
+      i do posiad\u0142o\u015Bci ze swojego domku zostaje wezwany Zestes"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 55ca71e6-2531-4cb7-a4f1-a4281f0a710f
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 20479, y: 4998}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 9d31c05a-1541-4465-b15a-c2a8ad45adb3
+    <Name>k__BackingField: 32
+    <Text>k__BackingField: "Virion postanawia odwiedzi\u0107 Alarica i wypyta\u0107
+      go o pow\xF3d obecno\u015Bci Hostesa w posiad\u0142o\u015Bci"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 75a28de2-ed0a-457c-b824-636799911fdb
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 22474, y: 4999}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 2fbc7c42-c322-4aeb-9002-6eda911f20ad
+    <Name>k__BackingField: 35
+    <Text>k__BackingField: "S\u0142u\u017Cba zajeta jest przygotowywaniem posi\u0142k\xF3w"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 6f29fbcb-9d9b-40b3-a0fb-34d59cae2097
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 24101, y: 5007}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 6f29fbcb-9d9b-40b3-a0fb-34d59cae2097
+    <Name>k__BackingField: 36
+    <Text>k__BackingField: "Abigail postanawia wykorzystac nieobecnos Marii w gabinecie
+      i w\u0142amuje si\u0119 do \u015Brodka"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 10143eb0-92a3-4574-b47b-1fda79cc0d9c
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 24774, y: 5006}
+    <ExposedProperties>k__BackingField: []
+  <ExposedProperties>k__BackingField: []
   <OldGroupNames>k__BackingField:
   - "Podr\xF3\u017CW\u015Anierzycy"
   - "PrzybycieDoPosiad\u0142o\u015Bci"
@@ -2487,3 +2653,20 @@ MonoBehaviour:
       - 16
       - 20
       - 9
+      - 22
+      - 23
+      - 24
+      - 25
+      - 26
+      - 27
+      - 28
+      - 30
+      - 31
+      - 33
+      - 34
+      - 37
+      - 21
+      - 29
+      - 32
+      - 35
+      - 36

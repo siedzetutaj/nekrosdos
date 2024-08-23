@@ -17,7 +17,7 @@ MonoBehaviour:
     odbiorczyni pali listy tu\u017C po tym jak przylec\u0105"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: ce0b2d255af8f9c45a0e338e179ba127, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

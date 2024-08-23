@@ -10,16 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: 14
+  m_Name: 31
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: 14
-  <Text>k__BackingField: "Reys Corax chce wykorzysta\u0107 zamieszanie w posiad\u0142o\u015Bci
-    do zinfiltrowania posiad\u0142o\u015Bci i zdobyciu jak najwi\u0119kszej iliczby
-    informacji uw\u0142aczaj\u0105cych rodu Morteo. W tym celu wykorzystuj\u0119
-    swoich podw\u0142adnych."
+  <DialogueName>k__BackingField: 31
+  <Text>k__BackingField: "Reys wypytuje swoich ludzi o szczeg\xF3\u0142y a nast\u0119pnie
+    \"karci\" Abigail z powodu braku post\u0119pu w jej \u015Bledztwie"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7b61bb3838658ce45a2a1a017283424e, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 1ac08734b680e314e870b4f00055d8be, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
