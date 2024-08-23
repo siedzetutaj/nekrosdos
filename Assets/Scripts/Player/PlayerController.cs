@@ -47,6 +47,8 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
         _initialRotation = _body.rotation;
         destination = transform.position;
         _agent.SetDestination(transform.position);
+        map = FindObjectOfType<Tilemap>();
+        _dialogueDisplay = DialogueDisplay.Instance;
     }
     private void Update()
     {
