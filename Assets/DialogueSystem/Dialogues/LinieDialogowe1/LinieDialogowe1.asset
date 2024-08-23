@@ -214,6 +214,23 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 838e05a3a97015d42a331c8e5503653a, type: 2}
       - {fileID: 11400000, guid: 8d757d3e1baf9d84f847926fab6d2133, type: 2}
       - {fileID: 11400000, guid: 01e27a054319ca04ab2bf35292c32af2, type: 2}
+      - {fileID: 11400000, guid: 91e60d768ed13cf45a4b036362642198, type: 2}
+      - {fileID: 11400000, guid: 9a74bf4cadbca4e48b5ecacedd5be006, type: 2}
+      - {fileID: 11400000, guid: 2c2696e6f170ba14dafe832e44469667, type: 2}
+      - {fileID: 11400000, guid: 2a18ca9b24b48a146be407dcdab633a1, type: 2}
+      - {fileID: 11400000, guid: 16a97b5c91f971f47a42f5eccc157ccf, type: 2}
+      - {fileID: 11400000, guid: 2e8ad3534ca46804698ee7e11d1e45fa, type: 2}
+      - {fileID: 11400000, guid: 296506ade2c5e2d419f40e85136018d7, type: 2}
+      - {fileID: 11400000, guid: d89040a4ec52ad940aa452d1c5440b72, type: 2}
+      - {fileID: 11400000, guid: 91a305a22055777478bc7b2d6ac813f2, type: 2}
+      - {fileID: 11400000, guid: 0be1d86ddbe81db4589e532d20fe49fe, type: 2}
+      - {fileID: 11400000, guid: 2b29f27f6e3989a49801acb4eb56d183, type: 2}
+      - {fileID: 11400000, guid: 45b6c897aa17f2c46a1264fcd00bd2d6, type: 2}
+      - {fileID: 11400000, guid: ce0b2d255af8f9c45a0e338e179ba127, type: 2}
+      - {fileID: 11400000, guid: 7a2aa91ce487cf04e87112ea48d4f9ea, type: 2}
+      - {fileID: 11400000, guid: 1ac08734b680e314e870b4f00055d8be, type: 2}
+      - {fileID: 11400000, guid: 3896dad34df87d2428acbd1c09171f04, type: 2}
+      - {fileID: 11400000, guid: ee4d291783fd09d41be253d593e191c1, type: 2}
   <UngroupedDialogues>k__BackingField: []
   <ExposedProperties>k__BackingField:
   - Name: Orion w Valerii
