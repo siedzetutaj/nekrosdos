@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.InputSystem;
 
-public class UiThoughtPanel : MonoBehaviour
+public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
 {
     [NonSerialized] public bool isDraggingThought;
     [NonSerialized] public bool isCreatingLine = false;
@@ -22,6 +22,7 @@ public class UiThoughtPanel : MonoBehaviour
     [SerializeField] public RectTransform LineHolder;
     [SerializeField] public TPAllConnectionsSO ThoughtConnections;
     [SerializeField] public List<ConnectionList> PlayerThoughtConnections = new();
+    [SerializeField] private GameObject ThoughtPalaceContainer;
 
     [Header("Raycast to line")]
     public GameObject dotPrefab; // Prefabrykat kropki
@@ -35,25 +36,36 @@ public class UiThoughtPanel : MonoBehaviour
     public SerializableDictionary<SerializableGuid, ConnectedNode> nodes = new SerializableDictionary<SerializableGuid, ConnectedNode>();
     [SerializeField] public List<InformationController> createdThoughts = new();
 
+    public void Initialize()
+    {
+        _uiCamera = Camera.main;
+
+        _inputSystem = InputSystem.Instance;
+        OnEnable();
+        ThoughtPalaceContainer.SetActive(false);
+    }
     private void OnEnable()
     {
-        _inputSystem.onTPLeftClickDown += OnMouseLeftClickDown;
-        _inputSystem.onTPLeftClickUp += OnMouseLeftClickUp;
-        _inputSystem.onTPRightClickDown += OnMouseRightClickDown;
-        _inputSystem.onTPRightClickUp += OnMouseRightClickUp;
+        if (_inputSystem)
+        {
+            _inputSystem.onTPLeftClickDown += OnMouseLeftClickDown;
+            _inputSystem.onTPLeftClickUp += OnMouseLeftClickUp;
+            _inputSystem.onTPRightClickDown += OnMouseRightClickDown;
+            _inputSystem.onTPRightClickUp += OnMouseRightClickUp;
+        }
     }
 
     private void OnDisable()
     {
         _inputSystem.onTPLeftClickDown -= OnMouseLeftClickDown;
-        _inputSystem.onTPLeftClickUp += OnMouseLeftClickUp;
+        _inputSystem.onTPLeftClickUp -= OnMouseLeftClickUp;
         _inputSystem.onTPRightClickDown -= OnMouseRightClickDown;
-        _inputSystem.onTPRightClickUp += OnMouseRightClickUp;
+        _inputSystem.onTPRightClickUp -= OnMouseRightClickUp;
 
     }
-
     private void Start()
     {
+        ThoughtConnections = TPAllConnectionsSO.instance;
         ThoughtConnections.AllConnections = ThoughtConnections.AllConnections.Where(item => item != null).ToList();
     }
     #region Grouping, Adding and Removing Connected Thoughts
@@ -141,7 +153,6 @@ public class UiThoughtPanel : MonoBehaviour
             }
         }
     }
-
     private void RebuildGroups()
     {
         // Tworzymy now¹ listê grup

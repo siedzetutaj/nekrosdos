@@ -13,10 +13,10 @@ public class UIInformationDisplay : MonoBehaviour
     [SerializeField] private Transform _draggedParent;
     [SerializeField] private Camera _mainCamera;
 
-
     public void Start()
     {
-        foreach(TPThoughtSO thought in _allThoughtsSO.AllThoughts)
+        _mainCamera = Camera.main;
+        foreach (TPThoughtSO thought in _allThoughtsSO.AllThoughts)
         {
             GameObject Information = Instantiate(_informationPrefab, _content);
             InformationPrefabData informationData = Information.GetComponent<InformationPrefabData>();

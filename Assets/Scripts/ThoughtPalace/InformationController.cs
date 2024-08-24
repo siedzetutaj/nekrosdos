@@ -45,7 +45,7 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
         #region LeftClick
         if (IsInInformation && eventData.button == PointerEventData.InputButton.Left)
         {
-            CreateThought();
+            CreateThought(eventData);
         }
         else if (eventData.button == PointerEventData.InputButton.Left)
         {
@@ -125,10 +125,9 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     }
     #endregion
     #region Creations
-    private void CreateThought()
+    private void CreateThought(PointerEventData eventData)
     {
         _draggedThought = Instantiate(_thoughtToCopy, DraggedParent);
-        _draggedThought.transform.position = transform.position;
         SetRectTransformToMiddle(_draggedThought);
         InformationController draggedThoughtController = _draggedThought.GetComponent<InformationController>();
         draggedThoughtController.Initialize(Thought, ThoughtPanel.descriptionTMP, DraggedParent, ThoughtPanel, InformationDisplay, _mainCamera);
@@ -138,6 +137,9 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
         ThoughtPanel.createdThoughts.Add(draggedThoughtController);
         OnPointerExit();
         InformationDisplay.isDraggingThought = true;
+        Vector3 thoughtPos = _mainCamera.ScreenToWorldPoint(eventData.position);
+        thoughtPos.z = -5;
+        _draggedThought.transform.position = thoughtPos;
     }
     private void CreateBeginigLinePoint()
     {

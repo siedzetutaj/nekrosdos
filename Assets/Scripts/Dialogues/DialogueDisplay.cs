@@ -30,17 +30,23 @@ public class DialogueDisplay : MonoBehaviourSingleton<DialogueDisplay>
     private DSDialogueSO _currentDialogue;
     private List<GameObject> _buttonList = new List<GameObject>();
     private ScrollRect _scrollRect;
-    private void Awake()
+
+    public void Initialize()
     {
+        UIInformationHolder uiInformationHolder = UIInformationHolder.Instance;
+
+        _scrollViewUI = uiInformationHolder.DialogueScrollViewUI;
+        _containerUI = uiInformationHolder.DialogueContinerUI;
+        _contentUI = uiInformationHolder.DialogueContentUI;
+        _textUI = uiInformationHolder.DialogueTextUI;
+
         _containerUI.SetActive(false);
         _scrollRect = _scrollViewUI.GetComponent<ScrollRect>();
         _textUI.text = "";
-    }
 
-    private void OnEnable()
-    {
+        _inputSystem = InputSystem.Instance;
         _inputSystem.onDialogueLeftClickDown += OnLeftClik;
-    }    
+    }
     private void OnDisable()
     {
         _inputSystem.onDialogueLeftClickDown -= OnLeftClik;

@@ -28,6 +28,10 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
     private Quaternion _initialRotation;
     private int _animationSpeed = 5;
 
+    public void Initialize()
+    {
+        _thoughtPalaceUI = UIInformationHolder.Instance.ThoughtPalaceUI;
+    }
     private void OnEnable()
     {
         _inputSystem.ToggleTP += ToggleThoughtpalace;
