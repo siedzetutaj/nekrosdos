@@ -16,7 +16,11 @@ public class SampleInteraction : MonoBehaviour, IInteractable
         if (_moveToThisTransform == null)
             _moveToThisTransform = transform;
 
-        PlayerController.Instance.MoveToInteractable(_moveToThisTransform.position);
+        PlayerController.Instance.SetInteraction(this, _moveToThisTransform.position);
         return true;
     }
+    public virtual void Interaction()
+    {
+        //Override to give functionality
+    } 
 }

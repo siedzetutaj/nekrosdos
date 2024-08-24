@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
@@ -23,6 +24,8 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
     public Tilemap map;
 
     private bool _isGointToHaveInteraction = false;
+    private SampleInteraction _interaction;
+
     private DSDialogue _dialogue;
     private bool _isPused = false;
     private Quaternion _initialRotation;
@@ -123,10 +126,12 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
         }
     }
     private void Movement()
-    {
-        if (_isGointToHaveInteraction && Vector2.Distance(transform.position, _agent.destination) < 0.1f)
+    {  //Move to target
+        //potrzebuje ¿eby to tylko sz³o to wskazanego transforma je¿eli siê kliknie na cuœ
+        if (_isGointToHaveInteraction && _agent.remainingDistance <= .1f)  
         {
-            DisplayDialogue();
+            //czyli musze wywaliæ to 
+            _interaction.Interaction();
 
             _isGointToHaveInteraction = false;
             _dialogue = null;
@@ -139,17 +144,18 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
     }
     #endregion
     #region Interactions
-    public void MoveToInteractable(Vector2 target)
-    {
-        destination = target;
-    }
     public void SetDialogue(DSDialogue dialogue)
     {
-        _dialogue = dialogue;
-        _isGointToHaveInteraction = true;
     }
-    private void DisplayDialogue()
+    public void SetInteraction(SampleInteraction interaction, Vector2 target)
     {
+        _interaction = interaction;
+        _isGointToHaveInteraction = true;
+        destination = target;
+    }
+    public void DisplayDialogue(DSDialogue dialogue)
+    {
+        _dialogue = dialogue;
         _inputSystem.mouseInput.MovementInputs.Disable();
         _dialogueDisplay.startingDialogue = _dialogue;
         _dialogueDisplay.StartDisplaying();

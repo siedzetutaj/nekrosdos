@@ -285,6 +285,7 @@ MonoBehaviour:
   _prompt: House
   _coursorType: 3
   _moveToThisTransform: {fileID: 1865686202}
+  _sceneToLoad: 1
 --- !u!61 &463233572
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -519,7 +520,7 @@ MonoBehaviour:
   _prompt: Hello
   _coursorType: 1
   _moveToThisTransform: {fileID: 0}
-  _item: {fileID: 0}
+  _item: {fileID: 11400000, guid: b1d354bfc01f29f4fa8916ca726778e8, type: 2}
 --- !u!114 &740257301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43457,7 +43458,7 @@ MonoBehaviour:
   _prompt: Welcome
   _coursorType: 0
   _moveToThisTransform: {fileID: 0}
-  _item: {fileID: 0}
+  _item: {fileID: 11400000, guid: b1d354bfc01f29f4fa8916ca726778e8, type: 2}
 --- !u!114 &1737867512
 MonoBehaviour:
   m_ObjectHideFlags: 0

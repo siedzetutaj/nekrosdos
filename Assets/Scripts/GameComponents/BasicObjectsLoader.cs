@@ -32,6 +32,8 @@ public class BasicObjectsLoader : MonoBehaviour
 
         PlayerController.Instance.Initialize();
 
+        UIInformationDisplay.Instance.Initialize();
+        
         UiThoughtPanel.Instance.Initialize();
     }
 }

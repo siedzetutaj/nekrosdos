@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LocationInteraction : SampleInteraction
 {
-    public override bool Interact(Interactor interactor)
+    [SerializeField] private SceneNames _sceneToLoad;
+    public override void Interaction()
     {
-        base.Interact(interactor);
-        //Load next scene
-        return true;
+        SceneManager.LoadScene(_sceneToLoad.ToString());
     }
 }

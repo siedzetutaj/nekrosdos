@@ -122,7 +122,7 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
     }
     private void TPLeftClickUp(InputAction.CallbackContext obj)
     {
-        onTPLeftClickDown?.Invoke();
+        onTPLeftClickUp?.Invoke();
     }
     private void TPRightClickDown(InputAction.CallbackContext obj)
     {
@@ -130,7 +130,7 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
     }  
     private void TPLeftClickDown(InputAction.CallbackContext obj)
     {
-        onTPLeftClickUp?.Invoke();
+        onTPLeftClickDown?.Invoke();
     }
     private void TPRightClickUp(InputAction.CallbackContext obj)
     {

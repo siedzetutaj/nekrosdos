@@ -6,11 +6,8 @@ public class NPCInteraction : SampleInteraction
 {
     [SerializeField] private DSDialogue _dialogue;
 
-    public override bool Interact(Interactor interactor)
+    public override void Interaction()
     {
-        base.Interact(interactor);
-        PlayerController.Instance.SetDialogue(_dialogue);
-
-        return true;
+        PlayerController.Instance.DisplayDialogue(_dialogue);
     }
 }

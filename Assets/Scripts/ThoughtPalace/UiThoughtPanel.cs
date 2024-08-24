@@ -13,7 +13,7 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
     [NonSerialized] public bool isDraggingThought;
     [NonSerialized] public bool isCreatingLine = false;
     [NonSerialized] public LineController activeLineController;
-    [NonSerialized] public GameObject activeThough; //one that currently creates line
+    [NonSerialized] public InformationController activeThough; //one that currently creates line
     [NonSerialized] public SerializableGuid FistID;
 
     [Header("Set up")]
@@ -282,10 +282,29 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
         return new List<SerializableGuid>(nodesInGroup);
     }
     #endregion
+    private void CancelDrawingLine()
+    {
+        Debug.Log("Canceling");
+        FistID = SerializableGuid.Empty;
+        var lineController = activeLineController;
+        activeLineController = null;
+        lineController.IsDraggedByMouse = false;
+        //to usuwa w innej mysli nie tej ktora zaczyna, ten skrypt ejst przypisywany do kazdej mysli a nie jest globalny
+        activeThough.LineRenderers.Remove(lineController);
+        Destroy(lineController.gameObject);
+        isCreatingLine = false;
+        activeThough = null;
+    }
+
     #region Detecting Lines via Raycast
     private void OnMouseLeftClickDown()
     {
-        if (!isDraggingThought && !hasClicked)
+        Debug.Log("dó³");
+        if (isCreatingLine && !hasClicked)
+        {
+            CancelDrawingLine();
+        }
+        else if (!isDraggingThought && !hasClicked )
         {
             var line = DetectLine();
             if (line)
@@ -298,6 +317,7 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
     }
     private void OnMouseLeftClickUp()
     {
+        Debug.Log("góra");
         hasClicked = false;
     }
     private void OnMouseRightClickDown()

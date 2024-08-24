@@ -20,7 +20,7 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     //bool referes to if the one is first = true, and last =  false
     public SerializableDictionary<LineController,bool> LineRenderers = new SerializableDictionary<LineController, bool>();
 
-    private bool IsInInformation = true;
+    private bool _isInInformation = true;
 
     [NonSerialized] public TextMeshProUGUI DescriptionTMP;
     [NonSerialized] public string Description;
@@ -42,18 +42,21 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     #region Pointer
     public void OnPointerDown(PointerEventData eventData)
     {
+        bool leftClick = eventData.button == PointerEventData.InputButton.Left;
+        bool rightClick = eventData.button == PointerEventData.InputButton.Right;
+
         #region LeftClick
-        if (IsInInformation && eventData.button == PointerEventData.InputButton.Left)
+        if (_isInInformation && leftClick && !ThoughtPanel.isCreatingLine)
         {
             CreateThought(eventData);
         }
-        else if (eventData.button == PointerEventData.InputButton.Left)
+        else if (leftClick)
         {
             StartDraggingThought(eventData);
         }
         #endregion
         #region Right Click
-        else if (!IsInInformation && !ThoughtPanel.isCreatingLine && eventData.button == PointerEventData.InputButton.Right)
+        else if (!_isInInformation && !ThoughtPanel.isCreatingLine && rightClick)
         {
             var nodesInGroup = ThoughtPanel.GetNodesInGroup(ThoughtNodeGuid);
             Debug.Log($"Nody w tej samej grupie co {ThoughtNodeGuid}");
@@ -67,32 +70,37 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     }
     public void OnDrag(PointerEventData eventData)
     {
-        if (eventData.button == PointerEventData.InputButton.Left)
+        bool leftClick = eventData.button == PointerEventData.InputButton.Left;
+        bool rightClick = eventData.button == PointerEventData.InputButton.Right;
+        
+        if (leftClick)
         {
             DragThought(eventData);
         }
     }
     public void OnPointerUp(PointerEventData eventData)
     {
+        bool leftClick = eventData.button == PointerEventData.InputButton.Left;
+        bool rightClick = eventData.button == PointerEventData.InputButton.Right;
         //LeftClick
-        if (IsInInformation && eventData.button == PointerEventData.InputButton.Left)
+        if (_isInInformation && leftClick)
         {
             EndDrag();
         }
-        else if (!IsInInformation && eventData.button == PointerEventData.InputButton.Left)
+        else if (!_isInInformation && leftClick)
         {
             ThoughtPanel.isDraggingThought = false;
         }
         //RightClick
-        else if (!IsInInformation && ThoughtPanel.isCreatingLine && eventData.button == PointerEventData.InputButton.Right
-                 && ThoughtPanel.activeThough != this.gameObject)
+        else if (!_isInInformation && ThoughtPanel.isCreatingLine && rightClick
+                 && ThoughtPanel.activeThough != this)
         {
             CreateEndLinePoint();
         }
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (IsInInformation)
+        if (_isInInformation)
         {
             SetActiveDescription(InformationDisplay.isDraggingThought);
         }
@@ -103,7 +111,7 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     }
     public void OnPointerMove(PointerEventData eventData)
     {
-        if (IsInInformation)
+        if (_isInInformation)
         {
             DispalyDescrition(InformationDisplay.isDraggingThought);
         }
@@ -114,7 +122,7 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     }
     public void OnPointerExit(PointerEventData eventData = null)
     {
-        if (IsInInformation)
+        if (_isInInformation)
         {
             DisableDescription(InformationDisplay.isDraggingThought);
         }
@@ -131,7 +139,7 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
         SetRectTransformToMiddle(_draggedThought);
         InformationController draggedThoughtController = _draggedThought.GetComponent<InformationController>();
         draggedThoughtController.Initialize(Thought, ThoughtPanel.descriptionTMP, DraggedParent, ThoughtPanel, InformationDisplay, _mainCamera);
-        draggedThoughtController.IsInInformation = false;
+        draggedThoughtController._isInInformation = false;
         draggedThoughtController.ThoughtNodeGuid = Guid.NewGuid();
         ThoughtPanel.AddNode(draggedThoughtController.ThoughtNodeGuid, Thought.ID);
         ThoughtPanel.createdThoughts.Add(draggedThoughtController);
@@ -144,7 +152,7 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     private void CreateBeginigLinePoint()
     {
         GameObject go = Instantiate(_linePrefab, ThoughtPanel.LineHolder);
-        ThoughtPanel.activeThough = this.gameObject;
+        ThoughtPanel.activeThough = this;
         ThoughtPanel.FistID = ThoughtNodeGuid;
         var lineController = go.GetComponent<LineController>();
         ThoughtPanel.activeLineController = lineController;
@@ -165,6 +173,10 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
         ThoughtPanel.activeThough = null;
         ThoughtPanel.isCreatingLine = false;
     }
+    #endregion
+    #region Canceling
+ 
+
     #endregion
     #region Drag
     private void StartDraggingThought(PointerEventData eventData)
@@ -196,7 +208,7 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     private void EndDrag()
     {
         _draggedThought.transform.SetParent(ThoughtPanel.ThoughtPanelTransform);
-        _draggedThought.GetComponent<InformationController>().IsInInformation = false;
+        _draggedThought.GetComponent<InformationController>()._isInInformation = false;
         InformationDisplay.isDraggingThought = false;
         ThoughtPanel.isDraggingThought = false;
     }
