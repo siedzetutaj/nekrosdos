@@ -93,7 +93,7 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
         }
         //RightClick
         else if (!_isInInformation && ThoughtPanel.isCreatingLine && rightClick
-                 && ThoughtPanel.activeThough != this)
+                 && ThoughtPanel.firstThoughToConnect != this)
         {
             CreateEndLinePoint();
         }
@@ -152,7 +152,7 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     private void CreateBeginigLinePoint()
     {
         GameObject go = Instantiate(_linePrefab, ThoughtPanel.LineHolder);
-        ThoughtPanel.activeThough = this;
+        ThoughtPanel.firstThoughToConnect = this;
         ThoughtPanel.FistID = ThoughtNodeGuid;
         var lineController = go.GetComponent<LineController>();
         ThoughtPanel.activeLineController = lineController;
@@ -162,16 +162,8 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     }
     private void CreateEndLinePoint()
     {
-        ThoughtPanel.activeLineController.IsDraggedByMouse = false;
-        ThoughtPanel.activeLineController.ChangePointPosition(1, _recTransform.anchoredPosition);
-        ThoughtPanel.activeLineController.connectionGuids.Id1 = ThoughtPanel.FistID;
-        ThoughtPanel.activeLineController.connectionGuids.Id2 = ThoughtNodeGuid;
-        ThoughtPanel.activeLineController.UpdateCollider();
         LineRenderers.Add(ThoughtPanel.activeLineController, false);
-        ThoughtPanel.AddConnection(ThoughtNodeGuid);
-        ThoughtPanel.activeLineController = null;
-        ThoughtPanel.activeThough = null;
-        ThoughtPanel.isCreatingLine = false;
+        ThoughtPanel.AddConnection(ThoughtNodeGuid, _recTransform.anchoredPosition,this);
     }
     #endregion
     #region Canceling

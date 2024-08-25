@@ -13,7 +13,7 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
     [NonSerialized] public bool isDraggingThought;
     [NonSerialized] public bool isCreatingLine = false;
     [NonSerialized] public LineController activeLineController;
-    [NonSerialized] public InformationController activeThough; //one that currently creates line
+    [NonSerialized] public InformationController firstThoughToConnect; //one that currently creates line
     [NonSerialized] public SerializableGuid FistID;
 
     [Header("Set up")]
@@ -76,8 +76,21 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
             nodes[nodeId] = new ConnectedNode(nodeId, objectId);
         }
     }
-    public void AddConnection(SerializableGuid nodeId2)
+    public void AddConnection(SerializableGuid nodeId2, Vector2 anchoredPos, InformationController thought)
     {
+        activeLineController.IsDraggedByMouse = false;
+        activeLineController.ChangePointPosition(1, anchoredPos);
+        activeLineController.connectionGuids.Id1 = FistID;
+        activeLineController.connectionGuids.Id2 = nodeId2;
+
+        if (LineManager.Instance.CheckIfLineExist(activeLineController))
+        {
+            thought.LineRenderers.Remove(activeLineController);
+            CancelDrawingLine(true);
+            return;
+        }
+        LineManager.Instance.addLineController(activeLineController);
+
         if (nodes.ContainsKey(FistID) && nodes.ContainsKey(nodeId2) && !ConnectionExists(FistID, nodeId2))
         {
             var newConnection = new ConnectedThoughtsGuid(FistID, nodeId2);
@@ -114,9 +127,14 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
                 connections.Add(newGroup);
             }
         }
+
+        activeLineController = null;
+        firstThoughToConnect = null;
+        isCreatingLine = false;
     }
     public void RemoveConnection(LineController line)
     {
+        LineManager.Instance.removeLineController(line);
         var connectionToRemove = new ConnectedThoughtsGuid(line.connectionGuids.Id1, line.connectionGuids.Id2);
         ConnectionList groupToUpdate = null;
 
@@ -282,24 +300,28 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
         return new List<SerializableGuid>(nodesInGroup);
     }
     #endregion
-    private void CancelDrawingLine()
+    private void CancelDrawingLine(bool isduplicate = false)
     {
-        Debug.Log("Canceling");
         FistID = SerializableGuid.Empty;
         var lineController = activeLineController;
         activeLineController = null;
         lineController.IsDraggedByMouse = false;
         //to usuwa w innej mysli nie tej ktora zaczyna, ten skrypt ejst przypisywany do kazdej mysli a nie jest globalny
-        activeThough.LineRenderers.Remove(lineController);
+        firstThoughToConnect.LineRenderers.Remove(lineController);
         Destroy(lineController.gameObject);
         isCreatingLine = false;
-        activeThough = null;
+        firstThoughToConnect = null;
+        
+        
+        if (isduplicate)
+        {
+
+        }
     }
 
     #region Detecting Lines via Raycast
     private void OnMouseLeftClickDown()
     {
-        Debug.Log("dó³");
         if (isCreatingLine && !hasClicked)
         {
             CancelDrawingLine();
@@ -317,7 +339,6 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
     }
     private void OnMouseLeftClickUp()
     {
-        Debug.Log("góra");
         hasClicked = false;
     }
     private void OnMouseRightClickDown()

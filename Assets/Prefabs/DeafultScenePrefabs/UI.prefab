@@ -279,6 +279,7 @@ GameObject:
   - component: {fileID: 1128414823679931385}
   - component: {fileID: 8336459545590104661}
   - component: {fileID: 237088746276294814}
+  - component: {fileID: 1815265708029577084}
   m_Layer: 5
   m_Name: LineHolder
   m_TagString: Untagged
@@ -343,6 +344,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1815265708029577084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489139808022878242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d635bb3e2b946864c8b445d9c489bb62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2138654377809276313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,6 +1123,7 @@ MonoBehaviour:
   _thoughtPanel: {fileID: 3444058843717094565}
   _draggedParent: {fileID: 602400480328276220}
   _mainCamera: {fileID: 0}
+  AllUnlockedThoughts: []
 --- !u!1 &6009633668598435936
 GameObject:
   m_ObjectHideFlags: 0
