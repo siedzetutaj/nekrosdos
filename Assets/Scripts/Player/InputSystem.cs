@@ -29,10 +29,14 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
     //TP
     public Action onTPLeftClickDown;
     public Action onTPLeftClickUp;
+
     public Action onTPRightClickDown;
     public Action onTPRightClickUp;
-    public Action ToggleTP;
 
+    public Action onTPMiddleClickDown;
+    public Action onTPMiddleClickUp;
+
+    public Action ToggleTP;
     #endregion
     #region Other variables
     public bool holdLeft = false;
@@ -53,6 +57,7 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
         //Movement
         mouseInput.MovementInputs.MouseLeftClick.started -= MovementLeftClickDown;
         mouseInput.MovementInputs.MouseLeftClick.canceled -= MovementLeftClickUp;
+
         mouseInput.MovementInputs.MouseRightClick.performed -= MovementRightClickDown;
         mouseInput.MovementInputs.ThoughtPalaceEnable.performed -= ThoughtPalaceDown;
 
@@ -62,8 +67,13 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
         //TP
         mouseInput.TPInputs.MouseLeftClick.started -= TPLeftClickDown;
         mouseInput.TPInputs.MouseLeftClick.canceled -= TPLeftClickUp;
+
         mouseInput.TPInputs.MouseRightClick.started -= TPRightClickDown;
         mouseInput.TPInputs.MouseRightClick.canceled -= TPRightClickUp;
+
+        mouseInput.TPInputs.MouseMiddle.started -= TPMiddleClickDown;
+        mouseInput.TPInputs.MouseMiddle.canceled -= TPMiddleClickUp;
+
         mouseInput.TPInputs.ThoughtPalaceDisable.performed -= ThoughtPalaceDown;
 
 
@@ -75,6 +85,7 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
         //Movement
         mouseInput.MovementInputs.MouseLeftClick.performed += MovementLeftClickDown;
         mouseInput.MovementInputs.MouseLeftClick.canceled += MovementLeftClickUp;
+
         mouseInput.MovementInputs.MouseRightClick.performed += MovementRightClickDown;
         mouseInput.MovementInputs.ThoughtPalaceEnable.performed += ThoughtPalaceDown;
 
@@ -84,8 +95,13 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
         //TP
         mouseInput.TPInputs.MouseLeftClick.started += TPLeftClickDown;
         mouseInput.TPInputs.MouseLeftClick.canceled += TPLeftClickUp;
+
         mouseInput.TPInputs.MouseRightClick.started += TPRightClickDown;
         mouseInput.TPInputs.MouseRightClick.canceled += TPRightClickUp;
+
+        mouseInput.TPInputs.MouseMiddle.started += TPMiddleClickDown;
+        mouseInput.TPInputs.MouseMiddle.canceled += TPMiddleClickUp;
+
         mouseInput.TPInputs.ThoughtPalaceDisable.performed += ThoughtPalaceDown;
 
 
@@ -135,6 +151,14 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
     private void TPRightClickUp(InputAction.CallbackContext obj)
     {
         onTPRightClickUp?.Invoke();
+    }
+    private void TPMiddleClickUp(InputAction.CallbackContext context)
+    {
+        onTPMiddleClickUp?.Invoke();
+    }
+    private void TPMiddleClickDown(InputAction.CallbackContext context)
+    {
+        onTPMiddleClickDown?.Invoke();
     }
     #endregion
 }

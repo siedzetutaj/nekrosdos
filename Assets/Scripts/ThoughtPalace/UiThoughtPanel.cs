@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using Unity.VisualScripting.Antlr3.Runtime;
+using UnityEditor.MemoryProfiler;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.InputSystem;
@@ -21,7 +22,7 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
     [SerializeField] public RectTransform ThoughtPanelTransform;
     [SerializeField] public RectTransform LineHolder;
     [SerializeField] public TPAllConnectionsSO ThoughtConnections;
-    [SerializeField] public List<ConnectionList> PlayerThoughtConnections = new();
+    //[SerializeField] public List<ConnectionList> PlayerThoughtConnections = new();
     [SerializeField] private GameObject ThoughtPalaceContainer;
 
     [Header("Raycast to line")]
@@ -50,25 +51,31 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
         {
             _inputSystem.onTPLeftClickDown += OnMouseLeftClickDown;
             _inputSystem.onTPLeftClickUp += OnMouseLeftClickUp;
+
             _inputSystem.onTPRightClickDown += OnMouseRightClickDown;
-            _inputSystem.onTPRightClickUp += OnMouseRightClickUp;
+            _inputSystem.onTPRightClickUp += OnMouseRightClickUp;  
+
+            _inputSystem.onTPMiddleClickDown += OnMouseMiddleClickDown;
+            _inputSystem.onTPMiddleClickUp += OnMouseMiddleClickUp;
         }
     }
-
     private void OnDisable()
     {
         _inputSystem.onTPLeftClickDown -= OnMouseLeftClickDown;
         _inputSystem.onTPLeftClickUp -= OnMouseLeftClickUp;
+
         _inputSystem.onTPRightClickDown -= OnMouseRightClickDown;
         _inputSystem.onTPRightClickUp -= OnMouseRightClickUp;
 
+        _inputSystem.onTPMiddleClickDown -= OnMouseMiddleClickDown;
+        _inputSystem.onTPMiddleClickUp -= OnMouseMiddleClickUp;
     }
     private void Start()
     {
         ThoughtConnections = TPAllConnectionsSO.instance;
         ThoughtConnections.AllConnections = ThoughtConnections.AllConnections.Where(item => item != null).ToList();
     }
-    #region Grouping, Adding and Removing Connected Thoughts
+    #region Operations on thoughts and connections
     public void AddNode(SerializableGuid nodeId, SerializableGuid objectId)
     {
         if (!nodes.ContainsKey(nodeId))
@@ -127,6 +134,9 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
                 connections.Add(newGroup);
             }
         }
+
+        firstThoughToConnect.Lines.Add(activeLineController);
+        thought.Lines.Add(activeLineController);
 
         activeLineController = null;
         firstThoughToConnect = null;
@@ -299,7 +309,6 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
 
         return new List<SerializableGuid>(nodesInGroup);
     }
-    #endregion
     private void CancelDrawingLine(bool isduplicate = false)
     {
         FistID = SerializableGuid.Empty;
@@ -318,23 +327,13 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
 
         }
     }
-
-    #region Detecting Lines via Raycast
+    #endregion
+    #region Other
     private void OnMouseLeftClickDown()
     {
         if (isCreatingLine && !hasClicked)
         {
             CancelDrawingLine();
-        }
-        else if (!isDraggingThought && !hasClicked )
-        {
-            var line = DetectLine();
-            if (line)
-            {
-                RemoveConnection(line);
-                Destroy(line.gameObject);
-            }
-            hasClicked = true;
         }
     }
     private void OnMouseLeftClickUp()
@@ -349,6 +348,22 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
     {
 
     }
+    private void OnMouseMiddleClickDown()
+    {
+        if (!isDraggingThought && !hasClicked)
+        {
+            var line = DetectLine();
+            if (line)
+            {
+                DestoryLine(line);
+            }
+            hasClicked = true;
+        }
+    }
+    private void OnMouseMiddleClickUp()
+    {
+    }
+
     private LineController DetectLine()
     {
         Vector2 mousePosition = Mouse.current.position.ReadValue();
@@ -364,6 +379,20 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
             return line;
         }
         return null;
+    }
+    public void DeleateThought(InformationController thought)
+    {
+        thought.Lines.RemoveAll(x => x == null);
+        foreach (var connection in thought.Lines)
+        {
+            DestoryLine(connection);
+        }
+        createdThoughts.Remove(thought);
+    }
+    private void DestoryLine(LineController line)
+    {
+        RemoveConnection(line);
+        Destroy(line.gameObject);
     }
 
     #endregion

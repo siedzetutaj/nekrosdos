@@ -28,6 +28,7 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     [NonSerialized] public UiThoughtPanel ThoughtPanel;
     [NonSerialized] public Transform DraggedParent;
     [NonSerialized] public UIInformationDisplay InformationDisplay;
+    [NonSerialized] public List<LineController> Lines = new();
 
     public void Initialize(TPThoughtSO thought, TextMeshProUGUI descriptionTMP, Transform draggedParent, UiThoughtPanel thoughtPanel, UIInformationDisplay informationDisplay, Camera mainCamera)
     {
@@ -44,6 +45,7 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     {
         bool leftClick = eventData.button == PointerEventData.InputButton.Left;
         bool rightClick = eventData.button == PointerEventData.InputButton.Right;
+        bool middleClick = eventData.button == PointerEventData.InputButton.Middle;
 
         #region LeftClick
         if (_isInInformation && leftClick && !ThoughtPanel.isCreatingLine)
@@ -67,6 +69,10 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
             CreateBeginigLinePoint();
         }
         #endregion
+        else if (middleClick && !_isInInformation && !ThoughtPanel.isCreatingLine)
+        {
+            DelateThought();
+        }
     }
     public void OnDrag(PointerEventData eventData)
     {
@@ -166,9 +172,12 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
         ThoughtPanel.AddConnection(ThoughtNodeGuid, _recTransform.anchoredPosition,this);
     }
     #endregion
-    #region Canceling
- 
-
+    #region Delating
+    private void DelateThought()
+    {
+        ThoughtPanel.DeleateThought(this);
+        Destroy(gameObject);
+    }
     #endregion
     #region Drag
     private void StartDraggingThought(PointerEventData eventData)

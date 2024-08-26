@@ -198,6 +198,15 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MouseMiddle"",
+                    ""type"": ""Button"",
+                    ""id"": ""f84e1ec1-11ae-4131-aedc-799e4bc82c17"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -244,6 +253,17 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
                     ""action"": ""MousePosition"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bd1c2318-4562-4165-93dc-f558f5d05bee"",
+                    ""path"": ""<Mouse>/middleButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseMiddle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -266,6 +286,7 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
         m_TPInputs_MousePosition = m_TPInputs.FindAction("MousePosition", throwIfNotFound: true);
         m_TPInputs_MouseRightClick = m_TPInputs.FindAction("MouseRightClick", throwIfNotFound: true);
         m_TPInputs_ThoughtPalaceDisable = m_TPInputs.FindAction("ThoughtPalaceDisable", throwIfNotFound: true);
+        m_TPInputs_MouseMiddle = m_TPInputs.FindAction("MouseMiddle", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -455,6 +476,7 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_TPInputs_MousePosition;
     private readonly InputAction m_TPInputs_MouseRightClick;
     private readonly InputAction m_TPInputs_ThoughtPalaceDisable;
+    private readonly InputAction m_TPInputs_MouseMiddle;
     public struct TPInputsActions
     {
         private @MouseInput m_Wrapper;
@@ -463,6 +485,7 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
         public InputAction @MousePosition => m_Wrapper.m_TPInputs_MousePosition;
         public InputAction @MouseRightClick => m_Wrapper.m_TPInputs_MouseRightClick;
         public InputAction @ThoughtPalaceDisable => m_Wrapper.m_TPInputs_ThoughtPalaceDisable;
+        public InputAction @MouseMiddle => m_Wrapper.m_TPInputs_MouseMiddle;
         public InputActionMap Get() { return m_Wrapper.m_TPInputs; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -484,6 +507,9 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
             @ThoughtPalaceDisable.started += instance.OnThoughtPalaceDisable;
             @ThoughtPalaceDisable.performed += instance.OnThoughtPalaceDisable;
             @ThoughtPalaceDisable.canceled += instance.OnThoughtPalaceDisable;
+            @MouseMiddle.started += instance.OnMouseMiddle;
+            @MouseMiddle.performed += instance.OnMouseMiddle;
+            @MouseMiddle.canceled += instance.OnMouseMiddle;
         }
 
         private void UnregisterCallbacks(ITPInputsActions instance)
@@ -500,6 +526,9 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
             @ThoughtPalaceDisable.started -= instance.OnThoughtPalaceDisable;
             @ThoughtPalaceDisable.performed -= instance.OnThoughtPalaceDisable;
             @ThoughtPalaceDisable.canceled -= instance.OnThoughtPalaceDisable;
+            @MouseMiddle.started -= instance.OnMouseMiddle;
+            @MouseMiddle.performed -= instance.OnMouseMiddle;
+            @MouseMiddle.canceled -= instance.OnMouseMiddle;
         }
 
         public void RemoveCallbacks(ITPInputsActions instance)
@@ -535,5 +564,6 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
         void OnMousePosition(InputAction.CallbackContext context);
         void OnMouseRightClick(InputAction.CallbackContext context);
         void OnThoughtPalaceDisable(InputAction.CallbackContext context);
+        void OnMouseMiddle(InputAction.CallbackContext context);
     }
 }

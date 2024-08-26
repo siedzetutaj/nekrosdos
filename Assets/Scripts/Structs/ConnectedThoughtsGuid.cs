@@ -26,4 +26,10 @@ public struct ConnectedThoughtsGuid
     {
         return Id1.GetHashCode() ^ Id2.GetHashCode();
     }
+    public bool IsThere(SerializableGuid id)
+    {
+        if (id == Id1 || id == Id2)  
+            return true;
+        return false;
+    }
 }
