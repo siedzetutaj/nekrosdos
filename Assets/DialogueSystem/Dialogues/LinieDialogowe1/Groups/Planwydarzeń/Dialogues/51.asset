@@ -10,14 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: 36
+  m_Name: 51
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: 36
-  <Text>k__BackingField: "Maria wraca ze spotkania z ombryjczykami po osiagni\u0119ciu
-    porozumienia"
+  <DialogueName>k__BackingField: 51
+  <Text>k__BackingField: "po drugie szuka jakichkolwiek wzmianek o sobie w jej dokumentach
+    i zabiera je ze sob\u0105 (nie pali ich bo kominek si\u0119 nie pali\u0142 inaczej
+    wcze\u015Bniejsza cz\u0119\u015B\u0107 historii nie mia\u0142aby sensu - m\xF3g\u0142
+    spali\u0107 je potem w innym pomieszczeniu to do ogarni\u0119cia)"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 45b6c897aa17f2c46a1264fcd00bd2d6, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 5b701b0cc6f03014ca6888932f230c20, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

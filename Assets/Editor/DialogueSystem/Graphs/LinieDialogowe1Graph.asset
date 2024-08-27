@@ -2380,10 +2380,13 @@ MonoBehaviour:
     <ExposedProperties>k__BackingField: []
   - <ID>k__BackingField: 10143eb0-92a3-4574-b47b-1fda79cc0d9c
     <Name>k__BackingField: 37
-    <Text>k__BackingField: "co\u015B znajduje?"
+    <Text>k__BackingField: "wieczorem zazwyczaj spotyka sie z Oberonem jednak ten
+      po drodze wpad\u0142 na s\u0142u\u017Cb\u0119, kt\xF3ra panikuj\u0119 nad zranionym
+      paniczem (synem Lothiona) i prosi go o b\u0142ogos\u0142awie\u0144stwo czy
+      co\u015B"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: bd4f21b9-0e34-4b12-a574-ef1ff738deee
     <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 25436, y: 5012}
@@ -2432,8 +2435,8 @@ MonoBehaviour:
     <ExposedProperties>k__BackingField: []
   - <ID>k__BackingField: 6f29fbcb-9d9b-40b3-a0fb-34d59cae2097
     <Name>k__BackingField: 36
-    <Text>k__BackingField: "Abigail postanawia wykorzystac nieobecnos Marii w gabinecie
-      i w\u0142amuje si\u0119 do \u015Brodka"
+    <Text>k__BackingField: "Maria wraca ze spotkania z ombryjczykami po osiagni\u0119ciu
+      porozumienia"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
       <NodeID>k__BackingField: 10143eb0-92a3-4574-b47b-1fda79cc0d9c
@@ -2441,7 +2444,259 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 24774, y: 5006}
     <ExposedProperties>k__BackingField: []
-  <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: bd4f21b9-0e34-4b12-a574-ef1ff738deee
+    <Name>k__BackingField: 38
+    <Text>k__BackingField: "po wypadku ch\u0142opca dziewczynka by\u0142a podejrzana
+      o jego spowodowanie wi\u0119c zosta\u0142a zamknieta w pokoju"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: b429a087-8db1-47b4-81cb-60ecd0913335
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 26139, y: 5015}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: b429a087-8db1-47b4-81cb-60ecd0913335
+    <Name>k__BackingField: 39
+    <Text>k__BackingField: "wychodzi z niego ukrytym przej\u015Bciem i wchodzi do
+      piwnicy"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 12c77b2d-cb47-4fa5-95eb-684b1975337e
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 26825, y: 5017}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 8976f744-af86-4822-b7a4-7027ae894caa
+    <Name>k__BackingField: 41
+    <Text>k__BackingField: "Zostaje op\u0119tana"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 507d377d-a967-4779-9159-d0a39cfaa5ca
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 28164, y: 5024}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 507d377d-a967-4779-9159-d0a39cfaa5ca
+    <Name>k__BackingField: 42
+    <Text>k__BackingField: "Viktor w ciele dziewczynki kieruj\u0119 si\u0119 w stron\u0119
+      sypialni Alarica jednak nie znajduje tam nikogo z racji na tocz\u0105ce sie
+      spotkanie wi\u0119c bierze z sypialni otwieracz do list\xF3w i kieruje si\u0119
+      do gabinetu"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 22852890-dca1-4ed4-a07c-71565f5a1e3f
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 28455, y: 5015}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 22852890-dca1-4ed4-a07c-71565f5a1e3f
+    <Name>k__BackingField: 43
+    <Text>k__BackingField: "wchodzi i zastaje Marie, kt\xF3ra w\u0142a\u015Bnie miala
+      ruszy\u0107 na spotkanie z Oberonem wi\u0119c jest zdumiona wizyt\u0105 c\xF3rki.
+      Podje\u017Cdza do niej na w\xF3zku i bierze j\u0105 na kolana."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 456d99c5-4687-4363-9ade-7181880fa491
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 29124, y: 5017}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 33646314-2422-4e01-9c01-5609d14f83fa
+    <Name>k__BackingField: 45
+    <Text>k__BackingField: "przez okno do biura wbija Abigail b\u0119d\u0105ca przekonan\u0105
+      \u017Ce Maria powinna by\u0107 teraz tak jak codziennie na spotkaniu z Oberonem. "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 17aa9d7b-bb5c-4e03-b7aa-ad576e1b2a03
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 30448, y: 5026}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 17aa9d7b-bb5c-4e03-b7aa-ad576e1b2a03
+    <Name>k__BackingField: 46
+    <Text>k__BackingField: "wchodzi przez okno do gabinetu i dopiero wtedy przechodz\u0105c
+      za biurko dostrzega cia\u0142o zamordowanej kobiety"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 502c6f69-16b9-4c0c-8a2f-0e8a6447abb9
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 31115, y: 5032}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 502c6f69-16b9-4c0c-8a2f-0e8a6447abb9
+    <Name>k__BackingField: 47
+    <Text>k__BackingField: spanikowana ucieka z miejsca zdarzenia
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 509e34bc-78ba-433a-9be6-8053862273a0
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 31774, y: 5035}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 12c77b2d-cb47-4fa5-95eb-684b1975337e
+    <Name>k__BackingField: 40
+    <Text>k__BackingField: "eksploruj\u0105c podziemia posiad\u0142o\u015Bci natrafia
+      na pi\u0119kny stary pier\u015Bcie\u0144 i wk\u0142ada go na paluszek."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 8976f744-af86-4822-b7a4-7027ae894caa
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 27496, y: 5021}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 456d99c5-4687-4363-9ade-7181880fa491
+    <Name>k__BackingField: 44
+    <Text>k__BackingField: "Elira aka Viktor podcina jej gard\u0142o otwieraczem
+      do list\xF3w po czym s\u0142yszy ha\u0142asy za oknem wi\u0119c ukrywa sie
+      gdzie\u015B w gabinecie"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 33646314-2422-4e01-9c01-5609d14f83fa
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 29779, y: 5022}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 509e34bc-78ba-433a-9be6-8053862273a0
+    <Name>k__BackingField: 48
+    <Text>k__BackingField: "sp\xF3\u017Cniony oberon dociera na zwyczajowe miejsce
+      spotkania jednak z powodu braku obecno\u015Bci Marii postanawia uda\u0107 si\u0119
+      do jej gabinetu"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 66e0a750-26b5-4280-a862-5e7efef281af
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 32446, y: 5031}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 66e0a750-26b5-4280-a862-5e7efef281af
+    <Name>k__BackingField: 49
+    <Text>k__BackingField: "Gdy tam dociera zauwa\u017Ca cia\u0142o i postanawia
+      dzia\u0142a\u0107 szybko"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: a9ea4678-b36e-4ba0-a08b-cc95ef71f0db
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 33124, y: 5036}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: a81f244b-c205-4e4c-8083-f0500db57205
+    <Name>k__BackingField: 51
+    <Text>k__BackingField: "po drugie szuka jakichkolwiek wzmianek o sobie w jej
+      dokumentach i zabiera je ze sob\u0105 (nie pali ich bo kominek si\u0119 nie
+      pali\u0142 inaczej wcze\u015Bniejsza cz\u0119\u015B\u0107 historii nie mia\u0142aby
+      sensu - m\xF3g\u0142 spali\u0107 je potem w innym pomieszczeniu to do ogarni\u0119cia)"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: b0b68874-c309-4fdc-8751-3fd658c306a8
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 34451, y: 5044}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: b0b68874-c309-4fdc-8751-3fd658c306a8
+    <Name>k__BackingField: 52
+    <Text>k__BackingField: "Po trzecie za pomoc\u0105 swych mnocy dostaj\u0119 si\u0119
+      do duszy Marii i wykorzystuj\u0105c rytua\u0142y Requiem zaburza jej po\u0142\u0105czenie
+      z realnym \u015Bwiatem"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 25c4c1a8-0bd7-445b-abe8-523bcb4eb067
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 35105, y: 5045}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 25c4c1a8-0bd7-445b-abe8-523bcb4eb067
+    <Name>k__BackingField: 53
+    <Text>k__BackingField: "Wychodzi z gabinetu i nakrywa chodz\u0105c\u0105 po korytarzu
+      Elir\u0119, kt\xF3ra w mi\u0119dzyczasie pozby\u0142a si\u0119 no\u017Ca i
+      aktualnie odzyska\u0142a \u015Bwiadomo\u015B\u0107 nie wie o co cho"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 5049ae1a-0272-47f2-89a0-17fff13bc557
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 35772, y: 5055}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 5049ae1a-0272-47f2-89a0-17fff13bc557
+    <Name>k__BackingField: 54
+    <Text>k__BackingField: "Uznaj\u0105c to za \u015Bwietny pretekst udaj\u0119 sie
+      spowrotem do s\u0142u\u017Cby i upomina ja \u017Ce zaniedbali pilnowanie dziewczynki. "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 0cc10d2c-8d98-476b-b86b-f930b6d779ee
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 36426, y: 5061}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 0cc10d2c-8d98-476b-b86b-f930b6d779ee
+    <Name>k__BackingField: 55
+    <Text>k__BackingField: "Zmuszony wi\u0119c jest poinformowa\u0107 o ich niekompetencji
+      Pani\u0105 domu wi\u0119c uda si\u0119 do gabinetu (tu historia ma szczeg\xF3\u0142y
+      kt\xF3re zdradzaja nieco Oberona poniewa\u017C ten szukaj\u0105c marii wcale
+      nie powinien uda\u0107 sie do jej gabinetu a do miejsca gdzie mia\u0142a wedle
+      oficjalnej wersji regenerowa\u0107 swe si\u0142y. Mimo to on od razu poszed\u0142
+      do gabinetu - oczywi\u015Bcie s\u0142u\u017Cba nie po\u0142\u0105czy\u0142a
+      tych 2 fakt\xF3w bo by\u0142a zesrana \u017Ce b\u0119dzie opierdol.)"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 56b6f263-f652-4230-8f98-f41252d9a2db
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 37094, y: 5066}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 56b6f263-f652-4230-8f98-f41252d9a2db
+    <Name>k__BackingField: 56
+    <Text>k__BackingField: "Po tym jak za\u0142atwi\u0142 sobie alibi udaje si\u0119
+      od razu do i tu 1 z 3 Balon - Weln - albo ziomki szlachcice. Wyjawia wtedy
+      wszystkim \u017Ce wydarzy\u0142a si\u0119 tragedia. Oczywi\u015Bcie po drodze
+      robi\u0105 wielki raban i zwracaj\u0105c uwag\u0119 s\u0142u\u017Cby jak i
+      w zasadzie niemal wszystkich w zamku"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 1fb68b4e-3fd5-4d09-9f4f-38e7370211aa
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 37771, y: 5066}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 1fb68b4e-3fd5-4d09-9f4f-38e7370211aa
+    <Name>k__BackingField: 57
+    <Text>k__BackingField: See you next time
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 38431, y: 5071}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: a9ea4678-b36e-4ba0-a08b-cc95ef71f0db
+    <Name>k__BackingField: 50
+    <Text>k__BackingField: "Po pierwsze porzeszukuje biuro i zabiera \u0142ap\xF3wk\u0119
+      przekazan\u0105 marii przez hostesa"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: a81f244b-c205-4e4c-8083-f0500db57205
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 33796, y: 5040}
+    <ExposedProperties>k__BackingField: []
+  <ExposedProperties>k__BackingField:
+  - Name: Orion w Valerii
+    OldName: Orion w Valerii
+    Value: 0
+  - Name: Informacja o ludziach z Ombrii
+    OldName: Informacja o ludziach z Ombrii
+    Value: 0
+  - Name: "Alaric widzia\u0142 rytua\u0142"
+    OldName: "Alaric widzia\u0142 rytua\u0142"
+    Value: 0
+  - Name: "Alaric nie widzial rytua\u0142u"
+    OldName: "Alaric nie widzial rytua\u0142u"
+    Value: 0
+  - Name: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
+    OldName: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
+    Value: 0
+  - Name: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
+    OldName: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
+    Value: 0
   <OldGroupNames>k__BackingField:
   - "Podr\xF3\u017CW\u015Anierzycy"
   - "PrzybycieDoPosiad\u0142o\u015Bci"
@@ -2670,3 +2925,23 @@ MonoBehaviour:
       - 32
       - 35
       - 36
+      - 38
+      - 39
+      - 41
+      - 42
+      - 43
+      - 45
+      - 46
+      - 47
+      - 40
+      - 44
+      - 48
+      - 49
+      - 51
+      - 52
+      - 53
+      - 54
+      - 55
+      - 56
+      - 57
+      - 50

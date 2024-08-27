@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: 55
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: 55
+  <Text>k__BackingField: "Zmuszony wi\u0119c jest poinformowa\u0107 o ich niekompetencji
+    Pani\u0105 domu wi\u0119c uda si\u0119 do gabinetu (tu historia ma szczeg\xF3\u0142y
+    kt\xF3re zdradzaja nieco Oberona poniewa\u017C ten szukaj\u0105c marii wcale
+    nie powinien uda\u0107 sie do jej gabinetu a do miejsca gdzie mia\u0142a wedle
+    oficjalnej wersji regenerowa\u0107 swe si\u0142y. Mimo to on od razu poszed\u0142
+    do gabinetu - oczywi\u015Bcie s\u0142u\u017Cba nie po\u0142\u0105czy\u0142a tych
+    2 fakt\xF3w bo by\u0142a zesrana \u017Ce b\u0119dzie opierdol.)"
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3b10bee42ce7a0a4d9e50ad4ad2a8133, type: 2}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 0
+  <ExposedProperties>k__BackingField: []

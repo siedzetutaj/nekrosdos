@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: 36
+  m_Name: 41
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: 36
-  <Text>k__BackingField: "Maria wraca ze spotkania z ombryjczykami po osiagni\u0119ciu
-    porozumienia"
+  <DialogueName>k__BackingField: 41
+  <Text>k__BackingField: "Zostaje op\u0119tana"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 45b6c897aa17f2c46a1264fcd00bd2d6, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: cefa62ad895d6b44dbb165dded3bcfe2, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

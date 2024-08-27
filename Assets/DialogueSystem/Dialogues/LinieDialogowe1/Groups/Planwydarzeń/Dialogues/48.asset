@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: 36
+  m_Name: 48
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: 36
-  <Text>k__BackingField: "Maria wraca ze spotkania z ombryjczykami po osiagni\u0119ciu
-    porozumienia"
+  <DialogueName>k__BackingField: 48
+  <Text>k__BackingField: "sp\xF3\u017Cniony oberon dociera na zwyczajowe miejsce
+    spotkania jednak z powodu braku obecno\u015Bci Marii postanawia uda\u0107 si\u0119
+    do jej gabinetu"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 45b6c897aa17f2c46a1264fcd00bd2d6, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a7533492761bb184c8dc544746ce992d, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

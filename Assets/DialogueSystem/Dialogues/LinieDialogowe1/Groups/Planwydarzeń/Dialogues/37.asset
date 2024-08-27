@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: 37
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: 37
-  <Text>k__BackingField: "co\u015B znajduje?"
+  <Text>k__BackingField: "wieczorem zazwyczaj spotyka sie z Oberonem jednak ten po
+    drodze wpad\u0142 na s\u0142u\u017Cb\u0119, kt\xF3ra panikuj\u0119 nad zranionym
+    paniczem (synem Lothiona) i prosi go o b\u0142ogos\u0142awie\u0144stwo czy co\u015B"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: f06c3fb823f9ec2468320a791e8ddc1d, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
