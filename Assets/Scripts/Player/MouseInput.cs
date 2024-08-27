@@ -62,6 +62,15 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PouseMenu"",
+                    ""type"": ""Button"",
+                    ""id"": ""cae43ce2-881c-4303-b712-f5d66ef28edc"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -106,6 +115,17 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""ThoughtPalaceEnable"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8c76f933-01b9-4573-b974-55746fc30973"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PouseMenu"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -276,6 +296,7 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
         m_MovementInputs_MousePosition = m_MovementInputs.FindAction("MousePosition", throwIfNotFound: true);
         m_MovementInputs_MouseRightClick = m_MovementInputs.FindAction("MouseRightClick", throwIfNotFound: true);
         m_MovementInputs_ThoughtPalaceEnable = m_MovementInputs.FindAction("ThoughtPalaceEnable", throwIfNotFound: true);
+        m_MovementInputs_PouseMenu = m_MovementInputs.FindAction("PouseMenu", throwIfNotFound: true);
         // DialogueInputs
         m_DialogueInputs = asset.FindActionMap("DialogueInputs", throwIfNotFound: true);
         m_DialogueInputs_MouseLeftClick = m_DialogueInputs.FindAction("MouseLeftClick", throwIfNotFound: true);
@@ -352,6 +373,7 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_MovementInputs_MousePosition;
     private readonly InputAction m_MovementInputs_MouseRightClick;
     private readonly InputAction m_MovementInputs_ThoughtPalaceEnable;
+    private readonly InputAction m_MovementInputs_PouseMenu;
     public struct MovementInputsActions
     {
         private @MouseInput m_Wrapper;
@@ -360,6 +382,7 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
         public InputAction @MousePosition => m_Wrapper.m_MovementInputs_MousePosition;
         public InputAction @MouseRightClick => m_Wrapper.m_MovementInputs_MouseRightClick;
         public InputAction @ThoughtPalaceEnable => m_Wrapper.m_MovementInputs_ThoughtPalaceEnable;
+        public InputAction @PouseMenu => m_Wrapper.m_MovementInputs_PouseMenu;
         public InputActionMap Get() { return m_Wrapper.m_MovementInputs; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -381,6 +404,9 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
             @ThoughtPalaceEnable.started += instance.OnThoughtPalaceEnable;
             @ThoughtPalaceEnable.performed += instance.OnThoughtPalaceEnable;
             @ThoughtPalaceEnable.canceled += instance.OnThoughtPalaceEnable;
+            @PouseMenu.started += instance.OnPouseMenu;
+            @PouseMenu.performed += instance.OnPouseMenu;
+            @PouseMenu.canceled += instance.OnPouseMenu;
         }
 
         private void UnregisterCallbacks(IMovementInputsActions instance)
@@ -397,6 +423,9 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
             @ThoughtPalaceEnable.started -= instance.OnThoughtPalaceEnable;
             @ThoughtPalaceEnable.performed -= instance.OnThoughtPalaceEnable;
             @ThoughtPalaceEnable.canceled -= instance.OnThoughtPalaceEnable;
+            @PouseMenu.started -= instance.OnPouseMenu;
+            @PouseMenu.performed -= instance.OnPouseMenu;
+            @PouseMenu.canceled -= instance.OnPouseMenu;
         }
 
         public void RemoveCallbacks(IMovementInputsActions instance)
@@ -552,6 +581,7 @@ public partial class @MouseInput: IInputActionCollection2, IDisposable
         void OnMousePosition(InputAction.CallbackContext context);
         void OnMouseRightClick(InputAction.CallbackContext context);
         void OnThoughtPalaceEnable(InputAction.CallbackContext context);
+        void OnPouseMenu(InputAction.CallbackContext context);
     }
     public interface IDialogueInputsActions
     {

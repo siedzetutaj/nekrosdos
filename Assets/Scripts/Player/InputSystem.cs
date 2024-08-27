@@ -37,6 +37,10 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
     public Action onTPMiddleClickUp;
 
     public Action ToggleTP;
+
+    //Overall
+    public Action TogglePauseMenu;
+
     #endregion
     #region Other variables
     public bool holdLeft = false;
@@ -76,6 +80,8 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
 
         mouseInput.TPInputs.ThoughtPalaceDisable.performed -= ThoughtPalaceDown;
 
+        //Overall
+        mouseInput.MovementInputs.PouseMenu.performed -= PauseMenu;
 
 
         mouseInput.Disable();
@@ -104,6 +110,8 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
 
         mouseInput.TPInputs.ThoughtPalaceDisable.performed += ThoughtPalaceDown;
 
+        //Overall
+        mouseInput.MovementInputs.PouseMenu.performed += PauseMenu;
 
         mouseInput.DialogueInputs.Disable();
         mouseInput.TPInputs.Disable();
@@ -159,6 +167,10 @@ public class InputSystem : MonoBehaviourSingleton<InputSystem>
     private void TPMiddleClickDown(InputAction.CallbackContext context)
     {
         onTPMiddleClickDown?.Invoke();
+    }
+    private void PauseMenu(InputAction.CallbackContext context)
+    {
+        TogglePauseMenu?.Invoke();
     }
     #endregion
 }

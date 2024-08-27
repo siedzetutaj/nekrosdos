@@ -38,11 +38,14 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
     private void OnEnable()
     {
         _inputSystem.ToggleTP += ToggleThoughtpalace;
+        _inputSystem.TogglePauseMenu += TooglePauseMenu;
+        PauseMenu.unPaused += ResetDestination;
     }
     private void OnDisable()
     {
         _inputSystem.ToggleTP -= ToggleThoughtpalace;
-
+        _inputSystem.TogglePauseMenu -= TooglePauseMenu;
+        PauseMenu.unPaused -= ResetDestination;
     }
     private void Awake()
     {
@@ -59,7 +62,6 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
     }
     private void Update()
     {
-
         if (!_isPused)
         {
             Movement();
@@ -79,7 +81,6 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
         {
             BeginAnimationAndSetRotation();
         }
-
     }
     #region Animating
     private void BeginAnimationAndSetRotation()
@@ -92,7 +93,6 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
 
         }
     }
-
     private void StopMovementAnimation()
     {
         if (!_agent.hasPath || _agent.velocity.sqrMagnitude == 0f)
@@ -102,17 +102,6 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
         }
     }
     #endregion
-    private void SetDirection()
-    {
-        if (Vector2.Distance(_agent.destination, _body.position) >= 0.01)
-        {
-            var direction = _agent.destination - _body.position;
-            float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
-            Quaternion targetRotation = Quaternion.Euler(0, angle, 0);
-            _body.rotation = _initialRotation * targetRotation;
-        }
-    }
-
     #region Movement
     private void MoveToMouse()
     {
@@ -142,11 +131,22 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
         }
         _agent.SetDestination(destination);
     }
+    private void SetDirection()
+    {
+        if (Vector2.Distance(_agent.destination, _body.position) >= 0.01)
+        {
+            var direction = _agent.destination - _body.position;
+            float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
+            Quaternion targetRotation = Quaternion.Euler(0, angle, 0);
+            _body.rotation = _initialRotation * targetRotation;
+        }
+    }
+    public void ResetDestination()
+    {
+        destination = transform.position;
+    }
     #endregion
     #region Interactions
-    public void SetDialogue(DSDialogue dialogue)
-    {
-    }
     public void SetInteraction(SampleInteraction interaction, Vector2 target)
     {
         _interaction = interaction;
@@ -161,7 +161,7 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
         _dialogueDisplay.StartDisplaying();
     }
     #endregion
-    #region ThoughtPalace
+    #region InputFunctions
     private void ToggleThoughtpalace()
     {
         if (!_thoughtPalaceUI.activeSelf)
@@ -178,6 +178,10 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
             _inputSystem.mouseInput.TPInputs.Disable();
             _isPused = false;
         }
+    }
+    private void TooglePauseMenu()
+    {
+        PauseMenu.SwitchPause();
     }
     #endregion
 }

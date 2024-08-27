@@ -6,6 +6,7 @@ using UnityEngine;
 public class UIInformationHolder : MonoBehaviourSingleton<UIInformationHolder>
 {
     public GameObject ThoughtPalaceUI;
+    public GameObject PauseMenuUI;
     public GameObject DialogueScrollViewUI;
     public GameObject DialogueContinerUI;
     public GameObject DialogueContentUI;
@@ -14,6 +15,7 @@ public class UIInformationHolder : MonoBehaviourSingleton<UIInformationHolder>
     private void OnEnable()
     {
         DialogueContinerUI.SetActive(false);
+        PauseMenu.pauseMenuUI = PauseMenuUI;
     }
 
 }
