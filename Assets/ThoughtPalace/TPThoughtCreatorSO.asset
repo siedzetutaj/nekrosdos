@@ -17,6 +17,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 53a9499fe96e9314c9e73eb6af3ed2b7, type: 2}
   - {fileID: 11400000, guid: 9964d7dcc0952c047966954a4573e4dc, type: 2}
   - {fileID: 11400000, guid: 8d222a74314b0514db16ee4c7e9a9149, type: 2}
+  - {fileID: 11400000, guid: a6015278230f99b4f86df5ec22beda6c, type: 2}
   Name: 
   Sprite: {fileID: 0}
   Description: 

@@ -4,25 +4,27 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using Unity.VisualScripting.Antlr3.Runtime;
+using UnityEditor.MemoryProfiler;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.InputSystem;
 
-public class UiThoughtPanel : MonoBehaviour
+public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
 {
     [NonSerialized] public bool isDraggingThought;
     [NonSerialized] public bool isCreatingLine = false;
     [NonSerialized] public LineController activeLineController;
-    [NonSerialized] public GameObject activeThough; //one that currently creates line
+    [NonSerialized] public InformationController firstThoughToConnect; //one that currently creates line
     [NonSerialized] public SerializableGuid FistID;
-    
+
     [Header("Set up")]
     [SerializeField] public TextMeshProUGUI descriptionTMP;
     [SerializeField] public RectTransform ThoughtPanelTransform;
     [SerializeField] public RectTransform LineHolder;
     [SerializeField] public TPAllConnectionsSO ThoughtConnections;
-    [SerializeField] public List<ConnectionList> PlayerThoughtConnections = new();
-    
+    //[SerializeField] public List<ConnectionList> PlayerThoughtConnections = new();
+    [SerializeField] private GameObject ThoughtPalaceContainer;
+
     [Header("Raycast to line")]
     public GameObject dotPrefab; // Prefabrykat kropki
     [SerializeField] private Camera _uiCamera;
@@ -35,28 +37,45 @@ public class UiThoughtPanel : MonoBehaviour
     public SerializableDictionary<SerializableGuid, ConnectedNode> nodes = new SerializableDictionary<SerializableGuid, ConnectedNode>();
     [SerializeField] public List<InformationController> createdThoughts = new();
 
+    public void Initialize()
+    {
+        _uiCamera = Camera.main;
+
+        _inputSystem = InputSystem.Instance;
+        OnEnable();
+        ThoughtPalaceContainer.SetActive(false);
+    }
     private void OnEnable()
     {
-        _inputSystem.onTPLeftClickDown += OnMouseLeftClickDown;
-        _inputSystem.onTPLeftClickUp += OnMouseLeftClickUp;
-        _inputSystem.onTPRightClickDown += OnMouseRightClickDown;
-        _inputSystem.onTPRightClickUp += OnMouseRightClickUp;
-    }
+        if (_inputSystem)
+        {
+            _inputSystem.onTPLeftClickDown += OnMouseLeftClickDown;
+            _inputSystem.onTPLeftClickUp += OnMouseLeftClickUp;
 
+            _inputSystem.onTPRightClickDown += OnMouseRightClickDown;
+            _inputSystem.onTPRightClickUp += OnMouseRightClickUp;  
+
+            _inputSystem.onTPMiddleClickDown += OnMouseMiddleClickDown;
+            _inputSystem.onTPMiddleClickUp += OnMouseMiddleClickUp;
+        }
+    }
     private void OnDisable()
     {
         _inputSystem.onTPLeftClickDown -= OnMouseLeftClickDown;
-        _inputSystem.onTPLeftClickUp += OnMouseLeftClickUp;
+        _inputSystem.onTPLeftClickUp -= OnMouseLeftClickUp;
+
         _inputSystem.onTPRightClickDown -= OnMouseRightClickDown;
-        _inputSystem.onTPRightClickUp += OnMouseRightClickUp;
+        _inputSystem.onTPRightClickUp -= OnMouseRightClickUp;
 
+        _inputSystem.onTPMiddleClickDown -= OnMouseMiddleClickDown;
+        _inputSystem.onTPMiddleClickUp -= OnMouseMiddleClickUp;
     }
-
     private void Start()
     {
+        ThoughtConnections = TPAllConnectionsSO.instance;
         ThoughtConnections.AllConnections = ThoughtConnections.AllConnections.Where(item => item != null).ToList();
     }
-    #region Grouping Connected Thoughts
+    #region Operations on thoughts and connections
     public void AddNode(SerializableGuid nodeId, SerializableGuid objectId)
     {
         if (!nodes.ContainsKey(nodeId))
@@ -64,8 +83,21 @@ public class UiThoughtPanel : MonoBehaviour
             nodes[nodeId] = new ConnectedNode(nodeId, objectId);
         }
     }
-    public void AddConnection( SerializableGuid nodeId2)
+    public void AddConnection(SerializableGuid nodeId2, Vector2 anchoredPos, InformationController thought)
     {
+        activeLineController.IsDraggedByMouse = false;
+        activeLineController.ChangePointPosition(1, anchoredPos);
+        activeLineController.connectionGuids.Id1 = FistID;
+        activeLineController.connectionGuids.Id2 = nodeId2;
+
+        if (LineManager.Instance.CheckIfLineExist(activeLineController))
+        {
+            thought.LineRenderers.Remove(activeLineController);
+            CancelDrawingLine(true);
+            return;
+        }
+        LineManager.Instance.addLineController(activeLineController);
+
         if (nodes.ContainsKey(FistID) && nodes.ContainsKey(nodeId2) && !ConnectionExists(FistID, nodeId2))
         {
             var newConnection = new ConnectedThoughtsGuid(FistID, nodeId2);
@@ -102,78 +134,136 @@ public class UiThoughtPanel : MonoBehaviour
                 connections.Add(newGroup);
             }
         }
+
+        firstThoughToConnect.Lines.Add(activeLineController);
+        thought.Lines.Add(activeLineController);
+
+        activeLineController = null;
+        firstThoughToConnect = null;
+        isCreatingLine = false;
     }
     public void RemoveConnection(LineController line)
     {
-        SerializableGuid nodeId1 = line.connectionGuids.Id1;
-        SerializableGuid nodeId2 = line.connectionGuids.Id2;
+        LineManager.Instance.removeLineController(line);
+        var connectionToRemove = new ConnectedThoughtsGuid(line.connectionGuids.Id1, line.connectionGuids.Id2);
+        ConnectionList groupToUpdate = null;
+
         foreach (var connectionList in connections)
         {
-            connectionList.thoughtsList.RemoveAll(c =>
-                (c.Id1 == nodeId1 && c.Id2 == nodeId2) ||
-                (c.Id1 == nodeId2 && c.Id2 == nodeId1));
-
-            // Jeœli po usuniêciu po³¹czenia w grupie nie ma ju¿ ¿adnych po³¹czeñ, usuwamy grupê
-            if (connectionList.thoughtsList.Count == 0)
+            if (connectionList.thoughtsList.Contains(connectionToRemove))
             {
-                connections.Remove(connectionList);
-                break; // konieczne, aby przerwaæ iteracjê po usuniêciu elementu
+                groupToUpdate = connectionList;
+                break;
             }
         }
+
+        if (groupToUpdate != null)
+        {
+            groupToUpdate.thoughtsList.Remove(connectionToRemove);
+
+            // Jeœli po usuniêciu po³¹czenia w grupie nie ma ju¿ ¿adnych po³¹czeñ, usuwamy grupê
+            if (groupToUpdate.thoughtsList.Count == 0)
+            {
+                connections.Remove(groupToUpdate);
+            }
+            else
+            {
+                // Przebudowujemy grupy po usuniêciu po³¹czenia
+                RebuildGroups();
+            }
+        }
+
         foreach (var thought in createdThoughts)
         {
-            if (thought.ThoughtNodeGuid == nodeId1 || thought.ThoughtNodeGuid == nodeId2)
+            if (thought.ThoughtNodeGuid == connectionToRemove.Id1 || thought.ThoughtNodeGuid == connectionToRemove.Id2)
             {
                 thought.LineRenderers.Remove(line);
             }
         }
-        RebuildGroups();
     }
     private void RebuildGroups()
     {
-        // Zbieramy wszystkie istniej¹ce po³¹czenia
+        // Tworzymy now¹ listê grup
+        var newConnections = new List<ConnectionList>();
         var allConnections = new List<ConnectedThoughtsGuid>();
+
+        // Zbieramy wszystkie po³¹czenia
         foreach (var connectionList in connections)
         {
             allConnections.AddRange(connectionList.thoughtsList);
         }
 
+        // Resetujemy aktualne po³¹czenia
         connections.Clear();
 
-        // Tworzymy nowe grupy
+        // U¿ywamy BFS do znalezienia wszystkich po³¹czonych komponentów
         var visitedNodes = new HashSet<SerializableGuid>();
         foreach (var node in nodes.Keys)
         {
             if (!visitedNodes.Contains(node))
             {
                 var newGroup = new ConnectionList { thoughtsList = new List<ConnectedThoughtsGuid>() };
-                DFS(node, visitedNodes, newGroup, allConnections);
+                var queue = new Queue<SerializableGuid>();
+                queue.Enqueue(node);
+                visitedNodes.Add(node);
+
+                while (queue.Count > 0)
+                {
+                    var currentNode = queue.Dequeue();
+                    foreach (var connection in allConnections)
+                    {
+                        if ((connection.Id1 == currentNode || connection.Id2 == currentNode) &&
+                            !newGroup.thoughtsList.Contains(connection))
+                        {
+                            newGroup.thoughtsList.Add(connection);
+
+                            var neighborNode = connection.Id1 == currentNode ? connection.Id2 : connection.Id1;
+                            if (!visitedNodes.Contains(neighborNode))
+                            {
+                                visitedNodes.Add(neighborNode);
+                                queue.Enqueue(neighborNode);
+                            }
+                        }
+                    }
+                }
+
                 if (newGroup.thoughtsList.Count > 0)
                 {
-                    connections.Add(newGroup);
+                    newConnections.Add(newGroup);
                 }
             }
         }
-    }
 
-    // DFS do zbierania po³¹czeñ w grupie
-    private void DFS(SerializableGuid nodeId, HashSet<SerializableGuid> visitedNodes, ConnectionList group, List<ConnectedThoughtsGuid> allConnections)
-    {
-        visitedNodes.Add(nodeId);
-        foreach (var connection in allConnections)
-        {
-            if (connection.Id1 == nodeId && !visitedNodes.Contains(connection.Id2))
-            {
-                group.thoughtsList.Add(connection);
-                DFS(connection.Id2, visitedNodes, group, allConnections);
-            }
-            else if (connection.Id2 == nodeId && !visitedNodes.Contains(connection.Id1))
-            {
-                group.thoughtsList.Add(connection);
-                DFS(connection.Id1, visitedNodes, group, allConnections);
-            }
-        }
+        connections = newConnections;
     }
+    // Pobiera wszystkie po³¹czenia dla danego node
+    private List<ConnectedThoughtsGuid> GetConnections(SerializableGuid nodeId)
+    {
+        var result = new List<ConnectedThoughtsGuid>();
+        foreach (var connectionList in connections)
+        {
+            result.AddRange(connectionList.thoughtsList.FindAll(c => c.Id1 == nodeId || c.Id2 == nodeId));
+        }
+        return result;
+    }
+    //// DFS do zbierania po³¹czeñ w grupie
+    //private void DFS(SerializableGuid nodeId, HashSet<SerializableGuid> visitedNodes, ConnectionList group, List<ConnectedThoughtsGuid> allConnections)
+    //{
+    //    visitedNodes.Add(nodeId);
+    //    foreach (var connection in allConnections)
+    //    {
+    //        if (connection.Id1 == nodeId && !visitedNodes.Contains(connection.Id2))
+    //        {
+    //            group.thoughtsList.Add(connection);
+    //            DFS(connection.Id2, visitedNodes, group, allConnections);
+    //        }
+    //        else if (connection.Id2 == nodeId && !visitedNodes.Contains(connection.Id1))
+    //        {
+    //            group.thoughtsList.Add(connection);
+    //            DFS(connection.Id1, visitedNodes, group, allConnections);
+    //        }
+    //    }
+    //}
     private bool ConnectionExists(SerializableGuid nodeId1, SerializableGuid nodeId2)
     {
         foreach (var group in connections)
@@ -219,19 +309,31 @@ public class UiThoughtPanel : MonoBehaviour
 
         return new List<SerializableGuid>(nodesInGroup);
     }
+    private void CancelDrawingLine(bool isduplicate = false)
+    {
+        FistID = SerializableGuid.Empty;
+        var lineController = activeLineController;
+        activeLineController = null;
+        lineController.IsDraggedByMouse = false;
+        //to usuwa w innej mysli nie tej ktora zaczyna, ten skrypt ejst przypisywany do kazdej mysli a nie jest globalny
+        firstThoughToConnect.LineRenderers.Remove(lineController);
+        Destroy(lineController.gameObject);
+        isCreatingLine = false;
+        firstThoughToConnect = null;
+        
+        
+        if (isduplicate)
+        {
+
+        }
+    }
     #endregion
-    #region Detecting Lines via Raycast
+    #region Other
     private void OnMouseLeftClickDown()
     {
-        if (!isDraggingThought && !hasClicked)
+        if (isCreatingLine && !hasClicked)
         {
-            var line = DetectLine();
-            if (line)
-            {
-                RemoveConnection(line);
-                Destroy(line.gameObject);
-            }
-            hasClicked = true;
+            CancelDrawingLine();
         }
     }
     private void OnMouseLeftClickUp()
@@ -242,10 +344,26 @@ public class UiThoughtPanel : MonoBehaviour
     {
 
     }
-    private void OnMouseRightClickUp() 
+    private void OnMouseRightClickUp()
     {
-    
+
     }
+    private void OnMouseMiddleClickDown()
+    {
+        if (!isDraggingThought && !hasClicked)
+        {
+            var line = DetectLine();
+            if (line)
+            {
+                DestoryLine(line);
+            }
+            hasClicked = true;
+        }
+    }
+    private void OnMouseMiddleClickUp()
+    {
+    }
+
     private LineController DetectLine()
     {
         Vector2 mousePosition = Mouse.current.position.ReadValue();
@@ -255,26 +373,28 @@ public class UiThoughtPanel : MonoBehaviour
 
         // Wykonujemy raycast 2D w kierunku pozycji myszy
         RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero, Mathf.Infinity, _uiLineLayerMask);
-        ShowDot(worldPoint);
         if (hit)
         {
-            hit.collider.gameObject.TryGetComponent(out LineController line );
+            hit.collider.gameObject.TryGetComponent(out LineController line);
             return line;
         }
-            return null;
+        return null;
+    }
+    public void DeleateThought(InformationController thought)
+    {
+        thought.Lines.RemoveAll(x => x == null);
+        foreach (var connection in thought.Lines)
+        {
+            DestoryLine(connection);
+        }
+        createdThoughts.Remove(thought);
+    }
+    private void DestoryLine(LineController line)
+    {
+        RemoveConnection(line);
+        Destroy(line.gameObject);
     }
 
-    private void ShowDot(Vector2 position)
-    {
-        GameObject dot = Instantiate(dotPrefab, position, Quaternion.identity);
-        StartCoroutine(DestroyDotAfterTime(dot, 5f));
-    }
-
-    private IEnumerator DestroyDotAfterTime(GameObject dot, float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        Destroy(dot);
-    }
     #endregion
 }
 [System.Serializable]
@@ -290,7 +410,7 @@ public struct ConnectedNode
     }
 }
 [System.Serializable]
-public class ConnectionList 
+public class ConnectionList
 {
     public List<ConnectedThoughtsGuid> thoughtsList;
 }

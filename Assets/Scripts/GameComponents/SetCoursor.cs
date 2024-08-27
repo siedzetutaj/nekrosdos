@@ -7,10 +7,11 @@ public class SetCoursor : MonoBehaviourSingleton<SetCoursor>
     public Texture2D lens;
     public Texture2D arrow;
     public Texture2D talk;
+    public Texture2D location;
     public Vector2 MouseOffset;
     void Start()
     {
-        SetCurosr(CoursorType.arrow); 
+        SetCurosr(CoursorType.arrow);
     }
     public void SetCurosr(CoursorType type)
     {
@@ -24,6 +25,11 @@ public class SetCoursor : MonoBehaviourSingleton<SetCoursor>
             case CoursorType.talk:
                 {
                     SetTexture(talk);
+                    break;
+                }
+            case CoursorType.location:
+                {
+                    SetTexture(location);
                     break;
                 }
             default:
@@ -47,5 +53,6 @@ public enum CoursorType
 {
     lens,
     talk,
-    arrow
+    arrow,
+    location
 }

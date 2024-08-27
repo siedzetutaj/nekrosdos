@@ -34,6 +34,11 @@ public class Interactor : MonoBehaviourSingleton<Interactor>
     {
         _inputs.onMovemenLeftClickUp -= OnLeftClick;
     }
+    private void Start()
+    {
+        _mainCamera = FindObjectOfType<Camera>();
+        _setCoursor = FindObjectOfType<SetCoursor>();
+    }
     #endregion
     private void Update()
     {

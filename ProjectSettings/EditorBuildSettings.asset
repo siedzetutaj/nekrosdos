@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ScenaJaseczka.unity
     guid: d3f66352f82450144be54538adccb734
+  - enabled: 1
+    path: Assets/Scenes/Building.unity
+    guid: c10e9047b636ac243bdcdb7b5b72d053
   m_configObjects: {}

@@ -65,4 +65,5 @@ public class LineController : MonoBehaviour
 
         polygonCollider2D.SetPath(0, colliderPoints.ToArray());
     }
+
 }
