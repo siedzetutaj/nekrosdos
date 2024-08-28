@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: 57
+  m_Name: 59
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: 57
-  <Text>k__BackingField: Lordowie przybywaja do gabinetu
+  <DialogueName>k__BackingField: 59
+  <Text>k__BackingField: "Weln odprowadza s\u0142u\u017Cb\u0119 do swoich pokoi "
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8a53a09affafba54198089bbfd9c1d12, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e112a84a6c629cb4ca48c326522762b5, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

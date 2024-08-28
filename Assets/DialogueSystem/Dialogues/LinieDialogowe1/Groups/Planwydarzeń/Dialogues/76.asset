@@ -10,13 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: 57
+  m_Name: 76
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: 57
-  <Text>k__BackingField: Lordowie przybywaja do gabinetu
+  <DialogueName>k__BackingField: 76
+  <Text>k__BackingField: "W tym samym czasie w kt\xF3rym dzia\u0142y sie poprzednie
+    wydarzenia w oddzielnym skrzydle budynku do kt\xF3rego wracaj\u0105 szlachcice
+    i s\u0142u\u017Cba (szlachta pietro s\u0142u\u017Cba parter) Balon upewnia si\u0119
+    \u017Ce wszyscy trafili do swoich komnat po czym zaczyna pe\u0142ni\u0107 warte
+    na korytarzu z kt\xF3rego widzi wszystkie drzwi na 1 pi\u0119trze"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8a53a09affafba54198089bbfd9c1d12, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: ec74a52808068dc4ca8ee6592515b3ca, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

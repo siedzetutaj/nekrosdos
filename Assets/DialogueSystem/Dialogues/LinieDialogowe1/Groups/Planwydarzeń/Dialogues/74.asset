@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: 57
+  m_Name: 74
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: 57
-  <Text>k__BackingField: Lordowie przybywaja do gabinetu
+  <DialogueName>k__BackingField: 74
+  <Text>k__BackingField: "Zestes i Gervi docieraj\u0105 do komnat przerywaj\u0105c
+    alaricowi przeszukiwanie. Zestes Zaczyna zabezpiecza\u0107 cia\u0142o natomiast
+    Gerviemu Alaric nakazuj\u0119 doprowadzi\u0107 si\u0119 do porz\u0105dku po czym
+    wezwa\u0107 do posiad\u0142o\u015Bci inspektorat."
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8a53a09affafba54198089bbfd9c1d12, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 63e1d44583e532949b63627c07ee6da4, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

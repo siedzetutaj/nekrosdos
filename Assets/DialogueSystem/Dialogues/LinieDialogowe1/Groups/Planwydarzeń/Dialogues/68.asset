@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: 57
+  m_Name: 68
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: 57
-  <Text>k__BackingField: Lordowie przybywaja do gabinetu
+  <DialogueName>k__BackingField: 68
+  <Text>k__BackingField: "Ombryjczyk Biegn\u0105c napotyka na Gerviego, kt\xF3ry
+    zorientowawszy si\u0119 \u017Ce na polu nie ma zestesa wr\xF3ci\u0142 do \u015Brodka
+    i zamyka\u0142 w\u0142a\u015Bnie g\u0142\xF3wne drzwi."
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8a53a09affafba54198089bbfd9c1d12, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: ed799a5d4dc819641b8e867457bc4a19, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

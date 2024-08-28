@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: 57
+  m_Name: 63
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: 57
-  <Text>k__BackingField: Lordowie przybywaja do gabinetu
+  <DialogueName>k__BackingField: 63
+  <Text>k__BackingField: "Sam Lord przes\u0142uchuje Oberona i po kr\xF3tkich spytkach
+    wysy\u0142a po kap\u0142ana po czym upewniaj\u0105c sie \u017Ce nikogo nie ma
+    w pobli\u017Cu przeszukuje komnat\u0119 - Mo\u017Ce znalaz\u0142 tu pier\u015Bcie\u0144
+    kt\xF3ry spad\u0142 z r\u0119ki Eliry? "
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8a53a09affafba54198089bbfd9c1d12, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 20fcf01f3d3f461439098089c2ba251a, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

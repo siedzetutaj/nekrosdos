@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: 57
+  m_Name: 64
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: 57
-  <Text>k__BackingField: Lordowie przybywaja do gabinetu
+  <DialogueName>k__BackingField: 64
+  <Text>k__BackingField: "Gervi wychodzi z budynku po zestesa nie\u015Bwiadom \u017Ce
+    ten przebywa ju\u017C w posiad\u0142o\u015Bci. (By\u0107 moze przebywaj\u0105c
+    na zewn\u0105trz dostrzega Abigail albo \u015Blady po niej choc wtedy nie zwraca
+    na to wi\u0119kszej uwagi)"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8a53a09affafba54198089bbfd9c1d12, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 27b5d62294d31c14b81d8ae1034ce282, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

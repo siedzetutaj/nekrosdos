@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: 57
+  m_Name: 66
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: 57
-  <Text>k__BackingField: Lordowie przybywaja do gabinetu
+  <DialogueName>k__BackingField: 66
+  <Text>k__BackingField: "Po kr\xF3tkiej wymianie zda\u0144 dochodzi do bijatyki
+    w trakcie, kt\xF3rej desmond og\u0142usza jednego z obcokrajowc\xF3w jednak samemu
+    zostaje powalony przez 2 z nich kt\xF3ry ucieka w kierunku g\u0142\xF3wnego wyj\u015Bcia. "
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8a53a09affafba54198089bbfd9c1d12, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 958c0cf1173b4b34cb3280b88256c256, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

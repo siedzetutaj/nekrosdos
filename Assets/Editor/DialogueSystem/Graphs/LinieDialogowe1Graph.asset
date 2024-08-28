@@ -2657,16 +2657,6 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 37771, y: 5066}
     <ExposedProperties>k__BackingField: []
-  - <ID>k__BackingField: 1fb68b4e-3fd5-4d09-9f4f-38e7370211aa
-    <Name>k__BackingField: 57
-    <Text>k__BackingField: See you next time
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
-    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 38431, y: 5071}
-    <ExposedProperties>k__BackingField: []
   - <ID>k__BackingField: a9ea4678-b36e-4ba0-a08b-cc95ef71f0db
     <Name>k__BackingField: 50
     <Text>k__BackingField: "Po pierwsze porzeszukuje biuro i zabiera \u0142ap\xF3wk\u0119
@@ -2677,6 +2667,314 @@ MonoBehaviour:
     <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 33796, y: 5040}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 1fb68b4e-3fd5-4d09-9f4f-38e7370211aa
+    <Name>k__BackingField: 57
+    <Text>k__BackingField: Lordowie przybywaja do gabinetu
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 8a677ccb-fe32-4831-9988-01dfb3957fc9
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 38431, y: 5071}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: e0ff1e49-c4cd-4d2d-8d24-a5a66efe6da1
+    <Name>k__BackingField: 59
+    <Text>k__BackingField: "Weln odprowadza s\u0142u\u017Cb\u0119 do swoich pokoi "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 437e2c42-a8d4-4aa0-bd34-e1a514d7f1fa
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 39774, y: 5077}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 23102239-8a8a-49e3-8a26-3b5920312dd7
+    <Name>k__BackingField: 61
+    <Text>k__BackingField: "Desmond po przybywa na miejscu z op\xF3\u017Anieniem
+      gdy szlachcic\xF3w i s\u0142u\u017Cby nie ma ju\u017C na miejscu"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 73013b33-a521-4b59-8ab4-020d33ba028e
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 41109, y: 5081}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: f5430f48-212e-4879-aabb-d4c31332f029
+    <Name>k__BackingField: 63
+    <Text>k__BackingField: "Sam Lord przes\u0142uchuje Oberona i po kr\xF3tkich spytkach
+      wysy\u0142a po kap\u0142ana po czym upewniaj\u0105c sie \u017Ce nikogo nie
+      ma w pobli\u017Cu przeszukuje komnat\u0119 - Mo\u017Ce znalaz\u0142 tu pier\u015Bcie\u0144
+      kt\xF3ry spad\u0142 z r\u0119ki Eliry? "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 5f2664c2-75e2-4d3e-a134-22f7662a1bd6
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 42438, y: 5084}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 73013b33-a521-4b59-8ab4-020d33ba028e
+    <Name>k__BackingField: 62
+    <Text>k__BackingField: "Alaric nakazuje Gerviemu wezwa\u0107 Zestesa a Desmondowi
+      upewni\u0107 si\u0119 \u017Ce ombryjczycy nie wychodzili ze swoich komnat"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: f5430f48-212e-4879-aabb-d4c31332f029
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 41780, y: 5082}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 5f2664c2-75e2-4d3e-a134-22f7662a1bd6
+    <Name>k__BackingField: 64
+    <Text>k__BackingField: "Gervi wychodzi z budynku po zestesa nie\u015Bwiadom \u017Ce
+      ten przebywa ju\u017C w posiad\u0142o\u015Bci. (By\u0107 moze przebywaj\u0105c
+      na zewn\u0105trz dostrzega Abigail albo \u015Blady po niej choc wtedy nie zwraca
+      na to wi\u0119kszej uwagi)"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: cd887332-05df-4e3a-9c41-96bcec5377ca
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 43102, y: 5087}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: cd887332-05df-4e3a-9c41-96bcec5377ca
+    <Name>k__BackingField: 65
+    <Text>k__BackingField: "Desmond w mi\u0119dzyczasie kieruje si\u0119 do komnat
+      ombryjczyk\xF3w jednak ci s\u0142ysz\u0105c og\xF3lne zamieszanie wyszli z
+      pokoi i zdo\u0142ali mniej wi\u0119cej zorientowa\u0107 si\u0119 do czego dosz\u0142o.
+      B\u0119d\u0105c \u015Bwiadomym \u017Ce b\u0119d\u0105 pierwszymi na li\u015Bcie
+      oskar\u017Conych zaczynaj\u0105 pakowa\u0107 swoje rzeczy i kierowa\u0107 si\u0119
+      do wyj\u015Bcia gdzie spotykaj\u0105 Desmonda. "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: d2930273-5385-4d91-9de5-e0dc92d5c234
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 43756, y: 5092}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: d2930273-5385-4d91-9de5-e0dc92d5c234
+    <Name>k__BackingField: 66
+    <Text>k__BackingField: "Po kr\xF3tkiej wymianie zda\u0144 dochodzi do bijatyki
+      w trakcie, kt\xF3rej desmond og\u0142usza jednego z obcokrajowc\xF3w jednak
+      samemu zostaje powalony przez 2 z nich kt\xF3ry ucieka w kierunku g\u0142\xF3wnego
+      wyj\u015Bcia. "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: ec2732d7-ed9f-490a-923d-913b92bdb01c
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 44418, y: 5097}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: ec2732d7-ed9f-490a-923d-913b92bdb01c
+    <Name>k__BackingField: 67
+    <Text>k__BackingField: "Zestes wychodzi z pokoju ch\u0142opca nie zdaj\u0105c
+      sobie sprawy z zaistnia\u0142ej sytuacji. Jednak dochodz\u0105 go krzyki Desmonda
+      pr\xF3buj\u0105cego zatrzyma\u0107 jednego z ombryjczyk\xF3w"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 74114d78-8847-4e23-8f56-ef9451da582e
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 45103, y: 5098}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 74114d78-8847-4e23-8f56-ef9451da582e
+    <Name>k__BackingField: 68
+    <Text>k__BackingField: "Ombryjczyk Biegn\u0105c napotyka na Gerviego, kt\xF3ry
+      zorientowawszy si\u0119 \u017Ce na polu nie ma zestesa wr\xF3ci\u0142 do \u015Brodka
+      i zamyka\u0142 w\u0142a\u015Bnie g\u0142\xF3wne drzwi."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: daa46c5c-8233-40fc-8b3b-27086bd8ef8b
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 45804, y: 5098}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: daa46c5c-8233-40fc-8b3b-27086bd8ef8b
+    <Name>k__BackingField: 69
+    <Text>k__BackingField: "Uciekinier sprzedaje mu fange na \u0142eb i \u0142amie
+      mu nos po czym pr\xF3buj\u0119 otworzy\u0107 spowrotem wrota korzystaj\u0105c
+      z p\u0119ku kluczy"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 4d4d6fb0-5336-40a4-a82b-f85973b2f822
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 46482, y: 5102}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 4d4d6fb0-5336-40a4-a82b-f85973b2f822
+    <Name>k__BackingField: 70
+    <Text>k__BackingField: "wtedy jhednak z korytarza wychodzi Zestes, kt\xF3ry wbija
+      kolesiowi strzykawk\u0119 z jakim\u015B shitem w szyje w ten spos\xF3b powstrzymuj\u0105c
+      ucieczk\u0119"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 7e21502e-f1ee-4a9d-8dac-9b83cb77125f
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 47136, y: 5103}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 7e21502e-f1ee-4a9d-8dac-9b83cb77125f
+    <Name>k__BackingField: 71
+    <Text>k__BackingField: dobiega do nich Desmond i zabezpiecza ombryjczyka
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 884cf8b1-6134-4663-9239-e23e765ae6a0
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 47799, y: 5102}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 884cf8b1-6134-4663-9239-e23e765ae6a0
+    <Name>k__BackingField: 72
+    <Text>k__BackingField: "Zestes na szybko nastawia nos gerviemu po czym biegnie
+      do gabinetu obejrzec cia\u0142o Marii"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: e0b4e8f8-0373-4aec-a6d9-d73b0fa4a0c1
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 48455, y: 5103}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: e0b4e8f8-0373-4aec-a6d9-d73b0fa4a0c1
+    <Name>k__BackingField: 73
+    <Text>k__BackingField: "Gervi wraca do pokoju Marii a desmond zamyka w lochu
+      obu Ombryjczyk\xF3w"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: b39df7e2-34ba-489b-9b2e-e4506fbc4cba
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 49117, y: 5104}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: b39df7e2-34ba-489b-9b2e-e4506fbc4cba
+    <Name>k__BackingField: 74
+    <Text>k__BackingField: "Zestes i Gervi docieraj\u0105 do komnat przerywaj\u0105c
+      alaricowi przeszukiwanie. Zestes Zaczyna zabezpiecza\u0107 cia\u0142o natomiast
+      Gerviemu Alaric nakazuj\u0119 doprowadzi\u0107 si\u0119 do porz\u0105dku po
+      czym wezwa\u0107 do posiad\u0142o\u015Bci inspektorat."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: b231fcfc-ad52-4353-8430-5de369c12926
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 49773, y: 5103}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: b231fcfc-ad52-4353-8430-5de369c12926
+    <Name>k__BackingField: 75
+    <Text>k__BackingField: "Po chwili do gabinetu dociera 2 kap\u0142an\xF3w kt\xF3rzy
+      pomagaj\u0105 ostatecznie przenie\u015B\u0107 cia\u0142o do kaplicy. Alaric
+      towarzyszy im i upewnia sie \u017Ce gabinet jest zamkniety"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 4c18fca1-a9e7-4ff7-8ace-528ebf948470
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 50430, y: 5105}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 4c18fca1-a9e7-4ff7-8ace-528ebf948470
+    <Name>k__BackingField: 76
+    <Text>k__BackingField: "W tym samym czasie w kt\xF3rym dzia\u0142y sie poprzednie
+      wydarzenia w oddzielnym skrzydle budynku do kt\xF3rego wracaj\u0105 szlachcice
+      i s\u0142u\u017Cba (szlachta pietro s\u0142u\u017Cba parter) Balon upewnia
+      si\u0119 \u017Ce wszyscy trafili do swoich komnat po czym zaczyna pe\u0142ni\u0107
+      warte na korytarzu z kt\xF3rego widzi wszystkie drzwi na 1 pi\u0119trze"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 175f047e-ff4d-41bf-ae72-f9a92ac81eb5
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 51096, y: 5110}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 66e99c21-d923-4ace-95e2-b52f74071301
+    <Name>k__BackingField: 78
+    <Text>k__BackingField: "Do Balona na \u017Cyczenie Reysa do\u0142acza Ute, kt\xF3ry
+      tak\u017Ce obserwuje korytarz."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: e11ca33a-cb9d-43a5-a0f2-2ad15917bb91
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 52421, y: 5115}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: e11ca33a-cb9d-43a5-a0f2-2ad15917bb91
+    <Name>k__BackingField: 79
+    <Text>k__BackingField: "Ochroniarze nie pa\u0142aj\u0105 do siebie sympatia i
+      siebie pilnuja r\xF3wnie dobrze co i wszystkich drzwi. "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: ed7d4bc1-29e5-4634-a92e-a505595cfdf2
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 53098, y: 5116}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: ed7d4bc1-29e5-4634-a92e-a505595cfdf2
+    <Name>k__BackingField: 80
+    <Text>k__BackingField: "Reys po wej\u015Bciu do sypialni dostrzega Abigail i
+      w\u015Bciek\u0142y zaczyna j\u0105 bi\u0107 b\u0119d\u0105c przekonanym \u017Ce
+      to ona zabi\u0142a Marie"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 00da5db6-f86b-4d96-9f0a-20290d608efd
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 53753, y: 5118}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 175f047e-ff4d-41bf-ae72-f9a92ac81eb5
+    <Name>k__BackingField: 77
+    <Text>k__BackingField: "Weln dokonuje bli\u017Aniaczych czynno\u015Bci na parterze
+      jednak on mocniej zwi\u0105zany relacjami z lud\u017Ami skupia s\u0142u\u017Cbe
+      w kuchni gdzie ta dyskutuje nad wydarzeniami tego wieczoru. (W\u015Br\xF3d
+      s\u0142u\u017Cby brakuje Abigail i ute - znajduj\u0105 si\u0119 oni w sypialni
+      Coraxa i dyskutowali o tym co dziewczyna zaobserwowa\u0142a w gabinecie)"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 66e99c21-d923-4ace-95e2-b52f74071301
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 51755, y: 5112}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 00da5db6-f86b-4d96-9f0a-20290d608efd
+    <Name>k__BackingField: 81
+    <Text>k__BackingField: "Po interwencji ute uspokaja si\u0119 jednak na tyle \u017Ce
+      wys\u0142uchuje wersji dziewczyny (Tak ute wr\xF3ci\u0142 do komnaty s\u0142ysz\u0105c
+      d\u017Awi\u0119ki z niej dobiegaj\u0105ce) (Btw zapewne nie tylko on te d\u017Awi\u0119ki
+      s\u0142ysza\u0142)"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 0c102f4b-bad6-4d3d-8bec-f13cb7b1cd7a
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 54409, y: 5121}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 0c102f4b-bad6-4d3d-8bec-f13cb7b1cd7a
+    <Name>k__BackingField: 82
+    <Text>k__BackingField: "Jak dana posta\u0107 sp\u0119dza reszte wieczoru aka
+      nocy:\nAlaric - \nOberon\nTw\xF3j tata - ty mi powiedz\nJa - \u015Api\u0119\n"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 55059, y: 5123}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 8a677ccb-fe32-4831-9988-01dfb3957fc9
+    <Name>k__BackingField: 58
+    <Text>k__BackingField: "Alaric widz\u0105c co si\u0119 sta\u0142o po wst\u0119pnym
+      szoku nakazuje wszystkim uda\u0107 si\u0119 do swych komnat "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: e0ff1e49-c4cd-4d2d-8d24-a5a66efe6da1
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 39115, y: 5073}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 437e2c42-a8d4-4aa0-bd34-e1a514d7f1fa
+    <Name>k__BackingField: 60
+    <Text>k__BackingField: "Balon ma za zadanie pilnowa\u0107 szlachcic\xF3w "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 23102239-8a8a-49e3-8a26-3b5920312dd7
+    <GroupID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 40441, y: 5078}
     <ExposedProperties>k__BackingField: []
   <ExposedProperties>k__BackingField:
   - Name: Orion w Valerii
@@ -2943,5 +3241,30 @@ MonoBehaviour:
       - 54
       - 55
       - 56
-      - 57
       - 50
+      - 57
+      - 59
+      - 61
+      - 63
+      - 62
+      - 64
+      - 65
+      - 66
+      - 67
+      - 68
+      - 69
+      - 70
+      - 71
+      - 72
+      - 73
+      - 74
+      - 75
+      - 76
+      - 78
+      - 79
+      - 80
+      - 77
+      - 81
+      - 82
+      - 58
+      - 60
