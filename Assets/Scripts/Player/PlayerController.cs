@@ -12,6 +12,7 @@ using UnityEngine.Windows;
 public class PlayerController : MonoBehaviourSingleton<PlayerController>
 {
     [NonSerialized] public Vector2 destination;
+    [NonSerialized] public Tilemap map;
 
     [SerializeField] private InputSystem _inputSystem;
     [SerializeField] private NavMeshAgent _agent;
@@ -20,8 +21,6 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
     [SerializeField] private Transform _body;
     [SerializeField] private Animator _animator;
     
-
-    public Tilemap map;
 
     private bool _isGointToHaveInteraction = false;
     private SampleInteraction _interaction;
@@ -62,7 +61,7 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
     }
     private void Update()
     {
-        if (!_isPused)
+        if (!_isPused && Time.timeScale != 0)
         {
             Movement();
         }
@@ -182,6 +181,11 @@ public class PlayerController : MonoBehaviourSingleton<PlayerController>
     private void TooglePauseMenu()
     {
         PauseMenu.SwitchPause();
+        
+    }
+    public void ChangePause(bool pauseState)
+    {
+        _isPused = pauseState;
     }
     #endregion
 }

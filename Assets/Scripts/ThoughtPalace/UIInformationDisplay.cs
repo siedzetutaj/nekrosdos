@@ -15,7 +15,8 @@ public class UIInformationDisplay : MonoBehaviourSingleton<UIInformationDisplay>
     [SerializeField] private UiThoughtPanel _thoughtPanel;
     [SerializeField] private Transform _draggedParent;
     [SerializeField] private Camera _mainCamera;
-    [SerializeField] private List<InformationPrefabData> AllUnlockedThoughts = new();
+    
+    public List<InformationPrefabData> AllUnlockedThoughts = new();
     
 
     public void Initialize()
@@ -26,14 +27,14 @@ public class UIInformationDisplay : MonoBehaviourSingleton<UIInformationDisplay>
     public void Start()
     {
         _mainCamera = Camera.main;
-#if UNITY_EDITOR
-        foreach (TPThoughtSO thought in _allThoughtsSO.AllThoughts)
-        {
-            GameObject Information = Instantiate(_informationPrefab, _content);
-            InformationPrefabData informationData = Information.GetComponent<InformationPrefabData>();
-            informationData.Initialize(thought, _descriptionTMP, _draggedParent, _thoughtPanel, this, _mainCamera);
-        }
-#endif
+//#if UNITY_EDITOR
+//        foreach (TPThoughtSO thought in _allThoughtsSO.AllThoughts)
+//        {
+//            GameObject Information = Instantiate(_informationPrefab, _content);
+//            InformationPrefabData informationData = Information.GetComponent<InformationPrefabData>();
+//            informationData.Initialize(thought, _descriptionTMP, _draggedParent, _thoughtPanel, this, _mainCamera);
+//        }
+//#endif
     }
     public void UnlockThoughtInTPPanel(TPThoughtSO thought)
     {
@@ -43,6 +44,14 @@ public class UIInformationDisplay : MonoBehaviourSingleton<UIInformationDisplay>
             InformationPrefabData informationData = Information.GetComponent<InformationPrefabData>();
             AllUnlockedThoughts.Add(informationData);
             informationData.Initialize(thought, _descriptionTMP, _draggedParent, _thoughtPanel, this, _mainCamera);
+        }
+    }
+
+    public void LoadThoughts(List<InformationPrefabData> thoughtsToLoad)
+    {
+        foreach(InformationPrefabData thought in thoughtsToLoad)
+        {
+            Debug.Log(thought);
         }
     }
 }
