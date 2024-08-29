@@ -5,10 +5,14 @@ using UnityEngine;
 [System.Serializable]
 public class SaveData
 {
-    Vector3 position; 
-
+    public float[] _playerPosition = new float[3];
+    public List<InformationPrefabData> unlockedThoughts = new();
     public SaveData() 
     { 
-        position = PlayerController.Instance.gameObject.transform.position;
+        var position = PlayerController.Instance.gameObject.transform.position;
+        _playerPosition[0] = position.x;
+        _playerPosition[1] = position.y;
+        _playerPosition[2] = position.z;
+        unlockedThoughts = new List<InformationPrefabData>(UIInformationDisplay.Instance.AllUnlockedThoughts);
     }
 }
