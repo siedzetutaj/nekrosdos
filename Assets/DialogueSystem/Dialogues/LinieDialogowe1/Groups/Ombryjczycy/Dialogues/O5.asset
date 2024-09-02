@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: O5
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: O5
+  <Text>k__BackingField: "Zostaj\u0105 oni ugoszczeni w zachodnim skrzydle budynku
+    w pokoju wsp\xF3lnym na 1 pi\u0119trze i nie mog\u0105 opuszca\u0107 tej strefy"
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 2705071e7a30e194d97dfb2bf469a04e, type: 2}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 0
+  <ExposedProperties>k__BackingField: []

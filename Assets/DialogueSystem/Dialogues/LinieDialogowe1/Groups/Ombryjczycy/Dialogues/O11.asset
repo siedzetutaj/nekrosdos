@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: O11
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: O11
+  <Text>k__BackingField: "Ostatecznie jednak po pocz\u0105tkowej ostrej wymianie
+    zda\u0144 i mo\u017Ce nawet kr\xF3tkiej walce Panowie doszli do porozumienia
+    a Ute zyska\u0142 pieni\u0105dze w zamian za milczenie."
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 551d74568916ae048a2c70f33debd945, type: 2}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 0
+  <ExposedProperties>k__BackingField: []

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: O9
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: O9
+  <Text>k__BackingField: "Po kilku dniach w posiad\u0142o\u015Bci nauczyli si\u0119
+    oni jednak w miar\u0119 mo\u017Cliwo\u015Bci korzysta\u0107 z nieuwagi stra\u017Cnik\xF3w
+    czy przedstawicieli rodu Morteo i g\u0142\xF3wnie w godzinach nocnych byli wstanie
+    omija\u0107 stra\u017Ce i kr\u0119ci\u0107 si\u0119 po ca\u0142ym zachodnim skrzydle
+    jak i po ogrodzie. Choc nadal robili to ze spora ostroi\u017Cno\u015Bci\u0105."
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 39321b0c6274408498ab94f368274582, type: 2}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 0
+  <ExposedProperties>k__BackingField: []

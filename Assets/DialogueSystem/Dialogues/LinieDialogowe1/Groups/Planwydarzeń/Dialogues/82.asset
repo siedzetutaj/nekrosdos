@@ -14,7 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: 82
   <Text>k__BackingField: "Jak dana posta\u0107 sp\u0119dza reszte wieczoru aka nocy:\nAlaric
-    - \nOberon\nTw\xF3j tata - ty mi powiedz\nJa - \u015Api\u0119\n"
+    - Czuwa mad cia\u0142em Marii do p\xF3\u017Anych godzin nocnych po czym kieruj\u0119
+    si\u0119 do piwnicy zastanawiaj\u0105c sie sk\u0105d w pokoju wzi\u0105\u0142
+    si\u0119 ten pier\u015Bcie\u0144 - nast\u0119pnie zasypia \nOberon - czuwa nad
+    cia\u0142em Marii jednocze\u015Bnie pilnuj\u0105c by kap\u0142an nie pr\xF3bowa\u0142
+    nawi\u0105zywa\u0107 kontaktu z \u017Cadnym przedmiotem lub dusza \nWeln - po
+    upewnieniu sie \u017Ce s\u0142uzba \u015Bpi udaje si\u0119 do kruk\xF3w i wysy\u0142a
+    list z powiadomieniem o tym co wydarzy\u0142o si\u0119 w posiad\u0142o\u015Bci\nBalon
+    - patroluje posiad\u0142o\u015B\u0107 upewniaj\u0105c si\u0119 \u017Ce nikt jej
+    nie opu\u015Bci\nDesmond - To samo\nS\u0142u\u017Cba \u015Bpi\nElira \u015Bpi
+    wraz ze swoj\u0105 pokoj\xF3wk\u0105\nSzlachcice \u015Bpia\nGervi przygotowywuje
+    powiadomienie kt\xF3re p\xF3\u017Aniej wysy\u0142a Weln i idzie spa\u0107\nOmbryjczycy
+    s\u0105 w celi\nZestes odes\u0142any zosta\u0142 do swojej chaty by przygotowa\u0107
+    z ro\u015Blin odpowiednie oleje potrzebne do pogrzebu Marii i utrzymaniu jej
+    cia\u0142a w dobrym stanie\n"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
     <NextDialogue>k__BackingField: {fileID: 0}

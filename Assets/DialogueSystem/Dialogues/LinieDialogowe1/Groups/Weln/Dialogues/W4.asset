@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: W4
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: W4
+  <Text>k__BackingField: "To on otrzyma\u0142 wiadomo\u015B\u0107 od ombryjczyk\xF3w
+    o ich obecno\u015Bci na terenach Morteo. Oczywi\u015Bcie nie wiedzia\u0142 co
+    jest w wiadomo\u015Bci jednak ju\u017C wtedy przyku\u0142 jego uwag\u0119 nieznany
+    mu dot\u0105d ptak, kt\xF3ry t\u0105 wiadomo\u015B\u0107 dostarczy\u0142. "
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7be335c36f399fd41be17bafcf0160e7, type: 2}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 0
+  <ExposedProperties>k__BackingField: []
