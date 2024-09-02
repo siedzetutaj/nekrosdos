@@ -49,16 +49,16 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 5355, y: 5924}
   - <ID>k__BackingField: c3cb2968-3f48-4505-92ae-aab27a5c7823
     <Name>k__BackingField: Abigail
-    <Position>k__BackingField: {x: 4991.9995, y: 5923}
+    <Position>k__BackingField: {x: 4992, y: 5923}
   - <ID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
     <Name>k__BackingField: Gervi
-    <Position>k__BackingField: {x: 4643, y: 5913}
+    <Position>k__BackingField: {x: 1301, y: 7344.0005}
   - <ID>k__BackingField: 6f67f922-a80f-4526-9dfa-cef5029eaf97
     <Name>k__BackingField: Balon
     <Position>k__BackingField: {x: 1685, y: 5906}
   - <ID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
     <Name>k__BackingField: Zestes
-    <Position>k__BackingField: {x: 2019.0001, y: 5905}
+    <Position>k__BackingField: {x: 2019, y: 5905}
   - <ID>k__BackingField: 44df2e91-c3c5-448e-b075-aa59186487ca
     <Name>k__BackingField: Elira
     <Position>k__BackingField: {x: 2346, y: 5905}
@@ -73,7 +73,7 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 2998, y: 5903}
   - <ID>k__BackingField: b17df2db-9957-4bad-965d-8b3ca70acddb
     <Name>k__BackingField: Virion
-    <Position>k__BackingField: {x: 3326.9995, y: 5904}
+    <Position>k__BackingField: {x: 3327, y: 5904}
   - <ID>k__BackingField: aa8c7137-665f-467d-94d9-a468718ffb6c
     <Name>k__BackingField: Reys
     <Position>k__BackingField: {x: 3639, y: 5900}
@@ -3269,10 +3269,10 @@ MonoBehaviour:
     <Text>k__BackingField: Dialogue text.
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 4eb1e2ff-b09f-4f94-bbcd-74a0d362439f
     <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 4668, y: 5972}
+    <Position>k__BackingField: {x: 1326, y: 7408}
     <ExposedProperties>k__BackingField: []
   - <ID>k__BackingField: 043503d4-176d-4bcd-8359-41de157b6e72
     <Name>k__BackingField: B1
@@ -3643,25 +3643,77 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1971, y: 6523}
     <ExposedProperties>k__BackingField: []
-  <ExposedProperties>k__BackingField:
-  - Name: Orion w Valerii
-    OldName: Orion w Valerii
-    Value: 0
-  - Name: Informacja o ludziach z Ombrii
-    OldName: Informacja o ludziach z Ombrii
-    Value: 0
-  - Name: "Alaric widzia\u0142 rytua\u0142"
-    OldName: "Alaric widzia\u0142 rytua\u0142"
-    Value: 0
-  - Name: "Alaric nie widzial rytua\u0142u"
-    OldName: "Alaric nie widzial rytua\u0142u"
-    Value: 0
-  - Name: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
-    OldName: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
-    Value: 0
-  - Name: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
-    OldName: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
-    Value: 0
+  - <ID>k__BackingField: 4eb1e2ff-b09f-4f94-bbcd-74a0d362439f
+    <Name>k__BackingField: wfE
+    <Text>k__BackingField: wenFO
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 035ceefa-7b41-4cb1-8ab2-7d0fe9af16dc
+    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1603, y: 7412}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 035ceefa-7b41-4cb1-8ab2-7d0fe9af16dc
+    <Name>k__BackingField: Fwe
+    <Text>k__BackingField: WF
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: bf5ed46a-ab9d-4121-a4c2-14057c9ebb78
+    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1882, y: 7412}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: bf5ed46a-ab9d-4121-a4c2-14057c9ebb78
+    <Name>k__BackingField: FE
+    <Text>k__BackingField: FWE
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: d06e0bbd-f660-4b5b-a98d-a2575ca628d1
+    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2158, y: 7410}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 99dd5d1a-0b9d-4cd7-800d-53f2987526b2
+    <Name>k__BackingField: fwef
+    <Text>k__BackingField: fWE
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 28676f9e-ffd9-4caf-a044-2516f2376d89
+    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2975, y: 7408}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 28676f9e-ffd9-4caf-a044-2516f2376d89
+    <Name>k__BackingField: DialogueName
+    <Text>k__BackingField: WE
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3264, y: 7404}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: a5135b6c-70f3-4a36-bb3c-1df928ec2c25
+    <Name>k__BackingField: gerv
+    <Text>k__BackingField: FWe
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 99dd5d1a-0b9d-4cd7-800d-53f2987526b2
+    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2706, y: 7403}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: d06e0bbd-f660-4b5b-a98d-a2575ca628d1
+    <Name>k__BackingField: egrg
+    <Text>k__BackingField: fw
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: a5135b6c-70f3-4a36-bb3c-1df928ec2c25
+    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2436, y: 7408}
+    <ExposedProperties>k__BackingField: []
+  <ExposedProperties>k__BackingField: []
   <OldGroupNames>k__BackingField:
   - "Podr\xF3\u017CW\u015Anierzycy"
   - "PrzybycieDoPosiad\u0142o\u015Bci"
@@ -3979,6 +4031,13 @@ MonoBehaviour:
     - Key: Gervi
       Value:
       - G1
+      - wfE
+      - Fwe
+      - FE
+      - fwef
+      - DialogueName
+      - gerv
+      - egrg
     - Key: Balon
       Value:
       - B1
