@@ -47,11 +47,23 @@ public class UIInformationDisplay : MonoBehaviourSingleton<UIInformationDisplay>
         }
     }
 
-    public void LoadThoughts(List<InformationPrefabData> thoughtsToLoad)
+    public void LoadThoughts(List<TPThoughtSO> thoughtsToLoad)
     {
-        foreach(InformationPrefabData thought in thoughtsToLoad)
+        foreach(InformationPrefabData thought in AllUnlockedThoughts)
         {
-            Debug.Log(thought);
+            RemovethoughInTPPanel(thought);
+        }
+        AllUnlockedThoughts.Clear();
+        foreach (TPThoughtSO thought in thoughtsToLoad)
+        {
+            UnlockThoughtInTPPanel(thought);
+        }
+    }
+    public void RemovethoughInTPPanel(InformationPrefabData thought)
+    {
+        if (AllUnlockedThoughts.FirstOrDefault(x => x.MyThought == thought.MyThought) != null) 
+        {
+            Destroy(thought.gameObject);
         }
     }
 }

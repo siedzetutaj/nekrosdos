@@ -42,8 +42,7 @@ public class PauseMenu : MonoBehaviourSingleton<PauseMenu>
         Vector3 pos = new Vector3(data._playerPosition[0], data._playerPosition[1], data._playerPosition[2]);
         _playerController.gameObject.transform.position = pos;
 
-        UIInformationDisplay.Instance.AllUnlockedThoughts = new List<InformationPrefabData>(data.unlockedThoughts);
-        UIInformationDisplay.Instance.LoadThoughts(data.unlockedThoughts);
+        UIInformationDisplay.Instance.LoadThoughts(data.unlockedThoughtsSO);
     
     }
     public void SettingsButton()

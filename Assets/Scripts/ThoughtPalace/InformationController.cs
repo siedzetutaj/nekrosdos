@@ -58,7 +58,7 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
         }
         #endregion
         #region Right Click
-        else if (!_isInInformation && !ThoughtPanel.isCreatingLine && rightClick)
+        else if (!_isInInformation && !ThoughtPanel.isCreatingLine && rightClick && !ThoughtPanel.isDraggingThought)
         {
             var nodesInGroup = ThoughtPanel.GetNodesInGroup(ThoughtNodeGuid);
             Debug.Log($"Nody w tej samej grupie co {ThoughtNodeGuid}");
