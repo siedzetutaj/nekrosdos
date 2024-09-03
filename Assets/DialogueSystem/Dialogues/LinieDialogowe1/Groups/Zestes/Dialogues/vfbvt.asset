@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: FE
+  m_Name: vfbvt
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: FE
-  <Text>k__BackingField: "W dniu morderstwa uczestniczy\u0142 on w\u0142a\u015Bnie
-    w jednym z takich spotka\u0144 gdzie g\u0142\xF3wnie reprezentowa\u0142 kandydat\xF3w
-    kt\xF3rzy nie mogli pojawi\u0107 si\u0119 w go\u015Bcinie osobi\u015Bcie a jedynie
-    przesy\u0142ali swe warunki listownie"
+  <DialogueName>k__BackingField: vfbvt
+  <Text>k__BackingField: "W dniu zab\xF3jstwa z samego rana uda\u0142 si\u0119 do
+    szklarnii gdzie hoduje swe co bardziej niezwyk\u0142e gatunki ro\u015Blin po
+    czym wydobywa\u0142 z nich potrzebne mu sk\u0142adniki"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9ce43b608849b9d4f93cd17cfd4ef374, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 38e836a2866bdfc458684b4946b7defa, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

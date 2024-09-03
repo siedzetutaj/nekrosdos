@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: G1
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: G1
-  <Text>k__BackingField: Dialogue text.
+  <Text>k__BackingField: "Gervi zajmuj\u0119 si\u0119 sprawami prawnymi jak iksi\u0119gowo\u015Bci\u0105
+    wposiad\u0142o\u015Bci. Jest g\u0142\xF3wnym doradcom Alarica i to w\u0142a\u015Bnie
+    znim sp\u0119dza najwi\u0119cej czasu. Nie jest on zbyt lubiany gdy\u017C cechuj\u0119
+    si\u0119 wyj\u0105tkow\u0105 zarozumia\u0142o\u015Bci\u0105 jednak nie wynika
+    ona z niczego."
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: b660a5aeb61f82a41ba1528e60f338fe, type: 2}

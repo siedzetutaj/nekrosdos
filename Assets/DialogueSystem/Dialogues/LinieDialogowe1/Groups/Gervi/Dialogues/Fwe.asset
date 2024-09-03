@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Fwe
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: Fwe
-  <Text>k__BackingField: WF
+  <Text>k__BackingField: "przed spotkaniami dotycz\u0105cymi za m\u0105\u017Cp\xF3j\u015Bcia
+    przeprowadzi\u0142 kilka rozm\xF3w pr\xF3buj\u0105c zmyli\u0107 Viriona Sygila
+    co do prawdziwej intencji wizyty obecnego w budynku gubernatora Hostesa"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: d72651f6417c7b145b4ce7072439d992, type: 2}

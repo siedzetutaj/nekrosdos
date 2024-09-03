@@ -52,13 +52,13 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 4992, y: 5923}
   - <ID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
     <Name>k__BackingField: Gervi
-    <Position>k__BackingField: {x: 1301, y: 7344.0005}
+    <Position>k__BackingField: {x: 1314.9995, y: 7353.9995}
   - <ID>k__BackingField: 6f67f922-a80f-4526-9dfa-cef5029eaf97
     <Name>k__BackingField: Balon
     <Position>k__BackingField: {x: 1685, y: 5906}
   - <ID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
     <Name>k__BackingField: Zestes
-    <Position>k__BackingField: {x: 2019, y: 5905}
+    <Position>k__BackingField: {x: 1321, y: 7734.0005}
   - <ID>k__BackingField: 44df2e91-c3c5-448e-b075-aa59186487ca
     <Name>k__BackingField: Elira
     <Position>k__BackingField: {x: 2346, y: 5905}
@@ -3264,16 +3264,6 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 5017, y: 5982}
     <ExposedProperties>k__BackingField: []
-  - <ID>k__BackingField: f3bb5ddb-a525-4e78-9212-59a76aeb5d25
-    <Name>k__BackingField: G1
-    <Text>k__BackingField: Dialogue text.
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 4eb1e2ff-b09f-4f94-bbcd-74a0d362439f
-    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1326, y: 7408}
-    <ExposedProperties>k__BackingField: []
   - <ID>k__BackingField: 043503d4-176d-4bcd-8359-41de157b6e72
     <Name>k__BackingField: B1
     <Text>k__BackingField: Dialogue text.
@@ -3283,16 +3273,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 6f67f922-a80f-4526-9dfa-cef5029eaf97
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1710, y: 5965}
-    <ExposedProperties>k__BackingField: []
-  - <ID>k__BackingField: c3c0f08d-c956-4023-8f13-df1edd69315c
-    <Name>k__BackingField: Z1
-    <Text>k__BackingField: Dialogue text.
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
-    <GroupID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2044, y: 5964}
     <ExposedProperties>k__BackingField: []
   - <ID>k__BackingField: db3996b0-87ed-4ee9-9b46-0af10410c5ac
     <Name>k__BackingField: OB1
@@ -3643,35 +3623,19 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1971, y: 6523}
     <ExposedProperties>k__BackingField: []
-  - <ID>k__BackingField: 4eb1e2ff-b09f-4f94-bbcd-74a0d362439f
-    <Name>k__BackingField: wfE
-    <Text>k__BackingField: wenFO
+  - <ID>k__BackingField: f3bb5ddb-a525-4e78-9212-59a76aeb5d25
+    <Name>k__BackingField: G1
+    <Text>k__BackingField: "Gervi zajmuj\u0119 si\u0119 sprawami prawnymi jak iksi\u0119gowo\u015Bci\u0105
+      wposiad\u0142o\u015Bci. Jest g\u0142\xF3wnym doradcom Alarica i to w\u0142a\u015Bnie
+      znim sp\u0119dza najwi\u0119cej czasu. Nie jest on zbyt lubiany gdy\u017C cechuj\u0119
+      si\u0119 wyj\u0105tkow\u0105 zarozumia\u0142o\u015Bci\u0105 jednak nie wynika
+      ona z niczego."
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 035ceefa-7b41-4cb1-8ab2-7d0fe9af16dc
+      <NodeID>k__BackingField: 4eb1e2ff-b09f-4f94-bbcd-74a0d362439f
     <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1603, y: 7412}
-    <ExposedProperties>k__BackingField: []
-  - <ID>k__BackingField: 035ceefa-7b41-4cb1-8ab2-7d0fe9af16dc
-    <Name>k__BackingField: Fwe
-    <Text>k__BackingField: WF
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: bf5ed46a-ab9d-4121-a4c2-14057c9ebb78
-    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1882, y: 7412}
-    <ExposedProperties>k__BackingField: []
-  - <ID>k__BackingField: bf5ed46a-ab9d-4121-a4c2-14057c9ebb78
-    <Name>k__BackingField: FE
-    <Text>k__BackingField: FWE
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: d06e0bbd-f660-4b5b-a98d-a2575ca628d1
-    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2158, y: 7410}
+    <Position>k__BackingField: {x: 1340, y: 7413}
     <ExposedProperties>k__BackingField: []
   - <ID>k__BackingField: 99dd5d1a-0b9d-4cd7-800d-53f2987526b2
     <Name>k__BackingField: fwef
@@ -3681,39 +3645,284 @@ MonoBehaviour:
       <NodeID>k__BackingField: 28676f9e-ffd9-4caf-a044-2516f2376d89
     <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2975, y: 7408}
+    <Position>k__BackingField: {x: 5307, y: 7421}
     <ExposedProperties>k__BackingField: []
-  - <ID>k__BackingField: 28676f9e-ffd9-4caf-a044-2516f2376d89
-    <Name>k__BackingField: DialogueName
-    <Text>k__BackingField: WE
+  - <ID>k__BackingField: 4eb1e2ff-b09f-4f94-bbcd-74a0d362439f
+    <Name>k__BackingField: wfE
+    <Text>k__BackingField: "Gervi wi\u0119kszo\u015B\u0107 spokojnych dni w posiad\u0142o\u015Bci
+      sp\u0119dza w swoim biurze i reaguje ewentualnie na jakiekolwiek wezwania cz\u0142onk\xF3w
+      rodziny Morteo"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 035ceefa-7b41-4cb1-8ab2-7d0fe9af16dc
     <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 3264, y: 7404}
-    <ExposedProperties>k__BackingField: []
-  - <ID>k__BackingField: a5135b6c-70f3-4a36-bb3c-1df928ec2c25
-    <Name>k__BackingField: gerv
-    <Text>k__BackingField: FWe
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 99dd5d1a-0b9d-4cd7-800d-53f2987526b2
-    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2706, y: 7403}
+    <Position>k__BackingField: {x: 2030, y: 7419}
     <ExposedProperties>k__BackingField: []
   - <ID>k__BackingField: d06e0bbd-f660-4b5b-a98d-a2575ca628d1
     <Name>k__BackingField: egrg
-    <Text>k__BackingField: fw
+    <Text>k__BackingField: "To gervi odpowiedzialny jest za ustalenie posagu jaki
+      wniesie do ma\u0142\u017Ce\u0144stwa Elira czy te\u017C innych spraw organizacyjnych"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
       <NodeID>k__BackingField: a5135b6c-70f3-4a36-bb3c-1df928ec2c25
     <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2436, y: 7408}
+    <Position>k__BackingField: {x: 4377, y: 7415}
     <ExposedProperties>k__BackingField: []
-  <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 035ceefa-7b41-4cb1-8ab2-7d0fe9af16dc
+    <Name>k__BackingField: Fwe
+    <Text>k__BackingField: "przed spotkaniami dotycz\u0105cymi za m\u0105\u017Cp\xF3j\u015Bcia
+      przeprowadzi\u0142 kilka rozm\xF3w pr\xF3buj\u0105c zmyli\u0107 Viriona Sygila
+      co do prawdziwej intencji wizyty obecnego w budynku gubernatora Hostesa"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: bf5ed46a-ab9d-4121-a4c2-14057c9ebb78
+    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2798, y: 7419}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: a5135b6c-70f3-4a36-bb3c-1df928ec2c25
+    <Name>k__BackingField: gerv
+    <Text>k__BackingField: "po godzinie 14 zarz\u0105dzona zosta\u0142a przerwa w
+      obradach jednak Gervi nie m\xF3g\u0142 nacieszy\u0107 si\u0119 odpoczynkiem "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 99dd5d1a-0b9d-4cd7-800d-53f2987526b2
+    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5038, y: 7416}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 28676f9e-ffd9-4caf-a044-2516f2376d89
+    <Name>k__BackingField: vdfsv
+    <Text>k__BackingField: "przeprowadza\u0142 kolejn\u0105 rozmow\u0119 z Virionem
+      i Alariciem dotycz\u0105c\u0105 Hostesa i aspekt\xF3w prawno - finansowych
+      b\u0119d\u0105cych drugim z powod\xF3w dla kt\xF3ergo Virion odwiedzi\u0142
+      posiad\u0142o\u015B\u0107 "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: a289ce87-daf4-47d1-9a75-1696764ea4b7
+    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5742, y: 7416}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 7dd375dd-bc10-40be-865a-b59a544e7643
+    <Name>k__BackingField: weqf
+    <Text>k__BackingField: "nastepnie dziej\u0105 si\u0119 wydarzenia wymienione
+      od 57 punktu g\u0142\xF3wnej osi czasu"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7068, y: 7424}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: a289ce87-daf4-47d1-9a75-1696764ea4b7
+    <Name>k__BackingField: sdbdf
+    <Text>k__BackingField: "Po tych rozmowach niemal od razu rozpocz\u0119\u0142a
+      si\u0119 druga tura debat o losach Eliry"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 7dd375dd-bc10-40be-865a-b59a544e7643
+    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6396, y: 7419}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: c3c0f08d-c956-4023-8f13-df1edd69315c
+    <Name>k__BackingField: Z1
+    <Text>k__BackingField: "Zestes swe dni zazwyczaj sp\u0119dza w osamotnieniu dbaj\u0105c
+      o tereny wok\xF3\u0142 posiad\u0142o\u015Bci"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 7872d48a-85ff-4b63-96b5-d565c4cfa76d
+    <GroupID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1346, y: 7793}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 7872d48a-85ff-4b63-96b5-d565c4cfa76d
+    <Name>k__BackingField: vfbvt
+    <Text>k__BackingField: "W dniu zab\xF3jstwa z samego rana uda\u0142 si\u0119
+      do szklarnii gdzie hoduje swe co bardziej niezwyk\u0142e gatunki ro\u015Blin
+      po czym wydobywa\u0142 z nich potrzebne mu sk\u0142adniki"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: f2e83902-8ee0-40d3-a34a-2822645848d3
+    <GroupID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2027, y: 7797}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: f2e83902-8ee0-40d3-a34a-2822645848d3
+    <Name>k__BackingField: v2ve
+    <Text>k__BackingField: "W trakcie jego obecno\u015Bci na polu widzia\u0142 bawi\u0105cych
+      si\u0119 w okolicy dzieciak\xF3w i pilnuj\u0105ca ich opiekunk\u0119"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: b36c73a9-869b-4633-8a5f-7df396463603
+    <GroupID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2675, y: 7799}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: b36c73a9-869b-4633-8a5f-7df396463603
+    <Name>k__BackingField: sdavrewv
+    <Text>k__BackingField: "Ostatecznie uda\u0142 si\u0119 do swojego domku gdzie
+      doka\u0144cza\u0142 prace nad jednym ze swoich specyfik\xF3w"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 4b84cfe6-9456-4464-89be-2591ef6ba23e
+    <GroupID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3331, y: 7802}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 98403ed7-03bc-4e81-8c16-1d0687662ec1
+    <Name>k__BackingField: gbgfb
+    <Text>k__BackingField: "ostatecznie jednak nie doko\u0144czy\u0142 swego dzie\u0142a
+      tego dnia i by\u0142 zmuszony schowa\u0107 sw\xF3j \u015Brodfek poniewa\u017C
+      wezwano go spowodu kontuzji syna Lorda Lothiona"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 6cf30f1a-b1cd-4236-a3ba-1400f93a1b16
+    <GroupID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5293, y: 7812}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 6cf30f1a-b1cd-4236-a3ba-1400f93a1b16
+    <Name>k__BackingField: rfasd
+    <Text>k__BackingField: "uda\u0142 si\u0119 wi\u0119c do posiad\u0142o\u015Bci
+      i rozpocz\u0105\u0142 prac\u0119 nad  ustabilizowaniem stanu ch\u0142opaka"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: f02c6eff-4f1f-42e1-b067-55b5b31bda4e
+    <GroupID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5949, y: 7818}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: f02c6eff-4f1f-42e1-b067-55b5b31bda4e
+    <Name>k__BackingField: revcav
+    <Text>k__BackingField: "Ten mia\u0142 pono\u0107 dozna\u0107 jedynie lekkiego
+      st\u0142ucznia jednak Zestes po jego przebadaniu wykry\u0142 u niego objawy
+      - nazwa choroby -  pojawia si\u0119 ona gdy cz\u0142owiek szczeg\xF3lnie wra\u017Cliwy
+      na obdarzonych przebywa w ich towarzystwie jak i te\u017C ma z nimi bezpo\u015Bredni
+      kontakt"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 2f23b6d2-b02b-4412-b7a2-54f0154b463c
+    <GroupID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6614, y: 7823}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 2f23b6d2-b02b-4412-b7a2-54f0154b463c
+    <Name>k__BackingField: ervberv
+    <Text>k__BackingField: "aktualnie stan zdrowia ch\u0142opca jest w normie jednak
+      d\u0142u\u017Csza podobna ingerencja mog\u0142aby doprowadzi\u0107 do rozwojuy
+      choroby dlatego Zestes wyj\u0105tkowo bacznie zajmuje si\u0119 leczeniem ch\u0142opaka
+      jak i te\u017C musi dowiedzie\u0107 si\u0119 kto w otoczeniu ch\u0142opaka
+      posiada\u0142 dar."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: a7280717-02bc-4a40-a516-1df05f0e9cb4
+    <GroupID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7270, y: 7826}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: a7280717-02bc-4a40-a516-1df05f0e9cb4
+    <Name>k__BackingField: fqef
+    <Text>k__BackingField: "oczywi\u015Bcie by\u0142a to Elira o kt\xF3rej zdolno\u015Bciach
+      jednak wi\u0119kszo\u015B\u0107 domownik\xF3w jeszcze nie wie"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 2ff0cfed-74ec-42a3-97f4-da3686d7d6b8
+    <GroupID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7929, y: 7829}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 2ff0cfed-74ec-42a3-97f4-da3686d7d6b8
+    <Name>k__BackingField: feew
+    <Text>k__BackingField: "Zestes po dok\u0142adnych badaniach wykonanych ok\u0142adach
+      opuszcza ostatecznie pok\xF3j m\u0142odzie\u0144ca i s\u0142yszy krzyki"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 43740703-3540-481a-b06c-e4bd2c84f44c
+    <GroupID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8588, y: 7828}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 43740703-3540-481a-b06c-e4bd2c84f44c
+    <Name>k__BackingField: rewfvc
+    <Text>k__BackingField: "Dalszy ci\u0105g historii opisany w planie g\u0142\xF3wnym
+      od punktu - 69"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9237, y: 7835}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: e0c67dce-5914-4e70-a29a-2eaecd7fc2d2
+    <Name>k__BackingField: vczxv
+    <Text>k__BackingField: "Zestes jest zdania \u017Ce odpowiednio odseparowuj\u0105c
+      wyci\u0105g z tych kwiat\xF3w jest w stanie odnale\u017A\u0107 lekarstwo na
+      powodowane przez niego schorzenia"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 98403ed7-03bc-4e81-8c16-1d0687662ec1
+    <GroupID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4642, y: 7807}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 4b84cfe6-9456-4464-89be-2591ef6ba23e
+    <Name>k__BackingField: fqdas
+    <Text>k__BackingField: "By\u0142y to badania nad kwiatem kt\xF3ry wymy\u015Bli\u0142
+      jasek"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: e0c67dce-5914-4e70-a29a-2eaecd7fc2d2
+    <GroupID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3984, y: 7802}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: bf5ed46a-ab9d-4121-a4c2-14057c9ebb78
+    <Name>k__BackingField: FE
+    <Text>k__BackingField: "W dniu morderstwa uczestniczy\u0142 on w\u0142a\u015Bnie
+      w jednym z takich spotka\u0144 gdzie g\u0142\xF3wnie reprezentowa\u0142 kandydat\xF3w
+      kt\xF3rzy nie mogli pojawi\u0107 si\u0119 w go\u015Bcinie osobi\u015Bcie a
+      jedynie przesy\u0142ali swe warunki listownie"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: d06e0bbd-f660-4b5b-a98d-a2575ca628d1
+    <GroupID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3591, y: 7416}
+    <ExposedProperties>k__BackingField: []
+  - <ID>k__BackingField: 579b1847-c74f-468a-afcf-793f4f3ac642
+    <Name>k__BackingField: "wa\u017Cne"
+    <Text>k__BackingField: "potrzebujemy jeszcze jednego spotkania na szcycxie czytaj
+      alaric Virion Lothion i Gervi po przerwie o 14 - ZAPAMI\u0118TAJ"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1401, y: 8307}
+    <ExposedProperties>k__BackingField: []
+  <ExposedProperties>k__BackingField:
+  - Name: Orion w Valerii
+    OldName: Orion w Valerii
+    Value: 0
+  - Name: Informacja o ludziach z Ombrii
+    OldName: Informacja o ludziach z Ombrii
+    Value: 0
+  - Name: "Alaric widzia\u0142 rytua\u0142"
+    OldName: "Alaric widzia\u0142 rytua\u0142"
+    Value: 0
+  - Name: "Alaric nie widzial rytua\u0142u"
+    OldName: "Alaric nie widzial rytua\u0142u"
+    Value: 0
+  - Name: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
+    OldName: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
+    Value: 0
+  - Name: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
+    OldName: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
+    Value: 0
   <OldGroupNames>k__BackingField:
   - "Podr\xF3\u017CW\u015Anierzycy"
   - "PrzybycieDoPosiad\u0142o\u015Bci"
@@ -3737,7 +3946,8 @@ MonoBehaviour:
   - Virion
   - Reys
   - Ute
-  <OldUngroupedNodeNames>k__BackingField: []
+  <OldUngroupedNodeNames>k__BackingField:
+  - "wa\u017Cne"
   <OldGroupedNodeNames>k__BackingField:
     list:
     - Key: "Podr\xF3\u017CW\u015Anierzycy"
@@ -4028,22 +4238,9 @@ MonoBehaviour:
     - Key: Abigail
       Value:
       - AB1
-    - Key: Gervi
-      Value:
-      - G1
-      - wfE
-      - Fwe
-      - FE
-      - fwef
-      - DialogueName
-      - gerv
-      - egrg
     - Key: Balon
       Value:
       - B1
-    - Key: Zestes
-      Value:
-      - Z1
     - Key: Oberon
       Value:
       - OB1
@@ -4089,3 +4286,30 @@ MonoBehaviour:
       - W16
       - W21
       - W5
+    - Key: Gervi
+      Value:
+      - G1
+      - fwef
+      - wfE
+      - egrg
+      - Fwe
+      - gerv
+      - vdfsv
+      - weqf
+      - sdbdf
+      - FE
+    - Key: Zestes
+      Value:
+      - Z1
+      - vfbvt
+      - v2ve
+      - sdavrewv
+      - gbgfb
+      - rfasd
+      - revcav
+      - ervberv
+      - fqef
+      - feew
+      - rewfvc
+      - vczxv
+      - fqdas

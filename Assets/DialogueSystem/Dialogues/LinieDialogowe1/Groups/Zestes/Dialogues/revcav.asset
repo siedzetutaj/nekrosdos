@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: FE
+  m_Name: revcav
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: FE
-  <Text>k__BackingField: "W dniu morderstwa uczestniczy\u0142 on w\u0142a\u015Bnie
-    w jednym z takich spotka\u0144 gdzie g\u0142\xF3wnie reprezentowa\u0142 kandydat\xF3w
-    kt\xF3rzy nie mogli pojawi\u0107 si\u0119 w go\u015Bcinie osobi\u015Bcie a jedynie
-    przesy\u0142ali swe warunki listownie"
+  <DialogueName>k__BackingField: revcav
+  <Text>k__BackingField: "Ten mia\u0142 pono\u0107 dozna\u0107 jedynie lekkiego st\u0142ucznia
+    jednak Zestes po jego przebadaniu wykry\u0142 u niego objawy - nazwa choroby
+    -  pojawia si\u0119 ona gdy cz\u0142owiek szczeg\xF3lnie wra\u017Cliwy na obdarzonych
+    przebywa w ich towarzystwie jak i te\u017C ma z nimi bezpo\u015Bredni kontakt"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9ce43b608849b9d4f93cd17cfd4ef374, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 84533fb2b2947974c8b8b1ed09919639, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
