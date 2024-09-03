@@ -14,7 +14,6 @@ public static class SaveSystem
 
         string saveData = JsonUtility.ToJson(data);
         File.WriteAllText(path, saveData);
-        
         //formatter.Serialize(stream, data);
         //stream.Close();
     }
