@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class LineManager : MonoBehaviourSingleton<LineManager>
 {
-    [SerializeField] private List<LineController> _lineControllers = new();
+    [SerializeField] public List<LineController> lineControllers = new();
 
     public void addLineController(LineController controller)
     {
-        _lineControllers.Add(controller);
+        lineControllers.Add(controller);
     }
     public void removeLineController(LineController controller)
     {
-            _lineControllers.Remove(controller);
+            lineControllers.Remove(controller);
     }
     public bool CheckIfLineExist(LineController controller)
     {
-        foreach (LineController lineController in _lineControllers)
+        foreach (LineController lineController in lineControllers)
         {
             if (lineController.connectionGuids.Equals(controller.connectionGuids))
             {

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -7,7 +8,7 @@ public class LineController : MonoBehaviour
 {
     public bool IsDraggedByMouse = true;
     public ConnectedThoughtsGuid connectionGuids;
-    
+
     [SerializeField] private UILineRenderer lineRenderer;
     [SerializeField] private PolygonCollider2D polygonCollider2D;
 
@@ -66,4 +67,9 @@ public class LineController : MonoBehaviour
         polygonCollider2D.SetPath(0, colliderPoints.ToArray());
     }
 
+    public (LineController, bool) AddLineControllerToDictionary(SerializableGuid guid)
+    {
+        bool isFirst = guid == connectionGuids.Id1;
+        return (this, isFirst);
+    }
 }

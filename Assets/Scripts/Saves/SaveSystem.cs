@@ -12,7 +12,7 @@ public static class SaveSystem
 
         SaveData data = new SaveData();
 
-        string saveData = JsonUtility.ToJson(data);
+        string saveData = JsonUtility.ToJson(data, true);
         File.WriteAllText(path, saveData);
         //formatter.Serialize(stream, data);
         //stream.Close();

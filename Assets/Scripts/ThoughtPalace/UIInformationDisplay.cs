@@ -16,7 +16,7 @@ public class UIInformationDisplay : MonoBehaviourSingleton<UIInformationDisplay>
     [SerializeField] private Transform _draggedParent;
     [SerializeField] private Camera _mainCamera;
     
-    public List<InformationPrefabData> AllUnlockedThoughts = new();
+    public List<InformationPrefabData> AllUnlockedInformations = new();
     
 
     public void Initialize()
@@ -38,32 +38,38 @@ public class UIInformationDisplay : MonoBehaviourSingleton<UIInformationDisplay>
     }
     public void UnlockThoughtInTPPanel(TPThoughtSO thought)
     {
-        if (!AllUnlockedThoughts.Any(x => x.MyThought == thought))
+        if (!AllUnlockedInformations.Any(x => x.MyThought == thought))
         {
             GameObject Information = Instantiate(_informationPrefab, _content);
             InformationPrefabData informationData = Information.GetComponent<InformationPrefabData>();
-            AllUnlockedThoughts.Add(informationData);
+            AllUnlockedInformations.Add(informationData);
             informationData.Initialize(thought, _descriptionTMP, _draggedParent, _thoughtPanel, this, _mainCamera);
         }
     }
 
-    public void LoadThoughts(List<TPThoughtSO> thoughtsToLoad)
+    public void LoadInformations(List<TPThoughtSO> tinformationsToLoad)
     {
-        foreach(InformationPrefabData thought in AllUnlockedThoughts)
+        foreach(InformationPrefabData information in AllUnlockedInformations)
         {
-            RemovethoughInTPPanel(thought);
+            RemoveInformation(information);
         }
-        AllUnlockedThoughts.Clear();
-        foreach (TPThoughtSO thought in thoughtsToLoad)
+        AllUnlockedInformations.Clear();
+        foreach (TPThoughtSO infomration in tinformationsToLoad)
         {
-            UnlockThoughtInTPPanel(thought);
+            UnlockThoughtInTPPanel(infomration);
         }
     }
-    public void RemovethoughInTPPanel(InformationPrefabData thought)
+    public void RemoveInformation(InformationPrefabData information)
     {
-        if (AllUnlockedThoughts.FirstOrDefault(x => x.MyThought == thought.MyThought) != null) 
+        if (AllUnlockedInformations.FirstOrDefault(x => x.MyThought == information.MyThought) != null) 
         {
-            Destroy(thought.gameObject);
+            Destroy(information.gameObject);
         }
+    }
+    public InformationPrefabData ReturnBasicData()
+    {
+        InformationPrefabData informationData = new() ;
+        informationData.Initialize(null, _descriptionTMP, _draggedParent, _thoughtPanel, this, _mainCamera);
+        return informationData;
     }
 }

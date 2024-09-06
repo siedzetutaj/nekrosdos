@@ -1,12 +1,8 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using Unity.VisualScripting.Antlr3.Runtime;
-using UnityEditor.MemoryProfiler;
 using UnityEngine;
-using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.InputSystem;
 
 public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
@@ -18,24 +14,29 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
     [NonSerialized] public SerializableGuid FistID;
 
     [Header("Set up")]
+    [SerializeField] public UIInformationDisplay informationDisplay;
     [SerializeField] public TextMeshProUGUI descriptionTMP;
-    [SerializeField] public RectTransform ThoughtPanelTransform;
+    [SerializeField] public RectTransform ThoughtHolderTransform;
     [SerializeField] public RectTransform LineHolder;
     [SerializeField] public TPAllConnectionsSO ThoughtConnections;
+    [SerializeField] public GameObject linePrefab;
     //[SerializeField] public List<ConnectionList> PlayerThoughtConnections = new();
-    [SerializeField] private GameObject ThoughtPalaceContainer;
+    [SerializeField] public Transform draggedParent;
+    [SerializeField] private GameObject _thoughtPalaceContainer;
+    [SerializeField] private GameObject _thoughtPrefab;
+
 
     [Header("Raycast to line")]
     public GameObject dotPrefab; // Prefabrykat kropki
     [SerializeField] private Camera _uiCamera;
     [SerializeField] private LayerMask _uiLineLayerMask;
     [SerializeField] private InputSystem _inputSystem;
-    private bool hasClicked = false;
+    private bool _hasClicked = false;
 
     [Header("Debug")]
-    [SerializeField] public List<ConnectionList> connections = new();
+    public List<ConnectionList> connections = new();
     public SerializableDictionary<SerializableGuid, ConnectedNode> nodes = new SerializableDictionary<SerializableGuid, ConnectedNode>();
-    [SerializeField] public List<InformationController> createdThoughts = new();
+    public SerializableDictionary<SerializableGuid,InformationController> allCreatedThoughts = new();
 
     public void Initialize()
     {
@@ -43,7 +44,7 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
 
         _inputSystem = InputSystem.Instance;
         OnEnable();
-        ThoughtPalaceContainer.SetActive(false);
+        _thoughtPalaceContainer.SetActive(false);
     }
     private void OnEnable()
     {
@@ -173,11 +174,11 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
             }
         }
 
-        foreach (var thought in createdThoughts)
+        foreach (var thought in allCreatedThoughts)
         {
-            if (thought.ThoughtNodeGuid == connectionToRemove.Id1 || thought.ThoughtNodeGuid == connectionToRemove.Id2)
+            if (thought.Value.ThoughtNodeGuid == connectionToRemove.Id1 || thought.Value.ThoughtNodeGuid == connectionToRemove.Id2)
             {
-                thought.LineRenderers.Remove(line);
+                thought.Value.LineRenderers.Remove(line);
             }
         }
     }
@@ -236,34 +237,6 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
 
         connections = newConnections;
     }
-    // Pobiera wszystkie po³¹czenia dla danego node
-    private List<ConnectedThoughtsGuid> GetConnections(SerializableGuid nodeId)
-    {
-        var result = new List<ConnectedThoughtsGuid>();
-        foreach (var connectionList in connections)
-        {
-            result.AddRange(connectionList.thoughtsList.FindAll(c => c.Id1 == nodeId || c.Id2 == nodeId));
-        }
-        return result;
-    }
-    //// DFS do zbierania po³¹czeñ w grupie
-    //private void DFS(SerializableGuid nodeId, HashSet<SerializableGuid> visitedNodes, ConnectionList group, List<ConnectedThoughtsGuid> allConnections)
-    //{
-    //    visitedNodes.Add(nodeId);
-    //    foreach (var connection in allConnections)
-    //    {
-    //        if (connection.Id1 == nodeId && !visitedNodes.Contains(connection.Id2))
-    //        {
-    //            group.thoughtsList.Add(connection);
-    //            DFS(connection.Id2, visitedNodes, group, allConnections);
-    //        }
-    //        else if (connection.Id2 == nodeId && !visitedNodes.Contains(connection.Id1))
-    //        {
-    //            group.thoughtsList.Add(connection);
-    //            DFS(connection.Id1, visitedNodes, group, allConnections);
-    //        }
-    //    }
-    //}
     private bool ConnectionExists(SerializableGuid nodeId1, SerializableGuid nodeId2)
     {
         foreach (var group in connections)
@@ -291,7 +264,6 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
         }
         return null;
     }
-    // Pobiera listê identyfikatorów nodów w tej samej grupie co dany node
     public List<SerializableGuid> GetNodesInGroup(SerializableGuid nodeId)
     {
         var group = FindGroup(nodeId);
@@ -331,14 +303,14 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
     #region Other
     private void OnMouseLeftClickDown()
     {
-        if (isCreatingLine && !hasClicked)
+        if (isCreatingLine && !_hasClicked)
         {
             CancelDrawingLine();
         }
     }
     private void OnMouseLeftClickUp()
     {
-        hasClicked = false;
+        _hasClicked = false;
     }
     private void OnMouseRightClickDown()
     {
@@ -350,20 +322,19 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
     }
     private void OnMouseMiddleClickDown()
     {
-        if (!isDraggingThought && !hasClicked)
+        if (!isDraggingThought && !_hasClicked)
         {
             var line = DetectLine();
             if (line)
             {
                 DestoryLine(line);
             }
-            hasClicked = true;
+            _hasClicked = true;
         }
     }
     private void OnMouseMiddleClickUp()
     {
     }
-
     private LineController DetectLine()
     {
         Vector2 mousePosition = Mouse.current.position.ReadValue();
@@ -387,14 +358,34 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
         {
             DestoryLine(connection);
         }
-        createdThoughts.Remove(thought);
+        allCreatedThoughts.Remove(thought.ThoughtNodeGuid);
     }
     private void DestoryLine(LineController line)
     {
         RemoveConnection(line);
         Destroy(line.gameObject);
     }
-
+    public void LoadThoughts(List<ThoughtSaveData> data)
+    {
+        ResetData();
+        foreach (ThoughtSaveData thoughtSaveData in data)
+        {
+            GameObject thoughtObject = Instantiate(_thoughtPrefab, ThoughtHolderTransform);
+            thoughtObject.GetComponent<InformationPrefabData>().Initialize(thoughtSaveData.ThoughtSO, descriptionTMP, draggedParent, this, informationDisplay, _uiCamera); 
+            thoughtObject.GetComponent<InformationController>().LoadThought(thoughtSaveData);
+        }
+    }
+    private void ResetData()
+    {
+        //Destroying thoughts gameobjects and clearing lists
+        foreach(var thought in allCreatedThoughts)
+        {
+            Destroy(thought.Value.gameObject);
+        }
+        allCreatedThoughts.Clear();
+        nodes.Clear();
+        connections.Clear();
+    }
     #endregion
 }
 [System.Serializable]

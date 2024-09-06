@@ -12,7 +12,6 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     [SerializeField] public SerializableGuid ThoughtNodeGuid;
 
     [SerializeField] private GameObject _thoughtToCopy;
-    [SerializeField] private GameObject _linePrefab;
     [SerializeField] private RectTransform _recTransform;
 
     private Camera _mainCamera;
@@ -29,7 +28,10 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     [NonSerialized] public Transform DraggedParent;
     [NonSerialized] public UIInformationDisplay InformationDisplay;
     [NonSerialized] public List<LineController> Lines = new();
-
+    private void OnEnable()
+    {
+        
+    }
     public void Initialize(TPThoughtSO thought, TextMeshProUGUI descriptionTMP, Transform draggedParent, UiThoughtPanel thoughtPanel, UIInformationDisplay informationDisplay, Camera mainCamera)
     {
         Thought = thought;
@@ -148,16 +150,25 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
         draggedThoughtController._isInInformation = false;
         draggedThoughtController.ThoughtNodeGuid = Guid.NewGuid();
         ThoughtPanel.AddNode(draggedThoughtController.ThoughtNodeGuid, Thought.ID);
-        ThoughtPanel.createdThoughts.Add(draggedThoughtController);
+        ThoughtPanel.allCreatedThoughts.Add(draggedThoughtController.ThoughtNodeGuid,draggedThoughtController);
         OnPointerExit();
         InformationDisplay.isDraggingThought = true;
         Vector3 thoughtPos = _mainCamera.ScreenToWorldPoint(eventData.position);
         thoughtPos.z = -5;
         _draggedThought.transform.position = thoughtPos;
     }
+    public void LoadThought(ThoughtSaveData thoughtSaveData)
+    {
+        SetRectTransformToMiddle(gameObject);
+        gameObject.GetComponent<RectTransform>().anchoredPosition = thoughtSaveData.Position;
+        _isInInformation = false;
+        ThoughtNodeGuid = thoughtSaveData.Guid;
+        ThoughtPanel.AddNode(ThoughtNodeGuid, Thought.ID);
+        ThoughtPanel.allCreatedThoughts.Add(ThoughtNodeGuid, this);
+    }
     private void CreateBeginigLinePoint()
     {
-        GameObject go = Instantiate(_linePrefab, ThoughtPanel.LineHolder);
+        GameObject go = Instantiate(ThoughtPanel.linePrefab, ThoughtPanel.LineHolder);
         ThoughtPanel.firstThoughToConnect = this;
         ThoughtPanel.FistID = ThoughtNodeGuid;
         var lineController = go.GetComponent<LineController>();
@@ -208,7 +219,7 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     }
     private void EndDrag()
     {
-        _draggedThought.transform.SetParent(ThoughtPanel.ThoughtPanelTransform);
+        _draggedThought.transform.SetParent(ThoughtPanel.ThoughtHolderTransform);
         _draggedThought.GetComponent<InformationController>()._isInInformation = false;
         InformationDisplay.isDraggingThought = false;
         ThoughtPanel.isDraggingThought = false;
@@ -250,6 +261,5 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
         uitransform.anchorMax = new Vector2(0.5f, 0.5f);
         uitransform.pivot = new Vector2(0.5f, 0.5f);
     }
-
     #endregion
 }

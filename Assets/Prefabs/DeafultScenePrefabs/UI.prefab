@@ -585,7 +585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d635bb3e2b946864c8b445d9c489bb62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lineControllers: []
+  lineControllers: []
 --- !u!1 &2038673647645992544
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,11 +846,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afd60bfa400a3ac4e9a492fdc9ae858d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  informationDisplay: {fileID: 3131382590254491024}
   descriptionTMP: {fileID: 5470484616686042844}
-  ThoughtPanelTransform: {fileID: 561608953859396185}
+  ThoughtHolderTransform: {fileID: 561608953859396185}
   LineHolder: {fileID: 1128414823679931385}
   ThoughtConnections: {fileID: 11400000, guid: 7032fb4b3ba67164ba38ad5a94b4b5d2, type: 2}
-  ThoughtPalaceContainer: {fileID: 4272197566428976758}
+  linePrefab: {fileID: 8532949138308718435, guid: 994ed734a1a588e4f909349deb3a56e1, type: 3}
+  draggedParent: {fileID: 602400480328276220}
+  _thoughtPalaceContainer: {fileID: 4272197566428976758}
+  _thoughtPrefab: {fileID: 3201775691064386052, guid: 4a12eb3b4c877c748858629e079e65e8, type: 3}
   dotPrefab: {fileID: 3836424871203319052, guid: f8eebfe97b3c68c439804c8ae28dbdba, type: 3}
   _uiCamera: {fileID: 0}
   _uiLineLayerMask:
@@ -860,7 +864,8 @@ MonoBehaviour:
   connections: []
   nodes:
     list: []
-  createdThoughts: []
+  allCreatedThoughts:
+    list: []
 --- !u!1 &2216705814491384099
 GameObject:
   m_ObjectHideFlags: 0
@@ -2419,7 +2424,7 @@ MonoBehaviour:
   _thoughtPanel: {fileID: 3444058843717094565}
   _draggedParent: {fileID: 602400480328276220}
   _mainCamera: {fileID: 0}
-  AllUnlockedThoughts: []
+  AllUnlockedInformations: []
 --- !u!1 &6009633668598435936
 GameObject:
   m_ObjectHideFlags: 0
