@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: Z1
+  m_Name: verfv
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: Z1
-  <Text>k__BackingField: "Zestes swe dni zazwyczaj sp\u0119dza w osamotnieniu dbaj\u0105c
-    o tereny wok\xF3\u0142 posiad\u0142o\u015Bci"
+  <DialogueName>k__BackingField: verfv
+  <Text>k__BackingField: "Pytanie jak to wygl\u0105da? Zagadka? inna lokacja? specyficzne
+    dialogi?\n\nTak czy siak kontakt powinien by\u0107 bardzo ograniczony i mo\u017Ce
+    stanowi\u0107 zagro\u017Cenie z racji na wcze\u015Bniejsze ingerencje oberona
+    wobec duszy Marii"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 687d3cd08ec936144973c4593af2ad1a, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: fb5aac78b458dcb4db6a01636cb6a46a, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
-  <IsStartingDialogue>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField: []

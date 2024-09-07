@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: U1
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: U1
-  <Text>k__BackingField: Dialogue text.
+  <Text>k__BackingField: "Ute rankiem dnia zab\xF3jstwa rozmawia\u0142 z Abigail
+    w ogrodach posiad\u0142o\u015Bci"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 34a114c84f18afb479c44c20ed6b65f0, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 1

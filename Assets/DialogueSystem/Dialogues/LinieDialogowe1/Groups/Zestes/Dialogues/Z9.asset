@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: Z1
+  m_Name: Z9
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: Z1
-  <Text>k__BackingField: "Zestes swe dni zazwyczaj sp\u0119dza w osamotnieniu dbaj\u0105c
-    o tereny wok\xF3\u0142 posiad\u0142o\u015Bci"
+  <DialogueName>k__BackingField: Z9
+  <Text>k__BackingField: "Ten mia\u0142 pono\u0107 dozna\u0107 jedynie lekkiego st\u0142ucznia
+    jednak Zestes po jego przebadaniu wykry\u0142 u niego objawy - nazwa choroby
+    -  pojawia si\u0119 ona gdy cz\u0142owiek szczeg\xF3lnie wra\u017Cliwy na obdarzonych
+    przebywa w ich towarzystwie jak i te\u017C ma z nimi bezpo\u015Bredni kontakt"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 687d3cd08ec936144973c4593af2ad1a, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 35cc8cb6422008c40b8cdb88da541c92, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
-  <IsStartingDialogue>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField: []

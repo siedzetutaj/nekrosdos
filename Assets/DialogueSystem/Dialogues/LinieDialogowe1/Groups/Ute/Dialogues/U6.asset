@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: Z1
+  m_Name: U6
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: Z1
-  <Text>k__BackingField: "Zestes swe dni zazwyczaj sp\u0119dza w osamotnieniu dbaj\u0105c
-    o tereny wok\xF3\u0142 posiad\u0142o\u015Bci"
+  <DialogueName>k__BackingField: U6
+  <Text>k__BackingField: "Odkry\u0142 tam stare pomieszczenie za skrzyniami w kt\xF3rym
+    ze spokojem m\xF3g\u0142 si\u0119 przespa\u0107 nie b\u0119d\u0105c przez nikogo
+    nie niepokojony."
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 687d3cd08ec936144973c4593af2ad1a, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: cedc5775356dada4383218e3476ce020, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
-  <IsStartingDialogue>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField: []

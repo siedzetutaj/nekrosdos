@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: CoOniRobili
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: CoOniRobili
+  <Text>k__BackingField: "Pomi\u0119dzy dniem zab\xF3jstwa a przyjazdem detektyw\xF3w
+    robi\u0142em:\n\nZestes - pr\xF3bowa\u0142 si\u0119 dowiedzie\u0107 kto w posiad\u0142o\u015Bci
+    posiada dar ale nie dowiedzia\u0142 si\u0119 tego (Wykonywa\u0142 rutynowe badania
+    jak to nazywa\u0142 by m\xF3c zbli\u017Cy\u0107 si\u0119 do niekt\xF3rych ludzi
+    w posiad\u0142o\u015Bci) w ten spos\xF3b odkry\u0142 \u017Ce opiekunka Eliry
+    ma siniaki jednak nie chce przyzna\u0107 si\u0119 do ich pochodzenia"
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 0}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 1
+  <ExposedProperties>k__BackingField: []

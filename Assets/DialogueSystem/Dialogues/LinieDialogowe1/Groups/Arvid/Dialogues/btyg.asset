@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: Z1
+  m_Name: btyg
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: Z1
-  <Text>k__BackingField: "Zestes swe dni zazwyczaj sp\u0119dza w osamotnieniu dbaj\u0105c
-    o tereny wok\xF3\u0142 posiad\u0142o\u015Bci"
+  <DialogueName>k__BackingField: btyg
+  <Text>k__BackingField: "Po tych informacjach gracze powinni mie\u0107 dowolno\u015B\u0107
+    w poruszaniu si\u0119 po posiad\u0142o\u015Bci a przed tym tak\u017Ce powinni
+    pozna\u0107 og\xF3ln\u0105 informacje dotycz\u0105ce tego gdzie kto si\u0119
+    znajduj\u0119 i wog\xF3le gdzie co jest"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 687d3cd08ec936144973c4593af2ad1a, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 0}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
-  <IsStartingDialogue>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField: []
