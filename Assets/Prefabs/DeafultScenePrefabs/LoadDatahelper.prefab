@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7084992707285900761
+--- !u!1 &2635758007540011002
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7373366537617796687}
-  - component: {fileID: 3190921722184602275}
+  - component: {fileID: 3405572232013860375}
+  - component: {fileID: 5670422509371382409}
   m_Layer: 0
-  m_Name: BasicObjectsLoader
+  m_Name: LoadDatahelper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7373366537617796687
+--- !u!4 &3405572232013860375
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7084992707285900761}
+  m_GameObject: {fileID: 2635758007540011002}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.0059700143, y: -1.6924361, z: -6.0759664}
@@ -32,22 +32,15 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3190921722184602275
+--- !u!114 &5670422509371382409
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7084992707285900761}
+  m_GameObject: {fileID: 2635758007540011002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca531ff4269e8d346a7f658191e8ae6f, type: 3}
+  m_Script: {fileID: 11500000, guid: 83995553cf22c5d498e10b5abc4be240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 2601916385836097934, guid: 6fac07f96d66adb4eb4d5346d58ca873, type: 3}
-  _mainCamera: {fileID: 594771783878211432, guid: a1cbb88e81c29ad4496f85db92df4f4d, type: 3}
-  _ui: {fileID: 145030238201220794, guid: a6404b40701849e499edbfabbc6de486, type: 3}
-  _eventSystem: {fileID: 1982782060636586099, guid: 199584661cbcd7949956131c70e0b76e, type: 3}
-  _gameComponents: {fileID: 8386042841895894575, guid: a1184ab92a952bb47ad0bf38812d787b, type: 3}
-  _loadDataHelper: {fileID: 2635758007540011002, guid: af7a294698c0bb744bcf470540bdb44c, type: 3}
-  playerSpawnPos: {fileID: 0}

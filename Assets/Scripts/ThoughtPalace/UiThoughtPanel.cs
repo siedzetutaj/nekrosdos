@@ -98,13 +98,48 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
             return;
         }
         LineManager.Instance.addLineController(activeLineController);
+        Grouping(FistID, nodeId2);
 
-        if (nodes.ContainsKey(FistID) && nodes.ContainsKey(nodeId2) && !ConnectionExists(FistID, nodeId2))
+
+        activeLineController = null;
+        firstThoughToConnect = null;
+        isCreatingLine = false;
+    }
+    public void LoadConnections(List<ConnectedThoughtsGuid> lineConnectionsGuids)
+    {
+        foreach(LineController lineControllerToRemove in LineManager.Instance.lineControllers)
         {
-            var newConnection = new ConnectedThoughtsGuid(FistID, nodeId2);
+            Destroy(lineControllerToRemove.gameObject);
+        }
+        LineManager.Instance.lineControllers.Clear();
+        foreach(ConnectedThoughtsGuid lineConnectionGuids in lineConnectionsGuids)
+        {
+            InformationController firstThought = allCreatedThoughts[lineConnectionGuids.Id1];
+            InformationController secondThought = allCreatedThoughts[lineConnectionGuids.Id2];
+            
+            GameObject line = Instantiate(linePrefab, LineHolder);
+
+            LineController lineController = line.GetComponent<LineController>();
+            lineController.Awake();
+            lineController.LoadSetup(lineConnectionGuids);
+            LineManager.Instance.addLineController(lineController);
+            firstThought.LineRenderers.Add(lineController, true);
+            secondThought.LineRenderers.Add(lineController, false);
+            Grouping(lineConnectionGuids.Id1,lineConnectionGuids.Id2);
+            lineController.ChangePointPosition(0, firstThought.recTransform.anchoredPosition);
+            lineController.ChangePointPosition(1, secondThought.recTransform.anchoredPosition);
+
+        }
+    }
+    private void Grouping(SerializableGuid nodeId1, SerializableGuid nodeId2)
+    {
+
+        if (nodes.ContainsKey(nodeId1) && nodes.ContainsKey(nodeId2) && !ConnectionExists(nodeId1, nodeId2))
+        {
+            var newConnection = new ConnectedThoughtsGuid(nodeId1, nodeId2);
 
             // Szukamy, do jakich grup nale¿¹ te nody
-            var group1 = FindGroup(FistID);
+            var group1 = FindGroup(nodeId1);
             var group2 = FindGroup(nodeId2);
 
             // Jeœli oba nody s¹ w tej samej grupie, dodaj po³¹czenie do tej grupy
@@ -135,13 +170,6 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
                 connections.Add(newGroup);
             }
         }
-
-        firstThoughToConnect.Lines.Add(activeLineController);
-        thought.Lines.Add(activeLineController);
-
-        activeLineController = null;
-        firstThoughToConnect = null;
-        isCreatingLine = false;
     }
     public void RemoveConnection(LineController line)
     {
@@ -353,12 +381,17 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
     }
     public void DeleateThought(InformationController thought)
     {
-        thought.Lines.RemoveAll(x => x == null);
-        foreach (var connection in thought.Lines)
+        var nulls = thought.LineRenderers.Keys.Where(x => x == null);
+        foreach (var item in nulls)
+        {
+            thought.LineRenderers.Remove(item);
+        }
+        foreach (var connection in thought.LineRenderers.Keys.ToList())
         {
             DestoryLine(connection);
         }
         allCreatedThoughts.Remove(thought.ThoughtNodeGuid);
+        Destroy(thought.gameObject);
     }
     private void DestoryLine(LineController line)
     {

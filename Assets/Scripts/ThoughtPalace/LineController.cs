@@ -13,7 +13,7 @@ public class LineController : MonoBehaviour
     [SerializeField] private PolygonCollider2D polygonCollider2D;
 
     private InputSystem inputSystem;
-    private void Awake()
+    public void Awake()
     {
         inputSystem = FindObjectOfType<InputSystem>();
         lineRenderer = GetComponent<UILineRenderer>();
@@ -71,5 +71,10 @@ public class LineController : MonoBehaviour
     {
         bool isFirst = guid == connectionGuids.Id1;
         return (this, isFirst);
+    }
+    public void LoadSetup(ConnectedThoughtsGuid guids)
+    {
+        IsDraggedByMouse = false;
+        connectionGuids = guids;
     }
 }

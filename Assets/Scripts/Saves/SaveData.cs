@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class SaveData
@@ -16,9 +17,11 @@ public class SaveData
     public List<ThoughtSaveData> thoughts = new();
     
     //Lines
-    public List<ConnectedThoughtsGuid> lineConnectionGuids;
+    public List<ConnectedThoughtsGuid> lineConnectionGuids = new();
 
-    public SaveData()
+    //Other
+    public string currentSceneName;
+    public void Initialize()
     {
         //Player
         var position = PlayerController.Instance.gameObject.transform.position;
@@ -41,6 +44,8 @@ public class SaveData
         {
             lineConnectionGuids.Add(lineController.connectionGuids);
         }
+        //Other
+        currentSceneName = SceneManager.GetActiveScene().name;
     }
 }
 

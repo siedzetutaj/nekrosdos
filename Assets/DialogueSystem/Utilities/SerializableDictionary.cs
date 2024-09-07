@@ -80,6 +80,7 @@ public class SerializableDictionary<TKey, TValue> : SerializableDictionary, IDic
         _keyPositions = new Lazy<Dictionary<TKey, uint>>(MakeKeyPositions);
     }
 
+
     #region IDictionary
     public TValue this[TKey key]
     {

@@ -10,9 +10,9 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
 {
 
     [SerializeField] public SerializableGuid ThoughtNodeGuid;
+    [SerializeField] public RectTransform recTransform;
 
     [SerializeField] private GameObject _thoughtToCopy;
-    [SerializeField] private RectTransform _recTransform;
 
     private Camera _mainCamera;
     private GameObject _draggedThought;
@@ -27,7 +27,6 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
     [NonSerialized] public UiThoughtPanel ThoughtPanel;
     [NonSerialized] public Transform DraggedParent;
     [NonSerialized] public UIInformationDisplay InformationDisplay;
-    [NonSerialized] public List<LineController> Lines = new();
     private void OnEnable()
     {
         
@@ -173,21 +172,20 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
         ThoughtPanel.FistID = ThoughtNodeGuid;
         var lineController = go.GetComponent<LineController>();
         ThoughtPanel.activeLineController = lineController;
-        lineController.ChangePointPosition(0, _recTransform.anchoredPosition);
+        lineController.ChangePointPosition(0, recTransform.anchoredPosition);
         LineRenderers.Add(lineController, true);
         ThoughtPanel.isCreatingLine = true;
     }
     private void CreateEndLinePoint()
     {
         LineRenderers.Add(ThoughtPanel.activeLineController, false);
-        ThoughtPanel.AddConnection(ThoughtNodeGuid, _recTransform.anchoredPosition,this);
+        ThoughtPanel.AddConnection(ThoughtNodeGuid, recTransform.anchoredPosition,this);
     }
     #endregion
     #region Delating
     private void DelateThought()
     {
         ThoughtPanel.DeleateThought(this);
-        Destroy(gameObject);
     }
     #endregion
     #region Drag
@@ -208,11 +206,11 @@ public class InformationController : MonoBehaviour, IPointerDownHandler, IDragHa
             {
                 if (lineRenderer.Value)
                 {
-                    lineRenderer.Key.ChangePointPosition(0, _recTransform.anchoredPosition);
+                    lineRenderer.Key.ChangePointPosition(0, recTransform.anchoredPosition);
                 }
                 else if (!lineRenderer.Value)
                 {
-                    lineRenderer.Key.ChangePointPosition(1, _recTransform.anchoredPosition);
+                    lineRenderer.Key.ChangePointPosition(1, recTransform.anchoredPosition);
                 }
             }
         }

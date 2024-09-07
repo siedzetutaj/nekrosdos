@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviourSingleton<PauseMenu>
 {
@@ -9,12 +10,6 @@ public class PauseMenu : MonoBehaviourSingleton<PauseMenu>
     public static GameObject pauseMenuUI;
     public static Action unPaused;
 
-    private PlayerController _playerController;
-
-    private void Start()
-    {
-        _playerController = PlayerController.Instance;
-    }
     public void ResumeButton()
     {
         SwitchPause();
@@ -38,13 +33,8 @@ public class PauseMenu : MonoBehaviourSingleton<PauseMenu>
     }
     public void LoadButton()
     {
-        SaveData data = SaveSystem.LoadData();
-        Vector3 pos = new Vector3(data._playerPosition[0], data._playerPosition[1], data._playerPosition[2]);
-        _playerController.gameObject.transform.position = pos;
-
-        UIInformationDisplay.Instance.LoadInformations(data.unlockedInformationsSO);
-        UiThoughtPanel.Instance.LoadThoughts(data.thoughts);
-    
+        SwitchPause();
+        StartCoroutine(LoadDataHelper.Instance.LoadSaveDataScene());
     }
     public void SettingsButton()
     {

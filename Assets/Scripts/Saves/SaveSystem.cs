@@ -1,6 +1,9 @@
 using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine.SceneManagement;
+using System.Collections;
+using Unity.VisualScripting;
 
 public static class SaveSystem 
 {
@@ -10,7 +13,8 @@ public static class SaveSystem
         //BinaryFormatter formatter = new BinaryFormatter();
         //FileStream stream = new FileStream(path, FileMode.Create);
 
-        SaveData data = new SaveData();
+        SaveData data = new();
+        data.Initialize();
 
         string saveData = JsonUtility.ToJson(data, true);
         File.WriteAllText(path, saveData);
@@ -18,7 +22,7 @@ public static class SaveSystem
         //stream.Close();
     }
     public static SaveData LoadData()
-    {
+    { 
         if(File.Exists(path))
         {
             //BinaryFormatter formatter = new BinaryFormatter();
@@ -27,9 +31,10 @@ public static class SaveSystem
             //SaveData data = formatter.Deserialize(stream) as SaveData;
             //stream.Close();
             
-            string saveData = System.IO.File.ReadAllText(path);
+            string saveData = File.ReadAllText(path);
 
             return JsonUtility.FromJson<SaveData>(saveData);
+
         }
         else
         {
