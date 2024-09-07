@@ -43906,6 +43906,14 @@ PrefabInstance:
       propertyPath: playerSpawnPos
       value: 
       objectReference: {fileID: 1433681960}
+    - target: {fileID: 3190921722184602275, guid: c71790045fc2e8448ad981e4c2c42846, type: 3}
+      propertyPath: deafultSpawnPoint
+      value: 
+      objectReference: {fileID: 1433681960}
+    - target: {fileID: 3190921722184602275, guid: c71790045fc2e8448ad981e4c2c42846, type: 3}
+      propertyPath: spawnPointFromScene.list.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7084992707285900761, guid: c71790045fc2e8448ad981e4c2c42846, type: 3}
       propertyPath: m_Name
       value: BasicObjectsLoader

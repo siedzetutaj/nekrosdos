@@ -34,7 +34,7 @@ public class PauseMenu : MonoBehaviourSingleton<PauseMenu>
     public void LoadButton()
     {
         SwitchPause();
-        StartCoroutine(LoadDataHelper.Instance.LoadSaveDataScene());
+        LoadDataHelper.Instance.LoadSceneFromSaveData();
     }
     public void SettingsButton()
     {

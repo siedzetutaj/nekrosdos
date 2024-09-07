@@ -35,7 +35,7 @@ public class SaveData
         //Thoughts
         foreach (var thoughtController in UiThoughtPanel.Instance.allCreatedThoughts)
         {
-            ThoughtSaveData thoughtData = new ThoughtSaveData(thoughtController.Key, thoughtController.Value.LineRenderers,
+            ThoughtSaveData thoughtData = new ThoughtSaveData(thoughtController.Key,
                 thoughtController.Value.Thought, thoughtController.Value.gameObject.GetComponent<RectTransform>().localPosition);
             thoughts.Add(thoughtData);
         }
@@ -53,14 +53,12 @@ public class SaveData
 public class ThoughtSaveData
 {
     public SerializableGuid Guid;
-    public SerializableDictionary<LineController,bool> LineRenderers = new();
     public TPThoughtSO ThoughtSO;
     public Vector3 Position;
-    public ThoughtSaveData(SerializableGuid guid, SerializableDictionary<LineController,bool> lineRenderes,
+    public ThoughtSaveData(SerializableGuid guid,
         TPThoughtSO thoughtSO, Vector3 positon)
     {
         Guid = guid;
-        LineRenderers = lineRenderes;
         ThoughtSO = thoughtSO;
         Position = positon;
     }

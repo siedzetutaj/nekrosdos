@@ -36,7 +36,7 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
     [Header("Debug")]
     public List<ConnectionList> connections = new();
     public SerializableDictionary<SerializableGuid, ConnectedNode> nodes = new SerializableDictionary<SerializableGuid, ConnectedNode>();
-    public SerializableDictionary<SerializableGuid,InformationController> allCreatedThoughts = new();
+    public SerializableDictionary<SerializableGuid, InformationController> allCreatedThoughts = new();
 
     public void Initialize()
     {
@@ -54,7 +54,7 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
             _inputSystem.onTPLeftClickUp += OnMouseLeftClickUp;
 
             _inputSystem.onTPRightClickDown += OnMouseRightClickDown;
-            _inputSystem.onTPRightClickUp += OnMouseRightClickUp;  
+            _inputSystem.onTPRightClickUp += OnMouseRightClickUp;
 
             _inputSystem.onTPMiddleClickDown += OnMouseMiddleClickDown;
             _inputSystem.onTPMiddleClickUp += OnMouseMiddleClickUp;
@@ -107,25 +107,27 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
     }
     public void LoadConnections(List<ConnectedThoughtsGuid> lineConnectionsGuids)
     {
-        foreach(LineController lineControllerToRemove in LineManager.Instance.lineControllers)
+        LineManager lineManager = LineManager.Instance;
+        lineManager.lineControllers.RemoveAll(x => x == null);
+        foreach (LineController lineControllerToRemove in lineManager.lineControllers)
         {
             Destroy(lineControllerToRemove.gameObject);
         }
-        LineManager.Instance.lineControllers.Clear();
-        foreach(ConnectedThoughtsGuid lineConnectionGuids in lineConnectionsGuids)
+        lineManager.lineControllers.Clear();
+        foreach (ConnectedThoughtsGuid lineConnectionGuids in lineConnectionsGuids)
         {
             InformationController firstThought = allCreatedThoughts[lineConnectionGuids.Id1];
             InformationController secondThought = allCreatedThoughts[lineConnectionGuids.Id2];
-            
+
             GameObject line = Instantiate(linePrefab, LineHolder);
 
             LineController lineController = line.GetComponent<LineController>();
             lineController.Awake();
             lineController.LoadSetup(lineConnectionGuids);
-            LineManager.Instance.addLineController(lineController);
+            lineManager.addLineController(lineController);
             firstThought.LineRenderers.Add(lineController, true);
             secondThought.LineRenderers.Add(lineController, false);
-            Grouping(lineConnectionGuids.Id1,lineConnectionGuids.Id2);
+            Grouping(lineConnectionGuids.Id1, lineConnectionGuids.Id2);
             lineController.ChangePointPosition(0, firstThought.recTransform.anchoredPosition);
             lineController.ChangePointPosition(1, secondThought.recTransform.anchoredPosition);
 
@@ -320,8 +322,8 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
         Destroy(lineController.gameObject);
         isCreatingLine = false;
         firstThoughToConnect = null;
-        
-        
+
+
         if (isduplicate)
         {
 
@@ -404,14 +406,14 @@ public class UiThoughtPanel : MonoBehaviourSingleton<UiThoughtPanel>
         foreach (ThoughtSaveData thoughtSaveData in data)
         {
             GameObject thoughtObject = Instantiate(_thoughtPrefab, ThoughtHolderTransform);
-            thoughtObject.GetComponent<InformationPrefabData>().Initialize(thoughtSaveData.ThoughtSO, descriptionTMP, draggedParent, this, informationDisplay, _uiCamera); 
+            thoughtObject.GetComponent<InformationPrefabData>().Initialize(thoughtSaveData.ThoughtSO, descriptionTMP, draggedParent, this, informationDisplay, _uiCamera);
             thoughtObject.GetComponent<InformationController>().LoadThought(thoughtSaveData);
         }
     }
     private void ResetData()
     {
         //Destroying thoughts gameobjects and clearing lists
-        foreach(var thought in allCreatedThoughts)
+        foreach (var thought in allCreatedThoughts)
         {
             Destroy(thought.Value.gameObject);
         }

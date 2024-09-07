@@ -2,6 +2,7 @@ using Cinemachine;
 using Microsoft.Win32.SafeHandles;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class BasicObjectsLoader : MonoBehaviourSingleton<BasicObjectsLoader>
@@ -13,14 +14,14 @@ public class BasicObjectsLoader : MonoBehaviourSingleton<BasicObjectsLoader>
     [SerializeField] private GameObject _gameComponents;
     [SerializeField] private GameObject _loadDataHelper;
 
-    [SerializeField] private Transform playerSpawnPos;
+    [SerializeField] private SerializableDictionary<SceneNames,Transform> spawnPointFromScene=new();
     private Vector3 zero = Vector3.zero;
     private Vector3 cameraPos = new Vector3(0, 0, -10);
     // Metoda wywo³ywana przy uruchomieniu sceny
     public void Start()
     {
         // Tworzenie obiektów na scenie
-        Instantiate(_player, playerSpawnPos.transform.position, Quaternion.identity);
+        Instantiate(_player, Vector3.zero, Quaternion.identity);
 
         GameObject MainCamera = Instantiate(_mainCamera, cameraPos, Quaternion.identity);
         MainCamera.GetComponentInChildren<CinemachineVirtualCamera>().Follow = PlayerController.Instance.gameObject.transform;
@@ -37,10 +38,24 @@ public class BasicObjectsLoader : MonoBehaviourSingleton<BasicObjectsLoader>
         UIInformationDisplay.Instance.Initialize();
 
         UiThoughtPanel.Instance.Initialize();
-        
-        if (LoadDataHelper.Instance == null)
+
+        var loadDataHelper = LoadDataHelper.Instance;
+        if (loadDataHelper == null)
             Instantiate(_loadDataHelper, zero, Quaternion.identity);
         else
-            LoadDataHelper.Instance.LoadSaveData();
+            loadDataHelper.LoadSaveData();
+    }
+    public void SetPlayerToSpawnPoint(SceneNames sceneName)
+    {
+        if (spawnPointFromScene.TryGetValue(sceneName,
+            out Transform spawnPoint))
+        {
+            PlayerController.Instance.gameObject.transform.position = spawnPoint.position;
+        }
+        else
+        {
+            // Key not found, do something else
+            Debug.LogError("Spawn point for previous scene not found. Player Will be spawned at 0,0");
+        }
     }
 }
