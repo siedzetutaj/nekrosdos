@@ -153,7 +153,8 @@ namespace DS.Utilities
                 GroupID = node.Group?.ID,
                 DialogueType = node.DialogueType,
                 Position = node.GetPosition().position,
-                ExposedProperties = node.ExposedPropertyNodeElements.ConvertAll(x=>x.property)
+                ExposedProperties = node.ExposedPropertyNodeElements.ConvertAll(x => x.property),
+                Color = node.backgroundColor
         };
 
         graphData.Nodes.Add(nodeData);
@@ -316,6 +317,7 @@ namespace DS.Utilities
                 node.ID = nodeData.ID;
                 node.Choices = choices;
                 node.Text = nodeData.Text;
+
                 foreach(var property in nodeData.ExposedProperties)
                 {
                     ExposedPropertyNodeElement element = new ExposedPropertyNodeElement() 
@@ -326,6 +328,12 @@ namespace DS.Utilities
                 }
               //  node.ExposedPropertyNodeElements = nodeData.ExposedProperties;
                 node.Draw();
+
+                if (nodeData.Color != Color.clear)
+                {
+                    node.backgroundColor = nodeData.Color;
+                    node.ResetStyle();
+                }
 
                 graphView.AddElement(node);
 

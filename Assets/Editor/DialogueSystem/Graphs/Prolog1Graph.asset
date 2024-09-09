@@ -16,7 +16,7 @@ MonoBehaviour:
   <Groups>k__BackingField:
   - <ID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <Name>k__BackingField: Prolog
-    <Position>k__BackingField: {x: 188.99998, y: -88}
+    <Position>k__BackingField: {x: 189, y: -88}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 414bae47-e7f1-4b20-96c2-a94c3185696d
     <Name>k__BackingField: Retes1
@@ -28,6 +28,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 214, y: -29}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 9209a10a-f2c1-4266-80f3-7bc258373075
     <Name>k__BackingField: Retes5
     <Text>k__BackingField: "A co si\u0119 na niego ju\u017C wtedy wd\xF3wka Anielka
@@ -39,6 +41,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3869, y: -29}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 14d64ab4-5f30-4e23-bdfd-c3cbbe2d5a50
     <Name>k__BackingField: Orion2
     <Text>k__BackingField: "Tak, tak na pewno mia\u0142a wiele ciekawych wypowiedzi
@@ -50,6 +54,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 4529, y: -29}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 6badcdd3-6224-43cb-ad24-08f3378a386e
     <Name>k__BackingField: Retes6
     <Text>k__BackingField: "Ano o tej porze roku to i d\u0142uzej trwaj\u0105. Tak
@@ -63,6 +69,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 5189, y: -29}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 417bcd4f-7f4a-4ae0-b614-2911e98045d2
     <Name>k__BackingField: Orion1
     <Text>k__BackingField: "Daleko do posiad\u0142o\u015Bci?"
@@ -72,6 +80,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 889, y: -28}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: abafd06e-68b3-43bc-b28a-8609a2e7c958
     <Name>k__BackingField: Retes3
     <Text>k__BackingField: "Na razie jeno kipi ale jak sie wzmog\u0105 wichry to
@@ -83,6 +93,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2540, y: -29}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 1d9e4727-e74d-4606-8f80-c39b47d7bb89
     <Name>k__BackingField: Retes4
     <Text>k__BackingField: "Raz jak \u017Ce\u015Bmy ze \u015Bwagrem drwa na opa\u0142
@@ -99,6 +111,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3211, y: -29}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: a22ed8a3-d5de-4489-acba-e42c120ed744
     <Name>k__BackingField: Orion3
     <Text>k__BackingField: "- Do Arvida\nWygl\u0105da na to \u017Ce sp\u0119dzimy
@@ -110,6 +124,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 5879, y: -29}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: f505aa36-4f3a-4625-bb37-dec83bf33ec8
     <Name>k__BackingField: Arvid2
     <Text>k__BackingField: "Ma to swoje plusy. Je\u015Bli my nie bedziemy mogli opu\u015Bci\u0107
@@ -120,6 +136,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 6550, y: -29}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: ff223f46-fec2-431b-9c8a-df01b0f99de6
     <Name>k__BackingField: Orion4
     <Text>k__BackingField: "Przy za\u0142o\u017Ceniu \u017Ce sprawca ju\u017C stamt\u0105d
@@ -130,6 +148,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 7211, y: -27}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: c726b0a5-c3d1-4e66-aab7-3f0d9afa3b56
     <Name>k__BackingField: Retes7
     <Text>k__BackingField: "Kiedy tu panocku nie ma dok\u0105d ucieka\u0107. Lordowski
@@ -141,6 +161,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 7872, y: -26}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 63b6099a-9279-43bd-979e-3ba1bc43fcbc
     <Name>k__BackingField: Retes8
     <Text>k__BackingField: "Jak dla mnie to biedn\u0105 panienke pewnie te miesza\u0144ce
@@ -154,6 +176,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 8546, y: -22}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: d9114829-fbbf-4b5c-9aa6-8658046c3789
     <Name>k__BackingField: Arvid3
     <Text>k__BackingField: "Miesza\u0144ce?"
@@ -163,6 +187,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 9205, y: -18}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: ace1fa41-8ab8-4d30-bb80-925721994f24
     <Name>k__BackingField: Orion5
     <Text>k__BackingField: Ludzie z Ombrii tu byli?
@@ -172,6 +198,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 9479, y: -17}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 346291c1-b6be-420e-910c-cd08ba57e710
     <Name>k__BackingField: Arvid1
     <Text>k__BackingField: "Chcesz powiedzie\u0107 \u017Ce mo\u017Ce pada\u0107 mocniej
@@ -182,6 +210,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1865, y: -29}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 8f4f089e-c45b-4b75-9b2e-89cd10180379
     <Name>k__BackingField: Retes9
     <Text>k__BackingField: "A to panicze nie wiedzieli? Przyjecha\u0142a tu mo\u017Ce
@@ -194,6 +224,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 10138, y: -17}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: c770c4bd-caf5-4cab-b529-bb01d17fc90d
     <Name>k__BackingField: Orion6
     <Text>k__BackingField: Ciekawe...
@@ -203,6 +235,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 10802, y: -17}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: ef6c3584-4506-434f-8c35-b00be0ed4e06
     <Name>k__BackingField: Arvid4
     <Text>k__BackingField: "Kto\u015B jeszcze przeje\u017Cd\u017Ca\u0142 przez wioske
@@ -213,6 +247,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 11082, y: -16}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 8df70142-02b2-4a2f-b370-b554f3d20282
     <Name>k__BackingField: Retes10
     <Text>k__BackingField: "Ano troch\u0119 ludzi si\u0119 pojawi\u0142o. "
@@ -222,6 +258,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 11739, y: -14}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 00490a13-af68-4f39-98a2-13f0ba4ab4e1
     <Name>k__BackingField: Narracja1
     <Text>k__BackingField: "- Zerwal si\u0119 wiatr a konie zacz\u0119\u0142y dr\u017Ce\u0107
@@ -232,6 +270,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 12398, y: -14}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: e3982896-d85a-4aae-a936-197d4d7c5e7f
     <Name>k__BackingField: Retes11
     <Text>k__BackingField: "Hej\u017Ce, wio! Posiad\u0142o\u015B\u0107 ju\u017C blisko,
@@ -243,6 +283,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 13060, y: -14}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 2ede40f2-2019-486f-98ce-94ce5ada524b
     <Name>k__BackingField: Retes2
     <Text>k__BackingField: "Ano nie jako\u015B bardzo. Jeszcze kilkaset staji po
@@ -254,6 +296,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1174, y: -28}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 18367203-1008-4298-8872-6a093a55d138
     <Name>k__BackingField: Retes12
     <Text>k__BackingField: "Dzi\u0119kowa\u0107. Powodzenia panicze i pamietajcie
@@ -264,6 +308,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2442, y: 248}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 236e8ec3-c7e2-4649-b137-c0df5a1246d5
     <Name>k__BackingField: Gontes4
     <Text>k__BackingField: RETES!
@@ -273,6 +319,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3116, y: 252}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 87ec036f-6c30-4fa0-affa-42d7de8036a2
     <Name>k__BackingField: Retes13
     <Text>k__BackingField: "Ano ide ju\u017C ide."
@@ -282,6 +330,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3394, y: 253}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 28de1cd6-a05b-4d50-81ed-759b8dac46ba
     <Name>k__BackingField: Gontes3
     <Text>k__BackingField: "Worek zajmij si\u0119 ko\u0144mi! Retes w starym budynku
@@ -293,6 +343,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1787, y: 232}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 99c896a1-200d-4ecc-add9-c4af3835dff0
     <Name>k__BackingField: Gontes2
     <Text>k__BackingField: "Witajcie w posiad\u0142o\u015Bci Lorda Alarica detektywi.
@@ -303,6 +355,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1133, y: 228}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 140f5c22-0bbd-4b3d-88d7-f6567337603e
     <Name>k__BackingField: Narracja2
     <Text>k__BackingField: "- Detektywi wraz z prowadz\u0105cym ich Retesem doje\u017Cd\u017Caj\u0105
@@ -315,6 +369,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 483, y: 226}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 24f2be00-7b70-48a5-94bc-4534ce5a942a
     <Name>k__BackingField: Gontes1
     <Text>k__BackingField: "Hej\u017Ce! Tutaj detektywi!"
@@ -324,6 +380,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 214, y: 228}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 96b8d6e2-0c9a-4bf4-9c8a-bea56071bb01
     <Name>k__BackingField: Gontes5
     <Text>k__BackingField: "Prosze za mn\u0105."
@@ -333,6 +391,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3686, y: 251}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: b33c2599-5435-4f37-93f6-6ca2cbee30b6
     <Name>k__BackingField: Narracja3
     <Text>k__BackingField: "- Detektywi prowadzeni przez Gontesa wchodz\u0105 do
@@ -344,6 +404,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 217, y: 539}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: bc2937a2-2e69-4daa-a6b9-889f0031c783
     <Name>k__BackingField: Gontes6
     <Text>k__BackingField: Lordzie, panie Gervi. Detektywi przybyli.
@@ -353,6 +415,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 890, y: 541}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 7f8dd341-afd5-42d2-a394-24bb011bcf0c
     <Name>k__BackingField: Orion7
     <Text>k__BackingField: "Lordzie Alaricu. -Orion pochyla sw\u0105 g\u0142ow\u0119-.
@@ -366,6 +430,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 1
     <Position>k__BackingField: {x: 1565, y: 538}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 0, b: 1, a: 1}
   - <ID>k__BackingField: cbbab405-8c06-45d0-a107-8e861cbfead0
     <Name>k__BackingField: Arvid5p1
     <Text>k__BackingField: "Pochyl sw\u0105 g\u0142ow\u0119 na wz\xF3r Oriona."
@@ -375,6 +441,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2266, y: 542}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 13908e84-9fd6-47e7-95df-1ef00e1bbd94
     <Name>k__BackingField: Arvid5p2
     <Text>k__BackingField: "St\xF3j wyprostowany i popatrz prosto w oczy Lorda"
@@ -384,6 +452,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2267, y: 736}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 9f0aee23-6344-42ff-9eb3-478e21ef576d
     <Name>k__BackingField: Narracja4
     <Text>k__BackingField: "Stajesz przed obliczem Pana tej posiad\u0142o\u015Bci
@@ -397,6 +467,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2946, y: 738}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 2e2608ff-c21e-4f76-b610-8c1f4e8d9e2a
     <Name>k__BackingField: Orion8
     <Text>k__BackingField: Arvid...
@@ -406,6 +478,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 4260, y: 743}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 236b22c5-a50c-47c1-8c3d-2d5ef0a09e6d
     <Name>k__BackingField: Gervi1
     <Text>k__BackingField: "Pochyl g\u0142owe \"obdarzony\" czy\u017Cby w akademii
@@ -418,6 +492,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3607, y: 743}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 3c2478d4-c8a1-40a8-922c-ad04b3345fa8
     <Name>k__BackingField: Alaric1
     <Text>k__BackingField: "Orion Sygil? S\u0142ysza\u0142em o tobie. Pono\u0107
@@ -429,6 +505,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2947, y: 531}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 7878c487-58eb-4f1f-bdb2-f91b21f09a66
     <Name>k__BackingField: Gervi2
     <Text>k__BackingField: "Mam nadziej\u0119 \u017Ce je\u015Bli b\u0119dzie trzeba
@@ -440,6 +518,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3606, y: 531}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 1bd964c4-8c40-4d98-9638-78cc9e13cff0
     <Name>k__BackingField: Narracja5
     <Text>k__BackingField: "-Lord Alaric s\u0142ysz\u0105c te s\u0142owa spiorunowa\u0142
@@ -451,6 +531,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 4263, y: 529}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: dedcc04c-c9fc-4f6b-afe6-1cf003a24ee2
     <Name>k__BackingField: Orion9
     <Text>k__BackingField: "Robi\u0119 to co konieczne by rozwiaza\u0107 dana spraw\u0119.
@@ -461,6 +543,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 4916, y: 534}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 114749ee-01a3-4174-af43-6936a22fd733
     <Name>k__BackingField: Alaric2
     <Text>k__BackingField: "Przesta\u0144 Gervi. Na t\u0105 chwil\u0119 to nieistotne."
@@ -470,6 +554,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 4529, y: 743}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: b1d2d321-b3a1-4280-936b-6f886a6d55d8
     <Name>k__BackingField: Gervi3
     <Text>k__BackingField: "Oczywi\u015Bcie lordzie..."
@@ -479,6 +565,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 5190, y: 743}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 6a72a9ea-fc1c-4123-baaf-bc5855ec8d43
     <Name>k__BackingField: Alaric3
     <Text>k__BackingField: "Chcia\u0142bym powiedzie\u0107, \u017Ce po d\u0142ugiej
@@ -492,6 +580,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 5590, y: 670}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: c8389a46-73a6-4ccb-a775-b59b16e00b35
     <Name>k__BackingField: Orion10
     <Text>k__BackingField: "Oczywi\u015Bcie. Nie przybyli\u015Bmy tu by wypoczywa\u0107.
@@ -502,6 +592,8 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 6240, y: 670}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: b51e3cc6-b933-44eb-8699-23721d3c940e
     <Name>k__BackingField: DialogueName
     <Text>k__BackingField: Dialogue text.
@@ -511,6 +603,9 @@ MonoBehaviour:
     <GroupID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 214, y: 2588}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  <ExposedProperties>k__BackingField: []
   <OldGroupNames>k__BackingField:
   - Prolog
   <OldUngroupedNodeNames>k__BackingField: []

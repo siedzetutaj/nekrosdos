@@ -19,11 +19,10 @@ namespace DS.Elements
         public string Text { get; set; }
         public DSDialogueType DialogueType { get; set; }
         public DSGroup Group { get; set; }
-
         public List<ExposedPropertyNodeElement> ExposedPropertyNodeElements { get; set; }
 
         protected DSGraphView graphView;
-        protected Color defaultBackgroundColor;
+        public Color backgroundColor;
 
         public override void BuildContextualMenu(ContextualMenuPopulateEvent evt)
         {
@@ -32,7 +31,6 @@ namespace DS.Elements
 
             base.BuildContextualMenu(evt);
         }
-
         public virtual void Initialize(string nodeName, DSGraphView dsGraphView, Vector2 position)
         {
             ID = Guid.NewGuid().ToString();
@@ -45,7 +43,7 @@ namespace DS.Elements
             SetPosition(new Rect(position, Vector2.zero));
 
             graphView = dsGraphView;
-            defaultBackgroundColor = new Color(29f / 255f, 29f / 255f, 30f / 255f);
+            backgroundColor = new Color(29f / 255f, 29f / 255f, 30f / 255f);
 
             mainContainer.AddToClassList("ds-node__main-container");
             extensionContainer.AddToClassList("ds-node__extension-container");
@@ -274,7 +272,8 @@ namespace DS.Elements
         }
         public void ResetStyle()
         {
-            mainContainer.style.backgroundColor = defaultBackgroundColor;
+            mainContainer.style.backgroundColor = backgroundColor;
+            mainContainer.style.backgroundColor = backgroundColor;
         }
         #endregion
     }

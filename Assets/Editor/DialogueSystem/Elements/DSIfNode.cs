@@ -48,8 +48,8 @@ namespace DS.Elements
 
             DrawExposedPropertiesContainer("One True");
 
-            defaultBackgroundColor = Color.green;
-            mainContainer.style.backgroundColor = defaultBackgroundColor;
+            backgroundColor = Color.green;
+            mainContainer.style.backgroundColor = backgroundColor;
 
             RefreshExpandedState();
         }
@@ -92,8 +92,8 @@ namespace DS.Elements
 
             DrawExposedPropertiesContainer("All True");
 
-            defaultBackgroundColor = Color.green * 0.6f;
-            mainContainer.style.backgroundColor = defaultBackgroundColor;
+            backgroundColor = Color.green * 0.6f;
+            mainContainer.style.backgroundColor = backgroundColor;
 
             RefreshExpandedState();
         }

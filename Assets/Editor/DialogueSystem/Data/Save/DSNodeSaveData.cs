@@ -18,5 +18,6 @@ namespace DS.Data.Save
         [field: SerializeField] public DSDialogueType DialogueType { get; set; }
         [field: SerializeField] public Vector2 Position { get; set; }
         [field: SerializeField] public List<DSExposedProperty> ExposedProperties { get; set; }
+        [field: SerializeField] public Color Color { get; set; }
     }
 }

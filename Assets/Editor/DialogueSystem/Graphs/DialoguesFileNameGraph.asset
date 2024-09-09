@@ -14,9 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <FileName>k__BackingField: DialoguesFileName
   <Groups>k__BackingField: []
-  <Nodes>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: aee1037f-b097-4db8-a733-d7fd4a95859f
+    <Name>k__BackingField: DialogueName
+    <Text>k__BackingField: Dialogue text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 516, y: 253}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 53009408-a2f3-4022-bfcb-a247e675f87b
+    <Name>k__BackingField: 23
+    <Text>k__BackingField: Dialogue text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1026, y: 305}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0.12941177, g: 0.13725491, b: 0.14509805, a: 1}
   <ExposedProperties>k__BackingField: []
   <OldGroupNames>k__BackingField: []
-  <OldUngroupedNodeNames>k__BackingField: []
+  <OldUngroupedNodeNames>k__BackingField:
+  - DialogueName
+  - 23
   <OldGroupedNodeNames>k__BackingField:
     list: []

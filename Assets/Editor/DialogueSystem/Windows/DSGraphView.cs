@@ -4,6 +4,8 @@ using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.Events;
+using UnityEditor.ShortcutManagement;
+using UnityEditor.UIElements;
 
 namespace DS.Windows
 {
@@ -21,6 +23,7 @@ namespace DS.Windows
 
         private MiniMap miniMap;
         private Blackboard blackboard;
+        private ColorField colorHue;
 
         private SerializableDictionary<string, DSNodeErrorData> ungroupedNodes;
         private SerializableDictionary<string, DSGroupErrorData> groups;
@@ -31,7 +34,7 @@ namespace DS.Windows
         public  UnityAction<string> OnExposedPropertiesListAdd;
 
         private int nameErrorsAmount;
-
+        private Color selectedColor = Color.white;
         public int NameErrorsAmount
         {
             get
@@ -70,6 +73,7 @@ namespace DS.Windows
             AddSearchWindow();
             AddMiniMap();
             AddBlackboard();
+            AddColoHue();
 
             OnElementsDeleted();
             OnGroupElementsAdded();
@@ -79,8 +83,8 @@ namespace DS.Windows
 
             AddStyles();
             AddMiniMapStyles();
+            RegisterCallback<KeyDownEvent>(OnKeyDown);
         }
-
         #region Creations
         private IManipulator CreateNodeContextualMenu(string actionTitle, DSDialogueType dialogueType)
         {
@@ -494,9 +498,28 @@ namespace DS.Windows
                     OnExposedPropertiesListChange?.Invoke(newValue, oldPropertyName);
                 },
                 scrollable = true,
+                visible = false, 
             };
             blackboard.SetPosition(new Rect(5, 50, 250, 600));
             Add(blackboard);
+        }
+        private void AddColoHue()
+        {
+            colorHue = new ColorField()
+            {
+                value = selectedColor,
+                visible = false,
+            };
+            colorHue.style.position = Position.Absolute;
+            colorHue.style.bottom = 10; // 10 units from the bottom
+            colorHue.style.right = 10;  // 10 units from the right
+            colorHue.style.width = 100; // Optional: Adjust width
+            colorHue.style.height = 10; // Optional: Adjust height
+            colorHue.RegisterValueChangedCallback(evt =>
+            {
+                selectedColor = evt.newValue;
+            });
+            Add(colorHue);
         }
         public void AddPropertyToBlackboard(DSExposedProperty exposedProperty)
         {
@@ -546,7 +569,6 @@ namespace DS.Windows
 
             OnExposedPropertiesListAdd?.Invoke(localPropertyName);
         }
-
         private void RemovePropertyFromBlackboard(DSExposedProperty property, VisualElement container)
         {
             exposedProperties.Remove(property);
@@ -716,6 +738,56 @@ namespace DS.Windows
         public void ToggleBlackboard()
         {
             blackboard.visible = !blackboard.visible;
+        }   
+        public void ToggleColorHue()
+        {
+            colorHue.visible = !colorHue.visible;
+        }
+        #endregion
+        #region Shortcuts
+        private void OnKeyDown(KeyDownEvent evt)
+        {
+            if (evt.ctrlKey)
+            {
+                switch (evt.keyCode)
+                {
+                    case KeyCode.Q:
+
+                        if (selection.Count == 0)
+                        {
+                            return;
+                        }
+                        foreach (var item in selection)
+                        {
+                            if (item is DSNode node)
+                            {
+
+                                if (Color.red != node.mainContainer.style.backgroundColor)
+                                {
+                                    node.backgroundColor = selectedColor;
+                                    node.ResetStyle();
+                                }
+                            }
+                        }
+                        break;
+                        
+                    default: break;
+                }
+            }
+            //// Example: Handle Ctrl+Z (Undo)
+            //if (evt.ctrlKey && evt.keyCode == KeyCode.Z)
+            //{
+            //    Debug.Log("Custom Ctrl+Z in GraphView");
+            //    evt.StopImmediatePropagation(); // Prevent further propagation to Unity's global shortcut system
+            //    Undo.PerformUndo(); // Perform your custom undo operation or fallback to Unity's undo
+            //}
+            //// Example: Handle Ctrl+V (Paste)
+            //else if (evt.ctrlKey && evt.keyCode == KeyCode.V)
+            //{
+            //    Debug.Log("Custom Ctrl+V in GraphView");
+            //    evt.StopImmediatePropagation(); // Prevent further propagation
+            //                                    // Perform your custom paste logic here
+            //}
         }
         #endregion
     }

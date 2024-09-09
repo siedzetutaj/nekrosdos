@@ -1,10 +1,14 @@
 using System.IO;
 using UnityEditor;
+using UnityEditor.Experimental.GraphView;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
+using UnityEditor.ShortcutManagement;
+using DS.Windows;
 
 namespace DS.Windows
 {
+    using UnityEngine;
     using Utilities;
 
     public class DSEditorWindow : EditorWindow
@@ -17,6 +21,8 @@ namespace DS.Windows
         private Button saveButton;
         private Button miniMapButton;
         private Button blackboardButton;
+        private Button colorHueButton;
+        public bool isfocused { get { return hasFocus; }}
 
         [MenuItem("Window/DS/Dialogue Graph")]
         public static void Open()
@@ -59,6 +65,7 @@ namespace DS.Windows
 
             miniMapButton = DSElementUtility.CreateButton("Minimap", () => ToggleMiniMap());
             blackboardButton = DSElementUtility.CreateButton("Variables", ()=>ToggleBlackboard());
+            colorHueButton = DSElementUtility.CreateButton("Colors", ()=>ToggleColorHue());
 
             toolbar.Add(fileNameTextField);
             toolbar.Add(saveButton);
@@ -67,6 +74,7 @@ namespace DS.Windows
             toolbar.Add(resetButton);
             toolbar.Add(miniMapButton);
             toolbar.Add(blackboardButton);
+            toolbar.Add(colorHueButton);
 
             toolbar.AddStyleSheets("DialogueSystem/DSToolbarStyles.uss");
 
@@ -126,6 +134,12 @@ namespace DS.Windows
             graphView.ToggleBlackboard();
 
             blackboardButton.ToggleInClassList("ds-toolbar__button__selected");
+        }       
+        private void ToggleColorHue()
+        {
+            graphView.ToggleColorHue();
+
+            colorHueButton.ToggleInClassList("ds-toolbar__button__selected");
         }
         #endregion
         #region Functions 
@@ -142,6 +156,5 @@ namespace DS.Windows
             saveButton.SetEnabled(false);
         }
         #endregion
-
     }
 }
