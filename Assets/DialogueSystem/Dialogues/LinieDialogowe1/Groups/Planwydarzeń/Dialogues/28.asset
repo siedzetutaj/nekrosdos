@@ -16,7 +16,7 @@ MonoBehaviour:
   <Text>k__BackingField: do godziny 14 jest czas wolny
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7a2aa91ce487cf04e87112ea48d4f9ea, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: da4666d6d04b2bc489fcaf501b4214a8, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

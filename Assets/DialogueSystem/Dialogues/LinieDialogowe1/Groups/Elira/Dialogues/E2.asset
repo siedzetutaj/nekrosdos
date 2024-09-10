@@ -17,7 +17,7 @@ MonoBehaviour:
     z tego co dok\u0142adnie ma miejsce za zamknietymi drzwiami gabinetu jej ojca."
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c113f6041a6e77941b03b0b4d9b9914d, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
