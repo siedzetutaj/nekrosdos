@@ -10,17 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: 2
+  m_Name: V10
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: 2
-  <Text>k__BackingField: 2
+  <DialogueName>k__BackingField: V10
+  <Text>k__BackingField: "Reszta wydarze\u0144 tak jak powy\u017Cej w skr\xF3cie
+    - spotkanie - wezwanie do cia\u0142a - odeskortowanie do pokoju "
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 570e6fe2b8b3a57479a34a35564cdfa3, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a9fa2afad69b6ce44b26382e5d0443da, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
-  <ExposedProperties>k__BackingField:
-  - Name: 2
-    OldName: 2
-    Value: 1
+  <ExposedProperties>k__BackingField: []

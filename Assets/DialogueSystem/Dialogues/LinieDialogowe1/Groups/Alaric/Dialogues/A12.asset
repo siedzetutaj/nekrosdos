@@ -16,8 +16,8 @@ MonoBehaviour:
   <Text>k__BackingField: "k\u0142adzie si\u0119 spa\u0107"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 24c5d518ab34b8440858f48c3f8b7e64, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
-  <IsStartingDialogue>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField: []

@@ -17,8 +17,8 @@ MonoBehaviour:
     je jeszcze posi\u0142ki - \u015Bniadanie i obiad)"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: fc314ffd9c0c25b4d83cd0160dfa216d, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
-  <IsStartingDialogue>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField: []

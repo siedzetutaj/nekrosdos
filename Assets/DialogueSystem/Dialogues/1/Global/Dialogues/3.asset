@@ -17,10 +17,10 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 4aca65fae77a00d45a9d0edb47e651d6, type: 2}
+    WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField:
-  - property:
-      Name: 1
-      OldName: 1
-      Value: 0
+  - Name: 2
+    OldName: 2
+    Value: 1

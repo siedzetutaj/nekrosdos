@@ -16,7 +16,7 @@ MonoBehaviour:
   <Text>k__BackingField: Prowadzi rozmowy z szlachcicami
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: ce966432008a25947a542fa0e50d2d27, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 1

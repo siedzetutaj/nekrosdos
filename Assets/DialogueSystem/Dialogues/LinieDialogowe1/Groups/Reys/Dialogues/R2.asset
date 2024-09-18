@@ -16,8 +16,8 @@ MonoBehaviour:
   <Text>k__BackingField: "nast\u0119pnie leci na spotkanie ze szlacht\u0105"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: f3b16c75fe89852429c6325d582ee198, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
-  <IsStartingDialogue>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField: []

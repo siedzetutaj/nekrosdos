@@ -18,8 +18,8 @@ MonoBehaviour:
     mog\u0142a by\u0107 w niebezpiecze\u0144stwie ch\u0142osta pokoj\xF3wk\u0119"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 082f81daf821ddb4293364ac9089f1a4, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
-  <IsStartingDialogue>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField: []

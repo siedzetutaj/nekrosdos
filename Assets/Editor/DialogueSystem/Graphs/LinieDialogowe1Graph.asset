@@ -43,7 +43,7 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 1348, y: 6448}
   - <ID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <Name>k__BackingField: Alaric
-    <Position>k__BackingField: {x: 1325, y: 8633.001}
+    <Position>k__BackingField: {x: 1325, y: 8633}
   - <ID>k__BackingField: 406139ac-8330-4e01-b092-48a28ed1794a
     <Name>k__BackingField: Desmond
     <Position>k__BackingField: {x: 1360, y: 5695}
@@ -73,10 +73,10 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 1354, y: 6090}
   - <ID>k__BackingField: b17df2db-9957-4bad-965d-8b3ca70acddb
     <Name>k__BackingField: Virion
-    <Position>k__BackingField: {x: 1344, y: 10155}
+    <Position>k__BackingField: {x: 1344.0004, y: 10155.001}
   - <ID>k__BackingField: aa8c7137-665f-467d-94d9-a468718ffb6c
     <Name>k__BackingField: Reys
-    <Position>k__BackingField: {x: 1336.0002, y: 9769}
+    <Position>k__BackingField: {x: 1336, y: 9769}
   - <ID>k__BackingField: 40500a86-6267-41b3-80ff-d4128c266937
     <Name>k__BackingField: Ute
     <Position>k__BackingField: {x: 1326, y: 8192}
@@ -2790,7 +2790,7 @@ MonoBehaviour:
     <Text>k__BackingField: 'Chroni posiedzenia szlachty '
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 66c20a2a-a404-425e-b634-665dfde65d4b
     <GroupID>k__BackingField: 6f67f922-a80f-4526-9dfa-cef5029eaf97
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1352, y: 9098}
@@ -2801,7 +2801,7 @@ MonoBehaviour:
     <Text>k__BackingField: Prowadzi rozmowy z szlachcicami
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 0234599c-0eb8-4feb-808f-2cac5cbd7031
     <GroupID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1350, y: 8694}
@@ -2820,10 +2820,11 @@ MonoBehaviour:
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 21a5522e-5593-4704-ae8d-3458082c31c7
     <Name>k__BackingField: V1
-    <Text>k__BackingField: Dialogue text.
+    <Text>k__BackingField: "virion jest cz\u0142owiekiem dystyngowanym i bardzo mocno
+      skoncentrowanym na dzia\u0142aniu prawie i s\u0142u\u017Cbie"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: fc169089-62a6-495c-92d9-c9636ff598ad
     <GroupID>k__BackingField: b17df2db-9957-4bad-965d-8b3ca70acddb
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1369, y: 10214}
@@ -4771,7 +4772,7 @@ MonoBehaviour:
       je jeszcze posi\u0142ki - \u015Bniadanie i obiad)"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 4e5c9c0a-863a-418d-b321-202835f9527d
     <GroupID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2679, y: 8695}
@@ -4783,7 +4784,7 @@ MonoBehaviour:
       gabinetu Marii"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 089e3a4c-d7d6-43aa-99e2-80b3b600cabe
     <GroupID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3330, y: 8698}
@@ -4795,7 +4796,7 @@ MonoBehaviour:
       i lokatorom posiad\u0142o\u015Bci"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 2a568cee-7953-4307-b4e9-32501c0bcffa
     <GroupID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3979, y: 8700}
@@ -4807,7 +4808,7 @@ MonoBehaviour:
       zasz\u0142o w pokoju"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 4ebcb800-6c4f-474a-b640-3b7062abe86c
     <GroupID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 4634, y: 8701}
@@ -4818,7 +4819,7 @@ MonoBehaviour:
     <Text>k__BackingField: "odnajduje pier\u015Bcie\u0144"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: b625a52e-8065-4277-9647-3099da630076
     <GroupID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 5296, y: 8705}
@@ -4830,7 +4831,7 @@ MonoBehaviour:
       zmar\u0142ej do kaplicy"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: f4cda729-718a-4569-a02e-1ed940f386be
     <GroupID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 5563, y: 8709}
@@ -4841,7 +4842,7 @@ MonoBehaviour:
     <Text>k__BackingField: "tam sp\u0119dza sporo czasu nad czuwaniu przy ciele"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: ed595d0f-3a11-41db-81dd-4df9a0c9f897
     <GroupID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 6215, y: 8711}
@@ -4853,7 +4854,7 @@ MonoBehaviour:
       Viktora"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 524b4b3f-c46b-45c9-9786-e6d88640160a
     <GroupID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 6869, y: 8713}
@@ -4865,7 +4866,7 @@ MonoBehaviour:
       nie znajduje"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: f0782f4a-05b0-488e-85bc-8296a31f7b69
     <GroupID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 7528, y: 8715}
@@ -4876,7 +4877,7 @@ MonoBehaviour:
     <Text>k__BackingField: "k\u0142adzie si\u0119 spa\u0107"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: f3ed41fe-7399-40a7-98b8-a25f329a5bce
     <GroupID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 8188, y: 8711}
@@ -4888,7 +4889,7 @@ MonoBehaviour:
       by nikt nie opuszcza\u0142 posiad\u0142o\u015Bci "
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: fb2c83e8-3019-4ad8-98d2-602638742b35
     <GroupID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 8461, y: 8714}
@@ -4901,7 +4902,7 @@ MonoBehaviour:
       dziewczynk\u0119 w tym co zasz\u0142o"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 224cf33e-49d4-4856-b795-991fa2cecc0c
     <GroupID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 9116, y: 8714}
@@ -4912,7 +4913,7 @@ MonoBehaviour:
     <Text>k__BackingField: "T\u0142umaczy si\u0119 z obecno\u015Bci hostesa w posiad\u0142o\u015Bci"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 03c472ff-853d-4771-8d94-6000169d8a06
     <GroupID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2024, y: 8692}
@@ -4925,7 +4926,7 @@ MonoBehaviour:
       ta mog\u0142a by\u0107 w niebezpiecze\u0144stwie ch\u0142osta pokoj\xF3wk\u0119"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 529c5384-83ea-4b5c-bfa2-613c21eaf5d0
     <GroupID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 9767, y: 8720}
@@ -4949,7 +4950,7 @@ MonoBehaviour:
     <Text>k__BackingField: "w przerwach patroluje posiad\u0142o\u015Bc"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: f9425a7d-08f8-4a32-b38e-35535342f35f
     <GroupID>k__BackingField: 6f67f922-a80f-4526-9dfa-cef5029eaf97
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2009, y: 9099}
@@ -4962,7 +4963,7 @@ MonoBehaviour:
       i wraz z desmondem"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 8860761d-8a20-4d9f-929f-70d98485332a
     <GroupID>k__BackingField: 6f67f922-a80f-4526-9dfa-cef5029eaf97
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2671, y: 9101}
@@ -4985,7 +4986,7 @@ MonoBehaviour:
     <Text>k__BackingField: "i w zasadzie to robi prez ca\u0142y czas "
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: a7faca26-b6de-4763-8988-860784267039
     <GroupID>k__BackingField: 6f67f922-a80f-4526-9dfa-cef5029eaf97
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3330, y: 9107}
@@ -4998,7 +4999,7 @@ MonoBehaviour:
       a abi ma pr\xF3bowa\u0107 wyci\u0105gn\u0105\u0107 co\u015B z desmonda"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 606c1911-72b6-4257-a495-d6b294b6567d
     <GroupID>k__BackingField: aa8c7137-665f-467d-94d9-a468718ffb6c
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1361, y: 9840}
@@ -5009,7 +5010,7 @@ MonoBehaviour:
     <Text>k__BackingField: "nast\u0119pnie leci na spotkanie ze szlacht\u0105"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: e68cc9a8-67db-46b6-b4fc-12cd6c08f305
     <GroupID>k__BackingField: aa8c7137-665f-467d-94d9-a468718ffb6c
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2036, y: 9828}
@@ -5021,7 +5022,7 @@ MonoBehaviour:
       i nakazuje Abi w\u0142ama\u0107 si\u0119 do gabinetu Marii w trakcie jej nieobecno\u015Bci"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: a3a338a8-c09b-4fb6-86a2-de8cd585a1ef
     <GroupID>k__BackingField: aa8c7137-665f-467d-94d9-a468718ffb6c
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2732, y: 9832}
@@ -5035,7 +5036,7 @@ MonoBehaviour:
       tak wiele ludzi po posiad\u0142o\u015Bci w szczeg\xF3lno\u015Bci Balon"
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: a73427fd-6949-4dde-bf96-4d0ca73453fb
     <GroupID>k__BackingField: aa8c7137-665f-467d-94d9-a468718ffb6c
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3404, y: 9837}
@@ -5048,7 +5049,7 @@ MonoBehaviour:
       jest przekonany \u017Ce to Abigail zabi\u0142a Marie "
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 729ed256-ffc8-4686-beda-4dab1f18ea06
     <GroupID>k__BackingField: aa8c7137-665f-467d-94d9-a468718ffb6c
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 4057, y: 9838}
@@ -5063,6 +5064,139 @@ MonoBehaviour:
     <GroupID>k__BackingField: aa8c7137-665f-467d-94d9-a468718ffb6c
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 4712, y: 9840}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: fc169089-62a6-495c-92d9-c9636ff598ad
+    <Name>k__BackingField: V2
+    <Text>k__BackingField: "z samego rana virion uda\u0142 si\u0119 do biblioteki
+      gdzie liczy\u0142 na rozmow\u0119 z Welnem kt\xF3rego uwa\u017Ca za osob\u0119
+      godn\u0105 dyskusji"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 7f85ae69-39ef-4f19-a85a-82a01f0ab0cb
+    <GroupID>k__BackingField: b17df2db-9957-4bad-965d-8b3ca70acddb
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2038, y: 10218}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 7f85ae69-39ef-4f19-a85a-82a01f0ab0cb
+    <Name>k__BackingField: V3
+    <Text>k__BackingField: "nast\u0119pnie uda\u0142 si\u0119 na \u015Bniadanie i
+      spotkanie w zwi\u0105zku z ma\u0142\u017Ce\u0144stwem eliry"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 27dab0e7-8438-4e7b-8c5b-3f9a4795152d
+    <GroupID>k__BackingField: b17df2db-9957-4bad-965d-8b3ca70acddb
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2694, y: 10220}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 27dab0e7-8438-4e7b-8c5b-3f9a4795152d
+    <Name>k__BackingField: V4
+    <Text>k__BackingField: "spotkanie przxebiega\u0142o raczej w dobrym nastroju.
+      Sam virion raczej nie jest bardzo zainteresowany realnym po\u0142\u0105czeniem
+      dw\xF3ch rod\xF3w jednak \u017Cywi spory szacunek do Alarica jak i przede wszystkim
+      do Marii z kt\xF3r\u0105 niejednokrotnie wsp\xF3\u0142pracowa\u0142 przy misjach
+      dyplomatycznych"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 62e2681d-dfd1-4081-953e-29df430fdaeb
+    <GroupID>k__BackingField: b17df2db-9957-4bad-965d-8b3ca70acddb
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3361, y: 10221}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 62e2681d-dfd1-4081-953e-29df430fdaeb
+    <Name>k__BackingField: V5
+    <Text>k__BackingField: "Odczuwa jednak pewn\u0105 niech\u0119\u0107 ze strony
+      Alarica, kt\xF3r\u0105 niezbyt si\u0119 przejmuj\u0119 jednak nie do ko\u0144ca
+      rozumie \u017Ar\xF3d\u0142o z, kt\xF3rego ono pochodzi. "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 8959eb8d-d085-4ab3-9f40-0a706b518771
+    <GroupID>k__BackingField: b17df2db-9957-4bad-965d-8b3ca70acddb
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4021, y: 10222}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 9cf7add1-1b94-4261-a37e-eac5d11069f5
+    <Name>k__BackingField: V8
+    <Text>k__BackingField: "Virion w przerwie mi\u0119dzy spotkaniami postanawia
+      skonfrontowa\u0107 si\u0119 z Alariciem i zapyta\u0107 go o oficjalny pow\xF3d
+      obecno\u015Bci Hostesa w posiad\u0142o\u015Bci"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: c069b99a-05f1-45f2-8b7d-e01d95f4eefb
+    <GroupID>k__BackingField: b17df2db-9957-4bad-965d-8b3ca70acddb
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6000, y: 10229}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: c069b99a-05f1-45f2-8b7d-e01d95f4eefb
+    <Name>k__BackingField: V9
+    <Text>k__BackingField: "Ostatecznie dyskusja g\u0142\xF3wnie za spraw\u0105 Gerviego
+      rozwi\u0105za\u0142a si\u0119 w miar\u0119 polubownie jednak virion nie wierzy
+      w wyt\u0142umaczenie Alarica"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 3b85ad90-15af-4cbd-8818-31e771f61abb
+    <GroupID>k__BackingField: b17df2db-9957-4bad-965d-8b3ca70acddb
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6654, y: 10232}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: f1503385-443f-41aa-a366-e0216fa206f2
+    <Name>k__BackingField: V7
+    <Text>k__BackingField: "Alaric \u017Cywi niech\u0119\u0107 do syggilit\xF3w z
+      powodu tego \u017Ce ci mocno w\u0119szyli w tym co sta\u0142o si\u0119 w trakcie
+      porodu jego \u017Cony, a czego on by\u0142 prowodyrem."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 9cf7add1-1b94-4261-a37e-eac5d11069f5
+    <GroupID>k__BackingField: b17df2db-9957-4bad-965d-8b3ca70acddb
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5344, y: 10226}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 3b85ad90-15af-4cbd-8818-31e771f61abb
+    <Name>k__BackingField: V10
+    <Text>k__BackingField: "Reszta wydarze\u0144 tak jak powy\u017Cej w skr\xF3cie
+      - spotkanie - wezwanie do cia\u0142a - odeskortowanie do pokoju "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 0ada7712-5611-4341-b3dd-83e5263ef891
+    <GroupID>k__BackingField: b17df2db-9957-4bad-965d-8b3ca70acddb
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7313, y: 10235}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 0ada7712-5611-4341-b3dd-83e5263ef891
+    <Name>k__BackingField: V11
+    <Text>k__BackingField: "nast\u0119pnego dnia rano Virion rozpoczyna spisywanie
+      dokument\xF3w mog\u0105cych pom\xF3c detektywom w \u015Bledztwie"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: b17df2db-9957-4bad-965d-8b3ca70acddb
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7973, y: 10238}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 8959eb8d-d085-4ab3-9f40-0a706b518771
+    <Name>k__BackingField: V6
+    <Text>k__BackingField: "Po zobaczeniu w posiad\u0142o\u015Bci hostesa i wyci\u0105gni\u0119ciu
+      informacji od s\u0142u\u017Cby kim jest \xF3w go\u015B\u0107 doszukuj\u0119
+      si\u0119 \u017Ar\xF3de\u0142 zachowania Alarica w\u0142a\u015Bnie w Hostesie.
+      Uwa\u017Ca \u017Ce zapewne r\xF3wnocze\u015Bnie z dyskusj\u0105 szlachty prowadzona
+      jest jaka\u015B szemrana gra i przekupstwo ze strony rodu Morteo i gubernatorami
+      prowincji i to dlatego alaric nie mo\u017Ce zachowa\u0107 odpowiedniego nastawienia
+      i prezeszkadza mu obecno\u015B\u0107 syggility."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: f1503385-443f-41aa-a366-e0216fa206f2
+    <GroupID>k__BackingField: b17df2db-9957-4bad-965d-8b3ca70acddb
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4685, y: 10224}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   <ExposedProperties>k__BackingField:
@@ -5442,6 +5576,16 @@ MonoBehaviour:
     - Key: Virion
       Value:
       - V1
+      - V2
+      - V3
+      - V4
+      - V5
+      - V8
+      - V9
+      - V7
+      - V10
+      - V11
+      - V6
     - Key: Ute
       Value:
       - U1
