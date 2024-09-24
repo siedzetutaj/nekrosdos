@@ -16,22 +16,22 @@ MonoBehaviour:
   <DialogueGroups>k__BackingField:
     list: []
   <UngroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: 11d2e030386d98d40a67cb37a62213c0, type: 2}
   - {fileID: 11400000, guid: d49a156bc1eefba489c47ed43e02c1cd, type: 2}
   - {fileID: 11400000, guid: ec071ad3e8a11ed4990f713d808ca009, type: 2}
-  - {fileID: 11400000, guid: 86055fefe90b3b649a395ea83957c71b, type: 2}
   - {fileID: 11400000, guid: da1de8ffe61c98b449c33cbfd4166dc6, type: 2}
   - {fileID: 11400000, guid: 045562926c7e23043b3425aeed13d19b, type: 2}
   - {fileID: 11400000, guid: 4aca65fae77a00d45a9d0edb47e651d6, type: 2}
-  - {fileID: 11400000, guid: 11d2e030386d98d40a67cb37a62213c0, type: 2}
-  - {fileID: 11400000, guid: 570e6fe2b8b3a57479a34a35564cdfa3, type: 2}
   - {fileID: 11400000, guid: eb9540bc19767bb44b932511c274cca8, type: 2}
+  - {fileID: 11400000, guid: 570e6fe2b8b3a57479a34a35564cdfa3, type: 2}
+  - {fileID: 11400000, guid: 86055fefe90b3b649a395ea83957c71b, type: 2}
   <ExposedProperties>k__BackingField:
   - Name: 1
     OldName: 1
     Value: 0
   - Name: 2
     OldName: 2
-    Value: 0
+    Value: 1
   - Name: 3
     OldName: 3
     Value: 0

@@ -26,7 +26,14 @@ MonoBehaviour:
   <ExposedProperties>k__BackingField:
   - Name: 1
     OldName: 1
+<<<<<<< HEAD
     Value: 1
   - Name: 2
     OldName: 2
     Value: 0
+=======
+    Value: 0
+  - Name: 2
+    OldName: 2
+    Value: 1
+>>>>>>> a327f03b3f9e71666d878307f305543222a14183

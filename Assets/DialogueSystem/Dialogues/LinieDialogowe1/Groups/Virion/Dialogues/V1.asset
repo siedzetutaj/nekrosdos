@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: V1
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: V1
-  <Text>k__BackingField: Dialogue text.
+  <Text>k__BackingField: "virion jest cz\u0142owiekiem dystyngowanym i bardzo mocno
+    skoncentrowanym na dzia\u0142aniu prawie i s\u0142u\u017Cbie"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a4f332218942fc84c9124f14ddb334f1, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 1

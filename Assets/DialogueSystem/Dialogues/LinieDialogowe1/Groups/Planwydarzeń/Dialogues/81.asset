@@ -19,7 +19,7 @@ MonoBehaviour:
     s\u0142ysza\u0142)"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: dc471995327e4e843ab5afbb6228a854, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 0}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

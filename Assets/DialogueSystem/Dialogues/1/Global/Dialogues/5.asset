@@ -20,4 +20,7 @@ MonoBehaviour:
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
-  <ExposedProperties>k__BackingField: []
+  <ExposedProperties>k__BackingField:
+  - Name: 
+    OldName: 
+    Value: 0

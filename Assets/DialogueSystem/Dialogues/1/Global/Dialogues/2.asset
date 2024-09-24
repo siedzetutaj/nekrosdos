@@ -21,6 +21,7 @@ MonoBehaviour:
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
   <ExposedProperties>k__BackingField:
+<<<<<<< HEAD
   - Name: 1
     OldName: 1
     Value: 0
@@ -30,3 +31,8 @@ MonoBehaviour:
   - Name: 3
     OldName: 3
     Value: 0
+=======
+  - Name: 2
+    OldName: 2
+    Value: 1
+>>>>>>> a327f03b3f9e71666d878307f305543222a14183
