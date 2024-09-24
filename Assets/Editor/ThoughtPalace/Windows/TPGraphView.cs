@@ -269,7 +269,7 @@ public class TPGraphView : GraphView
     {
         this.AddStyleSheets(
             "DialogueSystem/DSGraphViewStyles.uss",
-            "DialogueSystem/DSNodeStyles.uss"
+            "DialogueSystem/TPNodeStyles.uss"
         );
     }
     private void AddMiniMapStyles()

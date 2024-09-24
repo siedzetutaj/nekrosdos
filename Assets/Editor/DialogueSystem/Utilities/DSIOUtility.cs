@@ -7,6 +7,7 @@ using UnityEngine;
 
 namespace DS.Utilities
 {
+    using Codice.Client.BaseCommands.CheckIn;
     using Data;
     using Data.Save;
     using Elements;
@@ -67,7 +68,6 @@ namespace DS.Utilities
             SaveAsset(dialogueContainer);
             SaveExposedProperites(graphData);
         }
-
         private static void SaveExposedProperites(DSGraphSaveDataSO graphData)
         {
             graphData.ExposedProperties.AddRange(graphView.exposedProperties);
@@ -144,7 +144,7 @@ namespace DS.Utilities
         {
             List<DSChoiceSaveData> choices = CloneNodeChoices(node.Choices);
 
-            DSNodeSaveData nodeData = new DSNodeSaveData()
+            DSNodeSaveData nodeData = new()
             {
                 ID = node.ID,
                 Name = node.DialogueName,
@@ -153,8 +153,15 @@ namespace DS.Utilities
                 GroupID = node.Group?.ID,
                 DialogueType = node.DialogueType,
                 Position = node.GetPosition().position,
-                ExposedProperties = node.ExposedPropertyNodeElements.ConvertAll(x => x.property),
-                Color = node.backgroundColor
+                ExposedProperties = node.AllExposedPropertyNodeElements.ConvertAll(x => new DSExposedProperty()
+                {
+                    Name = x.property.Name,
+                    OldName = x.property.Name,
+                    Value = x.property.Value,
+                }),
+                Color = node.backgroundColor,
+                CharacterSO = node.CharacterSO,
+                CharacterSprite = node.SpriteImage.image
         };
 
         graphData.Nodes.Add(nodeData);
@@ -182,7 +189,7 @@ namespace DS.Utilities
                 ConvertNodeChoicesToDialogueChoices(node.Choices),
                 node.DialogueType,
                 node.IsStartingNode(),
-                node.ExposedPropertyNodeElements.ConvertAll(x => x.property)
+                node.AllExposedPropertyNodeElements.ConvertAll(x => x.property)
             );
 
             createdDialogues.Add(node.ID, dialogue);
@@ -317,14 +324,20 @@ namespace DS.Utilities
                 node.ID = nodeData.ID;
                 node.Choices = choices;
                 node.Text = nodeData.Text;
+                node.CharacterSO = nodeData.CharacterSO;
 
                 foreach(var property in nodeData.ExposedProperties)
                 {
-                    ExposedPropertyNodeElement element = new ExposedPropertyNodeElement() 
-                    { 
-                        property = property
+                    ExposedPropertyNodeElement element = new ExposedPropertyNodeElement()
+                    {
+                        property = new DSExposedProperty()
+                        {
+                            Name = property.Name,
+                            OldName = property.OldName,
+                            Value = property.Value
+                        }
                     };
-                    node.ExposedPropertyNodeElements.Add(element);
+                    node.AllExposedPropertyNodeElements.Add(element);
                 }
               //  node.ExposedPropertyNodeElements = nodeData.ExposedProperties;
                 node.Draw();
@@ -334,7 +347,7 @@ namespace DS.Utilities
                     node.backgroundColor = nodeData.Color;
                     node.ResetStyle();
                 }
-
+                node.LoadSpritesFromScriptableObject(nodeData.CharacterSprite);
                 graphView.AddElement(node);
 
                 loadedNodes.Add(node.ID, node);

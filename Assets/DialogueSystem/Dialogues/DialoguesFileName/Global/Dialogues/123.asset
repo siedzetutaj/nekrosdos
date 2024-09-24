@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: 2
+  m_Name: 123
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: 2
+  <DialogueName>k__BackingField: 123
   <Text>k__BackingField: Dialogue text.
   <Choices>k__BackingField:
-  - <Text>k__BackingField: True
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: ef47b28d4b3317344b84368bd29ad8ca, type: 2}
-    WasDisplayed: 0
-  - <Text>k__BackingField: False
+  - <Text>k__BackingField: New Choice
     <NextDialogue>k__BackingField: {fileID: 0}
     WasDisplayed: 0
-  <DialogueType>k__BackingField: 2
-  <IsStartingDialogue>k__BackingField: 0
+  - <Text>k__BackingField: New Choice
+    <NextDialogue>k__BackingField: {fileID: 0}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 1
   <ExposedProperties>k__BackingField: []

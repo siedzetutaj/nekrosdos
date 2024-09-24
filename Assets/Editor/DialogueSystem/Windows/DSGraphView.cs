@@ -73,7 +73,7 @@ namespace DS.Windows
             AddSearchWindow();
             AddMiniMap();
             AddBlackboard();
-            AddColoHue();
+            AddColorHue();
 
             OnElementsDeleted();
             OnGroupElementsAdded();
@@ -503,7 +503,7 @@ namespace DS.Windows
             blackboard.SetPosition(new Rect(5, 50, 250, 600));
             Add(blackboard);
         }
-        private void AddColoHue()
+        private void AddColorHue()
         {
             colorHue = new ColorField()
             {
@@ -511,10 +511,10 @@ namespace DS.Windows
                 visible = false,
             };
             colorHue.style.position = Position.Absolute;
-            colorHue.style.bottom = 10; // 10 units from the bottom
-            colorHue.style.right = 10;  // 10 units from the right
-            colorHue.style.width = 100; // Optional: Adjust width
-            colorHue.style.height = 10; // Optional: Adjust height
+            colorHue.style.bottom = 5; 
+            colorHue.style.right = 5;  
+            colorHue.style.width = 75; 
+            colorHue.style.height = 14; 
             colorHue.RegisterValueChangedCallback(evt =>
             {
                 selectedColor = evt.newValue;

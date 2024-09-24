@@ -17,9 +17,6 @@ MonoBehaviour:
     list: []
   <UngroupedDialogues>k__BackingField:
   - {fileID: 11400000, guid: ef47b28d4b3317344b84368bd29ad8ca, type: 2}
-  - {fileID: 11400000, guid: 11b9f1863b4eb93438b8d92651677cfd, type: 2}
-  - {fileID: 11400000, guid: 302ab293991ce564db3ed51c068b3456, type: 2}
-  - {fileID: 11400000, guid: 47d3501228c95cf4bbff5cdd6bcf6fcb, type: 2}
   <ExposedProperties>k__BackingField:
   - Name: kasia
     OldName: kasia
@@ -29,4 +26,4 @@ MonoBehaviour:
     Value: 1
   - Name: krzys
     OldName: krzys
-    Value: 1
+    Value: 0

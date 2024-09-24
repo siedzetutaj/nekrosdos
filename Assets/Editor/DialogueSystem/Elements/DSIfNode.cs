@@ -31,6 +31,8 @@ namespace DS.Elements
             };
 
             Choices.Add(choiceFalse);
+            mainContainer.RemoveFromClassList("ds-node__main-container");
+            mainContainer.AddToClassList("ds-node__main-container-for-ifs");
         }
         public override void Draw()
         {
@@ -75,6 +77,8 @@ namespace DS.Elements
             };
 
             Choices.Add(choiceFalse);
+            mainContainer.RemoveFromClassList("ds-node__main-container");
+            mainContainer.AddToClassList("ds-node__main-container-for-ifs");
         }
         public override void Draw()
         {

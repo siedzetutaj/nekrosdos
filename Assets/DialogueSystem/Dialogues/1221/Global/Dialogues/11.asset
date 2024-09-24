@@ -19,5 +19,14 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 0}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 1
-  <IsStartingDialogue>k__BackingField: 0
-  <ExposedProperties>k__BackingField: []
+  <IsStartingDialogue>k__BackingField: 1
+  <ExposedProperties>k__BackingField:
+  - Name: kasia
+    OldName: kasia
+    Value: 1
+  - Name: marek
+    OldName: marek
+    Value: 0
+  - Name: krzys
+    OldName: krzys
+    Value: 0

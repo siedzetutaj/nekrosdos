@@ -4,10 +4,12 @@ using System.Linq;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEditor.UIElements;
 
 namespace DS.Elements
 {
     using Data.Save;
+    using TMPro;
     using Utilities;
     using Windows;
 
@@ -19,7 +21,12 @@ namespace DS.Elements
         public string Text { get; set; }
         public DSDialogueType DialogueType { get; set; }
         public DSGroup Group { get; set; }
-        public List<ExposedPropertyNodeElement> ExposedPropertyNodeElements { get; set; }
+        public List<ExposedPropertyNodeElement> AllExposedPropertyNodeElements { get; set; }
+        public DSCharacterSO CharacterSO { get; set; }
+        public Image SpriteImage { get; set; }
+        
+        private VisualElement LeftContainer { get; set; }
+        private DropdownField SpriteDropdown { get; set; }
 
         protected DSGraphView graphView;
         public Color backgroundColor;
@@ -37,7 +44,7 @@ namespace DS.Elements
 
             DialogueName = nodeName;
             Choices = new List<DSChoiceSaveData>();
-            ExposedPropertyNodeElements = new List<ExposedPropertyNodeElement>();
+            AllExposedPropertyNodeElements = new List<ExposedPropertyNodeElement>();
             Text = "Dialogue text.";
 
             SetPosition(new Rect(position, Vector2.zero));
@@ -60,9 +67,61 @@ namespace DS.Elements
             DrawInputPort();
 
             /* EXTENSION CONTAINER */
-
+            DrawLeftSide();
             DrawExposedPropertiesContainer();
-            DrawDialogueTextField();
+            DrawRightSide();
+            // DrawDialogueTextField();
+
+            RefreshExpandedState();
+        }
+
+        protected void DrawLeftSide()
+        {
+            LeftContainer = new VisualElement();
+            LeftContainer.AddToClassList("ds-node__left-container");
+
+            ObjectField ScriptableObjectField = new ObjectField()
+            {
+                objectType = typeof(DSCharacterSO),
+                value = CharacterSO,
+            };
+            ScriptableObjectField.RegisterValueChangedCallback(evt =>
+            {
+                if (evt.newValue is DSCharacterSO character)
+                {
+                    // Load sprites from selected object
+                    CharacterSO = character;
+                    LoadSpritesFromScriptableObject();
+                }
+            });
+            LeftContainer.Add(ScriptableObjectField);
+            // Sprite display area
+            VisualElement SpriteContainer = new VisualElement();
+            SpriteContainer.AddToClassList("ds-node__sprite-container");
+            SpriteImage = new Image();
+            SpriteContainer.Add(SpriteImage);
+            LeftContainer.Add(SpriteContainer);
+
+            // Dropdown for selecting the sprite
+            SpriteDropdown = new DropdownField();
+            SpriteDropdown.RegisterValueChangedCallback(evt =>
+            {
+                UpdateSpriteDisplay(evt.newValue);
+            });
+            LeftContainer.Add(SpriteDropdown);
+            extensionContainer.Add(LeftContainer);
+        }
+        protected void DrawRightSide()
+        {
+            VisualElement rightContainer = new VisualElement();
+            rightContainer.AddToClassList("ds-node__right-container");
+            //textField = new TextField("Text");
+            //rightContainer.Add(textField);
+
+            // Add left and right containers to main container
+            extensionContainer.Add(DrawDialogueTextField());
+            //    extensionContainer.Add(mainContainer);
+
         }
         protected void DrawTitle()
         {
@@ -126,39 +185,47 @@ namespace DS.Elements
 
             //Create New
             VisualElement customDataContainer = new VisualElement();
-            customDataContainer.AddToClassList("ds-node__custom-data-container");
+            customDataContainer.AddToClassList("ds-node__foldout-data-container");
             containerTitle ??= "Dialogue Choice Effect";
             Foldout foldout = DSElementUtility.CreateFoldout(containerTitle);
             foldout.value = false;
 
-            Button addPropertyButton = DSElementUtility.CreateButton("Add Property", () =>
+            foldout.RegisterValueChangedCallback(evt =>
             {
-                DrawExposedPropertyList(foldout,ExposedPropertyNodeElements);
+                customDataContainer.style.display = evt.newValue ? DisplayStyle.Flex : DisplayStyle.None;
             });
 
-            foldout.Add(addPropertyButton);
-            if (ExposedPropertyNodeElements.Count > 0)
+            Button addPropertyButton = DSElementUtility.CreateButton("Add Property", () =>
+            {
+                DrawExposedPropertyList(customDataContainer, AllExposedPropertyNodeElements);
+            });
+
+            customDataContainer.Add(addPropertyButton);
+            if (AllExposedPropertyNodeElements.Count > 0)
             {
                 List<ExposedPropertyNodeElement> propertyNodeElements = new List<ExposedPropertyNodeElement>();
-                propertyNodeElements.AddRange(ExposedPropertyNodeElements);
-                foreach (var property in ExposedPropertyNodeElements)
+                propertyNodeElements.AddRange(AllExposedPropertyNodeElements);
+                foreach (var property in AllExposedPropertyNodeElements)
                 {
-                    DrawExposedPropertyList(foldout, propertyNodeElements, property, false);
+                    DrawExposedPropertyList(customDataContainer, propertyNodeElements, property, false);
                 }
-                ExposedPropertyNodeElements = propertyNodeElements;
+                AllExposedPropertyNodeElements = propertyNodeElements;
             }
-            customDataContainer.Add(foldout);
 
             extensionContainer.Add(customDataContainer);
-
+            customDataContainer.style.display = DisplayStyle.None;
+            if (containerTitle == "Dialogue Choice Effect")
+                LeftContainer.Add(foldout);
+            else
+                extensionContainer.Add(foldout);
         }
-        protected void DrawExposedPropertyList(Foldout foldout, List<ExposedPropertyNodeElement> exposedPropertyNodeElements, ExposedPropertyNodeElement exposedPropertyElement = null,bool isNew = true)
+        protected void DrawExposedPropertyList(VisualElement visualElement, List<ExposedPropertyNodeElement> exposedPropertyNodeElements, ExposedPropertyNodeElement exposedPropertyElement = null, bool isNew = true)
         {
             exposedPropertyElement ??= new ExposedPropertyNodeElement();
             exposedPropertyElement.Initialize(graphView);
 
             VisualElement propertyListContainer = new VisualElement();
-            propertyListContainer.AddToClassList("ds-node__custom-data-container");
+            propertyListContainer.AddToClassList("ds-node__foldout-data-container");
 
             exposedPropertyElement.listView = new ListView(graphView.exposedProperties.ConvertAll(x => x.Name))
             {
@@ -182,37 +249,37 @@ namespace DS.Elements
                 exposedPropertyElement.toggle.value = exposedPropertyElement.property.Value;
                 exposedPropertyElement.toggle.RegisterValueChangedCallback(value =>
                 {
-                    var changingPropertyIndex = ExposedPropertyNodeElements.FindIndex(x => x == exposedPropertyElement);
-                    ExposedPropertyNodeElements[changingPropertyIndex].property.Value = value.newValue;
+                    var changingPropertyIndex = AllExposedPropertyNodeElements.FindIndex(x => x == exposedPropertyElement);
+                    AllExposedPropertyNodeElements[changingPropertyIndex].property.Value = value.newValue;
                 });
             }
             propertyListContainer.Add(exposedPropertyElement.toggle);
             propertyListContainer.Add(exposedPropertyElement.listView);
-            DrawDeleteButton(foldout, propertyListContainer,exposedPropertyElement);
+            DrawDeleteButton(visualElement, propertyListContainer, exposedPropertyElement);
 
-            if(isNew)
+            if (isNew)
                 exposedPropertyNodeElements.Add(exposedPropertyElement);
             else
             {
                 int index = exposedPropertyNodeElements.FindIndex(x => x.property == exposedPropertyElement.property);
                 exposedPropertyNodeElements[index] = exposedPropertyElement;
             }
-                
-            foldout.Add(propertyListContainer);
+
+            visualElement.Add(propertyListContainer);
 
         }
-        private void DrawDeleteButton(Foldout foldout, VisualElement container, ExposedPropertyNodeElement element)
+        private void DrawDeleteButton(VisualElement visualElement, VisualElement container, ExposedPropertyNodeElement element)
         {
             Button deleteButton = DSElementUtility.CreateButton("X", () =>
             {
-                ExposedPropertyNodeElements.Remove(element);
-                foldout.Remove(container);
+                AllExposedPropertyNodeElements.Remove(element);
+                visualElement.Remove(container);
             });
 
             deleteButton.AddToClassList("ds-node__button");
-            container.Insert(0,deleteButton);
+            container.Insert(0, deleteButton);
         }
-        protected void DrawDialogueTextField()
+        protected TextField DrawDialogueTextField()
         {
             VisualElement customDataContainer = new VisualElement();
 
@@ -229,7 +296,8 @@ namespace DS.Elements
 
             textFoldout.Add(textTextField);
             customDataContainer.Add(textFoldout);
-            extensionContainer.Add(customDataContainer);
+            return textTextField;
+            //extensionContainer.Add(customDataContainer);
         }
         #endregion
         #region Disconnections
@@ -262,7 +330,7 @@ namespace DS.Elements
         #region Utilities
         public bool IsStartingNode()
         {
-            Port inputPort = (Port) inputContainer.Children().First();
+            Port inputPort = (Port)inputContainer.Children().First();
 
             return !inputPort.connected;
         }
@@ -275,10 +343,62 @@ namespace DS.Elements
             mainContainer.style.backgroundColor = backgroundColor;
             mainContainer.style.backgroundColor = backgroundColor;
         }
+        public void LoadSpritesFromScriptableObject(Texture dataToLoad = null)
+        {
+            // Example: Assuming your ScriptableObject has a List<Sprite> or similar field
+            if (CharacterSO == null)
+                return;
+            List<string> spriteNames = CharacterSO.Emotions.Select(sprite => sprite.name).ToList(); // Populate with sprite names from the object
+            SpriteDropdown.choices = spriteNames;
+
+            if (dataToLoad != null)
+            {
+                var spriteName = spriteNames.FirstOrDefault(x => x == dataToLoad.name);
+                SpriteDropdown.value = spriteName;
+                UpdateSpriteDisplay(spriteName);
+                return;
+            }
+            // Set the first sprite to be displayed (if available)
+
+            if (spriteNames.Count > 0)
+            {
+                SpriteDropdown.value = spriteNames[0];
+                UpdateSpriteDisplay(spriteNames[0]);
+            }
+        }
+        // Update the sprite image based on dropdown selection
+        private void UpdateSpriteDisplay(string spriteName)
+        {
+            Sprite selectedSprite = GetSpriteByName(spriteName);
+
+            if (selectedSprite != null)
+            {
+                // Set the sprite to the image
+                SpriteImage.image = selectedSprite.texture;
+
+                // Set the size to match container
+                SpriteImage.style.width = 100;
+                SpriteImage.style.height = 100;
+
+                // Adjust the image position to center if needed
+                SpriteImage.scaleMode = ScaleMode.ScaleToFit;
+            }
+        }
+
+        // Mock method to get sprite by name, replace with real implementation
+        private Sprite GetSpriteByName(string spriteName)
+        {
+            Sprite sprite = CharacterSO.Emotions.FirstOrDefault(x => x.name == spriteName);
+            if (sprite != null)
+            {
+                return sprite;
+            }
+            return null; // Replace with real implementation
+        }
         #endregion
     }
     [Serializable]
-    public class ExposedPropertyNodeElement 
+    public class ExposedPropertyNodeElement
     {
         [field: SerializeField] public DSExposedProperty property;
         [field: SerializeField] public ListView listView;
@@ -296,6 +416,10 @@ namespace DS.Elements
                 property = graphView.exposedProperties.Find(x => x.Name == objItem.ToString());
                 toggle.text = $"Wybrana opcja = {property.Name}";
                 toggle.value = true;
+                toggle.RegisterValueChangedCallback(value =>
+                {
+                    property.Value = value.newValue;
+                });
             }
         }
         public void OnListAddProperty(string Name)
@@ -310,4 +434,5 @@ namespace DS.Elements
             listView.Rebuild();
         }
     }
+
 }

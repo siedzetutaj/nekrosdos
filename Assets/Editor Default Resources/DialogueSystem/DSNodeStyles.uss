@@ -4,6 +4,8 @@
 {
 	background-color: var(--ds-colors-window-dark-grey-1);
 	padding: var(--ds-metrics-window-pixels-8);
+		display: flex;
+    flex-direction: row;
 }
 .ds-node__extension-container-height
 {
@@ -13,14 +15,33 @@
 {
 	background-color: var(--ds-colors-window-dark-grey-1);
 }
-
+.ds-node__main-container-for-ifs{
+	background-color: var(--ds-colors-window-dark-grey-1);
+}
 .ds-node__custom-data-container
 {
 	background-color: var(--ds-colors-window-dark-grey-3);
 	border-radius: var(--ds-metrics-window-pixels-4);
 	padding: var(--ds-metrics-window-pixels-8);
 }
-
+.ds-node__left-container {
+	background-color: var(--ds-colors-window-dark-grey-1);
+    flex-grow: 1;
+	height: 180px;
+    width: 100px;
+}
+.ds-node__right-container {
+	background-color: var(--ds-colors-window-dark-grey-1);
+    flex-grow: 1;
+}
+.ds-node__sprite-container {
+    height: 150px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+.dropdown-field {
+    margin-top: 10px;
+}
 /* INPUTS */
 
 .ds-node__text-field > .unity-text-field__input
@@ -129,14 +150,18 @@ TextField
 	margin-left: var(--ds-metrics-window-pixels-n12);
 	margin-top: var(--ds-metrics-window-pixels-8);
 }
-
+.ds-node__foldout-data-container 
+{
+	margin-left: var(--ds-metrics-window-pixels-n4);
+	margin-top: var(--ds-metrics-window-pixels-4);
+	flex-grow: 1;
+}
 /* BUILT IN */
 
 .unity-toggle__text
 {
 	margin-left: var(--ds-metrics-window-pixels-2);
 }
-
 .Image{
 	margin-right:auto;
 	height:	128px;

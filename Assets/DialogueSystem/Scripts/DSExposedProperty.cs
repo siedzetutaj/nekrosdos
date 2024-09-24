@@ -6,5 +6,5 @@ public class DSExposedProperty
 {
     public string Name;
     public string OldName;
-    public bool Value = false;
+    public bool Value = true;
 }

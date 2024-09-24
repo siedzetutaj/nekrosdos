@@ -4,9 +4,6 @@ using UnityEngine;
 
 namespace DS.Data.Save
 {
-    using DS.Elements;
-    using DS.Windows;
-
     [Serializable]
     public class DSNodeSaveData
     {
@@ -19,5 +16,7 @@ namespace DS.Data.Save
         [field: SerializeField] public Vector2 Position { get; set; }
         [field: SerializeField] public List<DSExposedProperty> ExposedProperties { get; set; }
         [field: SerializeField] public Color Color { get; set; }
+        [field: SerializeField] public DSCharacterSO CharacterSO { get; set; }
+        [field: SerializeField] public Texture CharacterSprite { get; set; }
     }
 }
