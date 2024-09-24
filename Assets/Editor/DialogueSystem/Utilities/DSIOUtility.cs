@@ -360,7 +360,6 @@ namespace DS.Utilities
                 DSGroup group = loadedGroups[nodeData.GroupID];
 
                 node.Group = group;
-
                 group.AddElement(node);
             }
         }
