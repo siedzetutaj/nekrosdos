@@ -19,58 +19,58 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 178, y: -3204}
   - <ID>k__BackingField: 5d08f44c-3861-420d-b20c-8fa3e26864f1
     <Name>k__BackingField: "PrzybycieDoPosiad\u0142o\u015Bci"
-    <Position>k__BackingField: {x: 153, y: -2450}
+    <Position>k__BackingField: {x: 153, y: -2449.9995}
   - <ID>k__BackingField: 7c5b1997-3e4a-406a-8fdf-9ce02977086d
     <Name>k__BackingField: PierwszeSpotkanieZLordemAlariciemIGervim
-    <Position>k__BackingField: {x: 150, y: -2098}
+    <Position>k__BackingField: {x: 150, y: -2097.9998}
   - <ID>k__BackingField: f3f021bd-42c3-43dc-9faa-1e274f0da20e
     <Name>k__BackingField: "RozmowaPrzedSekcj\u0105Marii"
-    <Position>k__BackingField: {x: 171, y: -550}
+    <Position>k__BackingField: {x: 171, y: -549.99994}
   - <ID>k__BackingField: 6e5453db-5bd4-4c6a-8163-1f525a48baca
     <Name>k__BackingField: "RozmowaZKap\u0142anamiBezAlarica"
-    <Position>k__BackingField: {x: 166, y: 487}
+    <Position>k__BackingField: {x: 166, y: 487.00003}
   - <ID>k__BackingField: a4eb3216-5766-455d-bfd8-24866659b547
     <Name>k__BackingField: Historia
-    <Position>k__BackingField: {x: 17012, y: 6428}
+    <Position>k__BackingField: {x: 17012, y: 6427.999}
   - <ID>k__BackingField: 5447610e-094b-4468-8e58-0274ab82a288
     <Name>k__BackingField: DialogZReysemCoraxem
-    <Position>k__BackingField: {x: 1294, y: 1695}
+    <Position>k__BackingField: {x: 1294, y: 1694.9998}
   - <ID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
     <Name>k__BackingField: "Planwydarze\u0144"
-    <Position>k__BackingField: {x: 2102, y: 4724}
+    <Position>k__BackingField: {x: 2101.9995, y: 4723.999}
   - <ID>k__BackingField: 89d8034b-36ff-4b6a-b96e-b9c9d910c69e
     <Name>k__BackingField: Ombryjczycy
-    <Position>k__BackingField: {x: 1348, y: 6448}
+    <Position>k__BackingField: {x: 1348, y: 6447.9995}
   - <ID>k__BackingField: ded304d5-8552-4c93-b647-c295d3091e0d
     <Name>k__BackingField: Alaric
-    <Position>k__BackingField: {x: 1325, y: 8633}
+    <Position>k__BackingField: {x: 1325, y: 8632.999}
   - <ID>k__BackingField: 406139ac-8330-4e01-b092-48a28ed1794a
     <Name>k__BackingField: Desmond
-    <Position>k__BackingField: {x: 1360, y: 5695}
+    <Position>k__BackingField: {x: 1360, y: 5694.9995}
   - <ID>k__BackingField: c3cb2968-3f48-4505-92ae-aab27a5c7823
     <Name>k__BackingField: Abigail
-    <Position>k__BackingField: {x: 1362, y: 10871}
+    <Position>k__BackingField: {x: 1361.9999, y: 10871}
   - <ID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
     <Name>k__BackingField: Gervi
-    <Position>k__BackingField: {x: 1315, y: 7354}
+    <Position>k__BackingField: {x: 1314.9999, y: 7353.9995}
   - <ID>k__BackingField: 6f67f922-a80f-4526-9dfa-cef5029eaf97
     <Name>k__BackingField: Balon
-    <Position>k__BackingField: {x: 1327, y: 9039}
+    <Position>k__BackingField: {x: 1326.9999, y: 9039.001}
   - <ID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
     <Name>k__BackingField: Zestes
-    <Position>k__BackingField: {x: 1321, y: 7734}
+    <Position>k__BackingField: {x: 1321, y: 7734.0005}
   - <ID>k__BackingField: 44df2e91-c3c5-448e-b075-aa59186487ca
     <Name>k__BackingField: Elira
-    <Position>k__BackingField: {x: 1337, y: 9418}
+    <Position>k__BackingField: {x: 1337, y: 9418.001}
   - <ID>k__BackingField: 97de7b29-724f-4f48-a711-73af49f76eb7
     <Name>k__BackingField: Oberon
-    <Position>k__BackingField: {x: 1354, y: 10519.001}
+    <Position>k__BackingField: {x: 1353.9999, y: 10519.001}
   - <ID>k__BackingField: c7243a95-fbc6-4a4c-a184-443867fac11e
     <Name>k__BackingField: Weln
-    <Position>k__BackingField: {x: 1305, y: 6932}
+    <Position>k__BackingField: {x: 1305, y: 6931.9995}
   - <ID>k__BackingField: fd467fab-b3d4-410e-8afa-fde4472c58dd
     <Name>k__BackingField: Lothion
-    <Position>k__BackingField: {x: 1354, y: 6090}
+    <Position>k__BackingField: {x: 1353.9999, y: 6089.9995}
   - <ID>k__BackingField: b17df2db-9957-4bad-965d-8b3ca70acddb
     <Name>k__BackingField: Virion
     <Position>k__BackingField: {x: 1344, y: 10155}
@@ -82,19 +82,22 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 1326, y: 8192}
   - <ID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <Name>k__BackingField: Arvid
-    <Position>k__BackingField: {x: 1367, y: 11245}
+    <Position>k__BackingField: {x: 1347, y: 11280}
   - <ID>k__BackingField: fba1cc5e-953e-450a-a3cf-799e4c00e2cb
     <Name>k__BackingField: "Zab\xF3jstwoaczasgry"
-    <Position>k__BackingField: {x: 18577, y: 6517}
+    <Position>k__BackingField: {x: 18576.998, y: 6517}
   - <ID>k__BackingField: bbbb2e99-1fff-496c-8879-d9e95da73303
     <Name>k__BackingField: Itemy
     <Position>k__BackingField: {x: 17792, y: 6556}
   - <ID>k__BackingField: 85a670cf-cf86-4834-9bbc-e68eb9973f54
     <Name>k__BackingField: "Dzia\u0142aniapomorderstwie"
-    <Position>k__BackingField: {x: 19317, y: 6390}
+    <Position>k__BackingField: {x: 19317, y: 6389.9995}
   - <ID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
-    <Name>k__BackingField: DialogueGroup
-    <Position>k__BackingField: {x: 1785, y: 12283}
+    <Name>k__BackingField: fgbhndb
+    <Position>k__BackingField: {x: 1367, y: 11999.999}
+  - <ID>k__BackingField: ee9600c8-8e30-44e0-a19e-a84b1ffd1a56
+    <Name>k__BackingField: "Zale\u017Cno\u015Bci"
+    <Position>k__BackingField: {x: 990, y: 12824.001}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 414bae47-e7f1-4b20-96c2-a94c3185696d
     <Name>k__BackingField: Retes1
@@ -3373,7 +3376,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: c3370072-1580-41ff-89fa-570a595e65f1
     <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2041, y: 11308}
+    <Position>k__BackingField: {x: 2022, y: 11343}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 76fb5bf1-0fbe-4433-b01a-b3a22597f1eb
@@ -3385,7 +3388,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 7b619e99-4935-492a-870a-cdeaebe230f3
     <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1392, y: 11304}
+    <Position>k__BackingField: {x: 1372, y: 11339}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 766ff48a-1c99-49d8-a86c-f3a9240dbbbb
@@ -3397,7 +3400,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 0e90b0fe-a830-4a74-a784-268d269acc9b
     <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 3339, y: 11313}
+    <Position>k__BackingField: {x: 3320, y: 11348}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: eb73f31c-4cf8-4ba4-ade6-47fe892dc693
@@ -3408,7 +3411,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 6d5f74be-4181-45b7-b5ff-afefa814288c
     <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 4646, y: 11317}
+    <Position>k__BackingField: {x: 4627, y: 11352}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 6d5f74be-4181-45b7-b5ff-afefa814288c
@@ -3420,7 +3423,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 6a1ea738-b909-41e3-a8cd-d1100485f29a
     <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 5307, y: 11318}
+    <Position>k__BackingField: {x: 5288, y: 11353}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 7d8efb5f-d9b9-4ea2-b6f4-a8140bb1b2f8
@@ -3432,7 +3435,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 379d4e3e-7b3d-4d18-9d3d-3f13376d9d02
     <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 5967, y: 11319}
+    <Position>k__BackingField: {x: 5948, y: 11354}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 4ed8fe7f-685c-4007-b2d3-c3b94ff6961b
@@ -3448,7 +3451,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 6d5f74be-4181-45b7-b5ff-afefa814288c
     <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 4642, y: 11556}
+    <Position>k__BackingField: {x: 4623, y: 11591}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 379d4e3e-7b3d-4d18-9d3d-3f13376d9d02
@@ -3461,19 +3464,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 45ac8e10-0c44-46ac-b0f8-58bbe17d5672
     <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 6624, y: 11321}
-    <ExposedProperties>k__BackingField: []
-    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
-  - <ID>k__BackingField: c9dbe2e7-7dd8-48ec-8921-70066f843b4b
-    <Name>k__BackingField: rcv
-    <Text>k__BackingField: "Nast\u0119pnie powinni skierowa\u0107 sie albo do Zestesa
-      i zwiedzi\u0107 dw\xF3r. Albo do ombryjczyk\xF3w by ich przes\u0142ucha\u0107"
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 452ed120-3fb3-484e-ba2e-081e55ea2eec
-    <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 8626, y: 11326}
+    <Position>k__BackingField: {x: 6605, y: 11356}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 6a1ea738-b909-41e3-a8cd-d1100485f29a
@@ -3491,7 +3482,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 379d4e3e-7b3d-4d18-9d3d-3f13376d9d02
     <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 5974, y: 11561}
+    <Position>k__BackingField: {x: 5955, y: 11596}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 452ed120-3fb3-484e-ba2e-081e55ea2eec
@@ -3505,7 +3496,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 9284, y: 11330}
+    <Position>k__BackingField: {x: 9265, y: 11365}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 896a4e33-94da-42c0-944a-f4b0a527cc19
@@ -3518,7 +3509,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: c9dbe2e7-7dd8-48ec-8921-70066f843b4b
     <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 7964, y: 11327}
+    <Position>k__BackingField: {x: 7945, y: 11362}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 2f1219bd-815a-47cc-8d2e-2e062670a9be
@@ -3530,7 +3521,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 896a4e33-94da-42c0-944a-f4b0a527cc19
     <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 7279, y: 11326}
+    <Position>k__BackingField: {x: 7260, y: 11361}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 45ac8e10-0c44-46ac-b0f8-58bbe17d5672
@@ -3544,7 +3535,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 896a4e33-94da-42c0-944a-f4b0a527cc19
     <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 7290, y: 11589}
+    <Position>k__BackingField: {x: 7271, y: 11624}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 0e90b0fe-a830-4a74-a784-268d269acc9b
@@ -3556,7 +3547,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 4ed8fe7f-685c-4007-b2d3-c3b94ff6961b
     <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 3991, y: 11315}
+    <Position>k__BackingField: {x: 3972, y: 11350}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: c3370072-1580-41ff-89fa-570a595e65f1
@@ -3568,7 +3559,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 766ff48a-1c99-49d8-a86c-f3a9240dbbbb
     <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2691, y: 11309}
+    <Position>k__BackingField: {x: 2672, y: 11344}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 714506dd-d5a6-4053-96bc-583e9f27317b
@@ -5224,7 +5215,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1810, y: 12342}
+    <Position>k__BackingField: {x: 1392, y: 12059}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 7e01e027-a6b1-4526-9778-311defc50288
@@ -5237,7 +5228,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2466, y: 12345}
+    <Position>k__BackingField: {x: 2048, y: 12062}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: abda69b5-2dbb-4f99-a5cc-cdfae699a3f9
@@ -5250,7 +5241,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 3135, y: 12350}
+    <Position>k__BackingField: {x: 2717, y: 12067}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 5126156e-a102-4493-8237-3c29a593837b
@@ -5261,7 +5252,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 4466, y: 12356}
+    <Position>k__BackingField: {x: 4048, y: 12073}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 010d1335-c717-47b2-a678-31104ccbb2e4
@@ -5272,7 +5263,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 5029, y: 12360}
+    <Position>k__BackingField: {x: 4611, y: 12077}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 616c3bdd-cdfb-4f72-b281-daf49ecea002
@@ -5285,7 +5276,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 3803, y: 12354}
+    <Position>k__BackingField: {x: 3385, y: 12071}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: ff938f17-57c3-45af-b40e-bdfb499c0c99
@@ -5296,7 +5287,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 4749, y: 12359}
+    <Position>k__BackingField: {x: 4331, y: 12076}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 09d6d3a8-32bd-47b4-894f-3782b78f9d5c
@@ -5307,7 +5298,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 5304, y: 12361}
+    <Position>k__BackingField: {x: 4886, y: 12078}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 6e94db24-fb14-4d7e-b8c6-93f55e69984e
@@ -5319,7 +5310,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 5961, y: 12362}
+    <Position>k__BackingField: {x: 5543, y: 12079}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 9fe2f4f3-62b6-4d0a-a0fb-f67b3be24590
@@ -5330,7 +5321,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 6636, y: 12365}
+    <Position>k__BackingField: {x: 6218, y: 12082}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 18c1ea0d-ea03-4bc9-beb3-3923969a9ebd
@@ -5341,7 +5332,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 8616, y: 12371}
+    <Position>k__BackingField: {x: 8198, y: 12088}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 952ccb95-ba27-444f-ab77-3c84aee822f3
@@ -5354,7 +5345,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 8888, y: 12372}
+    <Position>k__BackingField: {x: 8470, y: 12089}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 02dbbf8b-440f-43ed-9d83-759c6b201ee5
@@ -5365,7 +5356,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 10746, y: 12382}
+    <Position>k__BackingField: {x: 10328, y: 12099}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 5654adb0-4449-45d4-8113-1d4ee83d5c54
@@ -5376,7 +5367,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 11014, y: 12383}
+    <Position>k__BackingField: {x: 10596, y: 12100}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: b1917cac-0bd5-4b91-81fd-93c73bb91832
@@ -5387,7 +5378,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 11286, y: 12385}
+    <Position>k__BackingField: {x: 10868, y: 12102}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 10414dff-cde2-4559-83cb-a92800fe2af5
@@ -5399,7 +5390,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 7295, y: 12366}
+    <Position>k__BackingField: {x: 6877, y: 12083}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 1c07510b-4261-4d52-9ecf-af7db4ed384c
@@ -5410,7 +5401,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 9544, y: 12375}
+    <Position>k__BackingField: {x: 9126, y: 12092}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: fa75482c-b94d-49a9-ab3b-1cc90688c386
@@ -5421,7 +5412,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 9811, y: 12376}
+    <Position>k__BackingField: {x: 9393, y: 12093}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: c269618a-671c-44fa-9a79-275dde704e8a
@@ -5435,7 +5426,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 7962, y: 12368}
+    <Position>k__BackingField: {x: 7544, y: 12085}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   - <ID>k__BackingField: 8b8a737b-d793-4738-a757-9f2ab0b61ee5
@@ -5449,28 +5440,69 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 10074, y: 12376}
+    <Position>k__BackingField: {x: 9656, y: 12093}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
-  <ExposedProperties>k__BackingField:
-  - Name: Orion w Valerii
-    OldName: Orion w Valerii
-    Value: 0
-  - Name: Informacja o ludziach z Ombrii
-    OldName: Informacja o ludziach z Ombrii
-    Value: 0
-  - Name: "Alaric widzia\u0142 rytua\u0142"
-    OldName: "Alaric widzia\u0142 rytua\u0142"
-    Value: 0
-  - Name: "Alaric nie widzial rytua\u0142u"
-    OldName: "Alaric nie widzial rytua\u0142u"
-    Value: 0
-  - Name: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
-    OldName: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
-    Value: 0
-  - Name: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
-    OldName: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
-    Value: 0
+  - <ID>k__BackingField: c9dbe2e7-7dd8-48ec-8921-70066f843b4b
+    <Name>k__BackingField: rcv
+    <Text>k__BackingField: "Nast\u0119pnie powinni skierowa\u0107 sie albo do Zestesa
+      i zwiedzi\u0107 dw\xF3r. Albo do ombryjczyk\xF3w by ich przes\u0142ucha\u0107"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 452ed120-3fb3-484e-ba2e-081e55ea2eec
+    <GroupID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8606, y: 11360}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 7323db0a-069f-43d5-87d2-33f39519c4dd
+    <Name>k__BackingField: RozmowaZAlariciem
+    <Text>k__BackingField: "Info - powitanie, kto zmar\u0142, kiedy, kto jest podejrzany,
+      zr\xF3bcie sekcje"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: ee9600c8-8e30-44e0-a19e-a84b1ffd1a56
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1015, y: 12885}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 9e633602-d843-4719-8142-b0d85104effb
+    <Name>k__BackingField: "KontaktZCia\u0142emMarii"
+    <Text>k__BackingField: "kontakt utrudniony o ile nie niemo\u017Cliwy"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: ee9600c8-8e30-44e0-a19e-a84b1ffd1a56
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2360, y: 12885}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: e0154924-1f20-44e8-a1e3-19f16dd0bb62
+    <Name>k__BackingField: Sekcja
+    <Text>k__BackingField: "Maria umar\u0142a od rany ci\u0119tej szyi, brak oznak
+      walki, widoczne s\u0105 \u015Blady otrucia, nie by\u0142a w stanie mie\u0107
+      dzieci, bezw\u0142adne nogi"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: ee9600c8-8e30-44e0-a19e-a84b1ffd1a56
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1692, y: 12883}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: e624e0e8-1a6e-42dc-a83d-b93cd19b9351
+    <Name>k__BackingField: DialogueName
+    <Text>k__BackingField: Dialogue text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: ee9600c8-8e30-44e0-a19e-a84b1ffd1a56
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3066, y: 12885}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  <ExposedProperties>k__BackingField: []
   <OldGroupNames>k__BackingField:
   - "Podr\xF3\u017CW\u015Anierzycy"
   - "PrzybycieDoPosiad\u0142o\u015Bci"
@@ -5498,7 +5530,8 @@ MonoBehaviour:
   - "Zab\xF3jstwoaczasgry"
   - Itemy
   - "Dzia\u0142aniapomorderstwie"
-  - DialogueGroup
+  - fgbhndb
+  - "Zale\u017Cno\u015Bci"
   <OldUngroupedNodeNames>k__BackingField: []
   <OldGroupedNodeNames>k__BackingField:
     list:
@@ -5909,7 +5942,6 @@ MonoBehaviour:
       - vfrev
       - yb
       - rfvr
-      - rcv
       - gb
       - btyg
       - vrev
@@ -5917,6 +5949,7 @@ MonoBehaviour:
       - verfv
       - gbev
       - betbte
+      - rcv
     - Key: Oberon
       Value:
       - OB1
@@ -5951,7 +5984,7 @@ MonoBehaviour:
       - R4
       - R5
       - R6
-    - Key: DialogueGroup
+    - Key: fgbhndb
       Value:
       - dsv
       - va
@@ -5973,3 +6006,9 @@ MonoBehaviour:
       - nfgddfsn
       - tdn
       - ngdfn
+    - Key: "Zale\u017Cno\u015Bci"
+      Value:
+      - RozmowaZAlariciem
+      - "KontaktZCia\u0142emMarii"
+      - Sekcja
+      - DialogueName
