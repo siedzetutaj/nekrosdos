@@ -64,7 +64,7 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 1337, y: 9418}
   - <ID>k__BackingField: 97de7b29-724f-4f48-a711-73af49f76eb7
     <Name>k__BackingField: Oberon
-    <Position>k__BackingField: {x: 1354, y: 10519}
+    <Position>k__BackingField: {x: 1354, y: 10519.001}
   - <ID>k__BackingField: c7243a95-fbc6-4a4c-a184-443867fac11e
     <Name>k__BackingField: Weln
     <Position>k__BackingField: {x: 1305, y: 6932}
@@ -73,7 +73,7 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 1354, y: 6090}
   - <ID>k__BackingField: b17df2db-9957-4bad-965d-8b3ca70acddb
     <Name>k__BackingField: Virion
-    <Position>k__BackingField: {x: 1344.0004, y: 10155.001}
+    <Position>k__BackingField: {x: 1344, y: 10155}
   - <ID>k__BackingField: aa8c7137-665f-467d-94d9-a468718ffb6c
     <Name>k__BackingField: Reys
     <Position>k__BackingField: {x: 1336, y: 9769}
@@ -92,6 +92,9 @@ MonoBehaviour:
   - <ID>k__BackingField: 85a670cf-cf86-4834-9bbc-e68eb9973f54
     <Name>k__BackingField: "Dzia\u0142aniapomorderstwie"
     <Position>k__BackingField: {x: 19317, y: 6390}
+  - <ID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <Name>k__BackingField: DialogueGroup
+    <Position>k__BackingField: {x: 1785, y: 12283}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 414bae47-e7f1-4b20-96c2-a94c3185696d
     <Name>k__BackingField: Retes1
@@ -5199,6 +5202,256 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 4685, y: 10224}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 318d3215-b392-4237-9e36-4674d6c587b2
+    <Name>k__BackingField: DialogueName
+    <Text>k__BackingField: Dialogue text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 97de7b29-724f-4f48-a711-73af49f76eb7
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1887, y: 10580}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 8c91cc98-2c85-452e-bcc3-5ac19563aea9
+    <Name>k__BackingField: dsv
+    <Text>k__BackingField: "- Stary niemal ca\u0142kowicie zasypany ju\u017C \u015Bniegiem
+      g\xF3rski szlak pnie si\u0119 w g\xF3r\u0119, wij\u0105c si\u0119 niespokojnie
+      jakby to  nieustanne podmuchy \u015Bwiszcz\u0105cego wiatru, kt\xF3ry nieustannie
+      zmienia kierunek kszta\u0142towa\u0142y jego bieg. -"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1810, y: 12342}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 7e01e027-a6b1-4526-9778-311defc50288
+    <Name>k__BackingField: va
+    <Text>k__BackingField: "- Wraz z Orionem kroczysz po jego za\u015Bnierzonej powierzchni,
+      rumaki trzymane przez was na uwi\u0119zi z trudem pokonuj\u0105 kolejne metry
+      naprzeciw rozwijaj\u0105cej si\u0119 nawa\u0142nicy - "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2466, y: 12345}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: abda69b5-2dbb-4f99-a5cc-cdfae699a3f9
+    <Name>k__BackingField: jr6j
+    <Text>k__BackingField: "- Ubrani w d\u0142ugie czarne p\u0142aszcze zajadle walczycie
+      o ka\u017Cdy oddech pokonuj\u0105c metr po metrze w g\xF3r\u0119 wzniesienia
+      - "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3135, y: 12350}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 5126156e-a102-4493-8237-3c29a593837b
+    <Name>k__BackingField: jr6
+    <Text>k__BackingField: "- Nie zgin\u0105\u0107 -"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4466, y: 12356}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 010d1335-c717-47b2-a678-31104ccbb2e4
+    <Name>k__BackingField: j7
+    <Text>k__BackingField: "- Nie da\u0107 si\u0119 oszuka\u0107 -"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5029, y: 12360}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 616c3bdd-cdfb-4f72-b281-daf49ecea002
+    <Name>k__BackingField: jr76j
+    <Text>k__BackingField: "- Zostali\u015Bcie wezwani. Musicie dotrze\u0107 na miejsce.
+      Rozwi\u0105za\u0107 zagadk\u0119. Znale\u017A\u0107 morderc\u0119. Skaza\u0107
+      sprawce."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3803, y: 12354}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: ff938f17-57c3-45af-b40e-bdfb499c0c99
+    <Name>k__BackingField: j76
+    <Text>k__BackingField: "- Nie oszale\u0107 -"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4749, y: 12359}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 09d6d3a8-32bd-47b4-894f-3782b78f9d5c
+    <Name>k__BackingField: 7j
+    <Text>k__BackingField: "- Nie zamarzn\u0105\u0107 w drodze do celu - "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5304, y: 12361}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 6e94db24-fb14-4d7e-b8c6-93f55e69984e
+    <Name>k__BackingField: bdsb
+    <Text>k__BackingField: "Pfff tak... Dobrze by\u0142oby nie zamarzn\u0105\u0107
+      w drodz\u0119 do celu..."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5961, y: 12362}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 9fe2f4f3-62b6-4d0a-a0fb-f67b3be24590
+    <Name>k__BackingField: rstbrs
+    <Text>k__BackingField: "Jeste\u015Bmy ju\u017C blisko, nie zamarzniemy."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6636, y: 12365}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 18c1ea0d-ea03-4bc9-beb3-3923969a9ebd
+    <Name>k__BackingField: dnt
+    <Text>k__BackingField: "- Zimn\u0105 po\u0142ow\u0119 - "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8616, y: 12371}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 952ccb95-ba27-444f-ab77-3c84aee822f3
+    <Name>k__BackingField: ndhfgn
+    <Text>k__BackingField: "Mo\u017Ce ci\u0119 to zaskoczy ale to \u017Ce po\u0142owa
+      mojej twarzy nie odczuwa zimna nie sprawia \u017Ce ja te\u017C nie odczuwam
+      zimna."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8888, y: 12372}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 02dbbf8b-440f-43ed-9d83-759c6b201ee5
+    <Name>k__BackingField: Orion
+    <Text>k__BackingField: Granemor
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 10746, y: 12382}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 5654adb0-4449-45d4-8113-1d4ee83d5c54
+    <Name>k__BackingField: sgnbsn
+    <Text>k__BackingField: "Ju\u017C niedaleko!"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 11014, y: 12383}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: b1917cac-0bd5-4b91-81fd-93c73bb91832
+    <Name>k__BackingField: nsgfn
+    <Text>k__BackingField: Dotrzemy tam przed zmrokiem!
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 11286, y: 12385}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 10414dff-cde2-4559-83cb-a92800fe2af5
+    <Name>k__BackingField: tbsrdtb
+    <Text>k__BackingField: "Poza tym ty i tak w po\u0142owie nic nie czujesz. Troch\u0119
+      \u015Bniegu i wiatru nie powinno ci a\u017C tak przeszkadza\u0107."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7295, y: 12366}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 1c07510b-4261-4d52-9ecf-af7db4ed384c
+    <Name>k__BackingField: nfgsn
+    <Text>k__BackingField: "Masz racj\u0119. "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9544, y: 12375}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: fa75482c-b94d-49a9-ab3b-1cc90688c386
+    <Name>k__BackingField: nfgddfsn
+    <Text>k__BackingField: "Zaskoczy\u0142o mnie to"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9811, y: 12376}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: c269618a-671c-44fa-9a79-275dde704e8a
+    <Name>k__BackingField: tdn
+    <Text>k__BackingField: "- Twoja r\u0119ka mimowolnie dotkn\u0119\u0142a stalowej
+      maski, kt\xF3ra zakrywa po\u0142owe twojej twarzy. Po\u0142owe, w kt\xF3rej
+      zadomowi\u0142a si\u0119 \u015Bmier\u0107. Po\u0142ow\u0119 kt\xF3ra pozwala
+      widzie\u0107 ci rzeczy, kt\xF3rych nikt nie powinien m\xF3c widzie\u0107. - "
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7962, y: 12368}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+  - <ID>k__BackingField: 8b8a737b-d793-4738-a757-9f2ab0b61ee5
+    <Name>k__BackingField: ngdfn
+    <Text>k__BackingField: "- Zza wzniesienia zaczyna wyrasta\u0107 pot\u0119\u017Cna
+      budowla... Posiad\u0142o\u015B\u0107... stworzona setki lat temu. Dumnie o\u015Bwietlana
+      ostatnimi promieniami s\u0142o\u0144ca wznosi si\u0119 na szczycie dominuj\u0105c
+      nad okolic\u0105 -"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 10074, y: 12376}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
   <ExposedProperties>k__BackingField:
   - Name: Orion w Valerii
     OldName: Orion w Valerii
@@ -5245,6 +5498,7 @@ MonoBehaviour:
   - "Zab\xF3jstwoaczasgry"
   - Itemy
   - "Dzia\u0142aniapomorderstwie"
+  - DialogueGroup
   <OldUngroupedNodeNames>k__BackingField: []
   <OldGroupedNodeNames>k__BackingField:
     list:
@@ -5666,6 +5920,7 @@ MonoBehaviour:
     - Key: Oberon
       Value:
       - OB1
+      - DialogueName
     - Key: Elira
       Value:
       - E1
@@ -5696,3 +5951,25 @@ MonoBehaviour:
       - R4
       - R5
       - R6
+    - Key: DialogueGroup
+      Value:
+      - dsv
+      - va
+      - jr6j
+      - jr6
+      - j7
+      - jr76j
+      - j76
+      - 7j
+      - bdsb
+      - rstbrs
+      - dnt
+      - ndhfgn
+      - Orion
+      - sgnbsn
+      - nsgfn
+      - tbsrdtb
+      - nfgsn
+      - nfgddfsn
+      - tdn
+      - ngdfn
