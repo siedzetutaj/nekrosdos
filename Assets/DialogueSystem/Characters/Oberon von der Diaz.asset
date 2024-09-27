@@ -10,10 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af4be244886921641bde8d7cf8da3eed, type: 3}
-  m_Name: SampleCharacter
+  m_Name: Oberon von der Diaz
   m_EditorClassIdentifier: 
   <Emotions>k__BackingField:
-  - {fileID: 21300000, guid: 34aada10096dedf4f8b58f3622762a93, type: 3}
-  - {fileID: 21300000, guid: 870f0b6727d58d34ca871af15f53dab1, type: 3}
-  - {fileID: 21300000, guid: 9320f5d404b51c541a2fc47f19fa6247, type: 3}
-  - {fileID: 21300000, guid: ebabdaf1c37a59d41865c4f29789e2f6, type: 3}
+  - {fileID: 21300000, guid: 45254b2ee9e7a6140aec1e970683670f, type: 3}

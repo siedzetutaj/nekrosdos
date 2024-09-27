@@ -377,9 +377,9 @@ namespace DS.Elements
                 SpriteImage.image = selectedSprite.texture;
 
                 // Set the size to match container
-                SpriteImage.style.width = 100;
-                SpriteImage.style.height = 100;
-
+                SpriteImage.style.width = 150;
+                SpriteImage.style.height = 170;
+                SpriteImage.style.marginLeft = -30;
                 // Adjust the image position to center if needed
                 SpriteImage.scaleMode = ScaleMode.ScaleToFit;
             }
