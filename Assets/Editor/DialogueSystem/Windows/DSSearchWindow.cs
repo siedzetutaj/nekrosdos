@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace DS.Windows
 {
@@ -45,7 +46,12 @@ namespace DS.Windows
                 {
                     userData = DSDialogueType.IfAllTrue,
                     level = 2
-                },
+                },                
+                //new SearchTreeEntry(new GUIContent("Rectangle", indentationIcon))
+                //{
+                //    userData = new DSRectangle(),
+                //    level = 2
+                //},
                 new SearchTreeGroupEntry(new GUIContent("Dialogue Groups"), 1),
                 new SearchTreeEntry(new GUIContent("Single Group", indentationIcon))
                 {
@@ -56,7 +62,6 @@ namespace DS.Windows
 
             return searchTreeEntries;
         }
-
         public bool OnSelectEntry(SearchTreeEntry SearchTreeEntry, SearchWindowContext context)
         {
             Vector2 localMousePosition = graphView.GetLocalMousePosition(context.screenMousePosition, true);
@@ -108,3 +113,26 @@ namespace DS.Windows
         }
     }
 }
+
+//public class GraphElement
+//{
+//    public VisualElement mainContainer { get; private set; }
+
+//    public void RefreshExpandedState()
+//    {
+//        VisualElement visualElement = mainContainer.Q("contents");
+//        if (visualElement != null)
+//        {
+//            VisualElement visualElement2 = visualElement.Q("divider");
+//            if (visualElement2 != null)
+//            {
+//                SetElementVisible(visualElement2);
+//            }
+//        }
+//    }
+//    private void SetElementVisible(VisualElement element)
+//    {
+//        element.style.visibility = StyleKeyword.Null;
+//        element.RemoveFromClassList("hidden");
+//    }
+//}
