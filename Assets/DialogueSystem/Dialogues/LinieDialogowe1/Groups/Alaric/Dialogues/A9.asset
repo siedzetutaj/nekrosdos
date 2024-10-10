@@ -16,7 +16,7 @@ MonoBehaviour:
   <Text>k__BackingField: "tam sp\u0119dza sporo czasu nad czuwaniu przy ciele"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 82abc2b16bdf2c948b6fe3145147afa9, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: f3ccc04af832ac14ab3d6f065c2bbb2c, type: 2}
     WasDisplayed: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

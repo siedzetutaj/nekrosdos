@@ -308,7 +308,7 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 4b1bd46370590994dadb568208e522f9, type: 2}
       - {fileID: 11400000, guid: 983d51675544f504897963c4c59fad5b, type: 2}
       - {fileID: 11400000, guid: 9de7e117a2d6b9142adb211efe03534f, type: 2}
-      - {fileID: 11400000, guid: 82abc2b16bdf2c948b6fe3145147afa9, type: 2}
+      - {fileID: 11400000, guid: f3ccc04af832ac14ab3d6f065c2bbb2c, type: 2}
       - {fileID: 11400000, guid: 7ebad66b91ec8774ab1f76f318b17f46, type: 2}
       - {fileID: 11400000, guid: 844da6eb480cf30439f03a6053bc9122, type: 2}
       - {fileID: 11400000, guid: 24c5d518ab34b8440858f48c3f8b7e64, type: 2}
@@ -374,7 +374,7 @@ MonoBehaviour:
     - Key: {fileID: 11400000, guid: fbca3ca3c90b16645a502ea9045338e7, type: 2}
       Value:
       - {fileID: 11400000, guid: 905ba375041dbd9468ad1a26b48d3c10, type: 2}
-      - {fileID: 11400000, guid: 2f0d3ebeb38ec564d9402a659a373904, type: 2}
+      - {fileID: 11400000, guid: f8f1030540e97da4e9b98635e6d05aa2, type: 2}
     - Key: {fileID: 11400000, guid: 55903a933c7bf494db9749bd89ea8f7a, type: 2}
       Value:
       - {fileID: 11400000, guid: 667742ff01753d44a9a817cc4389477d, type: 2}
@@ -492,23 +492,6 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 0396bafda79ecf84e89cb8cae45d5bef, type: 2}
       - {fileID: 11400000, guid: 7d87c96ec397b4b4f92bd37e3cf7f667, type: 2}
       - {fileID: 11400000, guid: e1ea309aa31d28c4898e3639bc44dd0d, type: 2}
-  <UngroupedDialogues>k__BackingField: []
-  <ExposedProperties>k__BackingField:
-  - Name: Orion w Valerii
-    OldName: Orion w Valerii
-    Value: 0
-  - Name: Informacja o ludziach z Ombrii
-    OldName: Informacja o ludziach z Ombrii
-    Value: 0
-  - Name: "Alaric widzia\u0142 rytua\u0142"
-    OldName: "Alaric widzia\u0142 rytua\u0142"
-    Value: 0
-  - Name: "Alaric nie widzial rytua\u0142u"
-    OldName: "Alaric nie widzial rytua\u0142u"
-    Value: 0
-  - Name: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
-    OldName: "DETEKTYWI WIEDZ\u0104 O OMBRYJCZYKACH W CELI"
-    Value: 0
-  - Name: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
-    OldName: "DETEKTYWI POSIADAJ\u0104 DOWODY NA REYSA"
-    Value: 0
+  <UngroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: f4e932daa281b0c45bfc2eec92845a87, type: 2}
+  <ExposedProperties>k__BackingField: []

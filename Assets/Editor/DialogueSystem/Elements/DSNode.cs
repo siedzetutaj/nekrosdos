@@ -25,6 +25,8 @@ namespace DS.Elements
         public DSCharacterSO CharacterSO { get; set; }
         public Image SpriteImage { get; set; }
         
+        public bool WasModified {  get; set; }
+
         private VisualElement LeftContainer { get; set; }
         private DropdownField SpriteDropdown { get; set; }
 
