@@ -102,14 +102,14 @@ namespace DS.Windows
 
             return contextualMenuManipulator;
         }
-        private IManipulator CreateRectangleContextualMenu()
-        {
-            ContextualMenuManipulator contextualMenuManipulator = new ContextualMenuManipulator(
-                menuEvent => menuEvent.menu.AppendAction("Add Rectangle", actionEvent => CreateRectangle( GetLocalMousePosition(actionEvent.eventInfo.localMousePosition)))
-            );
+        //private IManipulator CreateRectangleContextualMenu()
+        //{
+        //    ContextualMenuManipulator contextualMenuManipulator = new ContextualMenuManipulator(
+        //        menuEvent => menuEvent.menu.AppendAction("Add Rectangle", actionEvent => CreateRectangle( GetLocalMousePosition(actionEvent.eventInfo.localMousePosition)))
+        //    );
 
-            return contextualMenuManipulator;
-        }
+        //    return contextualMenuManipulator;
+        //}
         public DSRectangle CreateRectangle(Vector2 position)
         {
             DSRectangle rect = new DSRectangle(position);
@@ -358,7 +358,7 @@ namespace DS.Windows
             this.AddManipulator(CreateNodeContextualMenu("Add Node (If All True)", DSDialogueType.IfAllTrue));
 
             this.AddManipulator(CreateGroupContextualMenu());
-            this.AddManipulator(CreateRectangleContextualMenu());
+            //this.AddManipulator(CreateRectangleContextualMenu());
         }
         public void AddUngroupedNode(DSNode node)
         {

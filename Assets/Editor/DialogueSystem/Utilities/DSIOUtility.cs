@@ -160,8 +160,8 @@ namespace DS.Utilities
                     Value = x.property.Value,
                 }),
                 Color = node.backgroundColor,
-                CharacterSO = node.CharacterSO,
-                CharacterSprite = node.SpriteImage.image
+                //CharacterSO = node.CharacterSO,
+                //CharacterSprite = node.SpriteImage.image
         };
 
         graphData.Nodes.Add(nodeData);
