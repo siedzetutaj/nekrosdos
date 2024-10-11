@@ -28,9 +28,23 @@ MonoBehaviour:
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
     <CharacterSO>k__BackingField: {fileID: 0}
     <CharacterSprite>k__BackingField: {fileID: 0}
+  - <ID>k__BackingField: 0d3d0622-4ef9-4618-8661-0d05e37a5c4a
+    <Name>k__BackingField: ewqdq
+    <Text>k__BackingField: qfdwdq
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 801, y: 341}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+    <CharacterSO>k__BackingField: {fileID: 11400000, guid: e6bc4d089de8b0d47b985ccf461979c0, type: 2}
+    <CharacterSprite>k__BackingField: {fileID: 2800000, guid: 8a10f91d6b6ebcd48809ed28be95d910, type: 3}
   <ExposedProperties>k__BackingField: []
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNodeNames>k__BackingField:
   - DialogueName
+  - ewqdq
   <OldGroupedNodeNames>k__BackingField:
     list: []
