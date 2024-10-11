@@ -15,4 +15,6 @@ MonoBehaviour:
   <FileName>k__BackingField: tescik
   <DialogueGroups>k__BackingField:
     list: []
-  <UngroupedDialogues>k__BackingField: []
+  <UngroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: 07a482d297eefa84ea7998371d5812ad, type: 2}
+  <ExposedProperties>k__BackingField: []
