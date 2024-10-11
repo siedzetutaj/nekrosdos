@@ -110,12 +110,12 @@ namespace DS.Windows
 
         //    return contextualMenuManipulator;
         //}
-        public DSRectangle CreateRectangle(Vector2 position)
-        {
-            DSRectangle rect = new DSRectangle(position);
-            AddElement(rect);
-            return rect;
-        }
+        //public DSRectangle CreateRectangle(Vector2 position)
+        //{
+        //    DSRectangle rect = new DSRectangle(position);
+        //    AddElement(rect);
+        //    return rect;
+        //}
         public DSGroup CreateGroup(string title, Vector2 position)
         {
             DSGroup group = new DSGroup(title, position);

@@ -17,11 +17,16 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: 1
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6fb4e4ba78cc1a242b3c516aa0a94970, type: 2}
+    WasDisplayed: 0
   - <Text>k__BackingField: 12
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7287ee010d5c6b5428a45a9158179afd, type: 2}
+    WasDisplayed: 0
   - <Text>k__BackingField: 123
     <NextDialogue>k__BackingField: {fileID: 0}
+    WasDisplayed: 0
   - <Text>k__BackingField: 1234
     <NextDialogue>k__BackingField: {fileID: 0}
+    WasDisplayed: 0
   <DialogueType>k__BackingField: 1
   <IsStartingDialogue>k__BackingField: 0
+  <ExposedProperties>k__BackingField: []

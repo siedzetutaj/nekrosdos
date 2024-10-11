@@ -73,6 +73,47 @@ MonoBehaviour:
     <Color>k__BackingField: {r: 0, g: 0, b: 1, a: 1}
     <CharacterSO>k__BackingField: {fileID: 0}
     <CharacterSprite>k__BackingField: {fileID: 0}
+  - <ID>k__BackingField: c50d94d0-8268-4b4d-b293-3dcf2c7f5e0d
+    <Name>k__BackingField: 456
+    <Text>k__BackingField: Dialogue text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: New Choice
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 868, y: 267}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 0, b: 1, a: 1}
+    <CharacterSO>k__BackingField: {fileID: 11400000, guid: 04d7b3112fdc49e42ab03a148ccf174e, type: 2}
+    <CharacterSprite>k__BackingField: {fileID: 2800000, guid: 52252a6350763974dbd5e6782571844b, type: 3}
+  - <ID>k__BackingField: 5e477885-2bb1-4edb-b91d-45ed9e963221
+    <Name>k__BackingField: 67
+    <Text>k__BackingField: Dialogue text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: True
+      <NodeID>k__BackingField: 
+    - <Text>k__BackingField: False
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 3
+    <Position>k__BackingField: {x: 526, y: 117}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 0.6, b: 0, a: 0.6}
+    <CharacterSO>k__BackingField: {fileID: 0}
+    <CharacterSprite>k__BackingField: {fileID: 0}
+  - <ID>k__BackingField: 7af217b5-ef2b-475b-aeb4-8e3384afcfe9
+    <Name>k__BackingField: DialogueName
+    <Text>k__BackingField: Dialogue text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 449, y: 314}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+    <CharacterSO>k__BackingField: {fileID: 11400000, guid: e6bc4d089de8b0d47b985ccf461979c0, type: 2}
+    <CharacterSprite>k__BackingField: {fileID: 2800000, guid: 8a10f91d6b6ebcd48809ed28be95d910, type: 3}
   <ExposedProperties>k__BackingField: []
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNodeNames>k__BackingField:
@@ -80,5 +121,8 @@ MonoBehaviour:
   - 123
   - 1234
   - 12
+  - 456
+  - 67
+  - DialogueName
   <OldGroupedNodeNames>k__BackingField:
     list: []

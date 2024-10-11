@@ -492,6 +492,7 @@ MonoBehaviour:
       - {fileID: 11400000, guid: e1ea309aa31d28c4898e3639bc44dd0d, type: 2}
       - {fileID: 11400000, guid: 0396bafda79ecf84e89cb8cae45d5bef, type: 2}
       - {fileID: 11400000, guid: 7d87c96ec397b4b4f92bd37e3cf7f667, type: 2}
+
     - Key: {fileID: 11400000, guid: 4f39f0996bb3ab147bc9651062d965f9, type: 2}
       Value:
       - {fileID: 11400000, guid: bb30e241d2f9d244083f0e090bde370b, type: 2}
@@ -514,4 +515,5 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 6652c6410cc396f43ab0603adc2b9130, type: 2}
       - {fileID: 11400000, guid: 7fa5e192912aeed49883b5565e737a9e, type: 2}
   <UngroupedDialogues>k__BackingField: []
+
   <ExposedProperties>k__BackingField: []

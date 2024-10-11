@@ -160,11 +160,14 @@ namespace DS.Utilities
                     Value = x.property.Value,
                 }),
                 Color = node.backgroundColor,
-                //CharacterSO = node.CharacterSO,
-                //CharacterSprite = node.SpriteImage.image
         };
+            if (node.DialogueType == DSDialogueType.SingleChoice || node.DialogueType == DSDialogueType.MultipleChoice)
+            {
+                nodeData.CharacterSO = node.CharacterSO;
+                nodeData.CharacterSprite = node.SpriteImage.image;
 
-        graphData.Nodes.Add(nodeData);
+            }
+            graphData.Nodes.Add(nodeData);
         }
         private static void SaveNodeToScriptableObject(DSNode node, DSDialogueContainerSO dialogueContainer)
         {
