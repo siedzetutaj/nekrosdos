@@ -6578,26 +6578,15 @@ MonoBehaviour:
     <CharacterSprite>k__BackingField: {fileID: 0}
   - <ID>k__BackingField: bda57352-57ac-4818-86c4-e723e19458b1
     <Name>k__BackingField: Alaric12
-    <Text>k__BackingField: Dialogue text.
+    <Text>k__BackingField: "Po odkryciu zbrodni w gabinecie Marii zaroi\u0142o si\u0119
+      od ludzi. Rozkaza\u0142em by ka\u017Cdy rozszed\u0142 si\u0119 w swoj\u0105
+      stron\u0119."
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: da8e19c3-fb9c-48b0-8f1d-55ad8711d411
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 12461, y: 13220}
-    <ExposedProperties>k__BackingField: []
-    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
-    <CharacterSO>k__BackingField: {fileID: 0}
-    <CharacterSprite>k__BackingField: {fileID: 0}
-  - <ID>k__BackingField: cbeedbc2-698c-41cb-842c-a4b97515c577
-    <Name>k__BackingField: Alaric1
-    <Text>k__BackingField: Detektyw Orion Sygil jak mniemam? A to?
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
-    <GroupID>k__BackingField: da8e19c3-fb9c-48b0-8f1d-55ad8711d411
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1354, y: 13194}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
     <CharacterSO>k__BackingField: {fileID: 0}
@@ -6611,6 +6600,19 @@ MonoBehaviour:
     <GroupID>k__BackingField: da8e19c3-fb9c-48b0-8f1d-55ad8711d411
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2870, y: 13197}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+    <CharacterSO>k__BackingField: {fileID: 0}
+    <CharacterSprite>k__BackingField: {fileID: 0}
+  - <ID>k__BackingField: cbeedbc2-698c-41cb-842c-a4b97515c577
+    <Name>k__BackingField: Alaric1
+    <Text>k__BackingField: Detektyw Orion Sygil jak mniemam? A to?
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: da8e19c3-fb9c-48b0-8f1d-55ad8711d411
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1354, y: 13194}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
     <CharacterSO>k__BackingField: {fileID: 0}
@@ -7097,8 +7099,8 @@ MonoBehaviour:
       - Detektywi4
       - Alaric11
       - Alaric12
-      - Alaric1
       - Alaric2
+      - Alaric1
     - Key: Abigail
       Value:
       - AB1
