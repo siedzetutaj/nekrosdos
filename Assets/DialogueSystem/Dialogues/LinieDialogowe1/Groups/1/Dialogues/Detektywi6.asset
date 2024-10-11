@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-  m_Name: Alaric12
+  m_Name: Detektywi6
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: Alaric12
-  <Text>k__BackingField: "Po odkryciu zbrodni w gabinecie Marii zaroi\u0142o si\u0119
-    od ludzi. By\u0142 tam tak\u017Ce m\xF3j syn Desmond."
+  <DialogueName>k__BackingField: Detektywi6
+  <Text>k__BackingField: "Chirurg obezw\u0142adni\u0142 Ombryjczyka, kt\xF3ry zdo\u0142a\u0142
+    zrani\u0107 i uciec Pa\u0144skiemu synowi?"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
     <NextDialogue>k__BackingField: {fileID: 0}
