@@ -24,8 +24,8 @@ namespace DS.Elements
         public List<ExposedPropertyNodeElement> AllExposedPropertyNodeElements { get; set; }
         public DSCharacterSO CharacterSO { get; set; }
         public Image SpriteImage { get; set; }
-        
-        public bool WasModified {  get; set; }
+
+        public bool WasModified { get; set; } = true;
 
         private VisualElement LeftContainer { get; set; }
         private DropdownField SpriteDropdown { get; set; }
@@ -56,6 +56,7 @@ namespace DS.Elements
 
             mainContainer.AddToClassList("ds-node__main-container");
             extensionContainer.AddToClassList("ds-node__extension-container");
+            WasModified = false;
         }
         #region Draw
         public virtual void Draw()
@@ -76,7 +77,6 @@ namespace DS.Elements
 
             RefreshExpandedState();
         }
-
         protected void DrawLeftSide()
         {
             LeftContainer = new VisualElement();
@@ -396,6 +396,13 @@ namespace DS.Elements
                 return sprite;
             }
             return null; // Replace with real implementation
+        }
+
+        public override void OnSelected()
+        {
+            base.OnSelected();  // Call the base method to preserve default behavior
+            WasModified = true; // Mark the node as modified when it is selected
+            Debug.Log("Node selected, WasModified set to true.");
         }
         #endregion
     }
