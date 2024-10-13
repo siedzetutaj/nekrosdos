@@ -187,6 +187,7 @@ namespace DS.Utilities
             }
 
             dialogue.Initialize(
+                node.ID,
                 node.DialogueName,
                 node.Text,
                 ConvertNodeChoicesToDialogueChoices(node.Choices),
