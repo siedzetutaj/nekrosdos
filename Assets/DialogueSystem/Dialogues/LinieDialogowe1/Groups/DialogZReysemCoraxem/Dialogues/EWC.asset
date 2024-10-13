@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: EWC
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: c4f41a44-6bdd-4cdb-9fae-214b799a9319
   <DialogueName>k__BackingField: EWC
   <Text>k__BackingField: Dialogue text.
   <Choices>k__BackingField:

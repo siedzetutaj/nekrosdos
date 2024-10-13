@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: verfv
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 45ac8e10-0c44-46ac-b0f8-58bbe17d5672
   <DialogueName>k__BackingField: verfv
   <Text>k__BackingField: "Pytanie jak to wygl\u0105da? Zagadka? inna lokacja? specyficzne
     dialogi?\n\nTak czy siak kontakt powinien by\u0107 bardzo ograniczony i mo\u017Ce

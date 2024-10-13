@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Orion3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: dedcc04c-c9fc-4f6b-afe6-1cf003a24ee2
   <DialogueName>k__BackingField: Orion3
   <Text>k__BackingField: "Robi\u0119 to co konieczne by rozwiaza\u0107 dana spraw\u0119.
     Nie musi si\u0119 pan martwi\u0107."

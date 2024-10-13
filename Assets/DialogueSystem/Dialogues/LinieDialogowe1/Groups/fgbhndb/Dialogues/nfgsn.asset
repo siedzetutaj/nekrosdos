@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: nfgsn
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 1c07510b-4261-4d52-9ecf-af7db4ed384c
   <DialogueName>k__BackingField: nfgsn
   <Text>k__BackingField: "Masz racj\u0119. "
   <Choices>k__BackingField:

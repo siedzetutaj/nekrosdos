@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 15
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: ded17b3e-3bb0-4a46-bfc3-688e9cd60e22
   <DialogueName>k__BackingField: 15
   <Text>k__BackingField: "Ute zaczyna nocami patrolowa\u0107 korytarze i ogr\xF3d
     posiad\u0142o\u015Bci szukaj\u0105c jakichkolwiek podejrzanych rzeczy"

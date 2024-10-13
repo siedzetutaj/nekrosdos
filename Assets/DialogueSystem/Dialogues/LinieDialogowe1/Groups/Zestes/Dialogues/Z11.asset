@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Z11
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: a7280717-02bc-4a40-a516-1df05f0e9cb4
   <DialogueName>k__BackingField: Z11
   <Text>k__BackingField: "oczywi\u015Bcie by\u0142a to Elira o kt\xF3rej zdolno\u015Bciach
     jednak wi\u0119kszo\u015B\u0107 domownik\xF3w jeszcze nie wie"

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Arvid1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 61c8535d-3bff-4e91-b363-37da10457d84
   <DialogueName>k__BackingField: Arvid1
   <Text>k__BackingField: "Zanim jednak zobaczymy cia\u0142o musz\u0119 zada\u0107
     kilka pyta\u0144."

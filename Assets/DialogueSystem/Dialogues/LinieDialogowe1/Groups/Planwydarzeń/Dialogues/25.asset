@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 25
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 2834d6ff-2ff1-4429-8c8d-5330de8d6e5e
   <DialogueName>k__BackingField: 25
   <Text>k__BackingField: "Maria opuszcza posi\u0142ek wczesniej z powodu s\u0142abego
     stanu zdrowia. Tak naprawde jednak idzie spotka\u0107 si\u0119 z ombryjczykami. "

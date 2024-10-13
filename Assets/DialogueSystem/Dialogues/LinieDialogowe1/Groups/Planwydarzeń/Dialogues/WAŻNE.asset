@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: "WA\u017BNE"
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 579b1847-c74f-468a-afcf-793f4f3ac642
   <DialogueName>k__BackingField: "WA\u017BNE"
   <Text>k__BackingField: "chuj wie co\u015B si\u0119 tu musi jeszcze dzia\u0107"
   <Choices>k__BackingField:

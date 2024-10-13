@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 54
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 5049ae1a-0272-47f2-89a0-17fff13bc557
   <DialogueName>k__BackingField: 54
   <Text>k__BackingField: "Uznaj\u0105c to za \u015Bwietny pretekst udaj\u0119 sie
     spowrotem do s\u0142u\u017Cby i upomina ja \u017Ce zaniedbali pilnowanie dziewczynki. "

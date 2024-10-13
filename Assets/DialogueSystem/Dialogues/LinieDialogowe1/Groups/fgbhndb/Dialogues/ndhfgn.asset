@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: ndhfgn
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 952ccb95-ba27-444f-ab77-3c84aee822f3
   <DialogueName>k__BackingField: ndhfgn
   <Text>k__BackingField: "Mo\u017Ce ci\u0119 to zaskoczy ale to \u017Ce po\u0142owa
     mojej twarzy nie odczuwa zimna nie sprawia \u017Ce ja te\u017C nie odczuwam zimna."

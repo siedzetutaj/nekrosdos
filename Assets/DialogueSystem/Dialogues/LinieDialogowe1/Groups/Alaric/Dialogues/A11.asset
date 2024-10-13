@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: A11
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 524b4b3f-c46b-45c9-9786-e6d88640160a
   <DialogueName>k__BackingField: A11
   <Text>k__BackingField: "rozgl\u0105da si\u0119 po okolicy i ostatecznie nnic nie
     znajduje"

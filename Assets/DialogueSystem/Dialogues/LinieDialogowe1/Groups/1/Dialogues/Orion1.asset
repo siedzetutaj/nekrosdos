@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Orion1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 12a4400b-1b4d-4fcc-858d-809fcfc64f45
   <DialogueName>k__BackingField: Orion1
   <Text>k__BackingField: "Obdarzony Arvid Morteo. Inspektorat uzna\u0142 \u017Ce
     do rozwi\u0105zania \u015Bledztwa mog\u0105 by\u0107 potrzebne paranormalne zdolno\u015Bci."

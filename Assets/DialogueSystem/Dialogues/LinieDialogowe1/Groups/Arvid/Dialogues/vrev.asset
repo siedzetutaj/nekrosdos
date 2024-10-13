@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: vrev
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 896a4e33-94da-42c0-944a-f4b0a527cc19
   <DialogueName>k__BackingField: vrev
   <Text>k__BackingField: "Po tych zabiegach bohaterowie wracaj\u0105 do Alarica gdzie
     zdaj\u0105 mu sprawozdanie z ogl\u0119dzin. W trakcie tej rozmowy w gabinecie

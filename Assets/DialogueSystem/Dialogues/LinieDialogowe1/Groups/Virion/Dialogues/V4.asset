@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: V4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 27dab0e7-8438-4e7b-8c5b-3f9a4795152d
   <DialogueName>k__BackingField: V4
   <Text>k__BackingField: "spotkanie przxebiega\u0142o raczej w dobrym nastroju. Sam
     virion raczej nie jest bardzo zainteresowany realnym po\u0142\u0105czeniem dw\xF3ch

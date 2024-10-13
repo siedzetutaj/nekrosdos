@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: G3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 035ceefa-7b41-4cb1-8ab2-7d0fe9af16dc
   <DialogueName>k__BackingField: G3
   <Text>k__BackingField: "przed spotkaniami dotycz\u0105cymi za m\u0105\u017Cp\xF3j\u015Bcia
     przeprowadzi\u0142 kilka rozm\xF3w pr\xF3buj\u0105c zmyli\u0107 Viriona Sygila

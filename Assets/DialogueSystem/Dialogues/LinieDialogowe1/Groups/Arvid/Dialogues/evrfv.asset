@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: evrfv
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 2f1219bd-815a-47cc-8d2e-2e062670a9be
   <DialogueName>k__BackingField: evrfv
   <Text>k__BackingField: "Nast\u0119pnie wkracza Arvid - g\u0142\xF3wna posta\u0107
     jako obdarzony. Pr\xF3buj\u0119 skontaktowa\u0107 si\u0119 z jej dusz\u0105. "

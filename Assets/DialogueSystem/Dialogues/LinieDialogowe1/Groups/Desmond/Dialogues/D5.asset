@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: D5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 6ca56a7c-de34-44dc-a339-7645718e07d6
   <DialogueName>k__BackingField: D5
   <Text>k__BackingField: "Tam \"przypadkowo wpada na niego Abigail, kt\xF3ra zaczyna
     z nim flirtowa\u0107"

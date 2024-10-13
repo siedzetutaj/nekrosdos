@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: sgnbsn
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 5654adb0-4449-45d4-8113-1d4ee83d5c54
   <DialogueName>k__BackingField: sgnbsn
   <Text>k__BackingField: "Ju\u017C niedaleko!"
   <Choices>k__BackingField:

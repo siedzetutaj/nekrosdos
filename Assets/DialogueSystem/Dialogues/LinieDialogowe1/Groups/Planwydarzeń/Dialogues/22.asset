@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 22
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 28e56461-3f09-41a2-916b-ca89675d88b0
   <DialogueName>k__BackingField: 22
   <Text>k__BackingField: "Abigail rozmawia z ute i dowiaduje sie \u017Ce ombryjczycy
     s\u0105 w stanie zabrac j\u0105 i jej towarzysza do Ombrii gdzie nie b\u0119dzie

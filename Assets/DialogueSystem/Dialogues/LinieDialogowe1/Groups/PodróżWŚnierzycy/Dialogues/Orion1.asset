@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Orion1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 417bcd4f-7f4a-4ae0-b614-2911e98045d2
   <DialogueName>k__BackingField: Orion1
   <Text>k__BackingField: "Daleko do posiad\u0142o\u015Bci?"
   <Choices>k__BackingField:

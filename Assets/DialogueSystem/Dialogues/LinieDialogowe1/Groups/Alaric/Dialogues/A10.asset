@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: A10
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: ed595d0f-3a11-41db-81dd-4df9a0c9f897
   <DialogueName>k__BackingField: A10
   <Text>k__BackingField: "kieruje si\u0119 do piwnicy do miejsca gdzie zamurowano
     Viktora"

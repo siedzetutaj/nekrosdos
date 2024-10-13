@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R11
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: c5de795a-d4d6-42be-9cf2-a75129d84bfc
   <DialogueName>k__BackingField: R11
   <Text>k__BackingField: "No, ale to nie wasza wina, \u017Ce akurat was wybrano do
     tego \u015Bledztwa. Powiem co wiem ale rozwi\u0105zanie tej sprawy jest oczywiste

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: E3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 0fa6cb3b-0953-4a00-aeda-bf4c18e6c906
   <DialogueName>k__BackingField: E3
   <Text>k__BackingField: "tamten dzie\u0144 rozpocz\u0119\u0142a od wsp\xF3lnego
     \u015Bniadania ze wszystkimi szlachcicami"

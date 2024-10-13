@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 78
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 66e99c21-d923-4ace-95e2-b52f74071301
   <DialogueName>k__BackingField: 78
   <Text>k__BackingField: "Do Balona na \u017Cyczenie Reysa do\u0142acza Ute, kt\xF3ry
     tak\u017Ce obserwuje korytarz."

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 74
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: b39df7e2-34ba-489b-9b2e-e4506fbc4cba
   <DialogueName>k__BackingField: 74
   <Text>k__BackingField: "Zestes i Gervi docieraj\u0105 do komnat przerywaj\u0105c
     alaricowi przeszukiwanie. Zestes Zaczyna zabezpiecza\u0107 cia\u0142o natomiast

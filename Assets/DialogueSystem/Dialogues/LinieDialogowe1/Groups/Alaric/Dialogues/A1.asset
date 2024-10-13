@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: A1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: d211c45f-17aa-4d13-8466-0e28970bab21
   <DialogueName>k__BackingField: A1
   <Text>k__BackingField: Prowadzi rozmowy z szlachcicami
   <Choices>k__BackingField:

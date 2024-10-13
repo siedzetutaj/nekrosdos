@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 234ac63e-d170-481c-b275-f5fb660fbbaf
   <DialogueName>k__BackingField: 2
   <Text>k__BackingField: "Maria Morteo s\u0142ysz\u0105c o pielgrzymie na ich ziemiach
     sprowadza Oberona do pa\u0142acu"

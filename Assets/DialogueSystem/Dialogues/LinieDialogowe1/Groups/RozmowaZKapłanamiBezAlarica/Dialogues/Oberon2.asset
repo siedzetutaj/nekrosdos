@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Oberon2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: aaa3cc4d-a221-4c9f-a05f-fca18d63da6d
   <DialogueName>k__BackingField: Oberon2
   <Text>k__BackingField: "B\u0105d\u017Acie pozdrowieni detektywi. Niech \u015Bmier\u0107
     patrzy na was \u0142askawym okiem."

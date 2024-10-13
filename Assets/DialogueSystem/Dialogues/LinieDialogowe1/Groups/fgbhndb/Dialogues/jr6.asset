@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: jr6
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 5126156e-a102-4493-8237-3c29a593837b
   <DialogueName>k__BackingField: jr6
   <Text>k__BackingField: "- Nie zgin\u0105\u0107 -"
   <Choices>k__BackingField:

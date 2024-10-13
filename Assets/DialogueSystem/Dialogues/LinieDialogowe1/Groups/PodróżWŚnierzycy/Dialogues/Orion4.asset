@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Orion4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: ff223f46-fec2-431b-9c8a-df01b0f99de6
   <DialogueName>k__BackingField: Orion4
   <Text>k__BackingField: "Przy za\u0142o\u017Ceniu \u017Ce sprawca ju\u017C stamt\u0105d
     nie uciek\u0142."

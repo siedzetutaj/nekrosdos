@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: E4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 1bd2776a-219e-4752-b8e1-deaaa06387df
   <DialogueName>k__BackingField: E4
   <Text>k__BackingField: "nast\u0119pnie wraz z synem lothiona zacz\u0119liu si\u0119
     bawi\u0107 "

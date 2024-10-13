@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: j76
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: ff938f17-57c3-45af-b40e-bdfb499c0c99
   <DialogueName>k__BackingField: j76
   <Text>k__BackingField: "- Nie oszale\u0107 -"
   <Choices>k__BackingField:

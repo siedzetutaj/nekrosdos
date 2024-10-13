@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R38
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 0cd931f5-b6fe-46fb-a17c-6836f0964fac
   <DialogueName>k__BackingField: R38
   <Text>k__BackingField: "Pytaliscie w jakim celu pojawi\u0142em si\u0119 na tym
     lodowym zadupiu. Odpowiedzia\u0142em na to pytanie."

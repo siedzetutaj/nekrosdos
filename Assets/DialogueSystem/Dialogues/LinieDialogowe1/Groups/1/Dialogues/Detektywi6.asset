@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Detektywi6
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: a2287ac4-cf04-49d7-8f54-d2428cd9c1c1
   <DialogueName>k__BackingField: Detektywi6
   <Text>k__BackingField: "Chirurg obezw\u0142adni\u0142 Ombryjczyka, kt\xF3ry zdo\u0142a\u0142
     zrani\u0107 i uciec Pa\u0144skiemu synowi?"

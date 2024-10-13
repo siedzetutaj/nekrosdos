@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 71
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 7e21502e-f1ee-4a9d-8dac-9b83cb77125f
   <DialogueName>k__BackingField: 71
   <Text>k__BackingField: dobiega do nich Desmond i zabezpiecza ombryjczyka
   <Choices>k__BackingField:

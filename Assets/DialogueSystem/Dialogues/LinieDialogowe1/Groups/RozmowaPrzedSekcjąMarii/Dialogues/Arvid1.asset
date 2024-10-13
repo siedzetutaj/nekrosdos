@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Arvid1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 8a661d88-e1a5-4dcc-9445-dc8cce0462a1
   <DialogueName>k__BackingField: Arvid1
   <Text>k__BackingField: "Sekcja zw\u0142ok jak i rytua\u0142 komunikacji to nie
     s\u0105 rzeczy, kt\xF3re powinna ogl\u0105da\u0107 rodzina. "

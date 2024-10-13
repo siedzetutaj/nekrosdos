@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: a73427fd-6949-4dde-bf96-4d0ca73453fb
   <DialogueName>k__BackingField: R5
   <Text>k__BackingField: "gdy szlachta zostaje wezwana do gabinetu z cia\u0142em
     Reys wpada w szok i sza\u0142 zarazzem cho\u0107 stara si\u0119 tego nie okazywa\u0107

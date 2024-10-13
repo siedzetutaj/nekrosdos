@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 36
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 6f29fbcb-9d9b-40b3-a0fb-34d59cae2097
   <DialogueName>k__BackingField: 36
   <Text>k__BackingField: "Maria wraca ze spotkania z ombryjczykami po osiagni\u0119ciu
     porozumienia"

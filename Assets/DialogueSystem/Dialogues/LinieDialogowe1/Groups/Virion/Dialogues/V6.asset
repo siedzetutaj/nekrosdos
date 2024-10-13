@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: V6
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 8959eb8d-d085-4ab3-9f40-0a706b518771
   <DialogueName>k__BackingField: V6
   <Text>k__BackingField: "Po zobaczeniu w posiad\u0142o\u015Bci hostesa i wyci\u0105gni\u0119ciu
     informacji od s\u0142u\u017Cby kim jest \xF3w go\u015B\u0107 doszukuj\u0119 si\u0119

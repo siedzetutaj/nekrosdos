@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: A7
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 4ebcb800-6c4f-474a-b640-3b7062abe86c
   <DialogueName>k__BackingField: A7
   <Text>k__BackingField: "odnajduje pier\u015Bcie\u0144"
   <Choices>k__BackingField:

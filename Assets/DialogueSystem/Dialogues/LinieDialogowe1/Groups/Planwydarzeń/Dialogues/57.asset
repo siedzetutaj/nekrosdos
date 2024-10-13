@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 57
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 1fb68b4e-3fd5-4d09-9f4f-38e7370211aa
   <DialogueName>k__BackingField: 57
   <Text>k__BackingField: Lordowie przybywaja do gabinetu
   <Choices>k__BackingField:

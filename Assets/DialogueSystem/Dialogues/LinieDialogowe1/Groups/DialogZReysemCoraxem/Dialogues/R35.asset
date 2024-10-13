@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R35
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 28c0c52a-5f40-4a0f-bc89-f7f21689d6e0
   <DialogueName>k__BackingField: R35
   <Text>k__BackingField: "Ombryjczycy zostali zamkni\u0119ci w celi nast\u0119pnego
     dnia po zab\xF3jstwie Marii"

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Retes10
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 8df70142-02b2-4a2f-b370-b554f3d20282
   <DialogueName>k__BackingField: Retes10
   <Text>k__BackingField: "Ano troch\u0119 ludzi si\u0119 pojawi\u0142o. "
   <Choices>k__BackingField:

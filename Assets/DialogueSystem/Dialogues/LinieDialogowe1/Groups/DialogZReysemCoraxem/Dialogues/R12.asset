@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R12
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 99d0aa34-e06f-4c50-b8b9-ac339cb7ac24
   <DialogueName>k__BackingField: R12
   <Text>k__BackingField: "Za zab\xF3jstwem stoj\u0105 zamkni\u0119ci w lochu Ombryjczycy."
   <Choices>k__BackingField:

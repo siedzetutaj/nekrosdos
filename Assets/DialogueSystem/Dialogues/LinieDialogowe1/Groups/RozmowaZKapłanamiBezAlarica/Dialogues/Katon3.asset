@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Katon3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 2f980ca5-799b-46be-ab6c-23924a529ffa
   <DialogueName>k__BackingField: Katon3
   <Text>k__BackingField: "Obdarzony, kt\xF3ry wyszed\u0142 zza mur\xF3w akademii...
     Niezmiernie mi\u0142o Pana pozna\u0107."

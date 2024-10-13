@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 03883321-9424-44e4-8ada-47dd39134aca
   <DialogueName>k__BackingField: O1
   <Text>k__BackingField: "Lord Reys Corax? Nazywam si\u0119 Orion Sygil, a to m\xF3j
     partner Ar..."

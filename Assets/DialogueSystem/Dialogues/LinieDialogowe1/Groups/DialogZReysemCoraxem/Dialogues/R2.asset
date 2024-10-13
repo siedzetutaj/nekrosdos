@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: dc2e6b40-1c3d-488f-9e8d-63396e06650f
   <DialogueName>k__BackingField: R2
   <Text>k__BackingField: "Zadawaj te swoje pytania i miejmy to ju\u017C za sob\u0105."
   <Choices>k__BackingField:

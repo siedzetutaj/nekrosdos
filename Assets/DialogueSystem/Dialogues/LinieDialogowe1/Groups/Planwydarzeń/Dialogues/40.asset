@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 40
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 12c77b2d-cb47-4fa5-95eb-684b1975337e
   <DialogueName>k__BackingField: 40
   <Text>k__BackingField: "eksploruj\u0105c podziemia posiad\u0142o\u015Bci natrafia
     na pi\u0119kny stary pier\u015Bcie\u0144 i wk\u0142ada go na paluszek."

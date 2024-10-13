@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: G2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 4eb1e2ff-b09f-4f94-bbcd-74a0d362439f
   <DialogueName>k__BackingField: G2
   <Text>k__BackingField: "Gervi wi\u0119kszo\u015B\u0107 spokojnych dni w posiad\u0142o\u015Bci
     sp\u0119dza w swoim biurze i reaguje ewentualnie na jakiekolwiek wezwania cz\u0142onk\xF3w

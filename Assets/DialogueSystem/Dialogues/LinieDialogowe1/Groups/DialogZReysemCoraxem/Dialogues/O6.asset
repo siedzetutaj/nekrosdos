@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O6
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: f0142871-980b-4e14-a1a6-63f0bc3c6006
   <DialogueName>k__BackingField: O6
   <Text>k__BackingField: "Wiemy o zamkni\u0119tych w lochach ombryjczykach Lordzie.
     Jednak nasza praca polega na dok\u0142adnym sprawdzeniu okoliczno\u015Bci zab\xF3jstwa,

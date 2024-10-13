@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Z10
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 2f23b6d2-b02b-4412-b7a2-54f0154b463c
   <DialogueName>k__BackingField: Z10
   <Text>k__BackingField: "aktualnie stan zdrowia ch\u0142opca jest w normie jednak
     d\u0142u\u017Csza podobna ingerencja mog\u0142aby doprowadzi\u0107 do rozwojuy

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Z5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 4b84cfe6-9456-4464-89be-2591ef6ba23e
   <DialogueName>k__BackingField: Z5
   <Text>k__BackingField: "By\u0142y to badania nad kwiatem kt\xF3ry wymy\u015Bli\u0142
     jasek"

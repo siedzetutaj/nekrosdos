@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 606c1911-72b6-4257-a495-d6b294b6567d
   <DialogueName>k__BackingField: R2
   <Text>k__BackingField: "nast\u0119pnie leci na spotkanie ze szlacht\u0105"
   <Choices>k__BackingField:

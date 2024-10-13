@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 7j
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 09d6d3a8-32bd-47b4-894f-3782b78f9d5c
   <DialogueName>k__BackingField: 7j
   <Text>k__BackingField: "- Nie zamarzn\u0105\u0107 w drodze do celu - "
   <Choices>k__BackingField:

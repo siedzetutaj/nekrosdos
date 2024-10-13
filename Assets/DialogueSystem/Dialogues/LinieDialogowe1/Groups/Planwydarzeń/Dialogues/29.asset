@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 29
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: aa906191-fd93-40c6-973c-a80e4f6eb63e
   <DialogueName>k__BackingField: 29
   <Text>k__BackingField: "Syn Lothiona rani si\u0119 podczas zabawy z Elir\u0105
     i do posiad\u0142o\u015Bci ze swojego domku zostaje wezwany Zestes"

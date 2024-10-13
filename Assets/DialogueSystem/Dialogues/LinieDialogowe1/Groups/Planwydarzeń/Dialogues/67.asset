@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 67
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: ec2732d7-ed9f-490a-923d-913b92bdb01c
   <DialogueName>k__BackingField: 67
   <Text>k__BackingField: "Zestes wychodzi z pokoju ch\u0142opca nie zdaj\u0105c sobie
     sprawy z zaistnia\u0142ej sytuacji. Jednak dochodz\u0105 go krzyki Desmonda pr\xF3buj\u0105cego

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: gbev
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 0e90b0fe-a830-4a74-a784-268d269acc9b
   <DialogueName>k__BackingField: gbev
   <Text>k__BackingField: "Po dotarciu na miejsce zostaj\u0105 odprowadzeni przez
     Balona do gabinetu Lorda Alarica"

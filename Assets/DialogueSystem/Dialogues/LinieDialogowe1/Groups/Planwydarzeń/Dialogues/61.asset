@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 61
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 23102239-8a8a-49e3-8a26-3b5920312dd7
   <DialogueName>k__BackingField: 61
   <Text>k__BackingField: "Desmond po przybywa na miejscu z op\xF3\u017Anieniem gdy
     szlachcic\xF3w i s\u0142u\u017Cby nie ma ju\u017C na miejscu"

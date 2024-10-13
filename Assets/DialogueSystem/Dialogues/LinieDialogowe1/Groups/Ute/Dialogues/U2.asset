@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: U2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 31fc36b7-c6d8-4cf3-8129-eb7daf48c4dc
   <DialogueName>k__BackingField: U2
   <Text>k__BackingField: "Powiedzia\u0142 jej co wie na temat ombryjczyk\xF3w przebywaj\u0105cych
     w posiad\u0142o\u015Bci i o tym \u017Ce mog\u0105 oni zorganizowa\u0107 ucieczk\u0119

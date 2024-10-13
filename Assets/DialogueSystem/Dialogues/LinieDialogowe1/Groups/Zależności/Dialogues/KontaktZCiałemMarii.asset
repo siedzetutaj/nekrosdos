@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: "KontaktZCia\u0142emMarii"
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 9e633602-d843-4719-8142-b0d85104effb
   <DialogueName>k__BackingField: "KontaktZCia\u0142emMarii"
   <Text>k__BackingField: "kontakt utrudniony o ile nie niemo\u017Cliwy"
   <Choices>k__BackingField:

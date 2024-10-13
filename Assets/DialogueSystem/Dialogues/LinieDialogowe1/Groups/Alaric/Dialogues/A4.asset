@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: A4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 4e5c9c0a-863a-418d-b321-202835f9527d
   <DialogueName>k__BackingField: A4
   <Text>k__BackingField: "Poinformowany o zdarzeniu rusza czym pr\u0119dzej do gabinetu
     Marii"

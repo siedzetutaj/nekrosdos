@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O11
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 6e9f6bad-4a63-498f-b5ad-472fce0d89e1
   <DialogueName>k__BackingField: O11
   <Text>k__BackingField: ...
   <Choices>k__BackingField:

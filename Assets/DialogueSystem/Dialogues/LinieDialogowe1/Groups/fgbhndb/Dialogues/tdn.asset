@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: tdn
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: c269618a-671c-44fa-9a79-275dde704e8a
   <DialogueName>k__BackingField: tdn
   <Text>k__BackingField: "- Twoja r\u0119ka mimowolnie dotkn\u0119\u0142a stalowej
     maski, kt\xF3ra zakrywa po\u0142owe twojej twarzy. Po\u0142owe, w kt\xF3rej zadomowi\u0142a

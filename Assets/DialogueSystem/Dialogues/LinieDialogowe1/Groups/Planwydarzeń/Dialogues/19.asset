@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 19
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 3b10d838-06d0-4098-85d3-3d21e76fce83
   <DialogueName>k__BackingField: 19
   <Text>k__BackingField: "Lothion zaczyna pisa\u0107 listy i wysy\u0142a\u0107 je
     do swej muzy."

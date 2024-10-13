@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: rstbrs
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 9fe2f4f3-62b6-4d0a-a0fb-f67b3be24590
   <DialogueName>k__BackingField: rstbrs
   <Text>k__BackingField: "Jeste\u015Bmy ju\u017C blisko, nie zamarzniemy."
   <Choices>k__BackingField:

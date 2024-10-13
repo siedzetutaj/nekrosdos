@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Gervi5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: e05a8ec7-affb-4d6a-8325-6ff3d0d68f07
   <DialogueName>k__BackingField: Gervi5
   <Text>k__BackingField: "Nie dopu\u015Bcili\u015Bmy do tego od tygodnia dw\xF3r
     jest ca\u0142kowicie zamkni\u0119ty."

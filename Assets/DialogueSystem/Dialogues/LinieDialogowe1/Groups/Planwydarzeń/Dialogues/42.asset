@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 42
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 507d377d-a967-4779-9159-d0a39cfaa5ca
   <DialogueName>k__BackingField: 42
   <Text>k__BackingField: "Viktor w ciele dziewczynki kieruj\u0119 si\u0119 w stron\u0119
     sypialni Alarica jednak nie znajduje tam nikogo z racji na tocz\u0105ce sie spotkanie

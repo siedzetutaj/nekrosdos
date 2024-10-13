@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Z6
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: e0c67dce-5914-4e70-a29a-2eaecd7fc2d2
   <DialogueName>k__BackingField: Z6
   <Text>k__BackingField: "Zestes jest zdania \u017Ce odpowiednio odseparowuj\u0105c
     wyci\u0105g z tych kwiat\xF3w jest w stanie odnale\u017A\u0107 lekarstwo na powodowane

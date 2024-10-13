@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Arvid2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 482cfa96-c711-42da-bdfe-fa3d437e4e3a
   <DialogueName>k__BackingField: Arvid2
   <Text>k__BackingField: "Czy pok\xF3j zosta\u0142 zabezpieczony?"
   <Choices>k__BackingField:

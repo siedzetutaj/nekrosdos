@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Katon5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 23187cee-4afd-4a19-a6aa-1b566281b38d
   <DialogueName>k__BackingField: Katon5
   <Text>k__BackingField: "Oczywi\u015Bcie. Prosz\u0119 za mn\u0105, Lady znajduj\u0119
     si\u0119 na podwy\u017Cszeniu."

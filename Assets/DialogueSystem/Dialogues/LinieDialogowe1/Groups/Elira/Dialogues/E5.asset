@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: E5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: dc72ab9f-a5ae-470d-84ca-5ac89fa7773b
   <DialogueName>k__BackingField: E5
   <Text>k__BackingField: "dzieciaki naprawd\u0119 mocno przypad\u0142y sobie do gustu
     jednak ch\u0142opak mia\u0142 coraz wi\u0119ksze problemy zdrowotne od pewnego

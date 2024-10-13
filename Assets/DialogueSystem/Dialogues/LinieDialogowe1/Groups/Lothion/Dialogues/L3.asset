@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: L3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 09e97fe5-d02a-4808-a9c3-44e426dba27a
   <DialogueName>k__BackingField: L3
   <Text>k__BackingField: "udaje si\u0119 na rozmowy"
   <Choices>k__BackingField:

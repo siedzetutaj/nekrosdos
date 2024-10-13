@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 79
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: e11ca33a-cb9d-43a5-a0f2-2ad15917bb91
   <DialogueName>k__BackingField: 79
   <Text>k__BackingField: "Ochroniarze nie pa\u0142aj\u0105 do siebie sympatia i siebie
     pilnuja r\xF3wnie dobrze co i wszystkich drzwi. "

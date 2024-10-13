@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: B5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: a7faca26-b6de-4763-8988-860784267039
   <DialogueName>k__BackingField: B5
   <Text>k__BackingField: "jest te\u017C na ka\u017Cde zawo\u0142anie cz\u0142onk\xF3w
     rodu morteo cho\u0107 zazwyczaj najbardziej s\u0142ucha Alarica"

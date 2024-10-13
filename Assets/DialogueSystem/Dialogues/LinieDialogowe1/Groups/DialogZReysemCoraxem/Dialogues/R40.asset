@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R40
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 1fddf4e7-233e-4a0f-b32b-d95991ecc6c5
   <DialogueName>k__BackingField: R40
   <Text>k__BackingField: "Na t\u0105 chwile uznaje t\u0119 rozmow\u0119 za zako\u0144czona.
     Wierz\u0119 \u017Ce przed nast\u0119pn\u0105 znajdzie si\u0119 dokument potwierdzaj\u0105cy 

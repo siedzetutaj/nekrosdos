@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: G7
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 28676f9e-ffd9-4caf-a044-2516f2376d89
   <DialogueName>k__BackingField: G7
   <Text>k__BackingField: "przeprowadza\u0142 kolejn\u0105 rozmow\u0119 z Virionem
     i Alariciem dotycz\u0105c\u0105 Hostesa i aspekt\xF3w prawno - finansowych b\u0119d\u0105cych

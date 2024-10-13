@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Narracja1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 76ddab53-4abe-4e13-bf30-3a2081bddd08
   <DialogueName>k__BackingField: Narracja1
   <Text>k__BackingField: "-M\xF3wi\u0105c to Lord pokazuj\u0119 zamkni\u0119te drzwi
     za waszymi plecami-"

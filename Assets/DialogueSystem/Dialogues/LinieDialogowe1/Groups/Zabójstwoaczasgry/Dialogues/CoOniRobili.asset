@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: CoOniRobili
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 8984a785-f4e2-44c7-8889-ed443e8d3f26
   <DialogueName>k__BackingField: CoOniRobili
   <Text>k__BackingField: "Pomi\u0119dzy dniem zab\xF3jstwa a przyjazdem detektyw\xF3w
     robi\u0142em:\n\nZestes - pr\xF3bowa\u0142 si\u0119 dowiedzie\u0107 kto w posiad\u0142o\u015Bci

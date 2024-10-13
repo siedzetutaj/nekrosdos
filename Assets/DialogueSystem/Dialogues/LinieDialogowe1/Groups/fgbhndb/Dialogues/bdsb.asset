@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: bdsb
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 6e94db24-fb14-4d7e-b8c6-93f55e69984e
   <DialogueName>k__BackingField: bdsb
   <Text>k__BackingField: "Pfff tak... Dobrze by\u0142oby nie zamarzn\u0105\u0107
     w drodz\u0119 do celu..."

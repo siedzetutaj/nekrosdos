@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: btyg
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 452ed120-3fb3-484e-ba2e-081e55ea2eec
   <DialogueName>k__BackingField: btyg
   <Text>k__BackingField: "Po tych informacjach gracze powinni mie\u0107 dowolno\u015B\u0107
     w poruszaniu si\u0119 po posiad\u0142o\u015Bci a przed tym tak\u017Ce powinni

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Katon11p2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 9f5a6652-1c08-4275-bb7e-61bc505180ed
   <DialogueName>k__BackingField: Katon11p2
   <Text>k__BackingField: "Nie wydaj\u0119 mi si\u0119... Oberonie?"
   <Choices>k__BackingField:

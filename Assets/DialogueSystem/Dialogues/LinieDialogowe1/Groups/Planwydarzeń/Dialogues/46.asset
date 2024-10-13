@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 46
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 17aa9d7b-bb5c-4e03-b7aa-ad576e1b2a03
   <DialogueName>k__BackingField: 46
   <Text>k__BackingField: "wchodzi przez okno do gabinetu i dopiero wtedy przechodz\u0105c
     za biurko dostrzega cia\u0142o zamordowanej kobiety"

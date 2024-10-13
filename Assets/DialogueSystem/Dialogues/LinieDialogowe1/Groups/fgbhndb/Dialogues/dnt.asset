@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: dnt
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 18c1ea0d-ea03-4bc9-beb3-3923969a9ebd
   <DialogueName>k__BackingField: dnt
   <Text>k__BackingField: "- Zimn\u0105 po\u0142ow\u0119 - "
   <Choices>k__BackingField:

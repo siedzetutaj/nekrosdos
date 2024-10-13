@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: G8
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: a289ce87-daf4-47d1-9a75-1696764ea4b7
   <DialogueName>k__BackingField: G8
   <Text>k__BackingField: "Po tych rozmowach niemal od razu rozpocz\u0119\u0142a si\u0119
     druga tura debat o losach Eliry"
