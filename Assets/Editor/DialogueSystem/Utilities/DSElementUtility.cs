@@ -34,7 +34,6 @@ namespace DS.Utilities
             Port port = node.InstantiatePort(orientation, direction, capacity, typeof(bool));
 
             port.portName = portName;
-
             return port;
         }
 

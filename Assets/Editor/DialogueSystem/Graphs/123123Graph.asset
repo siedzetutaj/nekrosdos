@@ -10,33 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0202a3095b7477a4091d56344f0af6b3, type: 3}
-  m_Name: testGraph
+  m_Name: 123123Graph
   m_EditorClassIdentifier: 
-  <FileName>k__BackingField: test
+  <FileName>k__BackingField: 123123
   <Groups>k__BackingField: []
   <Nodes>k__BackingField:
-  - <ID>k__BackingField: f8456b2a-79bb-411a-85be-4603e461829f
-    <Name>k__BackingField: 2
+  - <ID>k__BackingField: 60267a42-339d-4ebf-a4b2-a99825173167
+    <Name>k__BackingField: DialogueName
     <Text>k__BackingField: Dialogue text.
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 471, y: 154}
-    <ExposedProperties>k__BackingField: []
-    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
-    <CharacterSO>k__BackingField: {fileID: 0}
-    <CharacterSprite>k__BackingField: {fileID: 0}
-  - <ID>k__BackingField: 91ef283c-a410-433a-affc-b7edaee4cf1d
-    <Name>k__BackingField: 1
-    <Text>k__BackingField: Dialogue text.
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
-    <GroupID>k__BackingField: 
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 830, y: 252}
+    <Position>k__BackingField: {x: 403, y: 176}
     <ExposedProperties>k__BackingField: []
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
     <CharacterSO>k__BackingField: {fileID: 0}

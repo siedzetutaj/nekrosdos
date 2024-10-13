@@ -8,12 +8,13 @@ namespace DS.Elements
     {
         public string ID { get; set; }
         public string OldTitle { get; set; }
+        public bool WasModified { get; set; } = true;
 
         private Color defaultBorderColor;
         private float defaultBorderWidth;
-
         public DSGroup(string groupTitle, Vector2 position)
         {
+
             ID = Guid.NewGuid().ToString();
 
             title = groupTitle;
@@ -33,8 +34,14 @@ namespace DS.Elements
 
         public void ResetStyle()
         {
+            WasModified = true;
             contentContainer.style.borderBottomColor = defaultBorderColor;
             contentContainer.style.borderBottomWidth = defaultBorderWidth;
+        }
+        public override void OnSelected()
+        {
+            base.OnSelected();  // Call the base method to preserve default behavior
+            WasModified = true; // Mark the node as modified when it is selected
         }
     }
 }

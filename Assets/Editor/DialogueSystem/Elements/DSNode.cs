@@ -17,6 +17,7 @@ namespace DS.Elements
     {
         public string ID { get; set; }
         public string DialogueName { get; set; }
+        public string OldDialogueName { get; set; } = null;
         public List<DSChoiceSaveData> Choices { get; set; }
         public string Text { get; set; }
         public DSDialogueType DialogueType { get; set; }
@@ -56,7 +57,6 @@ namespace DS.Elements
 
             mainContainer.AddToClassList("ds-node__main-container");
             extensionContainer.AddToClassList("ds-node__extension-container");
-            WasModified = false;
         }
         #region Draw
         public virtual void Draw()
@@ -89,6 +89,7 @@ namespace DS.Elements
             };
             ScriptableObjectField.RegisterValueChangedCallback(evt =>
             {
+                WasModified = true;
                 if (evt.newValue is DSCharacterSO character)
                 {
                     // Load sprites from selected object
@@ -108,30 +109,19 @@ namespace DS.Elements
             SpriteDropdown = new DropdownField();
             SpriteDropdown.RegisterValueChangedCallback(evt =>
             {
+                WasModified = true;
                 UpdateSpriteDisplay(evt.newValue);
             });
             LeftContainer.Add(SpriteDropdown);
             extensionContainer.Add(LeftContainer);
         }
-        protected void DrawRightSide()
-        {
-            VisualElement rightContainer = new VisualElement();
-            rightContainer.AddToClassList("ds-node__right-container");
-            //textField = new TextField("Text");
-            //rightContainer.Add(textField);
-
-            // Add left and right containers to main container
-            extensionContainer.Add(DrawDialogueTextField());
-            //    extensionContainer.Add(mainContainer);
-
-        }
         protected void DrawTitle()
         {
             TextField dialogueNameTextField = DSElementUtility.CreateTextField(DialogueName, null, callback =>
             {
+                WasModified = true;
                 TextField target = (TextField)callback.target;
                 target.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
-
                 if (string.IsNullOrEmpty(target.value))
                 {
                     if (!string.IsNullOrEmpty(DialogueName))
@@ -181,6 +171,18 @@ namespace DS.Elements
 
             inputContainer.Add(inputPort);
         }
+        protected void DrawRightSide()
+        {
+            VisualElement rightContainer = new VisualElement();
+            rightContainer.AddToClassList("ds-node__right-container");
+            //textField = new TextField("Text");
+            //rightContainer.Add(textField);
+
+            // Add left and right containers to main container
+            extensionContainer.Add(DrawDialogueTextField());
+            //    extensionContainer.Add(mainContainer);
+
+        }
         protected void DrawExposedPropertiesContainer(string containerTitle = null)
         {
             //Load
@@ -194,11 +196,13 @@ namespace DS.Elements
 
             foldout.RegisterValueChangedCallback(evt =>
             {
+                WasModified = true;
                 customDataContainer.style.display = evt.newValue ? DisplayStyle.Flex : DisplayStyle.None;
             });
 
             Button addPropertyButton = DSElementUtility.CreateButton("Add Property", () =>
             {
+                WasModified = true;
                 DrawExposedPropertyList(customDataContainer, AllExposedPropertyNodeElements);
             });
 
@@ -223,6 +227,7 @@ namespace DS.Elements
         }
         protected void DrawExposedPropertyList(VisualElement visualElement, List<ExposedPropertyNodeElement> exposedPropertyNodeElements, ExposedPropertyNodeElement exposedPropertyElement = null, bool isNew = true)
         {
+            WasModified = true;
             exposedPropertyElement ??= new ExposedPropertyNodeElement();
             exposedPropertyElement.Initialize(graphView);
 
@@ -233,11 +238,11 @@ namespace DS.Elements
             {
                 headerTitle = "Properties",
                 showFoldoutHeader = true,
-
             };
             exposedPropertyElement.listView.AddToClassList("ds-node__extension-container-height");
             graphView.OnExposedPropertiesListAdd += exposedPropertyElement.OnListAddProperty;
             graphView.OnExposedPropertiesListChange += exposedPropertyElement.OnListChangeProperty;
+            graphView.OnExposedPropertiesListChange += (string a,string b) => WasModified = true;
             exposedPropertyElement.listView.selectionChanged += exposedPropertyElement.OnListSelected;
 
             exposedPropertyElement.toggle = new Toggle()
@@ -251,6 +256,8 @@ namespace DS.Elements
                 exposedPropertyElement.toggle.value = exposedPropertyElement.property.Value;
                 exposedPropertyElement.toggle.RegisterValueChangedCallback(value =>
                 {
+                    WasModified = true;
+
                     var changingPropertyIndex = AllExposedPropertyNodeElements.FindIndex(x => x == exposedPropertyElement);
                     AllExposedPropertyNodeElements[changingPropertyIndex].property.Value = value.newValue;
                 });
@@ -274,6 +281,8 @@ namespace DS.Elements
         {
             Button deleteButton = DSElementUtility.CreateButton("X", () =>
             {
+                WasModified = true;
+
                 AllExposedPropertyNodeElements.Remove(element);
                 visualElement.Remove(container);
             });
@@ -289,7 +298,11 @@ namespace DS.Elements
 
             Foldout textFoldout = DSElementUtility.CreateFoldout("Dialogue Text");
 
-            TextField textTextField = DSElementUtility.CreateTextArea(Text, null, callback => Text = callback.newValue);
+            TextField textTextField = DSElementUtility.CreateTextArea(Text, null, callback =>
+            {
+                WasModified = true;
+                Text = callback.newValue;
+            });
 
             textTextField.AddClasses(
                 "ds-node__text-field",
@@ -402,7 +415,6 @@ namespace DS.Elements
         {
             base.OnSelected();  // Call the base method to preserve default behavior
             WasModified = true; // Mark the node as modified when it is selected
-            Debug.Log("Node selected, WasModified set to true.");
         }
         #endregion
     }

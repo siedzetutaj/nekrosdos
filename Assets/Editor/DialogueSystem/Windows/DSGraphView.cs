@@ -29,6 +29,9 @@ namespace DS.Windows
         private SerializableDictionary<string, DSGroupErrorData> groups;
         private SerializableDictionary<Group, SerializableDictionary<string, DSNodeErrorData>> groupedNodes;
 
+        public SerializableDictionary<string, List<string>> deletedGroupedNodeNames;
+        public List<string> deletedUngroupedNodeNames;
+
         public List<DSExposedProperty> exposedProperties;
         public  UnityAction<string,string> OnExposedPropertiesListChange;
         public  UnityAction<string> OnExposedPropertiesListAdd;
@@ -65,6 +68,9 @@ namespace DS.Windows
             ungroupedNodes = new SerializableDictionary<string, DSNodeErrorData>();
             groups = new SerializableDictionary<string, DSGroupErrorData>();
             groupedNodes = new SerializableDictionary<Group, SerializableDictionary<string, DSNodeErrorData>>();
+
+            deletedGroupedNodeNames = new SerializableDictionary<string, List<string>>();
+            deletedUngroupedNodeNames = new List<string>();
 
             exposedProperties = new List<DSExposedProperty>();
 
@@ -116,9 +122,14 @@ namespace DS.Windows
         //    AddElement(rect);
         //    return rect;
         //}
-        public DSGroup CreateGroup(string title, Vector2 position)
+        public DSGroup CreateGroup(string title, Vector2 position, bool isLoaded = false)
         {
             DSGroup group = new DSGroup(title, position);
+
+            if (isLoaded )
+            {
+                group.WasModified = false;
+            }
 
             AddGroup(group);
 
@@ -209,9 +220,10 @@ namespace DS.Windows
 
                         DSNode groupNode = (DSNode) groupElement;
 
+                        deletedGroupedNodeNames.AddItem(groupNode.Group.title, groupNode.DialogueName);
+
                         groupNodes.Add(groupNode);
                     }
-
                     groupToDelete.RemoveElements(groupNodes);
 
                     RemoveGroup(groupToDelete);
@@ -227,6 +239,8 @@ namespace DS.Windows
                     {
                         nodeToDelete.Group.RemoveElement(nodeToDelete);
                     }
+
+                    deletedUngroupedNodeNames.Add(nodeToDelete.DialogueName);
 
                     RemoveUngroupedNode(nodeToDelete);
 
@@ -250,6 +264,8 @@ namespace DS.Windows
                     DSGroup dsGroup = (DSGroup) group;
                     DSNode node = (DSNode) element;
 
+                    dsGroup.WasModified = true;
+
                     RemoveUngroupedNode(node);
                     AddGroupedNode(node, dsGroup);
                 }
@@ -269,6 +285,8 @@ namespace DS.Windows
                     DSGroup dsGroup = (DSGroup) group;
                     DSNode node = (DSNode) element;
 
+                    dsGroup.WasModified = true;
+
                     RemoveGroupedNode(node, dsGroup);
                     AddUngroupedNode(node);
                 }
@@ -279,6 +297,8 @@ namespace DS.Windows
             groupTitleChanged = (group, newTitle) =>
             {
                 DSGroup dsGroup = (DSGroup) group;
+
+                dsGroup.WasModified = true;
 
                 dsGroup.title = newTitle.RemoveWhitespaces().RemoveSpecialCharacters();
 
@@ -312,11 +332,15 @@ namespace DS.Windows
                 {
                     foreach (Edge edge in changes.edgesToCreate)
                     {
-                        DSNode nextNode = (DSNode) edge.input.node;
+                        DSNode inputNode = (DSNode) edge.input.node;
+                        inputNode.WasModified = true;
 
                         DSChoiceSaveData choiceData = (DSChoiceSaveData) edge.output.userData;
 
-                        choiceData.NodeID = nextNode.ID;
+                        choiceData.NodeID = inputNode.ID;
+
+                        DSNode outputNode = (DSNode) edge.output.node;
+                        outputNode.WasModified = true;
                     }
                 }
 
@@ -336,6 +360,18 @@ namespace DS.Windows
                         DSChoiceSaveData choiceData = (DSChoiceSaveData) edge.output.userData;
 
                         choiceData.NodeID = "";
+                        
+                        DSNode inputNode = (DSNode)edge.input.node;
+                        if (inputNode != null)
+                        {
+                            inputNode.WasModified = true;
+                        }
+
+                        DSNode outputNode = (DSNode)edge.output.node;
+                        if (outputNode != null)
+                        {
+                            outputNode.WasModified = true;
+                        }
                     }
                 }
 

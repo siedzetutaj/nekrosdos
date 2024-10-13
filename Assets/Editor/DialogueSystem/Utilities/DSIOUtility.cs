@@ -29,6 +29,9 @@ namespace DS.Utilities
         private static Dictionary<string, DSGroup> loadedGroups;
         private static Dictionary<string, DSNode> loadedNodes;
 
+        private static List<DSDialogueSO> addedUngroupedDialogues;
+
+
         public static void Initialize(DSGraphView dsGraphView, string graphName)
         {
             graphView = dsGraphView;
@@ -44,6 +47,8 @@ namespace DS.Utilities
 
             loadedGroups = new Dictionary<string, DSGroup>();
             loadedNodes = new Dictionary<string, DSNode>();
+
+            addedUngroupedDialogues = new List<DSDialogueSO>();   
         }
         #region Save
         public static void Save()
@@ -51,15 +56,25 @@ namespace DS.Utilities
             CreateDefaultFolders();
 
             GetElementsFromGraphView();
+            DSGraphSaveDataSO graphData = LoadAsset<DSGraphSaveDataSO>("Assets/Editor/DialogueSystem/Graphs", $"{graphFileName}Graph");
+            if (graphData == null)
+            {
+                graphData = CreateAsset<DSGraphSaveDataSO>("Assets/Editor/DialogueSystem/Graphs", $"{graphFileName}Graph");
+                graphData.Initialize(graphFileName);
+            }
 
-            DSGraphSaveDataSO graphData = CreateAsset<DSGraphSaveDataSO>("Assets/Editor/DialogueSystem/Graphs", $"{graphFileName}Graph");
 
-            graphData.Initialize(graphFileName);
+            DSDialogueContainerSO dialogueContainer = LoadAsset<DSDialogueContainerSO>(containerFolderPath, graphFileName);
 
-            DSDialogueContainerSO dialogueContainer = CreateAsset<DSDialogueContainerSO>(containerFolderPath, graphFileName);
-            List<DSExposedProperty> temp = new List<DSExposedProperty>();
-            temp.AddRange(graphView.exposedProperties);
-            dialogueContainer.Initialize(graphFileName,temp);
+            if(dialogueContainer == null)
+            {
+                dialogueContainer = CreateAsset<DSDialogueContainerSO>(containerFolderPath, graphFileName);
+                List<DSExposedProperty> temp = new List<DSExposedProperty>();
+                temp.AddRange(graphView.exposedProperties);
+                dialogueContainer.Initialize(graphFileName,temp);
+            }
+
+
 
             SaveGroups(graphData, dialogueContainer);
             SaveNodes(graphData, dialogueContainer);
@@ -79,10 +94,13 @@ namespace DS.Utilities
 
             foreach (DSGroup group in groups)
             {
-                SaveGroupToGraph(group, graphData);
-                SaveGroupToScriptableObject(group, dialogueContainer);
+                if (group.WasModified)
+                {
+                    SaveGroupToGraph(group, graphData);
+                    SaveGroupToScriptableObject(group, dialogueContainer);
+                    groupNames.Add(group.title);
 
-                groupNames.Add(group.title);
+                }
             }
 
             UpdateOldGroups(groupNames, graphData);
@@ -117,28 +135,30 @@ namespace DS.Utilities
         }
         private static void SaveNodes(DSGraphSaveDataSO graphData, DSDialogueContainerSO dialogueContainer)
         {
-            SerializableDictionary<string, List<string>> groupedNodeNames = new SerializableDictionary<string, List<string>>();
-            List<string> ungroupedNodeNames = new List<string>();
+            //SerializableDictionary<string, List<string>> groupedNodeNames = new SerializableDictionary<string, List<string>>();
+            //List<string> ungroupedNodeNames = new List<string>();
 
             foreach (DSNode node in nodes)
             {
                 SaveNodeToGraph(node, graphData);
                 SaveNodeToScriptableObject(node, dialogueContainer);
+                node.OldDialogueName = node.DialogueName;
+                //if (node.Group != null)
+                //{
+                //    groupedNodeNames.AddItem(node.Group.title, node.DialogueName);
 
-                if (node.Group != null)
-                {
-                    groupedNodeNames.AddItem(node.Group.title, node.DialogueName);
+                //    continue;
+                //}
 
-                    continue;
-                }
-
-                ungroupedNodeNames.Add(node.DialogueName);
+                //ungroupedNodeNames.Add(node.DialogueName);
+                //node.WasModified = false;
             }
-
+            addedUngroupedDialogues.ForEach(dialogue => dialogueContainer.UngroupedDialogues.Add(dialogue));
+            addedUngroupedDialogues.Clear();
             UpdateDialoguesChoicesConnections();
 
-            UpdateOldGroupedNodes(groupedNodeNames, graphData);
-            UpdateOldUngroupedNodes(ungroupedNodeNames, graphData);
+            UpdateDeletedGroupedNodes(graphData);
+            UpdateDeletedUngroupedNodes(graphData, dialogueContainer);
         }
         private static void SaveNodeToGraph(DSNode node, DSGraphSaveDataSO graphData)
         {
@@ -167,23 +187,50 @@ namespace DS.Utilities
                 nodeData.CharacterSprite = node.SpriteImage.image;
 
             }
+            if (graphData.Nodes.FirstOrDefault(x => x.ID == nodeData.ID) is DSNodeSaveData repeatedData) 
+            {
+                graphData.Nodes.Remove(repeatedData);
+            }
             graphData.Nodes.Add(nodeData);
         }
         private static void SaveNodeToScriptableObject(DSNode node, DSDialogueContainerSO dialogueContainer)
         {
             DSDialogueSO dialogue;
 
-            if (node.Group != null)
+            if (node.Group != null) //grouped
             {
+                if (dialogueContainer.DialogueGroups[createdDialogueGroups[node.Group.ID]]
+                    .FirstOrDefault(x => x.name == node.DialogueName) is DSDialogueSO repeatedDialogue)
+                {
+                    dialogueContainer.DialogueGroups[createdDialogueGroups[node.Group.ID]].Remove(repeatedDialogue);
+                    RemoveAsset($"{containerFolderPath}/Groups/{node.Group.title}/Dialogues", node.DialogueName);
+                }
+
                 dialogue = CreateAsset<DSDialogueSO>($"{containerFolderPath}/Groups/{node.Group.title}/Dialogues", node.DialogueName);
 
                 dialogueContainer.DialogueGroups.AddItem(createdDialogueGroups[node.Group.ID], dialogue);
             }
-            else
+            else // ungrouped nodes
             {
+                if (node.OldDialogueName != null && node.OldDialogueName != node.DialogueName)
+                {
+                    if (dialogueContainer.UngroupedDialogues.FirstOrDefault(x => x.name == node.OldDialogueName) is DSDialogueSO repeatedDialogue)
+                    {
+                        dialogueContainer.UngroupedDialogues.Remove(repeatedDialogue);
+                        RemoveAsset($"{containerFolderPath}/Global/Dialogues", node.OldDialogueName);
+                    }
+                }
+                else
+                {
+                    if (dialogueContainer.UngroupedDialogues.FirstOrDefault(x => x.name == node.DialogueName) is DSDialogueSO repeatedDialogue)
+                    {
+                        dialogueContainer.UngroupedDialogues.Remove(repeatedDialogue);
+                        RemoveAsset($"{containerFolderPath}/Global/Dialogues", node.DialogueName);
+                    }
+                }
                 dialogue = CreateAsset<DSDialogueSO>($"{containerFolderPath}/Global/Dialogues", node.DialogueName);
 
-                dialogueContainer.UngroupedDialogues.Add(dialogue);
+                addedUngroupedDialogues.Add(dialogue);
             }
 
             dialogue.Initialize(
@@ -226,6 +273,7 @@ namespace DS.Utilities
         {
             foreach (DSNode node in nodes)
             {
+
                 DSDialogueSO dialogue = createdDialogues[node.ID];
 
                 for (int choiceIndex = 0; choiceIndex < node.Choices.Count; ++choiceIndex)
@@ -241,9 +289,10 @@ namespace DS.Utilities
 
                     SaveAsset(dialogue);
                 }
+
             }
         }
-        private static void UpdateOldGroupedNodes(SerializableDictionary<string, List<string>> currentGroupedNodeNames, DSGraphSaveDataSO graphData)
+        private static void UpdateDeletedGroupedNodes(DSGraphSaveDataSO graphData)
         {
             if (graphData.OldGroupedNodeNames != null && graphData.OldGroupedNodeNames.Count != 0)
             {
@@ -251,9 +300,9 @@ namespace DS.Utilities
                 {
                     List<string> nodesToRemove = new List<string>();
 
-                    if (currentGroupedNodeNames.ContainsKey(oldGroupedNode.Key))
+                    if (graphView.deletedGroupedNodeNames.ContainsKey(oldGroupedNode.Key))
                     {
-                        nodesToRemove = oldGroupedNode.Value.Except(currentGroupedNodeNames[oldGroupedNode.Key]).ToList();
+                        nodesToRemove = oldGroupedNode.Value.Except(graphView.deletedGroupedNodeNames[oldGroupedNode.Key]).ToList();
                     }
 
                     foreach (string nodeToRemove in nodesToRemove)
@@ -263,21 +312,28 @@ namespace DS.Utilities
                 }
             }
 
-            graphData.OldGroupedNodeNames = new SerializableDictionary<string, List<string>>(currentGroupedNodeNames);
+            graphData.OldGroupedNodeNames = new SerializableDictionary<string, List<string>>(graphView.deletedGroupedNodeNames);
         }
-        private static void UpdateOldUngroupedNodes(List<string> currentUngroupedNodeNames, DSGraphSaveDataSO graphData)
+        private static void UpdateDeletedUngroupedNodes(DSGraphSaveDataSO graphData, DSDialogueContainerSO dialogueContainer)
         {
-            if (graphData.OldUngroupedNodeNames != null && graphData.OldUngroupedNodeNames.Count != 0)
+            if (graphView.deletedUngroupedNodeNames != null && graphView.deletedUngroupedNodeNames.Count != 0)
             {
-                List<string> nodesToRemove = graphData.OldUngroupedNodeNames.Except(currentUngroupedNodeNames).ToList();
-
-                foreach (string nodeToRemove in nodesToRemove)
+                foreach (string nodeNameToRemove in graphView.deletedUngroupedNodeNames)
                 {
-                    RemoveAsset($"{containerFolderPath}/Global/Dialogues", nodeToRemove);
+
+                    DSDialogueSO dialogue = LoadAsset<DSDialogueSO>($"{containerFolderPath}/Global/Dialogues", nodeNameToRemove);
+                    dialogueContainer.UngroupedDialogues.Remove(dialogue);
+
+                    RemoveAsset($"{containerFolderPath}/Global/Dialogues", nodeNameToRemove);
+
+                    if (graphData.Nodes.FirstOrDefault(x => x.Name == nodeNameToRemove) is DSNodeSaveData deletedData)
+                    {
+                        graphData.Nodes.Remove(deletedData);
+                    }
                 }
             }
 
-            graphData.OldUngroupedNodeNames = new List<string>(currentUngroupedNodeNames);
+            graphView.deletedUngroupedNodeNames.Clear();
         }
         #endregion
         #region Load
@@ -309,7 +365,7 @@ namespace DS.Utilities
         {
             foreach (DSGroupSaveData groupData in groups)
             {
-                DSGroup group = graphView.CreateGroup(groupData.Name, groupData.Position);
+                DSGroup group = graphView.CreateGroup(groupData.Name, groupData.Position, true);
 
                 group.ID = groupData.ID;
 
@@ -324,11 +380,11 @@ namespace DS.Utilities
 
                 DSNode node = graphView.CreateNode(nodeData.Name, nodeData.DialogueType, nodeData.Position, false);
 
+                node.OldDialogueName = nodeData.Name;
                 node.ID = nodeData.ID;
                 node.Choices = choices;
                 node.Text = nodeData.Text;
                 node.CharacterSO = nodeData.CharacterSO;
-
                 foreach(var property in nodeData.ExposedProperties)
                 {
                     ExposedPropertyNodeElement element = new ExposedPropertyNodeElement()
@@ -354,6 +410,7 @@ namespace DS.Utilities
                 graphView.AddElement(node);
 
                 loadedNodes.Add(node.ID, node);
+                node.WasModified = false;
 
                 if (string.IsNullOrEmpty(nodeData.GroupID))
                 {
@@ -477,7 +534,7 @@ namespace DS.Utilities
 
             graphView.graphElements.ForEach(graphElement =>
             {
-                if (graphElement is DSNode node)
+                if (graphElement is DSNode node && node.WasModified)
                 {
                     nodes.Add(node);
 
@@ -488,7 +545,10 @@ namespace DS.Utilities
                 {
                     DSGroup group = (DSGroup) graphElement;
 
-                    groups.Add(group);
+                    if (group.WasModified)
+                    {
+                        groups.Add(group);
+                    }
 
                     return;
                 }
