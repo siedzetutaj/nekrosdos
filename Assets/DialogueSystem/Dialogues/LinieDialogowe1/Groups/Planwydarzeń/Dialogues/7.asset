@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 7
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 93a3844d-e999-4412-88c4-d9c974c5eb8b
   <DialogueName>k__BackingField: 7
   <Text>k__BackingField: Maria Morteo wraz z synem Desmondem negocjuje z ombryjczykami
   <Choices>k__BackingField:

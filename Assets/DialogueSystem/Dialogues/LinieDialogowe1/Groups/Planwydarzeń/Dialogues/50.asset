@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 50
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: a9ea4678-b36e-4ba0-a08b-cc95ef71f0db
   <DialogueName>k__BackingField: 50
   <Text>k__BackingField: "Po pierwsze porzeszukuje biuro i zabiera \u0142ap\xF3wk\u0119
     przekazan\u0105 marii przez hostesa"

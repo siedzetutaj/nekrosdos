@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Gervi6
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: ecd02972-a01f-4094-a81c-4fb8198b9ee4
   <DialogueName>k__BackingField: Gervi6
   <Text>k__BackingField: "Oto one. Prosze za mn\u0105 zaprowadz\u0119 detektyw\xF3w
     na miejsce."

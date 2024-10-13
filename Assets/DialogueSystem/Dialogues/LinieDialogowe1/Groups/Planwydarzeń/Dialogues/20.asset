@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 20
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 098540d9-1805-41e6-a495-51fadd683a8e
   <DialogueName>k__BackingField: 20
   <Text>k__BackingField: "Listy przejmuje Weln i na polecenie Marii ich niedosz\u0142ej
     odbiorczyni pali listy tu\u017C po tym jak przylec\u0105"

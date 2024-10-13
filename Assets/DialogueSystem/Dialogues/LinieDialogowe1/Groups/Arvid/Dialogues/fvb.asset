@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: fvb
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: eb73f31c-4cf8-4ba4-ade6-47fe892dc693
   <DialogueName>k__BackingField: fvb
   <Text>k__BackingField: "Ten t\u0142umaczy im co wie na temat tej sprawy"
   <Choices>k__BackingField:

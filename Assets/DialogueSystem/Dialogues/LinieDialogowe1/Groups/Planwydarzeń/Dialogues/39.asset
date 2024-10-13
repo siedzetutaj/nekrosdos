@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 39
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: b429a087-8db1-47b4-81cb-60ecd0913335
   <DialogueName>k__BackingField: 39
   <Text>k__BackingField: "wychodzi z niego ukrytym przej\u015Bciem i wchodzi do piwnicy"
   <Choices>k__BackingField:

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: f8c8b359-0de3-458b-9793-8c309a01158e
   <DialogueName>k__BackingField: O5
   <Text>k__BackingField: "Zostaj\u0105 oni ugoszczeni w zachodnim skrzydle budynku
     w pokoju wsp\xF3lnym na 1 pi\u0119trze i nie mog\u0105 opuszca\u0107 tej strefy"

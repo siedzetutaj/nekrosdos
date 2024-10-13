@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Katon12
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: f1abf3dd-9185-4f7c-9e58-f88fead9d3d5
   <DialogueName>k__BackingField: Katon12
   <Text>k__BackingField: "Tak, tak oczywi\u015Bcie."
   <Choices>k__BackingField:

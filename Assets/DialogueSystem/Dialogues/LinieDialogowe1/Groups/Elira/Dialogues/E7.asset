@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: E7
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 10ee9749-aad4-4d90-9bad-c8845a7dee37
   <DialogueName>k__BackingField: E7
   <Text>k__BackingField: "Spowrotem zabra\u0142a ich pokoj\xF3wka i ci wr\xF3cili
     do zabaw"

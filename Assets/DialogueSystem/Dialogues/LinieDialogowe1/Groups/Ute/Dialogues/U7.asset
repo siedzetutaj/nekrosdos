@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: U7
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: d8767eef-d565-4f5d-9c41-23d642b54527
   <DialogueName>k__BackingField: U7
   <Text>k__BackingField: "Pami\u0119ta\u0142 jednak by wraca\u0107 do Coraxa gdyby
     ten go potrzebowa\u0142 i wstapi\u0142 te\u017C kilka razy do kuchnii pr\xF3buj\u0105c

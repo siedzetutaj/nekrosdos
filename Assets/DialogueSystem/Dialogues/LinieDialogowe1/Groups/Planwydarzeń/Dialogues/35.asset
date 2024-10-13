@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 35
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 2fbc7c42-c322-4aeb-9002-6eda911f20ad
   <DialogueName>k__BackingField: 35
   <Text>k__BackingField: "S\u0142u\u017Cba zajeta jest przygotowywaniem posi\u0142k\xF3w"
   <Choices>k__BackingField:

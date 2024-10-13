@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: W2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 7f6fa738-94fb-4e1b-bb07-02bbbbd4f987
   <DialogueName>k__BackingField: W2
   <Text>k__BackingField: "Do\u015B\u0107 cz\u0119sto prowadzi konwersacj\u0119 z
     Kap\u0142anem i nieco rzadziej z Zestesem. Ma dobre relacj\u0119 z s\u0142u\u017Cb\u0105

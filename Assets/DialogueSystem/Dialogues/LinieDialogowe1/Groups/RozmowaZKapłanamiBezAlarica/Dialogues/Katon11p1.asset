@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Katon11p1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 7d209704-1425-49d2-b571-70b1e675c522
   <DialogueName>k__BackingField: Katon11p1
   <Text>k__BackingField: "Ale\u017C oczywi\u015Bcie prosze. B\u0119d\u0105c totalnie
     szczerym to jednak nic ponad nasze przeczucie."

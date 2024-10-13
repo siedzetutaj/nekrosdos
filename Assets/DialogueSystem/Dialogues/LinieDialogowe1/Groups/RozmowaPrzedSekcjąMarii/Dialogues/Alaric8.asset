@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Alaric8
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: d16fa4c1-3ce9-4ab5-b6da-c88bb2b6ec50
   <DialogueName>k__BackingField: Alaric8
   <Text>k__BackingField: "Oczywi\u015Bcie. Rozumiem to."
   <Choices>k__BackingField:

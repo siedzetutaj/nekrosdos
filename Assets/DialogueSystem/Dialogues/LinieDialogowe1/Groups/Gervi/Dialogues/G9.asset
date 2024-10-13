@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: G9
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 7dd375dd-bc10-40be-865a-b59a544e7643
   <DialogueName>k__BackingField: G9
   <Text>k__BackingField: "nastepnie dziej\u0105 si\u0119 wydarzenia wymienione od
     57 punktu g\u0142\xF3wnej osi czasu"

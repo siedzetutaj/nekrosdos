@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: G1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: f3bb5ddb-a525-4e78-9212-59a76aeb5d25
   <DialogueName>k__BackingField: G1
   <Text>k__BackingField: "Gervi zajmuj\u0119 si\u0119 sprawami prawnymi jak iksi\u0119gowo\u015Bci\u0105
     wposiad\u0142o\u015Bci. Jest g\u0142\xF3wnym doradcom Alarica i to w\u0142a\u015Bnie

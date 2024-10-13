@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: D4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 31ce9dca-bc5c-4131-bf80-fab11a687eb3
   <DialogueName>k__BackingField: D4
   <Text>k__BackingField: "udaj\u0119 si\u0119 wi\u0119c do pomieszczenia treningowego
     gdzie \u0107wiczy szermierk\u0119"

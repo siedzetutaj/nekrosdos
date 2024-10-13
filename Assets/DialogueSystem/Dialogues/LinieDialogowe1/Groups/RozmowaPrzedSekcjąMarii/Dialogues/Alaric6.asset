@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Alaric6
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: a90d5630-a555-49e6-9331-2f011b8392b3
   <DialogueName>k__BackingField: Alaric6
   <Text>k__BackingField: "Jestem przekonany. Tylko ja do was do\u0142\u0105cz\u0119,
     reszta ludzi poczeka na zewn\u0105trz."

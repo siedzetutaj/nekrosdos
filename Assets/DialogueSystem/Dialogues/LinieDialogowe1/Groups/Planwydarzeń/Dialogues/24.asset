@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 24
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: a8034220-6a79-4a84-bf37-cb6ba961ce90
   <DialogueName>k__BackingField: 24
   <Text>k__BackingField: "Szlachcice jedz\u0105 wsp\xF3lne \u015Bniadanie w trakcie
     kt\xF3rego omawiaja plany na dzisiejszy dzie\u0144. "

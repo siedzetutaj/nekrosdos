@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: W1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: e68909d8-5e6b-4ee2-96a6-5d31a3ff7a10
   <DialogueName>k__BackingField: W1
   <Text>k__BackingField: "Weln pracuje jako opiekun kruk\xF3w i bibliotekarz w posiad\u0142o\u015Bci"
   <Choices>k__BackingField:

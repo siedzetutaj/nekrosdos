@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Orion6
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: d6118cd8-19f1-48fa-85d0-21d813bab078
   <DialogueName>k__BackingField: Orion6
   <Text>k__BackingField: "Od zdarzenia min\u0105\u0142 ju\u017C ponad tydzie\u0144,
     je\u015Bli gabinet pozostawa\u0142 przez ca\u0142y czas zamkniety i nikt nie

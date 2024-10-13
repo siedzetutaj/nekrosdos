@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O7
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: a847d42c-bf47-48fe-b35f-351e063b22ae
   <DialogueName>k__BackingField: O7
   <Text>k__BackingField: "Gdy do posiad\u0142o\u015Bci dociera szlachta w sprawie
     Eliry Ombryjczykom ku ich niezadowoleniu jeszcze mocniej ograniczono swobode

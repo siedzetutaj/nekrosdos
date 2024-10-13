@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 13
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: f5b6410b-27f1-4af0-a4b4-2898dee8b0dd
   <DialogueName>k__BackingField: 13
   <Text>k__BackingField: "rozpoczynaj\u0105 si\u0119 kolejne rozmowy mi\u0119dzy
     Alariciem Gervim a Hostesem i Virionem"

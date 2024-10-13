@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O19
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: d2ae2c78-5561-4ba1-b709-ff9a41c05a40
   <DialogueName>k__BackingField: O19
   <Text>k__BackingField: "Detektywi przyje\u017Cd\u017Caja po 2 dniach do posiad\u0142o\u015Bci"
   <Choices>k__BackingField:

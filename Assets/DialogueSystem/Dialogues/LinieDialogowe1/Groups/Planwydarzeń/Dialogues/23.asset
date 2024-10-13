@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 23
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 736faf69-68c0-4b57-b49c-2e3c9a1332ab
   <DialogueName>k__BackingField: 23
   <Text>k__BackingField: dostaje ona rozkaz omotania desmonda i wydobycia z niego
     informacji

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Oberon4p3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 64e0c693-ca1c-4f0d-868f-90607456d9b1
   <DialogueName>k__BackingField: Oberon4p3
   <Text>k__BackingField: "Tak\u017Ce my\u015Bl\u0119 \u017Ce przekazali\u015Bmy detektywom
     wszystko co mogli\u015Bmy."

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Detektywi
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 31e704bb-c8ee-4f6e-8039-d058ab1fd523
   <DialogueName>k__BackingField: Detektywi
   <Text>k__BackingField: "Musimy zada\u0107 kilka pyta\u0144"
   <Choices>k__BackingField:

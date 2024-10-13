@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R25
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 1a3d7859-cd11-472c-a7a9-c5f98ae36c5f
   <DialogueName>k__BackingField: R25
   <Text>k__BackingField: "Aaaa kurwa, dobrego \u017Cartu teraz nawet nie umiej\u0105
     doceni\u0107."

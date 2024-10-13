@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 75
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: b231fcfc-ad52-4353-8430-5de369c12926
   <DialogueName>k__BackingField: 75
   <Text>k__BackingField: "Po chwili do gabinetu dociera 2 kap\u0142an\xF3w kt\xF3rzy
     pomagaj\u0105 ostatecznie przenie\u015B\u0107 cia\u0142o do kaplicy. Alaric towarzyszy

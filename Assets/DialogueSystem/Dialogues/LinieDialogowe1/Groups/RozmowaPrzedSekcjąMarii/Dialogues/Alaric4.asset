@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Alaric4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 3cd4728f-6b3e-49c1-88d6-dd85888d7824
   <DialogueName>k__BackingField: Alaric4
   <Text>k__BackingField: "Nie musi, ale mo\u017Ce. Je\u015Bli do tego dojdzie strac\u0119
     jedyn\u0105 szans\u0119 na ostatnie po\u017Cegnanie."

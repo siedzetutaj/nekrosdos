@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: b56yb
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 6d5f74be-4181-45b7-b5ff-afefa814288c
   <DialogueName>k__BackingField: b56yb
   <Text>k__BackingField: "Detektywi udaj\u0105 si\u0119 w\u0142a\u015Bnie tam po
     drodze spotykaj\u0105c w budynku kaplicy 2 kap\u0142an\xF3w"

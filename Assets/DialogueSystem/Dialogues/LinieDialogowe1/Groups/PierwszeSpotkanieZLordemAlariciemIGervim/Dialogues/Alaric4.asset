@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Alaric4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 03f6e8c9-180d-46e9-9a26-9d0188b69d91
   <DialogueName>k__BackingField: Alaric4
   <Text>k__BackingField: "Najprawdopodobniej w gabinecie mojej \u017Cony. To tam
     znaleziono cia\u0142o."

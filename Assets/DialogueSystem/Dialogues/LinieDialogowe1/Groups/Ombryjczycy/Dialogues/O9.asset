@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O9
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: ffbdd127-f77b-45ef-9d24-f7bc19bbf38b
   <DialogueName>k__BackingField: O9
   <Text>k__BackingField: "Po kilku dniach w posiad\u0142o\u015Bci nauczyli si\u0119
     oni jednak w miar\u0119 mo\u017Cliwo\u015Bci korzysta\u0107 z nieuwagi stra\u017Cnik\xF3w

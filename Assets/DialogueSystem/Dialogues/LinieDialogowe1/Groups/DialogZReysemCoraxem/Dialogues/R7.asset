@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R7
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: fef75015-e5d7-4fd2-8726-531593bef346
   <DialogueName>k__BackingField: R7
   <Text>k__BackingField: "Nigdy nie wyst\u0105pi\u0142bym przeciwko nakazom kr\xF3la...
     Stara\u0142em si\u0119 jedynie zwr\xF3ci\u0107 uwag\u0119 detektyw\xF3w na...

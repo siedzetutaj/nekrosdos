@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Gontes3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 28de1cd6-a05b-4d50-81ed-759b8dac46ba
   <DialogueName>k__BackingField: Gontes3
   <Text>k__BackingField: "Worek zajmij si\u0119 ko\u0144mi! Retes w starym budynku
     masz przyszykowane pos\u0142anie. Jutro z samego rana otrzymasz zap\u0142ate

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Sekcja
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: e0154924-1f20-44e8-a1e3-19f16dd0bb62
   <DialogueName>k__BackingField: Sekcja
   <Text>k__BackingField: "Maria umar\u0142a od rany ci\u0119tej szyi, brak oznak
     walki, widoczne s\u0105 \u015Blady otrucia, nie by\u0142a w stanie mie\u0107

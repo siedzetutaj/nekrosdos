@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 32
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 9d31c05a-1541-4465-b15a-c2a8ad45adb3
   <DialogueName>k__BackingField: 32
   <Text>k__BackingField: "Virion postanawia odwiedzi\u0107 Alarica i wypyta\u0107
     go o pow\xF3d obecno\u015Bci Hostesa w posiad\u0142o\u015Bci"

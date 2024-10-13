@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 12
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: eea5cce6-fc93-4b62-89f9-cdeb16064b17
   <DialogueName>k__BackingField: 12
   <Text>k__BackingField: "Celu jego wizyty domy\u015Bla si\u0119 Virion  Sygil b\u0119d\u0105cy
     jednocze\u015Bniue odpowiedzialny za podatki w kr\xF3lestwie"

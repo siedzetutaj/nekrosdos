@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: V5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 62e2681d-dfd1-4081-953e-29df430fdaeb
   <DialogueName>k__BackingField: V5
   <Text>k__BackingField: "Odczuwa jednak pewn\u0105 niech\u0119\u0107 ze strony Alarica,
     kt\xF3r\u0105 niezbyt si\u0119 przejmuj\u0119 jednak nie do ko\u0144ca rozumie

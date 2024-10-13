@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Detektywi7
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 00f2db3b-831f-45d0-aa5b-b5f6ff83c80f
   <DialogueName>k__BackingField: Detektywi7
   <Text>k__BackingField: "W takim wypadku mordercy zostali z\u0142apani niemal na
     gor\u0105cym uczynku. Nie zd\u0105\u017Cyli nawet wyj\u015B\u0107 z posiad\u0142o\u015Bci.

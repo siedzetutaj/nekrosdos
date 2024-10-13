@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: A3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 03c472ff-853d-4771-8d94-6000169d8a06
   <DialogueName>k__BackingField: A3
   <Text>k__BackingField: "Po raz kolejny zasiada do rom\xF3w ze szlacht\u0105 (oczywi\u015Bcie
     je jeszcze posi\u0142ki - \u015Bniadanie i obiad)"

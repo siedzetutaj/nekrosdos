@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 6
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 630c3b14-7768-4c54-b782-fc5e89ccf642
   <DialogueName>k__BackingField: 6
   <Text>k__BackingField: "2 Przedstawicieli Ombryjczyk\xF3w przybywa do posiad\u0142o\u015Bci
     w celu dogadania warunk\xF3w sprzeda\u017Cy broni dla rodu Morteo"

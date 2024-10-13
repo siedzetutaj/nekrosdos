@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Gontes1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: bc2937a2-2e69-4daa-a6b9-889f0031c783
   <DialogueName>k__BackingField: Gontes1
   <Text>k__BackingField: Lordzie, panie Gervi. Detektywi przybyli.
   <Choices>k__BackingField:

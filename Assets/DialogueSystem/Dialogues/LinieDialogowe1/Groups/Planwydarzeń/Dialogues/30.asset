@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 30
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 55ca71e6-2531-4cb7-a4f1-a4281f0a710f
   <DialogueName>k__BackingField: 30
   <Text>k__BackingField: "Lothion sp\u0119dza ten czas na rozmowach z kap\u0142anem"
   <Choices>k__BackingField:

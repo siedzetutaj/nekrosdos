@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 34
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 7849dd5a-a4f8-4416-b0a7-991484e3fc2c
   <DialogueName>k__BackingField: 34
   <Text>k__BackingField: "nadchodzi wiecz\xF3r i szlachcice udaj\u0105 sie na rozmowy"
   <Choices>k__BackingField:

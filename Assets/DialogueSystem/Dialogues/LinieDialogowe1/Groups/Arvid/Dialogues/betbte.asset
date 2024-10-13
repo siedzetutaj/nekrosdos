@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: betbte
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: c3370072-1580-41ff-89fa-570a595e65f1
   <DialogueName>k__BackingField: betbte
   <Text>k__BackingField: "Po dotarciu do okolicznej wioski prosz\u0105 jednego z
     miejscowych o poprowadzenie ich do budynku"

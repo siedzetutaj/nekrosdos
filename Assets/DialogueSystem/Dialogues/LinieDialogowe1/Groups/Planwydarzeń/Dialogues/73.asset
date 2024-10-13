@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 73
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: e0b4e8f8-0373-4aec-a6d9-d73b0fa4a0c1
   <DialogueName>k__BackingField: 73
   <Text>k__BackingField: "Gervi wraca do pokoju Marii a desmond zamyka w lochu obu
     Ombryjczyk\xF3w"

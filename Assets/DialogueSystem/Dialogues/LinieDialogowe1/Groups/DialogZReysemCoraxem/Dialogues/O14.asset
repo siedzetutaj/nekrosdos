@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O14
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 5ef441e2-6e8d-4c6a-b15a-1fe8635f999e
   <DialogueName>k__BackingField: O14
   <Text>k__BackingField: "Jest Lord zainteresowany po\u0142\u0105czeniem ga\u0142\u0119zi
     dw\xF3ch rod\xF3w?"

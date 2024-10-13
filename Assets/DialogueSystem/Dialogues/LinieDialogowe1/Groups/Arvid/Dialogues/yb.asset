@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: yb
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 4ed8fe7f-685c-4007-b2d3-c3b94ff6961b
   <DialogueName>k__BackingField: yb
   <Text>k__BackingField: "Rozmowa zaczyna si\u0119 oczywi\u015Bcie kurtuazyjnie -
     Alaric wita go\u015Bci po czy6m opowiada co si\u0119 sta\u0142o gdzie znaleziono

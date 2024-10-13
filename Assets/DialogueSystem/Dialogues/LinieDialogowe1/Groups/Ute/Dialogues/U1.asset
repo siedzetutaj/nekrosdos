@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: U1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: f15c1638-bd0f-420e-8e39-2d1ff9c83cb2
   <DialogueName>k__BackingField: U1
   <Text>k__BackingField: "Ute rankiem dnia zab\xF3jstwa rozmawia\u0142 z Abigail
     w ogrodach posiad\u0142o\u015Bci"

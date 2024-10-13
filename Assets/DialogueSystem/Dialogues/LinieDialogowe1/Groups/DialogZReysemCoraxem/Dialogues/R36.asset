@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R36
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 1ef5aef0-d26c-4365-9aa5-b40a42b9b3e4
   <DialogueName>k__BackingField: R36
   <Text>k__BackingField: "Lord Morteo chcia\u0142 wybra\u0107 odpowiedniego kandydata
     na m\u0119\u017Ca swej c\xF3rki. M\xF3j syn zosta\u0142 wybrany jako jedna z

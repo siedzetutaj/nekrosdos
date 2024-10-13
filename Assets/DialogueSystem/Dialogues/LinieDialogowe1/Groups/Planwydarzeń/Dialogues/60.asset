@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 60
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 437e2c42-a8d4-4aa0-bd34-e1a514d7f1fa
   <DialogueName>k__BackingField: 60
   <Text>k__BackingField: "Balon ma za zadanie pilnowa\u0107 szlachcic\xF3w "
   <Choices>k__BackingField:

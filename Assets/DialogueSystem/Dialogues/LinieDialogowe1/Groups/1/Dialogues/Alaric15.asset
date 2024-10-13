@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Alaric15
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 8e00f549-9e00-45b3-ac72-8057f3509628
   <DialogueName>k__BackingField: Alaric15
   <Text>k__BackingField: "Ostatecznie jednak zosta\u0142 zatrzymany przy g\u0142\xF3wnym
     wej\u015Bciu przez Zestesa - chirurga, kt\xF3rego wezwa\u0142em na miejsce zbrodni."

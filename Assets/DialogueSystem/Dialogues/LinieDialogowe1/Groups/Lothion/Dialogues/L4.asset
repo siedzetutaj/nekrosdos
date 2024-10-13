@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: L4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 59093ff6-84bb-4e44-9ced-05ec00b3f8f6
   <DialogueName>k__BackingField: L4
   <Text>k__BackingField: "W przerwie od rozm\xF3w gada z welnem i chce wys\u0142a\u0107
     listy do Marii"

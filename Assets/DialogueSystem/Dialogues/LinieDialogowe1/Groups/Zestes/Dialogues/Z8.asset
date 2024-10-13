@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Z8
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 6cf30f1a-b1cd-4236-a3ba-1400f93a1b16
   <DialogueName>k__BackingField: Z8
   <Text>k__BackingField: "uda\u0142 si\u0119 wi\u0119c do posiad\u0142o\u015Bci i
     rozpocz\u0105\u0142 prac\u0119 nad  ustabilizowaniem stanu ch\u0142opaka gdy

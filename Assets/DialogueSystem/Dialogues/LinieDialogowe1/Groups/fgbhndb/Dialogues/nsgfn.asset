@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: nsgfn
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: b1917cac-0bd5-4b91-81fd-93c73bb91832
   <DialogueName>k__BackingField: nsgfn
   <Text>k__BackingField: Dotrzemy tam przed zmrokiem!
   <Choices>k__BackingField:

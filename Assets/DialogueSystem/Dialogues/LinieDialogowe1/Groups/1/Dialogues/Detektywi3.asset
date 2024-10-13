@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Detektywi3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 627fb3be-304e-4e03-80ac-97097e508516
   <DialogueName>k__BackingField: Detektywi3
   <Text>k__BackingField: "Wspomnia\u0142 Lord \u017Ce sprawcy ju\u017C znajduj\u0105
     si\u0119 w lochach?"

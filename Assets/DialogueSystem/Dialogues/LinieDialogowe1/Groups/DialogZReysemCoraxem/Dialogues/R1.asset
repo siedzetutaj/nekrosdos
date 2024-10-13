@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: a30485ad-535f-4b84-86be-5cce63025fc9
   <DialogueName>k__BackingField: R1
   <Text>k__BackingField: "Wiem kim jeste\u015B na Thantehetep! Od tygodnia siedz\u0119
     zamkni\u0119ty w tej posiad\u0142o\u015Bci, bo czekam a\u017C w ko\u0144cu pojawicie

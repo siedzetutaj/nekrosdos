@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: W19
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: c72345db-7e44-4ede-bc28-4fce9aa7c045
   <DialogueName>k__BackingField: W19
   <Text>k__BackingField: "\njako nieoficjalny nadzorca s\u0142u\u017Cby postanowi\u0142
     zebrta\u0107 ich do kupy i odeskortowa\u0107 do swych komnnat "

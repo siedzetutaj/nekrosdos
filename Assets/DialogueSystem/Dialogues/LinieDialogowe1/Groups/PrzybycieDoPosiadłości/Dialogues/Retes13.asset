@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Retes13
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 87ec036f-6c30-4fa0-affa-42d7de8036a2
   <DialogueName>k__BackingField: Retes13
   <Text>k__BackingField: "Ano ide ju\u017C ide."
   <Choices>k__BackingField:

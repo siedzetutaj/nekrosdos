@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: U3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 714506dd-d5a6-4053-96bc-583e9f27317b
   <DialogueName>k__BackingField: U3
   <Text>k__BackingField: "Abi nie zgodzi\u0142a si\u0119 z racji na ko\u0144c\xF3wk\u0119
     jej kontraktu jednak ute uwa\u017Ca\u0142 \u017Ce nawet gdy ten kontrakt dobiegnie

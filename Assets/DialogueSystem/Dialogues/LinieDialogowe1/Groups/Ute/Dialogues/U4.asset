@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: U4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: ec71f80c-a7d7-4b1c-82e4-c5dd0d59bea8
   <DialogueName>k__BackingField: U4
   <Text>k__BackingField: "Po tej rozmowie dw\xF3jka pok\u0142\xF3ciu\u0142a si\u0119
     i posz\u0142a w swoj\u0105 stron\u0119"

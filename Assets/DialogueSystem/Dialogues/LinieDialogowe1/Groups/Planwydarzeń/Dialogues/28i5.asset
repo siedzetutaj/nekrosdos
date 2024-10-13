@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 28i5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: fdde0dd3-00f9-445b-afc2-f80f47b0c118
   <DialogueName>k__BackingField: 28i5
   <Text>k__BackingField: "zaczyna si\u0119 popo\u0142udniowe spotkanie szlachty"
   <Choices>k__BackingField:

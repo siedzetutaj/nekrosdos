@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: j7
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 010d1335-c717-47b2-a678-31104ccbb2e4
   <DialogueName>k__BackingField: j7
   <Text>k__BackingField: "- Nie da\u0107 si\u0119 oszuka\u0107 -"
   <Choices>k__BackingField:

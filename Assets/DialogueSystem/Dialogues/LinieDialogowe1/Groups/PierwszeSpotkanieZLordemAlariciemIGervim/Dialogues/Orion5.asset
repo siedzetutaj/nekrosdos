@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Orion5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 6dccf9b5-0f38-4d8e-bdc0-73576e2d842d
   <DialogueName>k__BackingField: Orion5
   <Text>k__BackingField: "B\u0119dziemy potrzebowali kluczy do gabinetu. Dodatkowo
     prosimy by zostala przygotowana nam pe\u0142na lista obecnych mieszka\u0144cow

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Narracja2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 1bd964c4-8c40-4d98-9638-78cc9e13cff0
   <DialogueName>k__BackingField: Narracja2
   <Text>k__BackingField: "-Lord Alaric s\u0142ysz\u0105c te s\u0142owa spiorunowa\u0142
     wzrokiem swego s\u0142uge, a ten w mgnieniu oka zmieni\u0142 swoja mimik\u0119

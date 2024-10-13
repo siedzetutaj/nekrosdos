@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Arvid4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 81172a14-740c-4307-98a2-fd7911a55140
   <DialogueName>k__BackingField: Arvid4
   <Text>k__BackingField: "Czy od tamtej pory kto\u015B opu\u015Bcil posiad\u0142o\u015B\u0107?"
   <Choices>k__BackingField:

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Orion5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: d7f5ec7c-2844-42a9-8e3a-05e2ba723a82
   <DialogueName>k__BackingField: Orion5
   <Text>k__BackingField: "Gdy sko\u0144czymy zapewne b\u0119dziemy mieli do kap\u0142an\xF3w
     kilka pyta\u0144 tym razem nie dotycz\u0105cych bezpo\u015Brednio cia\u0142a."

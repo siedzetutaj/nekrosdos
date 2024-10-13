@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 62
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 73013b33-a521-4b59-8ab4-020d33ba028e
   <DialogueName>k__BackingField: 62
   <Text>k__BackingField: "Alaric nakazuje Gerviemu wezwa\u0107 Zestesa a Desmondowi
     upewni\u0107 si\u0119 \u017Ce ombryjczycy nie wychodzili ze swoich komnat"

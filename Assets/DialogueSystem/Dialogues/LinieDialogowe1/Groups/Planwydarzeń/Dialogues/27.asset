@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 27
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 850acbf0-b4aa-49f7-958b-984c68f21d4e
   <DialogueName>k__BackingField: 27
   <Text>k__BackingField: "reszta towarzystwa uznaje \u017Ce dalsze rozmowy, kt\xF3re
     maj\u0105 zako\u0144czy\u0107 wyb\xF3r ostatecznego kandydata do r\u0119ki Eliry

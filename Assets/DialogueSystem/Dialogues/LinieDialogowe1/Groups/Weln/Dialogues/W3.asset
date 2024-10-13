@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: W3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: bdb2b152-cc5d-4326-b4bf-4b5697d8de97
   <DialogueName>k__BackingField: W3
   <Text>k__BackingField: "Wysy\u0142a\u0142 on listy do wszystkich rodzin zainteresowanych
     maria\u017Cem jak i do cz\u0142onk\xF3w familii Morteo"

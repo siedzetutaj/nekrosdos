@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Gontes1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 24f2be00-7b70-48a5-94bc-4534ce5a942a
   <DialogueName>k__BackingField: Gontes1
   <Text>k__BackingField: "Hej\u017Ce! Tutaj detektywi!"
   <Choices>k__BackingField:

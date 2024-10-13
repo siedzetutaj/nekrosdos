@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Arvid2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: c6f8fb00-ccc5-4331-91ad-543f2cba8156
   <DialogueName>k__BackingField: Arvid2
   <Text>k__BackingField: 'Arvid Morteo. '
   <Choices>k__BackingField:

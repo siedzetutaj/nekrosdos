@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 11
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 587afa2c-c5ad-4a24-805e-999656bd54e2
   <DialogueName>k__BackingField: 11
   <Text>k__BackingField: "Do posiad\u0142o\u015Bci przybywa Gubernator Hostes chc\u0105c
     odda\u0107 \u0142ap\xF3wk\u0119 Morteo by ci nadal popierali jego kandydatur\u0119"

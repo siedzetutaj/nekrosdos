@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: va
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 7e01e027-a6b1-4526-9778-311defc50288
   <DialogueName>k__BackingField: va
   <Text>k__BackingField: "- Wraz z Orionem kroczysz po jego za\u015Bnierzonej powierzchni,
     rumaki trzymane przez was na uwi\u0119zi z trudem pokonuj\u0105 kolejne metry

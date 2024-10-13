@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: nfgddfsn
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: fa75482c-b94d-49a9-ab3b-1cc90688c386
   <DialogueName>k__BackingField: nfgddfsn
   <Text>k__BackingField: "Zaskoczy\u0142o mnie to"
   <Choices>k__BackingField:

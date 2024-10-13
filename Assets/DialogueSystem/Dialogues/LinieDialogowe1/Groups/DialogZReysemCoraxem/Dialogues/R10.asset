@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R10
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 5709c2c6-827a-419b-8009-8a5cc272a92a
   <DialogueName>k__BackingField: R10
   <Text>k__BackingField: Funkcjonariuszy Panie Orion. Nie bezczelne hybrydy...
   <Choices>k__BackingField:

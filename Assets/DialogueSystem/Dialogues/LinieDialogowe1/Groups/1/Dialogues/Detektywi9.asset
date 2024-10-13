@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Detektywi9
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 7f4dfb72-000b-4d44-bf9d-1f41c245a7a4
   <DialogueName>k__BackingField: Detektywi9
-  <Text>k__BackingField: "M\xF3wi\u0142 Lord \u017Ce nie jest w najlepszym stanie.
-    Z jakiego powodu?"
+  <Text>k__BackingField: "Tego chcemy si\u0119 dowiedzie\u0107. M\xF3wi\u0142 Lord
+    \u017Ce nie jest w najlepszym stanie. Z jakiego powodu?"
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
     <NextDialogue>k__BackingField: {fileID: 0}

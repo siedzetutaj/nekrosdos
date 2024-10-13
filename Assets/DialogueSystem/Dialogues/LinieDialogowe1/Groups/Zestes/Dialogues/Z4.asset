@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Z4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: b36c73a9-869b-4633-8a5f-7df396463603
   <DialogueName>k__BackingField: Z4
   <Text>k__BackingField: "Ostatecznie uda\u0142 si\u0119 do swojego domku gdzie doka\u0144cza\u0142
     prace nad jednym ze swoich specyfik\xF3w"

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 7c2fe7f6-5583-4bd7-89a8-a2941f932472
   <DialogueName>k__BackingField: R1
   <Text>k__BackingField: "Reys udaje si\u0119 na \u015Bniadanie uprzedniu instruuuj\u0105c
     swoich ludzi by ci nadal pr\xF3bowali infiltrowac posiad\u0142o\u015B\u0107 a

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 54150587-5487-430a-9748-9f60f415ec18
   <DialogueName>k__BackingField: 3
   <Text>k__BackingField: "Maria prowadzi prywatne rozmowy z Oberonem niemal codziennie
     wypytuj\u0105c go o wszelkie wie\u015Bci zar\xF3wno z kraju jak i zza granicy"

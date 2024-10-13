@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: A15
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 224cf33e-49d4-4856-b795-991fa2cecc0c
   <DialogueName>k__BackingField: A15
   <Text>k__BackingField: "dowiaduj\u0105c si\u0119 \u017Ce s\u0142u\u017C\u0105ca
     zaniedba\u0142a obowi\u0105zku dopilnowania Eliry i twierdz\u0105c \u017Ce ta

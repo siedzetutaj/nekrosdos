@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R37
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: eabc556d-481a-44a9-b555-f4778319f182
   <DialogueName>k__BackingField: R37
   <Text>k__BackingField: "To czym ja jestem zainteresowany w kontek\u015Bcie mojego
     w\u0142asnego syna chuja was powinno obchodzi\u0107."

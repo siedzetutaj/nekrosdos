@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Oberon3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: b320e468-18e9-43ab-bceb-f44e86ee9a47
   <DialogueName>k__BackingField: Oberon3
   <Text>k__BackingField: "W skr\xF3cie uwa\u017Camy \u017Ce dusza Lady jest niestabilna."
   <Choices>k__BackingField:

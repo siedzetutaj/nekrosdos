@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: V2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: fc169089-62a6-495c-92d9-c9636ff598ad
   <DialogueName>k__BackingField: V2
   <Text>k__BackingField: "z samego rana virion uda\u0142 si\u0119 do biblioteki gdzie
     liczy\u0142 na rozmow\u0119 z Welnem kt\xF3rego uwa\u017Ca za osob\u0119 godn\u0105

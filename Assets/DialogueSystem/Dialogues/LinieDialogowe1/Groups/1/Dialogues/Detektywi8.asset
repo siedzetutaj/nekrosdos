@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Detektywi8
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 2aaca96a-f263-4aba-b198-e5c63b404216
   <DialogueName>k__BackingField: Detektywi8
   <Text>k__BackingField: "A co z c\xF3rk\u0105 Lorda?"
   <Choices>k__BackingField:

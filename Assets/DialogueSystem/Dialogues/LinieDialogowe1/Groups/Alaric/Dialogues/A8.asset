@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: A8
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: b625a52e-8065-4277-9647-3099da630076
   <DialogueName>k__BackingField: A8
   <Text>k__BackingField: "Przenosi wraz z kap\u0142anami i zestesem cia\u0142o zmar\u0142ej
     do kaplicy"

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O16
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: d067c700-c1db-4300-810a-5f2a2ee098bf
   <DialogueName>k__BackingField: O16
   <Text>k__BackingField: "W dzie\u0144 po morderstwie brutalnie przes\u0142uchano
     Ombryjczyka - Balon i Alaric"

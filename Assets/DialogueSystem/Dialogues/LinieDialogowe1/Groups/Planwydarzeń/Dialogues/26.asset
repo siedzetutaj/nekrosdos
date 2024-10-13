@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 26
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 5cacd136-12a1-4b9f-b5bf-529c2ffca907
   <DialogueName>k__BackingField: 26
   <Text>k__BackingField: "Po drodze wpada na kap\u0142ana, kt\xF3ry zmierza do komnat
     Lothiona."

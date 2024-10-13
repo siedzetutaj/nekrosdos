@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: V10
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 3b85ad90-15af-4cbd-8818-31e771f61abb
   <DialogueName>k__BackingField: V10
   <Text>k__BackingField: "Reszta wydarze\u0144 tak jak powy\u017Cej w skr\xF3cie
     - spotkanie - wezwanie do cia\u0142a - odeskortowanie do pokoju "

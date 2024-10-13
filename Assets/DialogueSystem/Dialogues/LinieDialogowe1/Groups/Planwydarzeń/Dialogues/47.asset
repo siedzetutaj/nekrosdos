@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 47
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 502c6f69-16b9-4c0c-8a2f-0e8a6447abb9
   <DialogueName>k__BackingField: 47
   <Text>k__BackingField: spanikowana ucieka z miejsca zdarzenia
   <Choices>k__BackingField:
