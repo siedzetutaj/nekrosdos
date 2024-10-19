@@ -107,7 +107,7 @@ namespace DS.Utilities
 
             DSDialogueGroupSO dialogueGroup = CreateAsset<DSDialogueGroupSO>($"{containerFolderPath}/Groups/{groupName}", groupName);
 
-            dialogueGroup.Initialize(groupName);
+            dialogueGroup.Initialize(groupName, group.ID);
 
             createdDialogueGroups.Add(group.ID, dialogueGroup);
 
