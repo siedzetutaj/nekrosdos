@@ -10,17 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
-<<<<<<<< HEAD:Assets/DialogueSystem/Dialogues/LinieDialogowe1/Groups/Oberon/Dialogues/12.asset
-  m_Name: 12
-  m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: 12
-  <Text>k__BackingField: Dialogue text.
-========
   m_Name: Orion
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 3d36768e-7feb-424e-a570-b9b327af2fda
   <DialogueName>k__BackingField: Orion
-  <Text>k__BackingField: Granemor
->>>>>>>> a327f03b3f9e71666d878307f305543222a14183:Assets/DialogueSystem/Dialogues/LinieDialogowe1/Groups/DialogueGroup/Dialogues/Orion.asset
+  <Text>k__BackingField: Dialogue text.
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
     <NextDialogue>k__BackingField: {fileID: 0}

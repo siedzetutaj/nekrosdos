@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: List
+  m_EditorClassIdentifier: 
+  <ID>k__BackingField: 89c60950-dd44-4be9-a0ad-cbb6c74f57b3
+  <DialogueName>k__BackingField: List
+  <Text>k__BackingField: "Pierwsza wersja listu:\r\n\r\n---\r\n\r\n**Do Kr\xF3lewskiego
+    Wydzia\u0142u \u015Aledczego Lenn P\xF3\u0142nocy,  \r\r\n\r\n**Granemor, dnia
+    [data]**\r\n\r\nSzanowni Inkwizytorzy P\xF3\u0142nocy,\r\n\r\nNa terenie Granemor
+    dosz\u0142o do zbrodni. Moja \u017Cona, Lady Maria Morteo, znana i ceniona dyplomatka,
+    zosta\u0142a zamordowana. Okoliczno\u015Bci jej \u015Bmierci s\u0105 niejasne,
+    jednak ju\u017C wkr\xF3tce po odnalezieniu cia\u0142a, w posiad\u0142o\u015Bci
+    zatrzymano dw\xF3ch Ombryjczyk\xF3w. Z tego powodu s\u0105 oni g\u0142\xF3wnymi
+    podejrzanymi i aktualnie w stanie ci\u0119\u017Ckim przebywaj\u0105 w Lochach
+    Granemor.\r\n\r\nZgodnie z prawem, do czasu przeprowadzenia czynno\u015Bci przez
+    inspektorat posiad\u0142o\u015B\u0107 zostaje zamkni\u0119ta na \u015Bwiat zewn\u0119trzny.
+    Czekam wi\u0119c na niezw\u0142oczne przys\u0142anie odpowiednich os\xF3b, kt\xF3re
+    zajm\u0105 si\u0119 t\u0105 spraw\u0105. Nalegam na jak najwi\u0119kszy po\u015Bpiech,
+    gdy\u017C warunki atmosferyczne na terenie G\xF3r Szarych gwa\u0142townie si\u0119
+    pogarszaj\u0105, co mo\u017Ce znacz\u0105co utrudni\u0107 dost\u0119p do posiad\u0142o\u015Bci.\r\n\r\nDodatkowo,
+    w momencie zab\xF3jstwa na terenie budynku przebywali tacy wp\u0142ywowi go\u015Bcie,
+    jak Lord Virion Sygil, Lord Lothion Fraxini czy Lord Reys Corax. Wszyscy oni
+    przybyli do Granemor na wa\u017Cne obrady, a obecna sytuacja sprawia \u017Ce
+    \u017Caden z nich nie ma mo\u017Cliwo\u015Bci podejmowania dzia\u0142a\u0144
+    na rzecz zwi\u0119kszenia dobrobytu kr\xF3lestwa.\r\n\r\nChcia\u0142bym r\xF3wnie\u017C
+    zaznaczy\u0107, \u017Ce moja ma\u0142\u017Conka jak i ja zas\u0142u\u017Cyli\u015Bmy
+    na ostatni\u0105 rozmow\u0119. Thantehetep jest wstrzymane. Jednak je\u015Bli
+    nie zobacz\u0119 tu waszych agent\xF3w do 2 dni przeprowadz\u0119 rytua\u0142
+    i niech Rada i Kr\xF3l rozstrzygaj\u0105 czy me dzia\u0142ania by\u0142y nadu\u017Cyciem
+    czy wasze opiesza\u0142o\u015Bci\u0105.\r\n\r\nCzekam.\r\n\r\nZ wyrazami szacunku, 
+    \r\n**Lord Alaric Morteo**  \r\nTrzecia G\u0142owa Rady P\xF3\u0142nocy, Zwierzchnik
+    G\xF3r Szarych"
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 0}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 1
+  <ExposedProperties>k__BackingField: []
