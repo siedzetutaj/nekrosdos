@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: List2
+  m_EditorClassIdentifier: 
+  <ID>k__BackingField: c2d89a1b-def5-41e4-b18d-bbb386d18461
+  <DialogueName>k__BackingField: List2
+  <Text>k__BackingField: "**Do:**\r\n- **Starszy Detektyw Orion Sygill**\r\n- **Arvid
+    Morteo**\r\n\r\n**Od:**  \r\n**Kr\xF3lewski Wydzia\u0142 \u015Aledczy Lenn P\xF3\u0142nocy**\r\n\r\n---\r\n\r\n**Zlecenie
+    Operacyjne Nr 712: Sprawa Morderstwa Lady Marii Morteo**  \r\n\r\nNa mocy uprawnie\u0144
+    przyznanych Wydzia\u0142owi, zleca si\u0119 Waszej dw\xF3jce przeprowadzenie
+    natychmiastowego \u015Bledztwa w sprawie morderstwa Lady Marii Morteo - Arcydyplomatki
+    Lenn P\xF3\u0142nocy, \u017Cony Lorda Alarica Morteo - Trzeciej G\u0142owy Rady
+    P\xF3\u0142nocy. Zdarzenie mia\u0142o miejsce w posiad\u0142o\u015Bci Granemor,
+    podlegaj\u0105cej bezpo\u015Bredniemu zwierzchnictwu Lorda Morteo.\r\n\r\n###
+    Stan faktyczny:\r\n1. **Ofiara:** Lady Maria Morteo, znana dyplomatka, odnaleziona
+    martwa w okoliczno\u015Bciach, kt\xF3re wymagaj\u0105 natychmiastowego zbadania.
+    Dok\u0142adne przyczyny jej \u015Bmierci pozostaj\u0105 niejasne.\r\n2. **Podejrzani:**
+    Wkr\xF3tce po odkryciu cia\u0142a zatrzymano dw\xF3ch przedstawicieli Ombrii,
+    obecnych na terenie posiad\u0142o\u015Bci. Ze wzgl\u0119du na ich to\u017Csamo\u015B\u0107
+    i polityczne implikacje, s\u0105 oni g\u0142\xF3wnymi podejrzanymi.\r\n3. **\u015Awiadkowie
+    i okoliczno\u015Bci:** Granemor jest obecnie miejscem zgromadzenia kilku wp\u0142ywowych
+    polityk\xF3w, w tym Lorda Viriona Sygila, Lorda Lothiona Fraxiniego oraz Lorda
+    Reysa Coraxa. Z uwagi na ich pozycj\u0119, \u015Bledztwo musi by\u0107 prowadzone
+    z zachowaniem najwy\u017Cszych standard\xF3w dyskrecji i profesjonalizmu.\r\n\r\n###
+    Wytyczne dla \u015Bledztwa:\r\n- **Detektyw Sygill**, jako Starszy Detektyw,
+    odpowiadasz za nadzorowanie \u015Bledztwa. Zajmiesz si\u0119 analiz\u0105 dowod\xF3w
+    materialnych oraz b\u0119dziesz kierowa\u0142 procesem przes\u0142ucha\u0144
+    \u015Bwiadk\xF3w przebywaj\u0105cych w posiad\u0142o\u015Bci. Do twoich zada\u0144
+    nale\u017Cy tak\u017Ce ocena umiej\u0119tno\u015Bci obdarzonego Arvida Morteo
+    oraz niedopuszczenie do eskalacji w przypadku nieudanych pr\xF3b komunikacji
+    spirytualnej. Twoje do\u015Bwiadczenie w sprawach o wysokim stopniu delikatno\u015Bci
+    i politycznych implikacjach b\u0119dzie kluczowe.\r\n  \r\n- **Arvid Morteo**,
+    jako Obdarzony, masz zadanie komunikacji z dusz\u0105 ofiary. Rytua\u0142 Thantehetep,
+    kt\xF3ry umo\u017Cliwi rozmow\u0119 z Lady Mari\u0105 Morteo, mo\u017Ce zosta\u0107
+    wykonany wy\u0142\u0105cznie po wst\u0119pnym dochodzeniu i upewnieniu si\u0119,
+    \u017Ce jego przeprowadzenie nie wp\u0142ynie negatywnie na wyniki \u015Bledztwa.
+    Tw\xF3j osobisty zwi\u0105zek z rodem ofiary nie mo\u017Ce wp\u0142yn\u0105\u0107
+    na podejmowane przez ciebie decyzje. Poprowadzenie przez ciebie tej sprawy b\u0119dzie
+    te\u017C na bie\u017C\u0105co monitorowane i oceniane przez nadzoruj\u0105cego
+    ci\u0119 starszego detektywa Oriona Sygilla. Z racji na fakt i\u017C \u015Bledztwo
+    dotyczy morderstwa na najwy\u017Cszych szczeblach w\u0142adzy udane przeprowadzenie
+    interwencji doprowadzi do uznania przez Rad\u0119 inkwizycyjn\u0105 twoich kwalifikacji
+    na Mistyka \u015Aledczego. \r\n\r\n### Dodatkowe uwagi:\r\n- Lord Alaric Morteo
+    z\u0142o\u017Cy\u0142 formaln\u0105 pro\u015Bb\u0119 o natychmiastow\u0105 interwencj\u0119.
+    Z uwagi na pogarszaj\u0105ce si\u0119 warunki atmosferyczne i delikatn\u0105
+    sytuacj\u0119 polityczn\u0105, macie wyruszy\u0107 natychmiast po otrzymaniu
+    niniejszego pisma. Ka\u017Cde op\xF3\u017Anienie mo\u017Ce prowadzi\u0107 do
+    eskalacji sytuacji.\r\n  \r\n- Podejrzani Ombryjczycy powinni by\u0107 przes\u0142uchiwani
+    z zachowaniem pe\u0142nej ostro\u017Cno\u015Bci, a rada nie dopuszcza opcji jakichkolwiek
+    samos\u0105d\xF3w wykonywanych na terenie posiad\u0142o\u015Bci. Ombryjczycy
+    niezale\u017Cnie od ich winy otrzymuj\u0105 status wi\u0119\u017Ani\xF3w politycznych
+    i winni s\u0105 zosta\u0107 odeskortowanii do stolicy tu\u017C po zako\u0144czeniu
+    \u015Bledztwa."
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 0}
+    WasDisplayed: 0
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 1
+  <ExposedProperties>k__BackingField: []

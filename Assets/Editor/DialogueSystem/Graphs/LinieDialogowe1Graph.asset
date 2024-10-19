@@ -104,6 +104,15 @@ MonoBehaviour:
   - <ID>k__BackingField: 014f99d3-ab7d-4207-8221-0430ec3c1d28
     <Name>k__BackingField: 1v2
     <Position>k__BackingField: {x: -4942, y: 12706}
+  - <ID>k__BackingField: c403a89e-6bbd-46f4-87b8-08a1394a9a71
+    <Name>k__BackingField: List1
+    <Position>k__BackingField: {x: -4910, y: 13196}
+  - <ID>k__BackingField: f961d4da-6b7e-4521-b00a-30bd7f90f833
+    <Name>k__BackingField: ArvidOrion
+    <Position>k__BackingField: {x: -4909, y: 14233}
+  - <ID>k__BackingField: 8fadd736-926b-4cbc-83cc-a00fea0dfe6a
+    <Name>k__BackingField: List2
+    <Position>k__BackingField: {x: -3915, y: 13183}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 8bbb271f-e047-434d-bd77-236fe9ae762f
     <Name>k__BackingField: Arvid1
@@ -7116,6 +7125,117 @@ MonoBehaviour:
     <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
     <CharacterSO>k__BackingField: {fileID: 0}
     <CharacterSprite>k__BackingField: {fileID: 0}
+  - <ID>k__BackingField: 89c60950-dd44-4be9-a0ad-cbb6c74f57b3
+    <Name>k__BackingField: List
+    <Text>k__BackingField: "Pierwsza wersja listu:\r\n\r\n---\r\n\r\n**Do Kr\xF3lewskiego
+      Wydzia\u0142u \u015Aledczego Lenn P\xF3\u0142nocy,  \r\r\n\r\n**Granemor, dnia
+      [data]**\r\n\r\nSzanowni Inkwizytorzy P\xF3\u0142nocy,\r\n\r\nNa terenie Granemor
+      dosz\u0142o do zbrodni. Moja \u017Cona, Lady Maria Morteo, znana i ceniona
+      dyplomatka, zosta\u0142a zamordowana. Okoliczno\u015Bci jej \u015Bmierci s\u0105
+      niejasne, jednak ju\u017C wkr\xF3tce po odnalezieniu cia\u0142a, w posiad\u0142o\u015Bci
+      zatrzymano dw\xF3ch Ombryjczyk\xF3w. Z tego powodu s\u0105 oni g\u0142\xF3wnymi
+      podejrzanymi i aktualnie w stanie ci\u0119\u017Ckim przebywaj\u0105 w Lochach
+      Granemor.\r\n\r\nZgodnie z prawem, do czasu przeprowadzenia czynno\u015Bci
+      przez inspektorat posiad\u0142o\u015B\u0107 zostaje zamkni\u0119ta na \u015Bwiat
+      zewn\u0119trzny. Czekam wi\u0119c na niezw\u0142oczne przys\u0142anie odpowiednich
+      os\xF3b, kt\xF3re zajm\u0105 si\u0119 t\u0105 spraw\u0105. Nalegam na jak najwi\u0119kszy
+      po\u015Bpiech, gdy\u017C warunki atmosferyczne na terenie G\xF3r Szarych gwa\u0142townie
+      si\u0119 pogarszaj\u0105, co mo\u017Ce znacz\u0105co utrudni\u0107 dost\u0119p
+      do posiad\u0142o\u015Bci.\r\n\r\nDodatkowo, w momencie zab\xF3jstwa na terenie
+      budynku przebywali tacy wp\u0142ywowi go\u015Bcie, jak Lord Virion Sygil, Lord
+      Lothion Fraxini czy Lord Reys Corax. Wszyscy oni przybyli do Granemor na wa\u017Cne
+      obrady, a obecna sytuacja sprawia \u017Ce \u017Caden z nich nie ma mo\u017Cliwo\u015Bci
+      podejmowania dzia\u0142a\u0144 na rzecz zwi\u0119kszenia dobrobytu kr\xF3lestwa.\r\n\r\nChcia\u0142bym
+      r\xF3wnie\u017C zaznaczy\u0107, \u017Ce moja ma\u0142\u017Conka jak i ja zas\u0142u\u017Cyli\u015Bmy
+      na ostatni\u0105 rozmow\u0119. Thantehetep jest wstrzymane. Jednak je\u015Bli
+      nie zobacz\u0119 tu waszych agent\xF3w do 2 dni przeprowadz\u0119 rytua\u0142
+      i niech Rada i Kr\xF3l rozstrzygaj\u0105 czy me dzia\u0142ania by\u0142y nadu\u017Cyciem
+      czy wasze opiesza\u0142o\u015Bci\u0105.\r\n\r\nCzekam.\r\n\r\nZ wyrazami szacunku, 
+      \r\n**Lord Alaric Morteo**  \r\nTrzecia G\u0142owa Rady P\xF3\u0142nocy, Zwierzchnik
+      G\xF3r Szarych"
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: c403a89e-6bbd-46f4-87b8-08a1394a9a71
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -4885, y: 13255}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+    <CharacterSO>k__BackingField: {fileID: 0}
+    <CharacterSprite>k__BackingField: {fileID: 0}
+  - <ID>k__BackingField: 3d36768e-7feb-424e-a570-b9b327af2fda
+    <Name>k__BackingField: Orion
+    <Text>k__BackingField: Dialogue text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: f961d4da-6b7e-4521-b00a-30bd7f90f833
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -4884, y: 14292}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+    <CharacterSO>k__BackingField: {fileID: 0}
+    <CharacterSprite>k__BackingField: {fileID: 0}
+  - <ID>k__BackingField: c2d89a1b-def5-41e4-b18d-bbb386d18461
+    <Name>k__BackingField: List2
+    <Text>k__BackingField: "**Do:**\r\n- **Starszy Detektyw Orion Sygill**\r\n- **Arvid
+      Morteo**\r\n\r\n**Od:**  \r\n**Kr\xF3lewski Wydzia\u0142 \u015Aledczy Lenn
+      P\xF3\u0142nocy**\r\n\r\n---\r\n\r\n**Zlecenie Operacyjne Nr 712: Sprawa Morderstwa
+      Lady Marii Morteo**  \r\n\r\nNa mocy uprawnie\u0144 przyznanych Wydzia\u0142owi,
+      zleca si\u0119 Waszej dw\xF3jce przeprowadzenie natychmiastowego \u015Bledztwa
+      w sprawie morderstwa Lady Marii Morteo - Arcydyplomatki Lenn P\xF3\u0142nocy,
+      \u017Cony Lorda Alarica Morteo - Trzeciej G\u0142owy Rady P\xF3\u0142nocy.
+      Zdarzenie mia\u0142o miejsce w posiad\u0142o\u015Bci Granemor, podlegaj\u0105cej
+      bezpo\u015Bredniemu zwierzchnictwu Lorda Morteo.\r\n\r\n### Stan faktyczny:\r\n1.
+      **Ofiara:** Lady Maria Morteo, znana dyplomatka, odnaleziona martwa w okoliczno\u015Bciach,
+      kt\xF3re wymagaj\u0105 natychmiastowego zbadania. Dok\u0142adne przyczyny jej
+      \u015Bmierci pozostaj\u0105 niejasne.\r\n2. **Podejrzani:** Wkr\xF3tce po odkryciu
+      cia\u0142a zatrzymano dw\xF3ch przedstawicieli Ombrii, obecnych na terenie
+      posiad\u0142o\u015Bci. Ze wzgl\u0119du na ich to\u017Csamo\u015B\u0107 i polityczne
+      implikacje, s\u0105 oni g\u0142\xF3wnymi podejrzanymi.\r\n3. **\u015Awiadkowie
+      i okoliczno\u015Bci:** Granemor jest obecnie miejscem zgromadzenia kilku wp\u0142ywowych
+      polityk\xF3w, w tym Lorda Viriona Sygila, Lorda Lothiona Fraxiniego oraz Lorda
+      Reysa Coraxa. Z uwagi na ich pozycj\u0119, \u015Bledztwo musi by\u0107 prowadzone
+      z zachowaniem najwy\u017Cszych standard\xF3w dyskrecji i profesjonalizmu.\r\n\r\n###
+      Wytyczne dla \u015Bledztwa:\r\n- **Detektyw Sygill**, jako Starszy Detektyw,
+      odpowiadasz za nadzorowanie \u015Bledztwa. Zajmiesz si\u0119 analiz\u0105 dowod\xF3w
+      materialnych oraz b\u0119dziesz kierowa\u0142 procesem przes\u0142ucha\u0144
+      \u015Bwiadk\xF3w przebywaj\u0105cych w posiad\u0142o\u015Bci. Do twoich zada\u0144
+      nale\u017Cy tak\u017Ce ocena umiej\u0119tno\u015Bci obdarzonego Arvida Morteo
+      oraz niedopuszczenie do eskalacji w przypadku nieudanych pr\xF3b komunikacji
+      spirytualnej. Twoje do\u015Bwiadczenie w sprawach o wysokim stopniu delikatno\u015Bci
+      i politycznych implikacjach b\u0119dzie kluczowe.\r\n  \r\n- **Arvid Morteo**,
+      jako Obdarzony, masz zadanie komunikacji z dusz\u0105 ofiary. Rytua\u0142 Thantehetep,
+      kt\xF3ry umo\u017Cliwi rozmow\u0119 z Lady Mari\u0105 Morteo, mo\u017Ce zosta\u0107
+      wykonany wy\u0142\u0105cznie po wst\u0119pnym dochodzeniu i upewnieniu si\u0119,
+      \u017Ce jego przeprowadzenie nie wp\u0142ynie negatywnie na wyniki \u015Bledztwa.
+      Tw\xF3j osobisty zwi\u0105zek z rodem ofiary nie mo\u017Ce wp\u0142yn\u0105\u0107
+      na podejmowane przez ciebie decyzje. Poprowadzenie przez ciebie tej sprawy
+      b\u0119dzie te\u017C na bie\u017C\u0105co monitorowane i oceniane przez nadzoruj\u0105cego
+      ci\u0119 starszego detektywa Oriona Sygilla. Z racji na fakt i\u017C \u015Bledztwo
+      dotyczy morderstwa na najwy\u017Cszych szczeblach w\u0142adzy udane przeprowadzenie
+      interwencji doprowadzi do uznania przez Rad\u0119 inkwizycyjn\u0105 twoich
+      kwalifikacji na Mistyka \u015Aledczego. \r\n\r\n### Dodatkowe uwagi:\r\n- Lord
+      Alaric Morteo z\u0142o\u017Cy\u0142 formaln\u0105 pro\u015Bb\u0119 o natychmiastow\u0105
+      interwencj\u0119. Z uwagi na pogarszaj\u0105ce si\u0119 warunki atmosferyczne
+      i delikatn\u0105 sytuacj\u0119 polityczn\u0105, macie wyruszy\u0107 natychmiast
+      po otrzymaniu niniejszego pisma. Ka\u017Cde op\xF3\u017Anienie mo\u017Ce prowadzi\u0107
+      do eskalacji sytuacji.\r\n  \r\n- Podejrzani Ombryjczycy powinni by\u0107 przes\u0142uchiwani
+      z zachowaniem pe\u0142nej ostro\u017Cno\u015Bci, a rada nie dopuszcza opcji
+      jakichkolwiek samos\u0105d\xF3w wykonywanych na terenie posiad\u0142o\u015Bci.
+      Ombryjczycy niezale\u017Cnie od ich winy otrzymuj\u0105 status wi\u0119\u017Ani\xF3w
+      politycznych i winni s\u0105 zosta\u0107 odeskortowanii do stolicy tu\u017C
+      po zako\u0144czeniu \u015Bledztwa."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 8fadd736-926b-4cbc-83cc-a00fea0dfe6a
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -3890, y: 13242}
+    <ExposedProperties>k__BackingField: []
+    <Color>k__BackingField: {r: 0, g: 1, b: 1, a: 1}
+    <CharacterSO>k__BackingField: {fileID: 0}
+    <CharacterSprite>k__BackingField: {fileID: 0}
   <ExposedProperties>k__BackingField: []
   <OldGroupNames>k__BackingField:
   - "Podr\xF3\u017CW\u015Anierzycy"
@@ -7148,6 +7268,9 @@ MonoBehaviour:
   - "Zale\u017Cno\u015Bci"
   - 1
   - 1v2
+  - List1
+  - ArvidOrion
+  - List2
   <OldUngroupedNodeNames>k__BackingField: []
   <OldGroupedNodeNames>k__BackingField:
     list:
@@ -7686,3 +7809,12 @@ MonoBehaviour:
       - erwv
       - Orion2
       - Alaric3
+    - Key: List1
+      Value:
+      - List
+    - Key: ArvidOrion
+      Value:
+      - Orion
+    - Key: List2
+      Value:
+      - List2
