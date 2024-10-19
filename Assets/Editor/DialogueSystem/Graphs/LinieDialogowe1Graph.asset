@@ -16,13 +16,13 @@ MonoBehaviour:
   <Groups>k__BackingField:
   - <ID>k__BackingField: 02d2c6b2-df3c-411c-838b-c4d1735dd0f2
     <Name>k__BackingField: "Podr\xF3\u017CW\u015Anierzycy"
-    <Position>k__BackingField: {x: -4852, y: -3915}
+    <Position>k__BackingField: {x: -4852, y: -3914.9998}
   - <ID>k__BackingField: 5d08f44c-3861-420d-b20c-8fa3e26864f1
     <Name>k__BackingField: "PrzybycieDoPosiad\u0142o\u015Bci"
-    <Position>k__BackingField: {x: -4881, y: -3188}
+    <Position>k__BackingField: {x: -4881, y: -3187.9998}
   - <ID>k__BackingField: 7c5b1997-3e4a-406a-8fdf-9ce02977086d
     <Name>k__BackingField: PierwszeSpotkanieZLordemAlariciemIGervim
-    <Position>k__BackingField: {x: -4894, y: -2739}
+    <Position>k__BackingField: {x: -4894, y: -2738.9998}
   - <ID>k__BackingField: f3f021bd-42c3-43dc-9faa-1e274f0da20e
     <Name>k__BackingField: "RozmowaPrzedSekcj\u0105Marii"
     <Position>k__BackingField: {x: -4888, y: -750}
@@ -37,7 +37,7 @@ MonoBehaviour:
     <Position>k__BackingField: {x: -4877, y: 1500}
   - <ID>k__BackingField: 3025f6d5-7dbc-4e3a-9ff8-50bf2bcb770f
     <Name>k__BackingField: "Planwydarze\u0144"
-    <Position>k__BackingField: {x: -4878, y: 4127}
+    <Position>k__BackingField: {x: -4878, y: 4126.9995}
   - <ID>k__BackingField: 89d8034b-36ff-4b6a-b96e-b9c9d910c69e
     <Name>k__BackingField: Ombryjczycy
     <Position>k__BackingField: {x: -4917, y: 5529}
@@ -46,70 +46,70 @@ MonoBehaviour:
     <Position>k__BackingField: {x: -4893, y: 7510}
   - <ID>k__BackingField: 406139ac-8330-4e01-b092-48a28ed1794a
     <Name>k__BackingField: Desmond
-    <Position>k__BackingField: {x: -4905, y: 4734}
+    <Position>k__BackingField: {x: -4905, y: 4733.9995}
   - <ID>k__BackingField: c3cb2968-3f48-4505-92ae-aab27a5c7823
     <Name>k__BackingField: Abigail
-    <Position>k__BackingField: {x: -4882, y: 9847}
+    <Position>k__BackingField: {x: -4882, y: 9846.999}
   - <ID>k__BackingField: d56b47a6-8815-41df-8047-48484404e8cd
     <Name>k__BackingField: Gervi
     <Position>k__BackingField: {x: -4904, y: 6341}
   - <ID>k__BackingField: 6f67f922-a80f-4526-9dfa-cef5029eaf97
     <Name>k__BackingField: Balon
-    <Position>k__BackingField: {x: -4892, y: 7906}
+    <Position>k__BackingField: {x: -4892, y: 7905.9995}
   - <ID>k__BackingField: 79e5940c-5cf4-48bd-9026-0e30781e7e3d
     <Name>k__BackingField: Zestes
-    <Position>k__BackingField: {x: -4897, y: 6728}
+    <Position>k__BackingField: {x: -4897, y: 6727.9995}
   - <ID>k__BackingField: 44df2e91-c3c5-448e-b075-aa59186487ca
     <Name>k__BackingField: Elira
-    <Position>k__BackingField: {x: -4890, y: 8284}
+    <Position>k__BackingField: {x: -4890.0005, y: 8284}
   - <ID>k__BackingField: 97de7b29-724f-4f48-a711-73af49f76eb7
     <Name>k__BackingField: Oberon
-    <Position>k__BackingField: {x: -4880, y: 9464}
+    <Position>k__BackingField: {x: -4880, y: 9463.999}
   - <ID>k__BackingField: c7243a95-fbc6-4a4c-a184-443867fac11e
     <Name>k__BackingField: Weln
     <Position>k__BackingField: {x: -4911, y: 5933}
   - <ID>k__BackingField: fd467fab-b3d4-410e-8afa-fde4472c58dd
     <Name>k__BackingField: Lothion
-    <Position>k__BackingField: {x: -4914, y: 5131}
+    <Position>k__BackingField: {x: -4914, y: 5130.9995}
   - <ID>k__BackingField: b17df2db-9957-4bad-965d-8b3ca70acddb
     <Name>k__BackingField: Virion
     <Position>k__BackingField: {x: -4878, y: 9054}
   - <ID>k__BackingField: aa8c7137-665f-467d-94d9-a468718ffb6c
     <Name>k__BackingField: Reys
-    <Position>k__BackingField: {x: -4891, y: 8673}
+    <Position>k__BackingField: {x: -4891, y: 8672.999}
   - <ID>k__BackingField: 40500a86-6267-41b3-80ff-d4128c266937
     <Name>k__BackingField: Ute
-    <Position>k__BackingField: {x: -4896, y: 7118}
+    <Position>k__BackingField: {x: -4896.0005, y: 7118}
   - <ID>k__BackingField: bd3d770f-5bc9-4aa4-b780-c48ef02521f2
     <Name>k__BackingField: Arvid
     <Position>k__BackingField: {x: -4878, y: 10230}
   - <ID>k__BackingField: fba1cc5e-953e-450a-a3cf-799e4c00e2cb
     <Name>k__BackingField: "Zab\xF3jstwoaczasgry"
-    <Position>k__BackingField: {x: 14180, y: 8801}
+    <Position>k__BackingField: {x: 14179.999, y: 8801}
   - <ID>k__BackingField: bbbb2e99-1fff-496c-8879-d9e95da73303
     <Name>k__BackingField: Itemy
-    <Position>k__BackingField: {x: 13371, y: 8805}
+    <Position>k__BackingField: {x: 13370.999, y: 8805}
   - <ID>k__BackingField: 85a670cf-cf86-4834-9bbc-e68eb9973f54
     <Name>k__BackingField: "Dzia\u0142aniapomorderstwie"
-    <Position>k__BackingField: {x: 14984, y: 8790}
+    <Position>k__BackingField: {x: 14983.999, y: 8790.001}
   - <ID>k__BackingField: e8ea0409-904c-4a42-abc4-15eb08e3a756
     <Name>k__BackingField: fgbhndb
     <Position>k__BackingField: {x: -4898, y: 11076}
   - <ID>k__BackingField: ee9600c8-8e30-44e0-a19e-a84b1ffd1a56
     <Name>k__BackingField: "Zale\u017Cno\u015Bci"
-    <Position>k__BackingField: {x: -4889, y: 11598}
+    <Position>k__BackingField: {x: -4889.0005, y: 11598}
   - <ID>k__BackingField: da8e19c3-fb9c-48b0-8f1d-55ad8711d411
     <Name>k__BackingField: 1
     <Position>k__BackingField: {x: -4936, y: 12216}
   - <ID>k__BackingField: 014f99d3-ab7d-4207-8221-0430ec3c1d28
     <Name>k__BackingField: 1v2
-    <Position>k__BackingField: {x: -4942, y: 12706}
+    <Position>k__BackingField: {x: -4942, y: 12705.999}
   - <ID>k__BackingField: c403a89e-6bbd-46f4-87b8-08a1394a9a71
     <Name>k__BackingField: List1
-    <Position>k__BackingField: {x: -4910, y: 13196}
+    <Position>k__BackingField: {x: -4910.0005, y: 13195.999}
   - <ID>k__BackingField: f961d4da-6b7e-4521-b00a-30bd7f90f833
     <Name>k__BackingField: ArvidOrion
-    <Position>k__BackingField: {x: -4909, y: 14233}
+    <Position>k__BackingField: {x: -4909.0005, y: 14233}
   - <ID>k__BackingField: 8fadd736-926b-4cbc-83cc-a00fea0dfe6a
     <Name>k__BackingField: List2
     <Position>k__BackingField: {x: -3915, y: 13183}
