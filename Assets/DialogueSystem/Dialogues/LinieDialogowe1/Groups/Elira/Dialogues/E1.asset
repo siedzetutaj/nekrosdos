@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: E1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: edd5dc15-3b0e-4661-891c-6468ba03d479
   <DialogueName>k__BackingField: E1
   <Text>k__BackingField: "Elira zosta\u0142a obudzona z samego rana przez swoj\u0105
     pokoj\xF3wke"

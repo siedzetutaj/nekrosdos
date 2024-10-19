@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: L6
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: c9558633-e6cb-4aa9-a7ce-3c9e875af9f3
   <DialogueName>k__BackingField: L6
   <Text>k__BackingField: 'zniesmaczony wraca na rozmowy '
   <Choices>k__BackingField:

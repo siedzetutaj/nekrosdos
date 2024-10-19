@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Orion1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 346b13df-017a-4a9b-9399-001530880c67
   <DialogueName>k__BackingField: Orion1
   <Text>k__BackingField: "Zgadza si\u0119, a to m\xF3j partner - Naznaczony..."
   <Choices>k__BackingField:

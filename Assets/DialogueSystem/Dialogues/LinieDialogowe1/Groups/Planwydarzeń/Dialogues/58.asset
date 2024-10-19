@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 58
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 8a677ccb-fe32-4831-9988-01dfb3957fc9
   <DialogueName>k__BackingField: 58
   <Text>k__BackingField: "Alaric widz\u0105c co si\u0119 sta\u0142o po wst\u0119pnym
     szoku nakazuje wszystkim uda\u0107 si\u0119 do swych komnat "

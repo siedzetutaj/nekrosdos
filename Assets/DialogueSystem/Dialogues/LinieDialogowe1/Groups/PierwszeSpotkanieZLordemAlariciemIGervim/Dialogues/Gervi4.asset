@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Gervi4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 79c29ce7-a421-4b7d-a6cc-22dcb9daf78e
   <DialogueName>k__BackingField: Gervi4
   <Text>k__BackingField: "Wedle prawa zabezpieczyli\u015Bmy je do czasu waszego przybycia.
     Nie mog\u0142o le\u017Ce\u0107 tam przez 7 dni. To chyba oczywiste detektywie."

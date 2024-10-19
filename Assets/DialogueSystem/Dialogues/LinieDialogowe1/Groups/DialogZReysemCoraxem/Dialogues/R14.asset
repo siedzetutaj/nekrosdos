@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R14
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: cdf5940b-0a80-4ebf-b89e-7d47241876e6
   <DialogueName>k__BackingField: R14
   <Text>k__BackingField: "Jeszcze? Zarozumia\u0142y skurwiel..."
   <Choices>k__BackingField:

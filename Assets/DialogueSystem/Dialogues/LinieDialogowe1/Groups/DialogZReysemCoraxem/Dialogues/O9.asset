@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O9
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 967df1a6-6144-438f-8a20-dfe5b27d7a2b
   <DialogueName>k__BackingField: O9
   <Text>k__BackingField: "By\u0142o inaczej?"
   <Choices>k__BackingField:

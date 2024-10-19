@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: A
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 76fb5bf1-0fbe-4433-b01a-b3a22597f1eb
   <DialogueName>k__BackingField: A
   <Text>k__BackingField: "Arvid wraz z Orionem otrzymuj\u0105 informacje o morderstwie
     w posiad\u0142o\u015Bci rodu Morteo na p\xF3\u0142nocy"

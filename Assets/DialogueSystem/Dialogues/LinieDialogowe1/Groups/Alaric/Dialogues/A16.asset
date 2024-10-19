@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: A16
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 529c5384-83ea-4b5c-bfa2-613c21eaf5d0
   <DialogueName>k__BackingField: A16
   <Text>k__BackingField: "Jego nastawienie zmienia sie i wszyscy lokatorzy posiad\u0142o\u015Bci
     s\u0105 dla niego podejrzani i maj\u0105 zakaz opuszczania swych komnat do odwo\u0142ania"

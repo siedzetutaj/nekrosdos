@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 55
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 0cc10d2c-8d98-476b-b86b-f930b6d779ee
   <DialogueName>k__BackingField: 55
   <Text>k__BackingField: "Zmuszony wi\u0119c jest poinformowa\u0107 o ich niekompetencji
     Pani\u0105 domu wi\u0119c uda si\u0119 do gabinetu (tu historia ma szczeg\xF3\u0142y

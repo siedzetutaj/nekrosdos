@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O6
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 45b848dd-2917-4bbe-888b-a0e192c182cd
   <DialogueName>k__BackingField: O6
   <Text>k__BackingField: "Rozpoczynaj\u0105 si\u0119 trwaj\u0105ce dzie\u0144 w dzie\u0144
     negocjacje, kt\xF3re prowadzi Maria Morteo wspomagana przez swego syna"

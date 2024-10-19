@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R9
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 6f885eb2-fb8b-4185-a1fd-f5cf2b65b2d7
   <DialogueName>k__BackingField: R9
   <Text>k__BackingField: "Chyba ci si\u0119 co\u015B pojeba\u0142o podcz\u0142owieku.
     Wiesz z kim rozmawiasz, czy \u015Bmier\u0107 do reszty wypra\u0142a ci m\xF3zg?

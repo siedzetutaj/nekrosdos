@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O10
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 1b613f21-ff0e-41d5-9e91-0c3920adde59
   <DialogueName>k__BackingField: O10
   <Text>k__BackingField: "Sk\u0105d u Lorda wiedza o obecno\u015Bci Ombryjczyk\xF3w
     w rezydencji?"

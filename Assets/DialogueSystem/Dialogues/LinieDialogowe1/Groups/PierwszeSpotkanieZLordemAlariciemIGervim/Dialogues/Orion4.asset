@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Orion4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: c8389a46-73a6-4ccb-a775-b59b16e00b35
   <DialogueName>k__BackingField: Orion4
   <Text>k__BackingField: "Oczywi\u015Bcie. Nie przybyli\u015Bmy tu by wypoczywa\u0107. "
   <Choices>k__BackingField:

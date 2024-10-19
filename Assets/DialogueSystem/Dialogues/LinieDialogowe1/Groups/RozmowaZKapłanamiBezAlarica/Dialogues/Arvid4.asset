@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Arvid4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 084c1c24-b0a8-4060-a619-0c43fa3a6add
   <DialogueName>k__BackingField: Arvid4
   <Text>k__BackingField: "Kontaktowali sie kap\u0142ani ze zmar\u0142\u0105, skoro
     wysnuwaj\u0105 takie wnioski?"

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R20
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: b3b5a573-22b4-4222-9e57-6fbfd3d3f5e4
   <DialogueName>k__BackingField: R20
   <Text>k__BackingField: "Je\u015Bli jednak oskar\u017Casz mnie o udzia\u0142 w morderstwie
     to prosz\u0119 powiedz. Jakie masz ku temu podstawy?"

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Katon2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 6cd33f12-dc2e-4540-8484-3a41c3839b75
   <DialogueName>k__BackingField: Katon2
   <Text>k__BackingField: 'Orion Sygil jak mniemam? '
   <Choices>k__BackingField:

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 49
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 66e0a750-26b5-4280-a862-5e7efef281af
   <DialogueName>k__BackingField: 49
   <Text>k__BackingField: "Gdy tam dociera zauwa\u017Ca cia\u0142o i postanawia dzia\u0142a\u0107
     szybko"

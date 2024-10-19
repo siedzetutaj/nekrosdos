@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Narracja2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 6ddb094c-7f49-44cb-b331-9eea8f7cec3f
   <DialogueName>k__BackingField: Narracja2
   <Text>k__BackingField: "-Alaric powoli kiwa g\u0142ow\u0105 staraj\u0105c si\u0119
     zebra\u0107 w sobie-"

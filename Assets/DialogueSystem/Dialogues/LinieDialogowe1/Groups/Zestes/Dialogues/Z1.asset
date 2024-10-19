@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Z1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: c3c0f08d-c956-4023-8f13-df1edd69315c
   <DialogueName>k__BackingField: Z1
   <Text>k__BackingField: "Zestes swe dni zazwyczaj sp\u0119dza w osamotnieniu dbaj\u0105c
     o tereny wok\xF3\u0142 posiad\u0142o\u015Bci"

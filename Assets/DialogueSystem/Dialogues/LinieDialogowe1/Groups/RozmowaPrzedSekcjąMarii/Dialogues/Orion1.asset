@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Orion1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 41d57899-7d53-4793-985d-eab29a8a66a2
   <DialogueName>k__BackingField: Orion1
   <Text>k__BackingField: "Lordzie... wiem \u017Ce nie jest to \u0142atwa decyzja
     jednak Arvid ma racj\u0119. To nie s\u0105 widoki przeznaczone dla oczu bliskich

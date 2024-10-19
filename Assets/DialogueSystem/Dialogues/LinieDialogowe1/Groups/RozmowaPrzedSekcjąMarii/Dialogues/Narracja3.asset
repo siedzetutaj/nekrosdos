@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Narracja3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 86ced1a3-97ef-46d8-abd2-ba9e8c270512
   <DialogueName>k__BackingField: Narracja3
   <Text>k__BackingField: "-Na twarzy lorda wida\u0107 teraz burze uczu\u0107 i walcz\u0105cych
     mi\u0119dzy sob\u0105 emocji. Stoi w milczeniu trawi\u0105c powoli twoje s\u0142owa-"

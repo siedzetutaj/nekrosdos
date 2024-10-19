@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Narracja1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 00490a13-af68-4f39-98a2-13f0ba4ab4e1
   <DialogueName>k__BackingField: Narracja1
   <Text>k__BackingField: "- Zerwal si\u0119 wiatr a konie zacz\u0119\u0142y dr\u017Ce\u0107
     niespokojnie - "

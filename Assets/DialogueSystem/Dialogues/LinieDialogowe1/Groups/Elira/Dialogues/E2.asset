@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: E2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 94f640a5-cf88-4cf0-bc04-c98c8b8eb2ac
   <DialogueName>k__BackingField: E2
   <Text>k__BackingField: "jako m\u0142oda dziewczynka nie zdawa\u0142a sobie sprawy
     z tego co dok\u0142adnie ma miejsce za zamknietymi drzwiami gabinetu jej ojca."

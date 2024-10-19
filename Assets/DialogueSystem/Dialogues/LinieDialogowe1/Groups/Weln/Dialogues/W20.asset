@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: W20
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: ae9c5107-9097-425f-a6b5-23f93627830c
   <DialogueName>k__BackingField: W20
   <Text>k__BackingField: "Po trwaj\u0105cej oko\u0142o godzinie rozmowie upewni\u0142
     si\u0119 \u017Ce ka\u017Cdy odpocznie po czym sam uda\u0142 si\u0119 na spoczynek"

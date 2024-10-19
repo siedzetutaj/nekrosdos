@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 21
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 78758d51-fa39-4d13-932d-2668f93fc478
   <DialogueName>k__BackingField: 21
   <Text>k__BackingField: Dzien morderstwa
   <Choices>k__BackingField:

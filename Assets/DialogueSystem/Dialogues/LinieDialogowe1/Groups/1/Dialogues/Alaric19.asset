@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Alaric19
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 75f9c4bc-d49e-44cd-ab17-ca09d131a55f
   <DialogueName>k__BackingField: Alaric19
   <Text>k__BackingField: Co ma do tego Elira?!
   <Choices>k__BackingField:

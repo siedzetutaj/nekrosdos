@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: A1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 742ef14c-2312-4759-90eb-45ec858bceb4
   <DialogueName>k__BackingField: A1
   <Text>k__BackingField: "Sk\u0105d wi\u0119c obecno\u015B\u0107 Lorda w posiad\u0142o\u015Bci?
     Je\u015Bli nie ma tu nikogo interesuj\u0105cego jaki jest cel tej wizyty."

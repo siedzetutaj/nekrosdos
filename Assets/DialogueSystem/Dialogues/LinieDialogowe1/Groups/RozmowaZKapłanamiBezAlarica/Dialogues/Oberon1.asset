@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Oberon1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 68a5ce46-8139-4258-a16f-fb50f8489c5c
   <DialogueName>k__BackingField: Oberon1
   <Text>k__BackingField: "-Posta\u0107 w odpowiedzi na twoje powitanie sk\u0142oni\u0142a
     lekko g\u0142owe-"

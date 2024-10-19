@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: G5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: d06e0bbd-f660-4b5b-a98d-a2575ca628d1
   <DialogueName>k__BackingField: G5
   <Text>k__BackingField: "To gervi odpowiedzialny jest za ustalenie posagu jaki wniesie
     do ma\u0142\u017Ce\u0144stwa Elira czy te\u017C innych spraw organizacyjnych"

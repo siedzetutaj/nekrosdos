@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 64
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 5f2664c2-75e2-4d3e-a134-22f7662a1bd6
   <DialogueName>k__BackingField: 64
   <Text>k__BackingField: "Gervi wychodzi z budynku po zestesa nie\u015Bwiadom \u017Ce
     ten przebywa ju\u017C w posiad\u0142o\u015Bci. (By\u0107 moze przebywaj\u0105c

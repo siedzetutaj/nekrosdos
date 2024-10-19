@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R18
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: b3fc4419-c6a9-4bb7-a2f3-5e45120fa8d1
   <DialogueName>k__BackingField: R18
   <Text>k__BackingField: "Wida\u0107 nawet \"obdarzeni\" czasami my\u015Bl\u0105
     rozs\u0105dnie."

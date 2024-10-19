@@ -31,6 +31,7 @@ namespace DS.Windows
 
         public SerializableDictionary<string, List<string>> deletedGroupedNodeNames;
         public List<string> deletedUngroupedNodeNames;
+        public List<string> deletedGroupsNames;
 
         public List<DSExposedProperty> exposedProperties;
         public  UnityAction<string,string> OnExposedPropertiesListChange;

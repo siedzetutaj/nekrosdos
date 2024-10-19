@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: A6
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 2a568cee-7953-4307-b4e9-32501c0bcffa
   <DialogueName>k__BackingField: A6
   <Text>k__BackingField: "op\u0142akuje \u017Cone i pr\xF3buje zrozumie\u0107 co
     zasz\u0142o w pokoju"

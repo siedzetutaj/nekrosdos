@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Detektywi1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: d0c1bab5-985c-493d-a4cf-21a66303091e
   <DialogueName>k__BackingField: Detektywi1
   <Text>k__BackingField: "Na wst\u0119pie chcieli\u015Bmy wyrazi\u0107 swoje kondolencje
     spowodu \u015Bmierci \u017Cony."

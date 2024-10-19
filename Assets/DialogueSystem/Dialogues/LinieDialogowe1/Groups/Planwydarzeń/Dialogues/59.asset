@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 59
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: e0ff1e49-c4cd-4d2d-8d24-a5a66efe6da1
   <DialogueName>k__BackingField: 59
   <Text>k__BackingField: "Weln odprowadza s\u0142u\u017Cb\u0119 do swoich pokoi "
   <Choices>k__BackingField:

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 2eb3d47a-865c-4f90-adaf-53833d3a3973
   <DialogueName>k__BackingField: O3
   <Text>k__BackingField: "W takim razie czy m\xF3g\u0142by Lord opisa\u0107 kiedy
     pojawi\u0142 si\u0119 w posiad\u0142o\u015Bci, w jakim celu i co pami\u0119ta

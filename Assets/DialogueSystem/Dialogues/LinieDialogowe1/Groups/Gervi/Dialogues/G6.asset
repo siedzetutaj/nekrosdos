@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: G6
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: a5135b6c-70f3-4a36-bb3c-1df928ec2c25
   <DialogueName>k__BackingField: G6
   <Text>k__BackingField: "po godzinie 14 zarz\u0105dzona zosta\u0142a przerwa w obradach
     jednak Gervi nie m\xF3g\u0142 nacieszy\u0107 si\u0119 odpoczynkiem "

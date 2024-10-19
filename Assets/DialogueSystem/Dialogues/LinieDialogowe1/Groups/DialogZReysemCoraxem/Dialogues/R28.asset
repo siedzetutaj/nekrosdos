@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R28
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 6d46cb94-a90c-49bc-8501-24474deab376
   <DialogueName>k__BackingField: R28
   <Text>k__BackingField: "O kurwa, nic tylko pogratulowa\u0107 bystro\u015Bci rozumu.
     Chyba wysili\u0142e\u015B na ten wniosek ca\u0142\u0105 resztke twego m\xF3zgu

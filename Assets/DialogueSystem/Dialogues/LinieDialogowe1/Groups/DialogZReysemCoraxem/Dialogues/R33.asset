@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R33
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: d8108460-f5cc-4f12-a868-73fc55d4f476
   <DialogueName>k__BackingField: R33
   <Text>k__BackingField: "A mo\u017Ce i widzieli ale to nie jest  jaki"
   <Choices>k__BackingField:

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: E8
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 42f93cce-0168-46a7-875e-0bcf2d0f4811
   <DialogueName>k__BackingField: E8
   <Text>k__BackingField: "Po pewnym czasie urwali uciekli oni jednak pokoj\xF3wce
     jednym z ma\u0142ych korytarzy o kt\xF3rego istnieniu ta pokoj\xF3wka nie mia\u0142a

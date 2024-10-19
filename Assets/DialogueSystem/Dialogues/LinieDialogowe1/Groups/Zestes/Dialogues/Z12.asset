@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Z12
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 2ff0cfed-74ec-42a3-97f4-da3686d7d6b8
   <DialogueName>k__BackingField: Z12
   <Text>k__BackingField: "Zestes po dok\u0142adnych badaniach wykonanych ok\u0142adach
     opuszcza ostatecznie pok\xF3j m\u0142odzie\u0144ca i s\u0142yszy krzyki"

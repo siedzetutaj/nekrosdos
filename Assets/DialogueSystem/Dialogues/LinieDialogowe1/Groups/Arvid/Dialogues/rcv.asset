@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: rcv
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: c9dbe2e7-7dd8-48ec-8921-70066f843b4b
   <DialogueName>k__BackingField: rcv
   <Text>k__BackingField: "Nast\u0119pnie powinni skierowa\u0107 sie albo do Zestesa
     i zwiedzi\u0107 dw\xF3r. Albo do ombryjczyk\xF3w by ich przes\u0142ucha\u0107"

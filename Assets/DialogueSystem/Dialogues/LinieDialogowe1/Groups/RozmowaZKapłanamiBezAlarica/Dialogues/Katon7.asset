@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Katon7
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 61e86bbe-2ab5-4e8c-8c10-cc234f95ce82
   <DialogueName>k__BackingField: Katon7
   <Text>k__BackingField: "Chodzi mi tu g\u0142\xF3wnie  o pierwsze oznaki wyst\u0105pienia
     duszy, kt\xF3re odbijaj\u0105 si\u0119 na ciele w postaci odbarwie\u0144."

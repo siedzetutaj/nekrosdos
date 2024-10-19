@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Orion3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 7b0bb0a9-63f0-4314-9279-7f6803398ff0
   <DialogueName>k__BackingField: Orion3
   <Text>k__BackingField: "Co masz na my\u015Bli?"
   <Choices>k__BackingField:

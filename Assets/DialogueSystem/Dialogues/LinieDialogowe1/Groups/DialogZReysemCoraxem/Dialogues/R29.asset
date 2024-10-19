@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R29
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 35957c06-538a-437e-ac55-af3ddd42c873
   <DialogueName>k__BackingField: R29
   <Text>k__BackingField: "Nie musisz odpowiada\u0107. Owszem nie przepadam za niekompetentnymi
     lud\u017Ami a w\u015Br\xF3d takich si\u0119 tutaj znajduje."

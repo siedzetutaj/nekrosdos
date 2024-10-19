@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Alaric7
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: d7e907d1-8495-40ef-aa3e-31bdebca7031
   <DialogueName>k__BackingField: Alaric7
   <Text>k__BackingField: "Tak, tak wybaczcie t\u0119 tyrade. Macie swoje obowi\u0105zki.
     Oczywi\u015Bcie nale\u017Cy ich dope\u0142nia\u0107."

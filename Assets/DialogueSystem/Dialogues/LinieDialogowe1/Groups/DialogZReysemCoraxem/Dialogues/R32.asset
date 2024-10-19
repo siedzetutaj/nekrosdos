@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R32
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 2f65bdd6-2ce5-46f8-a81b-9457e537332c
   <DialogueName>k__BackingField: R32
   <Text>k__BackingField: "Poniewa\u017C chuj was to obchodzi. Reysowie stwierdzili
     \u017Ce nale\u017Cy pojawi\u0107 si\u0119 na rozmowach i tak te\u017C si\u0119

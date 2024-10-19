@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R6
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 729ed256-ffc8-4686-beda-4dab1f18ea06
   <DialogueName>k__BackingField: R6
   <Text>k__BackingField: "kieruje si\u0119 do swojego gabinetu"
   <Choices>k__BackingField:

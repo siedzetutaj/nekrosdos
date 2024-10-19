@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R15
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 09d8e3ba-9679-46b9-bd9e-aec6cd788ada
   <DialogueName>k__BackingField: R15
   <Text>k__BackingField: "M\xF3wcie czego chcecie, miejmy ju\u017C t\u0105 fars\u0119
     za sob\u0105."

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: egbrb
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 766ff48a-1c99-49d8-a86c-f3a9240dbbbb
   <DialogueName>k__BackingField: egbrb
   <Text>k__BackingField: "Docieraj\u0105 tam po 2 dniach po czym rozp\u0119tuje si\u0119
     ogromna nawa\u0142nica"

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Alaric3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: f7977428-22cc-4308-b208-0fa66787aff7
   <DialogueName>k__BackingField: Alaric3
   <Text>k__BackingField: "Mam zostawi\u0107 swoj\u0105 \u017Con\u0119 i porzuci\u0107
     mo\u017Cliwo\u015B\u0107 by jeszcze raz si\u0119 z ni\u0105 porozumie\u0107?

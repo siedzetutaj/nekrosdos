@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: B3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: f9425a7d-08f8-4a32-b38e-35535342f35f
   <DialogueName>k__BackingField: B3
   <Text>k__BackingField: "Po odkryciu cia\u0142, zabezpiuecza slzachte odprowadza
     ich do swoich pokoi. Nast\u0119pnie udaj\u0119 si\u0119 zabezpieczy\u0107 posiad\u0142o\u015B\u0107

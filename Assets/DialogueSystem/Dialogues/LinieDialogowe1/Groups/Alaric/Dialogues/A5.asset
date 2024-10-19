@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: A5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 089e3a4c-d7d6-43aa-99e2-80b3b600cabe
   <DialogueName>k__BackingField: A5
   <Text>k__BackingField: "Po wst\u0119pnym szoku wydaje rozkazy s\u0142u\u017Cbie
     i lokatorom posiad\u0142o\u015Bci"

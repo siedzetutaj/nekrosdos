@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R21
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 920dfc40-679c-4321-ae5f-0ceaa9de6182
   <DialogueName>k__BackingField: R21
   <Text>k__BackingField: "\"Zauwa\u017Ceni na terenie posiad\u0142o\u015Bci?\" To
     powiedzia\u0142 wam Alaric? hahahah dobre sobie."

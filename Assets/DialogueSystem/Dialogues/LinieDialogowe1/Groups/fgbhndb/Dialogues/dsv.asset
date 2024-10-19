@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: dsv
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 8c91cc98-2c85-452e-bcc3-5ac19563aea9
   <DialogueName>k__BackingField: dsv
   <Text>k__BackingField: "- Stary niemal ca\u0142kowicie zasypany ju\u017C \u015Bniegiem
     g\xF3rski szlak pnie si\u0119 w g\xF3r\u0119, wij\u0105c si\u0119 niespokojnie

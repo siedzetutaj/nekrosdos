@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: a6cdaf8d-590f-4542-b12e-ac1a073b3dc5
   <DialogueName>k__BackingField: R3
   <Text>k__BackingField: "Kiedy i po co pojawi\u0142em si\u0119 w posiad\u0142o\u015Bci?
     Chce mi detektyw powiedzie\u0107 \u017Ce nawet tego nie uda\u0142o wam si\u0119

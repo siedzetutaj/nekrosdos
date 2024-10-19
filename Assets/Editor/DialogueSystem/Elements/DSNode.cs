@@ -17,7 +17,6 @@ namespace DS.Elements
     {
         public string ID { get; set; }
         public string DialogueName { get; set; }
-        public string OldDialogueName { get; set; } = null;
         public List<DSChoiceSaveData> Choices { get; set; }
         public string Text { get; set; }
         public DSDialogueType DialogueType { get; set; }

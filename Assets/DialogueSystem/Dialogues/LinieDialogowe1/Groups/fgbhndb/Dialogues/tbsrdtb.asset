@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: tbsrdtb
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 10414dff-cde2-4559-83cb-a92800fe2af5
   <DialogueName>k__BackingField: tbsrdtb
   <Text>k__BackingField: "Poza tym ty i tak w po\u0142owie nic nie czujesz. Troch\u0119
     \u015Bniegu i wiatru nie powinno ci a\u017C tak przeszkadza\u0107."

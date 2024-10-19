@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: a3a338a8-c09b-4fb6-86a2-de8cd585a1ef
   <DialogueName>k__BackingField: R4
   <Text>k__BackingField: "nast\u0119pnie samemu udaje si\u0119 na kolejne spotkanie
     w trakcie kt\xF3rego stara si\u0119 jak najbardziej utrudnia\u0107 zebranie by

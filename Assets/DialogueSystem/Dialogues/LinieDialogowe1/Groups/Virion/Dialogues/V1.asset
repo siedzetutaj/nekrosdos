@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: V1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 21a5522e-5593-4704-ae8d-3458082c31c7
   <DialogueName>k__BackingField: V1
   <Text>k__BackingField: "virion jest cz\u0142owiekiem dystyngowanym i bardzo mocno
     skoncentrowanym na dzia\u0142aniu prawie i s\u0142u\u017Cbie"

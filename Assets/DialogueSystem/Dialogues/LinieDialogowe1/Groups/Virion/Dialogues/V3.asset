@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: V3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 7f85ae69-39ef-4f19-a85a-82a01f0ab0cb
   <DialogueName>k__BackingField: V3
   <Text>k__BackingField: "nast\u0119pnie uda\u0142 si\u0119 na \u015Bniadanie i spotkanie
     w zwi\u0105zku z ma\u0142\u017Ce\u0144stwem eliry"

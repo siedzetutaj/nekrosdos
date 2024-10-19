@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 38
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: bd4f21b9-0e34-4b12-a574-ef1ff738deee
   <DialogueName>k__BackingField: 38
   <Text>k__BackingField: "po wypadku ch\u0142opca dziewczynka by\u0142a podejrzana
     o jego spowodowanie wi\u0119c zosta\u0142a zamknieta w pokoju"

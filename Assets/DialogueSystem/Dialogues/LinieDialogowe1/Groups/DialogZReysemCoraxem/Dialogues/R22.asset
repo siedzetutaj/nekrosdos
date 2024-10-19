@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R22
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 739dc719-6ded-45dc-8916-216464194c5d
   <DialogueName>k__BackingField: R22
   <Text>k__BackingField: "Oczywi\u015Bcie kurwa \u017Ce by\u0142o inaczej. "
   <Choices>k__BackingField:

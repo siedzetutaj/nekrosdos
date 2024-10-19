@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: L5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 84d2641d-3ae2-4a82-affc-cc9d84a8a1ce
   <DialogueName>k__BackingField: L5
   <Text>k__BackingField: "Wypytuje s\u0142u\u017Cbe o stan zdrowia Marii i gdzie
     ona jest"

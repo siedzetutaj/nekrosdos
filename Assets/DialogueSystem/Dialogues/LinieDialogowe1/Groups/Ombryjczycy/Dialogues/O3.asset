@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: faf6521c-472d-416a-86bd-9c4555b57aaf
   <DialogueName>k__BackingField: O3
   <Text>k__BackingField: 'Na spotkanie wychodzi im Desmond Morteo wraz z Balonem '
   <Choices>k__BackingField:

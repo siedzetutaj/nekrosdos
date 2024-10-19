@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Oberon5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 6877b95f-6616-44fb-847f-4939911c45cd
   <DialogueName>k__BackingField: Oberon5
   <Text>k__BackingField: Tak?
   <Choices>k__BackingField:

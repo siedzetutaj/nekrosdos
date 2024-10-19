@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O17
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 4b870cef-7c42-4dc3-8b6b-4fbafb055479
   <DialogueName>k__BackingField: O17
   <Text>k__BackingField: "By\u0107 mo\u017Ce jeden z nich zgin\u0105\u0142 na przes\u0142uchaniu
     albo zginie idealnie jak przyjd\u0105 do niego detektywi"

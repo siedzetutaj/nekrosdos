@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O13
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 5fb390fd-c75c-4a0f-8e0b-3fc610ab988e
   <DialogueName>k__BackingField: O13
   <Text>k__BackingField: "W dzie\u0144 zab\xF3jstwa ostateczna umowa w sprawie handlu
     broni\u0105 zosta\u0142a niemal uko\u0144czona "

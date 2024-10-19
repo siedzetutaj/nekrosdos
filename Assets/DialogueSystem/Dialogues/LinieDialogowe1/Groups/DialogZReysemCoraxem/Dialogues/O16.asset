@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: O16
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 715976f7-c8a0-4172-b77c-0a2cf389ee39
   <DialogueName>k__BackingField: O16
   <Text>k__BackingField: 'Owszem. '
   <Choices>k__BackingField:

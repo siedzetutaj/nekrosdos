@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: rfvr
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 379d4e3e-7b3d-4d18-9d3d-3f13376d9d02
   <DialogueName>k__BackingField: rfvr
   <Text>k__BackingField: "Dochodzi do ogl\u0119dzin cia\u0142a - z pocz\u0105tku
     pod wzgl\u0119dem zwyczajnym czytaj gdzie jest rana, co mog\u0142o spowodowa\u0107

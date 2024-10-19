@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: W5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: c153e5e8-535c-4337-ae3d-d7d3ec1cd683
   <DialogueName>k__BackingField: W5
   <Text>k__BackingField: "Gdy do pa\u0142acu przyjechali szlachcice mia\u0142 okazj\u0119
     rozmawia\u0107 kilka razy z Virionem Sygilem, kt\xF3rego uwa\u017Ca za bardzo

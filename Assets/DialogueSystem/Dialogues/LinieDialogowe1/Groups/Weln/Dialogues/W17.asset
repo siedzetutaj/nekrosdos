@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: W17
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 8344f20b-17ad-4229-b6a0-2a767f3f6024
   <DialogueName>k__BackingField: W17
   <Text>k__BackingField: "Po jego uzyskaniu skierowa\u0142 sie do bbiblioteki gdzie
     zajmowa\u0142 si\u0119 ta w\u0142a\u015Bnie praca"

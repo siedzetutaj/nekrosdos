@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: W14
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 93b2f3fb-e0f6-45ba-8618-0234ce5490e6
   <DialogueName>k__BackingField: W14
   <Text>k__BackingField: "Rozgrywk\u0119 przerwa\u0142o pojawienie si\u0119 lothiona,
     kt\xF3ry zn\xF3w za\u017Cyczy\u0142 sobie udost\u0119pnienia mu Ptaszarni."

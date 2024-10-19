@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Retes1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 414bae47-e7f1-4b20-96c2-a94c3185696d
   <DialogueName>k__BackingField: Retes1
   <Text>k__BackingField: "Zepnijcie konie panicze. Nie chcem z\u0142ego omenu zwiastowa\u0107
     ale wichry sie wzbieraj\u0105! "

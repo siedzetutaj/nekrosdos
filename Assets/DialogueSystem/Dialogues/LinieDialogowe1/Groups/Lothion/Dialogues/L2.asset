@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: L2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 9fc1b023-d1eb-45f9-8d39-d5e662c8cdae
   <DialogueName>k__BackingField: L2
   <Text>k__BackingField: "\u015Aniadanie ze szlacht\u0105 z rana i taktyczne opierdolenie
     syna przy \u015Bniadaniu"

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Katon4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 1a6501f6-1ea3-45a8-9c34-3bfb33f44e47
   <DialogueName>k__BackingField: Katon4
   <Text>k__BackingField: "Jestem Katon, kap\u0142an na us\u0142ugach rodu Morteo
     jak i powiernik tej skromnej kaplicy. M\u0119\u017Cczyzna za mn\u0105 natomiast

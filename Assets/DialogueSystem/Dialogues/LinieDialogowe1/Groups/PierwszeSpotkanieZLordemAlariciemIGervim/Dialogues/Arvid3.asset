@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Arvid3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 47c2c05d-2d3a-4091-aa82-897a6460ed74
   <DialogueName>k__BackingField: Arvid3
   <Text>k__BackingField: "Zreszt\u0105 \u015Bnierzyca zabije ewentualnego uciekiniera."
   <Choices>k__BackingField:

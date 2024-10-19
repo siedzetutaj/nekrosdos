@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Z13
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 43740703-3540-481a-b06c-e4bd2c84f44c
   <DialogueName>k__BackingField: Z13
   <Text>k__BackingField: "Dalszy ci\u0105g historii opisany w planie g\u0142\xF3wnym
     od punktu - 69"

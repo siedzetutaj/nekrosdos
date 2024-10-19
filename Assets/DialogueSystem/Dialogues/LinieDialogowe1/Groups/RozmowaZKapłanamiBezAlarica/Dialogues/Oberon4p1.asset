@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Oberon4p1
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: ad3639f1-e6f8-4903-b324-0fe1cead0af5
   <DialogueName>k__BackingField: Oberon4p1
   <Text>k__BackingField: "W takim razie my ju\u017C p\xF3jdziemy. Nie b\u0119dziemy
     przeszkadza\u0107 detektywom."

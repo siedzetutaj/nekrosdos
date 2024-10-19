@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: W13
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 031c469c-8687-44ce-a5c2-4cf6d0983c47
   <DialogueName>k__BackingField: W13
   <Text>k__BackingField: "nast\u0119pnie Weln rozmawia\u0142 z kap\u0142anem graj\u0105c
     r\xF3wnocze\u015Bnie z nim w szachy."

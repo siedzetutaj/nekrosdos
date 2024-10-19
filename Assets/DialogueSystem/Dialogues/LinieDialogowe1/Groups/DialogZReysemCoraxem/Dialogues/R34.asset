@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R34
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: d773902a-0845-4dc2-8a29-844239d817ee
   <DialogueName>k__BackingField: R34
   <Text>k__BackingField: "Tak kurwa Ombryjczycy. \u015Amier\u0107 mi \u015Bwiadkiem
     \u017Ce wasza reputacja detektywie jest stanowczo ponad wasze realia."

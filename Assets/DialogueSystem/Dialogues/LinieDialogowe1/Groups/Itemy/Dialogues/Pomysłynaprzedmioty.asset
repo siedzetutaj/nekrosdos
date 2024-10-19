@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: "Pomys\u0142ynaprzedmioty"
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 7ec032a5-9cc0-4643-a77b-d75d534f00bd
   <DialogueName>k__BackingField: "Pomys\u0142ynaprzedmioty"
   <Text>k__BackingField: "- pier\u015Bcie\u0144\n- laurka od Eliry dla syna lothiona\n- "
   <Choices>k__BackingField:

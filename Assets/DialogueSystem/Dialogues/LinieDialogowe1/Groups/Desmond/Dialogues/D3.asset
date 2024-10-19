@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: D3
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 00ae688a-c552-417d-a861-8070558bb7f0
   <DialogueName>k__BackingField: D3
   <Text>k__BackingField: "Sam jednak nie bierze udzia\u0142u w tym spotkaniu poniewa\u017C
     ustalono ju\u017C wi\u0119kszo\u015B\u0107 warunk\xF3w a te, kt\xF3re pozosta\u0142y

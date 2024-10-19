@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 72
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 884cf8b1-6134-4663-9239-e23e765ae6a0
   <DialogueName>k__BackingField: 72
   <Text>k__BackingField: "Zestes na szybko nastawia nos gerviemu po czym biegnie
     do gabinetu obejrzec cia\u0142o Marii"

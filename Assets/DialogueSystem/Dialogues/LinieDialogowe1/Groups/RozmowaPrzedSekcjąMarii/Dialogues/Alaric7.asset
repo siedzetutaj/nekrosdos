@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Alaric7
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 6a1eb2ee-136b-4c14-bf7c-908c6c9b20cc
   <DialogueName>k__BackingField: Alaric7
   <Text>k__BackingField: "Dobrze, zostan\u0119 przed drzwiami. "
   <Choices>k__BackingField:

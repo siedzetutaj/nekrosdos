@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 82bb7002-abae-4f7e-97ba-41ae5e05279c
   <DialogueName>k__BackingField: R4
   <Text>k__BackingField: "Musieli\u015Bmy? Z tego co wiem to jedynie wy - \"obdarzeni\"
     mo\u017Cecie narusza\u0107 \u015Bwi\u0119ty spok\xF3j szlachty nawet po \u015Bmierci.

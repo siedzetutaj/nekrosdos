@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Detektywi5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 75c77c8e-cf4b-464a-b0bc-18a69d5917dc
   <DialogueName>k__BackingField: Detektywi5
   <Text>k__BackingField: "W takim razie jak dosz\u0142o do ich zatrzymania?"
   <Choices>k__BackingField:

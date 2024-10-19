@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: A2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 0234599c-0eb8-4feb-808f-2cac5cbd7031
   <DialogueName>k__BackingField: A2
   <Text>k__BackingField: "T\u0142umaczy si\u0119 z obecno\u015Bci hostesa w posiad\u0142o\u015Bci"
   <Choices>k__BackingField:

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: A9
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: f4cda729-718a-4569-a02e-1ed940f386be
   <DialogueName>k__BackingField: A9
   <Text>k__BackingField: "tam sp\u0119dza sporo czasu nad czuwaniu przy ciele"
   <Choices>k__BackingField:

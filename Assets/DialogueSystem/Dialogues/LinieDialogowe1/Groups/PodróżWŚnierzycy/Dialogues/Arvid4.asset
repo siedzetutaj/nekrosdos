@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Arvid4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: ef6c3584-4506-434f-8c35-b00be0ed4e06
   <DialogueName>k__BackingField: Arvid4
   <Text>k__BackingField: "Kto\u015B jeszcze przeje\u017Cd\u017Ca\u0142 przez wioske
     ostatnio?"

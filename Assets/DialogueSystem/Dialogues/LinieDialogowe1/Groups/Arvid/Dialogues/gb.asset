@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: gb
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 6a1ea738-b909-41e3-a8cd-d1100485f29a
   <DialogueName>k__BackingField: gb
   <Text>k__BackingField: "W trakcie rozmowy poruszany jest g\u0142\xF3wnie temat
     cia\u0142a jak i stanu w jakim znajduj\u0119 si\u0119 cia\u0142o kobiety. To

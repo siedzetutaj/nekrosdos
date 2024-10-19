@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: 10
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: ac2078f8-de1e-48de-aed3-839823ca34ec
   <DialogueName>k__BackingField: 10
   <Text>k__BackingField: "Maria unika spotka\u0144 udaj\u0105c chorob\u0119 podczas
     gdy tak naprawd\u0119 prowadzi negocjacje z handlarzami broni\u0105"

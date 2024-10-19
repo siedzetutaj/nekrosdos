@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Orion2
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: f40fc2a7-3df4-4a93-a37e-14a15db9ff75
   <DialogueName>k__BackingField: Orion2
   <Text>k__BackingField: "Chcieliby\u015Bmy zobaczy\u0107 cia\u0142o."
   <Choices>k__BackingField:

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Alaric5
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: f6c172b1-fedc-44e3-bc3c-e2d74968fe12
   <DialogueName>k__BackingField: Alaric5
   <Text>k__BackingField: "Ale to si\u0119 zmieni."
   <Choices>k__BackingField:

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: Alaric12
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: bda57352-57ac-4818-86c4-e723e19458b1
   <DialogueName>k__BackingField: Alaric12
   <Text>k__BackingField: "Po odkryciu zbrodni w gabinecie Marii zaroi\u0142o si\u0119
     od ludzi. By\u0142 tam tak\u017Ce m\xF3j syn Desmond."

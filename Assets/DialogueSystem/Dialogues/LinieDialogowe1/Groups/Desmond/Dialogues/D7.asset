@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: D7
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 2c4a03e5-c8e3-4afb-b926-221df68e04aa
   <DialogueName>k__BackingField: D7
   <Text>k__BackingField: "nast\u0119pnie Desmond - ???? - co robi\u0142 zanim us\u0142\u0142ysza\u0142
     krzyki"

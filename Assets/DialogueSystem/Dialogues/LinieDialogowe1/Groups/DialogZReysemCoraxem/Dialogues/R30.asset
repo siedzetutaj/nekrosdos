@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: R30
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: bc49688b-1f3d-452c-acc2-bf3ad5b95fbd
   <DialogueName>k__BackingField: R30
   <Text>k__BackingField: "Co\u015B ty g\u0142uchy jest? M\xF3wi\u0142em przecie\u017C
     \u017Ce siedzimy ca\u0142e dnie na rozmowach dotycz\u0105cych maria\u017Cu pomi\u0119dzy

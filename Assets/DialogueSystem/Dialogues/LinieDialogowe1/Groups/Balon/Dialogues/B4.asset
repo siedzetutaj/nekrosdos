@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
   m_Name: B4
   m_EditorClassIdentifier: 
+  <ID>k__BackingField: 8860761d-8a20-4d9f-929f-70d98485332a
   <DialogueName>k__BackingField: B4
   <Text>k__BackingField: "i w zasadzie to robi prez ca\u0142y czas "
   <Choices>k__BackingField:
